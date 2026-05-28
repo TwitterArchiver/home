@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TwitterArchiver · 推特存档计划</title>
+<style>
+:root {
+  --bg:              #f7f9f9;
+  --bg-card:         #ffffff;
+  --bg-hover:        #f0f3f4;
+  --border:          #e6eaed;
+  --text:            #0f1419;
+  --text-dim:        #536471;
+  --text-muted:      #aab8c2;
+  --accent:          #1d9bf0;
+  --featured-border: #c8960c;
+}
+body.dark {
+  --bg:              #000000;
+  --bg-card:         #0a0a0a;
+  --bg-hover:        #111111;
+  --border:          #2f3336;
+  --text:            #e7e9ea;
+  --text-dim:        #71767b;
+  --text-muted:      #3e4144;
+  --accent:          #1d9bf0;
+  --featured-border: #FFD700;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  transition: background .25s, color .25s;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── 进场动画 ── */
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim-1 { animation: heroIn .7s .05s cubic-bezier(.22,.68,0,1.2) both; }
+.anim-2 { animation: heroIn .7s .2s  cubic-bezier(.22,.68,0,1.2) both; }
+.anim-3 { animation: heroIn .7s .38s cubic-bezier(.22,.68,0,1.2) both; }
+.anim-4 { animation: heroIn .7s .52s cubic-bezier(.22,.68,0,1.2) both; }
+
+/* ── Hero 区 ── */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.hero-title {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -.5px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.hero-title span { color: var(--accent); }
+.hero-sub {
+  font-size: clamp(.9rem, 2.5vw, 1.05rem);
+  color: var(--text-dim);
+  margin-bottom: 48px;
+}
+.memorial {
+  max-width: 480px;
+  padding: 28px 24px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  line-height: 1.95;
+  font-size: .93rem;
+  color: var(--text-dim);
+}
+.memorial .name { color: var(--text); font-weight: 600; }
+.memorial .quote { display: block; margin-top: 14px; }
+.memorial .tagline {
+  display: block;
+  margin-top: 18px;
+  font-style: italic;
+  font-size: .85rem;
+  opacity: .6;
+}
+.scroll-hint {
+  margin-top: 40px;
+  font-size: .78rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: bounce 2s 1.2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
+.scroll-hint svg { opacity: .4; }
+
+/* ── 主题按钮 ── */
+.theme-btn {
+  position: fixed;
+  top: 14px; right: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 50%;
+  width: 38px; height: 38px;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .15s, box-shadow .15s;
+  z-index: 99;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.theme-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); }
+
+/* ── 仓库区 ── */
+.repos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+.section-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+/* ── 卡片 ── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.09);
+  border-color: var(--accent);
+}
+.card.featured {
+  border-color: var(--featured-border);
+}
+.card.featured::after {
+  content: '纪念存档';
+  position: absolute;
+  top: 11px; right: 13px;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--featured-border);
+  text-transform: uppercase;
+}
+.card-name { font-weight: 700; font-size: 1rem; }
+.card-at   { font-size: .84rem; color: var(--accent); }
+.card-desc {
+  font-size: .78rem;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin-top: 4px;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-links {
+  display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;
+}
+.card-links a {
+  font-size: .75rem;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 3px 10px;
+  transition: color .12s, border-color .12s;
+  white-space: nowrap;
+}
+.card-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+/* ── 状态 ── */
+.status {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--text-dim);
+  font-size: .9rem;
+}
+.loading::after {
+  content: '';
+  animation: dots 1.4s infinite;
+}
+@keyframes dots {
+  0%  { content: ''; }
+  33% { content: '.'; }
+  66% { content: '..'; }
+  99% { content: '...'; }
+}
+
+/* ── 底部 ── */
+footer {
+  text-align: center;
+  padding: 18px 20px;
+  font-size: .76rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--text-dim); }
+footer a:hover { color: var(--accent); text-decoration: none; }
+
+@media (max-width: 600px) {
+  .hero { padding: 60px 20px 48px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
+
+<!-- Hero -->
+<section class="hero">
+  <h1 class="hero-title anim-1">Twitter<span>Archiver</span></h1>
+  <p class="hero-sub anim-2">基于 Wayback Machine 的推特账号永久存档计划</p>
+
+  <div class="memorial anim-3">
+    这个项目最初是为了纪念
+    <a class="name" href="https://github.com/TwitterArchiver/AnIncanescence" target="_blank">@AnIncandescence</a>。<br>
+    她的账号被封禁，但她永远也不会被遗忘。
+    <span class="quote">
+      她说过，"互联网是现实的避难所"。<br>
+      这里，是那个避难所的避难所。
+    </span>
+    <span class="tagline">烛火熄灭之后，光还在。</span>
+  </div>
+
+  <div class="scroll-hint anim-4">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </div>
+</section>
+
+<!-- 仓库列表 -->
+<section class="repos">
+  <div id="repo-list">
+    <div class="status loading">正在加载存档列表</div>
+  </div>
+</section>
+
+<footer>
+  <a href="https://github.com/TwitterArchiver" target="_blank">TwitterArchiver</a> ·
+  <a href="https://github.com/sjshb57/IncandescenceArchiver" target="_blank">如何存档你的账号</a> ·
+  AGPL-3.0
+</footer>
+
+<script>
+const EXCLUDE  = new Set(['Dispatcher', '.github', 'TwitterArchiver.github.io']);
+const FEATURED = 'AnIncanescence';
+const ORG      = 'TwitterArchiver';
+
+// 默认亮色，用户切换后记住
+const stored = localStorage.getItem('portal-theme');
+let isDark = stored === 'dark';
+applyTheme(isDark);
+
+function applyTheme(dark) {
+  isDark = dark;
+  document.body.classList.toggle('dark', dark);
+  document.getElementById('theme-btn').textContent = dark ? '☀️' : '🌙';
+  localStorage.setItem('portal-theme', dark ? 'dark' : 'light');
+}
+function toggleTheme() { applyTheme(!isDark); }
+
+const pagesUrl = r => `https://${ORG.toLowerCase()}.github.io/${r}/`;
+const githubUrl = r => `https://github.com/${ORG}/${r}`;
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function makeCard(repo, featured) {
+  const n = repo.name;
+  const d = document.createElement('div');
+  d.className = 'card' + (featured ? ' featured' : '');
+  d.onclick = () => window.open(pagesUrl(n), '_blank');
+  d.innerHTML = `
+    <div class="card-name">${esc(n)}</div>
+    <div class="card-at">@${esc(n)}</div>
+    ${repo.description ? `<div class="card-desc">${esc(repo.description)}</div>` : ''}
+    <div class="card-links">
+      <a href="${pagesUrl(n)}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
+      <a href="${githubUrl(n)}" target="_blank" onclick="event.stopPropagation()">⚙️ 仓库</a>
+    </div>`;
+  return d;
+}
+
+async function loadRepos() {
+  const container = document.getElementById('repo-list');
+  try {
+    let all = [], page = 1;
+    while (true) {
+      const r = await fetch(
+        `https://api.github.com/orgs/${ORG}/repos?type=public&per_page=100&page=${page}`
+      );
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const batch = await r.json();
+      if (!batch.length) break;
+      all = all.concat(batch);
+      page++;
+    }
+
+    const featured = all.find(r => r.name === FEATURED);
+    const rest = all
+      .filter(r => !EXCLUDE.has(r.name) && r.name !== FEATURED)
+      .sort((a, b) => a.name.localeCompare(b.name, 'zh'));
+
+    container.innerHTML = '';
+
+    const allRepos = [
+      ...(featured ? [featured] : []),
+      ...rest
+    ];
+
+    if (allRepos.length) {
+      const sec = document.createElement('div');
+      sec.innerHTML = `<div class="section-label">全部存档 · ${allRepos.length} 个账号</div>`;
+      const g = document.createElement('div');
+      g.className = 'grid';
+      allRepos.forEach(r => g.appendChild(makeCard(r, r === featured)));
+      sec.appendChild(g);
+      container.appendChild(sec);
+    } else {
+      container.innerHTML = '<div class="status">暂无存档仓库</div>';
+    }
+  } catch(e) {
+    container.innerHTML = `<div class="status">加载失败：${esc(e.message)}<br><small>稍后刷新重试</small></div>`;
+  }
+}
+
+loadRepos();
+</script>
+</body>
+</html>
