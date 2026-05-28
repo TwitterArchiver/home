@@ -330,17 +330,9 @@ function makeCard(repo, featured) {
 async function loadRepos() {
   const container = document.getElementById('repo-list');
   try {
-    let all = [], page = 1;
-    while (true) {
-      const r = await fetch(
-        `https://api.github.com/orgs/${ORG}/repos?type=public&per_page=100&page=${page}`
-      );
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      const batch = await r.json();
-      if (!batch.length) break;
-      all = all.concat(batch);
-      page++;
-    }
+    const r = await fetch('./repos.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const all = await r.json();
 
     const featured = all.find(r => r.name === FEATURED);
     const rest = all
