@@ -1,0 +1,304 @@
+name: 首次建档
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: '从指定日期开始抓取 (YYYYMMDD，留空则全量)'
+        required: false
+        default: ''
+
+jobs:
+  build-html-image:
+    name: 建档 HTML+图片
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      TWITTER_PROXY_BASE: ${{ secrets.TWITTER_PROXY_BASE }}
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 读取账号列表
+        id: info
+        run: |
+          OWNER=$(echo "${{ github.repository }}" | cut -d'/' -f1)
+          REPO=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          PAGES_URL="https://${OWNER}.github.io/${REPO}/"
+          echo "owner=$OWNER"         >> $GITHUB_OUTPUT
+          echo "repo=$REPO"           >> $GITHUB_OUTPUT
+          echo "pages_url=$PAGES_URL" >> $GITHUB_OUTPUT
+          if [ -f "accounts.txt" ]; then
+            ACCOUNTS=$(grep -v '^#' accounts.txt | grep -v '^$')
+          else
+            ACCOUNTS="$REPO"
+          fi
+          echo "accounts<<EOF" >> $GITHUB_OUTPUT
+          echo "$ACCOUNTS"     >> $GITHUB_OUTPUT
+          echo "EOF"           >> $GITHUB_OUTPUT
+
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: 拉取最新脚本与模板
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/archive.py" \
+            -o /tmp/archive.py
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/index.html" \
+            -o index.html || true
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/.nojekyll" \
+            -o .nojekyll || touch .nojekyll
+
+      - name: 替换 index.html 账号列表
+        run: |
+          ACCOUNTS="${{ steps.info.outputs.accounts }}"
+          ACCOUNTS_JSON=$(echo "$ACCOUNTS" | awk '{printf "'\''%s'\'', ", $0}' | sed "s/, $//")
+          sed -i "s/const ACCOUNTS_HARDCODED = \[.*\]/const ACCOUNTS_HARDCODED = [${ACCOUNTS_JSON}]/" index.html || true
+
+      - name: 建立目录结构
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            mkdir -p accounts/${U}/wayback_snapshots/{html,json,image,video,avatar,_log}
+            if [ ! -f "accounts/${U}/wayback_snapshots/profile.json" ]; then
+              curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/profile.template.json" \
+                -o accounts/${U}/wayback_snapshots/profile.json 2>/dev/null || \
+              echo "{\"name\":\"\",\"username\":\"@${U}\",\"bio\":\"\",\"location\":\"\",\"link\":\"\",\"avatar\":\"avatar/avatar.jpg\",\"banner\":\"avatar/1500x500.jpg\"}" \
+                > accounts/${U}/wayback_snapshots/profile.json
+              sed -i "s/{USERNAME}/${U}/g" accounts/${U}/wayback_snapshots/profile.json
+            fi
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: fetch-cdx
+        run: |
+          SINCE="${{ github.event.inputs.since }}"
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U}
+            if [ -n "$SINCE" ]; then
+              python3 /tmp/archive.py fetch-cdx "$U" --from "$SINCE" || true
+            else
+              python3 /tmp/archive.py fetch-cdx "$U" || true
+            fi
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: fetch-html
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py fetch-html || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: fetch-image
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py fetch-image || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: clean-html
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py clean-html || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: build-index（第一阶段）
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py build-index || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: 生成 README
+        run: |
+          OWNER=${{ steps.info.outputs.owner }}
+          REPO=${{ steps.info.outputs.repo }}
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/README.template.md" \
+            -o README.md 2>/dev/null || echo "# 推文存档" > README.md
+          sed -i "s/{USERNAME}/${REPO}/g; s/{OWNER}/${OWNER}/g" README.md
+
+      - name: 推送第一阶段
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --name-only | while IFS= read -r f; do
+            if [ ! -f "$f" ]; then continue; fi
+            size=$(stat -c%s "$f" 2>/dev/null || echo 0)
+            if [ "$size" -gt 104857600 ]; then
+              git rm --cached "$f"
+            fi
+          done
+          git diff --cached --quiet && echo "无新内容" && exit 0
+          COUNT=$(git diff --cached --numstat | wc -l)
+          git commit -m "🗂️ 首次建档 HTML+图片 (+${COUNT} 文件) [skip ci]"
+          git push
+
+      - name: 开启 GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo '{"source":{"branch":"main","path":"/"}}' | \
+            gh api repos/${{ github.repository }}/pages \
+            --method POST --input - 2>/dev/null || \
+          echo '{"source":{"branch":"main","path":"/"}}' | \
+            gh api repos/${{ github.repository }}/pages \
+            --method PUT --input - || true
+          gh repo edit "${{ github.repository }}" \
+            --homepage "${{ steps.info.outputs.pages_url }}" || true
+
+  build-video:
+    name: 建档 视频
+    needs: build-html-image
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      TWITTER_PROXY_BASE: ${{ secrets.TWITTER_PROXY_BASE }}
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库（拉最新）
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+
+      - name: 读取账号列表
+        id: info
+        run: |
+          REPO=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          if [ -f "accounts.txt" ]; then
+            ACCOUNTS=$(grep -v '^#' accounts.txt | grep -v '^$')
+          else
+            ACCOUNTS="$REPO"
+          fi
+          echo "accounts<<EOF" >> $GITHUB_OUTPUT
+          echo "$ACCOUNTS"     >> $GITHUB_OUTPUT
+          echo "EOF"           >> $GITHUB_OUTPUT
+
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: 拉取最新 archive.py
+        run: curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/archive.py" -o /tmp/archive.py
+
+      - name: fetch-video
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py fetch-video || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: clean-html --force
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py clean-html --force || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: 推送
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --name-only | while IFS= read -r f; do
+            if [ ! -f "$f" ]; then continue; fi
+            size=$(stat -c%s "$f" 2>/dev/null || echo 0)
+            if [ "$size" -gt 104857600 ]; then git rm --cached "$f"; fi
+          done
+          git diff --cached --quiet && echo "无新内容" && exit 0
+          COUNT=$(git diff --cached --numstat | wc -l)
+          git commit -m "🎬 首次建档 视频 (+${COUNT} 文件) [skip ci]"
+          git push
+
+  build-avatar:
+    name: 建档 头像+收尾
+    needs: build-video
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      TWITTER_PROXY_BASE: ${{ secrets.TWITTER_PROXY_BASE }}
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库（拉最新）
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+
+      - name: 读取账号列表
+        id: info
+        run: |
+          OWNER=$(echo "${{ github.repository }}" | cut -d'/' -f1)
+          REPO=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          if [ -f "accounts.txt" ]; then
+            ACCOUNTS=$(grep -v '^#' accounts.txt | grep -v '^$')
+          else
+            ACCOUNTS="$REPO"
+          fi
+          echo "accounts<<EOF" >> $GITHUB_OUTPUT
+          echo "$ACCOUNTS"     >> $GITHUB_OUTPUT
+          echo "EOF"           >> $GITHUB_OUTPUT
+          echo "pages_url=https://${OWNER}.github.io/${REPO}/" >> $GITHUB_OUTPUT
+
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: 拉取最新 archive.py
+        run: curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/archive.py" -o /tmp/archive.py
+
+      - name: fetch-avatars
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py fetch-avatars || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: clean-html --force
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py clean-html --force || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: build-index（最终）
+        run: |
+          while IFS= read -r U; do
+            if [ -z "$U" ]; then continue; fi
+            cd accounts/${U} && python3 /tmp/archive.py build-index || true
+            cd ../..
+          done <<< "${{ steps.info.outputs.accounts }}"
+
+      - name: 推送（完结）
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --name-only | while IFS= read -r f; do
+            if [ ! -f "$f" ]; then continue; fi
+            size=$(stat -c%s "$f" 2>/dev/null || echo 0)
+            if [ "$size" -gt 104857600 ]; then git rm --cached "$f"; fi
+          done
+          if git diff --cached --quiet; then echo "✅ 无新内容"; exit 0; fi
+          COUNT=$(git diff --cached --numstat | wc -l)
+          git commit -m "✅ 首次建档完成 (+${COUNT} 文件) [skip ci]"
+          git push
+          echo "🔗 ${{ steps.info.outputs.pages_url }}"
