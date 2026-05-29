@@ -1,0 +1,32 @@
+name: 更新仓库列表
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 每天 UTC 03:00
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: 生成 repos.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api orgs/TwitterArchiver/repos \
+            --paginate \
+            --jq '[.[] | {name,description}]' \
+            > repos.json
+
+      - name: 推送
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add repos.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: 更新仓库列表 [skip ci]"
+          git push
