@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v6
 
@@ -17,14 +18,34 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh api orgs/TwitterArchiver/repos \
-            --paginate \
-            --jq '[.[] | {name,description}]' \
-            > repos.json
+          gh repo list TwitterArchiver --limit 200 --json name \
+            --jq '.[].name | select(
+              . != "Dispatcher" and
+              . != ".github" and
+              . != "home" and
+              . != "TwitterArchiver.github.io"
+            )' | sort | while IFS= read -r REPO; do
+            [ -z "$REPO" ] && continue
+
+            # 读取 profile.json 里的 name / username / bio
+            PROFILE=$(gh api "repos/TwitterArchiver/$REPO/contents/profile.json" \
+              --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
+
+            DISPLAY_NAME=$(echo "$PROFILE" | jq -r '.name  // empty')
+            USERNAME=$(echo     "$PROFILE" | jq -r '.username // empty')
+            BIO=$(echo          "$PROFILE" | jq -r '.bio // empty' | cut -c1-100)
+
+            jq -n \
+              --arg name    "$REPO" \
+              --arg disp    "$DISPLAY_NAME" \
+              --arg user    "$USERNAME" \
+              --arg desc    "$BIO" \
+              '{name:$name, display_name:$disp, username:$user, description:$desc}'
+          done | jq -s '.' > repos.json
 
       - name: 推送
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add repos.json
           git diff --cached --quiet && exit 0
