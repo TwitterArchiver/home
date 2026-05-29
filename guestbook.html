@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>留言板 · TwitterArchiver</title>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
 <style>
 :root {
@@ -151,6 +151,17 @@ body.dark .wl-meta-head { color: #f2f2f7 !important; }
 body.dark .wl-sort li  { color: #8e8e93 !important; }
 body.dark .wl-sort li.active { color: var(--accent) !important; }
 body.dark .wl-empty    { color: #8e8e93 !important; }
+
+/* 暗色 — 图标（点赞/回复/工具栏表情图片预览）调浅色 */
+body.dark .wl-action,
+body.dark .wl-like,
+body.dark .wl-reply        { color: #aeaeb2 !important; }
+body.dark .wl-action svg,
+body.dark .wl-like svg,
+body.dark .wl-reply svg    { fill: #aeaeb2 !important; stroke: #aeaeb2 !important; }
+body.dark .wl-action:hover svg,
+body.dark .wl-like:hover svg,
+body.dark .wl-reply:hover svg { fill: var(--accent) !important; stroke: var(--accent) !important; }
 
 .wl-btn.primary {
   background: var(--accent) !important;
