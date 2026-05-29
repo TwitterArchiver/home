@@ -29,25 +29,84 @@ body.dark {
   --text-muted: #3e4144;
 }
 
-/* Waline 样式覆盖 */
+/* ── Waline 覆盖 ── */
 :root {
-  --waline-font-size: 14px;
-  --waline-theme-color: var(--accent);
-  --waline-active-color: var(--accent);
-  --waline-bg-color: var(--bg-card);
+  --waline-theme-color:    var(--accent);
+  --waline-active-color:   var(--accent);
+  --waline-bg-color:       var(--bg-card);
   --waline-bg-color-hover: var(--bg-hover);
-  --waline-color: var(--text);
-  --waline-border: 1px solid var(--border);
-  --waline-border-color: var(--border);
-  --waline-bq-color: var(--border);
-  --waline-info-bg-color: var(--bg-hover);
-  --waline-info-color: var(--text-dim);
-  --waline-code-bg-color: var(--bg-hover);
-  --waline-disable-bg-color: var(--bg-hover);
-  --waline-disable-color: var(--text-muted);
-  --waline-box-shadow: none;
-  --waline-border-radius: 12px;
+  --waline-color:          var(--text);
+  --waline-border-color:   var(--border);
+  --waline-border:         1px solid var(--border);
+  --waline-bq-color:       var(--border);
+  --waline-info-bg-color:  var(--bg-hover);
+  --waline-info-color:     var(--text-dim);
+  --waline-box-shadow:     none;
+  --waline-border-radius:  12px;
+  --waline-font-size:      15px;
 }
+
+/* 输入区域重设计 */
+.wl-editor {
+  min-height: 120px !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  padding: 14px !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  resize: vertical !important;
+}
+.wl-editor:focus {
+  border-color: var(--accent) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 12%, transparent) !important;
+}
+/* 姓名/邮箱/网址行 */
+.wl-header {
+  display: flex !important;
+  gap: 8px !important;
+  margin-bottom: 10px !important;
+}
+.wl-header input {
+  flex: 1 !important;
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+}
+.wl-header input:focus {
+  border-color: var(--accent) !important;
+  outline: none !important;
+}
+/* 工具栏 */
+.wl-footer { margin-top: 8px !important; }
+/* 提交按钮 */
+.wl-btn.primary {
+  background: var(--accent) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 8px 20px !important;
+}
+/* 留言列表头 */
+.wl-meta-head {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  margin: 28px 0 16px !important;
+}
+/* 隐藏 RSS 图标 */
+.wl-power { display: none !important; }
+/* 用户信息行字号 */
+.wl-meta { font-size: 13px !important; }
+/* 设备标签 */
+.wl-badge { font-size: 11px !important; border-radius: 4px !important; }
+/* 每条留言底部操作 */
+.wl-actions { font-size: 13px !important; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -59,61 +118,32 @@ body {
 }
 
 .theme-btn {
-  position: fixed;
-  top: 14px; right: 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  color: var(--text);
-  border-radius: 50%;
-  width: 38px; height: 38px;
-  font-size: 17px;
-  cursor: pointer;
+  position: fixed; top: 14px; right: 16px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text); border-radius: 50%;
+  width: 38px; height: 38px; font-size: 17px; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,.08);
-  z-index: 99;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08); z-index: 99;
 }
 
 .header {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 56px 24px 32px;
+  max-width: 720px; margin: 0 auto; padding: 48px 24px 28px;
 }
 .back {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: .83rem;
-  color: var(--text-dim);
-  text-decoration: none;
-  margin-bottom: 28px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .83rem; color: var(--text-dim); text-decoration: none; margin-bottom: 24px;
 }
 .back:hover { color: var(--accent); }
-.header h1 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
+.header h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
 .header h1 span { color: var(--accent); }
-.header p {
-  font-size: .9rem;
-  color: var(--text-dim);
-  line-height: 1.6;
-}
+.header p { font-size: .9rem; color: var(--text-dim); line-height: 1.6; }
 
-.waline-wrap {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 24px 80px;
-}
+.waline-wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
 
 footer {
-  text-align: center;
-  padding: 18px 20px;
-  font-size: .76rem;
-  color: var(--text-muted);
+  text-align: center; padding: 18px 20px;
+  font-size: .76rem; color: var(--text-muted);
   border-top: 1px solid var(--border);
-  max-width: 720px;
-  margin: 0 auto;
 }
 footer a { color: var(--text-dim); text-decoration: none; }
 footer a:hover { color: var(--accent); }
@@ -121,12 +151,12 @@ footer a:hover { color: var(--accent); }
 </head>
 <body>
 
-<button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
+<button class="theme-btn" id="theme-btn" onclick="toggleTheme()">🌙</button>
 
 <div class="header">
   <a class="back" href="./index.html">← 返回存档列表</a>
   <h1>留<span>言板</span></h1>
-  <p>欢迎留下你的足迹。昵称随意填写，邮箱和网站可选填，无需注册账号。</p>
+  <p>欢迎留下你的足迹。昵称随意填写，邮箱和网站可选，无需注册账号。</p>
 </div>
 
 <div class="waline-wrap">
@@ -142,7 +172,6 @@ footer a:hover { color: var(--accent); }
 const stored = localStorage.getItem('portal-theme');
 let isDark = stored === 'dark';
 applyTheme(isDark);
-
 function applyTheme(dark) {
   isDark = dark;
   document.body.classList.toggle('dark', dark);
@@ -158,12 +187,13 @@ init({
   el: '#waline',
   serverURL: 'https://waline-twitterarchiver.vercel.app',
   lang: 'zh-CN',
+  login: 'enable',        // 管理员可以登录，普通用户也可匿名
   reaction: false,
-  login: 'disable',
   wordLimit: 0,
   pageSize: 20,
   placeholder: '留下你的话...',
-  requiredMeta: ['nick'],
+  requiredMeta: ['nick'], // 只要求昵称
+  avatar: 'mp',           // 不填邮箱时显示统一的匿名人头
 });
 </script>
 
