@@ -101,14 +101,17 @@ img.wl-user-avatar,
 .wl-input:focus {
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
+#wl-nick::placeholder,
 .wl-input::placeholder {
   color: var(--text-dim) !important;
   opacity: 1 !important;
+  -webkit-text-fill-color: var(--text-dim) !important;
 }
 .wl-editor {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
+  margin: 0 !important;
   min-height: 110px !important;
   font-size: 15px !important;
   line-height: 1.6 !important;
@@ -121,6 +124,9 @@ img.wl-user-avatar,
   resize: vertical !important;
   transition: box-shadow .15s !important;
 }
+
+/* 隐藏 Markdown Guide 跳转按钮 */
+a.wl-action[href*="mastering-markdown"] { display: none !important; }
 .wl-editor:focus {
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
