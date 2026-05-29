@@ -2,7 +2,7 @@ name: 更新仓库列表
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # 每天 UTC 03:00
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
       - name: 生成 repos.json
         env:
@@ -28,26 +28,20 @@ jobs:
             | sort | while IFS=$'\t' read -r REPO REPO_DESC; do
             [ -z "$REPO" ] && continue
 
-            # 找 accounts/ 下的第一个账号子目录
-            ACCOUNT_DIR=$(gh api "repos/TwitterArchiver/$REPO/contents/accounts" \
-              --jq 'if type == "array" then .[0].name else "" end' 2>/dev/null || echo "")
+            # profile.json 路径：accounts/{仓库名}/wayback_snapshots/profile.json
+            PROFILE=$(gh api \
+              "repos/TwitterArchiver/$REPO/contents/accounts/$REPO/wayback_snapshots/profile.json" \
+              --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
 
-            DISPLAY_NAME=""
-            USERNAME=""
-            if [ -n "$ACCOUNT_DIR" ]; then
-              PROFILE=$(gh api \
-                "repos/TwitterArchiver/$REPO/contents/accounts/$ACCOUNT_DIR/profile.json" \
-                --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
-              DISPLAY_NAME=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
-              USERNAME=$(    echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
-            fi
+            DISP=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
+            USER=$(echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
 
             jq -n \
-              --arg name "$REPO" \
-              --arg disp "$DISPLAY_NAME" \
-              --arg user "$USERNAME" \
+              --arg repo "$REPO" \
+              --arg name "$DISP" \
+              --arg user "$USER" \
               --arg desc "$REPO_DESC" \
-              '{name:$name, display_name:$disp, username:$user, description:$desc}'
+              '{repo:$repo, name:$name, username:$user, description:$desc}'
           done | jq -s '.' > repos.json
 
       - name: 推送
