@@ -48,13 +48,14 @@ body.dark {
 .wl-power,
 a[href*="rss"],
 .wl-avatar,
-.wl-avatar-img { display: none !important; }
+.wl-avatar-img,
+.wl-gravatar,
+.wl-item > .wl-avatar,
+.wl-card .wl-avatar { display: none !important; }
 
-/* ── 输入区域 ── */
+/* ── 输入区域（只有昵称，单列）── */
 .wl-header {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr !important;
-  gap: 8px !important;
+  display: block !important;
   margin-bottom: 12px !important;
 }
 .wl-header-item {
@@ -62,6 +63,7 @@ a[href*="rss"],
   flex-direction: column !important;
   gap: 4px !important;
 }
+.wl-header-item + .wl-header-item { display: none !important; } /* 隐藏邮箱和网址 */
 .wl-header-item label {
   font-size: 12px !important;
   color: var(--text-dim) !important;
@@ -198,6 +200,7 @@ init({
   pageSize: 20,
   placeholder: '留下你的话...',
   requiredMeta: ['nick'],
+  meta: ['nick'],
   avatar: 'hide',
 });
 </script>
