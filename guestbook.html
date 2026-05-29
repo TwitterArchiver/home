@@ -63,48 +63,56 @@ img.wl-user-avatar,
 /* ── 输入区域（只有昵称，单列）── */
 .wl-header {
   display: block !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 10px !important;
 }
 .wl-header-item {
   display: flex !important;
   flex-direction: column !important;
   gap: 4px !important;
 }
-.wl-header-item + .wl-header-item { display: none !important; } /* 隐藏邮箱和网址 */
+.wl-header-item + .wl-header-item { display: none !important; }
 .wl-header-item label {
   font-size: 12px !important;
   color: var(--text-dim) !important;
   font-weight: 500 !important;
 }
 .wl-header-item input {
-  padding: 9px 12px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 10px 14px !important;
   font-size: 14px !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 8px !important;
-  background: var(--bg-card) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  background: var(--bg-hover) !important;
   color: var(--text) !important;
   outline: none !important;
-  transition: border-color .15s !important;
-  width: 100% !important;
+  transition: background .15s, box-shadow .15s !important;
 }
 .wl-header-item input:focus {
-  border-color: var(--accent) !important;
+  background: var(--bg-card) !important;
+  box-shadow: 0 0 0 2px var(--accent) !important;
 }
 .wl-editor {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   min-height: 110px !important;
   font-size: 15px !important;
   line-height: 1.6 !important;
-  padding: 12px !important;
+  padding: 12px 14px !important;
+  border: none !important;
   border-radius: 10px !important;
-  border: 1px solid var(--border) !important;
-  background: var(--bg-card) !important;
+  background: var(--bg-hover) !important;
   color: var(--text) !important;
   outline: none !important;
   resize: vertical !important;
-  width: 100% !important;
-  transition: border-color .15s !important;
+  transition: background .15s, box-shadow .15s !important;
 }
-.wl-editor:focus { border-color: var(--accent) !important; }
+.wl-editor:focus {
+  background: var(--bg-card) !important;
+  box-shadow: 0 0 0 2px var(--accent) !important;
+}
 .wl-btn.primary {
   background: var(--accent) !important;
   border: none !important;
@@ -170,7 +178,7 @@ footer a:hover { color: var(--accent); }
 <div class="header">
   <a class="back" href="./index.html">← 返回存档列表</a>
   <h1>留<span>言板</span></h1>
-  <p>欢迎留下你的足迹。匿名论坛，昵称可以随意填写。</p>
+  <p>欢迎在此留下你的足迹</p>
 </div>
 
 <div class="waline-wrap">
