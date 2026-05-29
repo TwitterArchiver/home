@@ -10,27 +10,16 @@
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
 <style>
 :root {
-  --bg:       #f7f9f9;
-  --bg-card:  #ffffff;
-  --bg-hover: #f0f3f4;
-  --border:   #e6eaed;
-  --text:     #0f1419;
-  --text-dim: #536471;
+  --bg:         #f7f9f9;
+  --bg-card:    #ffffff;
+  --bg-hover:   #f0f3f4;
+  --border:     #e6eaed;
+  --text:       #0f1419;
+  --text-dim:   #536471;
   --text-muted: #aab8c2;
-  --accent:   #1d9bf0;
-}
-body.dark {
-  --bg:       #000000;
-  --bg-card:  #0a0a0a;
-  --bg-hover: #111111;
-  --border:   #2f3336;
-  --text:     #e7e9ea;
-  --text-dim: #71767b;
-  --text-muted: #3e4144;
-}
+  --accent:     #1d9bf0;
 
-/* ── Waline 覆盖 ── */
-:root {
+  /* Waline 覆盖 */
   --waline-theme-color:    var(--accent);
   --waline-active-color:   var(--accent);
   --waline-bg-color:       var(--bg-card);
@@ -42,71 +31,89 @@ body.dark {
   --waline-info-bg-color:  var(--bg-hover);
   --waline-info-color:     var(--text-dim);
   --waline-box-shadow:     none;
-  --waline-border-radius:  12px;
+  --waline-border-radius:  10px;
   --waline-font-size:      15px;
 }
+body.dark {
+  --bg:         #000000;
+  --bg-card:    #0a0a0a;
+  --bg-hover:   #111111;
+  --border:     #2f3336;
+  --text:       #e7e9ea;
+  --text-dim:   #71767b;
+  --text-muted: #3e4144;
+}
 
-/* 输入区域重设计 */
-.wl-editor {
-  min-height: 120px !important;
-  font-size: 15px !important;
-  line-height: 1.6 !important;
-  padding: 14px !important;
-  border-radius: 10px !important;
-  border: 1px solid var(--border) !important;
-  background: var(--bg-card) !important;
-  color: var(--text) !important;
-  resize: vertical !important;
-}
-.wl-editor:focus {
-  border-color: var(--accent) !important;
-  outline: none !important;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 12%, transparent) !important;
-}
-/* 姓名/邮箱/网址行 */
+/* ── 隐藏不需要的元素 ── */
+.wl-power,
+a[href*="rss"],
+.wl-avatar,
+.wl-avatar-img { display: none !important; }
+
+/* ── 输入区域 ── */
 .wl-header {
-  display: flex !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
   gap: 8px !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 12px !important;
 }
-.wl-header input {
-  flex: 1 !important;
-  padding: 10px 14px !important;
+.wl-header-item {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+}
+.wl-header-item label {
+  font-size: 12px !important;
+  color: var(--text-dim) !important;
+  font-weight: 500 !important;
+}
+.wl-header-item input {
+  padding: 9px 12px !important;
   font-size: 14px !important;
   border: 1px solid var(--border) !important;
   border-radius: 8px !important;
   background: var(--bg-card) !important;
   color: var(--text) !important;
-}
-.wl-header input:focus {
-  border-color: var(--accent) !important;
   outline: none !important;
+  transition: border-color .15s !important;
+  width: 100% !important;
 }
-/* 工具栏 */
-.wl-footer { margin-top: 8px !important; }
-/* 提交按钮 */
+.wl-header-item input:focus {
+  border-color: var(--accent) !important;
+}
+.wl-editor {
+  min-height: 110px !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  padding: 12px !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  outline: none !important;
+  resize: vertical !important;
+  width: 100% !important;
+  transition: border-color .15s !important;
+}
+.wl-editor:focus { border-color: var(--accent) !important; }
 .wl-btn.primary {
   background: var(--accent) !important;
   border: none !important;
   border-radius: 8px !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  padding: 8px 20px !important;
 }
-/* 留言列表头 */
-.wl-meta-head {
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  margin: 28px 0 16px !important;
-}
-/* 隐藏 RSS 图标 */
-.wl-power { display: none !important; }
-/* 用户信息行字号 */
+/* ── 留言列表 ── */
+.wl-meta-head { font-size: 15px !important; font-weight: 700 !important; margin: 24px 0 16px !important; }
+.wl-user { margin-left: 0 !important; }  /* 头像隐藏后内容左对齐 */
 .wl-meta { font-size: 13px !important; }
-/* 设备标签 */
 .wl-badge { font-size: 11px !important; border-radius: 4px !important; }
-/* 每条留言底部操作 */
 .wl-actions { font-size: 13px !important; }
+.wl-item { padding-left: 0 !important; }
+
+@media (max-width: 480px) {
+  .wl-header { grid-template-columns: 1fr !important; }
+}
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -126,9 +133,7 @@ body {
   box-shadow: 0 1px 4px rgba(0,0,0,.08); z-index: 99;
 }
 
-.header {
-  max-width: 720px; margin: 0 auto; padding: 48px 24px 28px;
-}
+.header { max-width: 720px; margin: 0 auto; padding: 48px 24px 28px; }
 .back {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: .83rem; color: var(--text-dim); text-decoration: none; margin-bottom: 24px;
@@ -187,13 +192,13 @@ init({
   el: '#waline',
   serverURL: 'https://waline-twitterarchiver.vercel.app',
   lang: 'zh-CN',
-  login: 'enable',        // 管理员可以登录，普通用户也可匿名
+  login: 'disable',
   reaction: false,
   wordLimit: 0,
   pageSize: 20,
   placeholder: '留下你的话...',
-  requiredMeta: ['nick'], // 只要求昵称
-  avatar: 'mp',           // 不填邮箱时显示统一的匿名人头
+  requiredMeta: ['nick'],
+  avatar: 'hide',
 });
 </script>
 
