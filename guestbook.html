@@ -138,12 +138,35 @@ body.dark #waline #wl-nick::placeholder,
 body.dark .wl-input::placeholder  { color: #8e8e93 !important; opacity: 1 !important; }
 body.dark .wl-editor::placeholder { color: #8e8e93 !important; opacity: 1 !important; }
 
+/* 暗色 — 评论列表区域 */
+body.dark .wl-content,
+body.dark .wl-content p,
+body.dark .wl-content * { color: #f2f2f7 !important; }
+body.dark .wl-nick     { color: #f2f2f7 !important; }
+body.dark .wl-time,
+body.dark .wl-meta     { color: #8e8e93 !important; }
+body.dark .wl-badge    { background: #2c2c2e !important; color: #8e8e93 !important; border-color: #3a3a3c !important; }
+body.dark .wl-card     { border-color: #2c2c2e !important; }
+body.dark .wl-meta-head { color: #f2f2f7 !important; }
+body.dark .wl-sort li  { color: #8e8e93 !important; }
+body.dark .wl-sort li.active { color: var(--accent) !important; }
+body.dark .wl-empty    { color: #8e8e93 !important; }
+
 .wl-btn.primary {
   background: var(--accent) !important;
   border: none !important;
   border-radius: 8px !important;
   font-size: 14px !important;
   font-weight: 600 !important;
+}
+/* 统一昵称框和评论框字体（否则 placeholder 粗细不一致）*/
+.wl-input, .wl-editor {
+  font-family: inherit !important;
+  font-weight: 400 !important;
+}
+.wl-input::placeholder, .wl-editor::placeholder {
+  font-family: inherit !important;
+  font-weight: 400 !important;
 }
 /* ── 留言列表 ── */
 .wl-meta-head { font-size: 15px !important; font-weight: 700 !important; margin: 24px 0 16px !important; }
@@ -198,7 +221,7 @@ footer a:hover { color: var(--accent); }
 <div class="header">
   <a class="back" href="./index.html">← 返回存档列表</a>
   <h1>留<span>言板</span></h1>
-  <p>欢迎在此留下你的足迹</p>
+  <p>欢迎在此留下你的足迹。</p>
 </div>
 
 <div class="waline-wrap">
@@ -239,12 +262,11 @@ init({
   avatar: 'hide',
 });
 
-// Waline 是异步渲染的，等 #wl-nick 出现后加 placeholder
+// Waline 异步渲染，且回复/取消回复会重建输入框，需要持续监听补 placeholder
 const obs = new MutationObserver(() => {
   const nick = document.getElementById('wl-nick');
-  if (nick) {
+  if (nick && nick.getAttribute('placeholder') !== '昵称') {
     nick.setAttribute('placeholder', '昵称');
-    obs.disconnect();
   }
 });
 obs.observe(document.getElementById('waline'), { childList: true, subtree: true });
