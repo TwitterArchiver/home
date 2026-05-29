@@ -315,13 +315,15 @@ function esc(s) {
 }
 
 function makeCard(repo, featured) {
-  const n = repo.name;
+  const n    = repo.name;
+  const disp = repo.display_name || n;
+  const at   = repo.username     || ('@' + n);
   const d = document.createElement('div');
   d.className = 'card' + (featured ? ' featured' : '');
   d.onclick = () => window.open(pagesUrl(n), '_blank');
   d.innerHTML = `
-    <div class="card-name">${esc(n)}</div>
-    <div class="card-at">@${esc(n)}</div>
+    <div class="card-name">${esc(disp)}</div>
+    <div class="card-at">${esc(at)}</div>
     ${repo.description ? `<div class="card-desc">${esc(repo.description)}</div>` : ''}
     <div class="card-links">
       <a href="${pagesUrl(n)}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
