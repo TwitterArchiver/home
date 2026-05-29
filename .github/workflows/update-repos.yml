@@ -18,28 +18,35 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh repo list TwitterArchiver --limit 200 --json name \
-            --jq '.[].name | select(
-              . != "Dispatcher" and
-              . != ".github" and
-              . != "home" and
-              . != "TwitterArchiver.github.io"
-            )' | sort | while IFS= read -r REPO; do
+          gh repo list TwitterArchiver --limit 200 --json name,description \
+            --jq '.[] | select(
+              .name != "Dispatcher" and
+              .name != ".github" and
+              .name != "home" and
+              .name != "TwitterArchiver.github.io"
+            ) | [.name, (.description // "")] | @tsv' \
+            | sort | while IFS=$'\t' read -r REPO REPO_DESC; do
             [ -z "$REPO" ] && continue
 
-            # 读取 profile.json 里的 name / username / bio
-            PROFILE=$(gh api "repos/TwitterArchiver/$REPO/contents/profile.json" \
-              --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
+            # 找 accounts/ 下的第一个账号子目录
+            ACCOUNT_DIR=$(gh api "repos/TwitterArchiver/$REPO/contents/accounts" \
+              --jq 'if type == "array" then .[0].name else "" end' 2>/dev/null || echo "")
 
-            DISPLAY_NAME=$(echo "$PROFILE" | jq -r '.name  // empty')
-            USERNAME=$(echo     "$PROFILE" | jq -r '.username // empty')
-            BIO=$(echo          "$PROFILE" | jq -r '.bio // empty' | cut -c1-100)
+            DISPLAY_NAME=""
+            USERNAME=""
+            if [ -n "$ACCOUNT_DIR" ]; then
+              PROFILE=$(gh api \
+                "repos/TwitterArchiver/$REPO/contents/accounts/$ACCOUNT_DIR/profile.json" \
+                --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
+              DISPLAY_NAME=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
+              USERNAME=$(    echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
+            fi
 
             jq -n \
-              --arg name    "$REPO" \
-              --arg disp    "$DISPLAY_NAME" \
-              --arg user    "$USERNAME" \
-              --arg desc    "$BIO" \
+              --arg name "$REPO" \
+              --arg disp "$DISPLAY_NAME" \
+              --arg user "$USERNAME" \
+              --arg desc "$REPO_DESC" \
               '{name:$name, display_name:$disp, username:$user, description:$desc}'
           done | jq -s '.' > repos.json
 
