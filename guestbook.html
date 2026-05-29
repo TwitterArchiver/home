@@ -58,7 +58,15 @@ img.wl-user-avatar,
 /* 去掉昵称框和评论框之间的虚线 */
 .wl-header { border-bottom: none !important; }
 .wl-editor  { border-top: none !important; }
-.wl-panel   { border: none !important; box-shadow: none !important; }
+
+/* 大外框：灰色细线 */
+.wl-panel {
+  border: 1px solid var(--border) !important;
+  border-radius: 14px !important;
+  padding: 16px !important;
+  background: var(--bg-card) !important;
+  box-shadow: none !important;
+}
 
 /* ── 输入区域（只有昵称，单列）── */
 .wl-header {
@@ -87,10 +95,9 @@ img.wl-user-avatar,
   background: var(--bg-hover) !important;
   color: var(--text) !important;
   outline: none !important;
-  transition: background .15s, box-shadow .15s !important;
+  transition: box-shadow .15s !important;
 }
 .wl-header-item input:focus {
-  background: var(--bg-card) !important;
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
 .wl-editor {
@@ -107,12 +114,16 @@ img.wl-user-avatar,
   color: var(--text) !important;
   outline: none !important;
   resize: vertical !important;
-  transition: background .15s, box-shadow .15s !important;
+  transition: box-shadow .15s !important;
 }
 .wl-editor:focus {
-  background: var(--bg-card) !important;
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
+
+/* 暗色模式显式覆盖（防止 Waline 自带样式干扰）*/
+body.dark .wl-panel       { background: #0a0a0a !important; border-color: #2f3336 !important; }
+body.dark .wl-header-item input { background: #111111 !important; color: #e7e9ea !important; }
+body.dark .wl-editor      { background: #111111 !important; color: #e7e9ea !important; }
 .wl-btn.primary {
   background: var(--accent) !important;
   border: none !important;
