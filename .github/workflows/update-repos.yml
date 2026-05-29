@@ -12,20 +12,20 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: 生成 repos.json
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh repo list TwitterArchiver --limit 200 --json name,description \
+          gh repo list TwitterArchiver --limit 200 --json name \
             --jq '.[] | select(
               .name != "Dispatcher" and
               .name != ".github" and
               .name != "home" and
               .name != "TwitterArchiver.github.io"
-            ) | [.name, (.description // "")] | @tsv' \
-            | sort | while IFS=$'\t' read -r REPO REPO_DESC; do
+            ) | .name' \
+            | sort | while IFS= read -r REPO; do
             [ -z "$REPO" ] && continue
 
             # profile.json 路径：accounts/{仓库名}/wayback_snapshots/profile.json
@@ -35,12 +35,13 @@ jobs:
 
             DISP=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
             USER=$(echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
+            BIO=$( echo "$PROFILE" | jq -r '.bio      // ""' 2>/dev/null | cut -c1-120 || echo "")
 
             jq -n \
               --arg repo "$REPO" \
               --arg name "$DISP" \
               --arg user "$USER" \
-              --arg desc "$REPO_DESC" \
+              --arg desc "$BIO" \
               '{repo:$repo, name:$name, username:$user, description:$desc}'
           done | jq -s '.' > repos.json
 
