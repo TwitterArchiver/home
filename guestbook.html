@@ -238,6 +238,16 @@ init({
   meta: ['nick'],
   avatar: 'hide',
 });
+
+// Waline 是异步渲染的，等 #wl-nick 出现后加 placeholder
+const obs = new MutationObserver(() => {
+  const nick = document.getElementById('wl-nick');
+  if (nick) {
+    nick.setAttribute('placeholder', '昵称');
+    obs.disconnect();
+  }
+});
+obs.observe(document.getElementById('waline'), { childList: true, subtree: true });
 </script>
 
 </body>
