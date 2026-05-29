@@ -315,19 +315,19 @@ function esc(s) {
 }
 
 function makeCard(repo, featured) {
-  const n    = repo.name;
-  const disp = repo.display_name || n;
-  const at   = repo.username     || ('@' + n);
+  const repoName = repo.repo  || repo.name;
+  const dispName = repo.name  || repoName;
+  const username = repo.username || ('@' + repoName);
   const d = document.createElement('div');
   d.className = 'card' + (featured ? ' featured' : '');
-  d.onclick = () => window.open(pagesUrl(n), '_blank');
+  d.onclick = () => window.open(pagesUrl(repoName), '_blank');
   d.innerHTML = `
-    <div class="card-name">${esc(disp)}</div>
-    <div class="card-at">${esc(at)}</div>
+    <div class="card-name">${esc(dispName)}</div>
+    <div class="card-at">${esc(username)}</div>
     ${repo.description ? `<div class="card-desc">${esc(repo.description)}</div>` : ''}
     <div class="card-links">
-      <a href="${pagesUrl(n)}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
-      <a href="${githubUrl(n)}" target="_blank" onclick="event.stopPropagation()">⚙️ 仓库</a>
+      <a href="${pagesUrl(repoName)}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
+      <a href="${githubUrl(repoName)}" target="_blank" onclick="event.stopPropagation()">⚙️ 仓库</a>
     </div>`;
   return d;
 }
@@ -339,9 +339,9 @@ async function loadRepos() {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const all = await r.json();
 
-    const featured = all.find(r => r.name === FEATURED);
+    const featured = all.find(r => (r.repo || r.name) === FEATURED);
     const rest = all
-      .filter(r => !EXCLUDE.has(r.name) && r.name !== FEATURED)
+      .filter(r => !EXCLUDE.has(r.repo || r.name) && (r.repo || r.name) !== FEATURED)
       .sort((a, b) => a.name.localeCompare(b.name, 'zh'));
 
     container.innerHTML = '';
