@@ -18,30 +18,40 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh repo list TwitterArchiver --limit 200 --json name \
+          gh repo list TwitterArchiver --limit 200 --json name,description \
             --jq '.[] | select(
               .name != "Dispatcher" and
               .name != ".github" and
               .name != "home" and
               .name != "TwitterArchiver.github.io"
-            ) | .name' \
-            | sort | while IFS= read -r REPO; do
+            ) | [.name, (.description // "")] | @tsv' \
+            | sort | while IFS=$'\t' read -r REPO REPO_DESC; do
             [ -z "$REPO" ] && continue
 
-            # profile.json 路径：accounts/{仓库名}/wayback_snapshots/profile.json
+            # 找 accounts/ 下的第一个子目录名（不一定等于仓库名）
+            ACCOUNT_DIR=$(gh api "repos/TwitterArchiver/$REPO/contents/accounts" \
+              --jq 'if type=="array" then .[0].name else "" end' 2>/dev/null || echo "")
+            [ -z "$ACCOUNT_DIR" ] && ACCOUNT_DIR="$REPO"
+
             PROFILE=$(gh api \
-              "repos/TwitterArchiver/$REPO/contents/accounts/$REPO/wayback_snapshots/profile.json" \
+              "repos/TwitterArchiver/$REPO/contents/accounts/$ACCOUNT_DIR/wayback_snapshots/profile.json" \
               --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
 
             DISP=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
             USER=$(echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
-            BIO=$( echo "$PROFILE" | jq -r '.bio      // ""' 2>/dev/null | cut -c1-120 || echo "")
+
+            # AnIncanescence 用仓库自介，其他用 bio（完整，CSS 控制省略）
+            if [ "$REPO" = "AnIncanescence" ]; then
+              DESC="$REPO_DESC"
+            else
+              DESC=$(echo "$PROFILE" | jq -r '.bio // ""' 2>/dev/null || echo "")
+            fi
 
             jq -n \
               --arg repo "$REPO" \
               --arg name "$DISP" \
               --arg user "$USER" \
-              --arg desc "$BIO" \
+              --arg desc "$DESC" \
               '{repo:$repo, name:$name, username:$user, description:$desc}'
           done | jq -s '.' > repos.json
 
