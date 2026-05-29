@@ -72,19 +72,20 @@ img.wl-user-avatar,
 .wl-header {
   display: block !important;
   margin-bottom: 10px !important;
+  padding: 0 !important;
+  border-bottom: none !important;
 }
 .wl-header-item {
   display: flex !important;
   flex-direction: column !important;
   gap: 4px !important;
+  padding: 0 !important;
 }
 .wl-header-item + .wl-header-item { display: none !important; }
-.wl-header-item label {
-  font-size: 12px !important;
-  color: var(--text-dim) !important;
-  font-weight: 500 !important;
-}
-.wl-header-item input {
+.wl-header-item label { display: none !important; }
+
+/* 用正确 class 覆盖 Waline 输入框样式 */
+.wl-input {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
@@ -97,8 +98,12 @@ img.wl-user-avatar,
   outline: none !important;
   transition: box-shadow .15s !important;
 }
-.wl-header-item input:focus {
+.wl-input:focus {
   box-shadow: 0 0 0 2px var(--accent) !important;
+}
+.wl-input::placeholder {
+  color: var(--text-dim) !important;
+  opacity: 1 !important;
 }
 .wl-editor {
   width: 100% !important;
@@ -120,10 +125,14 @@ img.wl-user-avatar,
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
 
+.wl-header-item label { display: none !important; }
+
 /* 暗色模式显式覆盖（防止 Waline 自带样式干扰）*/
-body.dark .wl-panel       { background: #0a0a0a !important; border-color: #2f3336 !important; }
-body.dark .wl-header-item input { background: #111111 !important; color: #e7e9ea !important; }
-body.dark .wl-editor      { background: #111111 !important; color: #e7e9ea !important; }
+body.dark .wl-panel       { background: #161b22 !important; border-color: #30363d !important; }
+body.dark .wl-header-item input { background: #21262d !important; color: #e6edf3 !important; }
+body.dark .wl-header-item input::placeholder { color: #8b949e !important; }
+body.dark .wl-editor      { background: #21262d !important; color: #e6edf3 !important; }
+body.dark .wl-editor::placeholder { color: #8b949e !important; }
 .wl-btn.primary {
   background: var(--accent) !important;
   border: none !important;
