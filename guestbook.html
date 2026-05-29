@@ -55,36 +55,34 @@ img.wl-user-avatar,
 .wl-card { padding-left: 0 !important; }
 .wl-item { padding-left: 0 !important; }
 
-/* 去掉昵称框和评论框之间的虚线 */
-.wl-header { border-bottom: none !important; }
-.wl-editor  { border-top: none !important; }
-
-/* 大外框：灰色细线 */
+/* 大外框 */
 .wl-panel {
   border: 1px solid var(--border) !important;
   border-radius: 14px !important;
   padding: 16px !important;
   background: var(--bg-card) !important;
   box-shadow: none !important;
+  overflow: visible !important;
 }
 
-/* ── 输入区域（只有昵称，单列）── */
+/* ── 输入区域 ── */
 .wl-header {
   display: block !important;
   margin-bottom: 10px !important;
-  padding: 0 !important;
+  padding: 2px 0 0 !important;
   border-bottom: none !important;
+  overflow: visible !important;
 }
 .wl-header-item {
   display: flex !important;
   flex-direction: column !important;
   gap: 4px !important;
   padding: 0 !important;
+  overflow: visible !important;
 }
 .wl-header-item + .wl-header-item { display: none !important; }
 .wl-header-item label { display: none !important; }
 
-/* 用正确 class 覆盖 Waline 输入框样式 */
 .wl-input {
   width: 100% !important;
   max-width: 100% !important;
@@ -101,11 +99,11 @@ img.wl-user-avatar,
 .wl-input:focus {
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
+#waline #wl-nick::placeholder,
 #wl-nick::placeholder,
 .wl-input::placeholder {
   color: var(--text-dim) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: var(--text-dim) !important;
 }
 .wl-editor {
   width: 100% !important;
@@ -117,6 +115,7 @@ img.wl-user-avatar,
   line-height: 1.6 !important;
   padding: 12px 14px !important;
   border: none !important;
+  border-top: none !important;
   border-radius: 10px !important;
   background: var(--bg-hover) !important;
   color: var(--text) !important;
@@ -124,21 +123,21 @@ img.wl-user-avatar,
   resize: vertical !important;
   transition: box-shadow .15s !important;
 }
-
-/* 隐藏 Markdown Guide 跳转按钮 */
-a.wl-action[href*="mastering-markdown"] { display: none !important; }
 .wl-editor:focus {
   box-shadow: 0 0 0 2px var(--accent) !important;
 }
 
-.wl-header-item label { display: none !important; }
+/* 隐藏 Markdown Guide 跳转按钮 */
+a.wl-action[href*="mastering-markdown"] { display: none !important; }
 
-/* 暗色模式显式覆盖（防止 Waline 自带样式干扰）*/
-body.dark .wl-panel       { background: #161b22 !important; border-color: #30363d !important; }
-body.dark .wl-header-item input { background: #21262d !important; color: #e6edf3 !important; }
-body.dark .wl-header-item input::placeholder { color: #8b949e !important; }
-body.dark .wl-editor      { background: #21262d !important; color: #e6edf3 !important; }
-body.dark .wl-editor::placeholder { color: #8b949e !important; }
+/* 暗色模式 — 苹果暗色风格，层次分明 */
+body.dark .wl-panel  { background: #1c1c1e !important; border-color: #3a3a3c !important; }
+body.dark .wl-input  { background: #2c2c2e !important; color: #f2f2f7 !important; }
+body.dark .wl-editor { background: #2c2c2e !important; color: #f2f2f7 !important; }
+body.dark #waline #wl-nick::placeholder,
+body.dark .wl-input::placeholder  { color: #8e8e93 !important; opacity: 1 !important; }
+body.dark .wl-editor::placeholder { color: #8e8e93 !important; opacity: 1 !important; }
+
 .wl-btn.primary {
   background: var(--accent) !important;
   border: none !important;
@@ -148,15 +147,10 @@ body.dark .wl-editor::placeholder { color: #8b949e !important; }
 }
 /* ── 留言列表 ── */
 .wl-meta-head { font-size: 15px !important; font-weight: 700 !important; margin: 24px 0 16px !important; }
-.wl-user { margin-left: 0 !important; }  /* 头像隐藏后内容左对齐 */
 .wl-meta { font-size: 13px !important; }
 .wl-badge { font-size: 11px !important; border-radius: 4px !important; }
 .wl-actions { font-size: 13px !important; }
-.wl-item { padding-left: 0 !important; }
 
-@media (max-width: 480px) {
-  .wl-header { grid-template-columns: 1fr !important; }
-}
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
