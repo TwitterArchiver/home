@@ -47,11 +47,18 @@ body.dark {
 /* ── 隐藏不需要的元素 ── */
 .wl-power,
 a[href*="rss"],
+img.wl-user-avatar,
 .wl-avatar,
-.wl-avatar-img,
-.wl-gravatar,
-.wl-item > .wl-avatar,
-.wl-card .wl-avatar { display: none !important; }
+.wl-user { display: none !important; }
+
+/* 头像隐藏后，留言内容左对齐，无缩进 */
+.wl-card { padding-left: 0 !important; }
+.wl-item { padding-left: 0 !important; }
+
+/* 去掉昵称框和评论框之间的虚线 */
+.wl-header { border-bottom: none !important; }
+.wl-editor  { border-top: none !important; }
+.wl-panel   { border: none !important; box-shadow: none !important; }
 
 /* ── 输入区域（只有昵称，单列）── */
 .wl-header {
