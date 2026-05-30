@@ -6,17 +6,18 @@ on:
     - cron: '0 4 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-index:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
-      GH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - name: 检出 home 仓库
         uses: actions/checkout@v6
-        with:
-          token: ${{ secrets.DISPATCH_TOKEN }}
 
       - name: 汇总各仓库主推文，生成 search-index.json
         run: |
