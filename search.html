@@ -117,25 +117,23 @@ a { color: var(--accent); text-decoration: none; }
   background: var(--bg-hover); color: var(--text); cursor: pointer; font-size: 15px;
   display: flex; align-items: center; justify-content: center;
 }
-.cal-cur {
-  padding: 10px 16px; font-size: 0.85rem; color: var(--accent);
-  background: var(--bg-hover); border-bottom: 1px solid var(--border);
-}
+.cal-cur { display: none; }
 .cal-section-label {
-  padding: 12px 16px 6px; font-size: 0.75rem; font-weight: 700;
-  color: var(--text-dim); letter-spacing: .04em;
+  padding: 14px 16px 8px; font-size: 0.9rem; font-weight: 700;
+  color: var(--text); letter-spacing: .02em;
 }
 .cal-scope {
-  display: flex; flex-wrap: wrap; gap: 7px; padding: 0 16px 10px;
-  max-height: 130px; overflow-y: auto;
+  display: flex; flex-wrap: wrap; gap: 7px; padding: 0 16px 12px;
+  max-height: 140px; overflow-y: auto; overflow-x: hidden;
 }
 .cal-chip {
-  padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border);
+  padding: 6px 12px; border-radius: 10px; border: 1px solid var(--border);
   background: transparent; color: var(--text); cursor: pointer;
-  font-size: 0.85rem; white-space: nowrap;
+  font-size: 0.88rem; white-space: nowrap;
+  max-width: 100%; overflow: hidden; text-overflow: ellipsis;
 }
 .cal-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-.cal-tree { flex: 1; overflow-y: auto; padding: 0 8px 24px; }
+.cal-tree { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 0 8px 24px; }
 .cal-year {
   width: 100%; text-align: left; padding: 10px 12px; border: none;
   background: transparent; color: var(--text); cursor: pointer;
@@ -185,20 +183,21 @@ a { color: var(--accent); text-decoration: none; }
   .cal-mask { display: none !important; }
   .layout {
     display: flex; align-items: flex-start; justify-content: center;
-    gap: 24px; max-width: 1200px; margin: 0 auto; padding: 22px 16px 0;
+    gap: 20px; max-width: 1200px; margin: 0 auto; padding: 22px 16px 0;
+    box-sizing: border-box;
   }
   .col-left {
     display: flex; flex-direction: column;
-    width: 230px; flex-shrink: 0; position: sticky; top: 22px;
+    width: 220px; flex-shrink: 0; position: sticky; top: 22px;
   }
   .timeline {
-    width: 600px; max-width: 600px; flex-shrink: 0; margin: 0;
+    flex: 1 1 600px; max-width: 600px; min-width: 0; margin: 0;
     border-left: 1px solid var(--border); border-right: 1px solid var(--border);
     min-height: 100vh;
   }
   .cal-panel {
     position: sticky; top: 22px; transform: none !important;
-    width: 330px; flex-shrink: 0; height: auto;
+    width: 318px; flex-shrink: 0; height: auto;
     max-height: calc(100vh - 44px);
     border: 1px solid var(--border); border-radius: 16px;
     box-shadow: none; background: var(--bg); overflow: hidden;
@@ -207,28 +206,27 @@ a { color: var(--accent); text-decoration: none; }
   .cal-panel .cal-head { display: none; }
   .side-search {
     display: flex; align-items: center; gap: 8px; position: relative;
-    margin: 14px 14px 4px; padding: 10px 14px;
-    background: var(--bg-hover); border-radius: 999px;
+    margin: 14px 14px 6px; padding: 8px 13px;
+    background: var(--bg-hover); border-radius: 12px;
   }
-  .side-search .search-icon { width: 18px; height: 18px; color: var(--text-dim); flex-shrink: 0; }
-  .side-search .search-input { flex: 1; border: none; background: transparent; color: var(--text); font-size: 0.98rem; outline: none; min-width: 0; }
+  .side-search .search-icon { width: 17px; height: 17px; color: var(--text-dim); flex-shrink: 0; }
+  .side-search .search-input { flex: 1; border: none; background: transparent; color: var(--text); font-size: 0.95rem; outline: none; min-width: 0; }
   .side-search .search-clear { display: none; border: none; background: transparent; color: var(--text-dim); cursor: pointer; font-size: 14px; }
   .side-search .search-clear.show { display: block; }
-  /* 顶栏那些"放大":电脑端中栏卡片字号加大 */
+  /* 中栏卡片放大 */
   .tl-card { padding: 18px 20px; }
   .tl-text { font-size: 1.06rem; line-height: 1.6; }
   .tl-name { font-size: 1.04rem; }
   .tl-handle, .tl-time { font-size: 0.9rem; }
   .tl-avatar { width: 46px; height: 46px; }
   .tl-replies-toggle { font-size: 0.95rem; }
-  /* 右栏放大 */
-  .cal-cur { font-size: 0.95rem; padding: 12px 18px; }
-  .cal-section-label { font-size: 0.85rem; padding: 16px 18px 8px; }
-  .cal-scope { padding: 0 18px 12px; max-height: 170px; }
-  .cal-chip { font-size: 0.95rem; padding: 7px 14px; }
+  /* 右栏字号 */
+  .cal-section-label { font-size: 0.95rem; padding: 16px 18px 8px; }
+  .cal-scope { padding: 0 18px 12px; max-height: 168px; }
+  .cal-chip { font-size: 0.92rem; padding: 7px 13px; }
   .cal-tree { padding: 0 10px 22px; }
-  .cal-year { font-size: 1.05rem; padding: 12px 14px; }
-  .cal-month { font-size: 1rem; padding: 10px 14px; }
+  .cal-year { font-size: 1.04rem; padding: 11px 14px; }
+  .cal-month { font-size: 0.98rem; padding: 10px 14px; }
   .cal-year .cal-y-count, .cal-month .cal-m-count { font-size: 0.85rem; }
 }
 
@@ -253,7 +251,8 @@ a { color: var(--accent); text-decoration: none; }
 }
 .tl-reply-av-col { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
 .tl-reply-av { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: var(--bg-hover); }
-.tl-reply-thread-line { width: 2px; flex: 1; min-height: 6px; margin-top: 4px; background: var(--border); border-radius: 2px; }
+.tl-reply-thread-line { width: 2px; flex: 1; min-height: 6px; margin-top: 4px; background: #3d4348; border-radius: 2px; }
+body.light .tl-reply-thread-line { background: #c2cad0; }
 .tl-reply-body { flex: 1; min-width: 0; padding-bottom: 2px; }
 .tl-reply-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 3px; }
 .tl-reply-name { font-weight: 700; font-size: 0.92rem; color: var(--text); }
@@ -718,7 +717,7 @@ function renderCalScope(){
 function renderCalTree(){
   const tree = buildDateTree();
   const years = Object.keys(tree).map(Number).sort((a,b)=>b-a);
-  let html = `<button class="cal-month ${filterYM===null?'active':''}" data-ym="all" style="font-weight:700;color:var(--text)">全部时间</button>`;
+  let html = `<button class="cal-month ${filterYM===null?'active':''}" data-ym="all">全部时间</button>`;
   for (const y of years) {
     const months = Object.keys(tree[y]).map(Number).sort((a,b)=>b-a);
     const yc = months.reduce((s,m)=>s+tree[y][m], 0);
