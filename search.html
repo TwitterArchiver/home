@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<title>全站时间线 · TwitterArchiver</title>
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<style>
+:root {
+  --bg:           #000000;
+  --bg-panel:     #000000;
+  --bg-search:    #202327;
+  --bg-hover:     #080808;
+  --bg-active:    #16181c;
+  --border:       #2f3336;
+  --text:         #e7e9ea;
+  --text-dim:     #71767b;
+  --text-muted:   #3e4144;
+  --accent:       #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --scrollbar-thumb: #2f3336;
+}
+body.light {
+  --bg:           #ffffff;
+  --bg-panel:     #f7f9f9;
+  --bg-search:    #eff3f4;
+  --bg-hover:     #f7f9f9;
+  --bg-active:    #e7e7e7;
+  --border:       #eff3f4;
+  --text:         #0f1419;
+  --text-dim:     #536471;
+  --text-muted:   #b0b8c1;
+  --accent:       #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --scrollbar-thumb: #cfd9de;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 15px; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh; transition: background .2s, color .2s; overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; }
+
+/* ── 顶栏 ── */
+.top {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.top-inner {
+  max-width: 640px; margin: 0 auto; padding: 10px 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.top-title {
+  font-size: 1.15rem; font-weight: 800; white-space: nowrap;
+  display: flex; align-items: center; gap: 7px;
+}
+.top-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.search-wrap { flex: 1; position: relative; }
+.search-input {
+  width: 100%; height: 40px; padding: 0 38px 0 38px;
+  background: var(--bg-search); border: 1px solid transparent; border-radius: 999px;
+  color: var(--text); font-size: 0.95rem; outline: none;
+  transition: border-color .15s, background .15s;
+}
+.search-input:focus { border-color: var(--accent); background: var(--bg); }
+.search-input::placeholder { color: var(--text-dim); }
+.search-icon {
+  position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+  width: 16px; height: 16px; color: var(--text-dim); pointer-events: none;
+}
+.search-clear {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 22px; height: 22px; border: none; border-radius: 50%;
+  background: var(--text-dim); color: var(--bg); cursor: pointer;
+  display: none; align-items: center; justify-content: center; font-size: 13px;
+}
+.search-clear.show { display: flex; }
+.theme-btn {
+  width: 38px; height: 38px; flex-shrink: 0; border: none; border-radius: 50%;
+  background: var(--bg-hover); cursor: pointer; font-size: 17px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ── 时间线 ── */
+.timeline { max-width: 640px; margin: 0 auto; padding-bottom: 60px; }
+.tl-status { text-align: center; color: var(--text-dim); padding: 24px; font-size: 0.9rem; }
+
+.tl-card {
+  border-bottom: 1px solid var(--border);
+  padding: 14px 16px; cursor: pointer;
+  transition: background .12s;
+}
+.tl-card:hover { background: var(--bg-hover); }
+.tl-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.tl-avatar {
+  width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
+  background: var(--bg-hover); flex-shrink: 0;
+}
+.tl-author { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.tl-name { font-weight: 700; font-size: 0.98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-handle { color: var(--text-dim); font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-time { color: var(--text-dim); font-size: 0.82rem; white-space: nowrap; align-self: flex-start; }
+.tl-text { font-size: 1rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+.tl-text mark { background: color-mix(in srgb, var(--accent) 30%, transparent); color: inherit; border-radius: 3px; }
+
+/* 图片网格 */
+.tl-images { display: grid; gap: 3px; margin-top: 10px; border-radius: 14px; overflow: hidden; }
+.tl-images img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  background: var(--bg-hover); cursor: zoom-in; min-height: 0;
+}
+.tl-images.n1 { grid-template-columns: 1fr; }
+.tl-images.n1 img { max-height: 510px; object-fit: cover; }
+.tl-images.n2 { grid-template-columns: 1fr 1fr; aspect-ratio: 16/9; }
+.tl-images.n3 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; aspect-ratio: 16/10; }
+.tl-images.n3 img:first-child { grid-row: 1 / 3; }
+.tl-images.n4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; aspect-ratio: 16/10; }
+.tl-images.n5plus { grid-template-columns: 1fr 1fr 1fr; grid-auto-rows: 1fr; }
+
+/* ── 图片放大 lightbox ── */
+.lightbox {
+  position: fixed; inset: 0; background: rgba(0,0,0,.72); backdrop-filter: blur(8px);
+  display: none; align-items: center; justify-content: center; z-index: 1200;
+  padding: 24px; cursor: zoom-out;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; }
+.lightbox-close {
+  position: fixed; top: 18px; right: 18px; width: 40px; height: 40px;
+  background: rgba(255,255,255,.12); border: none; border-radius: 50%;
+  color: #fff; font-size: 18px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ── 详情大弹窗（内嵌阅读器）── */
+.detail {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.detail.open { display: flex; }
+.detail-box {
+  width: 100%; max-width: 720px; height: 90vh;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden;
+  display: flex; flex-direction: column;
+  box-shadow: 0 16px 50px rgba(0,0,0,.35);
+  animation: detailIn .22s cubic-bezier(.16,1,.3,1);
+}
+@keyframes detailIn { from { opacity:0; transform: translateY(16px) scale(.98); } to { opacity:1; transform:none; } }
+.detail-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+}
+.detail-bar-title { font-size: 0.9rem; font-weight: 700; color: var(--text-dim); }
+.detail-close {
+  width: 32px; height: 32px; border: none; border-radius: 50%;
+  background: var(--bg-hover); color: var(--text); cursor: pointer; font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+}
+.detail-frame { flex: 1; width: 100%; border: none; display: block; }
+
+@media (max-width: 600px) {
+  .detail { padding: 0; }
+  .detail-box { max-width: 100%; height: 100%; border-radius: 0; border: none; }
+}
+</style>
+</head>
+<body class="light">
+  <div class="top">
+    <div class="top-inner">
+      <div class="top-title"><span class="dot"></span>时间线</div>
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="search-input" id="search" type="text" placeholder="搜索全站推文 / 推文ID / 定位码" autocomplete="off">
+        <button class="search-clear" id="clear" aria-label="清除">✕</button>
+      </div>
+      <button class="theme-btn" id="theme" aria-label="切换主题">☀️</button>
+    </div>
+  </div>
+
+  <main class="timeline" id="timeline"></main>
+  <div class="tl-status" id="status">加载中…</div>
+
+  <div class="lightbox" id="lightbox"></div>
+  <div class="detail" id="detail"></div>
+
+<script>
+const ORG_BASE = 'https://twitterarchiver.github.io';  // 存档仓库都在这（自定义域名只绑本页）
+const PAGE = 20;
+
+let DATA = { accts: [], posts: [] };
+let view = [];        // 当前展示的 posts（全部 或 搜索结果）
+let rendered = 0;     // 已渲染条数
+let curKw = '';       // 当前搜索词（用于高亮）
+
+const $ = id => document.getElementById(id);
+
+/* ── 工具 ── */
+function esc(s){ return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function escRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+
+function fmtTime(ts){
+  const d = new Date(ts);
+  if (isNaN(d)) return '';
+  const now = new Date();
+  const diff = (now - d) / 1000;
+  if (diff < 60) return '刚刚';
+  if (diff < 3600) return Math.floor(diff/60) + '分钟前';
+  if (diff < 86400) return Math.floor(diff/3600) + '小时前';
+  if (diff < 86400*7) return Math.floor(diff/86400) + '天前';
+  const pad = n => String(n).padStart(2,'0');
+  const y = d.getFullYear(), mo = pad(d.getMonth()+1), da = pad(d.getDate());
+  return (y === now.getFullYear()) ? `${mo}-${da}` : `${y}-${mo}-${da}`;
+}
+
+// 清掉正文末尾的 t.co 图片短链（图片单独用网格展示，短链冗余）
+function cleanText(t){
+  return (t||'').replace(/\s*https?:\/\/t\.co\/\S+\s*$/i, '').trim();
+}
+
+function acct(p){ return DATA.accts[p[0]] || {}; }
+function imgUrl(p, name){ const a = acct(p); return `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/image/${name}`; }
+function avatarUrl(p){ const a = acct(p); return a.av ? `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/avatar/${a.av}` : ''; }
+function readerUrl(p){ const a = acct(p); const tid = p[2] || ''; return `${ORG_BASE}/${a.r}/?t=${tid.slice(-8)}`; }
+
+function gridClass(n){ return n===1?'n1':n===2?'n2':n===3?'n3':n===4?'n4':'n5plus'; }
+
+/* ── 卡片渲染 ── */
+function cardHtml(p, idx){
+  const a = acct(p);
+  const text = cleanText(p[1]);
+  const imgs = p[4] || [];
+  let textHtml = esc(text);
+  if (curKw) textHtml = textHtml.replace(new RegExp(escRe(curKw),'gi'), m=>`<mark>${m}</mark>`);
+  textHtml = textHtml.replace(/\n/g, '<br>');
+
+  const av = avatarUrl(p);
+  const avHtml = av ? `<img class="tl-avatar" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-avatar"></div>`;
+
+  let imgsHtml = '';
+  if (imgs.length) {
+    imgsHtml = `<div class="tl-images ${gridClass(imgs.length)}">` +
+      imgs.map(name => `<img src="${esc(imgUrl(p,name))}" loading="lazy" data-full="${esc(imgUrl(p,name))}" onerror="this.remove()">`).join('') +
+      `</div>`;
+  }
+
+  return `<article class="tl-card" data-idx="${idx}">
+    <div class="tl-head">
+      ${avHtml}
+      <div class="tl-author">
+        <span class="tl-name">${esc(a.n || a.a || '')}</span>
+        <span class="tl-handle">${esc(a.u || '')}</span>
+      </div>
+      <span class="tl-time">${fmtTime(p[3])}</span>
+    </div>
+    ${textHtml ? `<div class="tl-text">${textHtml}</div>` : ''}
+    ${imgsHtml}
+  </article>`;
+}
+
+/* ── 无限滚动 ── */
+function renderMore(){
+  const tl = $('timeline');
+  const slice = view.slice(rendered, rendered + PAGE);
+  if (!slice.length) return;
+  const html = slice.map((p,i) => cardHtml(p, rendered + i)).join('');
+  tl.insertAdjacentHTML('beforeend', html);
+  rendered += slice.length;
+  updateStatus();
+}
+function resetTimeline(){
+  $('timeline').innerHTML = '';
+  rendered = 0;
+  renderMore();
+}
+function updateStatus(){
+  const s = $('status');
+  if (!view.length) { s.textContent = curKw ? `没有匹配「${curKw}」的推文` : '暂无内容'; return; }
+  if (rendered >= view.length) s.textContent = `— 已到底 · 共 ${view.length} 条 —`;
+  else s.textContent = '下拉加载更多…';
+}
+
+function onScroll(){
+  if (rendered >= view.length) return;
+  const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 800;
+  if (nearBottom) renderMore();
+}
+
+/* ── 搜索 ── */
+function doSearch(kw){
+  curKw = kw.trim();
+  if (!curKw) { view = DATA.posts; resetTimeline(); return; }
+
+  const trimmed = curKw;
+  const tParam = trimmed.match(/[?&]?t=(\d+)/);     // 定位码 ?t=后几位 / 完整定位链接
+  const linkMatch = trimmed.match(/status\/(\d+)/); // 推特链接
+  const pureId = /^\d{6,}$/.test(trimmed);          // 长数字 → 当 tweetID（完整或后缀）
+
+  if (tParam) {
+    const suf = tParam[1];
+    view = DATA.posts.filter(p => (p[2]||'').endsWith(suf));
+  } else if (linkMatch) {
+    const id = linkMatch[1];
+    view = DATA.posts.filter(p => p[2] === id);
+  } else if (pureId) {
+    // 完整 ID 精确，或作为后缀/包含匹配
+    view = DATA.posts.filter(p => p[2] === trimmed || (p[2]||'').includes(trimmed));
+    if (!view.length) { const kl = trimmed.toLowerCase(); view = DATA.posts.filter(p => (p[1]||'').toLowerCase().includes(kl)); }
+  } else {
+    const kl = trimmed.toLowerCase();
+    view = DATA.posts.filter(p => (p[1]||'').toLowerCase().includes(kl));
+  }
+  resetTimeline();
+}
+
+/* ── 图片放大 ── */
+function openLightbox(src){
+  const box = $('lightbox');
+  box.innerHTML = `<img src="${esc(src)}" alt=""><button class="lightbox-close" aria-label="关闭">✕</button>`;
+  box.classList.add('open');
+  history.pushState({ ov: 'lightbox' }, '');
+}
+function closeLightbox(fromPop){
+  const box = $('lightbox');
+  if (!box.classList.contains('open')) return;
+  box.classList.remove('open');
+  if (!fromPop) history.back();   // 主动关闭时消费掉历史状态
+}
+
+/* ── 详情大弹窗（内嵌阅读器）── */
+function openDetail(idx){
+  const p = view[idx];
+  if (!p) return;
+  const url = readerUrl(p);
+  const a = acct(p);
+  const box = $('detail');
+  box.innerHTML = `
+    <div class="detail-box">
+      <div class="detail-bar">
+        <div class="detail-bar-title">${esc(a.n || a.a || '')} 的这条推文</div>
+        <button class="detail-close" onclick="closeDetail()">✕</button>
+      </div>
+      <iframe class="detail-frame" src="${esc(url)}" loading="lazy"></iframe>
+    </div>`;
+  box.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  history.pushState({ ov: 'detail' }, '');
+}
+function closeDetail(fromPop){
+  const box = $('detail');
+  if (!box.classList.contains('open')) return;
+  box.classList.remove('open');
+  box.innerHTML = '';
+  document.body.style.overflow = '';
+  if (!fromPop) history.back();   // 主动关闭时消费掉历史状态
+}
+
+/* ── 事件：点击检测（短按进详情；长按/划选/点图 不触发）── */
+let pd = null;
+function setupClicks(){
+  const tl = $('timeline');
+  tl.addEventListener('pointerdown', e => {
+    pd = { t: Date.now(), x: e.clientX, y: e.clientY };
+  });
+  tl.addEventListener('pointerup', e => {
+    const start = pd; pd = null;
+    if (!start) return;
+    // 点图片 → 放大，不进详情
+    const img = e.target.closest('.tl-images img');
+    if (img) { const full = img.getAttribute('data-full'); if (full) openLightbox(full); return; }
+    // 短按 + 几乎无位移 + 没有选中文字 → 进详情
+    const dt = Date.now() - start.t;
+    const dx = Math.abs(e.clientX - start.x), dy = Math.abs(e.clientY - start.y);
+    const sel = window.getSelection && window.getSelection().toString();
+    if (dt < 500 && dx < 10 && dy < 10 && !sel) {
+      const card = e.target.closest('.tl-card');
+      if (card) openDetail(parseInt(card.dataset.idx, 10));
+    }
+  });
+
+  $('lightbox').addEventListener('click', () => closeLightbox());
+  $('detail').addEventListener('click', e => { if (e.target === $('detail')) closeDetail(); });
+
+  // 返回键（移动端/浏览器）：优先关闭打开的弹窗，而不是离开本页
+  window.addEventListener('popstate', () => {
+    if ($('lightbox').classList.contains('open')) { closeLightbox(true); return; }
+    if ($('detail').classList.contains('open'))   { closeDetail(true);   return; }
+  });
+}
+
+/* ── 主题 ── */
+function applyTheme(light){
+  document.body.classList.toggle('light', light);
+  $('theme').textContent = light ? '☀️' : '🌙';
+  localStorage.setItem('tl-theme', light ? 'light' : 'dark');
+}
+
+/* ── 搜索框 ── */
+function setupSearch(){
+  const inp = $('search'), clr = $('clear');
+  let timer;
+  inp.addEventListener('input', () => {
+    const kw = inp.value;
+    clr.classList.toggle('show', kw.length > 0);
+    clearTimeout(timer);
+    timer = setTimeout(() => { doSearch(kw); window.scrollTo(0,0); }, 180);
+  });
+  clr.addEventListener('click', () => {
+    inp.value = ''; clr.classList.remove('show');
+    doSearch(''); window.scrollTo(0,0); inp.focus();
+  });
+}
+
+/* ── 启动 ── */
+async function init(){
+  const th = localStorage.getItem('tl-theme');
+  applyTheme(th !== 'dark');  // 默认亮色
+
+  $('theme').addEventListener('click', () => applyTheme(!document.body.classList.contains('light')));
+  setupSearch();
+  setupClicks();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  try {
+    const res = await fetch('search-index.json', { cache: 'no-cache' });
+    DATA = await res.json();
+  } catch(e) {
+    $('status').textContent = '索引加载失败，请稍后重试';
+    return;
+  }
+  view = DATA.posts || [];
+  resetTimeline();
+}
+init();
+</script>
+</body>
+</html>
