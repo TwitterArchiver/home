@@ -53,6 +53,12 @@ jobs:
                           data = json.load(r)
                   except Exception as e:
                       print(f"  ⚠️ {repo}/{acct} 读取失败: {e}"); continue
+                  # 先统计每个对话的回复数（该账号自己的回复）
+                  reply_cnt = {}
+                  for p in data:
+                      if p.get("is_reply") and not p.get("is_virtual"):
+                          cid = p.get("conversation_id")
+                          if cid: reply_cnt[cid] = reply_cnt.get(cid, 0) + 1
                   cnt = 0
                   for p in data:
                       if p.get("is_reply") or p.get("is_virtual"): continue
@@ -66,12 +72,14 @@ jobs:
                               "av": os.path.basename(p.get("author_avatar","") or ""),
                           })
                       ai = acct_map[key]
+                      tid = p.get("tweet_id","")
                       posts.append([
                           ai,
                           p.get("text","") or p.get("body_text",""),
-                          p.get("tweet_id",""),
+                          tid,
                           p.get("timestamp",""),
                           [os.path.basename(x) for x in (p.get("wanted_images") or [])],
+                          reply_cnt.get(tid, 0),
                       ])
                       cnt += 1
                   print(f"  ✓ {repo}/{acct}: 主推文 {cnt} 条")
