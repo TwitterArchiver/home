@@ -193,6 +193,8 @@ a { color: var(--accent); text-decoration: none; }
 .tl-reply-time { font-size: 0.8rem; color: var(--text-dim); }
 .tl-reply-text { font-size: 0.95rem; line-height: 1.45; white-space: pre-wrap; word-break: break-word; }
 .tl-reply .tl-images { margin-top: 8px; }
+.tl-reply-virtual { opacity: .9; }
+.tl-reply-virtual .tl-reply-text { color: var(--text-dim); }
 .tl-avatar {
   width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
   background: var(--bg-hover); flex-shrink: 0;
@@ -444,28 +446,44 @@ async function loadAcctIndex(repo, account){
 function dImg(repo, account, rel){ const n=(rel||'').split('/').pop(); return `${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/image/${n}`; }
 function dAva(repo, account, rel){ const n=(rel||'').split('/').pop(); return n?`${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/avatar/${n}`:''; }
 
-function replyHtml(post, repo, account, acctAv){
-  const text = cleanText(post.text || post.body_text || '');
+/* ── 渲染单条回复卡片（照阅读器：本人回复 + 被回复的外人虚拟条目）── */
+function renderReplyCard(rep, assetBase, ownerUsername){
+  const name = esc(rep.author_name || '');
+  const username = esc(rep.author_username || '');
+  const text = cleanText(rep.body_text || rep.text || '');
   const textHtml = esc(text).replace(/\n/g,'<br>');
-  const imgs = (post.wanted_images || []).map(x => x.split('/').pop());
-  // 回复链都是账号本人，头像统一用账号头像（本地已下载的）
-  const av = acctAv ? `${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/avatar/${acctAv}` : '';
-  const avHtml = av ? `<img class="tl-reply-av" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-reply-av"></div>`;
+  const repUname = (rep.author_username || '').replace(/^@/,'').toLowerCase();
+  const isOwner = ownerUsername && repUname === ownerUsername;
+
+  // 头像：本地 ../avatar/ 拼 assetBase；http 原样（可能失效，onerror 兜底）
+  let av = rep.author_avatar || '', avUrl = '';
+  if (av.startsWith('../')) avUrl = assetBase + av.slice(3);
+  else if (av.startsWith('http')) avUrl = av;
+  else if (av) avUrl = assetBase + 'avatar/' + av.split('/').pop();
+  const avHtml = avUrl
+    ? `<img class="tl-reply-av" src="${esc(avUrl)}" loading="lazy" onerror="this.style.visibility='hidden'">`
+    : `<div class="tl-reply-av"></div>`;
+
+  // 图片：仅当 media_keys 有值（=本条自己的媒体；空则图属于被引用推文）
+  const hasOwnMedia = rep.media_keys && rep.media_keys.length > 0;
+  const imgs = (hasOwnMedia && rep.wanted_images ? rep.wanted_images : []).map(x => x.split('/').pop());
   let imgsHtml = '';
   if (imgs.length) {
     imgsHtml = `<div class="tl-images ${gridClass(imgs.length)}">` +
-      imgs.map(n => { const u = dImg(repo,account,n); return `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`; }).join('') +
+      imgs.map(n => { const u = assetBase + 'image/' + n; return `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`; }).join('') +
       `</div>`;
   }
-  const isQuote = post.reply_type === 'quoted' || post.has_quoted;
-  const badge = isQuote ? `<span class="tl-reply-badge">引用</span>` : '';
-  return `<div class="tl-reply">${avHtml}
+
+  // 非本人（被回复/引用的对象）标“引用”，且显示其用户名；本人回复不重复显示用户名
+  const badge = !isOwner ? `<span class="tl-reply-badge">引用</span>` : '';
+  const unameHtml = isOwner ? '' : `<span class="tl-reply-handle">${username}</span>`;
+  return `<div class="tl-reply${rep.is_virtual?' tl-reply-virtual':''}">${avHtml}
     <div class="tl-reply-body">
       <div class="tl-reply-meta">
-        <span class="tl-reply-name">${esc(post.author_name||account)}</span>
-        <span class="tl-reply-handle">${esc(post.author_username||'')}</span>
+        <span class="tl-reply-name">${name}</span>
+        ${unameHtml}
         ${badge}
-        <span class="tl-reply-time">${fmtTime(post.timestamp)}</span>
+        <span class="tl-reply-time">${fmtTime(rep.timestamp)}</span>
       </div>
       ${textHtml?`<div class="tl-reply-text">${textHtml}</div>`:''}
       ${imgsHtml}
@@ -500,11 +518,29 @@ async function toggleReplies(btn){
 
   try {
     const data = await loadAcctIndex(a.r, a.a);
-    const replies = data
-      .filter(x => x.is_reply && !x.is_virtual && x.conversation_id === tid)
-      .sort((m,n) => (Date.parse(m.timestamp)||0) - (Date.parse(n.timestamp)||0));
-    box.innerHTML = replies.length
-      ? replies.map(r => replyHtml(r, a.r, a.a, a.av)).join('')
+    // idIndex 含所有条目（含虚拟外人条目）；replyMap 只收真实的本人回复（按 conversation_id）
+    const idIndex = {}, replyMap = {};
+    for (const it of data) {
+      if (it.tweet_id) idIndex[it.tweet_id] = it;
+      if (it.is_virtual) continue;
+      if (it.is_reply && it.conversation_id) (replyMap[it.conversation_id] = replyMap[it.conversation_id] || []).push(it);
+    }
+    const ownerReplies = (replyMap[tid] || []).slice()
+      .sort((x,y) => (x.timestamp||'').localeCompare(y.timestamp||''));
+    // 组装链：每条本人回复前，插入它 reply_to_id 指向的被回复条目（含外人虚拟条目）
+    const chainItems = [], seen = new Set([tid]);
+    for (const rep of ownerReplies) {
+      const pid = rep.reply_to_id;
+      if (pid && pid !== tid && !seen.has(pid)) {
+        const par = idIndex[pid];
+        if (par) { chainItems.push(par); seen.add(pid); }
+      }
+      if (!seen.has(rep.tweet_id)) { chainItems.push(rep); seen.add(rep.tweet_id); }
+    }
+    const assetBase = `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/`;
+    const ownerUsername = (a.u || '').replace(/^@/,'').toLowerCase();
+    box.innerHTML = chainItems.length
+      ? chainItems.map(rep => renderReplyCard(rep, assetBase, ownerUsername)).join('')
       : `<div class="tl-status" style="padding:10px">没有回复</div>`;
   } catch(e) {
     box.innerHTML = `<div class="tl-status" style="padding:10px">回复加载失败</div>`;
