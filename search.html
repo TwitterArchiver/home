@@ -93,11 +93,29 @@ a { color: var(--accent); text-decoration: none; }
 
 .tl-card {
   border-bottom: 1px solid var(--border);
-  padding: 14px 16px; cursor: pointer;
-  transition: background .12s;
+  padding: 14px 16px;
 }
-.tl-card:hover { background: var(--bg-hover); }
 .tl-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.tl-replies-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px; padding: 5px 12px;
+  background: transparent; border: none; cursor: pointer;
+  color: var(--accent); font-size: 0.9rem; font-weight: 600;
+  border-radius: 999px;
+}
+.tl-replies-toggle:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.tl-replies-toggle svg { width: 15px; height: 15px; transition: transform .2s; }
+.tl-replies-toggle.open svg { transform: rotate(180deg); }
+.tl-replies { margin-top: 6px; }
+.tl-reply {
+  display: flex; gap: 10px; padding: 10px 0 10px 8px;
+  border-left: 2px solid var(--border); margin-left: 6px; margin-top: 4px;
+}
+.tl-reply-av { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; background: var(--bg-hover); flex-shrink: 0; }
+.tl-reply-body { flex: 1; min-width: 0; }
+.tl-reply-meta { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 2px; }
+.tl-reply-text { font-size: 0.95rem; line-height: 1.45; white-space: pre-wrap; word-break: break-word; }
+.tl-reply .tl-images { margin-top: 8px; }
 .tl-avatar {
   width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
   background: var(--bg-hover); flex-shrink: 0;
@@ -138,43 +156,8 @@ a { color: var(--accent); text-decoration: none; }
   display: flex; align-items: center; justify-content: center;
 }
 
-/* ── 详情大弹窗（内嵌阅读器）── */
-.detail {
-  position: fixed; inset: 0; z-index: 1000;
-  background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
-  display: none; align-items: center; justify-content: center; padding: 24px;
-}
-.detail.open { display: flex; }
-.detail-box {
-  width: 100%; max-width: 720px; height: 90vh;
-  background: var(--bg); border: 1px solid var(--border);
-  border-radius: 16px; overflow: hidden;
-  display: flex; flex-direction: column;
-  box-shadow: 0 16px 50px rgba(0,0,0,.35);
-  animation: detailIn .22s cubic-bezier(.16,1,.3,1);
-}
-@keyframes detailIn { from { opacity:0; transform: translateY(16px) scale(.98); } to { opacity:1; transform:none; } }
-.detail-bar {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 14px; border-bottom: 1px solid var(--border); flex-shrink: 0;
-}
-.detail-bar-title { font-size: 0.9rem; font-weight: 700; color: var(--text-dim); }
-.detail-close {
-  width: 32px; height: 32px; border: none; border-radius: 50%;
-  background: var(--bg-hover); color: var(--text); cursor: pointer; font-size: 16px;
-  display: flex; align-items: center; justify-content: center;
-}
-.detail-body { flex: 1; width: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; }
-.detail-replies-label {
-  padding: 14px 16px 6px; font-size: .85rem; color: var(--text-dim);
-  font-weight: 700; border-top: 1px solid var(--border);
-}
-.detail-body .tl-card { cursor: default; }
-.detail-body .tl-card:hover { background: transparent; }
-
 @media (max-width: 600px) {
-  .detail { padding: 0; }
-  .detail-box { max-width: 100%; height: 100%; border-radius: 0; border: none; }
+  .top-title { display: none; }
 }
 
 /* 回到顶部 */
@@ -207,7 +190,6 @@ a { color: var(--accent); text-decoration: none; }
   <div class="tl-status" id="status">加载中…</div>
 
   <div class="lightbox" id="lightbox"></div>
-  <div class="detail" id="detail"></div>
   <button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
 
 <script>
@@ -281,6 +263,11 @@ function cardHtml(p, idx){
     </div>
     ${textHtml ? `<div class="tl-text">${textHtml}</div>` : ''}
     ${imgsHtml}
+    ${(p[5] > 0) ? `<button class="tl-replies-toggle" data-idx="${idx}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg>
+        展开回复 <span class="tl-rc">${p[5]}</span>
+      </button>
+      <div class="tl-replies"></div>` : ''}
   </article>`;
 }
 
@@ -353,7 +340,7 @@ function closeLightbox(fromPop){
   if (!fromPop) history.back();   // 主动关闭时消费掉历史状态
 }
 
-/* ── 详情大弹窗：加载该账号 index.json，自己渲染主推文+回复链（不跳转）── */
+/* ── 展开/收起回复（就地加载该账号 json，渲染回复链）── */
 const acctCache = {};   // 缓存账号 index.json
 
 async function loadAcctIndex(repo, account){
@@ -368,108 +355,80 @@ async function loadAcctIndex(repo, account){
 function dImg(repo, account, rel){ const n=(rel||'').split('/').pop(); return `${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/image/${n}`; }
 function dAva(repo, account, rel){ const n=(rel||'').split('/').pop(); return n?`${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/avatar/${n}`:''; }
 
-function detailCard(post, repo, account){
+function replyHtml(post, repo, account){
   const text = cleanText(post.text || post.body_text || '');
   const textHtml = esc(text).replace(/\n/g,'<br>');
   const imgs = (post.wanted_images || []).map(x => x.split('/').pop());
   const av = dAva(repo, account, post.author_avatar);
-  const avHtml = av ? `<img class="tl-avatar" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-avatar"></div>`;
+  const avHtml = av ? `<img class="tl-reply-av" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-reply-av"></div>`;
   let imgsHtml = '';
   if (imgs.length) {
     imgsHtml = `<div class="tl-images ${gridClass(imgs.length)}">` +
       imgs.map(n => { const u = dImg(repo,account,n); return `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`; }).join('') +
       `</div>`;
   }
-  return `<article class="tl-card">
-    <div class="tl-head">${avHtml}
-      <div class="tl-author"><span class="tl-name">${esc(post.author_name||account)}</span><span class="tl-handle">${esc(post.author_username||'')}</span></div>
-      <span class="tl-time">${fmtTime(post.timestamp)}</span>
+  return `<div class="tl-reply">${avHtml}
+    <div class="tl-reply-body">
+      <div class="tl-reply-meta">${esc(post.author_name||account)} · ${fmtTime(post.timestamp)}</div>
+      ${textHtml?`<div class="tl-reply-text">${textHtml}</div>`:''}
+      ${imgsHtml}
     </div>
-    ${textHtml?`<div class="tl-text">${textHtml}</div>`:''}
-    ${imgsHtml}
-  </article>`;
+  </div>`;
 }
 
-async function openDetail(idx){
+function setToggleLabel(btn, open, rc){
+  btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg> ${open?'收起回复':'展开回复'} <span class="tl-rc">${rc}</span>`;
+}
+
+async function toggleReplies(btn){
+  const card = btn.closest('.tl-card');
+  const box = card.querySelector('.tl-replies');
+  const idx = parseInt(btn.dataset.idx, 10);
   const p = view[idx];
   if (!p) return;
-  const a = acct(p);
-  const tid = p[2];
-  const box = $('detail');
-  box.innerHTML = `
-    <div class="detail-box">
-      <div class="detail-bar">
-        <div class="detail-bar-title">${esc(a.n || a.a || '')} 的推文</div>
-        <button class="detail-close" onclick="closeDetail()">✕</button>
-      </div>
-      <div class="detail-body" id="detailBody"><div class="tl-status">加载中…</div></div>
-    </div>`;
-  box.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  history.pushState({ ov: 'detail' }, '');
+  const rc = p[5];
+
+  // 已展开 → 收起
+  if (btn.classList.contains('open')) {
+    btn.classList.remove('open');
+    box.innerHTML = '';
+    setToggleLabel(btn, false, rc);
+    return;
+  }
+
+  const a = acct(p), tid = p[2];
+  btn.classList.add('open');
+  setToggleLabel(btn, true, rc);
+  box.innerHTML = `<div class="tl-status" style="padding:10px">加载回复…</div>`;
 
   try {
     const data = await loadAcctIndex(a.r, a.a);
-    const main = data.find(x => x.tweet_id === tid);
-    // 该账号在此对话下的回复（conversation_id 指向主推文），时间升序
     const replies = data
       .filter(x => x.is_reply && !x.is_virtual && x.conversation_id === tid)
       .sort((m,n) => (Date.parse(m.timestamp)||0) - (Date.parse(n.timestamp)||0));
-    let html = main ? detailCard(main, a.r, a.a) : `<div class="tl-status">未找到该推文</div>`;
-    if (replies.length) {
-      html += `<div class="detail-replies-label">回复 (${replies.length})</div>`;
-      html += replies.map(r => detailCard(r, a.r, a.a)).join('');
-    }
-    const body = $('detailBody');
-    if (box.classList.contains('open') && body) body.innerHTML = html;
+    box.innerHTML = replies.length
+      ? replies.map(r => replyHtml(r, a.r, a.a)).join('')
+      : `<div class="tl-status" style="padding:10px">没有回复</div>`;
   } catch(e) {
-    const body = $('detailBody');
-    if (body) body.innerHTML = `<div class="tl-status">加载失败，请重试</div>`;
+    box.innerHTML = `<div class="tl-status" style="padding:10px">回复加载失败</div>`;
   }
 }
-function closeDetail(fromPop){
-  const box = $('detail');
-  if (!box.classList.contains('open')) return;
-  box.classList.remove('open');
-  box.innerHTML = '';
-  document.body.style.overflow = '';
-  if (!fromPop) history.back();   // 主动关闭时消费掉历史状态
-}
 
-/* ── 事件：点击检测（短按进详情；长按/划选/点图 不触发）── */
-let pd = null;
+/* ── 事件：图片放大 / 展开回复 ── */
 function setupClicks(){
   const tl = $('timeline');
-  tl.addEventListener('pointerdown', e => {
-    pd = { t: Date.now(), x: e.clientX, y: e.clientY };
-  });
-  tl.addEventListener('pointerup', e => {
-    const start = pd; pd = null;
-    if (!start) return;
-    // 点图片 → 放大，不进详情
+  tl.addEventListener('click', e => {
     const img = e.target.closest('.tl-images img');
     if (img) { const full = img.getAttribute('data-full'); if (full) openLightbox(full); return; }
-    // 短按 + 几乎无位移 + 没有选中文字 → 进详情
-    const dt = Date.now() - start.t;
-    const dx = Math.abs(e.clientX - start.x), dy = Math.abs(e.clientY - start.y);
-    const sel = window.getSelection && window.getSelection().toString();
-    if (dt < 500 && dx < 10 && dy < 10 && !sel) {
-      const card = e.target.closest('.tl-card');
-      if (card) openDetail(parseInt(card.dataset.idx, 10));
-    }
+    const tog = e.target.closest('.tl-replies-toggle');
+    if (tog) { toggleReplies(tog); return; }
   });
 
   $('lightbox').addEventListener('click', () => closeLightbox());
-  $('detail').addEventListener('click', e => {
-    const img = e.target.closest('.detail-body .tl-images img');
-    if (img) { const f = img.getAttribute('data-full'); if (f) openLightbox(f); return; }
-    if (e.target === $('detail')) closeDetail();
-  });
 
-  // 返回键（移动端/浏览器）：优先关闭打开的弹窗，而不是离开本页
+  // 返回键：优先关闭打开的图片放大
   window.addEventListener('popstate', () => {
     if ($('lightbox').classList.contains('open')) { closeLightbox(true); return; }
-    if ($('detail').classList.contains('open'))   { closeDetail(true);   return; }
   });
 }
 
