@@ -221,6 +221,15 @@ a { color: var(--accent); text-decoration: none; }
   .tl-handle, .tl-time { font-size: 0.9rem; }
   .tl-avatar { width: 46px; height: 46px; }
   .tl-replies-toggle { font-size: 0.95rem; }
+  /* 右栏放大 */
+  .cal-cur { font-size: 0.95rem; padding: 12px 18px; }
+  .cal-section-label { font-size: 0.85rem; padding: 16px 18px 8px; }
+  .cal-scope { padding: 0 18px 12px; max-height: 170px; }
+  .cal-chip { font-size: 0.95rem; padding: 7px 14px; }
+  .cal-tree { padding: 0 10px 22px; }
+  .cal-year { font-size: 1.05rem; padding: 12px 14px; }
+  .cal-month { font-size: 1rem; padding: 10px 14px; }
+  .cal-year .cal-y-count, .cal-month .cal-m-count { font-size: 0.85rem; }
 }
 
 .tl-card {
@@ -240,11 +249,12 @@ a { color: var(--accent); text-decoration: none; }
 .tl-replies-toggle.open svg { transform: rotate(180deg); }
 .tl-replies { margin-top: 6px; }
 .tl-reply {
-  display: flex; gap: 10px; padding: 10px 0 10px 8px;
-  border-left: 2px solid var(--border); margin-left: 6px; margin-top: 4px;
+  display: flex; gap: 10px; padding: 8px 0;
 }
-.tl-reply-av { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; background: var(--bg-hover); flex-shrink: 0; }
-.tl-reply-body { flex: 1; min-width: 0; }
+.tl-reply-av-col { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.tl-reply-av { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: var(--bg-hover); }
+.tl-reply-thread-line { width: 2px; flex: 1; min-height: 6px; margin-top: 4px; background: var(--border); border-radius: 2px; }
+.tl-reply-body { flex: 1; min-width: 0; padding-bottom: 2px; }
 .tl-reply-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 3px; }
 .tl-reply-name { font-weight: 700; font-size: 0.92rem; color: var(--text); }
 .tl-reply-handle { font-size: 0.82rem; color: var(--text-dim); }
@@ -563,7 +573,11 @@ function renderReplyCard(rep, assetBase, ownerUsername){
   // 非本人（被回复/引用的对象）标“引用”，且显示其用户名；本人回复不重复显示用户名
   const badge = !isOwner ? `<span class="tl-reply-badge">引用</span>` : '';
   const unameHtml = isOwner ? '' : `<span class="tl-reply-handle">${username}</span>`;
-  return `<div class="tl-reply${rep.is_virtual?' tl-reply-virtual':''}">${avHtml}
+  return `<div class="tl-reply${rep.is_virtual?' tl-reply-virtual':''}">
+    <div class="tl-reply-av-col">
+      ${avHtml}
+      <div class="tl-reply-thread-line"></div>
+    </div>
     <div class="tl-reply-body">
       <div class="tl-reply-meta">
         <span class="tl-reply-name">${name}</span>
@@ -816,6 +830,8 @@ async function init(){
   view.sort((a, b) => (Date.parse(b[3]) || 0) - (Date.parse(a[3]) || 0));
   DATA.posts = view;
   resetTimeline();
+  // 渲染右栏（电脑端常驻）/ 面板（移动端）的账号筛选与日期树
+  renderCalCur(); renderCalScope(); renderCalTree();
 }
 init();
 </script>
