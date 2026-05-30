@@ -159,25 +159,36 @@ a { color: var(--accent); text-decoration: none; }
 .timeline { max-width: 640px; margin: 0 auto; padding-bottom: 60px; }
 .tl-status { text-align: center; color: var(--text-dim); padding: 24px; font-size: 0.9rem; }
 
-/* ── 左栏（电脑端品牌/导航），移动端隐藏 ── */
-.col-left { display: none; }
+/* ── 右栏（电脑端品牌/搜索/统计/导航），移动端隐藏 ── */
+.col-info { display: none; }
 .side-search { display: none; }
 .brand { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: 800; padding: 6px 10px 14px; }
 .brand .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
-.side-nav { display: flex; flex-direction: column; gap: 2px; }
+.info-stats { padding: 10px 14px; color: var(--text-dim); font-size: 0.92rem; line-height: 1.7; }
+.info-stats b { color: var(--text); font-weight: 700; }
+.side-nav { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
 .side-nav-item {
   display: block; padding: 11px 14px; border-radius: 999px;
-  color: var(--text); text-decoration: none; font-size: 1.1rem; font-weight: 600;
+  color: var(--text); text-decoration: none; font-size: 1.05rem; font-weight: 600;
 }
 .side-nav-item:hover { background: var(--bg-hover); }
 .side-theme {
-  margin-top: 8px; padding: 11px 14px; border: none; border-radius: 999px;
+  margin-top: 6px; padding: 11px 14px; border: none; border-radius: 999px;
   background: transparent; color: var(--text); cursor: pointer;
   font-size: 1rem; font-weight: 600; text-align: left;
 }
 .side-theme:hover { background: var(--bg-hover); }
 
-/* ── 电脑端：三栏布局 + 顶栏元素放大 ── */
+/* 筛选区：两个"全部"重置按钮并排 */
+.filter-reset { display: flex; gap: 8px; padding: 12px 16px 4px; }
+.reset-chip {
+  flex: 1; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border);
+  background: transparent; color: var(--text); cursor: pointer;
+  font-size: 0.9rem; font-weight: 600;
+}
+.reset-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* ── 电脑端：三栏布局（左筛选 / 中时间线 / 右品牌搜索统计）── */
 @media (min-width: 1024px) {
   .top { display: none; }
   .cal-mask { display: none !important; }
@@ -186,27 +197,31 @@ a { color: var(--accent); text-decoration: none; }
     gap: 20px; max-width: 1200px; margin: 0 auto; padding: 22px 16px 0;
     box-sizing: border-box;
   }
-  .col-left {
-    display: flex; flex-direction: column;
-    width: 220px; flex-shrink: 0; position: sticky; top: 22px;
-  }
-  .timeline {
-    flex: 1 1 600px; max-width: 600px; min-width: 0; margin: 0;
-    border-left: 1px solid var(--border); border-right: 1px solid var(--border);
-    min-height: 100vh;
-  }
+  /* 左栏 = 筛选 */
   .cal-panel {
     position: sticky; top: 22px; transform: none !important;
-    width: 318px; flex-shrink: 0; height: auto;
+    width: 268px; flex-shrink: 0; height: auto;
     max-height: calc(100vh - 44px);
     border: 1px solid var(--border); border-radius: 16px;
     box-shadow: none; background: var(--bg); overflow: hidden;
     display: flex; flex-direction: column;
   }
   .cal-panel .cal-head { display: none; }
+  .cal-scope { max-height: 240px; }   /* 账号显示更多 */
+  /* 中栏 */
+  .timeline {
+    flex: 1 1 600px; max-width: 600px; min-width: 0; margin: 0;
+    border-left: 1px solid var(--border); border-right: 1px solid var(--border);
+    min-height: 100vh;
+  }
+  /* 右栏 = 品牌 + 搜索 + 统计 + 导航 */
+  .col-info {
+    display: flex; flex-direction: column;
+    width: 300px; flex-shrink: 0; position: sticky; top: 22px;
+  }
   .side-search {
     display: flex; align-items: center; gap: 8px; position: relative;
-    margin: 14px 14px 6px; padding: 8px 13px;
+    margin: 0 0 10px; padding: 9px 14px;
     background: var(--bg-hover); border-radius: 12px;
   }
   .side-search .search-icon { width: 17px; height: 17px; color: var(--text-dim); flex-shrink: 0; }
@@ -220,14 +235,16 @@ a { color: var(--accent); text-decoration: none; }
   .tl-handle, .tl-time { font-size: 0.9rem; }
   .tl-avatar { width: 46px; height: 46px; }
   .tl-replies-toggle { font-size: 0.95rem; }
-  /* 右栏字号 */
-  .cal-section-label { font-size: 0.95rem; padding: 16px 18px 8px; }
-  .cal-scope { padding: 0 18px 12px; max-height: 168px; }
-  .cal-chip { font-size: 0.92rem; padding: 7px 13px; }
-  .cal-tree { padding: 0 10px 22px; }
-  .cal-year { font-size: 1.04rem; padding: 11px 14px; }
-  .cal-month { font-size: 0.98rem; padding: 10px 14px; }
-  .cal-year .cal-y-count, .cal-month .cal-m-count { font-size: 0.85rem; }
+  /* 左栏筛选字号 */
+  .filter-reset { padding: 14px 16px 6px; }
+  .reset-chip { font-size: 0.92rem; padding: 9px 10px; }
+  .cal-section-label { font-size: 0.95rem; padding: 14px 16px 8px; }
+  .cal-scope { padding: 0 16px 12px; }
+  .cal-chip { font-size: 0.9rem; padding: 7px 12px; }
+  .cal-tree { padding: 0 8px 20px; }
+  .cal-year { font-size: 1rem; padding: 10px 12px; }
+  .cal-month { font-size: 0.95rem; padding: 9px 12px; }
+  .cal-year .cal-y-count, .cal-month .cal-m-count { font-size: 0.84rem; }
 }
 
 .tl-card {
@@ -342,37 +359,41 @@ body.light .tl-reply-thread-line { background: #c2cad0; }
 
   <div class="cal-mask" id="calMask"></div>
 
-  <!-- 三栏布局 -->
+  <!-- 三栏布局：左=筛选 / 中=时间线 / 右=品牌+搜索+统计 -->
   <div class="layout">
-    <!-- 左栏：品牌 + 导航（电脑端） -->
-    <aside class="col-left">
-      <div class="brand"><span class="dot"></span>全站时间线</div>
-      <nav class="side-nav">
-        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/">🏠 组织主页</a>
-        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/guestbook.html">💬 留言板</a>
-      </nav>
-      <button class="side-theme" id="theme2">☀️ 浅色模式</button>
+    <!-- 左栏：筛选（电脑常驻）/ 移动端📅面板 -->
+    <aside class="cal-panel" id="calPanel">
+      <div class="cal-head">
+        <span class="cal-title">筛选</span>
+        <button class="cal-close" id="calClose" aria-label="关闭">✕</button>
+      </div>
+      <div class="filter-reset">
+        <button class="reset-chip active" id="resetAcct">全部账号</button>
+        <button class="reset-chip active" id="resetTime">全部时间</button>
+      </div>
+      <div class="cal-section-label">账号</div>
+      <div class="cal-scope" id="calScope"></div>
+      <div class="cal-section-label">日期</div>
+      <div class="cal-tree" id="calTree"></div>
     </aside>
 
     <!-- 中栏：时间线 -->
     <main class="timeline" id="timeline"></main>
 
-    <!-- 右栏（电脑常驻）/ 移动端📅面板 -->
-    <aside class="cal-panel" id="calPanel">
-      <div class="cal-head">
-        <span class="cal-title">浏览范围</span>
-        <button class="cal-close" id="calClose" aria-label="关闭">✕</button>
-      </div>
+    <!-- 右栏：品牌 + 搜索 + 统计（电脑端）/ 移动端隐藏 -->
+    <aside class="col-info">
+      <div class="brand"><span class="dot"></span>全站时间线</div>
       <div class="side-search">
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input class="search-input" id="search2" type="text" placeholder="搜索全站推文 / 推文ID" autocomplete="off">
         <button class="search-clear" id="clear2" aria-label="清除">✕</button>
       </div>
-      <div class="cal-cur" id="calCur"></div>
-      <div class="cal-section-label">账号</div>
-      <div class="cal-scope" id="calScope"></div>
-      <div class="cal-section-label">日期</div>
-      <div class="cal-tree" id="calTree"></div>
+      <div class="info-stats" id="infoStats"></div>
+      <nav class="side-nav">
+        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/">🏠 组织主页</a>
+        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/guestbook.html">💬 留言板</a>
+      </nav>
+      <button class="side-theme" id="theme2">☀️ 浅色模式</button>
     </aside>
   </div>
 
@@ -700,24 +721,26 @@ function buildDateTree(){
   return tree;
 }
 
-function renderCalCur(){
-  const acctName = filterAcct === null ? '全部账号' : (DATA.accts[filterAcct].n || DATA.accts[filterAcct].a);
-  const ym = filterYM ? filterYM.replace('-', '年') + '月' : '全部时间';
-  $('calCur').textContent = `当前：${acctName} · ${ym}`;
+function renderStats(){
+  const el = $('infoStats'); if (!el) return;
+  el.innerHTML = `收录 <b>${DATA.accts.length}</b> 个账号<br>共 <b>${(DATA.posts.length || 0).toLocaleString()}</b> 条主推文`;
+}
+function renderReset(){
+  const ra = $('resetAcct'), rt = $('resetTime');
+  if (ra) ra.classList.toggle('active', filterAcct === null);
+  if (rt) rt.classList.toggle('active', filterYM === null);
 }
 
 function renderCalScope(){
-  const chips = [`<button class="cal-chip ${filterAcct===null?'active':''}" data-acct="all">全部账号</button>`];
-  DATA.accts.forEach((a, i) => {
-    chips.push(`<button class="cal-chip ${filterAcct===i?'active':''}" data-acct="${i}">${esc(a.n || a.a)}</button>`);
-  });
-  $('calScope').innerHTML = chips.join('');
+  $('calScope').innerHTML = DATA.accts.map((a, i) =>
+    `<button class="cal-chip ${filterAcct===i?'active':''}" data-acct="${i}">${esc(a.n || a.a)}</button>`
+  ).join('');
 }
 
 function renderCalTree(){
   const tree = buildDateTree();
   const years = Object.keys(tree).map(Number).sort((a,b)=>b-a);
-  let html = `<button class="cal-month ${filterYM===null?'active':''}" data-ym="all">全部时间</button>`;
+  let html = '';
   for (const y of years) {
     const months = Object.keys(tree[y]).map(Number).sort((a,b)=>b-a);
     const yc = months.reduce((s,m)=>s+tree[y][m], 0);
@@ -733,8 +756,10 @@ function renderCalTree(){
   $('calTree').innerHTML = html;
 }
 
+function refreshFilters(){ renderReset(); renderCalScope(); renderCalTree(); }
+
 function openCal(){
-  renderCalCur(); renderCalScope(); renderCalTree();
+  refreshFilters();
   $('calMask').classList.add('open');
   $('calPanel').classList.add('open');
 }
@@ -748,11 +773,19 @@ function setupCal(){
   $('calClose').addEventListener('click', closeCal);
   $('calMask').addEventListener('click', closeCal);
 
+  // 两个“全部”重置按钮
+  $('resetAcct').addEventListener('click', () => {
+    filterAcct = null; applyFilters(); refreshFilters();
+  });
+  $('resetTime').addEventListener('click', () => {
+    filterYM = null; applyFilters(); refreshFilters();
+  });
+
   $('calScope').addEventListener('click', e => {
     const chip = e.target.closest('.cal-chip'); if (!chip) return;
-    filterAcct = chip.dataset.acct === 'all' ? null : parseInt(chip.dataset.acct, 10);
-    filterYM = null;  // 切账号时重置月份（不同账号月份不同）
-    renderCalCur(); renderCalScope(); renderCalTree();
+    filterAcct = parseInt(chip.dataset.acct, 10);
+    filterYM = null;  // 切账号重置月份（不同账号月份不同）
+    applyFilters(); refreshFilters();
   });
 
   $('calTree').addEventListener('click', e => {
@@ -765,8 +798,8 @@ function setupCal(){
     }
     const mBtn = e.target.closest('.cal-month');
     if (mBtn) {
-      filterYM = mBtn.dataset.ym === 'all' ? null : mBtn.dataset.ym;
-      applyFilters();
+      filterYM = mBtn.dataset.ym;
+      applyFilters(); renderReset();
       closeCal();
     }
   });
@@ -829,8 +862,8 @@ async function init(){
   view.sort((a, b) => (Date.parse(b[3]) || 0) - (Date.parse(a[3]) || 0));
   DATA.posts = view;
   resetTimeline();
-  // 渲染右栏（电脑端常驻）/ 面板（移动端）的账号筛选与日期树
-  renderCalCur(); renderCalScope(); renderCalTree();
+  // 渲染左栏筛选（电脑常驻/移动面板）+ 右栏统计
+  renderStats(); refreshFilters();
 }
 init();
 </script>
