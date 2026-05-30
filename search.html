@@ -161,6 +161,68 @@ a { color: var(--accent); text-decoration: none; }
 .timeline { max-width: 640px; margin: 0 auto; padding-bottom: 60px; }
 .tl-status { text-align: center; color: var(--text-dim); padding: 24px; font-size: 0.9rem; }
 
+/* ── 左栏（电脑端品牌/导航），移动端隐藏 ── */
+.col-left { display: none; }
+.side-search { display: none; }
+.brand { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: 800; padding: 6px 10px 14px; }
+.brand .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+.side-nav { display: flex; flex-direction: column; gap: 2px; }
+.side-nav-item {
+  display: block; padding: 11px 14px; border-radius: 999px;
+  color: var(--text); text-decoration: none; font-size: 1.1rem; font-weight: 600;
+}
+.side-nav-item:hover { background: var(--bg-hover); }
+.side-theme {
+  margin-top: 8px; padding: 11px 14px; border: none; border-radius: 999px;
+  background: transparent; color: var(--text); cursor: pointer;
+  font-size: 1rem; font-weight: 600; text-align: left;
+}
+.side-theme:hover { background: var(--bg-hover); }
+
+/* ── 电脑端：三栏布局 + 顶栏元素放大 ── */
+@media (min-width: 1024px) {
+  .top { display: none; }
+  .cal-mask { display: none !important; }
+  .layout {
+    display: flex; align-items: flex-start; justify-content: center;
+    gap: 24px; max-width: 1200px; margin: 0 auto; padding: 22px 16px 0;
+  }
+  .col-left {
+    display: flex; flex-direction: column;
+    width: 230px; flex-shrink: 0; position: sticky; top: 22px;
+  }
+  .timeline {
+    width: 600px; max-width: 600px; flex-shrink: 0; margin: 0;
+    border-left: 1px solid var(--border); border-right: 1px solid var(--border);
+    min-height: 100vh;
+  }
+  .cal-panel {
+    position: sticky; top: 22px; transform: none !important;
+    width: 330px; flex-shrink: 0; height: auto;
+    max-height: calc(100vh - 44px);
+    border: 1px solid var(--border); border-radius: 16px;
+    box-shadow: none; background: var(--bg); overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .cal-panel .cal-head { display: none; }
+  .side-search {
+    display: flex; align-items: center; gap: 8px; position: relative;
+    margin: 14px 14px 4px; padding: 10px 14px;
+    background: var(--bg-hover); border-radius: 999px;
+  }
+  .side-search .search-icon { width: 18px; height: 18px; color: var(--text-dim); flex-shrink: 0; }
+  .side-search .search-input { flex: 1; border: none; background: transparent; color: var(--text); font-size: 0.98rem; outline: none; min-width: 0; }
+  .side-search .search-clear { display: none; border: none; background: transparent; color: var(--text-dim); cursor: pointer; font-size: 14px; }
+  .side-search .search-clear.show { display: block; }
+  /* 顶栏那些"放大":电脑端中栏卡片字号加大 */
+  .tl-card { padding: 18px 20px; }
+  .tl-text { font-size: 1.06rem; line-height: 1.6; }
+  .tl-name { font-size: 1.04rem; }
+  .tl-handle, .tl-time { font-size: 0.9rem; }
+  .tl-avatar { width: 46px; height: 46px; }
+  .tl-replies-toggle { font-size: 0.95rem; }
+}
+
 .tl-card {
   border-bottom: 1px solid var(--border);
   padding: 14px 16px;
@@ -193,7 +255,9 @@ a { color: var(--accent); text-decoration: none; }
 .tl-reply-time { font-size: 0.8rem; color: var(--text-dim); }
 .tl-reply-text { font-size: 0.95rem; line-height: 1.45; white-space: pre-wrap; word-break: break-word; }
 .tl-reply .tl-images { margin-top: 8px; }
-.tl-reply-virtual { opacity: .9; }
+/* 被引用的外人条目（每组开头）：上方留间距+淡分隔线，区分各组对话 */
+.tl-reply-virtual { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+.tl-replies > .tl-reply-virtual:first-child { margin-top: 2px; padding-top: 4px; border-top: none; }
 .tl-reply-virtual .tl-reply-text { color: var(--text-dim); }
 .tl-avatar {
   width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
@@ -253,6 +317,7 @@ a { color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body class="light">
+  <!-- 顶栏（移动端） -->
   <div class="top">
     <div class="top-inner">
       <div class="top-title"><span class="dot"></span>时间线</div>
@@ -266,21 +331,42 @@ a { color: var(--accent); text-decoration: none; }
     </div>
   </div>
 
-  <!-- 日期/范围 面板 -->
   <div class="cal-mask" id="calMask"></div>
-  <div class="cal-panel" id="calPanel">
-    <div class="cal-head">
-      <span class="cal-title">浏览范围</span>
-      <button class="cal-close" id="calClose" aria-label="关闭">✕</button>
-    </div>
-    <div class="cal-cur" id="calCur"></div>
-    <div class="cal-section-label">账号</div>
-    <div class="cal-scope" id="calScope"></div>
-    <div class="cal-section-label">日期</div>
-    <div class="cal-tree" id="calTree"></div>
+
+  <!-- 三栏布局 -->
+  <div class="layout">
+    <!-- 左栏：品牌 + 导航（电脑端） -->
+    <aside class="col-left">
+      <div class="brand"><span class="dot"></span>全站时间线</div>
+      <nav class="side-nav">
+        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/">🏠 组织主页</a>
+        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/guestbook.html">💬 留言板</a>
+      </nav>
+      <button class="side-theme" id="theme2">☀️ 浅色模式</button>
+    </aside>
+
+    <!-- 中栏：时间线 -->
+    <main class="timeline" id="timeline"></main>
+
+    <!-- 右栏（电脑常驻）/ 移动端📅面板 -->
+    <aside class="cal-panel" id="calPanel">
+      <div class="cal-head">
+        <span class="cal-title">浏览范围</span>
+        <button class="cal-close" id="calClose" aria-label="关闭">✕</button>
+      </div>
+      <div class="side-search">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="search-input" id="search2" type="text" placeholder="搜索全站推文 / 推文ID" autocomplete="off">
+        <button class="search-clear" id="clear2" aria-label="清除">✕</button>
+      </div>
+      <div class="cal-cur" id="calCur"></div>
+      <div class="cal-section-label">账号</div>
+      <div class="cal-scope" id="calScope"></div>
+      <div class="cal-section-label">日期</div>
+      <div class="cal-tree" id="calTree"></div>
+    </aside>
   </div>
 
-  <main class="timeline" id="timeline"></main>
   <div class="tl-status" id="status">加载中…</div>
 
   <div class="lightbox" id="lightbox"></div>
@@ -676,23 +762,25 @@ function setupCal(){
 /* ── 主题 ── */
 function applyTheme(light){
   document.body.classList.toggle('light', light);
-  $('theme').textContent = light ? '☀️' : '🌙';
+  const t1 = $('theme'), t2 = $('theme2');
+  if (t1) t1.textContent = light ? '☀️' : '🌙';
+  if (t2) t2.textContent = light ? '☀️ 浅色模式' : '🌙 深色模式';
   localStorage.setItem('tl-theme', light ? 'light' : 'dark');
 }
 
-/* ── 搜索框 ── */
+/* ── 搜索框（顶栏 + 右栏两个入口，同步）── */
 function setupSearch(){
-  const inp = $('search'), clr = $('clear');
+  const pairs = [['search','clear'],['search2','clear2']]
+    .map(([i,c]) => [$(i), $(c)]).filter(([i]) => i);
   let timer;
-  inp.addEventListener('input', () => {
-    const kw = inp.value;
-    clr.classList.toggle('show', kw.length > 0);
+  function run(kw){
+    pairs.forEach(([i,c]) => { if (i.value !== kw) i.value = kw; if (c) c.classList.toggle('show', kw.length > 0); });
     clearTimeout(timer);
     timer = setTimeout(() => { doSearch(kw); window.scrollTo(0,0); }, 180);
-  });
-  clr.addEventListener('click', () => {
-    inp.value = ''; clr.classList.remove('show');
-    doSearch(''); window.scrollTo(0,0); inp.focus();
+  }
+  pairs.forEach(([inp, clr]) => {
+    inp.addEventListener('input', () => run(inp.value));
+    if (clr) clr.addEventListener('click', () => { run(''); inp.focus(); });
   });
 }
 
@@ -702,6 +790,7 @@ async function init(){
   applyTheme(th !== 'dark');  // 默认亮色
 
   $('theme').addEventListener('click', () => applyTheme(!document.body.classList.contains('light')));
+  const t2 = $('theme2'); if (t2) t2.addEventListener('click', () => applyTheme(!document.body.classList.contains('light')));
   setupSearch();
   setupClicks();
   setupCal();
