@@ -168,10 +168,10 @@ a { color: var(--accent); text-decoration: none; }
 .tl-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .tl-replies-toggle {
   display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 10px; padding: 5px 12px;
+  margin-top: 8px; margin-left: -4px; padding: 5px 10px;
   background: transparent; border: none; cursor: pointer;
   color: var(--accent); font-size: 0.9rem; font-weight: 600;
-  border-radius: 999px;
+  border-radius: 8px;
 }
 .tl-replies-toggle:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
 .tl-replies-toggle svg { width: 15px; height: 15px; transition: transform .2s; }
@@ -183,7 +183,14 @@ a { color: var(--accent); text-decoration: none; }
 }
 .tl-reply-av { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; background: var(--bg-hover); flex-shrink: 0; }
 .tl-reply-body { flex: 1; min-width: 0; }
-.tl-reply-meta { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 2px; }
+.tl-reply-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 3px; }
+.tl-reply-name { font-weight: 700; font-size: 0.92rem; color: var(--text); }
+.tl-reply-handle { font-size: 0.82rem; color: var(--text-dim); }
+.tl-reply-badge {
+  font-size: 0.72rem; color: var(--text-dim); background: var(--bg-hover);
+  padding: 1px 7px; border-radius: 6px; font-weight: 600;
+}
+.tl-reply-time { font-size: 0.8rem; color: var(--text-dim); }
 .tl-reply-text { font-size: 0.95rem; line-height: 1.45; white-space: pre-wrap; word-break: break-word; }
 .tl-reply .tl-images { margin-top: 8px; }
 .tl-avatar {
@@ -437,11 +444,12 @@ async function loadAcctIndex(repo, account){
 function dImg(repo, account, rel){ const n=(rel||'').split('/').pop(); return `${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/image/${n}`; }
 function dAva(repo, account, rel){ const n=(rel||'').split('/').pop(); return n?`${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/avatar/${n}`:''; }
 
-function replyHtml(post, repo, account){
+function replyHtml(post, repo, account, acctAv){
   const text = cleanText(post.text || post.body_text || '');
   const textHtml = esc(text).replace(/\n/g,'<br>');
   const imgs = (post.wanted_images || []).map(x => x.split('/').pop());
-  const av = dAva(repo, account, post.author_avatar);
+  // 回复链都是账号本人，头像统一用账号头像（本地已下载的）
+  const av = acctAv ? `${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/avatar/${acctAv}` : '';
   const avHtml = av ? `<img class="tl-reply-av" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-reply-av"></div>`;
   let imgsHtml = '';
   if (imgs.length) {
@@ -449,9 +457,16 @@ function replyHtml(post, repo, account){
       imgs.map(n => { const u = dImg(repo,account,n); return `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`; }).join('') +
       `</div>`;
   }
+  const isQuote = post.reply_type === 'quoted' || post.has_quoted;
+  const badge = isQuote ? `<span class="tl-reply-badge">引用</span>` : '';
   return `<div class="tl-reply">${avHtml}
     <div class="tl-reply-body">
-      <div class="tl-reply-meta">${esc(post.author_name||account)} · ${fmtTime(post.timestamp)}</div>
+      <div class="tl-reply-meta">
+        <span class="tl-reply-name">${esc(post.author_name||account)}</span>
+        <span class="tl-reply-handle">${esc(post.author_username||'')}</span>
+        ${badge}
+        <span class="tl-reply-time">${fmtTime(post.timestamp)}</span>
+      </div>
       ${textHtml?`<div class="tl-reply-text">${textHtml}</div>`:''}
       ${imgsHtml}
     </div>
@@ -489,7 +504,7 @@ async function toggleReplies(btn){
       .filter(x => x.is_reply && !x.is_virtual && x.conversation_id === tid)
       .sort((m,n) => (Date.parse(m.timestamp)||0) - (Date.parse(n.timestamp)||0));
     box.innerHTML = replies.length
-      ? replies.map(r => replyHtml(r, a.r, a.a)).join('')
+      ? replies.map(r => replyHtml(r, a.r, a.a, a.av)).join('')
       : `<div class="tl-status" style="padding:10px">没有回复</div>`;
   } catch(e) {
     box.innerHTML = `<div class="tl-status" style="padding:10px">回复加载失败</div>`;
