@@ -157,12 +157,20 @@ a { color: var(--accent); text-decoration: none; }
 
 /* ── 时间线 ── */
 .timeline { max-width: 640px; margin: 0 auto; padding-bottom: 60px; }
+/* 滚动条跟随主题（暗色不再是白色） */
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
 .tl-status { text-align: center; color: var(--text-dim); padding: 24px; font-size: 0.9rem; }
 
 /* ── 左右侧栏（电脑端），移动端隐藏 ── */
 .col-side { display: none; }
-.top-nav { display: none; }            /* 移动端隐藏顶栏导航 */
-.top-title-text { display: none; }     /* 移动端只显示蓝点 + 短标题由 top-title 控制 */
+.top-right { display: flex; align-items: center; gap: 6px; }
+.top-nav-item { display: none; }       /* 移动端隐藏导航链接（只留📅+主题）*/
+.top-title-text { display: none; }     /* 移动端只显示蓝点 + 短标题 */
 .side-box {
   border: 1px solid var(--border); border-radius: 16px;
   background: var(--bg); overflow: hidden; display: flex; flex-direction: column;
@@ -175,7 +183,7 @@ a { color: var(--accent); text-decoration: none; }
 .side-stats { padding: 14px 6px 0; color: var(--text-dim); font-size: 0.92rem; line-height: 1.8; }
 .side-stats b { color: var(--text); font-weight: 700; }
 .top-nav-item {
-  display: inline-flex; align-items: center; padding: 8px 14px; border-radius: 999px;
+  align-items: center; padding: 8px 14px; border-radius: 999px;
   color: var(--text); text-decoration: none; font-size: 0.98rem; font-weight: 600; white-space: nowrap;
 }
 .top-nav-item:hover { background: var(--bg-hover); }
@@ -192,16 +200,17 @@ a { color: var(--accent); text-decoration: none; }
 
 /* ── 电脑端：顶栏横条 + 三栏（左账号 / 中时间线 / 右日期）── */
 @media (min-width: 1024px) {
-  /* 顶栏横条 */
-  .top { display: block; }
+  /* 顶栏横条（吸顶固定） */
+  .top { display: block; position: sticky; top: 0; z-index: 100; }
   .top-inner {
     max-width: 1500px; margin: 0 auto; padding: 10px 32px;
     display: flex; align-items: center; gap: 18px;
   }
-  .top-title { font-size: 1.35rem; flex-shrink: 0; }
+  .top-title { flex: 1; min-width: 0; font-size: 1.35rem; }   /* 左半 */
   .top-title-text { display: inline; }
-  .search-wrap { flex: 1; max-width: 460px; }
-  .top-nav { display: flex; gap: 4px; flex-shrink: 0; }
+  .search-wrap { width: 440px; flex-shrink: 0; }              /* 中：固定宽，居中 */
+  .top-right { flex: 1; justify-content: flex-end; gap: 8px; }/* 右半靠右 */
+  .top-nav-item { display: inline-flex; }
   #calBtn { display: none; }              /* 电脑端不用📅，左右栏常驻 */
   .cal-mask { display: none !important; }
   .cal-panel { display: none !important; } /* 电脑端隐藏移动面板 */
@@ -211,12 +220,12 @@ a { color: var(--accent); text-decoration: none; }
     gap: 28px; max-width: 1500px; margin: 0 auto; padding: 22px 32px 40px;
     box-sizing: border-box;
   }
-  .col-side { display: flex; flex-direction: column; flex-shrink: 0; position: sticky; top: 18px; }
+  .col-side { display: flex; flex-direction: column; flex-shrink: 0; position: sticky; top: 84px; }
   .col-acct { width: 300px; }
   .col-date { width: 300px; }
-  .col-side .side-box { max-height: calc(100vh - 40px); }
-  .col-acct .cal-scope { max-height: calc(100vh - 200px); overflow-y: auto; overflow-x: hidden; }
-  .col-date .cal-tree { max-height: calc(100vh - 120px); overflow-y: auto; overflow-x: hidden; }
+  .col-side .side-box { max-height: calc(100vh - 104px); }
+  .col-acct .cal-scope { max-height: calc(100vh - 260px); overflow-y: auto; overflow-x: hidden; }
+  .col-date .cal-tree { max-height: calc(100vh - 180px); overflow-y: auto; overflow-x: hidden; }
   /* 中栏 */
   .timeline {
     flex: 1 1 700px; max-width: 720px; min-width: 0; margin: 0;
@@ -348,12 +357,12 @@ a { color: var(--accent); text-decoration: none; }
         <input class="search-input" id="search" type="text" placeholder="搜索全站推文 / 推文ID" autocomplete="off">
         <button class="search-clear" id="clear" aria-label="清除">✕</button>
       </div>
-      <nav class="top-nav">
+      <nav class="top-right">
         <a class="top-nav-item" href="https://twitterarchiver.github.io/home/">🏠 组织主页</a>
         <a class="top-nav-item" href="https://twitterarchiver.github.io/home/guestbook.html">💬 留言板</a>
+        <button class="icon-btn" id="calBtn" aria-label="筛选">📅</button>
+        <button class="theme-btn" id="theme" aria-label="切换主题">☀️</button>
       </nav>
-      <button class="icon-btn" id="calBtn" aria-label="筛选">📅</button>
-      <button class="theme-btn" id="theme" aria-label="切换主题">☀️</button>
     </div>
   </div>
 
