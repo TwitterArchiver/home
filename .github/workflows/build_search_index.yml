@@ -54,15 +54,25 @@ jobs:
                   except Exception as e:
                       print(f"  ⚠️ {repo}/{acct} 读取失败: {e}"); continue
                   # 账号头像：只挑本地已下载的（../avatar/...），取最新一条；跳过没下载的原始链接
-                  av_cands = [x for x in data if (x.get("author_avatar","") or "").startswith("../avatar/")]
+                  acct_lower = acct.lower()
+                  av_cands = [x for x in data
+                              if (x.get("author_username","") or "").lstrip("@").lower() == acct_lower
+                              and (x.get("author_avatar","") or "").startswith("../avatar/")]
                   av_cands.sort(key=lambda x: x.get("timestamp",""), reverse=True)
                   if av_cands:
                       acct_avatar = os.path.basename(av_cands[0]["author_avatar"])
                   else:
-                      acct_avatar = ""
-                      for x in data:
-                          wa = x.get("wanted_avatars") or []
-                          if wa: acct_avatar = os.path.basename(wa[0]); break
+                      fb = [x for x in data
+                            if not x.get("is_virtual")
+                            and (x.get("author_avatar","") or "").startswith("../avatar/")]
+                      fb.sort(key=lambda x: x.get("timestamp",""), reverse=True)
+                      if fb:
+                          acct_avatar = os.path.basename(fb[0]["author_avatar"])
+                      else:
+                          acct_avatar = ""
+                          for x in data:
+                              wa = x.get("wanted_avatars") or []
+                              if wa: acct_avatar = os.path.basename(wa[0]); break
                   # 先统计每个对话的回复数（该账号自己的回复）
                   reply_cnt = {}
                   for p in data:
