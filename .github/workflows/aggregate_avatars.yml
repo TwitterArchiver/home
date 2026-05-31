@@ -1,0 +1,48 @@
+name: 汇总头像池
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'   # 每周日 UTC 03:00（北京时间周日 11:00）
+  workflow_dispatch:
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出 home 仓库
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 安装依赖
+        run: pip install requests
+
+      - name: 拉取最新汇总脚本
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/aggregate_avatars.py" \
+            -o /tmp/aggregate_avatars.py
+          echo "✅ aggregate_avatars.py ($(wc -l < /tmp/aggregate_avatars.py) 行)"
+
+      - name: 汇总头像池
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 /tmp/aggregate_avatars.py
+
+      - name: 推送头像池
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add avatars
+          if git diff --cached --quiet; then
+            echo "✅ 头像池无变化"
+            exit 0
+          fi
+          COUNT=$(git diff --cached --numstat | wc -l)
+          DATE=$(date -u +"%Y-%m-%d")
+          git commit -m "🖼️ 汇总头像池 (+${COUNT} 变更) ${DATE} [skip ci]"
+          git push
+          echo "✅ 头像池已更新，${COUNT} 处变更"
