@@ -52,6 +52,30 @@ a:hover { text-decoration: underline; }
 .anim-3 { animation: heroIn .7s .38s cubic-bezier(.22,.68,0,1.2) both; }
 .anim-4 { animation: heroIn .7s .52s cubic-bezier(.22,.68,0,1.2) both; }
 
+/* 左上角固定导航：时间线 / 留言板（主题按钮在右上角） */
+.top-nav {
+  position: fixed;
+  top: 14px; left: 16px;
+  display: flex; align-items: center; gap: 8px;
+  z-index: 99;
+}
+.top-nav a {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 38px; padding: 0 15px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  transition: background .15s, box-shadow .15s, transform .15s;
+}
+.top-nav a:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); background: var(--bg-hover); transform: translateY(-1px); }
+@media (max-width: 600px) {
+  .top-nav a .nav-label { display: none; }      /* 窄屏只留图标 */
+  .top-nav a { padding: 0; width: 38px; justify-content: center; }
+}
+
 /* ── Hero 区 ── */
 .hero {
   min-height: 100svh;
@@ -113,6 +137,7 @@ a:hover { text-decoration: underline; }
 .theme-btn {
   position: fixed;
   top: 14px; right: 16px;
+  z-index: 99;
   background: var(--bg-card);
   border: 1px solid var(--border);
   color: var(--text);
@@ -122,7 +147,6 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   transition: background .15s, box-shadow .15s;
-  z-index: 99;
   box-shadow: 0 1px 4px rgba(0,0,0,.08);
 }
 .theme-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); }
@@ -258,6 +282,10 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 </head>
 <body>
 
+<nav class="top-nav">
+  <a href="./search.html" title="全站时间线"><span>🕐</span><span class="nav-label">时间线</span></a>
+  <a href="./guestbook.html" title="留言板"><span>💬</span><span class="nav-label">留言板</span></a>
+</nav>
 <button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
 
 <!-- Hero -->
