@@ -159,75 +159,70 @@ a { color: var(--accent); text-decoration: none; }
 .timeline { max-width: 640px; margin: 0 auto; padding-bottom: 60px; }
 .tl-status { text-align: center; color: var(--text-dim); padding: 24px; font-size: 0.9rem; }
 
-/* ── 右栏（电脑端品牌/搜索/统计/导航），移动端隐藏 ── */
-.col-info { display: none; }
-.side-search { display: none; }
-.brand { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: 800; padding: 6px 10px 14px; }
-.brand .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
-.info-stats { padding: 10px 14px; color: var(--text-dim); font-size: 0.92rem; line-height: 1.7; }
-.info-stats b { color: var(--text); font-weight: 700; }
-.side-nav { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
-.side-nav-item {
-  display: block; padding: 11px 14px; border-radius: 999px;
-  color: var(--text); text-decoration: none; font-size: 1.05rem; font-weight: 600;
+/* ── 左右侧栏（电脑端），移动端隐藏 ── */
+.col-side { display: none; }
+.top-nav { display: none; }            /* 移动端隐藏顶栏导航 */
+.top-title-text { display: none; }     /* 移动端只显示蓝点 + 短标题由 top-title 控制 */
+.side-box {
+  border: 1px solid var(--border); border-radius: 16px;
+  background: var(--bg); overflow: hidden; display: flex; flex-direction: column;
 }
-.side-nav-item:hover { background: var(--bg-hover); }
-.side-theme {
-  margin-top: 6px; padding: 11px 14px; border: none; border-radius: 999px;
-  background: transparent; color: var(--text); cursor: pointer;
-  font-size: 1rem; font-weight: 600; text-align: left;
+.side-box-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px 10px;
 }
-.side-theme:hover { background: var(--bg-hover); }
+.side-box-title { font-size: 1.05rem; font-weight: 800; }
+.side-stats { padding: 14px 6px 0; color: var(--text-dim); font-size: 0.92rem; line-height: 1.8; }
+.side-stats b { color: var(--text); font-weight: 700; }
+.top-nav-item {
+  display: inline-flex; align-items: center; padding: 8px 14px; border-radius: 999px;
+  color: var(--text); text-decoration: none; font-size: 0.98rem; font-weight: 600; white-space: nowrap;
+}
+.top-nav-item:hover { background: var(--bg-hover); }
 
-/* 筛选区：两个"全部"重置按钮并排 */
+/* 移动端📅面板里的“全部账号/全部时间”重置行 */
 .filter-reset { display: flex; gap: 8px; padding: 12px 16px 4px; }
 .reset-chip {
-  flex: 1; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border);
+  padding: 6px 12px; border-radius: 10px; border: 1px solid var(--border);
   background: transparent; color: var(--text); cursor: pointer;
-  font-size: 0.9rem; font-weight: 600;
+  font-size: 0.86rem; font-weight: 600;
 }
+.filter-reset .reset-chip { flex: 1; padding: 8px 10px; }
 .reset-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* ── 电脑端：三栏布局（左筛选 / 中时间线 / 右品牌搜索统计）── */
+/* ── 电脑端：顶栏横条 + 三栏（左账号 / 中时间线 / 右日期）── */
 @media (min-width: 1024px) {
-  .top { display: none; }
+  /* 顶栏横条 */
+  .top { display: block; }
+  .top-inner {
+    max-width: 1500px; margin: 0 auto; padding: 10px 32px;
+    display: flex; align-items: center; gap: 18px;
+  }
+  .top-title { font-size: 1.35rem; flex-shrink: 0; }
+  .top-title-text { display: inline; }
+  .search-wrap { flex: 1; max-width: 460px; }
+  .top-nav { display: flex; gap: 4px; flex-shrink: 0; }
+  #calBtn { display: none; }              /* 电脑端不用📅，左右栏常驻 */
   .cal-mask { display: none !important; }
+  .cal-panel { display: none !important; } /* 电脑端隐藏移动面板 */
+
   .layout {
     display: flex; align-items: flex-start; justify-content: center;
-    gap: 28px; max-width: 1500px; margin: 0 auto; padding: 22px 32px 0;
+    gap: 28px; max-width: 1500px; margin: 0 auto; padding: 22px 32px 40px;
     box-sizing: border-box;
   }
-  /* 左栏 = 筛选 */
-  .cal-panel {
-    position: sticky; top: 22px; transform: none !important;
-    width: 340px; flex-shrink: 0; height: auto;
-    max-height: calc(100vh - 44px);
-    border: 1px solid var(--border); border-radius: 16px;
-    box-shadow: none; background: var(--bg); overflow: hidden;
-    display: flex; flex-direction: column;
-  }
-  .cal-panel .cal-head { display: none; }
-  .cal-scope { max-height: 280px; }   /* 账号显示更多 */
+  .col-side { display: flex; flex-direction: column; flex-shrink: 0; position: sticky; top: 18px; }
+  .col-acct { width: 300px; }
+  .col-date { width: 300px; }
+  .col-side .side-box { max-height: calc(100vh - 40px); }
+  .col-acct .cal-scope { max-height: calc(100vh - 200px); overflow-y: auto; overflow-x: hidden; }
+  .col-date .cal-tree { max-height: calc(100vh - 120px); overflow-y: auto; overflow-x: hidden; }
   /* 中栏 */
   .timeline {
     flex: 1 1 700px; max-width: 720px; min-width: 0; margin: 0;
     border-left: 1px solid var(--border); border-right: 1px solid var(--border);
     min-height: 100vh;
   }
-  /* 右栏 = 品牌 + 搜索 + 统计 + 导航 */
-  .col-info {
-    display: flex; flex-direction: column;
-    width: 320px; flex-shrink: 0; position: sticky; top: 22px;
-  }
-  .side-search {
-    display: flex; align-items: center; gap: 8px; position: relative;
-    margin: 0 0 10px; padding: 9px 14px;
-    background: var(--bg-hover); border-radius: 12px;
-  }
-  .side-search .search-icon { width: 17px; height: 17px; color: var(--text-dim); flex-shrink: 0; }
-  .side-search .search-input { flex: 1; border: none; background: transparent; color: var(--text); font-size: 0.95rem; outline: none; min-width: 0; }
-  .side-search .search-clear { display: none; border: none; background: transparent; color: var(--text-dim); cursor: pointer; font-size: 14px; }
-  .side-search .search-clear.show { display: block; }
   /* 中栏卡片放大 */
   .tl-card { padding: 18px 20px; }
   .tl-text { font-size: 1.06rem; line-height: 1.6; }
@@ -235,16 +230,14 @@ a { color: var(--accent); text-decoration: none; }
   .tl-handle, .tl-time { font-size: 0.9rem; }
   .tl-avatar { width: 46px; height: 46px; }
   .tl-replies-toggle { font-size: 0.95rem; }
-  /* 限制图片最大宽度：中栏变宽后图片不再无限放大、文字不再显小 */
+  /* 限制图片最大宽度 */
   .tl-images { max-width: 520px; }
   .tl-images.n1 img { max-height: 480px; }
-  /* 左栏筛选字号 */
-  .filter-reset { padding: 14px 16px 6px; }
-  .reset-chip { font-size: 0.92rem; padding: 9px 10px; }
+  /* 侧栏字号 */
   .cal-section-label { font-size: 0.95rem; padding: 14px 16px 8px; }
-  .cal-scope { padding: 0 16px 12px; }
+  .cal-scope { padding: 0 14px 14px; }
   .cal-chip { font-size: 0.9rem; padding: 7px 12px; }
-  .cal-tree { padding: 0 8px 20px; }
+  .cal-tree { padding: 0 8px 14px; }
   .cal-year { font-size: 1rem; padding: 10px 12px; }
   .cal-month { font-size: 0.95rem; padding: 9px 12px; }
   .cal-year .cal-y-count, .cal-month .cal-m-count { font-size: 0.84rem; }
@@ -346,59 +339,67 @@ a { color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body class="light">
-  <!-- 顶栏（移动端） -->
+  <!-- 顶栏：电脑横条（品牌+搜索+导航）/ 移动（标题+搜索+📅+主题）-->
   <div class="top">
     <div class="top-inner">
-      <div class="top-title"><span class="dot"></span>时间线</div>
+      <div class="top-title"><span class="dot"></span><span class="top-title-text">全站时间线</span></div>
       <div class="search-wrap">
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input class="search-input" id="search" type="text" placeholder="搜索全站推文 / 推文ID" autocomplete="off">
         <button class="search-clear" id="clear" aria-label="清除">✕</button>
       </div>
-      <button class="icon-btn" id="calBtn" aria-label="按日期浏览">📅</button>
+      <nav class="top-nav">
+        <a class="top-nav-item" href="https://twitterarchiver.github.io/home/">🏠 组织主页</a>
+        <a class="top-nav-item" href="https://twitterarchiver.github.io/home/guestbook.html">💬 留言板</a>
+      </nav>
+      <button class="icon-btn" id="calBtn" aria-label="筛选">📅</button>
       <button class="theme-btn" id="theme" aria-label="切换主题">☀️</button>
     </div>
   </div>
 
   <div class="cal-mask" id="calMask"></div>
 
-  <!-- 三栏布局：左=筛选 / 中=时间线 / 右=品牌+搜索+统计 -->
+  <!-- 三栏：左账号 / 中时间线 / 右日期 -->
   <div class="layout">
-    <!-- 左栏：筛选（电脑常驻）/ 移动端📅面板 -->
-    <aside class="cal-panel" id="calPanel">
-      <div class="cal-head">
-        <span class="cal-title">筛选</span>
-        <button class="cal-close" id="calClose" aria-label="关闭">✕</button>
+    <aside class="col-side col-acct">
+      <div class="side-box">
+        <div class="side-box-head">
+          <span class="side-box-title">账号</span>
+          <button class="reset-chip active" id="resetAcct">全部</button>
+        </div>
+        <div class="cal-scope" id="calScope"></div>
       </div>
-      <div class="filter-reset">
-        <button class="reset-chip active" id="resetAcct">全部账号</button>
-        <button class="reset-chip active" id="resetTime">全部时间</button>
-      </div>
-      <div class="cal-section-label">账号</div>
-      <div class="cal-scope" id="calScope"></div>
-      <div class="cal-section-label">日期</div>
-      <div class="cal-tree" id="calTree"></div>
+      <div class="side-stats" id="infoStats"></div>
     </aside>
 
-    <!-- 中栏：时间线 -->
     <main class="timeline" id="timeline"></main>
 
-    <!-- 右栏：品牌 + 搜索 + 统计（电脑端）/ 移动端隐藏 -->
-    <aside class="col-info">
-      <div class="brand"><span class="dot"></span>全站时间线</div>
-      <div class="side-search">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input class="search-input" id="search2" type="text" placeholder="搜索全站推文 / 推文ID" autocomplete="off">
-        <button class="search-clear" id="clear2" aria-label="清除">✕</button>
+    <aside class="col-side col-date">
+      <div class="side-box">
+        <div class="side-box-head">
+          <span class="side-box-title">日期</span>
+          <button class="reset-chip active" id="resetTime">全部</button>
+        </div>
+        <div class="cal-tree" id="calTree"></div>
       </div>
-      <div class="info-stats" id="infoStats"></div>
-      <nav class="side-nav">
-        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/">🏠 组织主页</a>
-        <a class="side-nav-item" href="https://twitterarchiver.github.io/home/guestbook.html">💬 留言板</a>
-      </nav>
-      <button class="side-theme" id="theme2">☀️ 浅色模式</button>
     </aside>
   </div>
+
+  <!-- 移动端 📅 面板：账号 + 日期 -->
+  <aside class="cal-panel" id="calPanel">
+    <div class="cal-head">
+      <span class="cal-title">筛选</span>
+      <button class="cal-close" id="calClose" aria-label="关闭">✕</button>
+    </div>
+    <div class="filter-reset">
+      <button class="reset-chip active" id="resetAcctM">全部账号</button>
+      <button class="reset-chip active" id="resetTimeM">全部时间</button>
+    </div>
+    <div class="cal-section-label">账号</div>
+    <div class="cal-scope" id="calScopeM"></div>
+    <div class="cal-section-label">日期</div>
+    <div class="cal-tree" id="calTreeM"></div>
+  </aside>
 
   <div class="tl-status" id="status">加载中…</div>
 
@@ -729,15 +730,15 @@ function renderStats(){
   el.innerHTML = `收录 <b>${DATA.accts.length}</b> 个账号<br>共 <b>${(DATA.posts.length || 0).toLocaleString()}</b> 条主推文`;
 }
 function renderReset(){
-  const ra = $('resetAcct'), rt = $('resetTime');
-  if (ra) ra.classList.toggle('active', filterAcct === null);
-  if (rt) rt.classList.toggle('active', filterYM === null);
+  [['resetAcct','resetAcctM', filterAcct === null], ['resetTime','resetTimeM', filterYM === null]]
+    .forEach(([a,b,act]) => [a,b].forEach(id => { const el=$(id); if (el) el.classList.toggle('active', act); }));
 }
 
 function renderCalScope(){
-  $('calScope').innerHTML = DATA.accts.map((a, i) =>
+  const html = DATA.accts.map((a, i) =>
     `<button class="cal-chip ${filterAcct===i?'active':''}" data-acct="${i}">${esc(a.n || a.a)}</button>`
   ).join('');
+  ['calScope','calScopeM'].forEach(id => { const el=$(id); if (el) el.innerHTML = html; });
 }
 
 function renderCalTree(){
@@ -756,7 +757,7 @@ function renderCalTree(){
     }
     html += `</div>`;
   }
-  $('calTree').innerHTML = html;
+  ['calTree','calTreeM'].forEach(id => { const el=$(id); if (el) el.innerHTML = html; });
 }
 
 function refreshFilters(){ renderReset(); renderCalScope(); renderCalTree(); }
@@ -772,39 +773,36 @@ function closeCal(){
 }
 
 function setupCal(){
-  $('calBtn').addEventListener('click', openCal);
-  $('calClose').addEventListener('click', closeCal);
-  $('calMask').addEventListener('click', closeCal);
+  const cb=$('calBtn'); if (cb) cb.addEventListener('click', openCal);
+  const cc=$('calClose'); if (cc) cc.addEventListener('click', closeCal);
+  const cm=$('calMask'); if (cm) cm.addEventListener('click', closeCal);
 
-  // 两个“全部”重置按钮
-  $('resetAcct').addEventListener('click', () => {
-    filterAcct = null; applyFilters(); refreshFilters();
-  });
-  $('resetTime').addEventListener('click', () => {
-    filterYM = null; applyFilters(); refreshFilters();
-  });
+  ['resetAcct','resetAcctM'].forEach(id => { const el=$(id); if (el) el.addEventListener('click', () => { filterAcct=null; applyFilters(); refreshFilters(); }); });
+  ['resetTime','resetTimeM'].forEach(id => { const el=$(id); if (el) el.addEventListener('click', () => { filterYM=null; applyFilters(); refreshFilters(); }); });
 
-  $('calScope').addEventListener('click', e => {
-    const chip = e.target.closest('.cal-chip'); if (!chip) return;
-    filterAcct = parseInt(chip.dataset.acct, 10);
-    filterYM = null;  // 切账号重置月份（不同账号月份不同）
-    applyFilters(); refreshFilters();
+  ['calScope','calScopeM'].forEach(id => {
+    const el=$(id); if (!el) return;
+    el.addEventListener('click', e => {
+      const chip = e.target.closest('.cal-chip'); if (!chip) return;
+      filterAcct = parseInt(chip.dataset.acct, 10);
+      filterYM = null;   // 切账号重置月份
+      applyFilters(); refreshFilters();
+    });
   });
 
-  $('calTree').addEventListener('click', e => {
-    const yearBtn = e.target.closest('.cal-year');
-    if (yearBtn) {
-      yearBtn.classList.toggle('open');
-      const mm = $('calTree').querySelector(`.cal-months[data-year-months="${yearBtn.dataset.year}"]`);
-      if (mm) mm.classList.toggle('open');
-      return;
-    }
-    const mBtn = e.target.closest('.cal-month');
-    if (mBtn) {
-      filterYM = mBtn.dataset.ym;
-      applyFilters(); renderReset();
-      closeCal();
-    }
+  ['calTree','calTreeM'].forEach(id => {
+    const el=$(id); if (!el) return;
+    el.addEventListener('click', e => {
+      const yb = e.target.closest('.cal-year');
+      if (yb) {
+        yb.classList.toggle('open');
+        const mm = el.querySelector(`.cal-months[data-year-months="${yb.dataset.year}"]`);
+        if (mm) mm.classList.toggle('open');
+        return;
+      }
+      const mb = e.target.closest('.cal-month');
+      if (mb) { filterYM = mb.dataset.ym; applyFilters(); refreshFilters(); closeCal(); }
+    });
   });
 }
 
