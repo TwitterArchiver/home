@@ -40,7 +40,7 @@ body {
   transition: background .25s, color .25s;
 }
 a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; }
 
 /* ── 进场动画 ── */
 @keyframes heroIn {
@@ -312,11 +312,14 @@ footer a:hover { color: var(--accent); text-decoration: none; }
   padding: 12px 0; border-radius: 999px; font-size: .92rem; font-weight: 600;
   transition: transform .15s, box-shadow .15s, background .15s; -webkit-tap-highlight-color: transparent;
 }
-.preview-cta.cta-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 14px rgba(29,155,240,.3); }
+.preview-cta.cta-primary {
+  background: radial-gradient(135% 175% at 50% 42%, var(--accent) 46%, color-mix(in srgb, var(--accent) 80%, #fff) 100%);
+  color: #fff; box-shadow: 0 2px 9px rgba(29,155,240,.2);
+}
 .preview-cta.cta-ghost { background: var(--bg-card); color: var(--text); border: 1px solid var(--border); }
 @media (hover: hover) {
   .preview-item:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.08); }
-  .preview-cta.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(29,155,240,.4); }
+  .preview-cta.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(29,155,240,.3); }
   .preview-cta.cta-ghost:hover { transform: translateY(-2px); background: var(--bg-hover); }
 }
 @media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 26px; } }
