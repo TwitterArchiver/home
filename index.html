@@ -288,13 +288,44 @@ footer a:hover { color: var(--accent); text-decoration: none; }
   .hero { padding: 60px 20px 48px; }
   .grid { grid-template-columns: 1fr; }
 }
+
+/* ── 预览区：留言 + 时间线 ── */
+.preview { max-width: 1100px; margin: 0 auto 8px; padding: 0 24px; }
+.preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; }
+.preview-col { display: flex; flex-direction: column; }
+.preview-head { font-weight: 700; font-size: 1.02rem; margin-bottom: 12px; }
+.preview-list { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.preview-item {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 13px 15px; cursor: pointer; transition: transform .15s, box-shadow .15s;
+}
+.pi-head { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+.pi-nick { font-weight: 700; font-size: .88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pi-sub { font-size: .75rem; color: var(--text-muted); margin-left: auto; flex-shrink: 0; }
+.pi-text {
+  font-size: .89rem; line-height: 1.5; color: var(--text);
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.preview-empty { color: var(--text-muted); font-size: .85rem; padding: 8px 2px; }
+.preview-cta {
+  margin-top: 14px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 0; border-radius: 999px; font-size: .92rem; font-weight: 600;
+  transition: transform .15s, box-shadow .15s, background .15s; -webkit-tap-highlight-color: transparent;
+}
+.preview-cta.cta-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 14px rgba(29,155,240,.3); }
+.preview-cta.cta-ghost { background: var(--bg-card); color: var(--text); border: 1px solid var(--border); }
+@media (hover: hover) {
+  .preview-item:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+  .preview-cta.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(29,155,240,.4); }
+  .preview-cta.cta-ghost:hover { transform: translateY(-2px); background: var(--bg-hover); }
+}
+@media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 26px; } }
 </style>
 </head>
 <body>
 
 <nav class="top-nav">
-  <a href="./search.html" title="全站时间线"><span class="nav-ico">🕐</span><span class="nav-label">时间线</span></a>
-  <a href="./guestbook.html" class="nav-pc-only" title="留言板"><span class="nav-ico">💬</span><span class="nav-label">留言板</span></a>
+  <a href="./guestbook.html" title="留言板"><span class="nav-ico">💬</span><span class="nav-label">留言板</span></a>
 </nav>
 <button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
 
@@ -318,6 +349,22 @@ footer a:hover { color: var(--accent); text-decoration: none; }
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polyline points="6 9 12 15 18 9"/>
     </svg>
+  </div>
+</section>
+
+<!-- 预览区：留言 + 时间线 -->
+<section class="preview" id="preview">
+  <div class="preview-grid">
+    <div class="preview-col">
+      <div class="preview-head">💬 大家的留言</div>
+      <div id="msg-preview" class="preview-list"><div class="preview-empty">加载中…</div></div>
+      <a class="preview-cta cta-ghost" href="./guestbook.html">💬 查看全部留言</a>
+    </div>
+    <div class="preview-col">
+      <div class="preview-head">🕐 全站时间线</div>
+      <div id="tl-preview" class="preview-list"><div class="preview-empty">加载中…</div></div>
+      <a class="preview-cta cta-primary" href="./search.html">🕐 进入全站时间线</a>
+    </div>
   </div>
 </section>
 
@@ -417,6 +464,68 @@ async function loadRepos() {
 }
 
 loadRepos();
+
+/* ── 预览区：留言（Waline）+ 时间线（search-index）── */
+// ≤2 全显示；≥3 取 3 条，高概率含热度最高的 2 条，顺序打乱
+function pickPreview(items, weightFn) {
+  if (items.length <= 2) return items.slice();
+  const sorted = [...items].sort((a, b) => weightFn(b) - weightFn(a));
+  const top = sorted.slice(0, 2);
+  const result = [];
+  for (const t of top) if (Math.random() < 0.8) result.push(t);   // 各 80% 概率入选
+  const remain = items.filter(x => !result.includes(x));
+  while (result.length < 3 && remain.length) {
+    result.push(remain.splice(Math.floor(Math.random() * remain.length), 1)[0]);
+  }
+  return result.sort(() => Math.random() - 0.5).slice(0, 3);       // 打乱，避免热门总在前
+}
+
+async function loadMsgPreview() {
+  const box = document.getElementById('msg-preview');
+  try {
+    const r = await fetch('https://waline-twitterarchiver.vercel.app/api/comment?type=recent&count=30',
+                          { headers: { Accept: 'application/json' } });
+    const j = await r.json();
+    const list = (j.data || []).filter(c => c.status !== 'spam');
+    if (!list.length) { box.innerHTML = '<div class="preview-empty">还没有留言，来留下第一句吧～</div>'; return; }
+    const picked = pickPreview(list, c => c.like || 0);
+    box.innerHTML = picked.map(c => {
+      const text = (c.orig || c.comment || '').replace(/<[^>]+>/g, '').trim();
+      const like = c.like ? `♥ ${c.like}` : '';
+      return `<div class="preview-item" onclick="location.href='./guestbook.html'">
+        <div class="pi-head"><span class="pi-nick">${esc(c.nick || '匿名')}</span><span class="pi-sub">${like}</span></div>
+        <div class="pi-text">${esc(text)}</div></div>`;
+    }).join('');
+  } catch (e) { box.innerHTML = '<div class="preview-empty">留言加载失败</div>'; }
+}
+
+async function loadTlPreview() {
+  const box = document.getElementById('tl-preview');
+  try {
+    const r = await fetch('./search-index.json', { cache: 'no-cache' });
+    const idx = await r.json();
+    const accts = idx.accts || [], posts = idx.posts || [];
+    const cand = posts.filter(p => (p[1] || '').trim());
+    if (!cand.length) { box.innerHTML = '<div class="preview-empty">暂无推文</div>'; return; }
+    // 推文偏随机：先随机取一批样本，再从样本里挑热度(回复数)最高的 2 条 + 随机
+    const pool = cand.slice(), sample = [];
+    for (let i = 0; i < Math.min(60, cand.length); i++) {
+      sample.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+    }
+    const picked = pickPreview(sample, p => p[5] || 0);
+    box.innerHTML = picked.map(p => {
+      const a = accts[p[0]] || {};
+      const rc = p[5] ? `💬 ${p[5]}` : '';
+      const suf = (p[2] || '').slice(-8);
+      return `<div class="preview-item" onclick="location.href='./search.html?t=${suf}'">
+        <div class="pi-head"><span class="pi-nick">${esc(a.n || a.a || '')}</span><span class="pi-sub">${rc}</span></div>
+        <div class="pi-text">${esc(p[1])}</div></div>`;
+    }).join('');
+  } catch (e) { box.innerHTML = '<div class="preview-empty">推文加载失败</div>'; }
+}
+
+loadMsgPreview();
+loadTlPreview();
 </script>
 </body>
 </html>
