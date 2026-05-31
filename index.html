@@ -69,11 +69,17 @@ a:hover { text-decoration: underline; }
   font-size: 14px; font-weight: 600;
   box-shadow: 0 1px 4px rgba(0,0,0,.08);
   transition: background .15s, box-shadow .15s, transform .15s;
+  -webkit-tap-highlight-color: transparent;
 }
-.top-nav a:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); background: var(--bg-hover); transform: translateY(-1px); }
+.top-nav a .nav-ico { font-size: 17px; line-height: 1; }   /* 图标与主题按钮(17px)一致 */
+/* hover 只在真正支持悬停的设备生效，避免触屏点击后样式粘滞 */
+@media (hover: hover) {
+  .top-nav a:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); background: var(--bg-hover); transform: translateY(-1px); }
+}
 @media (max-width: 600px) {
   .top-nav a .nav-label { display: none; }      /* 窄屏只留图标 */
   .top-nav a { padding: 0; width: 38px; justify-content: center; }
+  .top-nav .nav-pc-only { display: none; }       /* 手机端隐藏留言板（底部已有入口）*/
 }
 
 /* ── Hero 区 ── */
@@ -149,7 +155,10 @@ a:hover { text-decoration: underline; }
   transition: background .15s, box-shadow .15s;
   box-shadow: 0 1px 4px rgba(0,0,0,.08);
 }
-.theme-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); }
+.theme-btn { -webkit-tap-highlight-color: transparent; }
+@media (hover: hover) {
+  .theme-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); }
+}
 
 /* ── 仓库区 ── */
 .repos {
@@ -173,6 +182,7 @@ a:hover { text-decoration: underline; }
   gap: 12px;
   margin-bottom: 40px;
 }
+.grid:last-child { margin-bottom: 0; }   /* 最后一组不留底部空白，间距交给 footer 上方 */
 
 /* ── 卡片 ── */
 .card {
@@ -283,8 +293,8 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 <body>
 
 <nav class="top-nav">
-  <a href="./search.html" title="全站时间线"><span>🕐</span><span class="nav-label">时间线</span></a>
-  <a href="./guestbook.html" title="留言板"><span>💬</span><span class="nav-label">留言板</span></a>
+  <a href="./search.html" title="全站时间线"><span class="nav-ico">🕐</span><span class="nav-label">时间线</span></a>
+  <a href="./guestbook.html" class="nav-pc-only" title="留言板"><span class="nav-ico">💬</span><span class="nav-label">留言板</span></a>
 </nav>
 <button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
 
