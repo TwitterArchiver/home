@@ -159,6 +159,7 @@ a:hover { text-decoration: none; }
 @media (hover: hover) {
   .theme-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.14); }
 }
+.top-nav a:active, .theme-btn:active { transform: scale(.92); transition-duration: .06s; }
 
 /* ── 仓库区 ── */
 .repos {
@@ -313,7 +314,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
   transition: transform .15s, box-shadow .15s, background .15s; -webkit-tap-highlight-color: transparent;
 }
 .preview-cta.cta-primary {
-  background: radial-gradient(135% 175% at 50% 42%, var(--accent) 46%, color-mix(in srgb, var(--accent) 80%, #fff) 100%);
+  background: radial-gradient(135% 190% at 50% 40%, var(--accent) 28%, color-mix(in srgb, var(--accent) 60%, #fff) 100%);
   color: #fff; box-shadow: 0 2px 9px rgba(29,155,240,.2);
 }
 .preview-cta.cta-ghost { background: var(--bg-card); color: var(--text); border: 1px solid var(--border); }
@@ -322,6 +323,9 @@ footer a:hover { color: var(--accent); text-decoration: none; }
   .preview-cta.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(29,155,240,.3); }
   .preview-cta.cta-ghost:hover { transform: translateY(-2px); background: var(--bg-hover); }
 }
+/* 按压反馈：点下时缩一下（放在 hover 之后，点击时覆盖 hover 的位移）*/
+.preview-cta:active { transform: scale(.97); box-shadow: 0 1px 5px rgba(29,155,240,.18); transition-duration: .06s; }
+.preview-item:active { transform: scale(.985); transition-duration: .06s; }
 @media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 26px; } }
 </style>
 </head>
