@@ -200,16 +200,16 @@ a { color: var(--accent); text-decoration: none; }
 
 /* ── 电脑端：顶栏横条 + 三栏（左账号 / 中时间线 / 右日期）── */
 @media (min-width: 1024px) {
-  /* 顶栏横条（吸顶固定） */
+  /* 顶栏横条（吸顶固定，与三栏同宽对齐） */
   .top { display: block; position: sticky; top: 0; z-index: 100; }
   .top-inner {
     max-width: 1500px; margin: 0 auto; padding: 10px 32px;
-    display: flex; align-items: center; gap: 18px;
+    display: flex; align-items: center; justify-content: center; gap: 28px;
   }
-  .top-title { flex: 1; min-width: 0; font-size: 1.35rem; }   /* 左半 */
+  .top-title { width: 300px; flex-shrink: 0; font-size: 1.35rem; }   /* 对齐左栏(300) */
   .top-title-text { display: inline; }
-  .search-wrap { width: 440px; flex-shrink: 0; }              /* 中：固定宽，居中 */
-  .top-right { flex: 1; justify-content: flex-end; gap: 8px; }/* 右半靠右 */
+  .search-wrap { flex: 1 1 720px; max-width: 720px; min-width: 0; }   /* 中：与中栏同宽对齐 */
+  .top-right { width: 300px; flex-shrink: 0; justify-content: flex-end; gap: 8px; } /* 对齐右栏(300) */
   .top-nav-item { display: inline-flex; }
   #calBtn { display: none; }              /* 电脑端不用📅，左右栏常驻 */
   .cal-mask { display: none !important; }
@@ -744,9 +744,17 @@ function renderReset(){
 }
 
 function renderCalScope(){
-  const html = DATA.accts.map((a, i) =>
-    `<button class="cal-chip ${filterAcct===i?'active':''}" data-acct="${i}">${esc(a.n || a.a)}</button>`
-  ).join('');
+  // 炽烈已极(AnIncandescence) 与 Pale Fire(TauCeti_10700) 置顶，其余保持原序
+  const pinned = ['anincandescence', 'tauceti_10700'];
+  const rank = i => { const p = pinned.indexOf((DATA.accts[i].a || '').toLowerCase()); return p === -1 ? 999 : p; };
+  const order = DATA.accts.map((_, i) => i).sort((x, y) => {
+    const rx = rank(x), ry = rank(y);
+    return rx !== ry ? rx - ry : x - y;
+  });
+  const html = order.map(i => {
+    const a = DATA.accts[i];
+    return `<button class="cal-chip ${filterAcct===i?'active':''}" data-acct="${i}">${esc(a.n || a.a)}</button>`;
+  }).join('');
   ['calScope','calScopeM'].forEach(id => { const el=$(id); if (el) el.innerHTML = html; });
 }
 
