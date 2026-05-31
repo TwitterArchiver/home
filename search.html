@@ -284,6 +284,11 @@ a { color: var(--accent); text-decoration: none; }
   font-size: 0.72rem; color: var(--text-dim); background: var(--bg-hover);
   padding: 1px 7px; border-radius: 6px; font-weight: 600;
 }
+.tl-reply-cross {
+  color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent);
+  text-decoration: none; transition: background .15s;
+}
+.tl-reply-cross:hover { background: color-mix(in srgb, var(--accent) 22%, transparent); }
 .tl-reply-time { font-size: 0.8rem; color: var(--text-dim); }
 .tl-reply-text { font-size: 0.95rem; line-height: 1.45; white-space: pre-wrap; word-break: break-word; }
 .tl-reply .tl-images { margin-top: 8px; }
@@ -572,6 +577,32 @@ async function loadAcctIndex(repo, account){
   acctCache[key] = data;
   return data;
 }
+
+// 跨账号回复索引：{ 对话根id: [[回复者账号编号, 回复tweetid, 文本, 时间, reply_to_id]] }
+let crossReplies = null;
+async function loadCrossReplies(){
+  if (crossReplies !== null) return crossReplies;
+  try {
+    const res = await fetch('cross-replies.json', { cache: 'no-cache' });
+    crossReplies = res.ok ? await res.json() : {};
+  } catch(e) { crossReplies = {}; }
+  return crossReplies;
+}
+// 把跨账号回复 [ai, tweetid, 文本, 时间, reply_to_id] 构造成可渲染的回复卡片对象
+function buildCrossRep(cr){
+  const ra = DATA.accts[cr[0]] || {};
+  const rbase = `${ORG_BASE}/${ra.r}/accounts/${ra.a}/wayback_snapshots/`;
+  return {
+    tweet_id: cr[1], text: cr[2], timestamp: cr[3], reply_to_id: cr[4] || '',
+    author_name: ra.n || ra.a || '', author_username: ra.u || '',
+    is_reply: true, is_virtual: false,
+    _cross: {
+      avUrl: ra.av ? rbase + 'avatar/' + ra.av : '',
+      handle: (ra.u || '').replace(/^@/,''),
+      jump: `${ORG_BASE}/${ra.r}/?t=${(cr[1] || '').slice(-8)}`,
+    }
+  };
+}
 function dImg(repo, account, rel){ const n=(rel||'').split('/').pop(); return `${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/image/${n}`; }
 function dAva(repo, account, rel){ const n=(rel||'').split('/').pop(); return n?`${ORG_BASE}/${repo}/accounts/${account}/wayback_snapshots/avatar/${n}`:''; }
 
@@ -584,9 +615,10 @@ function renderReplyCard(rep, assetBase, ownerUsername){
   const repUname = (rep.author_username || '').replace(/^@/,'').toLowerCase();
   const isOwner = ownerUsername && repUname === ownerUsername;
 
-  // 头像：本地 ../avatar/ 拼 assetBase；http 原样（可能失效，onerror 兜底）
+  // 头像：跨账号回复用回复者自己仓库的头像；否则本地 ../avatar/ 拼 assetBase
   let av = rep.author_avatar || '', avUrl = '';
-  if (av.startsWith('../')) avUrl = assetBase + av.slice(3);
+  if (rep._cross) avUrl = rep._cross.avUrl;
+  else if (av.startsWith('../')) avUrl = assetBase + av.slice(3);
   else if (av.startsWith('http')) avUrl = av;
   else if (av) avUrl = assetBase + 'avatar/' + av.split('/').pop();
   const avHtml = avUrl
@@ -603,9 +635,17 @@ function renderReplyCard(rep, assetBase, ownerUsername){
       `</div>`;
   }
 
-  // 非本人（被回复/引用的对象）标“引用”，且显示其用户名；本人回复不重复显示用户名
-  const badge = !isOwner ? `<span class="tl-reply-badge">引用</span>` : '';
-  const unameHtml = isOwner ? '' : `<span class="tl-reply-handle">${username}</span>`;
+  // 跨账号回复 → 「↗ 来自 @xxx」可点击；被回复/引用对象 → 「引用」；本人回复无标签
+  let badge, unameHtml;
+  if (rep._cross) {
+    badge = `<a class="tl-reply-badge tl-reply-cross" href="${esc(rep._cross.jump)}" target="_blank" rel="noopener" title="跳到该账号的存档">↗ 来自 @${esc(rep._cross.handle)}</a>`;
+    unameHtml = `<span class="tl-reply-handle">${username}</span>`;
+  } else if (!isOwner) {
+    badge = `<span class="tl-reply-badge">引用</span>`;
+    unameHtml = `<span class="tl-reply-handle">${username}</span>`;
+  } else {
+    badge = ''; unameHtml = '';
+  }
   return `<div class="tl-reply${rep.is_virtual?' tl-reply-virtual':''}">
     <div class="tl-reply-av-col">
       ${avHtml}
@@ -651,6 +691,7 @@ async function toggleReplies(btn){
 
   try {
     const data = await loadAcctIndex(a.r, a.a);
+    const cross = await loadCrossReplies();
     // idIndex 含所有条目（含虚拟外人条目）；replyMap 只收真实的本人回复（按 conversation_id）
     const idIndex = {}, replyMap = {};
     for (const it of data) {
@@ -660,16 +701,26 @@ async function toggleReplies(btn){
     }
     const ownerReplies = (replyMap[tid] || []).slice()
       .sort((x,y) => (x.timestamp||'').localeCompare(y.timestamp||''));
-    // 组装链：每条本人回复前，插入它 reply_to_id 指向的被回复条目（含外人虚拟条目）
-    const chainItems = [], seen = new Set([tid]);
+    // 组装链：本账号回复链 + 跨账号回复，按时间混排
+    // 每项 {rep, ts, seq}；引用对象 seq=0（紧贴在它配对的本人回复前），回复 seq=1
+    const cardList = [], seen = new Set([tid]);
     for (const rep of ownerReplies) {
+      const ts = rep.timestamp || '';
       const pid = rep.reply_to_id;
       if (pid && pid !== tid && !seen.has(pid)) {
         const par = idIndex[pid];
-        if (par) { chainItems.push(par); seen.add(pid); }
+        if (par) { cardList.push({rep: par, ts, seq: 0}); seen.add(pid); }
       }
-      if (!seen.has(rep.tweet_id)) { chainItems.push(rep); seen.add(rep.tweet_id); }
+      if (!seen.has(rep.tweet_id)) { cardList.push({rep, ts, seq: 1}); seen.add(rep.tweet_id); }
     }
+    // 跨账号回复（别的站内账号回复了这条主推文）
+    for (const cr of (cross[tid] || [])) {
+      if (seen.has(cr[1])) continue;
+      cardList.push({rep: buildCrossRep(cr), ts: cr[3] || '', seq: 1});
+      seen.add(cr[1]);
+    }
+    cardList.sort((x,y) => (x.ts||'').localeCompare(y.ts||'') || x.seq - y.seq);
+    const chainItems = cardList.map(c => c.rep);
     const assetBase = `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/`;
     const ownerUsername = (a.u || '').replace(/^@/,'').toLowerCase();
     box.innerHTML = chainItems.length
