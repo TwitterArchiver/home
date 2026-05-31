@@ -37,7 +37,8 @@ jobs:
 
           accts = []          # 账号表：[{r,a,u,n,av}]
           acct_map = {}       # (repo,acct) -> 账号编号
-          posts = []          # [账号编号, 文本, tweetid, 时间戳, [图片名...]]
+          posts = []          # [账号编号, 文本, tweetid, 时间戳, [图片名...], 回复数]
+          all_replies = []    # [(账号编号, conversation_id, tweetid, 文本, 时间, reply_to_id)] 跨账号用
 
           for repo in repos:
               try:
@@ -102,16 +103,53 @@ jobs:
                           reply_cnt.get(tid, 0),
                       ])
                       cnt += 1
+                  # 收集该账号的回复（稍后筛出"回复别的站内账号"的跨账号回复）
+                  ai = acct_map.get((repo, acct))
+                  if ai is not None:
+                      for p in data:
+                          if p.get("is_reply") and not p.get("is_virtual"):
+                              cid = p.get("conversation_id")
+                              if not cid: continue
+                              all_replies.append((
+                                  ai, cid, p.get("tweet_id",""),
+                                  p.get("text","") or p.get("body_text",""),
+                                  p.get("timestamp",""),
+                                  p.get("reply_to_id","") or "",
+                              ))
                   print(f"  ✓ {repo}/{acct}: 主推文 {cnt} 条")
 
           # 按时间倒序（最新在前），posts[3] 是时间戳
           posts.sort(key=lambda x: x[3], reverse=True)
+
+          # ── 跨账号回复索引 cross-replies.json ──
+          # 只收"回复别的站内账号主推文"的回复（回复自己的主推文，展开时读本账号 json 即可显示）
+          mid2ai = {pp[2]: pp[0] for pp in posts}   # 主推文id -> 所属账号编号
+          cross = {}
+          for (ai, cid, rid, txt, ts, rt) in all_replies:
+              owner = mid2ai.get(cid)
+              if owner is None: continue            # 对话根不在站内
+              if owner == ai: continue              # 回复自己，跳过
+              cross.setdefault(cid, []).append([ai, rid, txt, ts, rt])
+          for cid in cross:                          # 每个对话内按时间升序
+              cross[cid].sort(key=lambda x: x[3])
+
+          # 把跨账号回复数补加到对应主推文的回复计数（让"展开回复 N"含跨账号那几条）
+          mid2post = {}
+          for pp in posts:
+              if pp[2] not in mid2post: mid2post[pp[2]] = pp
+          for cid, reps in cross.items():
+              if cid in mid2post: mid2post[cid][5] += len(reps)
 
           result = {"accts": accts, "posts": posts}
           with open("search-index.json","w",encoding="utf-8") as f:
               json.dump(result, f, ensure_ascii=False, separators=(",",":"))
           print(f"=== 账号 {len(accts)} 个，主推文 {len(posts)} 条，"
                 f"{os.path.getsize('search-index.json')} 字节 ===")
+
+          with open("cross-replies.json","w",encoding="utf-8") as f:
+              json.dump(cross, f, ensure_ascii=False, separators=(",",":"))
+          print(f"=== 跨账号对话 {len(cross)} 组，回复 {sum(len(v) for v in cross.values())} 条，"
+                f"{os.path.getsize('cross-replies.json')} 字节 ===")
           PYEOF
           python3 /tmp/build.py
 
@@ -119,7 +157,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add search-index.json
+          git add search-index.json cross-replies.json
           if git diff --cached --quiet; then echo "索引无变化"; exit 0; fi
           git commit -m "🔍 更新全站搜索索引 $(date -u +%Y-%m-%d) [skip ci]"
           git push
