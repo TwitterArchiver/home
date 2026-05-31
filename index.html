@@ -52,9 +52,9 @@ a:hover { text-decoration: underline; }
 .anim-3 { animation: heroIn .7s .38s cubic-bezier(.22,.68,0,1.2) both; }
 .anim-4 { animation: heroIn .7s .52s cubic-bezier(.22,.68,0,1.2) both; }
 
-/* 左上角固定导航：时间线 / 留言板（主题按钮在右上角） */
+/* 左上角导航：留言板（钉在页面顶部，随页面滚动，不浮动盖住内容） */
 .top-nav {
-  position: fixed;
+  position: absolute;
   top: 14px; left: 16px;
   display: flex; align-items: center; gap: 8px;
   z-index: 99;
@@ -141,7 +141,7 @@ a:hover { text-decoration: underline; }
 
 /* ── 主题按钮 ── */
 .theme-btn {
-  position: fixed;
+  position: absolute;
   top: 14px; right: 16px;
   z-index: 99;
   background: var(--bg-card);
@@ -290,7 +290,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 }
 
 /* ── 预览区：留言 + 时间线 ── */
-.preview { max-width: 1100px; margin: 0 auto 8px; padding: 0 24px; }
+.preview { max-width: 1200px; margin: 0 auto 40px; padding: 0 24px; }
 .preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; }
 .preview-col { display: flex; flex-direction: column; }
 .preview-head { font-weight: 700; font-size: 1.02rem; margin-bottom: 12px; }
@@ -483,10 +483,14 @@ function pickPreview(items, weightFn) {
 async function loadMsgPreview() {
   const box = document.getElementById('msg-preview');
   try {
-    const r = await fetch('https://waline-twitterarchiver.vercel.app/api/comment?type=recent&count=30',
+    const r = await fetch('https://waline-twitterarchiver.vercel.app/api/comment?type=recent&count=50',
                           { headers: { Accept: 'application/json' } });
     const j = await r.json();
-    const list = (j.data || []).filter(c => c.status !== 'spam');
+    const list = (j.data || []).filter(c => {
+      if (c.status === 'spam') return false;
+      const t = (c.orig || c.comment || '').replace(/<[^>]+>/g, '').trim();
+      return t.length >= 6;   // 过滤掉"谢谢！"这类太短的客套，预览更有内容
+    });
     if (!list.length) { box.innerHTML = '<div class="preview-empty">还没有留言，来留下第一句吧～</div>'; return; }
     const picked = pickPreview(list, c => c.like || 0);
     box.innerHTML = picked.map(c => {
