@@ -96,7 +96,7 @@ jobs:
                       tid = p.get("tweet_id","")
                       posts.append([
                           ai,
-                          p.get("text","") or p.get("body_text",""),
+                          p.get("body_text","") or p.get("text",""),
                           tid,
                           p.get("timestamp",""),
                           [os.path.basename(x) for x in (p.get("wanted_images") or [])],
@@ -112,7 +112,7 @@ jobs:
                               if not cid: continue
                               all_replies.append((
                                   ai, cid, p.get("tweet_id",""),
-                                  p.get("text","") or p.get("body_text",""),
+                                  p.get("body_text","") or p.get("text",""),
                                   p.get("timestamp",""),
                                   p.get("reply_to_id","") or "",
                               ))
