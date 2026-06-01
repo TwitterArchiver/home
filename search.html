@@ -468,7 +468,7 @@ function cardHtml(p, idx){
   const imgs = p[4] || [];
   let textHtml = esc(text);
   if (curKw) textHtml = textHtml.replace(new RegExp(escRe(curKw),'gi'), m=>`<mark>${m}</mark>`);
-  textHtml = textHtml.replace(/\n/g, '<br>');
+  textHtml = textHtml.replace(/\n{2,}/g, '\n').replace(/\n/g, '<br>');
 
   const av = avatarUrl(p);
   const avHtml = av ? `<img class="tl-avatar" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-avatar"></div>`;
@@ -611,7 +611,7 @@ function renderReplyCard(rep, assetBase, ownerUsername){
   const name = esc(rep.author_name || '');
   const username = esc(rep.author_username || '');
   const text = cleanText(rep.body_text || rep.text || '');
-  const textHtml = esc(text).replace(/\n/g,'<br>');
+  const textHtml = esc(text).replace(/\n{2,}/g,'\n').replace(/\n/g,'<br>');
   const repUname = (rep.author_username || '').replace(/^@/,'').toLowerCase();
   const isOwner = ownerUsername && repUname === ownerUsername;
 
