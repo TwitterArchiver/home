@@ -22,13 +22,26 @@ jobs:
       - name: 汇总各仓库主推文，生成 search-index.json
         run: |
           cat > /tmp/build.py << 'PYEOF'
-          import json, subprocess, urllib.request, os
+          import json, subprocess, urllib.request, os, re
 
           ORG = "TwitterArchiver"
           EXCLUDE = {"Dispatcher", ".github", "home"}
 
           def sh(args):
               return subprocess.check_output(args).decode()
+
+          _RT_PREFIX = re.compile(r'^\s*(RT @[^:：]+[:：]\s*)')
+          def resolve_text(p):
+              """正文优先 body_text；若是被截断的转推(RT…)且带 embedded 原推全文，
+                 则用「RT @原作者: 嵌入全文」重建，补回被推特截掉的内容。"""
+              t = p.get("body_text","") or p.get("text","")
+              emb = p.get("embedded")
+              if isinstance(emb, dict):
+                  eb = emb.get("body_text") or ""
+                  if eb and t.lstrip().startswith("RT @") and t.rstrip().endswith("…"):
+                      m = _RT_PREFIX.match(t)
+                      return (m.group(1) if m else "RT: ") + eb
+              return t
 
           repos = sh(["gh","repo","list",ORG,"--limit","300","--json","name",
                       "--jq",".[].name"]).split()
@@ -96,7 +109,7 @@ jobs:
                       tid = p.get("tweet_id","")
                       posts.append([
                           ai,
-                          p.get("body_text","") or p.get("text",""),
+                          resolve_text(p),
                           tid,
                           p.get("timestamp",""),
                           [os.path.basename(x) for x in (p.get("wanted_images") or [])],
@@ -112,7 +125,7 @@ jobs:
                               if not cid: continue
                               all_replies.append((
                                   ai, cid, p.get("tweet_id",""),
-                                  p.get("body_text","") or p.get("text",""),
+                                  resolve_text(p),
                                   p.get("timestamp",""),
                                   p.get("reply_to_id","") or "",
                               ))
