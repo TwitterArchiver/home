@@ -427,7 +427,7 @@ function makeCard(repo, featured) {
   d.innerHTML = `
     <div class="card-name">${esc(dispName)}</div>
     <div class="card-at">${esc(username)}</div>
-    ${repo.description ? `<div class="card-desc" onclick="event.stopPropagation();this.classList.toggle('expanded')">${esc(repo.description)}</div>` : ''}
+    ${repo.description ? `<div class="card-desc" onclick="event.stopPropagation();this.classList.toggle('expanded')">${esc(repo.description)}</div>` : '<div class="card-desc"></div>'}
     <div class="card-links">
       <a href="${pagesUrl(repoName)}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
       <a href="${githubUrl(repoName)}" target="_blank" onclick="event.stopPropagation()">⚙️ 仓库</a>
