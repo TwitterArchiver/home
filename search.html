@@ -308,10 +308,13 @@ a { color: var(--accent); text-decoration: none; }
 
 /* 图片网格 */
 .tl-images { display: grid; gap: 3px; margin-top: 10px; border-radius: 14px; overflow: hidden; }
-.tl-images img {
+.tl-images img, .tl-images video {
   width: 100%; height: 100%; object-fit: cover; display: block;
   background: var(--bg-hover); cursor: zoom-in; min-height: 0;
 }
+/* 视频：完整显示画面（不裁切），且不用放大镜光标 */
+.tl-images video { object-fit: contain; background: #000; cursor: default; }
+.tl-images.n1 video { max-height: 510px; }
 .tl-images.n1 { grid-template-columns: 1fr; }
 .tl-images.n1 img { max-height: 510px; object-fit: cover; }
 .tl-images.n2 { grid-template-columns: 1fr 1fr; aspect-ratio: 16/9; }
@@ -456,6 +459,21 @@ function cleanText(t){
 
 function acct(p){ return DATA.accts[p[0]] || {}; }
 function imgUrl(p, name){ const a = acct(p); return `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/image/${name}`; }
+/* 媒体分流：视频走 video/ 目录，图片走 image/ */
+function isVideoName(n){ return /\.(mp4|webm|mov|m4v)$/i.test(n || ''); }
+/* Twitter 的 GIF(animated_gif) 存成 mp4，URL 段是 tweet_video；普通视频是 amplify_video/ext_tw_video */
+function isGifName(n){ return /tweet_video/i.test(n || ''); }
+/* 视频标签：GIF 自动循环静音播放(还原推特体验)，普通视频给控件 */
+function videoTag(u){
+  return isGifName(u)
+    ? `<video src="${esc(u)}" autoplay loop muted playsinline preload="metadata" onerror="this.remove()"></video>`
+    : `<video src="${esc(u)}" controls preload="metadata" playsinline onerror="this.remove()"></video>`;
+}
+function mediaUrl(p, name){
+  const a = acct(p);
+  const dir = isVideoName(name) ? 'video' : 'image';
+  return `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/${dir}/${name}`;
+}
 function avatarUrl(p){ const a = acct(p); return a.av ? `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/avatar/${a.av}` : ''; }
 function readerUrl(p){ const a = acct(p); const tid = p[2] || ''; return `${ORG_BASE}/${a.r}/?t=${tid.slice(-8)}`; }
 
@@ -476,7 +494,12 @@ function cardHtml(p, idx){
   let imgsHtml = '';
   if (imgs.length) {
     imgsHtml = `<div class="tl-images ${gridClass(imgs.length)}">` +
-      imgs.map(name => `<img src="${esc(imgUrl(p,name))}" loading="lazy" data-full="${esc(imgUrl(p,name))}" onerror="this.remove()">`).join('') +
+      imgs.map(name => {
+        const u = mediaUrl(p, name);
+        return isVideoName(name)
+          ? videoTag(u)
+          : `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`;
+      }).join('') +
       `</div>`;
   }
 
@@ -627,11 +650,16 @@ function renderReplyCard(rep, assetBase, ownerUsername){
 
   // 图片：仅当 media_keys 有值（=本条自己的媒体；空则图属于被引用推文）
   const hasOwnMedia = rep.media_keys && rep.media_keys.length > 0;
-  const imgs = (hasOwnMedia && rep.wanted_images ? rep.wanted_images : []).map(x => x.split('/').pop());
+  const imgs = (hasOwnMedia ? ((rep.wanted_images || []).concat(rep.wanted_videos || [])) : []).map(x => x.split('/').pop());
   let imgsHtml = '';
   if (imgs.length) {
     imgsHtml = `<div class="tl-images ${gridClass(imgs.length)}">` +
-      imgs.map(n => { const u = assetBase + 'image/' + n; return `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`; }).join('') +
+      imgs.map(n => {
+        const u = assetBase + (isVideoName(n) ? 'video/' : 'image/') + n;
+        return isVideoName(n)
+          ? videoTag(u)
+          : `<img src="${esc(u)}" loading="lazy" data-full="${esc(u)}" onerror="this.remove()">`;
+      }).join('') +
       `</div>`;
   }
 
@@ -735,6 +763,8 @@ async function toggleReplies(btn){
 function setupClicks(){
   const tl = $('timeline');
   tl.addEventListener('click', e => {
+    // 点视频（播放/进度条）不触发卡片跳转或灯箱
+    if (e.target.closest('.tl-images video')) { e.stopPropagation(); return; }
     const img = e.target.closest('.tl-images img');
     if (img) { const full = img.getAttribute('data-full'); if (full) openLightbox(full); return; }
     const tog = e.target.closest('.tl-replies-toggle');
