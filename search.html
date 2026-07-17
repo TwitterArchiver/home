@@ -265,6 +265,27 @@ a { color: var(--accent); text-decoration: none; }
   border-radius: 8px;
 }
 .tl-replies-toggle:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+/* 引用折叠头：与「展开回复」同款，但用更轻的底色区分 */
+.tl-quote-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px; padding: 5px 12px;
+  font: inherit; font-size: 0.9rem; font-weight: 600;
+  color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border: 0; border-radius: 999px; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (hover: hover) {
+  .tl-quote-toggle:hover { background: color-mix(in srgb, var(--accent) 15%, transparent); }
+}
+.tl-quote-toggle:active { transform: scale(.97); transition-duration: .06s; }
+.tl-quote-toggle svg { width: 15px; height: 15px; transition: transform .2s; }
+.tl-quote-toggle.open svg { transform: rotate(180deg); }
+.tl-quote-card {
+  margin-top: 8px; padding: 10px 12px;
+  border: 1px solid var(--border); border-radius: 12px;
+  background: var(--bg-hover);
+}
+.tl-quote-card .tl-reply-av { width: 26px; height: 26px; }
 .tl-replies-toggle svg { width: 15px; height: 15px; transition: transform .2s; }
 .tl-replies-toggle.open svg { transform: rotate(180deg); }
 .tl-replies { margin-top: 6px; }
@@ -486,7 +507,7 @@ function cardHtml(p, idx){
   const imgs = p[4] || [];
   let textHtml = esc(text);
   if (curKw) textHtml = textHtml.replace(new RegExp(escRe(curKw),'gi'), m=>`<mark>${m}</mark>`);
-  textHtml = textHtml.replace(/\n{2,}/g, '\n').replace(/\n/g, '<br>');
+  textHtml = textHtml.replace(/\n/g, '<br>');
 
   const av = avatarUrl(p);
   const avHtml = av ? `<img class="tl-avatar" src="${esc(av)}" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="tl-avatar"></div>`;
@@ -514,6 +535,11 @@ function cardHtml(p, idx){
     </div>
     ${textHtml ? `<div class="tl-text">${textHtml}</div>` : ''}
     ${imgsHtml}
+    ${p[6] ? `<button class="tl-quote-toggle" data-idx="${idx}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg>
+        引用
+      </button>
+      <div class="tl-quote"></div>` : ''}
     ${(p[5] > 0) ? `<button class="tl-replies-toggle" data-idx="${idx}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg>
         展开回复 <span class="tl-rc">${p[5]}</span>
@@ -634,7 +660,7 @@ function renderReplyCard(rep, assetBase, ownerUsername){
   const name = esc(rep.author_name || '');
   const username = esc(rep.author_username || '');
   const text = cleanText(rep.body_text || rep.text || '');
-  const textHtml = esc(text).replace(/\n{2,}/g,'\n').replace(/\n/g,'<br>');
+  const textHtml = esc(text).replace(/\n/g,'<br>');
   const repUname = (rep.author_username || '').replace(/^@/,'').toLowerCase();
   const isOwner = ownerUsername && repUname === ownerUsername;
 
@@ -694,6 +720,56 @@ function renderReplyCard(rep, assetBase, ownerUsername){
 
 function setToggleLabel(btn, open, rc){
   btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg> ${open?'收起回复':'展开回复'} <span class="tl-rc">${rc}</span>`;
+}
+
+/* ── 引用/转推原推：折叠头 + 懒加载内容（与阅读器表现一致）── */
+async function toggleQuote(btn){
+  const card = btn.closest('.tl-card');
+  const box  = card.querySelector('.tl-quote');
+  const idx  = parseInt(btn.dataset.idx, 10);
+  const p    = view[idx];
+  if (!p) return;
+
+  if (btn.classList.contains('open')) {
+    btn.classList.remove('open');
+    box.innerHTML = '';
+    return;
+  }
+  btn.classList.add('open');
+  box.innerHTML = `<div class="tl-status" style="padding:10px">加载引用…</div>`;
+
+  try {
+    const a = acct(p);
+    const data = await loadAcctIndex(a.r, a.a);
+    const it = data.find(x => x.tweet_id === p[2]);
+    const emb = it && it.embedded;
+    if (!emb || (!emb.body_text && !emb.author_username)) {
+      box.innerHTML = `<div class="tl-status" style="padding:10px">引用内容缺失</div>`;
+      return;
+    }
+    const assetBase = `${ORG_BASE}/${a.r}/accounts/${a.a}/wayback_snapshots/`;
+    let av = emb.author_avatar || '', avUrl = '';
+    if (av.startsWith('../')) avUrl = assetBase + av.slice(3);
+    else if (av.startsWith('http')) avUrl = av;
+    else if (av) avUrl = assetBase + 'avatar/' + av.split('/').pop();
+    const avHtml = avUrl
+      ? `<img class="tl-reply-av" src="${esc(avUrl)}" loading="lazy" onerror="this.style.visibility='hidden'">`
+      : `<div class="tl-reply-av"></div>`;
+    const txt = esc(cleanText(emb.body_text || '')).replace(/\n/g, '<br>');
+    const uname = (emb.author_username || '').replace(/^@/, '');
+    const jump = uname ? `${ORG_BASE}/${a.r}/?t=${(emb.tweet_id||'').slice(-8)}` : '';
+    box.innerHTML = `<div class="tl-quote-card">
+      <div class="tl-reply-meta">
+        ${avHtml}
+        <span class="tl-reply-name">${esc(emb.author_name || '')}</span>
+        ${uname ? `<span class="tl-reply-handle">@${esc(uname)}</span>` : ''}
+        <span class="tl-reply-time">${fmtTime(emb.timestamp)}</span>
+      </div>
+      ${txt ? `<div class="tl-reply-text">${txt}</div>` : ''}
+    </div>`;
+  } catch (e) {
+    box.innerHTML = `<div class="tl-status" style="padding:10px">引用加载失败</div>`;
+  }
 }
 
 async function toggleReplies(btn){
@@ -767,6 +843,8 @@ function setupClicks(){
     if (e.target.closest('.tl-images video')) { e.stopPropagation(); return; }
     const img = e.target.closest('.tl-images img');
     if (img) { const full = img.getAttribute('data-full'); if (full) openLightbox(full); return; }
+    const qtog = e.target.closest('.tl-quote-toggle');
+    if (qtog) { toggleQuote(qtog); return; }
     const tog = e.target.closest('.tl-replies-toggle');
     if (tog) { toggleReplies(tog); return; }
   });
