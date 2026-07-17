@@ -112,7 +112,8 @@ jobs:
                           resolve_text(p),
                           tid,
                           p.get("timestamp",""),
-                          [os.path.basename(x) for x in (p.get("wanted_images") or [])],
+                          [os.path.basename(x) for x in
+                           ((p.get("wanted_images") or []) + (p.get("wanted_videos") or []))],
                           reply_cnt.get(tid, 0),
                       ])
                       cnt += 1
