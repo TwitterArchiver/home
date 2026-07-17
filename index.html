@@ -421,15 +421,20 @@ function makeCard(repo, featured) {
   const repoName = repo.repo  || repo.name;
   const dispName = repo.name  || repoName;
   const username = repo.username || ('@' + repoName);
+  // 一个仓库可能有多个账号：带上 ?a= 指到具体那一个（单账号时不加，保持链接干净）
+  const acct = repo.acct || '';
+  const readUrl = (acct && acct.toLowerCase() !== repoName.toLowerCase())
+    ? `${pagesUrl(repoName)}?a=${encodeURIComponent(acct)}`
+    : pagesUrl(repoName);
   const d = document.createElement('div');
   d.className = 'card' + (featured ? ' featured' : '');
-  d.onclick = () => window.open(pagesUrl(repoName), '_blank');
+  d.onclick = () => window.open(readUrl, '_blank');
   d.innerHTML = `
     <div class="card-name">${esc(dispName)}</div>
     <div class="card-at">${esc(username)}</div>
     ${repo.description ? `<div class="card-desc" onclick="event.stopPropagation();this.classList.toggle('expanded')">${esc(repo.description)}</div>` : '<div class="card-desc"></div>'}
     <div class="card-links">
-      <a href="${pagesUrl(repoName)}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
+      <a href="${readUrl}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
       <a href="${githubUrl(repoName)}" target="_blank" onclick="event.stopPropagation()">⚙️ 仓库</a>
     </div>`;
   return d;
