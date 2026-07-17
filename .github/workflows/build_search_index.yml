@@ -169,6 +169,28 @@ jobs:
               json.dump(cross, f, ensure_ascii=False, separators=(",",":"))
           print(f"=== 跨账号对话 {len(cross)} 组，回复 {sum(len(v) for v in cross.values())} 条，"
                 f"{os.path.getsize('cross-replies.json')} 字节 ===")
+
+          # 首页预览样本：让 portal 不必为了 3 条预览去下整个 search-index.json
+          import random
+          pv_cand = [p for p in posts if (p[1] or "").strip()]
+          pv_hot  = sorted(pv_cand, key=lambda p: p[5], reverse=True)[:120]
+          pv_rest = [p for p in pv_cand if p not in pv_hot]
+          random.seed()
+          pv_pick = pv_hot + random.sample(pv_rest, min(180, len(pv_rest)))
+          pv_accts = {}
+          pv_posts = []
+          for p in pv_pick:
+              ai = p[0]
+              if ai not in pv_accts:
+                  pv_accts[ai] = len(pv_accts)
+              pv_posts.append([pv_accts[ai], (p[1] or "")[:200], p[2], p[5]])
+          preview = {
+              "accts": [accts[ai] for ai, _ in sorted(pv_accts.items(), key=lambda x: x[1])],
+              "posts": pv_posts,
+          }
+          with open("preview.json","w",encoding="utf-8") as f:
+              json.dump(preview, f, ensure_ascii=False, separators=(",",":"))
+          print(f"=== 首页预览样本 {len(pv_posts)} 条，{os.path.getsize('preview.json')} 字节 ===")
           PYEOF
           python3 /tmp/build.py
 
@@ -176,7 +198,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add search-index.json cross-replies.json
+          git add search-index.json cross-replies.json preview.json
           if git diff --cached --quiet; then echo "索引无变化"; exit 0; fi
           git commit -m "🔍 更新全站搜索索引 $(date -u +%Y-%m-%d) [skip ci]"
           git push
