@@ -513,7 +513,7 @@ async function loadMsgPreview() {
 async function loadTlPreview() {
   const box = document.getElementById('tl-preview');
   try {
-    const r = await fetch('./search-index.json', { cache: 'no-cache' });
+    const r = await fetch('./preview.json', { cache: 'no-cache' });
     const idx = await r.json();
     const accts = idx.accts || [], posts = idx.posts || [];
     const cand = posts.filter(p => (p[1] || '').trim());
@@ -523,10 +523,10 @@ async function loadTlPreview() {
     for (let i = 0; i < Math.min(60, cand.length); i++) {
       sample.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
     }
-    const picked = pickPreview(sample, p => p[5] || 0);
+    const picked = pickPreview(sample, p => p[3] || 0);
     box.innerHTML = picked.map(p => {
       const a = accts[p[0]] || {};
-      const rc = p[5] ? `💬 ${p[5]}` : '';
+      const rc = p[3] ? `💬 ${p[3]}` : '';
       const suf = (p[2] || '').slice(-8);
       return `<div class="preview-item" onclick="location.href='./search.html?t=${suf}'">
         <div class="pi-head"><span class="pi-nick">${esc(a.n || a.a || '')}</span><span class="pi-sub">${rc}</span></div>
