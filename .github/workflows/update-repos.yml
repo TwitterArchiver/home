@@ -23,36 +23,44 @@ jobs:
               .name != "Dispatcher" and
               .name != ".github" and
               .name != "home" and
+              .name != "project-starter" and
               .name != "TwitterArchiver.github.io"
             ) | [.name, (.description // "")] | @tsv' \
             | sort | while IFS=$'\t' read -r REPO REPO_DESC; do
             [ -z "$REPO" ] && continue
 
-            # 找 accounts/ 下的第一个子目录名（不一定等于仓库名）
-            ACCOUNT_DIR=$(gh api "repos/TwitterArchiver/$REPO/contents/accounts" \
-              --jq 'if type=="array" then .[0].name else "" end' 2>/dev/null || echo "")
-            [ -z "$ACCOUNT_DIR" ] && ACCOUNT_DIR="$REPO"
+            # 遍历 accounts/ 下【所有】子目录：一个仓库可能装多个账号，每个都要单独出一张卡
+            ACCOUNT_DIRS=$(gh api "repos/TwitterArchiver/$REPO/contents/accounts" \
+              --jq 'if type=="array" then (.[] | select(.type=="dir") | .name) else empty end' \
+              2>/dev/null | grep -E '^[A-Za-z0-9_.-]+$' | sort || true)
+            [ -z "$ACCOUNT_DIRS" ] && ACCOUNT_DIRS="$REPO"
 
-            PROFILE=$(gh api \
-              "repos/TwitterArchiver/$REPO/contents/accounts/$ACCOUNT_DIR/wayback_snapshots/profile.json" \
-              --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
+            echo "$ACCOUNT_DIRS" | while IFS= read -r ACCOUNT_DIR; do
+              [ -z "$ACCOUNT_DIR" ] && continue
 
-            DISP=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
-            USER=$(echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
+              PROFILE=$(gh api \
+                "repos/TwitterArchiver/$REPO/contents/accounts/$ACCOUNT_DIR/wayback_snapshots/profile.json" \
+                --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo '{}')
 
-            # AnIncanescence 用仓库自介，其他用 bio（完整，CSS 控制省略）
-            if [ "$REPO" = "AnIncanescence" ]; then
-              DESC="$REPO_DESC"
-            else
-              DESC=$(echo "$PROFILE" | jq -r '.bio // ""' 2>/dev/null || echo "")
-            fi
+              DISP=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
+              USER=$(echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
+              [ -z "$USER" ] && USER="@${ACCOUNT_DIR}"
 
-            jq -n \
-              --arg repo "$REPO" \
-              --arg name "$DISP" \
-              --arg user "$USER" \
-              --arg desc "$DESC" \
-              '{repo:$repo, name:$name, username:$user, description:$desc}'
+              # AnIncanescence 主账号用仓库自介，其他用 bio（完整，CSS 控制省略）
+              if [ "$REPO" = "AnIncanescence" ] && [ "$ACCOUNT_DIR" = "AnIncandescence" ]; then
+                DESC="$REPO_DESC"
+              else
+                DESC=$(echo "$PROFILE" | jq -r '.bio // ""' 2>/dev/null || echo "")
+              fi
+
+              jq -n \
+                --arg repo "$REPO" \
+                --arg acct "$ACCOUNT_DIR" \
+                --arg name "$DISP" \
+                --arg user "$USER" \
+                --arg desc "$DESC" \
+                '{repo:$repo, acct:$acct, name:$name, username:$user, description:$desc}'
+            done
           done | jq -s '.' > repos.json
 
       - name: 推送
