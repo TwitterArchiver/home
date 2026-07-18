@@ -327,6 +327,48 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .preview-cta:active { transform: scale(.97); box-shadow: 0 1px 5px rgba(29,155,240,.18); transition-duration: .06s; }
 .preview-item:active { transform: scale(.985); transition-duration: .06s; }
 @media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 26px; } }
+
+/* ═══ 头像墙背景（原地轮换·全局队列防重复·限流闪烁）═══ */
+:root{ --wall-size:155px; --wall-gap:55px; --wall-opacity:.80; --wall-speed:250s; }
+@media (max-width:767px){ :root{ --wall-size:105px; --wall-gap:30px; } }
+.wall{position:absolute;inset:0;overflow:hidden;z-index:0;
+  display:flex;justify-content:center;gap:var(--wall-gap);
+  opacity:0;pointer-events:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 80%,transparent);
+          mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 80%,transparent);
+  transition:opacity 1.6s ease;}
+.wall.ready{opacity:var(--wall-opacity);}
+.wall.off{opacity:0!important;}
+.wall-col{display:flex;flex-direction:column;gap:var(--wall-gap);flex:none;will-change:transform;
+  animation:wallUp var(--wall-speed) linear infinite;}
+.wall-col.down{animation-name:wallDown;}
+.wall-col:nth-child(3n){animation-duration:calc(var(--wall-speed)*1.35);}
+.wall-col:nth-child(3n+1){animation-duration:calc(var(--wall-speed)*.82);}
+@keyframes wallUp{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+@keyframes wallDown{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+.wall-slot{width:var(--wall-size);height:var(--wall-size);border-radius:50%;flex:none;
+  background:var(--bg-hover);overflow:hidden;position:relative;}
+.wall-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity 1.1s ease;}
+.wall-slot img.show{opacity:1;}
+.wall-veil{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(760px 430px at 50% 45%,
+    var(--bg) 24%,color-mix(in srgb,var(--bg) 80%,transparent) 56%,
+    color-mix(in srgb,var(--bg) 26%,transparent) 100%);}
+/* hero / 预览区都要能承载背景层 */
+.hero{position:relative;overflow:hidden;}
+.hero>*:not(.wall):not(.wall-veil){position:relative;z-index:2;}
+.preview-wrap,.preview,.previews{position:relative;}
+/* 预览区头像墙更淡 */
+.preview-wrap .wall.ready,.preview .wall.ready{opacity:calc(var(--wall-opacity)*.5);}
+/* 卡片 / 控件加不透明背景，确保头像不透到卡片上（你的要求：不覆盖到卡片）*/
+.card{position:relative;z-index:2;}
+.top-nav,.scroll-hint,.theme-btn,.wall-btn{z-index:99!important;}
+/* 往下滑图标：颜色稍微加深，避免被头像盖住看不清 */
+.scroll-hint svg{opacity:.85!important;}
+.scroll-hint{color:var(--text-dim);}
+@media(prefers-reduced-motion:reduce){.wall-col{animation:none}}
+
 </style>
 </head>
 <body>
@@ -334,10 +376,13 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 <nav class="top-nav">
   <a href="./guestbook.html" title="留言板"><span class="nav-ico">💬</span><span class="nav-label">留言板</span></a>
 </nav>
+<button class="theme-btn wall-btn" id="wall-btn" onclick="toggleWall()" title="头像墙开关">🫧</button>
 <button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
 
 <!-- Hero -->
 <section class="hero">
+  <div class="wall" id="wall-hero"></div>
+  <div class="wall-veil"></div>
   <h1 class="hero-title anim-1">Twitter<span>Archiver</span></h1>
   <p class="hero-sub anim-2">基于 Wayback Machine 的推特账号永久存档计划</p>
 
@@ -440,12 +485,149 @@ function makeCard(repo, featured) {
   return d;
 }
 
+/* ═══ 头像墙：原地轮换 + 闪烁限流（同时≤3、不相邻）═══ */
+const WALL_KEY='portal-wall';
+let _wallPools=[];
+
+class WallPool{
+  constructor(avatars){
+    this.all=avatars.slice();
+    this.queue=this.all.slice(); this._shuffle(this.queue);
+    this.onScreen=new Set();
+  }
+  _shuffle(a){for(let i=a.length-1;i>0;i--){const j=(Math.random()*(i+1))|0;[a[i],a[j]]=[a[j],a[i]];}}
+  next(){
+    for(let t=0;t<this.queue.length+1;t++){
+      if(!this.queue.length){this.queue=this.all.slice();this._shuffle(this.queue);}
+      const u=this.queue.shift();
+      if(!this.onScreen.has(u)){this.onScreen.add(u);return u;}
+      this.queue.push(u);
+    }
+    return this.all[(Math.random()*this.all.length)|0];
+  }
+  release(u){this.onScreen.delete(u);}
+}
+
+/* 全局闪烁调度：任一时刻最多 3 个在换，且换的位置不相邻 */
+const SwapGov={
+  active:new Set(),        // 正在换的 slot
+  max:3,
+  canSwap(slot){
+    if(this.active.size>=this.max) return false;
+    // 不相邻：检查同列上下邻居、以及已激活的是否紧挨
+    for(const a of this.active){
+      if(a._col===slot._col && Math.abs(a._row-slot._row)<=1) return false;
+    }
+    return true;
+  },
+  begin(slot){this.active.add(slot);},
+  end(slot){this.active.delete(slot);}
+};
+
+function makeSlot(pool,col,row){
+  const slot=document.createElement('div');
+  slot.className='wall-slot'; slot._col=col; slot._row=row;
+  let cur=pool.next();
+  const img=document.createElement('img');
+  img.loading='lazy'; img.decoding='async'; img.src=cur;
+  img.onload=()=>img.classList.add('show');
+  img.onerror=()=>{pool.release(cur);cur=pool.next();img.src=cur;};
+  slot.appendChild(img);
+
+  function trySwap(){
+    // 呼吸 1~2 次后尝试换人；受全局限流控制
+    const breaths=1+Math.floor(Math.random()*2);
+    const dur=7+Math.random()*7;             // 每次呼吸 7~14s
+    setTimeout(function attempt(){
+      if(!SwapGov.canSwap(slot)){
+        // 被限流：稍等再试，错开波峰
+        setTimeout(attempt, 1200+Math.random()*2000);
+        return;
+      }
+      SwapGov.begin(slot);
+      img.classList.remove('show');           // 淡出
+      setTimeout(()=>{
+        pool.release(cur);
+        let nx=pool.next();
+        // 防闪成自己/在场：next() 已排除在场，双保险
+        if(nx===cur){pool.release(nx);nx=pool.next();}
+        cur=nx;
+        const pre=new Image();
+        const done=()=>{img.src=cur;img.classList.add('show');
+          setTimeout(()=>SwapGov.end(slot),1100); trySwap();};
+        pre.onload=done;
+        pre.onerror=()=>{pool.release(cur);cur=pool.next();done();};
+        pre.src=cur;
+      },1100);
+    }, breaths*dur*1000);
+  }
+  trySwap();
+  return slot;
+}
+
+function buildWall(el,pool){
+  const cs=getComputedStyle(document.documentElement);
+  const px=parseInt(cs.getPropertyValue('--wall-size'))||140;
+  const gp=parseInt(cs.getPropertyValue('--wall-gap'))||40;
+  const cols=Math.max(4,Math.ceil(window.innerWidth/(px+gp))+1);
+  const rows=Math.ceil(window.innerHeight/(px+gp))+2;
+  el.innerHTML='';
+  const frag=document.createDocumentFragment();
+  for(let c=0;c<cols;c++){
+    const col=document.createElement('div');
+    col.className='wall-col'+(c%2?' down':'');
+    for(let r=0;r<rows*2;r++) col.appendChild(makeSlot(pool,c,r));
+    frag.appendChild(col);
+  }
+  el.appendChild(frag);
+}
+
+function initWall(repos){
+  if(!repos||!repos.length) return;
+  const avatars=repos.map(x=>{const repo=x.repo||x.name;const acct=x.acct||repo;
+    return `${pagesUrl(repo)}accounts/${acct}/wayback_snapshots/avatar/avatar.jpg`;});
+  const hero=document.getElementById('wall-hero');
+  if(hero) buildWall(hero,new WallPool(avatars));
+  // 预览区（时间线/留言区）也铺一层，插在其容器最前
+  const pv=document.querySelector('.preview-wrap')||document.querySelector('.preview')||document.querySelector('.previews');
+  if(pv && !pv.querySelector('.wall')){
+    const w=document.createElement('div');w.className='wall';w.id='wall-preview';
+    const v=document.createElement('div');v.className='wall-veil';
+    pv.insertBefore(v,pv.firstChild); pv.insertBefore(w,pv.firstChild);
+    buildWall(w,new WallPool(avatars));
+  }
+  if(localStorage.getItem(WALL_KEY)==='off'){
+    document.querySelectorAll('.wall').forEach(w=>w.classList.add('off'));
+    document.getElementById('wall-btn')?.classList.add('off');
+  }
+  setTimeout(()=>document.querySelectorAll('.wall').forEach(w=>w.classList.add('ready')),260);
+
+  let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{
+    SwapGov.active.clear();
+    if(hero) buildWall(hero,new WallPool(avatars));
+    const w2=document.getElementById('wall-preview');
+    if(w2) buildWall(w2,new WallPool(avatars));
+  },400);});
+}
+
+function setWall(off){
+  document.querySelectorAll('.wall').forEach(w=>w.classList.toggle('off',off));
+  document.getElementById('wall-btn')?.classList.toggle('off',off);
+  localStorage.setItem(WALL_KEY,off?'off':'on');
+}
+function toggleWall(){setWall(!document.querySelector('.wall')?.classList.contains('off'));}
+document.addEventListener('dblclick',e=>{
+  if(e.target.closest('a,button,.card,input,textarea,.top-nav')) return;
+  toggleWall();
+});
+
 async function loadRepos() {
   const container = document.getElementById('repo-list');
   try {
     const r = await fetch('./repos.json');
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const all = await r.json();
+    initWall(all);
 
     const featured = all.find(r => (r.repo || r.name) === FEATURED);
     const rest = all
