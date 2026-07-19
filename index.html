@@ -351,14 +351,18 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .wall-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   opacity:0;transition:opacity 1.1s ease;}
 .wall-slot img.show{opacity:1;}
-/* hero 内容浮在头像墙之上 */
 .hero{position:relative;overflow:hidden;}
 .hero>*:not(.wall){position:relative;z-index:2;}
-/* hero 底部柔和淡出到背景色,让头像墙自然过渡到下方内容区(取代白色veil) */
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;z-index:1;
-  pointer-events:none;
-  background:linear-gradient(to bottom,transparent,var(--bg) 92%);}
-/* 卡片/控件始终不透明、在头像墙之上 */
+/* hero 中央径向蒙版:把标题/纪念文字那块托实,四周头像墙自然透出;
+   只作用于 hero 屏内,不影响下方任何区域 */
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(680px 400px at 50% 46%,
+    var(--bg) 30%,
+    color-mix(in srgb,var(--bg) 78%,transparent) 60%,
+    transparent 100%);}
+/* hero 底边再补一道淡出,和下方内容区平顺衔接 */
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:24%;z-index:1;
+  pointer-events:none;background:linear-gradient(to bottom,transparent,var(--bg) 94%);}
 .card{position:relative;z-index:2;}
 .top-nav,.scroll-hint,.theme-btn,.wall-btn{z-index:99!important;}
 .scroll-hint svg{opacity:.85!important;}
@@ -480,7 +484,7 @@ function makeCard(repo, featured) {
   return d;
 }
 
-/* ═══ 头像墙：原地轮换 + 闪烁限流（同时≤3、不相邻）═══ */
+/* ═══ 头像墙 ═══ */
 const WALL_KEY='portal-wall';
 let _wallPools=[];
 
@@ -593,8 +597,6 @@ function initWall(repos){
   let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{
     SwapGov.active.clear();
     if(hero) buildWall(hero,new WallPool(avatars));
-    const w2=document.getElementById('wall-preview');
-    if(w2) buildWall(w2,new WallPool(avatars));
   },400);});
 }
 
@@ -617,8 +619,7 @@ async function loadRepos() {
     const all = await r.json();
     initWall(all);
 
-    // featured 账号:repo==FEATURED 里 acct 也等于 FEATURED 对应的主账号那条
-    // (多账号仓库下,同 repo 会有多条,不能整体排除)
+    // featured:多账号仓库下同 repo 有多条,按 acct 精确匹配主账号
     const isFeatured = r => (r.repo || r.name) === FEATURED
                           && (r.acct || r.repo || r.name) === 'AnIncandescence';
     const featured = all.find(isFeatured);
