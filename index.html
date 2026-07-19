@@ -352,21 +352,31 @@ footer a:hover { color: var(--accent); text-decoration: none; }
   opacity:0;transition:opacity 1.1s ease;}
 .wall-slot img.show{opacity:1;}
 
-/* 文字背景板:半透明+毛玻璃,精确托住文字,四周头像保持清晰 */
-.hero-panel{
-  position:relative;z-index:2;
-  padding:38px 40px 34px;border-radius:28px;
-  background:color-mix(in srgb,var(--bg) 78%,transparent);
-  backdrop-filter:blur(10px) saturate(1.1);
-  -webkit-backdrop-filter:blur(10px) saturate(1.1);
-  box-shadow:0 8px 40px color-mix(in srgb,var(--bg) 60%,transparent);
-  max-width:640px;
-}
-@media (max-width:767px){
-  .hero-panel{padding:26px 22px 24px;border-radius:22px;
-    background:color-mix(in srgb,var(--bg) 82%,transparent);}
-}
 .hero{position:relative;overflow:hidden;}
+/* ── hero 头像墙柔和淡出蒙版 ── */
+/* 电脑端:大范围径向,中心文字区淡到接近底色,四周头像清晰,过渡极长无硬边界 */
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 42%,
+    var(--bg) 0%,
+    var(--bg) 22%,
+    color-mix(in srgb,var(--bg) 88%,transparent) 40%,
+    color-mix(in srgb,var(--bg) 62%,transparent) 56%,
+    color-mix(in srgb,var(--bg) 30%,transparent) 72%,
+    transparent 90%);}
+/* 手机端:改纵向淡出(左右无空间),文字所在的中段淡到底色,上下头像露出 */
+@media (max-width:767px){
+  .hero::before{
+    background:linear-gradient(to bottom,
+      transparent 0%,
+      color-mix(in srgb,var(--bg) 40%,transparent) 12%,
+      color-mix(in srgb,var(--bg) 85%,transparent) 24%,
+      var(--bg) 36%,
+      var(--bg) 66%,
+      color-mix(in srgb,var(--bg) 85%,transparent) 78%,
+      color-mix(in srgb,var(--bg) 40%,transparent) 90%,
+      transparent 100%);}
+}
+
 .hero>*:not(.wall){position:relative;z-index:2;}
 /* hero 中央径向蒙版:把标题/纪念文字那块托实,四周头像墙自然透出;
    只作用于 hero 屏内,不影响下方任何区域 */
@@ -393,20 +403,18 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 <section class="hero">
   <div class="wall" id="wall-hero"></div>
   
-  <div class="hero-panel">
-    <h1 class="hero-title anim-1">Twitter<span>Archiver</span></h1>
-    <p class="hero-sub anim-2">基于 Wayback Machine 的推特账号永久存档计划</p>
+  <h1 class="hero-title anim-1">Twitter<span>Archiver</span></h1>
+  <p class="hero-sub anim-2">基于 Wayback Machine 的推特账号永久存档计划</p>
 
-    <div class="memorial anim-3">
-      这个项目最初是为了纪念<br>
-      <a class="name" href="https://github.com/TwitterArchiver/AnIncanescence" target="_blank">@AnIncandescence</a><br>
-      她的账号被封禁，但她永远也不会被遗忘。
-      <span class="quote">
-        她说过，"互联网是现实的避难所"。<br>
-        这里，是那个避难所的避难所。
-      </span>
-      <span class="tagline">烛火熄灭之后，光还在。</span>
-    </div>
+  <div class="memorial anim-3">
+    这个项目最初是为了纪念<br>
+    <a class="name" href="https://github.com/TwitterArchiver/AnIncanescence" target="_blank">@AnIncandescence</a><br>
+    她的账号被封禁，但她永远也不会被遗忘。
+    <span class="quote">
+      她说过，"互联网是现实的避难所"。<br>
+      这里，是那个避难所的避难所。
+    </span>
+    <span class="tagline">烛火熄灭之后，光还在。</span>
   </div>
 
   <div class="scroll-hint anim-4">
