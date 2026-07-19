@@ -344,6 +344,13 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .wall-col.down{animation-name:wallDown;}
 .wall-col:nth-child(3n){animation-duration:calc(var(--wall-speed)*1.35);}
 .wall-col:nth-child(3n+1){animation-duration:calc(var(--wall-speed)*.82);}
+/* 电脑端专属:列垂直错开,增强交错感（手机端不受影响）*/
+@media (min-width:768px){
+  .wall-col:nth-child(2n){margin-top:calc(var(--wall-size) * -0.5);}
+  .wall-col:nth-child(3n+1){margin-top:calc(var(--wall-size) * -0.26);}
+  .wall-col:nth-child(4n){margin-top:calc(var(--wall-size) * -0.72);}
+  .wall-col:nth-child(5n){margin-top:calc(var(--wall-size) * -0.38);}
+}
 @keyframes wallUp{from{transform:translateY(0)}to{transform:translateY(-50%)}}
 @keyframes wallDown{from{transform:translateY(-50%)}to{transform:translateY(0)}}
 .wall-slot{width:var(--wall-size);height:var(--wall-size);border-radius:50%;flex:none;
@@ -356,7 +363,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 /* ── hero 头像墙柔和淡出蒙版 ── */
 /* 电脑端:大范围径向,中心文字区淡到接近底色,四周头像清晰,过渡极长无硬边界 */
 .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(52% 56% at 50% 52%,
+  background:radial-gradient(52% 53% at 50% 53%,
     var(--bg) 0%,
     var(--bg) 24%,
     color-mix(in srgb,var(--bg) 90%,transparent) 44%,
