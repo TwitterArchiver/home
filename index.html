@@ -385,6 +385,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 }
 
 .hero>*:not(.wall){position:relative;z-index:2;}
+.hero-title,.hero-sub,.memorial{user-select:none;-webkit-user-select:none;}
 /* hero 中央径向蒙版:把标题/纪念文字那块托实,四周头像墙自然透出;
    只作用于 hero 屏内,不影响下方任何区域 */
 
@@ -636,6 +637,9 @@ function setWall(off){
 function toggleWall(){setWall(!document.querySelector('.wall')?.classList.contains('off'));}
 document.addEventListener('dblclick',e=>{
   if(e.target.closest('a,button,.card,input,textarea,.top-nav')) return;
+  // 清除双击自动产生的文字选中（否则会选中标题/纪念文字）
+  const sel=window.getSelection&&window.getSelection();
+  if(sel){ sel.removeAllRanges&&sel.removeAllRanges(); }
   toggleWall();
 });
 
