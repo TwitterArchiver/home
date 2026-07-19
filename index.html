@@ -346,7 +346,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .wall-col:nth-child(3n+1){animation-duration:calc(var(--wall-speed)*.82);}
 @keyframes wallUp{from{transform:translateY(0)}to{transform:translateY(-50%)}}
 @keyframes wallDown{from{transform:translateY(-50%)}to{transform:translateY(0)}}
-.wall-slot{width:var(--sz,var(--wall-size));height:var(--sz,var(--wall-size));border-radius:50%;flex:none;margin:0 auto;
+.wall-slot{width:var(--wall-size);height:var(--wall-size);border-radius:50%;flex:none;
   background:var(--bg-hover);overflow:hidden;position:relative;}
 .wall-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   opacity:0;transition:opacity 1.1s ease;}
@@ -355,18 +355,33 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .hero>*:not(.wall){position:relative;z-index:2;}
 /* hero 中央径向蒙版:把标题/纪念文字那块托实,四周头像墙自然透出;
    只作用于 hero 屏内,不影响下方任何区域 */
+
+/* 头像墙背景下,hero 文字加背景色柔光,保证压在头像上也清晰可读 */
+.hero-title,.hero-sub,.memorial{
+  text-shadow:
+    0 0 12px var(--bg), 0 0 12px var(--bg),
+    0 0 20px var(--bg), 0 0 4px var(--bg);
+}
+.hero .divider{
+  box-shadow:0 0 16px 8px var(--bg);
+}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(1100px 760px at 50% 47%,
-    var(--bg) 34%,
-    color-mix(in srgb,var(--bg) 82%,transparent) 62%,
-    color-mix(in srgb,var(--bg) 40%,transparent) 82%,
-    transparent 100%);}
-/* 手机端视野窄,蒙版收小一点,避免占比过高把头像全糊掉 */
+  background:linear-gradient(to right,
+    var(--bg) 0%,
+    color-mix(in srgb,var(--bg) 72%,transparent) 22%,
+    transparent 40%,
+    transparent 60%,
+    color-mix(in srgb,var(--bg) 72%,transparent) 78%,
+    var(--bg) 100%);}
+/* 手机端视野窄,中间留白区更宽,两侧收窄,让头像多露出来 */
 @media (max-width:767px){
-  .hero::before{background:radial-gradient(560px 620px at 50% 45%,
-    var(--bg) 30%,
-    color-mix(in srgb,var(--bg) 80%,transparent) 60%,
-    transparent 92%);}
+  .hero::before{background:linear-gradient(to right,
+    var(--bg) 0%,
+    color-mix(in srgb,var(--bg) 65%,transparent) 14%,
+    transparent 30%,
+    transparent 70%,
+    color-mix(in srgb,var(--bg) 65%,transparent) 86%,
+    var(--bg) 100%);}
 }
 /* hero 底边再补一道淡出,和下方内容区平顺衔接 */
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:24%;z-index:1;
@@ -531,12 +546,9 @@ const SwapGov={
   end(slot){this.active.delete(slot);}
 };
 
-function makeSlot(pool,col,row,baseSize){
+function makeSlot(pool,col,row){
   const slot=document.createElement('div');
   slot.className='wall-slot'; slot._col=col; slot._row=row;
-  // 随机大小:0.62~1.35 倍,打破整齐网格,形成错落的呼吸感
-  const scale=0.62+Math.random()*0.73;
-  slot.style.setProperty('--sz',Math.round(baseSize*scale)+'px');
   let cur=pool.next();
   const img=document.createElement('img');
   img.loading='lazy'; img.decoding='async'; img.src=cur;
@@ -586,8 +598,7 @@ function buildWall(el,pool){
   for(let c=0;c<cols;c++){
     const col=document.createElement('div');
     col.className='wall-col'+(c%2?' down':'');
-    col.style.width=px+'px';
-    for(let r=0;r<rows*2;r++) col.appendChild(makeSlot(pool,c,r,px));
+    for(let r=0;r<rows*2;r++) col.appendChild(makeSlot(pool,c,r));
     frag.appendChild(col);
   }
   el.appendChild(frag);
