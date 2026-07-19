@@ -329,7 +329,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 @media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 26px; } }
 
 /* ═══ 头像墙背景（原地轮换·全局队列防重复·限流闪烁）═══ */
-:root{ --wall-size:150px; --wall-gap:38px; --wall-opacity:.85; --wall-speed:250s; }
+:root{ --wall-size:160px; --wall-gap:60px; --wall-opacity:.70; --wall-speed:250s; }
 @media (max-width:767px){ :root{ --wall-size:105px; --wall-gap:30px; } }
 .wall{position:absolute;inset:0;overflow:hidden;z-index:0;
   display:flex;justify-content:center;gap:var(--wall-gap);
@@ -356,12 +356,12 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 /* ── hero 头像墙柔和淡出蒙版 ── */
 /* 电脑端:大范围径向,中心文字区淡到接近底色,四周头像清晰,过渡极长无硬边界 */
 .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(58% 62% at 50% 44%,
+  background:radial-gradient(64% 68% at 50% 46%,
     var(--bg) 0%,
-    var(--bg) 20%,
-    color-mix(in srgb,var(--bg) 85%,transparent) 38%,
-    color-mix(in srgb,var(--bg) 50%,transparent) 60%,
-    color-mix(in srgb,var(--bg) 18%,transparent) 80%,
+    var(--bg) 30%,
+    color-mix(in srgb,var(--bg) 94%,transparent) 46%,
+    color-mix(in srgb,var(--bg) 72%,transparent) 64%,
+    color-mix(in srgb,var(--bg) 34%,transparent) 82%,
     transparent 100%);}
 /* 手机端:改纵向淡出(左右无空间),文字所在的中段淡到底色,上下头像露出 */
 @media (max-width:767px){
