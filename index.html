@@ -328,14 +328,14 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .preview-item:active { transform: scale(.985); transition-duration: .06s; }
 @media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 26px; } }
 
-/* ═══ 头像墙背景 ═══ */
-:root{ --wall-size:155px; --wall-gap:55px; --wall-opacity:.80; --wall-speed:250s; }
-@media (max-width:767px){ :root{ --wall-size:105px; --wall-gap:35px; --wall-opacity:.80; } }
+/* ═══ 头像墙背景（原地轮换·全局队列防重复·限流闪烁）═══ */
+:root{ --wall-size:150px; --wall-gap:38px; --wall-opacity:.85; --wall-speed:250s; }
+@media (max-width:767px){ :root{ --wall-size:105px; --wall-gap:30px; } }
 .wall{position:absolute;inset:0;overflow:hidden;z-index:0;
   display:flex;justify-content:center;gap:var(--wall-gap);
   opacity:0;pointer-events:none;
-  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent);
-          mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 74%,transparent);
+          mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 74%,transparent);
   transition:opacity 1.6s ease;}
 .wall.ready{opacity:var(--wall-opacity);}
 .wall.off{opacity:0!important;}
@@ -351,28 +351,44 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 .wall-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   opacity:0;transition:opacity 1.1s ease;}
 .wall-slot img.show{opacity:1;}
-/* 遮罩:横向椭圆,贴合文字块宽度,四角不遮→四角头像清晰;
-   中心不是纯白,文字区头像若隐若现 */
-.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(ellipse 62% 78% at 50% 50%,
-    color-mix(in srgb,var(--bg) 82%,transparent) 0%,
-    color-mix(in srgb,var(--bg) 78%,transparent) 32%,
-    color-mix(in srgb,var(--bg) 58%,transparent) 54%,
-    color-mix(in srgb,var(--bg) 24%,transparent) 74%,
-    transparent 92%);}
-@media (max-width:767px){
-  /* 手机端:竖向椭圆(屏幕窄),罩住文字纵向区域 */
-  .hero::before{background:radial-gradient(ellipse 96% 62% at 50% 48%,
-    color-mix(in srgb,var(--bg) 84%,transparent) 0%,
-    color-mix(in srgb,var(--bg) 78%,transparent) 34%,
-    color-mix(in srgb,var(--bg) 52%,transparent) 60%,
-    transparent 88%);}
-}
+
 .hero{position:relative;overflow:hidden;}
+/* ── hero 头像墙柔和淡出蒙版 ── */
+/* 电脑端:大范围径向,中心文字区淡到接近底色,四周头像清晰,过渡极长无硬边界 */
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(58% 62% at 50% 44%,
+    var(--bg) 0%,
+    var(--bg) 20%,
+    color-mix(in srgb,var(--bg) 85%,transparent) 38%,
+    color-mix(in srgb,var(--bg) 50%,transparent) 60%,
+    color-mix(in srgb,var(--bg) 18%,transparent) 80%,
+    transparent 100%);}
+/* 手机端:改纵向淡出(左右无空间),文字所在的中段淡到底色,上下头像露出 */
+@media (max-width:767px){
+  .hero::before{
+    background:linear-gradient(to bottom,
+      transparent 0%,
+      color-mix(in srgb,var(--bg) 40%,transparent) 12%,
+      color-mix(in srgb,var(--bg) 85%,transparent) 24%,
+      var(--bg) 36%,
+      var(--bg) 66%,
+      color-mix(in srgb,var(--bg) 85%,transparent) 78%,
+      color-mix(in srgb,var(--bg) 40%,transparent) 90%,
+      transparent 100%);}
+}
+
 .hero>*:not(.wall){position:relative;z-index:2;}
-.top-nav,.scroll-hint,.theme-btn,.wall-btn{z-index:99!important;}
+/* hero 中央径向蒙版:把标题/纪念文字那块托实,四周头像墙自然透出;
+   只作用于 hero 屏内,不影响下方任何区域 */
+
+/* hero 底边再补一道淡出,和下方内容区平顺衔接 */
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:24%;z-index:1;
+  pointer-events:none;background:linear-gradient(to bottom,transparent,var(--bg) 94%);}
 .card{position:relative;z-index:2;}
+.top-nav,.scroll-hint,.theme-btn,.wall-btn{z-index:99!important;}
+.scroll-hint svg{opacity:.85!important;}
 @media(prefers-reduced-motion:reduce){.wall-col{animation:none}}
+
 </style>
 </head>
 <body>
@@ -386,6 +402,7 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 <!-- Hero -->
 <section class="hero">
   <div class="wall" id="wall-hero"></div>
+  
   <h1 class="hero-title anim-1">Twitter<span>Archiver</span></h1>
   <p class="hero-sub anim-2">基于 Wayback Machine 的推特账号永久存档计划</p>
 
@@ -490,56 +507,130 @@ function makeCard(repo, featured) {
 
 /* ═══ 头像墙 ═══ */
 const WALL_KEY='portal-wall';
+let _wallPools=[];
+
 class WallPool{
-  constructor(a){this.all=a.slice();this.queue=a.slice();this._sh(this.queue);this.onScreen=new Set();}
-  _sh(a){for(let i=a.length-1;i>0;i--){const j=(Math.random()*(i+1))|0;[a[i],a[j]]=[a[j],a[i]];}}
-  next(){for(let t=0;t<this.queue.length+1;t++){if(!this.queue.length){this.queue=this.all.slice();this._sh(this.queue);}const u=this.queue.shift();if(!this.onScreen.has(u)){this.onScreen.add(u);return u;}this.queue.push(u);}return this.all[(Math.random()*this.all.length)|0];}
+  constructor(avatars){
+    this.all=avatars.slice();
+    this.queue=this.all.slice(); this._shuffle(this.queue);
+    this.onScreen=new Set();
+  }
+  _shuffle(a){for(let i=a.length-1;i>0;i--){const j=(Math.random()*(i+1))|0;[a[i],a[j]]=[a[j],a[i]];}}
+  next(){
+    for(let t=0;t<this.queue.length+1;t++){
+      if(!this.queue.length){this.queue=this.all.slice();this._shuffle(this.queue);}
+      const u=this.queue.shift();
+      if(!this.onScreen.has(u)){this.onScreen.add(u);return u;}
+      this.queue.push(u);
+    }
+    return this.all[(Math.random()*this.all.length)|0];
+  }
   release(u){this.onScreen.delete(u);}
 }
-const SwapGov={active:new Set(),max:3,
-  can(s){if(this.active.size>=this.max)return false;for(const a of this.active){if(a._col===s._col&&Math.abs(a._row-s._row)<=1)return false;}return true;},
-  begin(s){this.active.add(s);},end(s){this.active.delete(s);}};
+
+/* 全局闪烁调度：任一时刻最多 3 个在换，且换的位置不相邻 */
+const SwapGov={
+  active:new Set(),        // 正在换的 slot
+  max:3,
+  canSwap(slot){
+    if(this.active.size>=this.max) return false;
+    // 不相邻：检查同列上下邻居、以及已激活的是否紧挨
+    for(const a of this.active){
+      if(a._col===slot._col && Math.abs(a._row-slot._row)<=1) return false;
+    }
+    return true;
+  },
+  begin(slot){this.active.add(slot);},
+  end(slot){this.active.delete(slot);}
+};
+
 function makeSlot(pool,col,row){
-  const slot=document.createElement('div');slot.className='wall-slot';slot._col=col;slot._row=row;
+  const slot=document.createElement('div');
+  slot.className='wall-slot'; slot._col=col; slot._row=row;
   let cur=pool.next();
-  const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=cur;
+  const img=document.createElement('img');
+  img.loading='lazy'; img.decoding='async'; img.src=cur;
   img.onload=()=>img.classList.add('show');
   img.onerror=()=>{pool.release(cur);cur=pool.next();img.src=cur;};
   slot.appendChild(img);
+
   function trySwap(){
-    const breaths=1+Math.floor(Math.random()*2),dur=7+Math.random()*7;
+    // 呼吸 1~2 次后尝试换人；受全局限流控制
+    const breaths=1+Math.floor(Math.random()*2);
+    const dur=7+Math.random()*7;             // 每次呼吸 7~14s
     setTimeout(function attempt(){
-      if(!SwapGov.can(slot)){setTimeout(attempt,1200+Math.random()*2000);return;}
-      SwapGov.begin(slot);img.classList.remove('show');
-      setTimeout(()=>{pool.release(cur);let nx=pool.next();if(nx===cur){pool.release(nx);nx=pool.next();}cur=nx;
-        const pre=new Image();const done=()=>{img.src=cur;img.classList.add('show');setTimeout(()=>SwapGov.end(slot),1100);trySwap();};
-        pre.onload=done;pre.onerror=()=>{pool.release(cur);cur=pool.next();done();};pre.src=cur;},1100);
-    },breaths*dur*1000);
+      if(!SwapGov.canSwap(slot)){
+        // 被限流：稍等再试，错开波峰
+        setTimeout(attempt, 1200+Math.random()*2000);
+        return;
+      }
+      SwapGov.begin(slot);
+      img.classList.remove('show');           // 淡出
+      setTimeout(()=>{
+        pool.release(cur);
+        let nx=pool.next();
+        // 防闪成自己/在场：next() 已排除在场，双保险
+        if(nx===cur){pool.release(nx);nx=pool.next();}
+        cur=nx;
+        const pre=new Image();
+        const done=()=>{img.src=cur;img.classList.add('show');
+          setTimeout(()=>SwapGov.end(slot),1100); trySwap();};
+        pre.onload=done;
+        pre.onerror=()=>{pool.release(cur);cur=pool.next();done();};
+        pre.src=cur;
+      },1100);
+    }, breaths*dur*1000);
   }
-  trySwap();return slot;
+  trySwap();
+  return slot;
 }
+
 function buildWall(el,pool){
   const cs=getComputedStyle(document.documentElement);
-  const px=parseInt(cs.getPropertyValue('--wall-size'))||155,gp=parseInt(cs.getPropertyValue('--wall-gap'))||55;
-  const cols=Math.max(4,Math.ceil(window.innerWidth/(px+gp))+1),rows=Math.ceil(window.innerHeight/(px+gp))+2;
-  el.innerHTML='';const frag=document.createDocumentFragment();
-  for(let c=0;c<cols;c++){const col=document.createElement('div');col.className='wall-col'+(c%2?' down':'');col.style.width=px+'px';
-    for(let r=0;r<rows*2;r++)col.appendChild(makeSlot(pool,c,r));frag.appendChild(col);}
+  const px=parseInt(cs.getPropertyValue('--wall-size'))||140;
+  const gp=parseInt(cs.getPropertyValue('--wall-gap'))||40;
+  const cols=Math.max(4,Math.ceil(window.innerWidth/(px+gp))+1);
+  const rows=Math.ceil(window.innerHeight/(px+gp))+2;
+  el.innerHTML='';
+  const frag=document.createDocumentFragment();
+  for(let c=0;c<cols;c++){
+    const col=document.createElement('div');
+    col.className='wall-col'+(c%2?' down':'');
+    for(let r=0;r<rows*2;r++) col.appendChild(makeSlot(pool,c,r));
+    frag.appendChild(col);
+  }
   el.appendChild(frag);
 }
+
 function initWall(repos){
-  if(!repos||!repos.length)return;
+  if(!repos||!repos.length) return;
   const avatars=repos.map(x=>{const repo=x.repo||x.name;const acct=x.acct||repo;
     return `${pagesUrl(repo)}accounts/${acct}/wayback_snapshots/avatar/avatar.jpg`;});
   const hero=document.getElementById('wall-hero');
-  if(hero)buildWall(hero,new WallPool(avatars));
-  if(localStorage.getItem(WALL_KEY)==='off'){document.querySelectorAll('.wall').forEach(w=>w.classList.add('off'));document.getElementById('wall-btn')?.classList.add('off');}
+  if(hero) buildWall(hero,new WallPool(avatars));
+
+  if(localStorage.getItem(WALL_KEY)==='off'){
+    document.querySelectorAll('.wall').forEach(w=>w.classList.add('off'));
+    document.getElementById('wall-btn')?.classList.add('off');
+  }
   setTimeout(()=>document.querySelectorAll('.wall').forEach(w=>w.classList.add('ready')),260);
-  let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{SwapGov.active.clear();if(hero)buildWall(hero,new WallPool(avatars));},400);});
+
+  let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{
+    SwapGov.active.clear();
+    if(hero) buildWall(hero,new WallPool(avatars));
+  },400);});
 }
-function setWall(off){document.querySelectorAll('.wall').forEach(w=>w.classList.toggle('off',off));document.getElementById('wall-btn')?.classList.toggle('off',off);localStorage.setItem(WALL_KEY,off?'off':'on');}
+
+function setWall(off){
+  document.querySelectorAll('.wall').forEach(w=>w.classList.toggle('off',off));
+  document.getElementById('wall-btn')?.classList.toggle('off',off);
+  localStorage.setItem(WALL_KEY,off?'off':'on');
+}
 function toggleWall(){setWall(!document.querySelector('.wall')?.classList.contains('off'));}
-document.addEventListener('dblclick',e=>{if(e.target.closest('a,button,.card,input,textarea,.top-nav'))return;toggleWall();});
+document.addEventListener('dblclick',e=>{
+  if(e.target.closest('a,button,.card,input,textarea,.top-nav')) return;
+  toggleWall();
+});
 
 async function loadRepos() {
   const container = document.getElementById('repo-list');
@@ -549,9 +640,12 @@ async function loadRepos() {
     const all = await r.json();
     initWall(all);
 
-    const featured = all.find(r => (r.repo || r.name) === FEATURED);
+    // featured:多账号仓库下同 repo 有多条,按 acct 精确匹配主账号
+    const isFeatured = r => (r.repo || r.name) === FEATURED
+                          && (r.acct || r.repo || r.name) === 'AnIncandescence';
+    const featured = all.find(isFeatured);
     const rest = all
-      .filter(r => !EXCLUDE.has(r.repo || r.name) && (r.repo || r.name) !== FEATURED)
+      .filter(r => !EXCLUDE.has(r.repo || r.name) && !isFeatured(r))
       .sort((a, b) => a.name.localeCompare(b.name, 'zh'));
 
     container.innerHTML = '';
