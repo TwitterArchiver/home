@@ -45,6 +45,10 @@ jobs:
               DISP=$(echo "$PROFILE" | jq -r '.name     // ""' 2>/dev/null || echo "")
               USER=$(echo "$PROFILE" | jq -r '.username // ""' 2>/dev/null || echo "")
               [ -z "$USER" ] && USER="@${ACCOUNT_DIR}"
+              # 真实头像路径（profile.json 的 avatar，如 avatar/avatar_xxx.jpg）；
+              # 缺省回退到 avatar/avatar.jpg
+              AVATAR=$(echo "$PROFILE" | jq -r '.avatar // ""' 2>/dev/null || echo "")
+              [ -z "$AVATAR" ] && AVATAR="avatar/avatar.jpg"
 
               # AnIncanescence 主账号用仓库自介，其他用 bio（完整，CSS 控制省略）
               if [ "$REPO" = "AnIncanescence" ] && [ "$ACCOUNT_DIR" = "AnIncandescence" ]; then
@@ -59,7 +63,8 @@ jobs:
                 --arg name "$DISP" \
                 --arg user "$USER" \
                 --arg desc "$DESC" \
-                '{repo:$repo, acct:$acct, name:$name, username:$user, description:$desc}'
+                --arg avatar "$AVATAR" \
+                '{repo:$repo, acct:$acct, name:$name, username:$user, description:$desc, avatar:$avatar}'
             done
           done | jq -s '.' > repos.json
 
