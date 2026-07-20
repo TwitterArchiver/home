@@ -23,8 +23,25 @@ jobs:
         run: |
           cat > /tmp/build.py << 'PYEOF'
           import json, subprocess, urllib.request, os, re
+          from datetime import datetime
 
           ORG = "TwitterArchiver"
+
+          def parse_ts(t):
+              """统一解析两种时间格式为可比较的时间戳（秒）。
+                 ISO: 2026-07-16T00:22:21.000Z
+                 老推特: Wed Sep 09 13:44:34 +0000 2020
+                 解析失败返回 0（排到最后）。"""
+              if not t:
+                  return 0.0
+              try:
+                  if "T" in t:
+                      return datetime.strptime(
+                          t.split(".")[0].replace("Z",""), "%Y-%m-%dT%H:%M:%S"
+                      ).timestamp()
+                  return datetime.strptime(t, "%a %b %d %H:%M:%S %z %Y").timestamp()
+              except Exception:
+                  return 0.0
           EXCLUDE = {"Dispatcher", ".github", "home"}
 
           def sh(args):
@@ -137,8 +154,9 @@ jobs:
                               ))
                   print(f"  ✓ {repo}/{acct}: 主推文 {cnt} 条")
 
-          # 按时间倒序（最新在前），posts[3] 是时间戳
-          posts.sort(key=lambda x: x[3], reverse=True)
+          # 按时间倒序（最新在前）。两种时间格式需统一解析成时间戳再比较，
+          # 否则老推特格式(Wed Sep..)会因首字母 > 数字而全排到最前。
+          posts.sort(key=lambda x: parse_ts(x[3]), reverse=True)
 
           # ── 跨账号回复索引 cross-replies.json ──
           # 只收"回复别的站内账号主推文"的回复（回复自己的主推文，展开时读本账号 json 即可显示）
@@ -150,7 +168,7 @@ jobs:
               if owner == ai: continue              # 回复自己，跳过
               cross.setdefault(cid, []).append([ai, rid, txt, ts, rt])
           for cid in cross:                          # 每个对话内按时间升序
-              cross[cid].sort(key=lambda x: x[3])
+              cross[cid].sort(key=lambda x: parse_ts(x[3]))
 
           # 把跨账号回复数补加到对应主推文的回复计数（让"展开回复 N"含跨账号那几条）
           mid2post = {}
@@ -164,6 +182,14 @@ jobs:
               json.dump(result, f, ensure_ascii=False, separators=(",",":"))
           print(f"=== 账号 {len(accts)} 个，主推文 {len(posts)} 条，"
                 f"{os.path.getsize('search-index.json')} 字节 ===")
+
+          # 全站时间线"最新一批"轻量文件：只取最新 2000 条主推文，
+          # App 全站默认先加载这个(小、秒开)，滑到底再加载完整 search-index.json。
+          recent = {"accts": accts, "posts": posts[:2000]}
+          with open("timeline-recent.json","w",encoding="utf-8") as f:
+              json.dump(recent, f, ensure_ascii=False, separators=(",",":"))
+          print(f"=== 最新时间线 {len(recent['posts'])} 条，"
+                f"{os.path.getsize('timeline-recent.json')} 字节 ===")
 
           with open("cross-replies.json","w",encoding="utf-8") as f:
               json.dump(cross, f, ensure_ascii=False, separators=(",",":"))
@@ -198,7 +224,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add search-index.json cross-replies.json preview.json
+          git add search-index.json cross-replies.json preview.json timeline-recent.json
           if git diff --cached --quiet; then echo "索引无变化"; exit 0; fi
           git commit -m "🔍 更新全站搜索索引 $(date -u +%Y-%m-%d) [skip ci]"
           git push
