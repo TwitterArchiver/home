@@ -1,0 +1,75 @@
+name: 删除指定推文
+
+on:
+  workflow_dispatch:
+    inputs:
+      tweet_ids:
+        description: '要删除的推文 ID'
+        required: true
+      account:
+        description: '账号目录名'
+        required: false
+        default: ''
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v7
+
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4 lxml --quiet
+
+      - name: 拉取最新 archive.py
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/archive.py" -o /tmp/archive.py
+          echo "archive.py $(wc -l < /tmp/archive.py) 行"
+
+      - name: 删除推文文件并重建索引
+        run: |
+          IDS="${{ github.event.inputs.tweet_ids }}"
+          IN_ACCT="${{ github.event.inputs.account }}"
+          echo "要删除的推文 ID: $IDS"
+
+          if [ -n "$IN_ACCT" ]; then
+            ACCOUNTS="$IN_ACCT"
+          else
+            ACCOUNTS=$(ls -1 accounts 2>/dev/null | while IFS= read -r name; do
+              [ -d "accounts/${name}/wayback_snapshots" ] && echo "$name"
+            done)
+          fi
+
+          while IFS= read -r U; do
+            [ -z "$U" ] && continue
+            SNAP="accounts/${U}/wayback_snapshots"
+            [ -d "$SNAP" ] || continue
+
+            # 删除该 id 对应的 html/json 文件（可能已被手动删除，删不到也无妨）
+            for TID in $IDS; do
+              for f in "$SNAP"/html/*status_${TID}.html "$SNAP"/json/*status_${TID}.json; do
+                [ -f "$f" ] && rm -f "$f" && echo "[$U] 删除 $(basename "$f")"
+              done
+            done
+
+            # 无条件重建索引：即使文件已被手动删除，也让 index.json 去掉这些推文
+            echo "::group::[$U] 重建索引"
+            ( cd "$SNAP/.." && python3 /tmp/archive.py build-index ) || echo "::warning::[$U] build-index 出错"
+            echo "::endgroup::"
+          done <<< "$ACCOUNTS"
+
+      - name: 推送
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变化"
+            exit 0
+          fi
+          git commit -m "🗑️ 删除推文 ${{ github.event.inputs.tweet_ids }} [skip ci]"
+          git push
