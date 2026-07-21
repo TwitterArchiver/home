@@ -134,9 +134,7 @@ jobs:
                           reply_cnt.get(tid, 0),
                           # 有无引用/转推的原推（1/0）。只存标记位，内容由前端按需
                           # 从该账号 index.json 懒加载，避免把 embedded 正文塞进索引。
-                          1 if (isinstance(p.get("embedded"), dict)
-                                and (p["embedded"].get("body_text")
-                                     or p["embedded"].get("author_username"))) else 0,
+                          1 if (p.get("has_quoted") and p.get("quoted_id")) else 0,
                       ])
                       cnt += 1
                   # 收集该账号的回复（稍后筛出"回复别的站内账号"的跨账号回复）
