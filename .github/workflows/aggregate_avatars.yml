@@ -11,7 +11,6 @@ jobs:
     timeout-minutes: 60
     permissions:
       contents: write
-
     steps:
       - name: 检出 home 仓库
         uses: actions/checkout@v7
@@ -19,7 +18,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 安装依赖
-        run: pip install requests
+        run: pip install requests pillow
 
       - name: 拉取最新汇总脚本
         run: |
@@ -34,7 +33,7 @@ jobs:
 
       - name: 推送头像池
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add avatars
           if git diff --cached --quiet; then
