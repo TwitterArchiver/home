@@ -51,8 +51,9 @@ TwitterArchiver 是一个基于 [Wayback Machine](https://web.archive.org) 的�
 | --- | --- |
 | [**TwitterArchiver**](https://github.com/TwitterArchiver) | 组织首页，含完整的项目生态说明 |
 | [**TwitterArchiverApp**](https://github.com/sjshb57/TwitterArchiverApp) | Android 客户端 |
-| [**IncandescenceArchiver**](https://github.com/sjshb57/IncandescenceArchiver) | 存档工具 `archive.py`，抓取 Wayback 快照并生成索引 |
 | [**IncandescenceReader**](https://github.com/sjshb57/IncandescenceReader) | 桌面离线阅读器（Electron） |
+| [**IncandescenceArchiver**](https://github.com/sjshb57/IncandescenceArchiver) | 存档工具 `archive.py`，抓取 Wayback 快照并生成索引 |
+
 
 ---
 
@@ -64,7 +65,7 @@ TwitterArchiver 是一个基于 [Wayback Machine](https://web.archive.org) 的�
 
 → **[查看使用教程](https://github.com/sjshb57/IncandescenceArchiver)**
 
-如果希望直接收录进本组织，也可以 **[在这里提交申请](https://twitterarchiver.github.io/home/guestbook.html)**（Android 应用内也能直接提交）。
+如果希望直接收录进本组织，也可以 **[在这里提交申请](https://twtterarchiver.github.io/home/guestbook.html)**（Android 应用内也能直接提交）。
 
 ---
 
