@@ -1,0 +1,90 @@
+{
+  "repo": "StarryNocts",
+  "account": "StarryNocts",
+  "source": "https://twitterarchiver.github.io/StarryNocts/accounts/StarryNocts/wayback_snapshots/index.json",
+  "etag": "\"6a60dfaa-99034c\"",
+  "bytes": 10027852,
+  "generated": "2026-07-23T19:53:08Z",
+  "range": true,
+  "total": 14017,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 224505,
+      "count": 315,
+      "hash": "bbdf1e8009d7adf7"
+    },
+    "2026-06": {
+      "offset": 224507,
+      "length": 1835450,
+      "count": 2552,
+      "hash": "f3bb9f7cb52e1019"
+    },
+    "2026-05": {
+      "offset": 2059958,
+      "length": 2645714,
+      "count": 3725,
+      "hash": "600371c6ba0d355d"
+    },
+    "2026-04": {
+      "offset": 4705673,
+      "length": 4051716,
+      "count": 5688,
+      "hash": "a45e40b034b591c8"
+    },
+    "2026-03": {
+      "offset": 8757390,
+      "length": 1263763,
+      "count": 1726,
+      "hash": "842a04e8505c7581"
+    },
+    "2026-02": {
+      "offset": 10021154,
+      "length": 2450,
+      "count": 4,
+      "hash": "45e3f02572c71471"
+    },
+    "2026-01": {
+      "offset": 10023605,
+      "length": 739,
+      "count": 1,
+      "hash": "63797280229b65bf"
+    },
+    "2025-12": {
+      "offset": 10024345,
+      "length": 460,
+      "count": 1,
+      "hash": "39fca6a6fdfd997c"
+    },
+    "2025-10": {
+      "offset": 10024806,
+      "length": 495,
+      "count": 1,
+      "hash": "24f9ce7bf5e46e57"
+    },
+    "2025-06": {
+      "offset": 10025302,
+      "length": 655,
+      "count": 1,
+      "hash": "c79ae082017b49f7"
+    },
+    "2025-04": {
+      "offset": 10025958,
+      "length": 535,
+      "count": 1,
+      "hash": "7d9208822dadd5ca"
+    },
+    "2023-07": {
+      "offset": 10026494,
+      "length": 544,
+      "count": 1,
+      "hash": "48dfd9baefbdc123"
+    },
+    "2022-06": {
+      "offset": 10027039,
+      "length": 812,
+      "count": 1,
+      "hash": "1cb5034045bb7668"
+    }
+  }
+}

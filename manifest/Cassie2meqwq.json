@@ -1,0 +1,42 @@
+{
+  "repo": "Cassie2meqwq",
+  "account": "Cassie2meqwq",
+  "source": "https://twitterarchiver.github.io/Cassie2meqwq/accounts/Cassie2meqwq/wayback_snapshots/index.json",
+  "etag": "\"6a60e6ac-de118\"",
+  "bytes": 909592,
+  "generated": "2026-07-23T19:52:42Z",
+  "range": true,
+  "total": 1132,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 53404,
+      "count": 71,
+      "hash": "3aa9553784e8ca80"
+    },
+    "2026-06": {
+      "offset": 53406,
+      "length": 372141,
+      "count": 452,
+      "hash": "94889151cbdde3be"
+    },
+    "2026-05": {
+      "offset": 425548,
+      "length": 481880,
+      "count": 607,
+      "hash": "5dc741dcd8dae6b8"
+    },
+    "2026-04": {
+      "offset": 907429,
+      "length": 1269,
+      "count": 1,
+      "hash": "7d2e306fa0243423"
+    },
+    "2025-07": {
+      "offset": 908699,
+      "length": 892,
+      "count": 1,
+      "hash": "75c77f657cada905"
+    }
+  }
+}

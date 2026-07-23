@@ -1,0 +1,18 @@
+{
+  "repo": "_1wf_0",
+  "account": "_1wf_0",
+  "source": "https://twitterarchiver.github.io/_1wf_0/accounts/_1wf_0/wayback_snapshots/index.json",
+  "etag": "\"6a60dfbf-8b00\"",
+  "bytes": 35584,
+  "generated": "2026-07-23T19:53:14Z",
+  "range": true,
+  "total": 45,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 35582,
+      "count": 45,
+      "hash": "f2fae12bafcc8ecb"
+    }
+  }
+}

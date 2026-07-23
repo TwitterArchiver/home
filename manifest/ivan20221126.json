@@ -1,0 +1,24 @@
+{
+  "repo": "ivan20221126",
+  "account": "ivan20221126",
+  "source": "https://twitterarchiver.github.io/ivan20221126/accounts/ivan20221126/wayback_snapshots/index.json",
+  "etag": "\"6a60e02c-89646\"",
+  "bytes": 562758,
+  "generated": "2026-07-23T19:53:23Z",
+  "range": true,
+  "total": 634,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 468077,
+      "count": 531,
+      "hash": "cc50e4fedd108572"
+    },
+    "2026-06": {
+      "offset": 468079,
+      "length": 94678,
+      "count": 103,
+      "hash": "5cfe79bc5b6b0502"
+    }
+  }
+}

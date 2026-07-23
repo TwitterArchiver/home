@@ -1,0 +1,66 @@
+{
+  "repo": "zhiii_tan",
+  "account": "zhiii_tan",
+  "source": "https://twitterarchiver.github.io/zhiii_tan/accounts/zhiii_tan/wayback_snapshots/index.json",
+  "etag": "\"6a60e0d0-294b7c\"",
+  "bytes": 2706300,
+  "generated": "2026-07-23T19:53:39Z",
+  "range": true,
+  "total": 3273,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 231777,
+      "count": 283,
+      "hash": "26950b0e47fdee55"
+    },
+    "2026-06": {
+      "offset": 231779,
+      "length": 1820026,
+      "count": 2208,
+      "hash": "7f1587889a889478"
+    },
+    "2026-05": {
+      "offset": 2051806,
+      "length": 643916,
+      "count": 764,
+      "hash": "216fb5199d253d23"
+    },
+    "2026-04": {
+      "offset": 2695723,
+      "length": 4486,
+      "count": 8,
+      "hash": "6d2514f04967990c"
+    },
+    "2026-03": {
+      "offset": 2700210,
+      "length": 3564,
+      "count": 5,
+      "hash": "b2e18eb7c826ead2"
+    },
+    "2026-01": {
+      "offset": 2703775,
+      "length": 489,
+      "count": 1,
+      "hash": "3a8eaba14b4d2148"
+    },
+    "2025-10": {
+      "offset": 2704265,
+      "length": 917,
+      "count": 2,
+      "hash": "95eb2b7743a826b1"
+    },
+    "2024-05": {
+      "offset": 2705183,
+      "length": 539,
+      "count": 1,
+      "hash": "7b45ec6624c42c76"
+    },
+    "2023-10": {
+      "offset": 2705723,
+      "length": 576,
+      "count": 1,
+      "hash": "22f646ee3565c967"
+    }
+  }
+}

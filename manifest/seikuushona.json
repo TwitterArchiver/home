@@ -1,0 +1,48 @@
+{
+  "repo": "seikuushona",
+  "account": "seikuushona",
+  "source": "https://twitterarchiver.github.io/seikuushona/accounts/seikuushona/wayback_snapshots/index.json",
+  "etag": "\"6a60e07f-73788\"",
+  "bytes": 472968,
+  "generated": "2026-07-23T19:53:28Z",
+  "range": true,
+  "total": 564,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 112427,
+      "count": 140,
+      "hash": "0d3b6296dc068de7"
+    },
+    "2026-06": {
+      "offset": 112429,
+      "length": 178016,
+      "count": 214,
+      "hash": "a4a9989516c2877e"
+    },
+    "2026-05": {
+      "offset": 290446,
+      "length": 66232,
+      "count": 73,
+      "hash": "844ad54c994ea8d4"
+    },
+    "2026-04": {
+      "offset": 356679,
+      "length": 115244,
+      "count": 135,
+      "hash": "a1ea338ce8f7cc38"
+    },
+    "2026-01": {
+      "offset": 471924,
+      "length": 475,
+      "count": 1,
+      "hash": "dfad853ffc6c6c66"
+    },
+    "2017-11": {
+      "offset": 472400,
+      "length": 567,
+      "count": 1,
+      "hash": "cd144e6df63b6b0f"
+    }
+  }
+}

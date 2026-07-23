@@ -1,0 +1,42 @@
+{
+  "repo": "hyunjennnagua",
+  "account": "hyunjennnagua",
+  "source": "https://twitterarchiver.github.io/hyunjennnagua/accounts/hyunjennnagua/wayback_snapshots/index.json",
+  "etag": "\"6a60e01f-2ce5d\"",
+  "bytes": 183901,
+  "generated": "2026-07-23T19:53:22Z",
+  "range": true,
+  "total": 229,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 7118,
+      "count": 10,
+      "hash": "efb1cb2f4e84e9b6"
+    },
+    "2026-06": {
+      "offset": 7120,
+      "length": 16181,
+      "count": 18,
+      "hash": "c0758d115a4b2d70"
+    },
+    "2026-05": {
+      "offset": 23302,
+      "length": 43450,
+      "count": 50,
+      "hash": "0a212813cb75f895"
+    },
+    "2026-04": {
+      "offset": 66753,
+      "length": 97389,
+      "count": 124,
+      "hash": "61bd01d046b3ac3a"
+    },
+    "2026-03": {
+      "offset": 164143,
+      "length": 19757,
+      "count": 27,
+      "hash": "a914840616ca0581"
+    }
+  }
+}

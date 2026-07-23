@@ -1,0 +1,24 @@
+{
+  "repo": "8526nl",
+  "account": "8526nl",
+  "source": "https://twitterarchiver.github.io/8526nl/accounts/8526nl/wayback_snapshots/index.json",
+  "etag": "\"6a60de7c-16c0e\"",
+  "bytes": 93198,
+  "generated": "2026-07-23T19:52:35Z",
+  "range": true,
+  "total": 100,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 9946,
+      "count": 11,
+      "hash": "748cd67b90bb84f9"
+    },
+    "2026-06": {
+      "offset": 9948,
+      "length": 83249,
+      "count": 89,
+      "hash": "9f63fe797e18469d"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "repo": "Sorcerer198964",
+  "account": "Sorcerer198964",
+  "source": "https://twitterarchiver.github.io/Sorcerer198964/accounts/Sorcerer198964/wayback_snapshots/index.json",
+  "etag": "\"6a60dfec-2f26a2\"",
+  "bytes": 3090082,
+  "generated": "2026-07-23T19:53:06Z",
+  "range": true,
+  "total": 3234,
+  "months": {
+    "2026-05": {
+      "offset": 1,
+      "length": 1751662,
+      "count": 1831,
+      "hash": "a41c14138358f39c"
+    },
+    "2026-04": {
+      "offset": 1751664,
+      "length": 1330583,
+      "count": 1395,
+      "hash": "3ab544550331ed86"
+    },
+    "2026-03": {
+      "offset": 3082248,
+      "length": 2528,
+      "count": 2,
+      "hash": "023979a45589723c"
+    },
+    "2026-02": {
+      "offset": 3084777,
+      "length": 504,
+      "count": 1,
+      "hash": "b55c2db4b770f054"
+    },
+    "2026-01": {
+      "offset": 3085282,
+      "length": 1246,
+      "count": 1,
+      "hash": "f8c011a5b0fcec8b"
+    },
+    "2025-10": {
+      "offset": 3086529,
+      "length": 1824,
+      "count": 2,
+      "hash": "48dcee8bab1d39e8"
+    },
+    "2025-04": {
+      "offset": 3088354,
+      "length": 1248,
+      "count": 1,
+      "hash": "bbc1e7960890d663"
+    },
+    "2023-01": {
+      "offset": 3089603,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

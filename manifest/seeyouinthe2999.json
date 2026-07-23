@@ -1,0 +1,54 @@
+{
+  "repo": "seeyouinthe2999",
+  "account": "seeyouinthe2999",
+  "source": "https://twitterarchiver.github.io/seeyouinthe2999/accounts/seeyouinthe2999/wayback_snapshots/index.json",
+  "etag": "\"6a60e082-1ac403\"",
+  "bytes": 1754115,
+  "generated": "2026-07-23T19:53:29Z",
+  "range": true,
+  "total": 2112,
+  "months": {
+    "2026-05": {
+      "offset": 1,
+      "length": 368356,
+      "count": 442,
+      "hash": "056c2bfdac8062d3"
+    },
+    "2026-04": {
+      "offset": 368358,
+      "length": 461601,
+      "count": 569,
+      "hash": "eceeeb6bb6845ab1"
+    },
+    "2026-03": {
+      "offset": 829960,
+      "length": 549600,
+      "count": 649,
+      "hash": "e4771b6400c7b874"
+    },
+    "2026-02": {
+      "offset": 1379561,
+      "length": 371223,
+      "count": 448,
+      "hash": "fa4cc6d4a3f063b2"
+    },
+    "2026-01": {
+      "offset": 1750785,
+      "length": 1397,
+      "count": 2,
+      "hash": "3bfe442381769c97"
+    },
+    "2025-12": {
+      "offset": 1752183,
+      "length": 677,
+      "count": 1,
+      "hash": "9c8d0f6607fa7466"
+    },
+    "2025-04": {
+      "offset": 1752861,
+      "length": 1253,
+      "count": 1,
+      "hash": "6e453835a1b9ec6e"
+    }
+  }
+}

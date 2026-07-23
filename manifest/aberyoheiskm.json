@@ -1,0 +1,72 @@
+{
+  "repo": "aberyoheiskm",
+  "account": "aberyoheiskm",
+  "source": "https://twitterarchiver.github.io/aberyoheiskm/accounts/aberyoheiskm/wayback_snapshots/index.json",
+  "etag": "\"6a60dfdd-4ecfd3\"",
+  "bytes": 5165011,
+  "generated": "2026-07-23T19:53:17Z",
+  "range": true,
+  "total": 6056,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1191613,
+      "count": 1398,
+      "hash": "157c3ef5871c090d"
+    },
+    "2026-06": {
+      "offset": 1191615,
+      "length": 1036751,
+      "count": 1236,
+      "hash": "0b9e3e658aefe5a2"
+    },
+    "2026-05": {
+      "offset": 2228367,
+      "length": 830398,
+      "count": 974,
+      "hash": "5cd6f4ac71869b61"
+    },
+    "2026-04": {
+      "offset": 3058766,
+      "length": 1777114,
+      "count": 2073,
+      "hash": "b542f591ee0e8faa"
+    },
+    "2026-03": {
+      "offset": 4835881,
+      "length": 198242,
+      "count": 237,
+      "hash": "981cacdd85ed5dc9"
+    },
+    "2026-02": {
+      "offset": 5034124,
+      "length": 52888,
+      "count": 54,
+      "hash": "d418aeadc19f1026"
+    },
+    "2026-01": {
+      "offset": 5087013,
+      "length": 75944,
+      "count": 81,
+      "hash": "784cae7b1561abf9"
+    },
+    "2025-12": {
+      "offset": 5162958,
+      "length": 556,
+      "count": 1,
+      "hash": "db341bae43247d3c"
+    },
+    "2025-10": {
+      "offset": 5163515,
+      "length": 1030,
+      "count": 1,
+      "hash": "245a8137dcf4fe60"
+    },
+    "2024-03": {
+      "offset": 5164546,
+      "length": 464,
+      "count": 1,
+      "hash": "ee7e3ea8feac2165"
+    }
+  }
+}

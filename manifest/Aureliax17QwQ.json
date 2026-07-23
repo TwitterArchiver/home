@@ -1,0 +1,48 @@
+{
+  "repo": "Aureliax17QwQ",
+  "account": "Aureliax17QwQ",
+  "source": "https://twitterarchiver.github.io/Aureliax17QwQ/accounts/Aureliax17QwQ/wayback_snapshots/index.json",
+  "etag": "\"6a60e679-30604e\"",
+  "bytes": 3170382,
+  "generated": "2026-07-23T19:52:43Z",
+  "range": true,
+  "total": 3887,
+  "months": {
+    "2026-06": {
+      "offset": 1,
+      "length": 61609,
+      "count": 63,
+      "hash": "84eef7be9282f2ec"
+    },
+    "2026-05": {
+      "offset": 61611,
+      "length": 569452,
+      "count": 591,
+      "hash": "8a11a77e1f56a55e"
+    },
+    "2026-04": {
+      "offset": 631064,
+      "length": 687151,
+      "count": 846,
+      "hash": "e1952b0dc8e3dd19"
+    },
+    "2026-03": {
+      "offset": 1318216,
+      "length": 1036220,
+      "count": 1341,
+      "hash": "123179549c755932"
+    },
+    "2026-02": {
+      "offset": 2354437,
+      "length": 659104,
+      "count": 860,
+      "hash": "e51274d1f882eba2"
+    },
+    "2026-01": {
+      "offset": 3013542,
+      "length": 156839,
+      "count": 186,
+      "hash": "a45758401c53e50d"
+    }
+  }
+}

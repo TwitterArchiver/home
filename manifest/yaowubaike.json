@@ -1,0 +1,72 @@
+{
+  "repo": "yaowubaike",
+  "account": "yaowubaike",
+  "source": "https://twitterarchiver.github.io/yaowubaike/accounts/yaowubaike/wayback_snapshots/index.json",
+  "etag": "\"6a60e0b0-d8f6b\"",
+  "bytes": 888683,
+  "generated": "2026-07-23T19:53:35Z",
+  "range": true,
+  "total": 980,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1470,
+      "count": 1,
+      "hash": "62ec94725f60988d"
+    },
+    "2026-06": {
+      "offset": 1472,
+      "length": 131257,
+      "count": 144,
+      "hash": "7074f9afc66ffded"
+    },
+    "2026-05": {
+      "offset": 132730,
+      "length": 125307,
+      "count": 148,
+      "hash": "7691ae956734ae8a"
+    },
+    "2026-04": {
+      "offset": 258038,
+      "length": 202529,
+      "count": 222,
+      "hash": "5bd2e3f64b2aef85"
+    },
+    "2026-03": {
+      "offset": 460568,
+      "length": 50834,
+      "count": 54,
+      "hash": "768ad282b72a7ad6"
+    },
+    "2026-02": {
+      "offset": 511403,
+      "length": 20398,
+      "count": 21,
+      "hash": "c4e9e9ff0990f603"
+    },
+    "2025-12": {
+      "offset": 531802,
+      "length": 603,
+      "count": 1,
+      "hash": "5d5c9c496f1e37c1"
+    },
+    "2025-11": {
+      "offset": 532406,
+      "length": 119810,
+      "count": 132,
+      "hash": "2e9e10112574f940"
+    },
+    "2025-10": {
+      "offset": 652217,
+      "length": 145448,
+      "count": 171,
+      "hash": "8550ce711a2773ad"
+    },
+    "2025-09": {
+      "offset": 797666,
+      "length": 91016,
+      "count": 86,
+      "hash": "1ed37bcbd0433509"
+    }
+  }
+}

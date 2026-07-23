@@ -1,0 +1,42 @@
+{
+  "repo": "luna_1111__",
+  "account": "luna_1111__",
+  "source": "https://twitterarchiver.github.io/luna_1111__/accounts/luna_1111__/wayback_snapshots/index.json",
+  "etag": "\"6a60e04f-1b8f11\"",
+  "bytes": 1806097,
+  "generated": "2026-07-23T19:53:25Z",
+  "range": true,
+  "total": 2343,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 183667,
+      "count": 233,
+      "hash": "5bd6c2a140a83ce0"
+    },
+    "2026-06": {
+      "offset": 183669,
+      "length": 401300,
+      "count": 510,
+      "hash": "34080f66346c1887"
+    },
+    "2026-05": {
+      "offset": 584970,
+      "length": 497868,
+      "count": 644,
+      "hash": "54b8f3a058e3b99a"
+    },
+    "2026-04": {
+      "offset": 1082839,
+      "length": 645671,
+      "count": 848,
+      "hash": "17f7c666b75a9f92"
+    },
+    "2026-03": {
+      "offset": 1728511,
+      "length": 77585,
+      "count": 108,
+      "hash": "4d6bcaaf52728634"
+    }
+  }
+}

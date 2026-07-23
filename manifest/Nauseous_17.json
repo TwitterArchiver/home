@@ -1,0 +1,24 @@
+{
+  "repo": "Nauseous_17",
+  "account": "Nauseous_17",
+  "source": "https://twitterarchiver.github.io/Nauseous_17/accounts/Nauseous_17/wayback_snapshots/index.json",
+  "etag": "\"6a60df2b-26261\"",
+  "bytes": 156257,
+  "generated": "2026-07-23T19:52:57Z",
+  "range": true,
+  "total": 193,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 154790,
+      "count": 191,
+      "hash": "1ad2b40ffbf356ae"
+    },
+    "2026-06": {
+      "offset": 154792,
+      "length": 1464,
+      "count": 2,
+      "hash": "6554f4e05d764a54"
+    }
+  }
+}

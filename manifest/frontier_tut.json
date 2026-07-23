@@ -1,0 +1,24 @@
+{
+  "repo": "frontier_tut",
+  "account": "frontier_tut",
+  "source": "https://twitterarchiver.github.io/frontier_tut/accounts/frontier_tut/wayback_snapshots/index.json",
+  "etag": "\"6a60e011-68564\"",
+  "bytes": 427364,
+  "generated": "2026-07-23T19:53:21Z",
+  "range": true,
+  "total": 540,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 177482,
+      "count": 233,
+      "hash": "1163594fec643d41"
+    },
+    "2026-06": {
+      "offset": 177484,
+      "length": 249879,
+      "count": 307,
+      "hash": "fa0b8b6f4a0e3920"
+    }
+  }
+}

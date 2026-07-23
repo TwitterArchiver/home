@@ -1,0 +1,42 @@
+{
+  "repo": "boqiaoahm4",
+  "account": "boqiaoahm4",
+  "source": "https://twitterarchiver.github.io/boqiaoahm4/accounts/boqiaoahm4/wayback_snapshots/index.json",
+  "etag": "\"6a60dffc-336b03\"",
+  "bytes": 3369731,
+  "generated": "2026-07-23T19:53:20Z",
+  "range": true,
+  "total": 4114,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 663056,
+      "count": 805,
+      "hash": "77a3be5453c62b78"
+    },
+    "2026-06": {
+      "offset": 663058,
+      "length": 2209463,
+      "count": 2712,
+      "hash": "faadc8ed486ff1ec"
+    },
+    "2026-05": {
+      "offset": 2872522,
+      "length": 492736,
+      "count": 593,
+      "hash": "49d9fa0b5ae3d5d7"
+    },
+    "2026-04": {
+      "offset": 3365259,
+      "length": 2086,
+      "count": 2,
+      "hash": "f48d2cc36f645580"
+    },
+    "2026-03": {
+      "offset": 3367346,
+      "length": 2384,
+      "count": 2,
+      "hash": "4feb42869728912e"
+    }
+  }
+}

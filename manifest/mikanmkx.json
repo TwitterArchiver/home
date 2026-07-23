@@ -1,0 +1,36 @@
+{
+  "repo": "mikanmkx",
+  "account": "mikanmkx",
+  "source": "https://twitterarchiver.github.io/mikanmkx/accounts/mikanmkx/wayback_snapshots/index.json",
+  "etag": "\"6a60e05b-123680\"",
+  "bytes": 1193600,
+  "generated": "2026-07-23T19:53:26Z",
+  "range": true,
+  "total": 1350,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 327618,
+      "count": 387,
+      "hash": "202d6ba9965e32e6"
+    },
+    "2026-06": {
+      "offset": 327620,
+      "length": 320755,
+      "count": 376,
+      "hash": "9339446241d5948f"
+    },
+    "2026-05": {
+      "offset": 648376,
+      "length": 274744,
+      "count": 301,
+      "hash": "ab4e74589915dca3"
+    },
+    "2026-04": {
+      "offset": 923121,
+      "length": 270478,
+      "count": 286,
+      "hash": "2c07c6363a6db971"
+    }
+  }
+}

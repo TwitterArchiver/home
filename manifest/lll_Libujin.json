@@ -1,0 +1,24 @@
+{
+  "repo": "lll_Libujin",
+  "account": "lll_Libujin",
+  "source": "https://twitterarchiver.github.io/lll_Libujin/accounts/lll_Libujin/wayback_snapshots/index.json",
+  "etag": "\"6a60e03c-1aa3e\"",
+  "bytes": 109118,
+  "generated": "2026-07-23T19:53:23Z",
+  "range": true,
+  "total": 126,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 105196,
+      "count": 121,
+      "hash": "235015f6cd67eabd"
+    },
+    "2026-06": {
+      "offset": 105198,
+      "length": 3919,
+      "count": 5,
+      "hash": "b0cbb24134036bed"
+    }
+  }
+}

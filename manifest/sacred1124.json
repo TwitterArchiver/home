@@ -1,0 +1,30 @@
+{
+  "repo": "sacred1124",
+  "account": "sacred1124",
+  "source": "https://twitterarchiver.github.io/sacred1124/accounts/sacred1124/wayback_snapshots/index.json",
+  "etag": "\"6a60e077-4b9cf\"",
+  "bytes": 309711,
+  "generated": "2026-07-23T19:53:27Z",
+  "range": true,
+  "total": 327,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 14969,
+      "count": 13,
+      "hash": "6b9bdde2be33cc27"
+    },
+    "2026-06": {
+      "offset": 14971,
+      "length": 100280,
+      "count": 111,
+      "hash": "d79675a0b22365e2"
+    },
+    "2026-05": {
+      "offset": 115252,
+      "length": 194458,
+      "count": 203,
+      "hash": "111dd39e04c069bd"
+    }
+  }
+}

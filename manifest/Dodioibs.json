@@ -1,0 +1,54 @@
+{
+  "repo": "Dodioibs",
+  "account": "Dodioibs",
+  "source": "https://twitterarchiver.github.io/Dodioibs/accounts/Dodioibs/wayback_snapshots/index.json",
+  "etag": "\"6a61ac6f-162486\"",
+  "bytes": 1451142,
+  "generated": "2026-07-23T19:52:45Z",
+  "range": true,
+  "total": 1778,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 129466,
+      "count": 156,
+      "hash": "47a55b287b732bf5"
+    },
+    "2026-06": {
+      "offset": 129468,
+      "length": 332514,
+      "count": 401,
+      "hash": "0c80ec858a719690"
+    },
+    "2026-05": {
+      "offset": 461983,
+      "length": 837875,
+      "count": 1016,
+      "hash": "32172b11a6740403"
+    },
+    "2026-04": {
+      "offset": 1299859,
+      "length": 148807,
+      "count": 202,
+      "hash": "e11d715f72e3b7a6"
+    },
+    "2026-03": {
+      "offset": 1448667,
+      "length": 659,
+      "count": 1,
+      "hash": "2f21b0406c4b53e5"
+    },
+    "2026-02": {
+      "offset": 1449327,
+      "length": 1052,
+      "count": 1,
+      "hash": "1f5e6608560641ae"
+    },
+    "2025-12": {
+      "offset": 1450380,
+      "length": 761,
+      "count": 1,
+      "hash": "074516f1bda9760f"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "6De_dian",
+  "account": "6De_dian",
+  "source": "https://twitterarchiver.github.io/6De_dian/accounts/6De_dian/wayback_snapshots/index.json",
+  "etag": "\"6a60de84-2a8ae6\"",
+  "bytes": 2788070,
+  "generated": "2026-07-23T19:52:35Z",
+  "range": true,
+  "total": 3394,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1116690,
+      "count": 1362,
+      "hash": "b77e4ca97de0617c"
+    },
+    "2026-06": {
+      "offset": 1116692,
+      "length": 1412715,
+      "count": 1734,
+      "hash": "ee1503cf8e10c44e"
+    },
+    "2026-05": {
+      "offset": 2529408,
+      "length": 243880,
+      "count": 278,
+      "hash": "c8f855b96330b6ec"
+    },
+    "2026-04": {
+      "offset": 2773289,
+      "length": 3776,
+      "count": 7,
+      "hash": "f521bba0fda8f227"
+    },
+    "2026-03": {
+      "offset": 2777066,
+      "length": 3543,
+      "count": 4,
+      "hash": "119739001753d198"
+    },
+    "2026-02": {
+      "offset": 2780610,
+      "length": 2235,
+      "count": 4,
+      "hash": "014542b388550f51"
+    },
+    "2025-11": {
+      "offset": 2782846,
+      "length": 3242,
+      "count": 3,
+      "hash": "07657c574522c0b6"
+    },
+    "2025-06": {
+      "offset": 2786089,
+      "length": 652,
+      "count": 1,
+      "hash": "897fddc511659dbf"
+    },
+    "2024-05": {
+      "offset": 2786742,
+      "length": 1327,
+      "count": 1,
+      "hash": "6c4a5d5f17e665fb"
+    }
+  }
+}

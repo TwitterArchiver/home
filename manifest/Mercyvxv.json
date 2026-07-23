@@ -1,0 +1,36 @@
+{
+  "repo": "Mercyvxv",
+  "account": "Mercyvxv",
+  "source": "https://twitterarchiver.github.io/Mercyvxv/accounts/Mercyvxv/wayback_snapshots/index.json",
+  "etag": "\"6a60df16-2f776\"",
+  "bytes": 194422,
+  "generated": "2026-07-23T19:52:52Z",
+  "range": true,
+  "total": 243,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 35893,
+      "count": 46,
+      "hash": "bb3182550e674f08"
+    },
+    "2026-06": {
+      "offset": 35895,
+      "length": 156885,
+      "count": 195,
+      "hash": "ceecfa094f1e9e75"
+    },
+    "2026-05": {
+      "offset": 192781,
+      "length": 1057,
+      "count": 1,
+      "hash": "fecd5428d167ff95"
+    },
+    "2026-04": {
+      "offset": 193839,
+      "length": 582,
+      "count": 1,
+      "hash": "ef9e44b89aed10cf"
+    }
+  }
+}

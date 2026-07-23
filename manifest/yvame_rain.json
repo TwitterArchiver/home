@@ -1,0 +1,24 @@
+{
+  "repo": "yvame_rain",
+  "account": "yvame_rain",
+  "source": "https://twitterarchiver.github.io/yvame_rain/accounts/yvame_rain/wayback_snapshots/index.json",
+  "etag": "\"6a60e0bb-48e41\"",
+  "bytes": 298561,
+  "generated": "2026-07-23T19:53:36Z",
+  "range": true,
+  "total": 364,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 115348,
+      "count": 143,
+      "hash": "18282495b63deac6"
+    },
+    "2026-06": {
+      "offset": 115350,
+      "length": 183210,
+      "count": 221,
+      "hash": "3f0146e4d9467b23"
+    }
+  }
+}

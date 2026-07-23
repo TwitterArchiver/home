@@ -1,0 +1,108 @@
+{
+  "repo": "luolingchy",
+  "account": "luolingchy",
+  "source": "https://twitterarchiver.github.io/luolingchy/accounts/luolingchy/wayback_snapshots/index.json",
+  "etag": "\"6a60e042-6a488\"",
+  "bytes": 435336,
+  "generated": "2026-07-23T19:53:25Z",
+  "range": true,
+  "total": 519,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 7680,
+      "count": 9,
+      "hash": "4f97e35bd271bc07"
+    },
+    "2026-06": {
+      "offset": 7682,
+      "length": 15593,
+      "count": 18,
+      "hash": "c7f338ac6e1822a1"
+    },
+    "2026-05": {
+      "offset": 23276,
+      "length": 29849,
+      "count": 36,
+      "hash": "1dbb21e9358606b9"
+    },
+    "2026-04": {
+      "offset": 53126,
+      "length": 165677,
+      "count": 188,
+      "hash": "b983b79e6acfdd7d"
+    },
+    "2026-03": {
+      "offset": 218804,
+      "length": 29166,
+      "count": 34,
+      "hash": "fb71493d6249fd57"
+    },
+    "2026-02": {
+      "offset": 247971,
+      "length": 32304,
+      "count": 38,
+      "hash": "2ec9c0bd07deb4a7"
+    },
+    "2026-01": {
+      "offset": 280276,
+      "length": 4875,
+      "count": 6,
+      "hash": "f0bdfde3d24ad59b"
+    },
+    "2025-12": {
+      "offset": 285152,
+      "length": 8018,
+      "count": 11,
+      "hash": "1065cb6bbd7b4028"
+    },
+    "2025-11": {
+      "offset": 293171,
+      "length": 2807,
+      "count": 4,
+      "hash": "7ec6eabb127d344a"
+    },
+    "2025-10": {
+      "offset": 295979,
+      "length": 29233,
+      "count": 35,
+      "hash": "ffd42fe51eb7c869"
+    },
+    "2025-09": {
+      "offset": 325213,
+      "length": 2141,
+      "count": 3,
+      "hash": "36ec2b5251ad7161"
+    },
+    "2025-08": {
+      "offset": 327355,
+      "length": 21721,
+      "count": 28,
+      "hash": "977234ec4afdc84b"
+    },
+    "2025-07": {
+      "offset": 349077,
+      "length": 26050,
+      "count": 32,
+      "hash": "5a5bd50b269f851f"
+    },
+    "2025-06": {
+      "offset": 375128,
+      "length": 17057,
+      "count": 24,
+      "hash": "138179e37efa892d"
+    },
+    "2025-05": {
+      "offset": 392186,
+      "length": 42705,
+      "count": 52,
+      "hash": "120ea85fa15dc917"
+    },
+    "2025-01": {
+      "offset": 434892,
+      "length": 443,
+      "count": 1,
+      "hash": "ed46248b85328354"
+    }
+  }
+}

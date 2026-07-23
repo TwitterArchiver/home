@@ -1,0 +1,60 @@
+{
+  "repo": "Linyue7523",
+  "account": "Linyue7523",
+  "source": "https://twitterarchiver.github.io/Linyue7523/accounts/Linyue7523/wayback_snapshots/index.json",
+  "etag": "\"6a60df09-76d73\"",
+  "bytes": 486771,
+  "generated": "2026-07-23T19:52:52Z",
+  "range": true,
+  "total": 512,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 35892,
+      "count": 37,
+      "hash": "efae70f966d6e664"
+    },
+    "2026-06": {
+      "offset": 35894,
+      "length": 78426,
+      "count": 84,
+      "hash": "45cfbededde61974"
+    },
+    "2026-05": {
+      "offset": 114321,
+      "length": 64763,
+      "count": 68,
+      "hash": "c40767cc58063408"
+    },
+    "2026-04": {
+      "offset": 179085,
+      "length": 72498,
+      "count": 73,
+      "hash": "b2c090a0b47963bf"
+    },
+    "2026-03": {
+      "offset": 251584,
+      "length": 159238,
+      "count": 160,
+      "hash": "b154be0a0deca4fc"
+    },
+    "2026-02": {
+      "offset": 410823,
+      "length": 66833,
+      "count": 79,
+      "hash": "99e44c8a0e80354e"
+    },
+    "2026-01": {
+      "offset": 477657,
+      "length": 7362,
+      "count": 9,
+      "hash": "5322a8507292f182"
+    },
+    "2025-02": {
+      "offset": 485020,
+      "length": 1750,
+      "count": 2,
+      "hash": "c1aa672d2794c233"
+    }
+  }
+}

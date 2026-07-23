@@ -1,0 +1,72 @@
+{
+  "repo": "Seviraine",
+  "account": "Seviraine",
+  "source": "https://twitterarchiver.github.io/Seviraine/accounts/Seviraine/wayback_snapshots/index.json",
+  "etag": "\"6a60df5f-9a160\"",
+  "bytes": 631136,
+  "generated": "2026-07-23T19:53:01Z",
+  "range": true,
+  "total": 805,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 19169,
+      "count": 24,
+      "hash": "bfdf33fc3323d1be"
+    },
+    "2026-06": {
+      "offset": 19171,
+      "length": 599664,
+      "count": 764,
+      "hash": "83246fc12ac7e5d2"
+    },
+    "2026-05": {
+      "offset": 618836,
+      "length": 3502,
+      "count": 6,
+      "hash": "e56ec3e0d059d9ca"
+    },
+    "2026-04": {
+      "offset": 622339,
+      "length": 3431,
+      "count": 4,
+      "hash": "537218b84b66d7fe"
+    },
+    "2026-03": {
+      "offset": 625771,
+      "length": 613,
+      "count": 1,
+      "hash": "7586d69adcbaf555"
+    },
+    "2026-02": {
+      "offset": 626385,
+      "length": 2490,
+      "count": 2,
+      "hash": "fe7d27b8f762e905"
+    },
+    "2025-12": {
+      "offset": 628876,
+      "length": 551,
+      "count": 1,
+      "hash": "192710ad50d1953a"
+    },
+    "2025-11": {
+      "offset": 629428,
+      "length": 686,
+      "count": 1,
+      "hash": "299202c360b784d3"
+    },
+    "2024-07": {
+      "offset": 630115,
+      "length": 507,
+      "count": 1,
+      "hash": "ea26bfdbce173cba"
+    },
+    "2021-10": {
+      "offset": 630623,
+      "length": 512,
+      "count": 1,
+      "hash": "d975d1d7d4cdcc9b"
+    }
+  }
+}

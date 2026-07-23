@@ -1,0 +1,96 @@
+{
+  "repo": "Xiaoyi_0324",
+  "account": "Xiaoyi_0324",
+  "source": "https://twitterarchiver.github.io/Xiaoyi_0324/accounts/Xiaoyi_0324/wayback_snapshots/index.json",
+  "etag": "\"6a60dfd9-49c14a\"",
+  "bytes": 4833610,
+  "generated": "2026-07-23T19:53:16Z",
+  "range": true,
+  "total": 5767,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 340886,
+      "count": 385,
+      "hash": "79760ec261b9b7da"
+    },
+    "2026-06": {
+      "offset": 340888,
+      "length": 1389851,
+      "count": 1645,
+      "hash": "c4bb81f035f6575f"
+    },
+    "2026-05": {
+      "offset": 1730740,
+      "length": 1205608,
+      "count": 1407,
+      "hash": "987e49dfaf8e5156"
+    },
+    "2026-04": {
+      "offset": 2936349,
+      "length": 1228468,
+      "count": 1482,
+      "hash": "aaa4aecd95e9127a"
+    },
+    "2026-03": {
+      "offset": 4164818,
+      "length": 255588,
+      "count": 324,
+      "hash": "a5850e2e529899ba"
+    },
+    "2026-02": {
+      "offset": 4420407,
+      "length": 399734,
+      "count": 506,
+      "hash": "3d57e1438a634b78"
+    },
+    "2026-01": {
+      "offset": 4820142,
+      "length": 8876,
+      "count": 10,
+      "hash": "c55b53254667ee47"
+    },
+    "2025-12": {
+      "offset": 4829019,
+      "length": 981,
+      "count": 1,
+      "hash": "3eee786702eacf12"
+    },
+    "2025-11": {
+      "offset": 4830001,
+      "length": 463,
+      "count": 1,
+      "hash": "6a740d7c65e2835e"
+    },
+    "2025-10": {
+      "offset": 4830465,
+      "length": 445,
+      "count": 1,
+      "hash": "50c26761784ff6aa"
+    },
+    "2025-08": {
+      "offset": 4830911,
+      "length": 539,
+      "count": 1,
+      "hash": "857964f6f35f65f7"
+    },
+    "2024-05": {
+      "offset": 4831451,
+      "length": 691,
+      "count": 1,
+      "hash": "454ef4ed3312e246"
+    },
+    "2023-01": {
+      "offset": 4832143,
+      "length": 953,
+      "count": 2,
+      "hash": "4280030b6068a093"
+    },
+    "2021-10": {
+      "offset": 4833097,
+      "length": 512,
+      "count": 1,
+      "hash": "d975d1d7d4cdcc9b"
+    }
+  }
+}

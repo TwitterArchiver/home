@@ -1,0 +1,90 @@
+{
+  "repo": "NL8526",
+  "account": "NL8526",
+  "source": "https://twitterarchiver.github.io/NL8526/accounts/NL8526/wayback_snapshots/index.json",
+  "etag": "\"6a60df3b-1af91b\"",
+  "bytes": 1767707,
+  "generated": "2026-07-23T19:52:56Z",
+  "range": true,
+  "total": 1968,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 129011,
+      "count": 138,
+      "hash": "d895f2c7836df8e1"
+    },
+    "2026-06": {
+      "offset": 129013,
+      "length": 550784,
+      "count": 609,
+      "hash": "31e1e2317fc50313"
+    },
+    "2026-05": {
+      "offset": 679798,
+      "length": 344104,
+      "count": 377,
+      "hash": "af259e74b18f5f33"
+    },
+    "2026-04": {
+      "offset": 1023903,
+      "length": 142651,
+      "count": 172,
+      "hash": "f183c1c8711ae893"
+    },
+    "2026-03": {
+      "offset": 1166555,
+      "length": 129015,
+      "count": 148,
+      "hash": "3b810b98a1fa8e06"
+    },
+    "2026-02": {
+      "offset": 1295571,
+      "length": 100708,
+      "count": 115,
+      "hash": "1f0c9e8b4dbc5c6a"
+    },
+    "2026-01": {
+      "offset": 1396280,
+      "length": 109478,
+      "count": 130,
+      "hash": "cdcc0892ae65babc"
+    },
+    "2025-12": {
+      "offset": 1505759,
+      "length": 95312,
+      "count": 101,
+      "hash": "42728c81aee1eeff"
+    },
+    "2025-11": {
+      "offset": 1601072,
+      "length": 125883,
+      "count": 134,
+      "hash": "efbf2cd1763dc7fa"
+    },
+    "2025-10": {
+      "offset": 1726956,
+      "length": 37731,
+      "count": 40,
+      "hash": "0af8dc06e0623c59"
+    },
+    "2025-09": {
+      "offset": 1764688,
+      "length": 1678,
+      "count": 2,
+      "hash": "b57078e392aef905"
+    },
+    "2023-10": {
+      "offset": 1766367,
+      "length": 825,
+      "count": 1,
+      "hash": "f3893db44b4a40d7"
+    },
+    "2022-06": {
+      "offset": 1767193,
+      "length": 513,
+      "count": 1,
+      "hash": "98259e097958a75a"
+    }
+  }
+}

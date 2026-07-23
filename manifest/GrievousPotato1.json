@@ -1,0 +1,66 @@
+{
+  "repo": "GrievousPotato1",
+  "account": "GrievousPotato1",
+  "source": "https://twitterarchiver.github.io/GrievousPotato1/accounts/GrievousPotato1/wayback_snapshots/index.json",
+  "etag": "\"6a623b8c-16a409\"",
+  "bytes": 1483785,
+  "generated": "2026-07-23T19:52:48Z",
+  "range": true,
+  "total": 1586,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 590622,
+      "count": 646,
+      "hash": "b2f48e0e546c330b"
+    },
+    "2026-06": {
+      "offset": 590624,
+      "length": 779844,
+      "count": 819,
+      "hash": "38390a7677eac914"
+    },
+    "2026-05": {
+      "offset": 1370469,
+      "length": 107488,
+      "count": 114,
+      "hash": "2e002636fbb97de1"
+    },
+    "2026-04": {
+      "offset": 1477958,
+      "length": 1418,
+      "count": 2,
+      "hash": "bb9eca92d47a0495"
+    },
+    "2025-12": {
+      "offset": 1479377,
+      "length": 1299,
+      "count": 1,
+      "hash": "122adfef39b369f8"
+    },
+    "2025-06": {
+      "offset": 1480677,
+      "length": 744,
+      "count": 1,
+      "hash": "60701e4661025a8d"
+    },
+    "2025-02": {
+      "offset": 1481422,
+      "length": 1332,
+      "count": 1,
+      "hash": "fc69c5f3f40e1986"
+    },
+    "2024-12": {
+      "offset": 1482755,
+      "length": 452,
+      "count": 1,
+      "hash": "281b8ce12a335ecd"
+    },
+    "2023-10": {
+      "offset": 1483208,
+      "length": 576,
+      "count": 1,
+      "hash": "22f646ee3565c967"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "NyaMist5",
+  "account": "NyaMist5",
+  "source": "https://twitterarchiver.github.io/NyaMist5/accounts/NyaMist5/wayback_snapshots/index.json",
+  "etag": "\"6a60df3b-ff53e\"",
+  "bytes": 1045822,
+  "generated": "2026-07-23T19:52:58Z",
+  "range": true,
+  "total": 1313,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 29438,
+      "count": 35,
+      "hash": "1e309a24908fb917"
+    },
+    "2026-06": {
+      "offset": 29440,
+      "length": 215223,
+      "count": 262,
+      "hash": "d6dc043639067625"
+    },
+    "2026-05": {
+      "offset": 244664,
+      "length": 198518,
+      "count": 246,
+      "hash": "d24f2d88e814aef1"
+    },
+    "2026-04": {
+      "offset": 443183,
+      "length": 156607,
+      "count": 196,
+      "hash": "c1a768c8f164ef5f"
+    },
+    "2026-03": {
+      "offset": 599791,
+      "length": 388859,
+      "count": 498,
+      "hash": "983365e30c4f63f6"
+    },
+    "2026-02": {
+      "offset": 988651,
+      "length": 54653,
+      "count": 73,
+      "hash": "1a6997ad07bb9012"
+    },
+    "2024-11": {
+      "offset": 1043305,
+      "length": 589,
+      "count": 1,
+      "hash": "512694cb6c740117"
+    },
+    "2024-09": {
+      "offset": 1043895,
+      "length": 1226,
+      "count": 1,
+      "hash": "9d0380029eb75857"
+    },
+    "2023-09": {
+      "offset": 1045122,
+      "length": 699,
+      "count": 1,
+      "hash": "fa496991aa63fb28"
+    }
+  }
+}

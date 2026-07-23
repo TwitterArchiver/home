@@ -1,0 +1,90 @@
+{
+  "repo": "WorstCat",
+  "account": "WorstCat",
+  "source": "https://twitterarchiver.github.io/WorstCat/accounts/WorstCat/wayback_snapshots/index.json",
+  "etag": "\"6a60dfae-2bd8ce\"",
+  "bytes": 2873550,
+  "generated": "2026-07-23T19:53:13Z",
+  "range": true,
+  "total": 3294,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 211039,
+      "count": 252,
+      "hash": "c43fad90cd4ec0b5"
+    },
+    "2026-06": {
+      "offset": 211041,
+      "length": 377365,
+      "count": 463,
+      "hash": "53a21366ee774bcf"
+    },
+    "2026-05": {
+      "offset": 588407,
+      "length": 712643,
+      "count": 834,
+      "hash": "bd2f2bcf7af2aad4"
+    },
+    "2026-04": {
+      "offset": 1301051,
+      "length": 386941,
+      "count": 439,
+      "hash": "b646c0b11246d836"
+    },
+    "2026-03": {
+      "offset": 1687993,
+      "length": 150327,
+      "count": 163,
+      "hash": "8b4c5eabc00e0ff5"
+    },
+    "2026-02": {
+      "offset": 1838321,
+      "length": 200875,
+      "count": 210,
+      "hash": "c79deaf78a2b7428"
+    },
+    "2026-01": {
+      "offset": 2039197,
+      "length": 169145,
+      "count": 187,
+      "hash": "a6fc90ca41e62367"
+    },
+    "2025-12": {
+      "offset": 2208343,
+      "length": 179653,
+      "count": 191,
+      "hash": "093fd7d6ad0432fc"
+    },
+    "2025-11": {
+      "offset": 2387997,
+      "length": 429813,
+      "count": 484,
+      "hash": "0c45fdf033a1fcf8"
+    },
+    "2025-10": {
+      "offset": 2817811,
+      "length": 51914,
+      "count": 66,
+      "hash": "433d34b53bef58fa"
+    },
+    "2025-09": {
+      "offset": 2869726,
+      "length": 649,
+      "count": 1,
+      "hash": "d2af59ec5e067d27"
+    },
+    "2025-07": {
+      "offset": 2870376,
+      "length": 919,
+      "count": 1,
+      "hash": "36a006a269a59cf2"
+    },
+    "2025-06": {
+      "offset": 2871296,
+      "length": 2253,
+      "count": 3,
+      "hash": "aeb81133a5ef3410"
+    }
+  }
+}

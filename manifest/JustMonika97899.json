@@ -1,0 +1,72 @@
+{
+  "repo": "JustMonika97899",
+  "account": "JustMonika97899",
+  "source": "https://twitterarchiver.github.io/JustMonika97899/accounts/JustMonika97899/wayback_snapshots/index.json",
+  "etag": "\"6a623bbe-ac41a\"",
+  "bytes": 705562,
+  "generated": "2026-07-23T19:52:49Z",
+  "range": true,
+  "total": 814,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 21994,
+      "count": 26,
+      "hash": "59f8337ab431c4f2"
+    },
+    "2026-06": {
+      "offset": 21996,
+      "length": 190475,
+      "count": 231,
+      "hash": "a19468af204db4a2"
+    },
+    "2026-05": {
+      "offset": 212472,
+      "length": 54389,
+      "count": 61,
+      "hash": "268d77eec86ad442"
+    },
+    "2026-04": {
+      "offset": 266862,
+      "length": 52394,
+      "count": 57,
+      "hash": "fb441e3ca33f7ab4"
+    },
+    "2026-03": {
+      "offset": 319257,
+      "length": 204194,
+      "count": 222,
+      "hash": "d73b56a5508b995a"
+    },
+    "2026-02": {
+      "offset": 523452,
+      "length": 173712,
+      "count": 208,
+      "hash": "b43867b0111406c3"
+    },
+    "2025-10": {
+      "offset": 697165,
+      "length": 5891,
+      "count": 6,
+      "hash": "d01d5581f5415a6d"
+    },
+    "2025-08": {
+      "offset": 703057,
+      "length": 1303,
+      "count": 1,
+      "hash": "ad5dbaf5bb1d4033"
+    },
+    "2025-07": {
+      "offset": 704361,
+      "length": 526,
+      "count": 1,
+      "hash": "d51d0fee64f8e8f2"
+    },
+    "2024-06": {
+      "offset": 704888,
+      "length": 673,
+      "count": 1,
+      "hash": "db9731ae9f16a036"
+    }
+  }
+}

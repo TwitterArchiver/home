@@ -1,0 +1,42 @@
+{
+  "repo": "mi0myl0ve",
+  "account": "mi0myl0ve",
+  "source": "https://twitterarchiver.github.io/mi0myl0ve/accounts/mi0myl0ve/wayback_snapshots/index.json",
+  "etag": "\"6a60e04b-137c62\"",
+  "bytes": 1277026,
+  "generated": "2026-07-23T19:53:25Z",
+  "range": true,
+  "total": 1429,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 67621,
+      "count": 75,
+      "hash": "8dec9d11cfe8a7fe"
+    },
+    "2026-06": {
+      "offset": 67623,
+      "length": 259852,
+      "count": 288,
+      "hash": "68188fb1edfee9dc"
+    },
+    "2026-05": {
+      "offset": 327476,
+      "length": 614565,
+      "count": 684,
+      "hash": "77dafd0fee91a5c4"
+    },
+    "2026-04": {
+      "offset": 942042,
+      "length": 334305,
+      "count": 381,
+      "hash": "0c19176a32f85159"
+    },
+    "2025-11": {
+      "offset": 1276348,
+      "length": 677,
+      "count": 1,
+      "hash": "9f07c4e292477b4b"
+    }
+  }
+}

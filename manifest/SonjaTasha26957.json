@@ -1,0 +1,48 @@
+{
+  "repo": "SonjaTasha26957",
+  "account": "SonjaTasha26957",
+  "source": "https://twitterarchiver.github.io/SonjaTasha26957/accounts/SonjaTasha26957/wayback_snapshots/index.json",
+  "etag": "\"6a60df7a-18e183\"",
+  "bytes": 1630595,
+  "generated": "2026-07-23T19:53:04Z",
+  "range": true,
+  "total": 2037,
+  "months": {
+    "2026-05": {
+      "offset": 1,
+      "length": 966574,
+      "count": 1197,
+      "hash": "8d01efe17a8804da"
+    },
+    "2026-04": {
+      "offset": 966576,
+      "length": 658404,
+      "count": 833,
+      "hash": "5e16b52930d12c24"
+    },
+    "2026-03": {
+      "offset": 1624981,
+      "length": 1817,
+      "count": 2,
+      "hash": "b61ca1590deca12d"
+    },
+    "2026-02": {
+      "offset": 1626799,
+      "length": 2694,
+      "count": 3,
+      "hash": "c0748233cab7a1ab"
+    },
+    "2025-10": {
+      "offset": 1629494,
+      "length": 643,
+      "count": 1,
+      "hash": "8c83e32834ee807d"
+    },
+    "2025-08": {
+      "offset": 1630138,
+      "length": 456,
+      "count": 1,
+      "hash": "57d7a91e863c92e6"
+    }
+  }
+}

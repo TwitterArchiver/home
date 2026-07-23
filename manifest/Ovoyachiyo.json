@@ -1,0 +1,60 @@
+{
+  "repo": "Ovoyachiyo",
+  "account": "Ovoyachiyo",
+  "source": "https://twitterarchiver.github.io/Ovoyachiyo/accounts/Ovoyachiyo/wayback_snapshots/index.json",
+  "etag": "\"6a60df52-1cd2a6\"",
+  "bytes": 1888934,
+  "generated": "2026-07-23T19:52:59Z",
+  "range": true,
+  "total": 2315,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 107698,
+      "count": 137,
+      "hash": "40913623ef706771"
+    },
+    "2026-06": {
+      "offset": 107700,
+      "length": 559054,
+      "count": 706,
+      "hash": "8874a9555408e1ba"
+    },
+    "2026-05": {
+      "offset": 666755,
+      "length": 527601,
+      "count": 657,
+      "hash": "c093ce6e1082c849"
+    },
+    "2026-04": {
+      "offset": 1194357,
+      "length": 359712,
+      "count": 419,
+      "hash": "46372b538f879e3c"
+    },
+    "2026-03": {
+      "offset": 1554070,
+      "length": 246219,
+      "count": 293,
+      "hash": "cf167ddaad17e48b"
+    },
+    "2026-02": {
+      "offset": 1800290,
+      "length": 86946,
+      "count": 101,
+      "hash": "2f386d516197a5be"
+    },
+    "2025-12": {
+      "offset": 1887237,
+      "length": 548,
+      "count": 1,
+      "hash": "84d9065c0edf6aa7"
+    },
+    "2025-11": {
+      "offset": 1887786,
+      "length": 1147,
+      "count": 1,
+      "hash": "db64cfd33aeba177"
+    }
+  }
+}

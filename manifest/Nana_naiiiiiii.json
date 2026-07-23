@@ -1,0 +1,72 @@
+{
+  "repo": "Nana_naiiiiiii",
+  "account": "Nana_naiiiiiii",
+  "source": "https://twitterarchiver.github.io/Nana_naiiiiiii/accounts/Nana_naiiiiiii/wayback_snapshots/index.json",
+  "etag": "\"6a60df2f-22a6ce\"",
+  "bytes": 2270926,
+  "generated": "2026-07-23T19:52:58Z",
+  "range": true,
+  "total": 2853,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 134629,
+      "count": 166,
+      "hash": "0e0d7bd9c785ea92"
+    },
+    "2026-06": {
+      "offset": 134631,
+      "length": 361005,
+      "count": 461,
+      "hash": "b88f17d0f6588a7b"
+    },
+    "2026-05": {
+      "offset": 495637,
+      "length": 206205,
+      "count": 257,
+      "hash": "ae587467dc561f05"
+    },
+    "2026-04": {
+      "offset": 701843,
+      "length": 377616,
+      "count": 467,
+      "hash": "ec538ece8a3529e9"
+    },
+    "2026-03": {
+      "offset": 1079460,
+      "length": 730792,
+      "count": 928,
+      "hash": "cafafd9225df0d38"
+    },
+    "2026-02": {
+      "offset": 1810253,
+      "length": 160753,
+      "count": 202,
+      "hash": "70172adf806df86b"
+    },
+    "2026-01": {
+      "offset": 1971007,
+      "length": 156252,
+      "count": 193,
+      "hash": "e250782539096dbb"
+    },
+    "2025-12": {
+      "offset": 2127260,
+      "length": 120981,
+      "count": 149,
+      "hash": "8f24465e9f09bda3"
+    },
+    "2025-11": {
+      "offset": 2248242,
+      "length": 22242,
+      "count": 29,
+      "hash": "65b430c425b63cee"
+    },
+    "2023-05": {
+      "offset": 2270485,
+      "length": 440,
+      "count": 1,
+      "hash": "4df4e39f03612a65"
+    }
+  }
+}

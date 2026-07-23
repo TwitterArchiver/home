@@ -1,0 +1,54 @@
+{
+  "repo": "lei47076",
+  "account": "lei47076",
+  "source": "https://twitterarchiver.github.io/lei47076/accounts/lei47076/wayback_snapshots/index.json",
+  "etag": "\"6a60e03e-d5c13\"",
+  "bytes": 875539,
+  "generated": "2026-07-23T19:53:24Z",
+  "range": true,
+  "total": 1154,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 89202,
+      "count": 117,
+      "hash": "f2929df967ea36e5"
+    },
+    "2026-06": {
+      "offset": 89204,
+      "length": 121504,
+      "count": 159,
+      "hash": "da63dfe0da5961bc"
+    },
+    "2026-05": {
+      "offset": 210709,
+      "length": 83652,
+      "count": 109,
+      "hash": "1f78edd304c7a788"
+    },
+    "2026-04": {
+      "offset": 294362,
+      "length": 119822,
+      "count": 166,
+      "hash": "67e4dc1d9b08ce5a"
+    },
+    "2026-03": {
+      "offset": 414185,
+      "length": 299978,
+      "count": 398,
+      "hash": "0db4c39447c008b2"
+    },
+    "2026-02": {
+      "offset": 714164,
+      "length": 160897,
+      "count": 204,
+      "hash": "aeb1946daabdab22"
+    },
+    "2025-09": {
+      "offset": 875062,
+      "length": 476,
+      "count": 1,
+      "hash": "b89808f1e0a0c825"
+    }
+  }
+}

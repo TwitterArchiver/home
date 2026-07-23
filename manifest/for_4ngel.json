@@ -1,0 +1,42 @@
+{
+  "repo": "for_4ngel",
+  "account": "for_4ngel",
+  "source": "https://twitterarchiver.github.io/for_4ngel/accounts/for_4ngel/wayback_snapshots/index.json",
+  "etag": "\"6a60e00c-124a1e\"",
+  "bytes": 1198622,
+  "generated": "2026-07-23T19:53:21Z",
+  "range": true,
+  "total": 1223,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 48864,
+      "count": 49,
+      "hash": "fd67e96c4e79ecc7"
+    },
+    "2026-06": {
+      "offset": 48866,
+      "length": 612249,
+      "count": 637,
+      "hash": "cef30f44a2545f50"
+    },
+    "2026-05": {
+      "offset": 661116,
+      "length": 536437,
+      "count": 535,
+      "hash": "2c3682957766364f"
+    },
+    "2026-04": {
+      "offset": 1197554,
+      "length": 613,
+      "count": 1,
+      "hash": "1cc41fc6c5ad4496"
+    },
+    "2025-01": {
+      "offset": 1198168,
+      "length": 453,
+      "count": 1,
+      "hash": "d3b42eff4ef7a9f9"
+    }
+  }
+}

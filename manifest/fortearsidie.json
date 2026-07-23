@@ -1,0 +1,42 @@
+{
+  "repo": "fortearsidie",
+  "account": "fortearsidie",
+  "source": "https://twitterarchiver.github.io/fortearsidie/accounts/fortearsidie/wayback_snapshots/index.json",
+  "etag": "\"6a60e00d-63af3\"",
+  "bytes": 408307,
+  "generated": "2026-07-23T19:53:20Z",
+  "range": true,
+  "total": 475,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 51494,
+      "count": 62,
+      "hash": "2d45c9b0fa42d7ef"
+    },
+    "2026-06": {
+      "offset": 51496,
+      "length": 155639,
+      "count": 189,
+      "hash": "2ef08c83bf3f320d"
+    },
+    "2026-05": {
+      "offset": 207136,
+      "length": 171015,
+      "count": 187,
+      "hash": "273eb8af08421f1c"
+    },
+    "2026-04": {
+      "offset": 378152,
+      "length": 28696,
+      "count": 35,
+      "hash": "6228070a76337d2e"
+    },
+    "2026-03": {
+      "offset": 406849,
+      "length": 1457,
+      "count": 2,
+      "hash": "f729c783d95f85af"
+    }
+  }
+}

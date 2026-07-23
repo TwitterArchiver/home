@@ -1,0 +1,90 @@
+{
+  "repo": "LanwujiDrink",
+  "account": "LanwujiDrink",
+  "source": "https://twitterarchiver.github.io/LanwujiDrink/accounts/LanwujiDrink/wayback_snapshots/index.json",
+  "etag": "\"6a60def7-8d27f\"",
+  "bytes": 578175,
+  "generated": "2026-07-23T19:52:50Z",
+  "range": true,
+  "total": 695,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 315213,
+      "count": 374,
+      "hash": "05a1eaae05020791"
+    },
+    "2026-06": {
+      "offset": 315215,
+      "length": 237445,
+      "count": 288,
+      "hash": "30843678df778a1c"
+    },
+    "2026-05": {
+      "offset": 552661,
+      "length": 17260,
+      "count": 21,
+      "hash": "7e32f1d9b474abc0"
+    },
+    "2026-04": {
+      "offset": 569922,
+      "length": 476,
+      "count": 1,
+      "hash": "afc28152501f382f"
+    },
+    "2026-03": {
+      "offset": 570399,
+      "length": 491,
+      "count": 1,
+      "hash": "f3101ac0e40fea1a"
+    },
+    "2026-01": {
+      "offset": 570891,
+      "length": 950,
+      "count": 1,
+      "hash": "e9a38425b222ca17"
+    },
+    "2025-12": {
+      "offset": 571842,
+      "length": 471,
+      "count": 1,
+      "hash": "b8be7366bd63678f"
+    },
+    "2025-11": {
+      "offset": 572314,
+      "length": 483,
+      "count": 1,
+      "hash": "2f7d36a0778e167e"
+    },
+    "2025-10": {
+      "offset": 572798,
+      "length": 544,
+      "count": 1,
+      "hash": "4108fd511508973c"
+    },
+    "2025-09": {
+      "offset": 573343,
+      "length": 1565,
+      "count": 3,
+      "hash": "57eb1374852913d2"
+    },
+    "2025-08": {
+      "offset": 574909,
+      "length": 1276,
+      "count": 1,
+      "hash": "e72720910fdf6059"
+    },
+    "2025-02": {
+      "offset": 576186,
+      "length": 721,
+      "count": 1,
+      "hash": "9084775566b1d291"
+    },
+    "2023-06": {
+      "offset": 576908,
+      "length": 1266,
+      "count": 1,
+      "hash": "6244da4e880fefe8"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "repo": "LastDinosaur23",
+  "account": "LastDinosaur23",
+  "source": "https://twitterarchiver.github.io/LastDinosaur23/accounts/LastDinosaur23/wayback_snapshots/index.json",
+  "etag": "\"6a60def9-9ad23\"",
+  "bytes": 634147,
+  "generated": "2026-07-23T19:52:51Z",
+  "range": true,
+  "total": 724,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 55359,
+      "count": 70,
+      "hash": "87cc28993a49f90e"
+    },
+    "2026-06": {
+      "offset": 55361,
+      "length": 187019,
+      "count": 213,
+      "hash": "1b66c117cd1278f4"
+    },
+    "2026-05": {
+      "offset": 242381,
+      "length": 387749,
+      "count": 436,
+      "hash": "ccbdc1533093e7c0"
+    },
+    "2026-04": {
+      "offset": 630131,
+      "length": 473,
+      "count": 1,
+      "hash": "b529fa79ca314e6b"
+    },
+    "2026-03": {
+      "offset": 630605,
+      "length": 531,
+      "count": 1,
+      "hash": "e93d55c6d763d22e"
+    },
+    "2026-02": {
+      "offset": 631137,
+      "length": 885,
+      "count": 1,
+      "hash": "dbb1c5a992f16f54"
+    },
+    "2025-11": {
+      "offset": 632023,
+      "length": 869,
+      "count": 1,
+      "hash": "d9291b84ad44f270"
+    },
+    "2023-12": {
+      "offset": 632893,
+      "length": 1253,
+      "count": 1,
+      "hash": "e8fb31a80dece71c"
+    }
+  }
+}

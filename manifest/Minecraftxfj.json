@@ -1,0 +1,108 @@
+{
+  "repo": "Minecraftxfj",
+  "account": "Minecraftxfj",
+  "source": "https://twitterarchiver.github.io/Minecraftxfj/accounts/Minecraftxfj/wayback_snapshots/index.json",
+  "etag": "\"6a60df61-35cc8f\"",
+  "bytes": 3525775,
+  "generated": "2026-07-23T19:52:55Z",
+  "range": true,
+  "total": 4295,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1095254,
+      "count": 1338,
+      "hash": "9778830a679c5cb0"
+    },
+    "2026-06": {
+      "offset": 1095256,
+      "length": 1896058,
+      "count": 2296,
+      "hash": "7a814b390dbaed89"
+    },
+    "2026-05": {
+      "offset": 2991315,
+      "length": 231420,
+      "count": 295,
+      "hash": "40f310c870da3797"
+    },
+    "2026-04": {
+      "offset": 3222736,
+      "length": 68990,
+      "count": 82,
+      "hash": "05b6a3121e155342"
+    },
+    "2026-03": {
+      "offset": 3291727,
+      "length": 79943,
+      "count": 95,
+      "hash": "65aa65ca35b1f1c6"
+    },
+    "2026-02": {
+      "offset": 3371671,
+      "length": 19109,
+      "count": 22,
+      "hash": "773a6e5546f80017"
+    },
+    "2026-01": {
+      "offset": 3390781,
+      "length": 54220,
+      "count": 67,
+      "hash": "e3165ae11034fa8b"
+    },
+    "2025-12": {
+      "offset": 3445002,
+      "length": 18961,
+      "count": 24,
+      "hash": "720d33cb324856ca"
+    },
+    "2025-11": {
+      "offset": 3463964,
+      "length": 11082,
+      "count": 14,
+      "hash": "5041b41b15a41f6e"
+    },
+    "2025-10": {
+      "offset": 3475047,
+      "length": 12888,
+      "count": 16,
+      "hash": "7d5c4e7d7c5de628"
+    },
+    "2025-09": {
+      "offset": 3487936,
+      "length": 33506,
+      "count": 40,
+      "hash": "a0889f5dad8c0643"
+    },
+    "2025-08": {
+      "offset": 3521443,
+      "length": 1587,
+      "count": 2,
+      "hash": "1bcadaff6eae7534"
+    },
+    "2025-04": {
+      "offset": 3523031,
+      "length": 1139,
+      "count": 1,
+      "hash": "e51f1ecc0b815d6f"
+    },
+    "2024-10": {
+      "offset": 3524171,
+      "length": 553,
+      "count": 1,
+      "hash": "63b98d0978db3272"
+    },
+    "2021-10": {
+      "offset": 3524725,
+      "length": 512,
+      "count": 1,
+      "hash": "d975d1d7d4cdcc9b"
+    },
+    "2018-10": {
+      "offset": 3525238,
+      "length": 536,
+      "count": 1,
+      "hash": "d841c712dd9928bb"
+    }
+  }
+}

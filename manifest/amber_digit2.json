@@ -1,0 +1,72 @@
+{
+  "repo": "amber_digit2",
+  "account": "amber_digit2",
+  "source": "https://twitterarchiver.github.io/amber_digit2/accounts/amber_digit2/wayback_snapshots/index.json",
+  "etag": "\"6a60dfe4-207d9e\"",
+  "bytes": 2129310,
+  "generated": "2026-07-23T19:53:17Z",
+  "range": true,
+  "total": 2168,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 227506,
+      "count": 199,
+      "hash": "8e89b318798eae57"
+    },
+    "2026-06": {
+      "offset": 227508,
+      "length": 891843,
+      "count": 893,
+      "hash": "2893a21bec263418"
+    },
+    "2026-05": {
+      "offset": 1119352,
+      "length": 938716,
+      "count": 1002,
+      "hash": "c1544c6ca881fe1a"
+    },
+    "2026-04": {
+      "offset": 2058069,
+      "length": 64376,
+      "count": 67,
+      "hash": "72731e2a013e827b"
+    },
+    "2025-12": {
+      "offset": 2122446,
+      "length": 1214,
+      "count": 1,
+      "hash": "607d12931a014fc1"
+    },
+    "2025-05": {
+      "offset": 2123661,
+      "length": 555,
+      "count": 1,
+      "hash": "fa0383ff2b304aca"
+    },
+    "2025-01": {
+      "offset": 2124217,
+      "length": 713,
+      "count": 1,
+      "hash": "d0571f90b36d5d0c"
+    },
+    "2024-02": {
+      "offset": 2124931,
+      "length": 1273,
+      "count": 1,
+      "hash": "fd4f7fe19f3a0175"
+    },
+    "2024-01": {
+      "offset": 2126205,
+      "length": 1276,
+      "count": 1,
+      "hash": "962a1b54b1ab07dd"
+    },
+    "2023-05": {
+      "offset": 2127482,
+      "length": 1827,
+      "count": 2,
+      "hash": "c172b11ebbf0a4b1"
+    }
+  }
+}

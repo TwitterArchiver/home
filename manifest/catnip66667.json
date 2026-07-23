@@ -1,0 +1,30 @@
+{
+  "repo": "catnip66667",
+  "account": "catnip66667",
+  "source": "https://twitterarchiver.github.io/catnip66667/accounts/catnip66667/wayback_snapshots/index.json",
+  "etag": "\"6a60dff3-320e2\"",
+  "bytes": 205026,
+  "generated": "2026-07-23T19:53:19Z",
+  "range": true,
+  "total": 234,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 20852,
+      "count": 22,
+      "hash": "f741cf8f8f0ea1c3"
+    },
+    "2026-06": {
+      "offset": 20854,
+      "length": 180935,
+      "count": 209,
+      "hash": "4caab3c9ed3c2abf"
+    },
+    "2026-05": {
+      "offset": 201790,
+      "length": 3235,
+      "count": 3,
+      "hash": "ae559abfb77a371d"
+    }
+  }
+}

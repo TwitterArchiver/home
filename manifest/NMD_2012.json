@@ -1,0 +1,60 @@
+{
+  "repo": "NMD_2012",
+  "account": "NMD_2012",
+  "source": "https://twitterarchiver.github.io/NMD_2012/accounts/NMD_2012/wayback_snapshots/index.json",
+  "etag": "\"6a60df34-122912\"",
+  "bytes": 1190162,
+  "generated": "2026-07-23T19:52:56Z",
+  "range": true,
+  "total": 1490,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 240243,
+      "count": 301,
+      "hash": "47ecef880b2f42b5"
+    },
+    "2026-06": {
+      "offset": 240245,
+      "length": 891636,
+      "count": 1118,
+      "hash": "fd4875fec822b1e3"
+    },
+    "2026-05": {
+      "offset": 1131882,
+      "length": 55610,
+      "count": 66,
+      "hash": "d332acf45c4fd43d"
+    },
+    "2026-04": {
+      "offset": 1187493,
+      "length": 631,
+      "count": 1,
+      "hash": "73e72cf8f48ec2da"
+    },
+    "2026-03": {
+      "offset": 1188125,
+      "length": 527,
+      "count": 1,
+      "hash": "1069c0e51450daaa"
+    },
+    "2025-02": {
+      "offset": 1188653,
+      "length": 458,
+      "count": 1,
+      "hash": "fe1d4eabfbdbbc01"
+    },
+    "2021-10": {
+      "offset": 1189112,
+      "length": 512,
+      "count": 1,
+      "hash": "d975d1d7d4cdcc9b"
+    },
+    "2018-10": {
+      "offset": 1189625,
+      "length": 536,
+      "count": 1,
+      "hash": "d841c712dd9928bb"
+    }
+  }
+}

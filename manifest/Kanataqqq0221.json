@@ -1,0 +1,84 @@
+{
+  "repo": "Kanataqqq0221",
+  "account": "Kanataqqq0221",
+  "source": "https://twitterarchiver.github.io/Kanataqqq0221/accounts/Kanataqqq0221/wayback_snapshots/index.json",
+  "etag": "\"6a60df1b-2cdf41\"",
+  "bytes": 2940737,
+  "generated": "2026-07-23T19:52:51Z",
+  "range": true,
+  "total": 3654,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 237117,
+      "count": 286,
+      "hash": "e31ec845ca3b977a"
+    },
+    "2026-06": {
+      "offset": 237119,
+      "length": 323120,
+      "count": 390,
+      "hash": "3b55e0f22e62634b"
+    },
+    "2026-05": {
+      "offset": 560240,
+      "length": 375609,
+      "count": 463,
+      "hash": "801d21ad218dd752"
+    },
+    "2026-04": {
+      "offset": 935850,
+      "length": 602677,
+      "count": 780,
+      "hash": "134f4923466c3113"
+    },
+    "2026-03": {
+      "offset": 1538528,
+      "length": 543423,
+      "count": 699,
+      "hash": "b654f343ebb4506d"
+    },
+    "2026-02": {
+      "offset": 2081952,
+      "length": 351023,
+      "count": 433,
+      "hash": "789002ce976b5fa9"
+    },
+    "2026-01": {
+      "offset": 2432976,
+      "length": 120381,
+      "count": 141,
+      "hash": "432d720970cdc384"
+    },
+    "2025-12": {
+      "offset": 2553358,
+      "length": 37888,
+      "count": 44,
+      "hash": "3b0aaba1cdea7bb7"
+    },
+    "2025-11": {
+      "offset": 2591247,
+      "length": 126478,
+      "count": 145,
+      "hash": "ed63f6ef969a2449"
+    },
+    "2025-10": {
+      "offset": 2717726,
+      "length": 176475,
+      "count": 218,
+      "hash": "44636cbdfcf9ca66"
+    },
+    "2025-09": {
+      "offset": 2894202,
+      "length": 46074,
+      "count": 54,
+      "hash": "056171003396ceb8"
+    },
+    "2024-09": {
+      "offset": 2940277,
+      "length": 459,
+      "count": 1,
+      "hash": "3bdc910bc72c0110"
+    }
+  }
+}

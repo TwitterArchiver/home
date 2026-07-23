@@ -1,0 +1,24 @@
+{
+  "repo": "fanwei_17",
+  "account": "fanwei_17",
+  "source": "https://twitterarchiver.github.io/fanwei_17/accounts/fanwei_17/wayback_snapshots/index.json",
+  "etag": "\"6a60e00a-39a11\"",
+  "bytes": 236049,
+  "generated": "2026-07-23T19:53:20Z",
+  "range": true,
+  "total": 288,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 108868,
+      "count": 131,
+      "hash": "89a058d166cd4204"
+    },
+    "2026-06": {
+      "offset": 108870,
+      "length": 127178,
+      "count": 157,
+      "hash": "323b83191724b33b"
+    }
+  }
+}

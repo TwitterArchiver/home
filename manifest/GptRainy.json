@@ -1,0 +1,48 @@
+{
+  "repo": "GptRainy",
+  "account": "GptRainy",
+  "source": "https://twitterarchiver.github.io/GptRainy/accounts/GptRainy/wayback_snapshots/index.json",
+  "etag": "\"6a623a31-d87b9\"",
+  "bytes": 886713,
+  "generated": "2026-07-23T19:52:48Z",
+  "range": true,
+  "total": 970,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 259006,
+      "count": 291,
+      "hash": "c3498846908d523c"
+    },
+    "2026-06": {
+      "offset": 259008,
+      "length": 448060,
+      "count": 481,
+      "hash": "b685c905a189e9e5"
+    },
+    "2026-05": {
+      "offset": 707069,
+      "length": 177708,
+      "count": 195,
+      "hash": "5c224bff1b2377c7"
+    },
+    "2026-04": {
+      "offset": 884778,
+      "length": 502,
+      "count": 1,
+      "hash": "0d675199460c572d"
+    },
+    "2026-02": {
+      "offset": 885281,
+      "length": 809,
+      "count": 1,
+      "hash": "38c3aa9636b7de30"
+    },
+    "2025-06": {
+      "offset": 886091,
+      "length": 621,
+      "count": 1,
+      "hash": "984aafdae9d09978"
+    }
+  }
+}

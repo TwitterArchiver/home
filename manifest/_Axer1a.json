@@ -1,0 +1,30 @@
+{
+  "repo": "_Axer1a",
+  "account": "_Axer1a",
+  "source": "https://twitterarchiver.github.io/_Axer1a/accounts/_Axer1a/wayback_snapshots/index.json",
+  "etag": "\"6a60dfc7-204d0\"",
+  "bytes": 132304,
+  "generated": "2026-07-23T19:53:14Z",
+  "range": true,
+  "total": 161,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 98326,
+      "count": 120,
+      "hash": "3ab8c4d202480892"
+    },
+    "2026-06": {
+      "offset": 98328,
+      "length": 33234,
+      "count": 40,
+      "hash": "d59976895dc1b903"
+    },
+    "2025-01": {
+      "offset": 131563,
+      "length": 740,
+      "count": 1,
+      "hash": "f7d4f90c52350641"
+    }
+  }
+}

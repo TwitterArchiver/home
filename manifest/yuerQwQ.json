@@ -1,0 +1,96 @@
+{
+  "repo": "yuerQwQ",
+  "account": "yuerQwQ",
+  "source": "https://twitterarchiver.github.io/yuerQwQ/accounts/yuerQwQ/wayback_snapshots/index.json",
+  "etag": "\"6a60e0f5-674ba8\"",
+  "bytes": 6769576,
+  "generated": "2026-07-23T19:53:38Z",
+  "range": true,
+  "total": 7739,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 822154,
+      "count": 964,
+      "hash": "6d4c2822b9daf49d"
+    },
+    "2026-06": {
+      "offset": 822156,
+      "length": 2911030,
+      "count": 3468,
+      "hash": "5e77572655dd9eb6"
+    },
+    "2026-05": {
+      "offset": 3733187,
+      "length": 1683252,
+      "count": 1861,
+      "hash": "bd27dff1b1a8cb5c"
+    },
+    "2026-04": {
+      "offset": 5416440,
+      "length": 1335458,
+      "count": 1425,
+      "hash": "27f5af4284303429"
+    },
+    "2026-03": {
+      "offset": 6751899,
+      "length": 7639,
+      "count": 9,
+      "hash": "a81281424b1a431a"
+    },
+    "2026-02": {
+      "offset": 6759539,
+      "length": 2678,
+      "count": 3,
+      "hash": "7c56cbbba83ffea2"
+    },
+    "2025-12": {
+      "offset": 6762218,
+      "length": 495,
+      "count": 1,
+      "hash": "378a494bf4855436"
+    },
+    "2025-11": {
+      "offset": 6762714,
+      "length": 1334,
+      "count": 1,
+      "hash": "a2a78ffeab08ad6e"
+    },
+    "2025-09": {
+      "offset": 6764049,
+      "length": 858,
+      "count": 1,
+      "hash": "c18027265529ce1b"
+    },
+    "2025-08": {
+      "offset": 6764908,
+      "length": 954,
+      "count": 1,
+      "hash": "71f5c30a6928d107"
+    },
+    "2025-05": {
+      "offset": 6765863,
+      "length": 1883,
+      "count": 2,
+      "hash": "920c956ba6852ab0"
+    },
+    "2023-01": {
+      "offset": 6767747,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    },
+    "2022-06": {
+      "offset": 6768226,
+      "length": 812,
+      "count": 1,
+      "hash": "1cb5034045bb7668"
+    },
+    "2018-10": {
+      "offset": 6769039,
+      "length": 536,
+      "count": 1,
+      "hash": "d841c712dd9928bb"
+    }
+  }
+}

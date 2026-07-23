@@ -1,0 +1,48 @@
+{
+  "repo": "xiaoyu598",
+  "account": "xiaoyu598",
+  "source": "https://twitterarchiver.github.io/xiaoyu598/accounts/xiaoyu598/wayback_snapshots/index.json",
+  "etag": "\"6a617a6b-78044\"",
+  "bytes": 491588,
+  "generated": "2026-07-23T19:53:31Z",
+  "range": true,
+  "total": 618,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 484590,
+      "count": 606,
+      "hash": "f45abe826870f6e1"
+    },
+    "2026-06": {
+      "offset": 484592,
+      "length": 4204,
+      "count": 7,
+      "hash": "0cf09319bc293be5"
+    },
+    "2026-05": {
+      "offset": 488797,
+      "length": 1208,
+      "count": 2,
+      "hash": "2dd0a9b1df5a56d5"
+    },
+    "2026-04": {
+      "offset": 490006,
+      "length": 527,
+      "count": 1,
+      "hash": "677902fcc4850f57"
+    },
+    "2025-11": {
+      "offset": 490534,
+      "length": 483,
+      "count": 1,
+      "hash": "7c33b272007c381d"
+    },
+    "2025-10": {
+      "offset": 491018,
+      "length": 569,
+      "count": 1,
+      "hash": "c675075a9f951828"
+    }
+  }
+}
