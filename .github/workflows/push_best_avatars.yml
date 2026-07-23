@@ -1,0 +1,40 @@
+name: 推送清晰头像回仓库
+
+# 把 home 头像池里更清晰的版本推回还拿着糊版的存档仓库。
+# 手动触发；默认试运行（只打印计划），确认后取消勾选再实际推送。
+#
+# 前置条件：
+#   1. home 的 Settings → Secrets 里配置 DISPATCH_TOKEN（与 Dispatcher 仓库同一个 PAT）
+#      （对组织所有仓库有 Contents: Read and write 权限的 PAT）
+#   2. 建议先跑一轮「汇总头像池」，保证池子是最新的
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "试运行（只打印计划，不实际推送）"
+        type: boolean
+        default: true
+
+jobs:
+  push-avatars:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: 检出 home 仓库（读取头像池）
+        uses: actions/checkout@v7
+
+      - name: 安装依赖
+        run: pip install requests pillow
+
+      - name: 拉取最新推送脚本
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/push_best_avatars.py" \
+            -o /tmp/push_best_avatars.py
+          echo "✅ push_best_avatars.py ($(wc -l < /tmp/push_best_avatars.py) 行)"
+
+      - name: 推送清晰头像
+        env:
+          PUSH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: python3 /tmp/push_best_avatars.py
