@@ -1,0 +1,168 @@
+name: 生成索引清单
+
+# 为每个存档仓库的 index.json 生成月度清单（哈希 + 字节区间），
+# 供 App 端做增量更新：只重新下载发生变化的月份字节段。
+# 不复制任何数据，只输出 manifest/{仓库名}.json，每个几 KB。
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每周日 UTC 06:00（北京时间 14:00），排在各仓库 update.yml（UTC 02:00）之后
+    - cron: "0 6 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-manifest
+  cancel-in-progress: false
+
+jobs:
+  build-manifest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 检出 home
+        uses: actions/checkout@v6
+
+      - name: 生成清单
+        run: |
+          python3 - <<'PY'
+          import json, hashlib, os, pathlib, datetime, urllib.request
+          import concurrent.futures as cf
+
+          PAGES = "https://twitterarchiver.github.io"
+          OUT   = pathlib.Path("manifest")
+          OUT.mkdir(exist_ok=True)
+
+          repos = json.loads(pathlib.Path("repos.json").read_text(encoding="utf-8"))
+          print(f"账号总数: {len(repos)}")
+
+          dec = json.JSONDecoder()
+
+          def month_spans(raw: bytes):
+              """
+              解析 index.json 原始字节，返回
+              [(月份, 起始字节, 结束字节, 条数), ...]（按文件内出现顺序）。
+              月份出现交错时抛 ValueError。
+              """
+              text = raw.decode("utf-8")
+              i = text.index("[") + 1
+              recs = []                      # (char_start, char_end, month)
+              while True:
+                  while i < len(text) and text[i] in ", \n\r\t":
+                      i += 1
+                  if i >= len(text) or text[i] == "]":
+                      break
+                  obj, end = dec.raw_decode(text, i)
+                  ts = str(obj.get("timestamp") or obj.get("date") or "")
+                  month = ts[:7] if len(ts) >= 7 and ts[:4].isdigit() else "unknown"
+                  recs.append((i, end, month))
+                  i = end
+              if not recs:
+                  return []
+
+              # 字符位置 → 字节位置（文件含中文，两者不同），一次线性扫描
+              marks = sorted({c for r in recs for c in (r[0], r[1])})
+              byte_of, b, mi = {}, 0, 0
+              for ci, ch in enumerate(text):
+                  while mi < len(marks) and marks[mi] == ci:
+                      byte_of[marks[mi]] = b; mi += 1
+                  b += len(ch.encode("utf-8"))
+              while mi < len(marks):
+                  byte_of[marks[mi]] = b; mi += 1
+
+              spans, seen = [], set()
+              for cs, ce, m in recs:
+                  bs, be = byte_of[cs], byte_of[ce]
+                  if spans and spans[-1][0] == m:
+                      spans[-1][2] = be
+                      spans[-1][3] += 1
+                  else:
+                      if m in seen:
+                          raise ValueError(f"月份 {m} 不连续")
+                      seen.add(m)
+                      spans.append([m, bs, be, 1])
+              return spans
+
+          def build_one(entry):
+              repo, acct = entry["repo"], entry.get("acct") or entry["repo"]
+              url = f"{PAGES}/{repo}/accounts/{acct}/wayback_snapshots/index.json"
+              try:
+                  resp = urllib.request.urlopen(url, timeout=120)
+                  raw  = resp.read()
+                  etag = resp.headers.get("ETag", "")
+              except Exception as e:
+                  return repo, None, f"拉取失败: {str(e)[:60]}"
+
+              manifest = {
+                  "repo":      repo,
+                  "account":   acct,
+                  "source":    url,
+                  "etag":      etag,
+                  "bytes":     len(raw),
+                  "generated": datetime.datetime.now(datetime.UTC)
+                                 .strftime("%Y-%m-%dT%H:%M:%SZ"),
+              }
+              try:
+                  spans = month_spans(raw)
+                  manifest["range"] = True
+                  manifest["total"] = sum(s[3] for s in spans)
+                  manifest["months"] = {
+                      m: {
+                          "offset": bs,
+                          "length": be - bs,
+                          "count":  cnt,
+                          "hash":   hashlib.sha256(raw[bs:be]).hexdigest()[:16],
+                      }
+                      for m, bs, be, cnt in spans
+                  }
+              except ValueError as e:
+                  # 月份交错等异常：仍给出整体信息，客户端退回全量下载
+                  manifest["range"] = False
+                  manifest["reason"] = str(e)
+                  manifest["hash"] = hashlib.sha256(raw).hexdigest()[:16]
+              return repo, manifest, None
+
+          ok = failed = skipped = 0
+          with cf.ThreadPoolExecutor(8) as ex:
+              for repo, manifest, err in ex.map(build_one, repos):
+                  if manifest is None:
+                      print(f"!! {repo}: {err}（保留旧清单）")
+                      failed += 1
+                      continue
+
+                  path = OUT / f"{repo}.json"
+                  body = json.dumps(manifest, ensure_ascii=False, indent=2)
+
+                  # 除 generated/etag 外无变化时不重写，避免无意义 commit
+                  if path.is_file():
+                      try:
+                          old = json.loads(path.read_text(encoding="utf-8"))
+                          a = {k: v for k, v in old.items()      if k not in ("generated", "etag")}
+                          b = {k: v for k, v in manifest.items() if k not in ("generated", "etag")}
+                          if a == b:
+                              skipped += 1
+                              continue
+                      except Exception:
+                          pass
+                  path.write_text(body, encoding="utf-8")
+                  ok += 1
+                  tag = "" if manifest.get("range") else "（range 不可用）"
+                  print(f"✅ {repo}: {manifest.get('total','?')} 条 / "
+                        f"{len(manifest.get('months', {}))} 个月 {tag}")
+
+          print(f"\n更新 {ok}，无变化 {skipped}，失败 {failed}")
+          PY
+
+      - name: 推送
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest
+          if git diff --cached --quiet; then
+            echo "✅ 清单无变化"
+            exit 0
+          fi
+          git commit -m "chore: 更新索引清单 [skip ci]"
+          git push
