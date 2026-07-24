@@ -1,0 +1,115 @@
+name: 全量短链修复
+
+# 只放在 home 仓库，不往任何存档仓库分发文件。
+# 动态分组矩阵：读取 repos.json，按 batch 个仓库为一组，每组一个并行 job；
+# 组内逐仓库 浅克隆 → clean-html --force → build-index → 推回 → 清盘。
+# 仓库数量增长也不怕：矩阵上限 256 是「组数」而非仓库数，调大 batch 即可。
+# 某组失败不影响其他组，跑完后可在 Actions 页面单独 Re-run failed jobs。
+#
+# 前置：secrets.DISPATCH_TOKEN（对组织仓库有 contents 写权限，与 Dispatcher 同一个）
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "每个 job 处理几个仓库（仓库数 ÷ 该值 ≤ 256）"
+        default: "5"
+      only:
+        description: "只跑这些仓库（逗号分隔，留空=全部；重试个别仓库用）"
+        default: ""
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.split.outputs.matrix }}
+      total: ${{ steps.split.outputs.total }}
+    steps:
+      - name: 检出 home（读取 repos.json）
+        uses: actions/checkout@v6
+
+      - name: 分组
+        id: split
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          repos = [r["repo"] for r in json.load(open("repos.json", encoding="utf-8"))]
+          only = [x.strip() for x in "${{ inputs.only }}".split(",") if x.strip()]
+          if only:
+              repos = [r for r in repos if r in only]
+          batch = max(1, int("${{ inputs.batch }}" or 5))
+          groups = [
+              {"id": f"{i // batch + 1:03d}", "repos": " ".join(repos[i:i + batch])}
+              for i in range(0, len(repos), batch)
+          ]
+          assert len(groups) <= 256, f"组数 {len(groups)} 超过矩阵上限，请调大 batch"
+          print(f"matrix={json.dumps(groups, ensure_ascii=False)}")
+          print(f"total={len(repos)}")
+          PY
+          echo "共 $(python3 -c "print('${{ inputs.only }}' or '全部')") → 见 matrix"
+
+  fix:
+    needs: prepare
+    if: needs.prepare.outputs.total != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    name: 组 ${{ matrix.group.id }}
+    steps:
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: 拉取最新 archive.py
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/sjshb57/Test/main/archive.py" \
+            -o /tmp/archive.py
+          echo "✅ archive.py ($(wc -l < /tmp/archive.py) 行)"
+
+      - name: 逐仓库修复
+        env:
+          TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          FAILED=""
+          for R in ${{ matrix.group.repos }}; do
+            echo ""
+            echo "════════ $R ════════"
+            rm -rf /tmp/work && mkdir -p /tmp/work && cd /tmp/work
+            if ! git clone --depth=1 --quiet \
+                 "https://x-access-token:${TOKEN}@github.com/TwitterArchiver/${R}.git" repo; then
+              echo "❌ $R 克隆失败"; FAILED="$FAILED $R"; continue
+            fi
+            cd repo
+            CHANGED=false
+            for A in accounts/*/; do
+              U=$(basename "$A")
+              [ -d "accounts/${U}/wayback_snapshots" ] || continue
+              echo "── 账号 $U"
+              ( cd "accounts/${U}" \
+                && python3 /tmp/archive.py clean-html --force \
+                && python3 /tmp/archive.py build-index ) || { FAILED="$FAILED $R/$U"; continue; }
+              CHANGED=true
+            done
+            if [ "$CHANGED" = "true" ]; then
+              git add -A accounts
+              if git diff --cached --quiet; then
+                echo "✅ $R 无变化"
+              else
+                git commit -q -m "🔗 短链修复：t.co → 真实地址 [skip ci]"
+                git push -q || { echo "❌ $R 推送失败"; FAILED="$FAILED $R(push)"; }
+                echo "✅ $R 已推送"
+              fi
+            fi
+            cd / && rm -rf /tmp/work
+            df -h / | tail -1
+          done
+          if [ -n "$FAILED" ]; then
+            echo ""
+            echo "❌ 本组失败项：$FAILED"
+            exit 1
+          fi
