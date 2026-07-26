@@ -2,38 +2,44 @@
   "repo": "RogerDisboard",
   "account": "RogerDisboard",
   "source": "https://twitterarchiver.github.io/RogerDisboard/accounts/RogerDisboard/wayback_snapshots/index.json",
-  "etag": "\"6a60df7b-393ce8\"",
-  "bytes": 3751144,
-  "generated": "2026-07-23T19:53:01Z",
+  "etag": "\"6a659ec2-3941ee\"",
+  "bytes": 3752430,
+  "generated": "2026-07-26T08:29:11Z",
   "range": true,
-  "total": 4637,
+  "total": 4638,
   "months": {
-    "2026-06": {
+    "2026-07": {
       "offset": 1,
+      "length": 785,
+      "count": 1,
+      "hash": "83a787b2f3a10254"
+    },
+    "2026-06": {
+      "offset": 787,
       "length": 1079618,
       "count": 1338,
       "hash": "fdb59ce975f5a2ea"
     },
     "2026-05": {
-      "offset": 1079620,
+      "offset": 1080406,
       "length": 1879156,
       "count": 2320,
       "hash": "f8df3ee818efef96"
     },
     "2026-04": {
-      "offset": 2958777,
-      "length": 747653,
+      "offset": 2959563,
+      "length": 748153,
       "count": 928,
-      "hash": "fdf7010a3ef674b6"
+      "hash": "fd62bd4b30509a8f"
     },
     "2026-03": {
-      "offset": 3706431,
+      "offset": 3707717,
       "length": 43899,
       "count": 50,
       "hash": "2776fd2c473d4fc0"
     },
     "2022-06": {
-      "offset": 3750331,
+      "offset": 3751617,
       "length": 812,
       "count": 1,
       "hash": "1cb5034045bb7668"

@@ -1,0 +1,60 @@
+{
+  "repo": "Rainydayovo8964",
+  "account": "Rainydayovo8964",
+  "source": "https://twitterarchiver.github.io/Rainydayovo8964/accounts/Rainydayovo8964/wayback_snapshots/index.json",
+  "etag": "\"6a64d8ba-370ce1\"",
+  "bytes": 3607777,
+  "generated": "2026-07-26T08:29:09Z",
+  "range": true,
+  "total": 4548,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 149585,
+      "count": 188,
+      "hash": "4b8a88e2a7a84a2a"
+    },
+    "2026-06": {
+      "offset": 149587,
+      "length": 313123,
+      "count": 381,
+      "hash": "d3517120e9d12cc1"
+    },
+    "2026-05": {
+      "offset": 462711,
+      "length": 570453,
+      "count": 736,
+      "hash": "c3dd4553ce94e93f"
+    },
+    "2026-04": {
+      "offset": 1033165,
+      "length": 1202427,
+      "count": 1520,
+      "hash": "921fe8f9cd22df3e"
+    },
+    "2026-03": {
+      "offset": 2235593,
+      "length": 646890,
+      "count": 809,
+      "hash": "710ca8ae7ee87e25"
+    },
+    "2026-02": {
+      "offset": 2882484,
+      "length": 266993,
+      "count": 333,
+      "hash": "0729891b4ec1a87f"
+    },
+    "2026-01": {
+      "offset": 3149478,
+      "length": 332985,
+      "count": 419,
+      "hash": "2879de5eb5bb5994"
+    },
+    "2025-12": {
+      "offset": 3482464,
+      "length": 125312,
+      "count": 162,
+      "hash": "466bcb0ec48a3872"
+    }
+  }
+}

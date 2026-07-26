@@ -2,9 +2,9 @@
   "repo": "NewYear_NewYear",
   "account": "NewYear_NewYear",
   "source": "https://twitterarchiver.github.io/NewYear_NewYear/accounts/NewYear_NewYear/wayback_snapshots/index.json",
-  "etag": "\"6a60df74-952083\"",
-  "bytes": 9773187,
-  "generated": "2026-07-23T19:53:01Z",
+  "etag": "\"6a644d9b-95211a\"",
+  "bytes": 9773338,
+  "generated": "2026-07-26T08:29:09Z",
   "range": true,
   "total": 12135,
   "months": {
@@ -76,72 +76,72 @@
     },
     "2025-09": {
       "offset": 8223091,
-      "length": 893563,
+      "length": 893671,
       "count": 1128,
-      "hash": "7dfd5577be8a5e58"
+      "hash": "ebf99302fd660afd"
     },
     "2025-08": {
-      "offset": 9116655,
-      "length": 88508,
+      "offset": 9116763,
+      "length": 88551,
       "count": 100,
-      "hash": "33747b04b7139060"
+      "hash": "4db07359104df1f4"
     },
     "2025-07": {
-      "offset": 9205164,
+      "offset": 9205315,
       "length": 69133,
       "count": 78,
       "hash": "ef9d1b5f77f7a28d"
     },
     "2025-06": {
-      "offset": 9274298,
+      "offset": 9274449,
       "length": 130653,
       "count": 151,
       "hash": "30d12c1fe1efd626"
     },
     "2025-05": {
-      "offset": 9404952,
+      "offset": 9405103,
       "length": 157907,
       "count": 190,
       "hash": "188333f18e13541d"
     },
     "2025-04": {
-      "offset": 9562860,
+      "offset": 9563011,
       "length": 117313,
       "count": 149,
       "hash": "7e0a9794005c15ce"
     },
     "2025-03": {
-      "offset": 9680174,
+      "offset": 9680325,
       "length": 70116,
       "count": 85,
       "hash": "559a99cc848b5f26"
     },
     "2025-02": {
-      "offset": 9750291,
+      "offset": 9750442,
       "length": 880,
       "count": 1,
       "hash": "d600626ebd771058"
     },
     "2025-01": {
-      "offset": 9751172,
+      "offset": 9751323,
       "length": 514,
       "count": 1,
       "hash": "e996760ddf233cac"
     },
     "2024-12": {
-      "offset": 9751687,
+      "offset": 9751838,
       "length": 2414,
       "count": 3,
       "hash": "e3410adc7ee3bcfc"
     },
     "2024-11": {
-      "offset": 9754102,
+      "offset": 9754253,
       "length": 18430,
       "count": 22,
       "hash": "488f587f9a528d1e"
     },
     "2024-05": {
-      "offset": 9772533,
+      "offset": 9772684,
       "length": 653,
       "count": 1,
       "hash": "626b602f3ab12b5c"
