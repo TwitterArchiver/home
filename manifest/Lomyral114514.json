@@ -1,0 +1,36 @@
+{
+  "repo": "Lomyral114514",
+  "account": "Lomyral114514",
+  "source": "https://twitterarchiver.github.io/Lomyral114514/accounts/Lomyral114514/wayback_snapshots/index.json",
+  "etag": "\"6a68df70-1f3669\"",
+  "bytes": 2045545,
+  "generated": "2026-07-28T18:04:48Z",
+  "range": true,
+  "total": 2470,
+  "months": {
+    "2026-05": {
+      "offset": 1,
+      "length": 2038078,
+      "count": 2459,
+      "hash": "b0816fa5a8a05ad2"
+    },
+    "2026-04": {
+      "offset": 2038080,
+      "length": 4691,
+      "count": 8,
+      "hash": "048af655acce0082"
+    },
+    "2026-03": {
+      "offset": 2042772,
+      "length": 1230,
+      "count": 1,
+      "hash": "c0a5e6780764d511"
+    },
+    "2026-02": {
+      "offset": 2044003,
+      "length": 1541,
+      "count": 2,
+      "hash": "e2b120011fae758b"
+    }
+  }
+}

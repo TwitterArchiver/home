@@ -1,0 +1,72 @@
+{
+  "repo": "uixxixu",
+  "account": "uixxixu",
+  "source": "https://twitterarchiver.github.io/uixxixu/accounts/uixxixu/wayback_snapshots/index.json",
+  "etag": "\"6a68e927-42946d\"",
+  "bytes": 4363373,
+  "generated": "2026-07-28T18:05:35Z",
+  "range": true,
+  "total": 5558,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 296832,
+      "count": 365,
+      "hash": "65b439b3bde28231"
+    },
+    "2026-06": {
+      "offset": 296834,
+      "length": 702973,
+      "count": 826,
+      "hash": "4a0f61d506e26e6a"
+    },
+    "2026-05": {
+      "offset": 999808,
+      "length": 790736,
+      "count": 981,
+      "hash": "8f6ea86ab5032dec"
+    },
+    "2026-04": {
+      "offset": 1790545,
+      "length": 702062,
+      "count": 864,
+      "hash": "1df68fe35874b458"
+    },
+    "2026-03": {
+      "offset": 2492608,
+      "length": 261083,
+      "count": 335,
+      "hash": "93008aef5230a35e"
+    },
+    "2026-02": {
+      "offset": 2753692,
+      "length": 595055,
+      "count": 806,
+      "hash": "6dcb508312b0a777"
+    },
+    "2026-01": {
+      "offset": 3348748,
+      "length": 837541,
+      "count": 1154,
+      "hash": "b0274247e9e055a8"
+    },
+    "2025-12": {
+      "offset": 4186290,
+      "length": 175834,
+      "count": 225,
+      "hash": "54e1e1a224eb5d8a"
+    },
+    "2025-11": {
+      "offset": 4362125,
+      "length": 729,
+      "count": 1,
+      "hash": "a9625654bb014ad2"
+    },
+    "2025-10": {
+      "offset": 4362855,
+      "length": 517,
+      "count": 1,
+      "hash": "9368d42a25295623"
+    }
+  }
+}

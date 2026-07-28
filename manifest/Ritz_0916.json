@@ -1,0 +1,42 @@
+{
+  "repo": "Ritz_0916",
+  "account": "Ritz_0916",
+  "source": "https://twitterarchiver.github.io/Ritz_0916/accounts/Ritz_0916/wayback_snapshots/index.json",
+  "etag": "\"6a68d0a5-81666\"",
+  "bytes": 530022,
+  "generated": "2026-07-28T18:04:56Z",
+  "range": true,
+  "total": 649,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 236365,
+      "count": 285,
+      "hash": "58dcbe47c40f38e5"
+    },
+    "2026-06": {
+      "offset": 236367,
+      "length": 202190,
+      "count": 250,
+      "hash": "784dea3efab32010"
+    },
+    "2026-05": {
+      "offset": 438558,
+      "length": 88635,
+      "count": 110,
+      "hash": "b5de6ce9a48f9b29"
+    },
+    "2026-04": {
+      "offset": 527194,
+      "length": 1584,
+      "count": 3,
+      "hash": "f3433e2f5cb89ac4"
+    },
+    "2026-03": {
+      "offset": 528779,
+      "length": 1242,
+      "count": 1,
+      "hash": "52a59f69bc8396fe"
+    }
+  }
+}

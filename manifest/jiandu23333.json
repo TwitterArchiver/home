@@ -1,0 +1,42 @@
+{
+  "repo": "jiandu23333",
+  "account": "jiandu23333",
+  "source": "https://twitterarchiver.github.io/jiandu23333/accounts/jiandu23333/wayback_snapshots/index.json",
+  "etag": "\"6a68bf0e-75015\"",
+  "bytes": 479253,
+  "generated": "2026-07-28T18:05:20Z",
+  "range": true,
+  "total": 545,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 12766,
+      "count": 14,
+      "hash": "45c9f9106bfa1f54"
+    },
+    "2026-06": {
+      "offset": 12768,
+      "length": 119953,
+      "count": 130,
+      "hash": "d0319545a8534e7b"
+    },
+    "2026-05": {
+      "offset": 132722,
+      "length": 344390,
+      "count": 398,
+      "hash": "85cc3d0f48f07ab6"
+    },
+    "2026-04": {
+      "offset": 477113,
+      "length": 995,
+      "count": 2,
+      "hash": "81168fc2fe0cbba0"
+    },
+    "2026-03": {
+      "offset": 478109,
+      "length": 1143,
+      "count": 1,
+      "hash": "94ff99289326c9d6"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "repo": "AmeAsukaLangley",
+  "account": "AmeAsukaLangley",
+  "source": "https://twitterarchiver.github.io/AmeAsukaLangley/accounts/AmeAsukaLangley/wayback_snapshots/index.json",
+  "etag": "\"6a68bed2-107bd7\"",
+  "bytes": 1080279,
+  "generated": "2026-07-28T18:04:26Z",
+  "range": true,
+  "total": 1325,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 464097,
+      "count": 563,
+      "hash": "0f0b8bfe802151dc"
+    },
+    "2026-06": {
+      "offset": 464099,
+      "length": 615557,
+      "count": 761,
+      "hash": "bad808bdb7fa413b"
+    },
+    "2026-05": {
+      "offset": 1079657,
+      "length": 621,
+      "count": 1,
+      "hash": "c6bace0112189964"
+    }
+  }
+}

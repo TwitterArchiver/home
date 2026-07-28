@@ -1,0 +1,48 @@
+{
+  "repo": "Shivam3228",
+  "account": "Shivam3228",
+  "source": "https://twitterarchiver.github.io/Shivam3228/accounts/Shivam3228/wayback_snapshots/index.json",
+  "etag": "\"6a68ca27-17dd48\"",
+  "bytes": 1563976,
+  "generated": "2026-07-28T18:04:59Z",
+  "range": true,
+  "total": 1902,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 104930,
+      "count": 127,
+      "hash": "2c3c179bcd7a8292"
+    },
+    "2026-06": {
+      "offset": 104932,
+      "length": 919159,
+      "count": 1126,
+      "hash": "93b398f613ddb60a"
+    },
+    "2026-05": {
+      "offset": 1024092,
+      "length": 534346,
+      "count": 641,
+      "hash": "ef8e589d3a5746ae"
+    },
+    "2026-04": {
+      "offset": 1558439,
+      "length": 2577,
+      "count": 4,
+      "hash": "408ac056b4f180b5"
+    },
+    "2026-03": {
+      "offset": 1561017,
+      "length": 1792,
+      "count": 3,
+      "hash": "aba0c69bb1b28b8a"
+    },
+    "2026-02": {
+      "offset": 1562810,
+      "length": 1165,
+      "count": 1,
+      "hash": "17450c1cfe69e283"
+    }
+  }
+}

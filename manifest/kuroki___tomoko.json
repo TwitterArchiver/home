@@ -1,0 +1,54 @@
+{
+  "repo": "kuroki___tomoko",
+  "account": "kuroki___tomoko",
+  "source": "https://twitterarchiver.github.io/kuroki___tomoko/accounts/kuroki___tomoko/wayback_snapshots/index.json",
+  "etag": "\"6a68bc08-1d117\"",
+  "bytes": 119063,
+  "generated": "2026-07-28T18:05:23Z",
+  "range": true,
+  "total": 111,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 25551,
+      "count": 24,
+      "hash": "4ed9db84adeee306"
+    },
+    "2026-07": {
+      "offset": 25553,
+      "length": 21713,
+      "count": 22,
+      "hash": "a7593b60d1178ecf"
+    },
+    "2026-04": {
+      "offset": 47267,
+      "length": 2796,
+      "count": 2,
+      "hash": "79eb5d9c9d05f2ec"
+    },
+    "2026-03": {
+      "offset": 50064,
+      "length": 33424,
+      "count": 28,
+      "hash": "378e34c746637c03"
+    },
+    "2026-02": {
+      "offset": 83489,
+      "length": 34262,
+      "count": 33,
+      "hash": "fb44c947abe66213"
+    },
+    "2025-06": {
+      "offset": 117752,
+      "length": 454,
+      "count": 1,
+      "hash": "3587d31a55dd0f5d"
+    },
+    "2024-11": {
+      "offset": 118207,
+      "length": 855,
+      "count": 1,
+      "hash": "a9d8439d5955606b"
+    }
+  }
+}

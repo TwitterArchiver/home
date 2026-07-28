@@ -1,0 +1,72 @@
+{
+  "repo": "Strf_9040C",
+  "account": "Strf_9040C",
+  "source": "https://twitterarchiver.github.io/Strf_9040C/accounts/Strf_9040C/wayback_snapshots/index.json",
+  "etag": "\"6a68dbcf-1c897b\"",
+  "bytes": 1870203,
+  "generated": "2026-07-28T18:05:03Z",
+  "range": true,
+  "total": 1934,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 101656,
+      "count": 104,
+      "hash": "8866b287db157c48"
+    },
+    "2026-06": {
+      "offset": 101658,
+      "length": 160277,
+      "count": 155,
+      "hash": "8cd41e420478affb"
+    },
+    "2026-05": {
+      "offset": 261936,
+      "length": 358549,
+      "count": 345,
+      "hash": "425e9ed9d1b822ff"
+    },
+    "2026-04": {
+      "offset": 620486,
+      "length": 259502,
+      "count": 256,
+      "hash": "c9797a8cb8019770"
+    },
+    "2026-03": {
+      "offset": 879989,
+      "length": 123587,
+      "count": 115,
+      "hash": "f280e818b8dda10f"
+    },
+    "2026-02": {
+      "offset": 1003577,
+      "length": 616,
+      "count": 1,
+      "hash": "2a85663c3f038147"
+    },
+    "2025-08": {
+      "offset": 1004194,
+      "length": 1516,
+      "count": 2,
+      "hash": "49eacd00c18d5a18"
+    },
+    "2025-02": {
+      "offset": 1005711,
+      "length": 199760,
+      "count": 228,
+      "hash": "9831d517ddb0e7e2"
+    },
+    "2025-01": {
+      "offset": 1205472,
+      "length": 458424,
+      "count": 513,
+      "hash": "6ff97e45d14ecbb2"
+    },
+    "2024-12": {
+      "offset": 1663897,
+      "length": 206305,
+      "count": 215,
+      "hash": "00e764359fb5e971"
+    }
+  }
+}

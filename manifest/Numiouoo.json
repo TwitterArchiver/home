@@ -1,0 +1,42 @@
+{
+  "repo": "Numiouoo",
+  "account": "Numiouoo",
+  "source": "https://twitterarchiver.github.io/Numiouoo/accounts/Numiouoo/wayback_snapshots/index.json",
+  "etag": "\"6a68c461-3dd93b\"",
+  "bytes": 4053307,
+  "generated": "2026-07-28T18:04:55Z",
+  "range": true,
+  "total": 5187,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 745316,
+      "count": 933,
+      "hash": "1c8411ae0bf43a2e"
+    },
+    "2026-06": {
+      "offset": 745318,
+      "length": 2326411,
+      "count": 2986,
+      "hash": "51ecb6662ac1c828"
+    },
+    "2026-05": {
+      "offset": 3071730,
+      "length": 977882,
+      "count": 1263,
+      "hash": "25d6dbde55dc2b53"
+    },
+    "2026-04": {
+      "offset": 4049613,
+      "length": 493,
+      "count": 1,
+      "hash": "510fcfdc6f033ea0"
+    },
+    "2026-03": {
+      "offset": 4050107,
+      "length": 3199,
+      "count": 4,
+      "hash": "bc76bda195fa7f44"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "repo": "kurage2333",
+  "account": "kurage2333",
+  "source": "https://twitterarchiver.github.io/kurage2333/accounts/kurage2333/wayback_snapshots/index.json",
+  "etag": "\"6a68ec64-1ae20e\"",
+  "bytes": 1761806,
+  "generated": "2026-07-28T18:05:24Z",
+  "range": true,
+  "total": 2307,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 64571,
+      "count": 75,
+      "hash": "ddb1d760a03b6e5b"
+    },
+    "2026-06": {
+      "offset": 64573,
+      "length": 222323,
+      "count": 282,
+      "hash": "1933eb2f32aa818d"
+    },
+    "2026-05": {
+      "offset": 286897,
+      "length": 457466,
+      "count": 597,
+      "hash": "c618955a9fc33a31"
+    },
+    "2026-04": {
+      "offset": 744364,
+      "length": 683343,
+      "count": 924,
+      "hash": "6fa9dbd45c9ba392"
+    },
+    "2026-03": {
+      "offset": 1427708,
+      "length": 218764,
+      "count": 281,
+      "hash": "d4bcaccc4e9bbd83"
+    },
+    "2026-02": {
+      "offset": 1646473,
+      "length": 14165,
+      "count": 18,
+      "hash": "58abb11380ba3ace"
+    },
+    "2026-01": {
+      "offset": 1660639,
+      "length": 90498,
+      "count": 119,
+      "hash": "dee2bb03dad986ca"
+    },
+    "2025-11": {
+      "offset": 1751138,
+      "length": 9096,
+      "count": 9,
+      "hash": "9d56d0e36488965b"
+    },
+    "2025-08": {
+      "offset": 1760235,
+      "length": 954,
+      "count": 1,
+      "hash": "71f5c30a6928d107"
+    },
+    "2024-02": {
+      "offset": 1761190,
+      "length": 615,
+      "count": 1,
+      "hash": "9464f165c1a72946"
+    }
+  }
+}

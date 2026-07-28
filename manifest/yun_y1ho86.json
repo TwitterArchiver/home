@@ -1,0 +1,36 @@
+{
+  "repo": "yun_y1ho86",
+  "account": "yun_y1ho86",
+  "source": "https://twitterarchiver.github.io/yun_y1ho86/accounts/yun_y1ho86/wayback_snapshots/index.json",
+  "etag": "\"6a68be41-68e3f\"",
+  "bytes": 429631,
+  "generated": "2026-07-28T18:05:45Z",
+  "range": true,
+  "total": 509,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 16009,
+      "count": 19,
+      "hash": "c7db16b7a661ed48"
+    },
+    "2026-06": {
+      "offset": 16011,
+      "length": 7051,
+      "count": 7,
+      "hash": "8e5070da28a93231"
+    },
+    "2026-05": {
+      "offset": 23063,
+      "length": 361656,
+      "count": 432,
+      "hash": "c74c0f8332271edb"
+    },
+    "2026-04": {
+      "offset": 384720,
+      "length": 44910,
+      "count": 51,
+      "hash": "75bf3194d25be474"
+    }
+  }
+}

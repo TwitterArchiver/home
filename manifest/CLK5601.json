@@ -1,0 +1,66 @@
+{
+  "repo": "CLK5601",
+  "account": "CLK5601",
+  "source": "https://twitterarchiver.github.io/CLK5601/accounts/CLK5601/wayback_snapshots/index.json",
+  "etag": "\"6a68c5d3-ab899\"",
+  "bytes": 702617,
+  "generated": "2026-07-28T18:04:34Z",
+  "range": true,
+  "total": 745,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 140899,
+      "count": 154,
+      "hash": "375c0283a5c254e9"
+    },
+    "2026-06": {
+      "offset": 140901,
+      "length": 398704,
+      "count": 429,
+      "hash": "33751684686bddcc"
+    },
+    "2026-05": {
+      "offset": 539606,
+      "length": 96038,
+      "count": 91,
+      "hash": "7eacdb38805ccabc"
+    },
+    "2026-04": {
+      "offset": 635645,
+      "length": 5481,
+      "count": 6,
+      "hash": "8f4ade0c6afc4d15"
+    },
+    "2026-03": {
+      "offset": 641127,
+      "length": 49915,
+      "count": 52,
+      "hash": "43487db77533b6a1"
+    },
+    "2026-02": {
+      "offset": 691043,
+      "length": 1173,
+      "count": 1,
+      "hash": "4dd815fa00805b15"
+    },
+    "2026-01": {
+      "offset": 692217,
+      "length": 7882,
+      "count": 9,
+      "hash": "2c7a3fa5e0621eac"
+    },
+    "2025-12": {
+      "offset": 700100,
+      "length": 1822,
+      "count": 2,
+      "hash": "c6a8f624f15bc7ff"
+    },
+    "2025-03": {
+      "offset": 701923,
+      "length": 693,
+      "count": 1,
+      "hash": "8b885c941945232a"
+    }
+  }
+}
