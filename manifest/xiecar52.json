@@ -1,0 +1,24 @@
+{
+  "repo": "xiecar52",
+  "account": "xiecar52",
+  "source": "https://twitterarchiver.github.io/xiecar52/accounts/xiecar52/wayback_snapshots/index.json",
+  "etag": "\"6a67d88f-568c8\"",
+  "bytes": 354504,
+  "generated": "2026-07-28T13:56:01Z",
+  "range": true,
+  "total": 445,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 354028,
+      "count": 444,
+      "hash": "ca66b5bfd05d0691"
+    },
+    "2025-06": {
+      "offset": 354030,
+      "length": 473,
+      "count": 1,
+      "hash": "e9036db9cc033c75"
+    }
+  }
+}

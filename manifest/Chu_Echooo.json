@@ -1,0 +1,48 @@
+{
+  "repo": "Chu_Echooo",
+  "account": "Chu_Echooo",
+  "source": "https://twitterarchiver.github.io/Chu_Echooo/accounts/Chu_Echooo/wayback_snapshots/index.json",
+  "etag": "\"6a66e26a-508db7\"",
+  "bytes": 5279159,
+  "generated": "2026-07-28T13:55:05Z",
+  "range": true,
+  "total": 6767,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 664664,
+      "count": 839,
+      "hash": "1bba8122f58f524b"
+    },
+    "2026-06": {
+      "offset": 664666,
+      "length": 1768119,
+      "count": 2309,
+      "hash": "09e2010e07cb4ebf"
+    },
+    "2026-05": {
+      "offset": 2432786,
+      "length": 1302199,
+      "count": 1682,
+      "hash": "d6d57c9aff96d419"
+    },
+    "2026-04": {
+      "offset": 3734986,
+      "length": 1024659,
+      "count": 1288,
+      "hash": "3075e3f92492915b"
+    },
+    "2026-03": {
+      "offset": 4759646,
+      "length": 519074,
+      "count": 648,
+      "hash": "c1bdd56e58aac965"
+    },
+    "2025-11": {
+      "offset": 5278721,
+      "length": 437,
+      "count": 1,
+      "hash": "db5a40eb4ca4fdbf"
+    }
+  }
+}

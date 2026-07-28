@@ -1,0 +1,18 @@
+{
+  "repo": "Donna1054957",
+  "account": "Donna1054957",
+  "source": "https://twitterarchiver.github.io/Donna1054957/accounts/Donna1054957/wayback_snapshots/index.json",
+  "etag": "\"6a68b339-56c05\"",
+  "bytes": 355333,
+  "generated": "2026-07-28T13:55:05Z",
+  "range": true,
+  "total": 446,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 355331,
+      "count": 446,
+      "hash": "5d7a8db46edb4bd7"
+    }
+  }
+}

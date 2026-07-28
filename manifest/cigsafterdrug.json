@@ -1,0 +1,96 @@
+{
+  "repo": "cigsafterdrug",
+  "account": "cigsafterdrug",
+  "source": "https://twitterarchiver.github.io/cigsafterdrug/accounts/cigsafterdrug/wayback_snapshots/index.json",
+  "etag": "\"6a68b3b0-344485\"",
+  "bytes": 3425413,
+  "generated": "2026-07-28T13:55:42Z",
+  "range": true,
+  "total": 4395,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 404516,
+      "count": 502,
+      "hash": "627662e1e500f0f3"
+    },
+    "2026-06": {
+      "offset": 404518,
+      "length": 771987,
+      "count": 981,
+      "hash": "083fe4a814a9228f"
+    },
+    "2026-05": {
+      "offset": 1176506,
+      "length": 681862,
+      "count": 851,
+      "hash": "9d4258e2199ba4ca"
+    },
+    "2026-04": {
+      "offset": 1858369,
+      "length": 594496,
+      "count": 746,
+      "hash": "744ff31bdcc90845"
+    },
+    "2026-03": {
+      "offset": 2452866,
+      "length": 960333,
+      "count": 1300,
+      "hash": "07ece672cfa38ef3"
+    },
+    "2025-11": {
+      "offset": 3413200,
+      "length": 1158,
+      "count": 1,
+      "hash": "e8104e14b7065266"
+    },
+    "2025-10": {
+      "offset": 3414359,
+      "length": 452,
+      "count": 1,
+      "hash": "bf380f38f0bb3ae4"
+    },
+    "2025-08": {
+      "offset": 3414812,
+      "length": 456,
+      "count": 1,
+      "hash": "57d7a91e863c92e6"
+    },
+    "2024-10": {
+      "offset": 3415269,
+      "length": 440,
+      "count": 1,
+      "hash": "5b2ec4dd643a432c"
+    },
+    "2024-07": {
+      "offset": 3415710,
+      "length": 481,
+      "count": 1,
+      "hash": "98d2376313373470"
+    },
+    "2024-06": {
+      "offset": 3416192,
+      "length": 6470,
+      "count": 7,
+      "hash": "3adc4efe497c6c43"
+    },
+    "2023-01": {
+      "offset": 3422663,
+      "length": 1071,
+      "count": 1,
+      "hash": "6478f84ed774abaf"
+    },
+    "2022-10": {
+      "offset": 3423735,
+      "length": 1162,
+      "count": 1,
+      "hash": "92a4b52ffdd07fd4"
+    },
+    "2015-07": {
+      "offset": 3424898,
+      "length": 514,
+      "count": 1,
+      "hash": "c76e3dc86dba862c"
+    }
+  }
+}

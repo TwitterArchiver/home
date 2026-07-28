@@ -1,0 +1,72 @@
+{
+  "repo": "Epheiamoe",
+  "account": "Epheiamoe",
+  "source": "https://twitterarchiver.github.io/Epheiamoe/accounts/Epheiamoe/wayback_snapshots/index.json",
+  "etag": "\"6a689ca9-ef327\"",
+  "bytes": 979751,
+  "generated": "2026-07-28T13:55:06Z",
+  "range": true,
+  "total": 1019,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 400427,
+      "count": 398,
+      "hash": "9d059864704d950f"
+    },
+    "2026-06": {
+      "offset": 400429,
+      "length": 389821,
+      "count": 417,
+      "hash": "29388454523416fb"
+    },
+    "2026-05": {
+      "offset": 790251,
+      "length": 169001,
+      "count": 180,
+      "hash": "9335cc856186b6c6"
+    },
+    "2026-04": {
+      "offset": 959253,
+      "length": 2015,
+      "count": 3,
+      "hash": "1b8e3f1f9d820e06"
+    },
+    "2026-03": {
+      "offset": 961269,
+      "length": 8161,
+      "count": 9,
+      "hash": "b4f7622d7d9c8257"
+    },
+    "2026-02": {
+      "offset": 969431,
+      "length": 2228,
+      "count": 3,
+      "hash": "142936bda58f7f40"
+    },
+    "2025-12": {
+      "offset": 971660,
+      "length": 3105,
+      "count": 3,
+      "hash": "cf03630e085e18e0"
+    },
+    "2025-11": {
+      "offset": 974766,
+      "length": 3239,
+      "count": 4,
+      "hash": "2a3068de1b0bb795"
+    },
+    "2024-07": {
+      "offset": 978006,
+      "length": 667,
+      "count": 1,
+      "hash": "303900364927e9ad"
+    },
+    "2023-05": {
+      "offset": 978674,
+      "length": 1076,
+      "count": 1,
+      "hash": "299eab174979e048"
+    }
+  }
+}

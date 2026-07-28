@@ -1,0 +1,36 @@
+{
+  "repo": "Gag_Order_",
+  "account": "Gag_Order_",
+  "source": "https://twitterarchiver.github.io/Gag_Order_/accounts/Gag_Order_/wayback_snapshots/index.json",
+  "etag": "\"6a68051d-99beb\"",
+  "bytes": 629739,
+  "generated": "2026-07-28T13:55:07Z",
+  "range": true,
+  "total": 785,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 173407,
+      "count": 223,
+      "hash": "73a40f01077981fa"
+    },
+    "2026-06": {
+      "offset": 173409,
+      "length": 207639,
+      "count": 260,
+      "hash": "6f36555314b8ecce"
+    },
+    "2026-05": {
+      "offset": 381049,
+      "length": 240824,
+      "count": 293,
+      "hash": "c412f646f2976d91"
+    },
+    "2026-04": {
+      "offset": 621874,
+      "length": 7864,
+      "count": 9,
+      "hash": "a9bee91e11c3ad07"
+    }
+  }
+}

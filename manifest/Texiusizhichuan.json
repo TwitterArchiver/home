@@ -1,0 +1,18 @@
+{
+  "repo": "Texiusizhichuan",
+  "account": "Texiusizhichuan",
+  "source": "https://twitterarchiver.github.io/Texiusizhichuan/accounts/Texiusizhichuan/wayback_snapshots/index.json",
+  "etag": "\"6a67da1b-1adf\"",
+  "bytes": 6879,
+  "generated": "2026-07-28T13:55:27Z",
+  "range": true,
+  "total": 9,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 6877,
+      "count": 9,
+      "hash": "60cc1cc3e29f78f3"
+    }
+  }
+}

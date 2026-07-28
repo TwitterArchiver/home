@@ -2,38 +2,38 @@
   "repo": "V01d_Digit",
   "account": "V01d_Digit",
   "source": "https://twitterarchiver.github.io/V01d_Digit/accounts/V01d_Digit/wayback_snapshots/index.json",
-  "etag": "\"6a60df8d-25e66\"",
-  "bytes": 155238,
-  "generated": "2026-07-23T19:53:08Z",
+  "etag": "\"6a662347-3b00e\"",
+  "bytes": 241678,
+  "generated": "2026-07-28T13:55:29Z",
   "range": true,
-  "total": 173,
+  "total": 277,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 43318,
-      "count": 45,
-      "hash": "873b0479ea755789"
+      "length": 129758,
+      "count": 149,
+      "hash": "9cc3bc024d1a6de1"
     },
     "2026-06": {
-      "offset": 43320,
+      "offset": 129760,
       "length": 47787,
       "count": 56,
       "hash": "7f8699e03822b8b7"
     },
     "2026-05": {
-      "offset": 91108,
+      "offset": 177548,
       "length": 59660,
       "count": 67,
       "hash": "92d58983586d1c69"
     },
     "2026-04": {
-      "offset": 150769,
+      "offset": 237209,
       "length": 3273,
       "count": 4,
       "hash": "b60a9fd6b407424d"
     },
     "2026-01": {
-      "offset": 154043,
+      "offset": 240483,
       "length": 1194,
       "count": 1,
       "hash": "60c1fc3306bf3b1a"

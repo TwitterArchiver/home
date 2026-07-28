@@ -1,0 +1,36 @@
+{
+  "repo": "kohoshitsumu",
+  "account": "kohoshitsumu",
+  "source": "https://twitterarchiver.github.io/kohoshitsumu/accounts/kohoshitsumu/wayback_snapshots/index.json",
+  "etag": "\"6a67eb9a-993fb\"",
+  "bytes": 627707,
+  "generated": "2026-07-28T13:55:47Z",
+  "range": true,
+  "total": 750,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 625997,
+      "count": 747,
+      "hash": "bbf305c3f423596e"
+    },
+    "2026-06": {
+      "offset": 625999,
+      "length": 678,
+      "count": 1,
+      "hash": "6f0708cceaee42fe"
+    },
+    "2026-05": {
+      "offset": 626678,
+      "length": 546,
+      "count": 1,
+      "hash": "402394f6ac728198"
+    },
+    "2024-09": {
+      "offset": 627225,
+      "length": 481,
+      "count": 1,
+      "hash": "4b7b7ccd58da833f"
+    }
+  }
+}

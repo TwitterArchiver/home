@@ -1,0 +1,96 @@
+{
+  "repo": "hyunjennagua",
+  "account": "hyunjennagua",
+  "source": "https://twitterarchiver.github.io/hyunjennagua/accounts/hyunjennagua/wayback_snapshots/index.json",
+  "etag": "\"6a68b3de-4e70f5\"",
+  "bytes": 5140725,
+  "generated": "2026-07-28T13:55:47Z",
+  "range": true,
+  "total": 6829,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1103945,
+      "count": 1511,
+      "hash": "fb2e20b2da97cde4"
+    },
+    "2026-06": {
+      "offset": 1103947,
+      "length": 349476,
+      "count": 459,
+      "hash": "ee57a0847a385c20"
+    },
+    "2026-05": {
+      "offset": 1453424,
+      "length": 223726,
+      "count": 281,
+      "hash": "331b81b0a3cedc23"
+    },
+    "2026-04": {
+      "offset": 1677151,
+      "length": 1051078,
+      "count": 1420,
+      "hash": "ac05e7afc45c4fab"
+    },
+    "2026-03": {
+      "offset": 2728230,
+      "length": 1094512,
+      "count": 1446,
+      "hash": "b9fa7be0f7d8ebd9"
+    },
+    "2026-02": {
+      "offset": 3822743,
+      "length": 128836,
+      "count": 161,
+      "hash": "892a8b14079f6335"
+    },
+    "2026-01": {
+      "offset": 3951580,
+      "length": 165504,
+      "count": 215,
+      "hash": "040325a33928cf89"
+    },
+    "2025-12": {
+      "offset": 4117085,
+      "length": 538719,
+      "count": 704,
+      "hash": "b94a3fe4ced1aed2"
+    },
+    "2025-11": {
+      "offset": 4655805,
+      "length": 340757,
+      "count": 445,
+      "hash": "4072dbddcc0f6574"
+    },
+    "2025-10": {
+      "offset": 4996563,
+      "length": 85058,
+      "count": 112,
+      "hash": "b9c469a91e6ccfbd"
+    },
+    "2025-09": {
+      "offset": 5081622,
+      "length": 57689,
+      "count": 72,
+      "hash": "e885ec8e05dd03ee"
+    },
+    "2025-05": {
+      "offset": 5139312,
+      "length": 490,
+      "count": 1,
+      "hash": "204f3aeff15d4639"
+    },
+    "2023-01": {
+      "offset": 5139803,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    },
+    "2022-10": {
+      "offset": 5140282,
+      "length": 442,
+      "count": 1,
+      "hash": "e2101801f5991a69"
+    }
+  }
+}

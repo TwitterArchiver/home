@@ -1,0 +1,72 @@
+{
+  "repo": "Ahalfhediboy",
+  "account": "Ahalfhediboy",
+  "source": "https://twitterarchiver.github.io/Ahalfhediboy/accounts/Ahalfhediboy/wayback_snapshots/index.json",
+  "etag": "\"6a680283-16da74\"",
+  "bytes": 1497716,
+  "generated": "2026-07-28T13:54:53Z",
+  "range": true,
+  "total": 1937,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 42392,
+      "count": 48,
+      "hash": "314c70d97202c84e"
+    },
+    "2026-06": {
+      "offset": 42394,
+      "length": 100585,
+      "count": 118,
+      "hash": "8eaa5fd7215713b6"
+    },
+    "2026-05": {
+      "offset": 142980,
+      "length": 836500,
+      "count": 1096,
+      "hash": "487588d13d4101a2"
+    },
+    "2026-04": {
+      "offset": 979481,
+      "length": 512538,
+      "count": 664,
+      "hash": "fdc1b90a0637c1d1"
+    },
+    "2026-03": {
+      "offset": 1492020,
+      "length": 1759,
+      "count": 4,
+      "hash": "a950e1ea6da28f05"
+    },
+    "2026-02": {
+      "offset": 1493780,
+      "length": 1487,
+      "count": 3,
+      "hash": "55ed650bbb616e2a"
+    },
+    "2021-09": {
+      "offset": 1495268,
+      "length": 832,
+      "count": 1,
+      "hash": "5a1275e1b96b6bde"
+    },
+    "2018-02": {
+      "offset": 1496101,
+      "length": 458,
+      "count": 1,
+      "hash": "ca84425dcfc0b398"
+    },
+    "2016-04": {
+      "offset": 1496560,
+      "length": 474,
+      "count": 1,
+      "hash": "3d934b6cae113fa0"
+    },
+    "2010-08": {
+      "offset": 1497035,
+      "length": 680,
+      "count": 1,
+      "hash": "e157f3670d79a320"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "repo": "Ailith_Caeron",
+  "account": "Ailith_Caeron",
+  "source": "https://twitterarchiver.github.io/Ailith_Caeron/accounts/Ailith_Caeron/wayback_snapshots/index.json",
+  "etag": "\"6a68a723-4099ce\"",
+  "bytes": 4233678,
+  "generated": "2026-07-28T13:54:56Z",
+  "range": true,
+  "total": 4381,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 291969,
+      "count": 332,
+      "hash": "3bb3606f86916891"
+    },
+    "2026-06": {
+      "offset": 291971,
+      "length": 153428,
+      "count": 175,
+      "hash": "4ecef06091ab3a03"
+    },
+    "2026-05": {
+      "offset": 445400,
+      "length": 218641,
+      "count": 248,
+      "hash": "e8214e4e59d39adf"
+    },
+    "2026-04": {
+      "offset": 664042,
+      "length": 175817,
+      "count": 205,
+      "hash": "eab3dab31664d7a4"
+    },
+    "2026-03": {
+      "offset": 839860,
+      "length": 168096,
+      "count": 141,
+      "hash": "05ba5a88c108dc5f"
+    },
+    "2026-02": {
+      "offset": 1007957,
+      "length": 1200765,
+      "count": 1103,
+      "hash": "13066b3b951273ad"
+    },
+    "2026-01": {
+      "offset": 2208723,
+      "length": 769579,
+      "count": 791,
+      "hash": "f6c4c630a926f82a"
+    },
+    "2025-12": {
+      "offset": 2978303,
+      "length": 540401,
+      "count": 618,
+      "hash": "c0c2324fb07b283a"
+    },
+    "2025-11": {
+      "offset": 3518705,
+      "length": 708772,
+      "count": 762,
+      "hash": "eff2aadd54340058"
+    },
+    "2025-10": {
+      "offset": 4227478,
+      "length": 6199,
+      "count": 6,
+      "hash": "05f6fad5a80f717a"
+    }
+  }
+}

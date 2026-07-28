@@ -1,0 +1,90 @@
+{
+  "repo": "sji1086477",
+  "account": "sji1086477",
+  "source": "https://twitterarchiver.github.io/sji1086477/accounts/sji1086477/wayback_snapshots/index.json",
+  "etag": "\"6a689b47-196b14\"",
+  "bytes": 1665812,
+  "generated": "2026-07-28T13:55:56Z",
+  "range": true,
+  "total": 1982,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 166279,
+      "count": 209,
+      "hash": "bee7ad77ba5a00b9"
+    },
+    "2026-06": {
+      "offset": 166281,
+      "length": 270587,
+      "count": 331,
+      "hash": "e3d79203d59fd7be"
+    },
+    "2026-05": {
+      "offset": 436869,
+      "length": 348953,
+      "count": 415,
+      "hash": "0ec474299a1cc429"
+    },
+    "2026-04": {
+      "offset": 785823,
+      "length": 308631,
+      "count": 345,
+      "hash": "fc0da48787c412b4"
+    },
+    "2026-03": {
+      "offset": 1094455,
+      "length": 122858,
+      "count": 142,
+      "hash": "a504af2493b456a1"
+    },
+    "2026-02": {
+      "offset": 1217314,
+      "length": 24827,
+      "count": 27,
+      "hash": "2b3cbdb461564ddc"
+    },
+    "2026-01": {
+      "offset": 1242142,
+      "length": 18251,
+      "count": 21,
+      "hash": "833899258825ce97"
+    },
+    "2025-12": {
+      "offset": 1260394,
+      "length": 6542,
+      "count": 8,
+      "hash": "f71f20a997f964e1"
+    },
+    "2025-11": {
+      "offset": 1266937,
+      "length": 95434,
+      "count": 112,
+      "hash": "cc7d6c48637fd1f0"
+    },
+    "2025-10": {
+      "offset": 1362372,
+      "length": 200415,
+      "count": 245,
+      "hash": "4d576ad07ef5dc23"
+    },
+    "2025-09": {
+      "offset": 1562788,
+      "length": 96885,
+      "count": 120,
+      "hash": "fe4c3a5c805bb949"
+    },
+    "2025-08": {
+      "offset": 1659674,
+      "length": 2932,
+      "count": 3,
+      "hash": "4c0e916f04f0d139"
+    },
+    "2025-07": {
+      "offset": 1662607,
+      "length": 3204,
+      "count": 4,
+      "hash": "8e1d00ce870c6098"
+    }
+  }
+}

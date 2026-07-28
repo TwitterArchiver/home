@@ -1,0 +1,42 @@
+{
+  "repo": "oxolyy",
+  "account": "oxolyy",
+  "source": "https://twitterarchiver.github.io/oxolyy/accounts/oxolyy/wayback_snapshots/index.json",
+  "etag": "\"6a689b16-333c6\"",
+  "bytes": 209862,
+  "generated": "2026-07-28T13:55:51Z",
+  "range": true,
+  "total": 241,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 16922,
+      "count": 20,
+      "hash": "af92757226599bfd"
+    },
+    "2026-06": {
+      "offset": 16924,
+      "length": 102692,
+      "count": 118,
+      "hash": "a5564a97a66c7465"
+    },
+    "2026-05": {
+      "offset": 119617,
+      "length": 88589,
+      "count": 101,
+      "hash": "342c3072cd6d23e1"
+    },
+    "2026-04": {
+      "offset": 208207,
+      "length": 1109,
+      "count": 1,
+      "hash": "ef176e78def7a36a"
+    },
+    "2025-07": {
+      "offset": 209317,
+      "length": 544,
+      "count": 1,
+      "hash": "23e1cb00bdd63cdd"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "repo": "kawainegi",
+  "account": "kawainegi",
+  "source": "https://twitterarchiver.github.io/kawainegi/accounts/kawainegi/wayback_snapshots/index.json",
+  "etag": "\"6a68021c-20865b\"",
+  "bytes": 2131547,
+  "generated": "2026-07-28T13:55:47Z",
+  "range": true,
+  "total": 2699,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 194509,
+      "count": 245,
+      "hash": "5b6568afcdcb6de6"
+    },
+    "2026-06": {
+      "offset": 194511,
+      "length": 108754,
+      "count": 132,
+      "hash": "531484ea4c9e76cf"
+    },
+    "2026-05": {
+      "offset": 303266,
+      "length": 912417,
+      "count": 1163,
+      "hash": "d7f1688101e635b9"
+    },
+    "2026-04": {
+      "offset": 1215684,
+      "length": 668169,
+      "count": 851,
+      "hash": "4c3b057f8d9a93a1"
+    },
+    "2026-03": {
+      "offset": 1883854,
+      "length": 141899,
+      "count": 173,
+      "hash": "db80e27bcf6d7004"
+    },
+    "2026-02": {
+      "offset": 2025754,
+      "length": 36288,
+      "count": 46,
+      "hash": "84a992141102e66f"
+    },
+    "2026-01": {
+      "offset": 2062043,
+      "length": 44633,
+      "count": 55,
+      "hash": "b0e458eb2491e6df"
+    },
+    "2025-12": {
+      "offset": 2106677,
+      "length": 1541,
+      "count": 3,
+      "hash": "cff31f2f98d1cbde"
+    },
+    "2025-11": {
+      "offset": 2108219,
+      "length": 20140,
+      "count": 26,
+      "hash": "c91304bbcd1e464d"
+    },
+    "2025-06": {
+      "offset": 2128360,
+      "length": 590,
+      "count": 1,
+      "hash": "6895b75d572f6d70"
+    },
+    "2025-01": {
+      "offset": 2128951,
+      "length": 473,
+      "count": 1,
+      "hash": "e1c274888b96075b"
+    },
+    "2024-12": {
+      "offset": 2129425,
+      "length": 1295,
+      "count": 2,
+      "hash": "607d141085133675"
+    },
+    "2023-10": {
+      "offset": 2130721,
+      "length": 825,
+      "count": 1,
+      "hash": "f3893db44b4a40d7"
+    }
+  }
+}

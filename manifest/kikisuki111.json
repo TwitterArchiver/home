@@ -1,0 +1,72 @@
+{
+  "repo": "kikisuki111",
+  "account": "kikisuki111",
+  "source": "https://twitterarchiver.github.io/kikisuki111/accounts/kikisuki111/wayback_snapshots/index.json",
+  "etag": "\"6a68b3e6-16289b\"",
+  "bytes": 1452187,
+  "generated": "2026-07-28T13:55:47Z",
+  "range": true,
+  "total": 1698,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 44339,
+      "count": 51,
+      "hash": "af5daad3139a991f"
+    },
+    "2026-06": {
+      "offset": 44341,
+      "length": 90672,
+      "count": 105,
+      "hash": "30ab4f8ec32e2a3d"
+    },
+    "2026-05": {
+      "offset": 135014,
+      "length": 493846,
+      "count": 578,
+      "hash": "a905e2f443e70c81"
+    },
+    "2026-04": {
+      "offset": 628861,
+      "length": 369816,
+      "count": 434,
+      "hash": "f4eb2a00c2346109"
+    },
+    "2026-03": {
+      "offset": 998678,
+      "length": 278426,
+      "count": 324,
+      "hash": "36fa9bcc18775e73"
+    },
+    "2026-02": {
+      "offset": 1277105,
+      "length": 171842,
+      "count": 201,
+      "hash": "7ae3a4c66d697510"
+    },
+    "2026-01": {
+      "offset": 1448948,
+      "length": 1356,
+      "count": 2,
+      "hash": "8e62ebc2e1a8e1f7"
+    },
+    "2025-12": {
+      "offset": 1450305,
+      "length": 962,
+      "count": 1,
+      "hash": "fa687844633fbba6"
+    },
+    "2025-11": {
+      "offset": 1451268,
+      "length": 440,
+      "count": 1,
+      "hash": "f9a3e3f4eb53d953"
+    },
+    "2025-10": {
+      "offset": 1451709,
+      "length": 477,
+      "count": 1,
+      "hash": "ff01c4b5abeee080"
+    }
+  }
+}
