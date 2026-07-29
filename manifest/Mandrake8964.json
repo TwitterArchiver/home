@@ -1,0 +1,24 @@
+{
+  "repo": "Mandrake8964",
+  "account": "Mandrake8964",
+  "source": "https://twitterarchiver.github.io/Mandrake8964/accounts/Mandrake8964/wayback_snapshots/index.json",
+  "etag": "\"6a6a7152-31074\"",
+  "bytes": 200820,
+  "generated": "2026-07-29T22:43:08Z",
+  "range": true,
+  "total": 222,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 198491,
+      "count": 220,
+      "hash": "f6b37b5a2cd23cc4"
+    },
+    "2026-05": {
+      "offset": 198493,
+      "length": 2326,
+      "count": 2,
+      "hash": "748ab1dc06501d93"
+    }
+  }
+}

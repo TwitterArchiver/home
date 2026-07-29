@@ -1,0 +1,48 @@
+{
+  "repo": "cVPrL20wIa42392",
+  "account": "cVPrL20wIa42392",
+  "source": "https://twitterarchiver.github.io/cVPrL20wIa42392/accounts/cVPrL20wIa42392/wayback_snapshots/index.json",
+  "etag": "\"6a6a5d6c-1034f9\"",
+  "bytes": 1062137,
+  "generated": "2026-07-29T22:43:52Z",
+  "range": true,
+  "total": 1331,
+  "months": {
+    "2026-04": {
+      "offset": 1,
+      "length": 1053831,
+      "count": 1323,
+      "hash": "aecb0e798540149f"
+    },
+    "2026-03": {
+      "offset": 1053833,
+      "length": 2119,
+      "count": 2,
+      "hash": "a221b12bcab5bd67"
+    },
+    "2026-02": {
+      "offset": 1055953,
+      "length": 2223,
+      "count": 2,
+      "hash": "96438403abfcf0a3"
+    },
+    "2026-01": {
+      "offset": 1058177,
+      "length": 1497,
+      "count": 2,
+      "hash": "29124d4cf03c6a7b"
+    },
+    "2025-12": {
+      "offset": 1059675,
+      "length": 1292,
+      "count": 1,
+      "hash": "994556a74c12b431"
+    },
+    "2025-09": {
+      "offset": 1060968,
+      "length": 1168,
+      "count": 1,
+      "hash": "924c3c2fba1bb30a"
+    }
+  }
+}

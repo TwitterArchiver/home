@@ -1,0 +1,120 @@
+{
+  "repo": "godspeedyou50",
+  "account": "godspeedyou50",
+  "source": "https://twitterarchiver.github.io/godspeedyou50/accounts/godspeedyou50/wayback_snapshots/index.json",
+  "etag": "\"6a6a7ba1-4bbfac\"",
+  "bytes": 4964268,
+  "generated": "2026-07-29T22:43:59Z",
+  "range": true,
+  "total": 5871,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 294606,
+      "count": 335,
+      "hash": "a777bd5d5d3c0403"
+    },
+    "2026-06": {
+      "offset": 294608,
+      "length": 647110,
+      "count": 775,
+      "hash": "95b324c7dd6eb92f"
+    },
+    "2026-05": {
+      "offset": 941719,
+      "length": 388595,
+      "count": 456,
+      "hash": "6adb3bee2afcbcfc"
+    },
+    "2026-04": {
+      "offset": 1330315,
+      "length": 478137,
+      "count": 568,
+      "hash": "3e0101249897a17a"
+    },
+    "2026-03": {
+      "offset": 1808453,
+      "length": 1129064,
+      "count": 1379,
+      "hash": "a5cd18be39a40eb1"
+    },
+    "2026-02": {
+      "offset": 2937518,
+      "length": 616470,
+      "count": 703,
+      "hash": "4cea57c6bead87f0"
+    },
+    "2026-01": {
+      "offset": 3553989,
+      "length": 185144,
+      "count": 223,
+      "hash": "709b496f3ccf0d34"
+    },
+    "2025-12": {
+      "offset": 3739134,
+      "length": 288193,
+      "count": 317,
+      "hash": "d1b7317945661ead"
+    },
+    "2025-11": {
+      "offset": 4027328,
+      "length": 627094,
+      "count": 752,
+      "hash": "e573d8938240767c"
+    },
+    "2025-10": {
+      "offset": 4654423,
+      "length": 299207,
+      "count": 348,
+      "hash": "a2434e65bd4b25e4"
+    },
+    "2025-09": {
+      "offset": 4953631,
+      "length": 3624,
+      "count": 5,
+      "hash": "951e8bcf527410c4"
+    },
+    "2025-07": {
+      "offset": 4957256,
+      "length": 494,
+      "count": 1,
+      "hash": "9ce955f639cd1efd"
+    },
+    "2025-05": {
+      "offset": 4957751,
+      "length": 1827,
+      "count": 2,
+      "hash": "bafc1320d4876d50"
+    },
+    "2025-03": {
+      "offset": 4959579,
+      "length": 2099,
+      "count": 2,
+      "hash": "ea8992e188497ab7"
+    },
+    "2025-02": {
+      "offset": 4961679,
+      "length": 476,
+      "count": 1,
+      "hash": "c6bb949e1d179f61"
+    },
+    "2024-10": {
+      "offset": 4962156,
+      "length": 1133,
+      "count": 2,
+      "hash": "934afd815f2f7c3c"
+    },
+    "2024-07": {
+      "offset": 4963290,
+      "length": 530,
+      "count": 1,
+      "hash": "6f5797ae07e8aacf"
+    },
+    "2023-12": {
+      "offset": 4963821,
+      "length": 446,
+      "count": 1,
+      "hash": "6a072c9031d338ed"
+    }
+  }
+}

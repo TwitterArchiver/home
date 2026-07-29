@@ -1,0 +1,30 @@
+{
+  "repo": "Yozakura0_",
+  "account": "Yozakura0_",
+  "source": "https://twitterarchiver.github.io/Yozakura0_/accounts/Yozakura0_/wayback_snapshots/index.json",
+  "etag": "\"6a6a6f87-40901\"",
+  "bytes": 264449,
+  "generated": "2026-07-29T22:43:41Z",
+  "range": true,
+  "total": 330,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 9533,
+      "count": 13,
+      "hash": "c36b8929d83d9875"
+    },
+    "2026-06": {
+      "offset": 9535,
+      "length": 129692,
+      "count": 175,
+      "hash": "1204db5b4cf13894"
+    },
+    "2026-05": {
+      "offset": 139228,
+      "length": 125220,
+      "count": 142,
+      "hash": "453eae1480334e7c"
+    }
+  }
+}

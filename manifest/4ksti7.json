@@ -1,0 +1,24 @@
+{
+  "repo": "4ksti7",
+  "account": "4ksti7",
+  "source": "https://twitterarchiver.github.io/4ksti7/accounts/4ksti7/wayback_snapshots/index.json",
+  "etag": "\"6a6a705e-3c5c9\"",
+  "bytes": 247241,
+  "generated": "2026-07-29T22:42:32Z",
+  "range": true,
+  "total": 297,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 246781,
+      "count": 296,
+      "hash": "29111a9e80c4bdd7"
+    },
+    "2025-09": {
+      "offset": 246783,
+      "length": 457,
+      "count": 1,
+      "hash": "3ae736659eafd63c"
+    }
+  }
+}

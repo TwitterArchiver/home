@@ -1,0 +1,78 @@
+{
+  "repo": "Koroshiiiiiii",
+  "account": "Koroshiiiiiii",
+  "source": "https://twitterarchiver.github.io/Koroshiiiiiii/accounts/Koroshiiiiiii/wayback_snapshots/index.json",
+  "etag": "\"6a6a6384-1b5c21\"",
+  "bytes": 1793057,
+  "generated": "2026-07-29T22:43:03Z",
+  "range": true,
+  "total": 2252,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 489446,
+      "count": 601,
+      "hash": "faafcfc66b7aec21"
+    },
+    "2026-06": {
+      "offset": 489448,
+      "length": 720563,
+      "count": 894,
+      "hash": "1c2e322ff2b800f5"
+    },
+    "2026-05": {
+      "offset": 1210012,
+      "length": 568087,
+      "count": 739,
+      "hash": "03ac535c3d3b8cee"
+    },
+    "2026-04": {
+      "offset": 1778100,
+      "length": 1042,
+      "count": 1,
+      "hash": "2c4ff3eaec7b5d9c"
+    },
+    "2026-01": {
+      "offset": 1779143,
+      "length": 3146,
+      "count": 3,
+      "hash": "015e09050db13c5c"
+    },
+    "2025-12": {
+      "offset": 1782290,
+      "length": 4086,
+      "count": 6,
+      "hash": "95d7220181b34f70"
+    },
+    "2025-07": {
+      "offset": 1786377,
+      "length": 1068,
+      "count": 1,
+      "hash": "51ee62c580968922"
+    },
+    "2025-05": {
+      "offset": 1787446,
+      "length": 2896,
+      "count": 3,
+      "hash": "6fcdfb5102bcf40e"
+    },
+    "2024-09": {
+      "offset": 1790343,
+      "length": 825,
+      "count": 1,
+      "hash": "5f48fccb0b9fc6ef"
+    },
+    "2024-06": {
+      "offset": 1791169,
+      "length": 433,
+      "count": 1,
+      "hash": "4e20716d33c3aa5a"
+    },
+    "2024-05": {
+      "offset": 1791603,
+      "length": 1453,
+      "count": 2,
+      "hash": "f42fa48677a9032b"
+    }
+  }
+}

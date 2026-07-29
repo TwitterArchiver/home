@@ -1,0 +1,30 @@
+{
+  "repo": "MaoYe119",
+  "account": "MaoYe119",
+  "source": "https://twitterarchiver.github.io/MaoYe119/accounts/MaoYe119/wayback_snapshots/index.json",
+  "etag": "\"6a6a56f3-299c6\"",
+  "bytes": 170438,
+  "generated": "2026-07-29T22:43:10Z",
+  "range": true,
+  "total": 222,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 17256,
+      "count": 23,
+      "hash": "de0c60fa45ffd0a8"
+    },
+    "2026-06": {
+      "offset": 17258,
+      "length": 152743,
+      "count": 198,
+      "hash": "6a0700044b490d04"
+    },
+    "2025-12": {
+      "offset": 170002,
+      "length": 435,
+      "count": 1,
+      "hash": "95f1c918e4f73bf7"
+    }
+  }
+}

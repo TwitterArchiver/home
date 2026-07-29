@@ -1,0 +1,24 @@
+{
+  "repo": "7q468438x8964",
+  "account": "7q468438x8964",
+  "source": "https://twitterarchiver.github.io/7q468438x8964/accounts/7q468438x8964/wayback_snapshots/index.json",
+  "etag": "\"6a6a7a26-344a2\"",
+  "bytes": 214178,
+  "generated": "2026-07-29T22:42:32Z",
+  "range": true,
+  "total": 268,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 213694,
+      "count": 267,
+      "hash": "6c0100a52a817e6a"
+    },
+    "2026-05": {
+      "offset": 213696,
+      "length": 481,
+      "count": 1,
+      "hash": "7f7b2e6ef52aad9c"
+    }
+  }
+}
