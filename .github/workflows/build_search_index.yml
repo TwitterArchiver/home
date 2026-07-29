@@ -60,7 +60,13 @@ jobs:
                       return (m.group(1) if m else "RT: ") + eb
               return t
 
-          repos = sh(["gh","repo","list",ORG,"--limit","300","--json","name",
+          # 上限按组织实际仓库数动态取：gh repo list 超出即截断，不会翻页
+          try:
+              _total = int(sh(["gh","api",f"orgs/{ORG}","--jq",".public_repos"]).strip())
+          except Exception:
+              _total = 0
+          _limit = str(_total + 50) if _total > 0 else "4000"
+          repos = sh(["gh","repo","list",ORG,"--limit",_limit,"--json","name",
                       "--jq",".[].name"]).split()
           repos = [r for r in repos if r not in EXCLUDE]
           print(f"候选仓库 {len(repos)} 个")

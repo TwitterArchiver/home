@@ -18,7 +18,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh repo list TwitterArchiver --limit 200 --json name,description \
+          # 上限必须大于组织实际仓库数：gh repo list 超出即截断，不会自动翻页。
+          # 这里按实际数量动态取，避免以后再次撞墙。
+          TOTAL=$(gh api "orgs/TwitterArchiver" --jq '.public_repos' 2>/dev/null || echo 0)
+          LIMIT=$(( TOTAL > 0 ? TOTAL + 50 : 4000 ))
+          echo "组织仓库数 ${TOTAL}，本次拉取上限 ${LIMIT}"
+          gh repo list TwitterArchiver --limit "$LIMIT" --json name,description \
             --jq '.[] | select(
               .name != "Dispatcher" and
               .name != ".github" and
