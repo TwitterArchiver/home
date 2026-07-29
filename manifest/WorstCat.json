@@ -2,86 +2,86 @@
   "repo": "WorstCat",
   "account": "WorstCat",
   "source": "https://twitterarchiver.github.io/WorstCat/accounts/WorstCat/wayback_snapshots/index.json",
-  "etag": "\"6a68d8e9-343898\"",
-  "bytes": 3422360,
-  "generated": "2026-07-28T17:53:56Z",
+  "etag": "\"6a6993e3-34662f\"",
+  "bytes": 3434031,
+  "generated": "2026-07-29T12:35:30Z",
   "range": true,
-  "total": 3867,
+  "total": 3881,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 724554,
-      "count": 825,
-      "hash": "e08956d57d2c2e93"
+      "length": 736225,
+      "count": 839,
+      "hash": "315db5d0e4fcabc8"
     },
     "2026-06": {
-      "offset": 724556,
+      "offset": 736227,
       "length": 387883,
       "count": 463,
       "hash": "5dd09ffee8de5e5d"
     },
     "2026-05": {
-      "offset": 1112440,
+      "offset": 1124111,
       "length": 732172,
       "count": 834,
       "hash": "19caf7483f285a89"
     },
     "2026-04": {
-      "offset": 1844613,
+      "offset": 1856284,
       "length": 392038,
       "count": 439,
       "hash": "2e375e6275c56871"
     },
     "2026-03": {
-      "offset": 2236652,
+      "offset": 2248323,
       "length": 150327,
       "count": 163,
       "hash": "8b4c5eabc00e0ff5"
     },
     "2026-02": {
-      "offset": 2386980,
+      "offset": 2398651,
       "length": 200875,
       "count": 210,
       "hash": "c79deaf78a2b7428"
     },
     "2026-01": {
-      "offset": 2587856,
+      "offset": 2599527,
       "length": 169253,
       "count": 187,
       "hash": "ccc1a14bbcd4f739"
     },
     "2025-12": {
-      "offset": 2757110,
+      "offset": 2768781,
       "length": 179696,
       "count": 191,
       "hash": "3f00052cabe31050"
     },
     "2025-11": {
-      "offset": 2936807,
+      "offset": 2948478,
       "length": 429813,
       "count": 484,
       "hash": "0c45fdf033a1fcf8"
     },
     "2025-10": {
-      "offset": 3366621,
+      "offset": 3378292,
       "length": 51914,
       "count": 66,
       "hash": "433d34b53bef58fa"
     },
     "2025-09": {
-      "offset": 3418536,
+      "offset": 3430207,
       "length": 649,
       "count": 1,
       "hash": "d2af59ec5e067d27"
     },
     "2025-07": {
-      "offset": 3419186,
+      "offset": 3430857,
       "length": 919,
       "count": 1,
       "hash": "36a006a269a59cf2"
     },
     "2025-06": {
-      "offset": 3420106,
+      "offset": 3431777,
       "length": 2253,
       "count": 3,
       "hash": "aeb81133a5ef3410"

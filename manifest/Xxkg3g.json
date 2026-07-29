@@ -2,32 +2,32 @@
   "repo": "Xxkg3g",
   "account": "Xxkg3g",
   "source": "https://twitterarchiver.github.io/Xxkg3g/accounts/Xxkg3g/wayback_snapshots/index.json",
-  "etag": "\"6a68da2f-200a56\"",
-  "bytes": 2099798,
-  "generated": "2026-07-28T17:53:59Z",
+  "etag": "\"6a6995c7-20111a\"",
+  "bytes": 2101530,
+  "generated": "2026-07-29T12:35:31Z",
   "range": true,
-  "total": 2783,
+  "total": 2785,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 626876,
-      "count": 834,
-      "hash": "a7b5baf93454298d"
+      "length": 628608,
+      "count": 836,
+      "hash": "8f7acbecbf32299e"
     },
     "2026-06": {
-      "offset": 626878,
+      "offset": 628610,
       "length": 847290,
       "count": 1134,
       "hash": "3ac63670dc9f4ed7"
     },
     "2026-05": {
-      "offset": 1474169,
+      "offset": 1475901,
       "length": 180672,
       "count": 219,
       "hash": "f84ab9f8256fa4e9"
     },
     "2026-04": {
-      "offset": 1654842,
+      "offset": 1656574,
       "length": 444955,
       "count": 596,
       "hash": "9d9b33e3256ca8f7"
