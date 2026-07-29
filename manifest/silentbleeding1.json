@@ -1,0 +1,36 @@
+{
+  "repo": "silentbleeding1",
+  "account": "silentbleeding1",
+  "source": "https://twitterarchiver.github.io/silentbleeding1/accounts/silentbleeding1/wayback_snapshots/index.json",
+  "etag": "\"6a69fa03-2eb465\"",
+  "bytes": 3060837,
+  "generated": "2026-07-29T15:19:58Z",
+  "range": true,
+  "total": 4012,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 726234,
+      "count": 971,
+      "hash": "cf610606f56f5423"
+    },
+    "2026-06": {
+      "offset": 726236,
+      "length": 1113784,
+      "count": 1463,
+      "hash": "fef379870926fa0b"
+    },
+    "2026-05": {
+      "offset": 1840021,
+      "length": 1162925,
+      "count": 1505,
+      "hash": "d0e5aebe68847e0a"
+    },
+    "2026-04": {
+      "offset": 3002947,
+      "length": 57889,
+      "count": 73,
+      "hash": "d542f8c4a8e5d8de"
+    }
+  }
+}

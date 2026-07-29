@@ -1,0 +1,102 @@
+{
+  "repo": "YesterdayOrange",
+  "account": "YesterdayOrange",
+  "source": "https://twitterarchiver.github.io/YesterdayOrange/accounts/YesterdayOrange/wayback_snapshots/index.json",
+  "etag": "\"6a69eea7-7e7fe0\"",
+  "bytes": 8290272,
+  "generated": "2026-07-29T15:19:27Z",
+  "range": true,
+  "total": 10278,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 559843,
+      "count": 670,
+      "hash": "37ab1ca6368eca16"
+    },
+    "2026-06": {
+      "offset": 559845,
+      "length": 472368,
+      "count": 573,
+      "hash": "c49060f26fc1e7c6"
+    },
+    "2026-05": {
+      "offset": 1032214,
+      "length": 554352,
+      "count": 698,
+      "hash": "4aafa68d04647c46"
+    },
+    "2026-04": {
+      "offset": 1586567,
+      "length": 1019675,
+      "count": 1278,
+      "hash": "799625ab519ba5ee"
+    },
+    "2026-03": {
+      "offset": 2606243,
+      "length": 1106180,
+      "count": 1375,
+      "hash": "57219005d57194dc"
+    },
+    "2026-02": {
+      "offset": 3712424,
+      "length": 1157049,
+      "count": 1428,
+      "hash": "ca7019815f1e1c41"
+    },
+    "2026-01": {
+      "offset": 4869474,
+      "length": 610046,
+      "count": 753,
+      "hash": "ee613b86f549f4f4"
+    },
+    "2025-12": {
+      "offset": 5479521,
+      "length": 783076,
+      "count": 968,
+      "hash": "46e811af81cc58e9"
+    },
+    "2025-11": {
+      "offset": 6262598,
+      "length": 1621669,
+      "count": 2021,
+      "hash": "83ed0c2214f0a73e"
+    },
+    "2025-10": {
+      "offset": 7884268,
+      "length": 402131,
+      "count": 509,
+      "hash": "9c401fada2b52fba"
+    },
+    "2025-08": {
+      "offset": 8286400,
+      "length": 536,
+      "count": 1,
+      "hash": "ce228721eb683d15"
+    },
+    "2025-06": {
+      "offset": 8286937,
+      "length": 1212,
+      "count": 1,
+      "hash": "d36c9fbad3e75674"
+    },
+    "2025-03": {
+      "offset": 8288150,
+      "length": 470,
+      "count": 1,
+      "hash": "deccaa5daa3ef6d9"
+    },
+    "2025-02": {
+      "offset": 8288621,
+      "length": 599,
+      "count": 1,
+      "hash": "4f27fea11ac41a1d"
+    },
+    "2024-11": {
+      "offset": 8289221,
+      "length": 1050,
+      "count": 1,
+      "hash": "ddaaefbf4452d302"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "repo": "KChiharu20",
+  "account": "KChiharu20",
+  "source": "https://twitterarchiver.github.io/KChiharu20/accounts/KChiharu20/wayback_snapshots/index.json",
+  "etag": "\"6a69e248-183e\"",
+  "bytes": 6206,
+  "generated": "2026-07-29T15:18:43Z",
+  "range": true,
+  "total": 5,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 6204,
+      "count": 5,
+      "hash": "96ef548c9e265282"
+    }
+  }
+}

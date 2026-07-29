@@ -1,0 +1,72 @@
+{
+  "repo": "qianxunchan",
+  "account": "qianxunchan",
+  "source": "https://twitterarchiver.github.io/qianxunchan/accounts/qianxunchan/wayback_snapshots/index.json",
+  "etag": "\"6a69fb6a-47bce7\"",
+  "bytes": 4701415,
+  "generated": "2026-07-29T15:19:52Z",
+  "range": true,
+  "total": 5273,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 390797,
+      "count": 444,
+      "hash": "a394b5d5b3a9e9ce"
+    },
+    "2026-06": {
+      "offset": 390799,
+      "length": 704873,
+      "count": 787,
+      "hash": "572425628ba9a6ac"
+    },
+    "2026-05": {
+      "offset": 1095673,
+      "length": 1019428,
+      "count": 1160,
+      "hash": "1d703a769c2de9d2"
+    },
+    "2026-04": {
+      "offset": 2115102,
+      "length": 1795504,
+      "count": 2016,
+      "hash": "9c95f31af338c98e"
+    },
+    "2026-03": {
+      "offset": 3910607,
+      "length": 755487,
+      "count": 832,
+      "hash": "261b1a885eb66c96"
+    },
+    "2026-02": {
+      "offset": 4666095,
+      "length": 33365,
+      "count": 30,
+      "hash": "c0773a0160dbd1db"
+    },
+    "2026-01": {
+      "offset": 4699461,
+      "length": 577,
+      "count": 1,
+      "hash": "c24d9720c30f0c78"
+    },
+    "2025-12": {
+      "offset": 4700039,
+      "length": 434,
+      "count": 1,
+      "hash": "ec3ffe3d57574d3a"
+    },
+    "2025-11": {
+      "offset": 4700474,
+      "length": 442,
+      "count": 1,
+      "hash": "b5b4ce41e93c7817"
+    },
+    "2025-10": {
+      "offset": 4700917,
+      "length": 497,
+      "count": 1,
+      "hash": "21c128704187594c"
+    }
+  }
+}

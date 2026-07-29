@@ -1,0 +1,72 @@
+{
+  "repo": "sophhhsama",
+  "account": "sophhhsama",
+  "source": "https://twitterarchiver.github.io/sophhhsama/accounts/sophhhsama/wayback_snapshots/index.json",
+  "etag": "\"6a69e6c0-4e5598\"",
+  "bytes": 5133720,
+  "generated": "2026-07-29T15:20:02Z",
+  "range": true,
+  "total": 6137,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 199371,
+      "count": 212,
+      "hash": "cd915e32cf6e592f"
+    },
+    "2026-06": {
+      "offset": 199373,
+      "length": 369606,
+      "count": 416,
+      "hash": "018d40caf467515d"
+    },
+    "2026-05": {
+      "offset": 568980,
+      "length": 1351058,
+      "count": 1554,
+      "hash": "9e5cfbb3cbba1050"
+    },
+    "2026-04": {
+      "offset": 1920039,
+      "length": 1638911,
+      "count": 2008,
+      "hash": "347724524b21534d"
+    },
+    "2026-03": {
+      "offset": 3558951,
+      "length": 1035661,
+      "count": 1297,
+      "hash": "d2ec78b91ef1ea66"
+    },
+    "2026-02": {
+      "offset": 4594613,
+      "length": 534742,
+      "count": 644,
+      "hash": "aac76bbb080e0cff"
+    },
+    "2026-01": {
+      "offset": 5129356,
+      "length": 2149,
+      "count": 3,
+      "hash": "4322b9b014f96d08"
+    },
+    "2025-11": {
+      "offset": 5131506,
+      "length": 1201,
+      "count": 1,
+      "hash": "3e93ac2cc84cc662"
+    },
+    "2023-01": {
+      "offset": 5132708,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    },
+    "2021-08": {
+      "offset": 5133187,
+      "length": 532,
+      "count": 1,
+      "hash": "d4de9b41ec83bde5"
+    }
+  }
+}

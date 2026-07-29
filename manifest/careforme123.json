@@ -1,0 +1,60 @@
+{
+  "repo": "careforme123",
+  "account": "careforme123",
+  "source": "https://twitterarchiver.github.io/careforme123/accounts/careforme123/wayback_snapshots/index.json",
+  "etag": "\"6a69fec1-22ac85\"",
+  "bytes": 2272389,
+  "generated": "2026-07-29T15:19:35Z",
+  "range": true,
+  "total": 2363,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 183230,
+      "count": 174,
+      "hash": "1c546a7f999657cd"
+    },
+    "2026-06": {
+      "offset": 183232,
+      "length": 646655,
+      "count": 653,
+      "hash": "6e24c37802e6f609"
+    },
+    "2026-05": {
+      "offset": 829888,
+      "length": 1339876,
+      "count": 1411,
+      "hash": "627069b92cbbdcd5"
+    },
+    "2026-04": {
+      "offset": 2169765,
+      "length": 100061,
+      "count": 121,
+      "hash": "ce5db8f8d6a822fe"
+    },
+    "2026-02": {
+      "offset": 2269827,
+      "length": 627,
+      "count": 1,
+      "hash": "73c253873d90d235"
+    },
+    "2026-01": {
+      "offset": 2270455,
+      "length": 460,
+      "count": 1,
+      "hash": "b0eb0439253b8cac"
+    },
+    "2025-11": {
+      "offset": 2270916,
+      "length": 461,
+      "count": 1,
+      "hash": "ed9d42ec0f8979b4"
+    },
+    "2024-10": {
+      "offset": 2271378,
+      "length": 1010,
+      "count": 1,
+      "hash": "b51697dd8956328f"
+    }
+  }
+}

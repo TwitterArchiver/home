@@ -1,0 +1,114 @@
+{
+  "repo": "Raintnear_asl",
+  "account": "Raintnear_asl",
+  "source": "https://twitterarchiver.github.io/Raintnear_asl/accounts/Raintnear_asl/wayback_snapshots/index.json",
+  "etag": "\"6a69f5e1-1fc6e1\"",
+  "bytes": 2082529,
+  "generated": "2026-07-29T15:19:02Z",
+  "range": true,
+  "total": 2504,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 11671,
+      "count": 13,
+      "hash": "b4c834001469daf9"
+    },
+    "2026-06": {
+      "offset": 11673,
+      "length": 159170,
+      "count": 191,
+      "hash": "fc9b64d5f37837a1"
+    },
+    "2026-05": {
+      "offset": 170844,
+      "length": 560572,
+      "count": 660,
+      "hash": "a14e942b1412fab4"
+    },
+    "2026-04": {
+      "offset": 731417,
+      "length": 438195,
+      "count": 498,
+      "hash": "61a3b363cd899904"
+    },
+    "2026-03": {
+      "offset": 1169613,
+      "length": 367571,
+      "count": 456,
+      "hash": "37796bc574eab5b8"
+    },
+    "2026-02": {
+      "offset": 1537185,
+      "length": 178171,
+      "count": 221,
+      "hash": "2b70364809588774"
+    },
+    "2026-01": {
+      "offset": 1715357,
+      "length": 33969,
+      "count": 41,
+      "hash": "37f2f9e4a995fe4b"
+    },
+    "2025-12": {
+      "offset": 1749327,
+      "length": 328196,
+      "count": 413,
+      "hash": "ed64ff9390922d11"
+    },
+    "2025-11": {
+      "offset": 2077524,
+      "length": 1036,
+      "count": 2,
+      "hash": "917b378662d795a8"
+    },
+    "2025-10": {
+      "offset": 2078561,
+      "length": 435,
+      "count": 1,
+      "hash": "bde0739c3d641f49"
+    },
+    "2025-09": {
+      "offset": 2078997,
+      "length": 872,
+      "count": 2,
+      "hash": "9734027069e116f5"
+    },
+    "2025-07": {
+      "offset": 2079870,
+      "length": 460,
+      "count": 1,
+      "hash": "5c10203a390ddd35"
+    },
+    "2025-06": {
+      "offset": 2080331,
+      "length": 423,
+      "count": 1,
+      "hash": "481230e4ea3fa725"
+    },
+    "2025-04": {
+      "offset": 2080755,
+      "length": 429,
+      "count": 1,
+      "hash": "a393a68ea6c4402a"
+    },
+    "2024-11": {
+      "offset": 2081185,
+      "length": 426,
+      "count": 1,
+      "hash": "0316510e64533954"
+    },
+    "2024-09": {
+      "offset": 2081612,
+      "length": 443,
+      "count": 1,
+      "hash": "5c535928955e8973"
+    },
+    "2024-04": {
+      "offset": 2082056,
+      "length": 472,
+      "count": 1,
+      "hash": "dd4383d61898b0c9"
+    }
+  }
+}

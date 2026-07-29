@@ -1,0 +1,168 @@
+{
+  "repo": "smiroyama",
+  "account": "smiroyama",
+  "source": "https://twitterarchiver.github.io/smiroyama/accounts/smiroyama/wayback_snapshots/index.json",
+  "etag": "\"6a69f9d8-b27b8e\"",
+  "bytes": 11697038,
+  "generated": "2026-07-29T15:20:05Z",
+  "range": true,
+  "total": 13646,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1152558,
+      "count": 1392,
+      "hash": "253f284288f9029a"
+    },
+    "2026-06": {
+      "offset": 1152560,
+      "length": 1379881,
+      "count": 1609,
+      "hash": "15a6f06b73667dee"
+    },
+    "2026-05": {
+      "offset": 2532442,
+      "length": 2311568,
+      "count": 2721,
+      "hash": "ac63daa07b937343"
+    },
+    "2026-04": {
+      "offset": 4844011,
+      "length": 3119596,
+      "count": 3582,
+      "hash": "e6329e965bf07158"
+    },
+    "2026-03": {
+      "offset": 7963608,
+      "length": 2102852,
+      "count": 2371,
+      "hash": "c1719887d979130f"
+    },
+    "2026-02": {
+      "offset": 10066461,
+      "length": 1031602,
+      "count": 1221,
+      "hash": "c830b2e8dae8747a"
+    },
+    "2026-01": {
+      "offset": 11098064,
+      "length": 573875,
+      "count": 716,
+      "hash": "1a081c64b641bb2e"
+    },
+    "2025-12": {
+      "offset": 11671940,
+      "length": 2535,
+      "count": 4,
+      "hash": "8a8cd9a744dd8608"
+    },
+    "2025-11": {
+      "offset": 11674476,
+      "length": 5172,
+      "count": 6,
+      "hash": "734339d83b7de674"
+    },
+    "2025-10": {
+      "offset": 11679649,
+      "length": 2824,
+      "count": 3,
+      "hash": "263fdae6c87c51b2"
+    },
+    "2025-09": {
+      "offset": 11682474,
+      "length": 1596,
+      "count": 2,
+      "hash": "c0b500d7d8881ab7"
+    },
+    "2025-08": {
+      "offset": 11684071,
+      "length": 2223,
+      "count": 2,
+      "hash": "7164761971f98375"
+    },
+    "2025-05": {
+      "offset": 11686295,
+      "length": 523,
+      "count": 1,
+      "hash": "2cfeb796a5d44d3a"
+    },
+    "2025-04": {
+      "offset": 11686819,
+      "length": 1128,
+      "count": 1,
+      "hash": "5b89ef8b376b979f"
+    },
+    "2025-03": {
+      "offset": 11687948,
+      "length": 636,
+      "count": 1,
+      "hash": "6052f5adbd57fb51"
+    },
+    "2025-02": {
+      "offset": 11688585,
+      "length": 601,
+      "count": 1,
+      "hash": "4ffe84523a46c79f"
+    },
+    "2025-01": {
+      "offset": 11689187,
+      "length": 939,
+      "count": 2,
+      "hash": "b2b183d8b7f58594"
+    },
+    "2024-12": {
+      "offset": 11690127,
+      "length": 1241,
+      "count": 1,
+      "hash": "31126d82e1bbaa86"
+    },
+    "2024-11": {
+      "offset": 11691369,
+      "length": 872,
+      "count": 2,
+      "hash": "1158a0d8d9a2e9d0"
+    },
+    "2024-09": {
+      "offset": 11692242,
+      "length": 981,
+      "count": 2,
+      "hash": "5c4e2e6101610592"
+    },
+    "2024-07": {
+      "offset": 11693224,
+      "length": 645,
+      "count": 1,
+      "hash": "aba6bdf7b3eea964"
+    },
+    "2024-06": {
+      "offset": 11693870,
+      "length": 488,
+      "count": 1,
+      "hash": "697365165be1e13d"
+    },
+    "2023-12": {
+      "offset": 11694359,
+      "length": 692,
+      "count": 1,
+      "hash": "2baef58ab2fb50f0"
+    },
+    "2022-06": {
+      "offset": 11695052,
+      "length": 812,
+      "count": 1,
+      "hash": "1cb5034045bb7668"
+    },
+    "2019-06": {
+      "offset": 11695865,
+      "length": 547,
+      "count": 1,
+      "hash": "e4f1ebe3660946c8"
+    },
+    "1992-09": {
+      "offset": 11696413,
+      "length": 624,
+      "count": 1,
+      "hash": "8b5b5ee13bd637fb"
+    }
+  }
+}

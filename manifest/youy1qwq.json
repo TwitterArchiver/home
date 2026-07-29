@@ -1,0 +1,66 @@
+{
+  "repo": "youy1qwq",
+  "account": "youy1qwq",
+  "source": "https://twitterarchiver.github.io/youy1qwq/accounts/youy1qwq/wayback_snapshots/index.json",
+  "etag": "\"6a69ff39-45862d\"",
+  "bytes": 4556333,
+  "generated": "2026-07-29T15:20:14Z",
+  "range": true,
+  "total": 5484,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 284821,
+      "count": 328,
+      "hash": "8034866f0002ec3e"
+    },
+    "2026-06": {
+      "offset": 284823,
+      "length": 1703275,
+      "count": 2250,
+      "hash": "5fb9aae8e3bc5caf"
+    },
+    "2026-05": {
+      "offset": 1988099,
+      "length": 442724,
+      "count": 478,
+      "hash": "88164fa2ab3f34f3"
+    },
+    "2026-04": {
+      "offset": 2430824,
+      "length": 515078,
+      "count": 566,
+      "hash": "2f0897cafd973dc5"
+    },
+    "2026-03": {
+      "offset": 2945903,
+      "length": 590418,
+      "count": 630,
+      "hash": "c0772f8e9603f386"
+    },
+    "2026-02": {
+      "offset": 3536322,
+      "length": 979760,
+      "count": 1179,
+      "hash": "59495b943db2a0a0"
+    },
+    "2026-01": {
+      "offset": 4516083,
+      "length": 38849,
+      "count": 51,
+      "hash": "6bcb5fdb06c6c27d"
+    },
+    "2025-09": {
+      "offset": 4554933,
+      "length": 554,
+      "count": 1,
+      "hash": "ace7ebc8825fa8e6"
+    },
+    "2025-04": {
+      "offset": 4555488,
+      "length": 844,
+      "count": 1,
+      "hash": "7e9992fb48f9c6fa"
+    }
+  }
+}

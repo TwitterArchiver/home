@@ -1,0 +1,102 @@
+{
+  "repo": "shirochankawa1",
+  "account": "shirochankawa1",
+  "source": "https://twitterarchiver.github.io/shirochankawa1/accounts/shirochankawa1/wayback_snapshots/index.json",
+  "etag": "\"6a69ea06-4cce92\"",
+  "bytes": 5033618,
+  "generated": "2026-07-29T15:20:00Z",
+  "range": true,
+  "total": 6036,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 309128,
+      "count": 368,
+      "hash": "e6f3cf4f3c17edc6"
+    },
+    "2026-06": {
+      "offset": 309130,
+      "length": 535733,
+      "count": 646,
+      "hash": "f6032fc0b73431db"
+    },
+    "2026-05": {
+      "offset": 844864,
+      "length": 795409,
+      "count": 934,
+      "hash": "b9b7b38822877629"
+    },
+    "2026-04": {
+      "offset": 1640274,
+      "length": 400700,
+      "count": 474,
+      "hash": "dca9e20552a5ce59"
+    },
+    "2026-03": {
+      "offset": 2040975,
+      "length": 606957,
+      "count": 722,
+      "hash": "7bdd26034c06cd45"
+    },
+    "2026-02": {
+      "offset": 2647933,
+      "length": 976242,
+      "count": 1194,
+      "hash": "8587c24dc7a7cb82"
+    },
+    "2026-01": {
+      "offset": 3624176,
+      "length": 361286,
+      "count": 426,
+      "hash": "5cf4b59992a4c34a"
+    },
+    "2025-12": {
+      "offset": 3985463,
+      "length": 330249,
+      "count": 396,
+      "hash": "fa38762c49e1a312"
+    },
+    "2025-11": {
+      "offset": 4315713,
+      "length": 710364,
+      "count": 868,
+      "hash": "ab63f46c8e094a06"
+    },
+    "2025-10": {
+      "offset": 5026078,
+      "length": 1754,
+      "count": 2,
+      "hash": "a5c64aa1b09a8d18"
+    },
+    "2025-09": {
+      "offset": 5027833,
+      "length": 1577,
+      "count": 2,
+      "hash": "18d05405f2efe229"
+    },
+    "2025-08": {
+      "offset": 5029411,
+      "length": 869,
+      "count": 1,
+      "hash": "2136c0ac6c07bcbd"
+    },
+    "2025-02": {
+      "offset": 5030281,
+      "length": 1334,
+      "count": 1,
+      "hash": "2bfbfbdedaf4bdf8"
+    },
+    "2024-09": {
+      "offset": 5031616,
+      "length": 1363,
+      "count": 1,
+      "hash": "4a72ae5d7d5672c7"
+    },
+    "2023-02": {
+      "offset": 5032980,
+      "length": 637,
+      "count": 1,
+      "hash": "be464d1cde05e141"
+    }
+  }
+}

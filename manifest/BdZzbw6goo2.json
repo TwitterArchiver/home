@@ -1,0 +1,48 @@
+{
+  "repo": "BdZzbw6goo2",
+  "account": "BdZzbw6goo2",
+  "source": "https://twitterarchiver.github.io/BdZzbw6goo2/accounts/BdZzbw6goo2/wayback_snapshots/index.json",
+  "etag": "\"6a69f5d3-f3650\"",
+  "bytes": 996944,
+  "generated": "2026-07-29T15:18:23Z",
+  "range": true,
+  "total": 1156,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 40275,
+      "count": 46,
+      "hash": "89e42165c2a029f5"
+    },
+    "2026-06": {
+      "offset": 40277,
+      "length": 64899,
+      "count": 74,
+      "hash": "e1854bd58a6dd500"
+    },
+    "2026-05": {
+      "offset": 105177,
+      "length": 107087,
+      "count": 124,
+      "hash": "f76021ea4df7a750"
+    },
+    "2026-04": {
+      "offset": 212265,
+      "length": 444799,
+      "count": 513,
+      "hash": "f16d6f777eeb2ddc"
+    },
+    "2026-03": {
+      "offset": 657065,
+      "length": 337932,
+      "count": 397,
+      "hash": "9efbf3c08dc8b0e9"
+    },
+    "2026-02": {
+      "offset": 994998,
+      "length": 1945,
+      "count": 2,
+      "hash": "4267c8d945ebd1bb"
+    }
+  }
+}

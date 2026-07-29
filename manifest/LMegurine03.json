@@ -1,0 +1,138 @@
+{
+  "repo": "LMegurine03",
+  "account": "LMegurine03",
+  "source": "https://twitterarchiver.github.io/LMegurine03/accounts/LMegurine03/wayback_snapshots/index.json",
+  "etag": "\"6a6a0230-74a47c\"",
+  "bytes": 7644284,
+  "generated": "2026-07-29T15:18:49Z",
+  "range": true,
+  "total": 8687,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 415887,
+      "count": 415,
+      "hash": "e60071c482f2c96a"
+    },
+    "2026-06": {
+      "offset": 415889,
+      "length": 512668,
+      "count": 531,
+      "hash": "b198af0c96e87cbd"
+    },
+    "2026-05": {
+      "offset": 928558,
+      "length": 483436,
+      "count": 513,
+      "hash": "cd70654f76b20bb1"
+    },
+    "2026-04": {
+      "offset": 1411995,
+      "length": 423380,
+      "count": 479,
+      "hash": "2b3d9aaa9ec62a77"
+    },
+    "2026-03": {
+      "offset": 1835376,
+      "length": 341110,
+      "count": 318,
+      "hash": "f2792295f6d730bb"
+    },
+    "2026-02": {
+      "offset": 2176487,
+      "length": 400493,
+      "count": 451,
+      "hash": "4eeadfbb50751aab"
+    },
+    "2026-01": {
+      "offset": 2576981,
+      "length": 333861,
+      "count": 364,
+      "hash": "4cbdd126401641e2"
+    },
+    "2025-12": {
+      "offset": 2910843,
+      "length": 278218,
+      "count": 339,
+      "hash": "0de32c64e8bdfcba"
+    },
+    "2025-11": {
+      "offset": 3189062,
+      "length": 864733,
+      "count": 1065,
+      "hash": "dc30945881c99b32"
+    },
+    "2025-10": {
+      "offset": 4053796,
+      "length": 384725,
+      "count": 463,
+      "hash": "ef7a6952576448e7"
+    },
+    "2025-09": {
+      "offset": 4438522,
+      "length": 373556,
+      "count": 410,
+      "hash": "ca4634d68488a021"
+    },
+    "2025-08": {
+      "offset": 4812079,
+      "length": 318460,
+      "count": 390,
+      "hash": "e62cf939a40f44b5"
+    },
+    "2025-07": {
+      "offset": 5130540,
+      "length": 673638,
+      "count": 809,
+      "hash": "57d4c2a828563430"
+    },
+    "2025-06": {
+      "offset": 5804179,
+      "length": 712797,
+      "count": 818,
+      "hash": "858a826a09af1725"
+    },
+    "2025-05": {
+      "offset": 6516977,
+      "length": 810760,
+      "count": 946,
+      "hash": "01cf0f167e9adb73"
+    },
+    "2025-04": {
+      "offset": 7327738,
+      "length": 313711,
+      "count": 371,
+      "hash": "efed53ba5371c7ea"
+    },
+    "2025-02": {
+      "offset": 7641450,
+      "length": 536,
+      "count": 1,
+      "hash": "088d8d62ec41cb37"
+    },
+    "2024-10": {
+      "offset": 7641987,
+      "length": 681,
+      "count": 1,
+      "hash": "6e87e14dac25a7ed"
+    },
+    "2024-08": {
+      "offset": 7642669,
+      "length": 459,
+      "count": 1,
+      "hash": "664eeaf86a29035f"
+    },
+    "2024-07": {
+      "offset": 7643129,
+      "length": 613,
+      "count": 1,
+      "hash": "6bafd8c3eac0866a"
+    },
+    "2021-04": {
+      "offset": 7643743,
+      "length": 540,
+      "count": 1,
+      "hash": "e065765a494d35e7"
+    }
+  }
+}

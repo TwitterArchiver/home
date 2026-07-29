@@ -1,0 +1,54 @@
+{
+  "repo": "lckmtfdesu",
+  "account": "lckmtfdesu",
+  "source": "https://twitterarchiver.github.io/lckmtfdesu/accounts/lckmtfdesu/wayback_snapshots/index.json",
+  "etag": "\"6a69f7f8-2a4a4a\"",
+  "bytes": 2771530,
+  "generated": "2026-07-29T15:19:44Z",
+  "range": true,
+  "total": 3431,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 682259,
+      "count": 824,
+      "hash": "f96e1f2e55ad7e07"
+    },
+    "2026-06": {
+      "offset": 682261,
+      "length": 653813,
+      "count": 802,
+      "hash": "935c138aef19d5ff"
+    },
+    "2026-05": {
+      "offset": 1336075,
+      "length": 966957,
+      "count": 1199,
+      "hash": "14c73294512425a7"
+    },
+    "2026-04": {
+      "offset": 2303033,
+      "length": 466529,
+      "count": 603,
+      "hash": "a96ad4a0908442b9"
+    },
+    "2026-02": {
+      "offset": 2769563,
+      "length": 616,
+      "count": 1,
+      "hash": "2a85663c3f038147"
+    },
+    "2022-06": {
+      "offset": 2770180,
+      "length": 812,
+      "count": 1,
+      "hash": "1cb5034045bb7668"
+    },
+    "2018-10": {
+      "offset": 2770993,
+      "length": 536,
+      "count": 1,
+      "hash": "d841c712dd9928bb"
+    }
+  }
+}

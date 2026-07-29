@@ -1,0 +1,18 @@
+{
+  "repo": "mrsksyrx_xl",
+  "account": "mrsksyrx_xl",
+  "source": "https://twitterarchiver.github.io/mrsksyrx_xl/accounts/mrsksyrx_xl/wayback_snapshots/index.json",
+  "etag": "\"6a69dfbd-7a0e\"",
+  "bytes": 31246,
+  "generated": "2026-07-29T15:19:46Z",
+  "range": true,
+  "total": 35,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 31244,
+      "count": 35,
+      "hash": "cb60ce32d98940ef"
+    }
+  }
+}

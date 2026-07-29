@@ -1,0 +1,54 @@
+{
+  "repo": "futi999139732",
+  "account": "futi999139732",
+  "source": "https://twitterarchiver.github.io/futi999139732/accounts/futi999139732/wayback_snapshots/index.json",
+  "etag": "\"6a69eb4c-78180\"",
+  "bytes": 491904,
+  "generated": "2026-07-29T15:19:38Z",
+  "range": true,
+  "total": 598,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 42437,
+      "count": 51,
+      "hash": "614ccff5bbc1ab13"
+    },
+    "2026-06": {
+      "offset": 42439,
+      "length": 40861,
+      "count": 48,
+      "hash": "079588b596154bdf"
+    },
+    "2026-05": {
+      "offset": 83301,
+      "length": 47404,
+      "count": 53,
+      "hash": "1e46e8b31aa92692"
+    },
+    "2026-04": {
+      "offset": 130706,
+      "length": 37946,
+      "count": 35,
+      "hash": "1d76053bd5ac95c8"
+    },
+    "2026-03": {
+      "offset": 168653,
+      "length": 170406,
+      "count": 211,
+      "hash": "27ec6aff4e293196"
+    },
+    "2026-02": {
+      "offset": 339060,
+      "length": 152142,
+      "count": 199,
+      "hash": "64d94b5a0c1c1247"
+    },
+    "2025-08": {
+      "offset": 491203,
+      "length": 700,
+      "count": 1,
+      "hash": "28320b3aab9504d4"
+    }
+  }
+}

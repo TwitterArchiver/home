@@ -1,0 +1,72 @@
+{
+  "repo": "misaki102113",
+  "account": "misaki102113",
+  "source": "https://twitterarchiver.github.io/misaki102113/accounts/misaki102113/wayback_snapshots/index.json",
+  "etag": "\"6a69fb3b-100273\"",
+  "bytes": 1049203,
+  "generated": "2026-07-29T15:19:46Z",
+  "range": true,
+  "total": 1307,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 107910,
+      "count": 137,
+      "hash": "efabca9f20361922"
+    },
+    "2026-06": {
+      "offset": 107912,
+      "length": 122193,
+      "count": 151,
+      "hash": "211a277a94d43cc9"
+    },
+    "2026-05": {
+      "offset": 230106,
+      "length": 354018,
+      "count": 445,
+      "hash": "87755a4d8400817a"
+    },
+    "2026-04": {
+      "offset": 584125,
+      "length": 200672,
+      "count": 252,
+      "hash": "3deead367d1d3e29"
+    },
+    "2026-03": {
+      "offset": 784798,
+      "length": 238236,
+      "count": 293,
+      "hash": "bb7483a50c34deec"
+    },
+    "2026-02": {
+      "offset": 1023035,
+      "length": 508,
+      "count": 1,
+      "hash": "704deebf11d6dc87"
+    },
+    "2025-11": {
+      "offset": 1023544,
+      "length": 9068,
+      "count": 11,
+      "hash": "fa3b758b768818c9"
+    },
+    "2025-10": {
+      "offset": 1032613,
+      "length": 15491,
+      "count": 15,
+      "hash": "833969d17f06bff6"
+    },
+    "2024-04": {
+      "offset": 1048105,
+      "length": 564,
+      "count": 1,
+      "hash": "088b485b6b525ca0"
+    },
+    "2021-08": {
+      "offset": 1048670,
+      "length": 532,
+      "count": 1,
+      "hash": "d4de9b41ec83bde5"
+    }
+  }
+}

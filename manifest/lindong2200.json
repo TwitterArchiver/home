@@ -1,0 +1,36 @@
+{
+  "repo": "lindong2200",
+  "account": "lindong2200",
+  "source": "https://twitterarchiver.github.io/lindong2200/accounts/lindong2200/wayback_snapshots/index.json",
+  "etag": "\"6a6a0869-c13c5\"",
+  "bytes": 791493,
+  "generated": "2026-07-29T15:19:44Z",
+  "range": true,
+  "total": 922,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 118801,
+      "count": 135,
+      "hash": "f2fb92fa295e6331"
+    },
+    "2026-06": {
+      "offset": 118803,
+      "length": 258358,
+      "count": 304,
+      "hash": "3e720d55c9422077"
+    },
+    "2026-05": {
+      "offset": 377162,
+      "length": 191047,
+      "count": 221,
+      "hash": "16b684b9b268c7e1"
+    },
+    "2026-04": {
+      "offset": 568210,
+      "length": 223282,
+      "count": 262,
+      "hash": "d0da770416cab272"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "repo": "HagamiMotoyori",
+  "account": "HagamiMotoyori",
+  "source": "https://twitterarchiver.github.io/HagamiMotoyori/accounts/HagamiMotoyori/wayback_snapshots/index.json",
+  "etag": "\"6a69f95b-9d0d9\"",
+  "bytes": 643289,
+  "generated": "2026-07-29T15:18:42Z",
+  "range": true,
+  "total": 756,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 243645,
+      "count": 277,
+      "hash": "41314e69a0bb281e"
+    },
+    "2026-06": {
+      "offset": 243647,
+      "length": 140158,
+      "count": 167,
+      "hash": "dd41147cc0fb46ba"
+    },
+    "2026-05": {
+      "offset": 383806,
+      "length": 170097,
+      "count": 198,
+      "hash": "41c49b41106438ba"
+    },
+    "2026-04": {
+      "offset": 553904,
+      "length": 88938,
+      "count": 113,
+      "hash": "719397c43f843fa0"
+    },
+    "2025-12": {
+      "offset": 642843,
+      "length": 445,
+      "count": 1,
+      "hash": "4f046ebb8a882229"
+    }
+  }
+}

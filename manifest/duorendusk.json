@@ -1,0 +1,54 @@
+{
+  "repo": "duorendusk",
+  "account": "duorendusk",
+  "source": "https://twitterarchiver.github.io/duorendusk/accounts/duorendusk/wayback_snapshots/index.json",
+  "etag": "\"6a69db2a-d74a9\"",
+  "bytes": 881833,
+  "generated": "2026-07-29T15:19:36Z",
+  "range": true,
+  "total": 1007,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 34487,
+      "count": 42,
+      "hash": "9bea075f5f5f4dca"
+    },
+    "2026-06": {
+      "offset": 34489,
+      "length": 120894,
+      "count": 136,
+      "hash": "e6971473eefbc66e"
+    },
+    "2026-05": {
+      "offset": 155384,
+      "length": 354865,
+      "count": 403,
+      "hash": "a0623f862d25aab9"
+    },
+    "2026-04": {
+      "offset": 510250,
+      "length": 369235,
+      "count": 423,
+      "hash": "d8ec3759b37c6135"
+    },
+    "2025-11": {
+      "offset": 879486,
+      "length": 569,
+      "count": 1,
+      "hash": "5885bb27d113528f"
+    },
+    "2025-06": {
+      "offset": 880056,
+      "length": 1262,
+      "count": 1,
+      "hash": "3695c8612819ed26"
+    },
+    "2023-12": {
+      "offset": 881319,
+      "length": 513,
+      "count": 1,
+      "hash": "ec9963aa053983ce"
+    }
+  }
+}

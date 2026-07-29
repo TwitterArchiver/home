@@ -1,0 +1,72 @@
+{
+  "repo": "YeXing85072",
+  "account": "YeXing85072",
+  "source": "https://twitterarchiver.github.io/YeXing85072/accounts/YeXing85072/wayback_snapshots/index.json",
+  "etag": "\"6a6a14d2-acb04\"",
+  "bytes": 707332,
+  "generated": "2026-07-29T15:19:21Z",
+  "range": true,
+  "total": 740,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 6111,
+      "count": 7,
+      "hash": "5710860b84881cab"
+    },
+    "2026-06": {
+      "offset": 6113,
+      "length": 11666,
+      "count": 15,
+      "hash": "bcc410969af686ee"
+    },
+    "2026-05": {
+      "offset": 17780,
+      "length": 7933,
+      "count": 7,
+      "hash": "99123255179f534b"
+    },
+    "2026-04": {
+      "offset": 25714,
+      "length": 1560,
+      "count": 2,
+      "hash": "d62bee576d4051bc"
+    },
+    "2026-03": {
+      "offset": 27275,
+      "length": 10152,
+      "count": 9,
+      "hash": "58160ed984e01a6f"
+    },
+    "2026-01": {
+      "offset": 37428,
+      "length": 5046,
+      "count": 6,
+      "hash": "68e596d6fd5559d7"
+    },
+    "2025-12": {
+      "offset": 42475,
+      "length": 40174,
+      "count": 38,
+      "hash": "e6465afad190ad38"
+    },
+    "2025-11": {
+      "offset": 82650,
+      "length": 244269,
+      "count": 238,
+      "hash": "d774c10306522710"
+    },
+    "2025-10": {
+      "offset": 326920,
+      "length": 314665,
+      "count": 339,
+      "hash": "9a104a83049f942c"
+    },
+    "2025-09": {
+      "offset": 641586,
+      "length": 65745,
+      "count": 79,
+      "hash": "16d75fe967b10cb1"
+    }
+  }
+}

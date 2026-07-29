@@ -1,0 +1,96 @@
+{
+  "repo": "YongQuan",
+  "account": "YongQuan",
+  "source": "https://twitterarchiver.github.io/YongQuan/accounts/YongQuan/wayback_snapshots/index.json",
+  "etag": "\"6a69e284-69e03f\"",
+  "bytes": 6938687,
+  "generated": "2026-07-29T15:19:27Z",
+  "range": true,
+  "total": 7848,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 1328060,
+      "count": 1467,
+      "hash": "c901a105965932d7"
+    },
+    "2026-06": {
+      "offset": 1328062,
+      "length": 2500668,
+      "count": 2930,
+      "hash": "ed85c0df6455cada"
+    },
+    "2026-05": {
+      "offset": 3828731,
+      "length": 2681590,
+      "count": 2975,
+      "hash": "a290784f8a377589"
+    },
+    "2026-04": {
+      "offset": 6510322,
+      "length": 415476,
+      "count": 458,
+      "hash": "cb6109f5d5ec2d37"
+    },
+    "2026-03": {
+      "offset": 6925799,
+      "length": 3117,
+      "count": 5,
+      "hash": "e8c7eb48e361eacc"
+    },
+    "2026-02": {
+      "offset": 6928917,
+      "length": 709,
+      "count": 1,
+      "hash": "70b92d4be4753e75"
+    },
+    "2025-10": {
+      "offset": 6929627,
+      "length": 465,
+      "count": 1,
+      "hash": "c1c617b97c9a6477"
+    },
+    "2025-07": {
+      "offset": 6930093,
+      "length": 829,
+      "count": 1,
+      "hash": "18996c83a4c024a5"
+    },
+    "2025-04": {
+      "offset": 6930923,
+      "length": 2221,
+      "count": 2,
+      "hash": "a37c5c61dd5f8aba"
+    },
+    "2025-03": {
+      "offset": 6933145,
+      "length": 618,
+      "count": 1,
+      "hash": "8652ade1946b1513"
+    },
+    "2024-12": {
+      "offset": 6933764,
+      "length": 2490,
+      "count": 4,
+      "hash": "ef3d33b5b13047cf"
+    },
+    "2023-05": {
+      "offset": 6936255,
+      "length": 1238,
+      "count": 1,
+      "hash": "59891c1515157b6d"
+    },
+    "2022-06": {
+      "offset": 6937494,
+      "length": 513,
+      "count": 1,
+      "hash": "98259e097958a75a"
+    },
+    "2019-06": {
+      "offset": 6938008,
+      "length": 678,
+      "count": 1,
+      "hash": "1c1edb53a8e8b554"
+    }
+  }
+}

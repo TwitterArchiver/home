@@ -1,0 +1,42 @@
+{
+  "repo": "Sylvviiae",
+  "account": "Sylvviiae",
+  "source": "https://twitterarchiver.github.io/Sylvviiae/accounts/Sylvviiae/wayback_snapshots/index.json",
+  "etag": "\"6a6a075e-f0318\"",
+  "bytes": 983832,
+  "generated": "2026-07-29T15:19:12Z",
+  "range": true,
+  "total": 1253,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 240835,
+      "count": 307,
+      "hash": "ed5cf6c5ef94a280"
+    },
+    "2026-06": {
+      "offset": 240837,
+      "length": 322848,
+      "count": 414,
+      "hash": "e8c3ea743fe176b6"
+    },
+    "2026-05": {
+      "offset": 563686,
+      "length": 418916,
+      "count": 530,
+      "hash": "52773b908ede44db"
+    },
+    "2026-03": {
+      "offset": 982603,
+      "length": 801,
+      "count": 1,
+      "hash": "fd2748cd75fa6121"
+    },
+    "2026-02": {
+      "offset": 983405,
+      "length": 426,
+      "count": 1,
+      "hash": "3442e9e4d4048ca3"
+    }
+  }
+}
