@@ -2,86 +2,86 @@
   "repo": "StarryNocts",
   "account": "StarryNocts",
   "source": "https://twitterarchiver.github.io/StarryNocts/accounts/StarryNocts/wayback_snapshots/index.json",
-  "etag": "\"6a6a2c89-a031ea\"",
-  "bytes": 10498538,
-  "generated": "2026-07-29T22:43:33Z",
+  "etag": "\"6a6ae82e-a05aa6\"",
+  "bytes": 10508966,
+  "generated": "2026-08-01T01:26:54Z",
   "range": true,
-  "total": 14650,
+  "total": 14663,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 694957,
-      "count": 948,
-      "hash": "28215918b9c1fe92"
+      "length": 705343,
+      "count": 961,
+      "hash": "a43e6b38f9f73cfd"
     },
     "2026-06": {
-      "offset": 694959,
+      "offset": 705345,
       "length": 1835535,
       "count": 2552,
       "hash": "8b93ec0ec1a4f980"
     },
     "2026-05": {
-      "offset": 2530495,
-      "length": 2645756,
+      "offset": 2540881,
+      "length": 2645798,
       "count": 3725,
-      "hash": "346f6da81a14ca8c"
+      "hash": "94e8b2ecb099771f"
     },
     "2026-04": {
-      "offset": 5176252,
+      "offset": 5186680,
       "length": 4051758,
       "count": 5688,
       "hash": "1a2f65f291c0520f"
     },
     "2026-03": {
-      "offset": 9228011,
+      "offset": 9238439,
       "length": 1263828,
       "count": 1726,
       "hash": "d32654bfd39712c4"
     },
     "2026-02": {
-      "offset": 10491840,
+      "offset": 10502268,
       "length": 2450,
       "count": 4,
       "hash": "45e3f02572c71471"
     },
     "2026-01": {
-      "offset": 10494291,
+      "offset": 10504719,
       "length": 739,
       "count": 1,
       "hash": "63797280229b65bf"
     },
     "2025-12": {
-      "offset": 10495031,
+      "offset": 10505459,
       "length": 460,
       "count": 1,
       "hash": "39fca6a6fdfd997c"
     },
     "2025-10": {
-      "offset": 10495492,
+      "offset": 10505920,
       "length": 495,
       "count": 1,
       "hash": "24f9ce7bf5e46e57"
     },
     "2025-06": {
-      "offset": 10495988,
+      "offset": 10506416,
       "length": 655,
       "count": 1,
       "hash": "c79ae082017b49f7"
     },
     "2025-04": {
-      "offset": 10496644,
+      "offset": 10507072,
       "length": 535,
       "count": 1,
       "hash": "7d9208822dadd5ca"
     },
     "2023-07": {
-      "offset": 10497180,
+      "offset": 10507608,
       "length": 544,
       "count": 1,
       "hash": "48dfd9baefbdc123"
     },
     "2022-06": {
-      "offset": 10497725,
+      "offset": 10508153,
       "length": 812,
       "count": 1,
       "hash": "1cb5034045bb7668"

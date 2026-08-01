@@ -1,0 +1,60 @@
+{
+  "repo": "Ace_Purin",
+  "account": "Ace_Purin",
+  "source": "https://twitterarchiver.github.io/Ace_Purin/accounts/Ace_Purin/wayback_snapshots/index.json",
+  "etag": "\"6a6d4aa0-2f04a8\"",
+  "bytes": 3081384,
+  "generated": "2026-08-01T01:25:56Z",
+  "range": true,
+  "total": 3981,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 419412,
+      "count": 554,
+      "hash": "491581d4c3237564"
+    },
+    "2026-06": {
+      "offset": 419414,
+      "length": 462599,
+      "count": 609,
+      "hash": "787d00a9875af07c"
+    },
+    "2026-05": {
+      "offset": 882014,
+      "length": 552680,
+      "count": 720,
+      "hash": "1752c5db5c32d3ab"
+    },
+    "2026-04": {
+      "offset": 1434695,
+      "length": 1111013,
+      "count": 1439,
+      "hash": "79b70f9e25088fba"
+    },
+    "2026-03": {
+      "offset": 2545709,
+      "length": 533738,
+      "count": 656,
+      "hash": "112d849300e861ba"
+    },
+    "2026-02": {
+      "offset": 3079448,
+      "length": 885,
+      "count": 1,
+      "hash": "dbb1c5a992f16f54"
+    },
+    "2021-10": {
+      "offset": 3080334,
+      "length": 512,
+      "count": 1,
+      "hash": "d975d1d7d4cdcc9b"
+    },
+    "2018-10": {
+      "offset": 3080847,
+      "length": 536,
+      "count": 1,
+      "hash": "d841c712dd9928bb"
+    }
+  }
+}

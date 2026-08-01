@@ -1,0 +1,30 @@
+{
+  "repo": "QianQian_TwT",
+  "account": "QianQian_TwT",
+  "source": "https://twitterarchiver.github.io/QianQian_TwT/accounts/QianQian_TwT/wayback_snapshots/index.json",
+  "etag": "\"6a6c81be-d089c\"",
+  "bytes": 854172,
+  "generated": "2026-08-01T01:26:42Z",
+  "range": true,
+  "total": 1087,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 853170,
+      "count": 1085,
+      "hash": "867f5a253c87bfc9"
+    },
+    "2026-06": {
+      "offset": 853172,
+      "length": 559,
+      "count": 1,
+      "hash": "7bb0fa781f164845"
+    },
+    "2026-04": {
+      "offset": 853732,
+      "length": 439,
+      "count": 1,
+      "hash": "719db8d4cf1b5048"
+    }
+  }
+}

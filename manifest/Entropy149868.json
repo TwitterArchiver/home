@@ -1,0 +1,60 @@
+{
+  "repo": "Entropy149868",
+  "account": "Entropy149868",
+  "source": "https://twitterarchiver.github.io/Entropy149868/accounts/Entropy149868/wayback_snapshots/index.json",
+  "etag": "\"6a6c7977-d0a6e\"",
+  "bytes": 854638,
+  "generated": "2026-08-01T01:26:19Z",
+  "range": true,
+  "total": 1007,
+  "months": {
+    "2026-06": {
+      "offset": 1,
+      "length": 18245,
+      "count": 19,
+      "hash": "ddb596aa69b3ac8a"
+    },
+    "2026-05": {
+      "offset": 18247,
+      "length": 137792,
+      "count": 163,
+      "hash": "1405fab54304ea9b"
+    },
+    "2026-04": {
+      "offset": 156040,
+      "length": 355771,
+      "count": 421,
+      "hash": "3fdfe721afafbcde"
+    },
+    "2026-03": {
+      "offset": 511812,
+      "length": 268942,
+      "count": 310,
+      "hash": "ee821b64ae6baed7"
+    },
+    "2026-02": {
+      "offset": 780755,
+      "length": 72153,
+      "count": 91,
+      "hash": "cccc649efb939bb8"
+    },
+    "2026-01": {
+      "offset": 852909,
+      "length": 699,
+      "count": 1,
+      "hash": "59b46e38abd9a81b"
+    },
+    "2025-12": {
+      "offset": 853609,
+      "length": 589,
+      "count": 1,
+      "hash": "b17bbcef655f4272"
+    },
+    "2025-08": {
+      "offset": 854199,
+      "length": 438,
+      "count": 1,
+      "hash": "cdc028c9d17e92ba"
+    }
+  }
+}

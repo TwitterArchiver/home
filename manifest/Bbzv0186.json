@@ -1,0 +1,54 @@
+{
+  "repo": "Bbzv0186",
+  "account": "Bbzv0186",
+  "source": "https://twitterarchiver.github.io/Bbzv0186/accounts/Bbzv0186/wayback_snapshots/index.json",
+  "etag": "\"6a6bde76-17987\"",
+  "bytes": 96647,
+  "generated": "2026-08-01T01:26:05Z",
+  "range": true,
+  "total": 115,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 47800,
+      "count": 57,
+      "hash": "2cd1bedf9b303b12"
+    },
+    "2026-06": {
+      "offset": 47802,
+      "length": 22264,
+      "count": 26,
+      "hash": "259e05f22aec5335"
+    },
+    "2026-05": {
+      "offset": 70067,
+      "length": 22861,
+      "count": 28,
+      "hash": "3f58746dcb91f0b0"
+    },
+    "2025-10": {
+      "offset": 92929,
+      "length": 848,
+      "count": 1,
+      "hash": "978b60d14e1214fa"
+    },
+    "2025-09": {
+      "offset": 93778,
+      "length": 1026,
+      "count": 1,
+      "hash": "515c371d8c141fc6"
+    },
+    "2025-08": {
+      "offset": 94805,
+      "length": 784,
+      "count": 1,
+      "hash": "6975cf1d399c2b27"
+    },
+    "2025-05": {
+      "offset": 95590,
+      "length": 1056,
+      "count": 1,
+      "hash": "3b17fdf7d92db586"
+    }
+  }
+}

@@ -2,9 +2,9 @@
   "repo": "Verdin14shi",
   "account": "Verdin14shi",
   "source": "https://twitterarchiver.github.io/Verdin14shi/accounts/Verdin14shi/wayback_snapshots/index.json",
-  "etag": "\"6a68d629-1fa3df\"",
-  "bytes": 2073567,
-  "generated": "2026-07-28T18:05:07Z",
+  "etag": "\"6a6cca03-1fa461\"",
+  "bytes": 2073697,
+  "generated": "2026-08-01T01:27:00Z",
   "range": true,
   "total": 2694,
   "months": {
@@ -16,30 +16,30 @@
     },
     "2026-05": {
       "offset": 25682,
-      "length": 2034860,
+      "length": 2034990,
       "count": 2642,
-      "hash": "cabade992b58c6e1"
+      "hash": "7c723074b3bce5f2"
     },
     "2026-04": {
-      "offset": 2060543,
+      "offset": 2060673,
       "length": 11389,
       "count": 17,
       "hash": "65261d4f1a161e64"
     },
     "2026-03": {
-      "offset": 2071933,
+      "offset": 2072063,
       "length": 510,
       "count": 1,
       "hash": "65efd289ad3dff3a"
     },
     "2026-02": {
-      "offset": 2072444,
+      "offset": 2072574,
       "length": 561,
       "count": 1,
       "hash": "35f12fa881f65ba3"
     },
     "2025-09": {
-      "offset": 2073006,
+      "offset": 2073136,
       "length": 560,
       "count": 1,
       "hash": "f592eb28608841c9"

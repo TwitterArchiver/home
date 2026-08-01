@@ -1,0 +1,24 @@
+{
+  "repo": "gongzisama1",
+  "account": "gongzisama1",
+  "source": "https://twitterarchiver.github.io/gongzisama1/accounts/gongzisama1/wayback_snapshots/index.json",
+  "etag": "\"6a6c820c-26547\"",
+  "bytes": 156999,
+  "generated": "2026-08-01T01:27:22Z",
+  "range": true,
+  "total": 186,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 156457,
+      "count": 185,
+      "hash": "d1a63316ef3a6970"
+    },
+    "2026-06": {
+      "offset": 156459,
+      "length": 539,
+      "count": 1,
+      "hash": "c8e6069f2aa1c49c"
+    }
+  }
+}

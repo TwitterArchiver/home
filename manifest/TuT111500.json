@@ -2,62 +2,62 @@
   "repo": "TuT111500",
   "account": "TuT111500",
   "source": "https://twitterarchiver.github.io/TuT111500/accounts/TuT111500/wayback_snapshots/index.json",
-  "etag": "\"6a66d660-69fb8\"",
-  "bytes": 434104,
-  "generated": "2026-07-28T13:55:28Z",
+  "etag": "\"6a6b75c9-6a952\"",
+  "bytes": 436562,
+  "generated": "2026-08-01T01:26:57Z",
   "range": true,
   "total": 575,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 66724,
+      "length": 69182,
       "count": 87,
-      "hash": "4cf53f87f1f10f37"
+      "hash": "cd270137566fb1d5"
     },
     "2026-06": {
-      "offset": 66726,
+      "offset": 69184,
       "length": 94537,
       "count": 129,
       "hash": "0ef4495b0a9defdf"
     },
     "2026-05": {
-      "offset": 161264,
+      "offset": 163722,
       "length": 113691,
       "count": 149,
       "hash": "bb20b1fa2a8523dd"
     },
     "2026-04": {
-      "offset": 274956,
+      "offset": 277414,
       "length": 59866,
       "count": 78,
       "hash": "6961a9a6e03ebeaf"
     },
     "2026-03": {
-      "offset": 334823,
+      "offset": 337281,
       "length": 36907,
       "count": 50,
       "hash": "63d6148d25119c39"
     },
     "2026-02": {
-      "offset": 371731,
+      "offset": 374189,
       "length": 24351,
       "count": 33,
       "hash": "d8d38d7982c02196"
     },
     "2026-01": {
-      "offset": 396083,
+      "offset": 398541,
       "length": 36894,
       "count": 47,
       "hash": "87299cf2ba1c4d58"
     },
     "2025-12": {
-      "offset": 432978,
+      "offset": 435436,
       "length": 514,
       "count": 1,
       "hash": "881f2c33ea2a5d78"
     },
     "2025-11": {
-      "offset": 433493,
+      "offset": 435951,
       "length": 610,
       "count": 1,
       "hash": "4c2f4dab97dd28ac"
