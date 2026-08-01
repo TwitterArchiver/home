@@ -1,0 +1,36 @@
+{
+  "repo": "isac8964",
+  "account": "isac8964",
+  "source": "https://twitterarchiver.github.io/isac8964/accounts/isac8964/wayback_snapshots/index.json",
+  "etag": "\"6a6e41ef-4c7b2\"",
+  "bytes": 313266,
+  "generated": "2026-08-01T19:47:05Z",
+  "range": true,
+  "total": 355,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 266671,
+      "count": 303,
+      "hash": "542ecb0e24a51fa0"
+    },
+    "2026-06": {
+      "offset": 266673,
+      "length": 34005,
+      "count": 37,
+      "hash": "bbd34f6780e029ab"
+    },
+    "2026-05": {
+      "offset": 300679,
+      "length": 12046,
+      "count": 14,
+      "hash": "aa35b432cd56e544"
+    },
+    "2025-08": {
+      "offset": 312726,
+      "length": 539,
+      "count": 1,
+      "hash": "857964f6f35f65f7"
+    }
+  }
+}

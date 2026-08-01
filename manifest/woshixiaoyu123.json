@@ -1,0 +1,90 @@
+{
+  "repo": "woshixiaoyu123",
+  "account": "woshixiaoyu123",
+  "source": "https://twitterarchiver.github.io/woshixiaoyu123/accounts/woshixiaoyu123/wayback_snapshots/index.json",
+  "etag": "\"6a6dd6c3-2f1ada\"",
+  "bytes": 3087066,
+  "generated": "2026-08-01T19:47:47Z",
+  "range": true,
+  "total": 3689,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 32555,
+      "count": 38,
+      "hash": "7ef2dc11c0021a0b"
+    },
+    "2026-06": {
+      "offset": 32557,
+      "length": 70034,
+      "count": 83,
+      "hash": "751622fb2b9bb3f8"
+    },
+    "2026-05": {
+      "offset": 102592,
+      "length": 105748,
+      "count": 127,
+      "hash": "296225902bc5236a"
+    },
+    "2026-04": {
+      "offset": 208341,
+      "length": 91449,
+      "count": 111,
+      "hash": "83e0eb2268790312"
+    },
+    "2026-03": {
+      "offset": 299791,
+      "length": 253977,
+      "count": 294,
+      "hash": "6124ce1893193110"
+    },
+    "2026-02": {
+      "offset": 553769,
+      "length": 39473,
+      "count": 46,
+      "hash": "37e9a192ab58fecc"
+    },
+    "2026-01": {
+      "offset": 593243,
+      "length": 200979,
+      "count": 236,
+      "hash": "29eb4e59713deb4f"
+    },
+    "2025-12": {
+      "offset": 794223,
+      "length": 506955,
+      "count": 581,
+      "hash": "203546e162716d92"
+    },
+    "2025-11": {
+      "offset": 1301179,
+      "length": 809597,
+      "count": 962,
+      "hash": "def2749af2f41da2"
+    },
+    "2025-10": {
+      "offset": 2110777,
+      "length": 889624,
+      "count": 1106,
+      "hash": "364de720620139fc"
+    },
+    "2025-09": {
+      "offset": 3000402,
+      "length": 85412,
+      "count": 103,
+      "hash": "00bd723327c0c5d4"
+    },
+    "2025-08": {
+      "offset": 3085815,
+      "length": 723,
+      "count": 1,
+      "hash": "a5b0dcebd1e53c18"
+    },
+    "2025-06": {
+      "offset": 3086539,
+      "length": 526,
+      "count": 1,
+      "hash": "03c7dd0216e6c099"
+    }
+  }
+}

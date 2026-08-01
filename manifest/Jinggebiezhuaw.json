@@ -1,0 +1,48 @@
+{
+  "repo": "Jinggebiezhuaw",
+  "account": "Jinggebiezhuaw",
+  "source": "https://twitterarchiver.github.io/Jinggebiezhuaw/accounts/Jinggebiezhuaw/wayback_snapshots/index.json",
+  "etag": "\"6a6d97b3-b6455\"",
+  "bytes": 746581,
+  "generated": "2026-08-01T19:45:48Z",
+  "range": true,
+  "total": 905,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 294689,
+      "count": 362,
+      "hash": "4c380c65d033d48e"
+    },
+    "2026-06": {
+      "offset": 294691,
+      "length": 136623,
+      "count": 164,
+      "hash": "04f82cb86cd7af07"
+    },
+    "2026-05": {
+      "offset": 431315,
+      "length": 271290,
+      "count": 327,
+      "hash": "7c465a16e19cc724"
+    },
+    "2026-04": {
+      "offset": 702606,
+      "length": 32628,
+      "count": 38,
+      "hash": "989228db46f3da4c"
+    },
+    "2026-03": {
+      "offset": 735235,
+      "length": 5646,
+      "count": 7,
+      "hash": "a0ec5d5446c6d362"
+    },
+    "2026-02": {
+      "offset": 740882,
+      "length": 5698,
+      "count": 7,
+      "hash": "e9b09be7be46792d"
+    }
+  }
+}

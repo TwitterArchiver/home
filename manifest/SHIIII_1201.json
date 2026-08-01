@@ -1,0 +1,78 @@
+{
+  "repo": "SHIIII_1201",
+  "account": "SHIIII_1201",
+  "source": "https://twitterarchiver.github.io/SHIIII_1201/accounts/SHIIII_1201/wayback_snapshots/index.json",
+  "etag": "\"6a6e45f1-1222d8\"",
+  "bytes": 1188568,
+  "generated": "2026-08-01T19:46:16Z",
+  "range": true,
+  "total": 1437,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 155939,
+      "count": 192,
+      "hash": "ddf67fa35f58b110"
+    },
+    "2026-06": {
+      "offset": 155941,
+      "length": 218396,
+      "count": 263,
+      "hash": "cd35d5e9bdc4f6dc"
+    },
+    "2026-05": {
+      "offset": 374338,
+      "length": 292430,
+      "count": 347,
+      "hash": "cb2e536900055145"
+    },
+    "2026-04": {
+      "offset": 666769,
+      "length": 455366,
+      "count": 548,
+      "hash": "90da152dc2f1e6c2"
+    },
+    "2026-03": {
+      "offset": 1122136,
+      "length": 47275,
+      "count": 61,
+      "hash": "ac2161ae52825e92"
+    },
+    "2026-02": {
+      "offset": 1169412,
+      "length": 13706,
+      "count": 18,
+      "hash": "fb6d97ab4e3379e8"
+    },
+    "2025-11": {
+      "offset": 1183119,
+      "length": 681,
+      "count": 1,
+      "hash": "b1633bd8e64387b9"
+    },
+    "2025-05": {
+      "offset": 1183801,
+      "length": 2928,
+      "count": 4,
+      "hash": "f5aee75e213dd347"
+    },
+    "2023-06": {
+      "offset": 1186730,
+      "length": 545,
+      "count": 1,
+      "hash": "7cbcd67b5ba09953"
+    },
+    "2023-01": {
+      "offset": 1187276,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    },
+    "2022-06": {
+      "offset": 1187755,
+      "length": 812,
+      "count": 1,
+      "hash": "1cb5034045bb7668"
+    }
+  }
+}

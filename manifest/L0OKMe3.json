@@ -1,0 +1,18 @@
+{
+  "repo": "L0OKMe3",
+  "account": "L0OKMe3",
+  "source": "https://twitterarchiver.github.io/L0OKMe3/accounts/L0OKMe3/wayback_snapshots/index.json",
+  "etag": "\"6a6dcb78-8f49\"",
+  "bytes": 36681,
+  "generated": "2026-08-01T19:45:50Z",
+  "range": true,
+  "total": 33,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 36679,
+      "count": 33,
+      "hash": "c8db44f7b765231a"
+    }
+  }
+}

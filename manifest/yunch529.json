@@ -1,0 +1,18 @@
+{
+  "repo": "yunch529",
+  "account": "yunch529",
+  "source": "https://twitterarchiver.github.io/yunch529/accounts/yunch529/wayback_snapshots/index.json",
+  "etag": "\"6a6e3e61-80fa\"",
+  "bytes": 33018,
+  "generated": "2026-08-01T19:48:02Z",
+  "range": true,
+  "total": 35,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 33016,
+      "count": 35,
+      "hash": "7a8d5bb446662b23"
+    }
+  }
+}

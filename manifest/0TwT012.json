@@ -1,0 +1,48 @@
+{
+  "repo": "0TwT012",
+  "account": "0TwT012",
+  "source": "https://twitterarchiver.github.io/0TwT012/accounts/0TwT012/wayback_snapshots/index.json",
+  "etag": "\"6a6da557-1d0cf6\"",
+  "bytes": 1903862,
+  "generated": "2026-08-01T19:45:06Z",
+  "range": true,
+  "total": 2140,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 181856,
+      "count": 192,
+      "hash": "6e71b4b96427e552"
+    },
+    "2026-06": {
+      "offset": 181858,
+      "length": 272061,
+      "count": 289,
+      "hash": "535c120817de9d87"
+    },
+    "2026-05": {
+      "offset": 453920,
+      "length": 248660,
+      "count": 270,
+      "hash": "97c89ff4095ee7fd"
+    },
+    "2026-04": {
+      "offset": 702581,
+      "length": 320073,
+      "count": 357,
+      "hash": "801e22df1e137446"
+    },
+    "2026-03": {
+      "offset": 1022655,
+      "length": 579151,
+      "count": 661,
+      "hash": "393cb6521a59786f"
+    },
+    "2026-02": {
+      "offset": 1601807,
+      "length": 302054,
+      "count": 371,
+      "hash": "b2fe618fc8439da7"
+    }
+  }
+}

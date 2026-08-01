@@ -1,0 +1,54 @@
+{
+  "repo": "NNNullptr",
+  "account": "NNNullptr",
+  "source": "https://twitterarchiver.github.io/NNNullptr/accounts/NNNullptr/wayback_snapshots/index.json",
+  "etag": "\"6a6db3b9-d57c1\"",
+  "bytes": 874433,
+  "generated": "2026-08-01T19:46:06Z",
+  "range": true,
+  "total": 1014,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 78710,
+      "count": 87,
+      "hash": "f9c4ec1540bbcba6"
+    },
+    "2026-06": {
+      "offset": 78712,
+      "length": 284705,
+      "count": 324,
+      "hash": "49ed5bd7b20061be"
+    },
+    "2026-05": {
+      "offset": 363418,
+      "length": 248584,
+      "count": 291,
+      "hash": "99ee1d6d2c603943"
+    },
+    "2026-04": {
+      "offset": 612003,
+      "length": 159455,
+      "count": 195,
+      "hash": "8418a1d0df00a0dc"
+    },
+    "2026-03": {
+      "offset": 771459,
+      "length": 101389,
+      "count": 115,
+      "hash": "361a0e3b9d6612c2"
+    },
+    "2025-07": {
+      "offset": 872849,
+      "length": 680,
+      "count": 1,
+      "hash": "afde52002ef23bc5"
+    },
+    "2024-11": {
+      "offset": 873530,
+      "length": 902,
+      "count": 1,
+      "hash": "56c8cf1619d71cb5"
+    }
+  }
+}

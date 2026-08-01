@@ -1,0 +1,48 @@
+{
+  "repo": "thexiexx",
+  "account": "thexiexx",
+  "source": "https://twitterarchiver.github.io/thexiexx/accounts/thexiexx/wayback_snapshots/index.json",
+  "etag": "\"6a6e396d-9318d\"",
+  "bytes": 602509,
+  "generated": "2026-08-01T19:47:39Z",
+  "range": true,
+  "total": 727,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 59029,
+      "count": 72,
+      "hash": "a43d20ac891c367e"
+    },
+    "2026-06": {
+      "offset": 59031,
+      "length": 488374,
+      "count": 588,
+      "hash": "d678a7d53c6a0d88"
+    },
+    "2026-05": {
+      "offset": 547406,
+      "length": 52464,
+      "count": 62,
+      "hash": "0847f84ef4f91be5"
+    },
+    "2026-04": {
+      "offset": 599871,
+      "length": 557,
+      "count": 1,
+      "hash": "1e69ac56c757a9bc"
+    },
+    "2026-02": {
+      "offset": 600429,
+      "length": 1497,
+      "count": 3,
+      "hash": "326df787678e3cb4"
+    },
+    "2026-01": {
+      "offset": 601927,
+      "length": 581,
+      "count": 1,
+      "hash": "e64d1833fb1d83cf"
+    }
+  }
+}

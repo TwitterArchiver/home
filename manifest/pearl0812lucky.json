@@ -1,0 +1,72 @@
+{
+  "repo": "pearl0812lucky",
+  "account": "pearl0812lucky",
+  "source": "https://twitterarchiver.github.io/pearl0812lucky/accounts/pearl0812lucky/wayback_snapshots/index.json",
+  "etag": "\"6a6db95b-2459e2\"",
+  "bytes": 2382306,
+  "generated": "2026-08-01T19:47:29Z",
+  "range": true,
+  "total": 2531,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 183839,
+      "count": 178,
+      "hash": "ecdd6e1c0ee20ef8"
+    },
+    "2026-06": {
+      "offset": 183841,
+      "length": 221267,
+      "count": 215,
+      "hash": "455813459841fd93"
+    },
+    "2026-05": {
+      "offset": 405109,
+      "length": 339905,
+      "count": 341,
+      "hash": "ea68667c8e183403"
+    },
+    "2026-04": {
+      "offset": 745015,
+      "length": 336514,
+      "count": 363,
+      "hash": "9f971c0c9fb04d53"
+    },
+    "2026-03": {
+      "offset": 1081530,
+      "length": 206828,
+      "count": 215,
+      "hash": "c0001ac5621cd573"
+    },
+    "2026-02": {
+      "offset": 1288359,
+      "length": 283785,
+      "count": 306,
+      "hash": "b40fdb09535d8bff"
+    },
+    "2026-01": {
+      "offset": 1572145,
+      "length": 632102,
+      "count": 735,
+      "hash": "c41080b694e8cc26"
+    },
+    "2025-12": {
+      "offset": 2204248,
+      "length": 144623,
+      "count": 147,
+      "hash": "983652ca5274e45d"
+    },
+    "2025-11": {
+      "offset": 2348872,
+      "length": 32348,
+      "count": 30,
+      "hash": "eedd14bfd8783572"
+    },
+    "2025-09": {
+      "offset": 2381221,
+      "length": 1084,
+      "count": 1,
+      "hash": "7795a6166360ee1a"
+    }
+  }
+}

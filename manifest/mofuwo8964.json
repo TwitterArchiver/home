@@ -1,0 +1,54 @@
+{
+  "repo": "mofuwo8964",
+  "account": "mofuwo8964",
+  "source": "https://twitterarchiver.github.io/mofuwo8964/accounts/mofuwo8964/wayback_snapshots/index.json",
+  "etag": "\"6a6da8f9-292dd4\"",
+  "bytes": 2698708,
+  "generated": "2026-08-01T19:47:25Z",
+  "range": true,
+  "total": 2982,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 126755,
+      "count": 137,
+      "hash": "4c6bf4c71aa8d0d2"
+    },
+    "2026-06": {
+      "offset": 126757,
+      "length": 994571,
+      "count": 1148,
+      "hash": "2b7131e568aba91b"
+    },
+    "2026-05": {
+      "offset": 1121329,
+      "length": 387861,
+      "count": 422,
+      "hash": "60639861dfcaf55e"
+    },
+    "2026-04": {
+      "offset": 1509191,
+      "length": 465585,
+      "count": 505,
+      "hash": "93d10c7853a0c20a"
+    },
+    "2026-03": {
+      "offset": 1974777,
+      "length": 673708,
+      "count": 711,
+      "hash": "314f6383c934e5ad"
+    },
+    "2026-02": {
+      "offset": 2648486,
+      "length": 49749,
+      "count": 58,
+      "hash": "9f1a978950769bb7"
+    },
+    "2025-10": {
+      "offset": 2698236,
+      "length": 471,
+      "count": 1,
+      "hash": "b5412d836639528e"
+    }
+  }
+}

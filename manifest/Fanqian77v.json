@@ -1,0 +1,66 @@
+{
+  "repo": "Fanqian77v",
+  "account": "Fanqian77v",
+  "source": "https://twitterarchiver.github.io/Fanqian77v/accounts/Fanqian77v/wayback_snapshots/index.json",
+  "etag": "\"6a6e40a1-e64b4\"",
+  "bytes": 943284,
+  "generated": "2026-08-01T19:45:41Z",
+  "range": true,
+  "total": 1129,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 556489,
+      "count": 695,
+      "hash": "7e16c69c9a9422c6"
+    },
+    "2026-06": {
+      "offset": 556491,
+      "length": 105889,
+      "count": 120,
+      "hash": "582054333ea3bdfa"
+    },
+    "2026-05": {
+      "offset": 662381,
+      "length": 77042,
+      "count": 88,
+      "hash": "2aff6f2f7abf22b1"
+    },
+    "2026-04": {
+      "offset": 739424,
+      "length": 44206,
+      "count": 50,
+      "hash": "8040e27439e7279b"
+    },
+    "2026-03": {
+      "offset": 783631,
+      "length": 89019,
+      "count": 101,
+      "hash": "4a20b6fbfc3fb2d8"
+    },
+    "2026-02": {
+      "offset": 872651,
+      "length": 64226,
+      "count": 70,
+      "hash": "bc7273b4c9406dc8"
+    },
+    "2025-12": {
+      "offset": 936878,
+      "length": 4160,
+      "count": 3,
+      "hash": "7d5a04348339931b"
+    },
+    "2025-11": {
+      "offset": 941039,
+      "length": 1147,
+      "count": 1,
+      "hash": "db64cfd33aeba177"
+    },
+    "2023-12": {
+      "offset": 942187,
+      "length": 1096,
+      "count": 1,
+      "hash": "3c28a3599195fe01"
+    }
+  }
+}

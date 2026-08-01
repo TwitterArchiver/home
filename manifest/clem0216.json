@@ -1,0 +1,42 @@
+{
+  "repo": "clem0216",
+  "account": "clem0216",
+  "source": "https://twitterarchiver.github.io/clem0216/accounts/clem0216/wayback_snapshots/index.json",
+  "etag": "\"6a6e41b0-16c8b4\"",
+  "bytes": 1493172,
+  "generated": "2026-08-01T19:46:54Z",
+  "range": true,
+  "total": 1768,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 3453,
+      "count": 4,
+      "hash": "fe6e1f9c6bd11a3c"
+    },
+    "2026-07": {
+      "offset": 3455,
+      "length": 1445057,
+      "count": 1708,
+      "hash": "06c9c001901c4893"
+    },
+    "2026-06": {
+      "offset": 1448513,
+      "length": 15391,
+      "count": 19,
+      "hash": "83559a8ead6c2067"
+    },
+    "2026-05": {
+      "offset": 1463905,
+      "length": 28787,
+      "count": 36,
+      "hash": "2aaadd79cc75af75"
+    },
+    "2023-01": {
+      "offset": 1492693,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "repo": "pleasehelp070",
+  "account": "pleasehelp070",
+  "source": "https://twitterarchiver.github.io/pleasehelp070/accounts/pleasehelp070/wayback_snapshots/index.json",
+  "etag": "\"6a6dcdfb-14d1e7\"",
+  "bytes": 1364455,
+  "generated": "2026-08-01T19:47:29Z",
+  "range": true,
+  "total": 1632,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 41013,
+      "count": 51,
+      "hash": "a1d014245ded677d"
+    },
+    "2026-05": {
+      "offset": 41015,
+      "length": 611374,
+      "count": 720,
+      "hash": "9522c81697ed3d3f"
+    },
+    "2026-04": {
+      "offset": 652390,
+      "length": 545457,
+      "count": 647,
+      "hash": "bf14c8ac4222a9ef"
+    },
+    "2026-03": {
+      "offset": 1197848,
+      "length": 161261,
+      "count": 206,
+      "hash": "7c7ceb1609a493b5"
+    },
+    "2026-02": {
+      "offset": 1359110,
+      "length": 1435,
+      "count": 3,
+      "hash": "6b8de24794361f62"
+    },
+    "2025-11": {
+      "offset": 1360546,
+      "length": 510,
+      "count": 1,
+      "hash": "064947de4d2898e6"
+    },
+    "2025-08": {
+      "offset": 1361057,
+      "length": 456,
+      "count": 1,
+      "hash": "57d7a91e863c92e6"
+    },
+    "2025-04": {
+      "offset": 1361514,
+      "length": 844,
+      "count": 1,
+      "hash": "7e9992fb48f9c6fa"
+    },
+    "2024-04": {
+      "offset": 1362359,
+      "length": 1288,
+      "count": 1,
+      "hash": "fe3a43edc2e6b503"
+    },
+    "2022-06": {
+      "offset": 1363648,
+      "length": 806,
+      "count": 1,
+      "hash": "d867e10692737805"
+    }
+  }
+}

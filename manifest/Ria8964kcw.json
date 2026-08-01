@@ -1,0 +1,78 @@
+{
+  "repo": "Ria8964kcw",
+  "account": "Ria8964kcw",
+  "source": "https://twitterarchiver.github.io/Ria8964kcw/accounts/Ria8964kcw/wayback_snapshots/index.json",
+  "etag": "\"6a6e2719-3da1be\"",
+  "bytes": 4039102,
+  "generated": "2026-08-01T19:46:15Z",
+  "range": true,
+  "total": 4932,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 380863,
+      "count": 450,
+      "hash": "97c0d32274e88217"
+    },
+    "2026-06": {
+      "offset": 380865,
+      "length": 1791159,
+      "count": 2146,
+      "hash": "dcdb4629969f4158"
+    },
+    "2026-05": {
+      "offset": 2172025,
+      "length": 1857610,
+      "count": 2321,
+      "hash": "bdf0a4ff04f073f2"
+    },
+    "2026-04": {
+      "offset": 4029636,
+      "length": 3632,
+      "count": 6,
+      "hash": "5eee512b45c0654b"
+    },
+    "2026-03": {
+      "offset": 4033269,
+      "length": 1078,
+      "count": 2,
+      "hash": "0f39598018268d47"
+    },
+    "2026-02": {
+      "offset": 4034348,
+      "length": 740,
+      "count": 1,
+      "hash": "7b985d11860a6a6e"
+    },
+    "2025-11": {
+      "offset": 4035089,
+      "length": 729,
+      "count": 1,
+      "hash": "79325312d1da696c"
+    },
+    "2025-10": {
+      "offset": 4035819,
+      "length": 1314,
+      "count": 2,
+      "hash": "fe61e48feb0cbc71"
+    },
+    "2025-06": {
+      "offset": 4037134,
+      "length": 461,
+      "count": 1,
+      "hash": "60970628af9e151f"
+    },
+    "2025-04": {
+      "offset": 4037596,
+      "length": 913,
+      "count": 1,
+      "hash": "108683f6b5f6f7fc"
+    },
+    "2024-12": {
+      "offset": 4038510,
+      "length": 591,
+      "count": 1,
+      "hash": "8293836cc41c6ffc"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "repo": "clcqzxc",
+  "account": "clcqzxc",
+  "source": "https://twitterarchiver.github.io/clcqzxc/accounts/clcqzxc/wayback_snapshots/index.json",
+  "etag": "\"6a6e3e60-80ff8\"",
+  "bytes": 528376,
+  "generated": "2026-08-01T19:46:53Z",
+  "range": true,
+  "total": 612,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 8100,
+      "count": 10,
+      "hash": "17b0197b5b4a5116"
+    },
+    "2026-06": {
+      "offset": 8102,
+      "length": 86091,
+      "count": 106,
+      "hash": "2a09194532dba59a"
+    },
+    "2026-05": {
+      "offset": 94194,
+      "length": 119843,
+      "count": 138,
+      "hash": "4b289de6acf7dca1"
+    },
+    "2026-04": {
+      "offset": 214038,
+      "length": 292425,
+      "count": 334,
+      "hash": "9df1f45127b2db3c"
+    },
+    "2026-03": {
+      "offset": 506464,
+      "length": 16612,
+      "count": 18,
+      "hash": "535531b69ab2f264"
+    },
+    "2026-02": {
+      "offset": 523077,
+      "length": 1997,
+      "count": 2,
+      "hash": "f6ac232aa0d38bc5"
+    },
+    "2024-12": {
+      "offset": 525075,
+      "length": 2173,
+      "count": 3,
+      "hash": "a52087af7ef19ea3"
+    },
+    "2023-04": {
+      "offset": 527249,
+      "length": 1126,
+      "count": 1,
+      "hash": "829bdbf5acfe1a8f"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "repo": "xiaotunovo0",
+  "account": "xiaotunovo0",
+  "source": "https://twitterarchiver.github.io/xiaotunovo0/accounts/xiaotunovo0/wayback_snapshots/index.json",
+  "etag": "\"6a6e3f27-a87b\"",
+  "bytes": 43131,
+  "generated": "2026-08-01T19:47:48Z",
+  "range": true,
+  "total": 53,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 43129,
+      "count": 53,
+      "hash": "b5d6911278ad426b"
+    }
+  }
+}

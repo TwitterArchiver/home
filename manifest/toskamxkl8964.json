@@ -1,0 +1,18 @@
+{
+  "repo": "toskamxkl8964",
+  "account": "toskamxkl8964",
+  "source": "https://twitterarchiver.github.io/toskamxkl8964/accounts/toskamxkl8964/wayback_snapshots/index.json",
+  "etag": "\"6a6e4018-2781\"",
+  "bytes": 10113,
+  "generated": "2026-08-01T19:47:41Z",
+  "range": true,
+  "total": 13,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 10111,
+      "count": 13,
+      "hash": "23033c8bb3c30e27"
+    }
+  }
+}

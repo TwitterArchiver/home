@@ -1,0 +1,90 @@
+{
+  "repo": "scutigera_kuma",
+  "account": "scutigera_kuma",
+  "source": "https://twitterarchiver.github.io/scutigera_kuma/accounts/scutigera_kuma/wayback_snapshots/index.json",
+  "etag": "\"6a6dc0b2-a0198\"",
+  "bytes": 655768,
+  "generated": "2026-08-01T19:47:33Z",
+  "range": true,
+  "total": 798,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 39237,
+      "count": 50,
+      "hash": "00a800c77a58bc25"
+    },
+    "2026-06": {
+      "offset": 39239,
+      "length": 43839,
+      "count": 55,
+      "hash": "ceb79057595c2d3f"
+    },
+    "2026-05": {
+      "offset": 83079,
+      "length": 118582,
+      "count": 142,
+      "hash": "1932e91ecf4a325f"
+    },
+    "2026-04": {
+      "offset": 201662,
+      "length": 125314,
+      "count": 152,
+      "hash": "e491fd475219a4ef"
+    },
+    "2026-03": {
+      "offset": 326977,
+      "length": 75909,
+      "count": 91,
+      "hash": "72a791abe317d23e"
+    },
+    "2026-02": {
+      "offset": 402887,
+      "length": 75125,
+      "count": 85,
+      "hash": "754c913fe817ebb2"
+    },
+    "2026-01": {
+      "offset": 478013,
+      "length": 86903,
+      "count": 107,
+      "hash": "7d8786ee90593770"
+    },
+    "2025-12": {
+      "offset": 564917,
+      "length": 87831,
+      "count": 111,
+      "hash": "44abb83d1a77d71f"
+    },
+    "2025-10": {
+      "offset": 652749,
+      "length": 502,
+      "count": 1,
+      "hash": "f16d65855992dc85"
+    },
+    "2025-08": {
+      "offset": 653252,
+      "length": 431,
+      "count": 1,
+      "hash": "27183e6224933512"
+    },
+    "2025-07": {
+      "offset": 653684,
+      "length": 439,
+      "count": 1,
+      "hash": "b5baca8038bc1069"
+    },
+    "2025-04": {
+      "offset": 654124,
+      "length": 571,
+      "count": 1,
+      "hash": "30869cfa9951a281"
+    },
+    "2023-01": {
+      "offset": 654696,
+      "length": 1071,
+      "count": 1,
+      "hash": "6478f84ed774abaf"
+    }
+  }
+}

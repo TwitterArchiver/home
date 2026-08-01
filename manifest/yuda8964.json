@@ -1,0 +1,18 @@
+{
+  "repo": "yuda8964",
+  "account": "yuda8964",
+  "source": "https://twitterarchiver.github.io/yuda8964/accounts/yuda8964/wayback_snapshots/index.json",
+  "etag": "\"6a6e3d37-bf38\"",
+  "bytes": 48952,
+  "generated": "2026-08-01T19:47:58Z",
+  "range": true,
+  "total": 56,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 48950,
+      "count": 56,
+      "hash": "b5962dde3b637c47"
+    }
+  }
+}
