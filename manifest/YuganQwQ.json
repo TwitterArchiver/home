@@ -1,0 +1,60 @@
+{
+  "repo": "YuganQwQ",
+  "account": "YuganQwQ",
+  "source": "https://twitterarchiver.github.io/YuganQwQ/accounts/YuganQwQ/wayback_snapshots/index.json",
+  "etag": "\"6a6d5fb9-7bdaf\"",
+  "bytes": 507311,
+  "generated": "2026-08-01T16:40:33Z",
+  "range": true,
+  "total": 555,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 471773,
+      "count": 514,
+      "hash": "6b762d4554b8a74c"
+    },
+    "2026-06": {
+      "offset": 471775,
+      "length": 28306,
+      "count": 31,
+      "hash": "265aa18a3c0a5780"
+    },
+    "2026-05": {
+      "offset": 500082,
+      "length": 4276,
+      "count": 5,
+      "hash": "0194563c10f3301a"
+    },
+    "2026-04": {
+      "offset": 504359,
+      "length": 482,
+      "count": 1,
+      "hash": "2c079909440528db"
+    },
+    "2025-12": {
+      "offset": 504842,
+      "length": 465,
+      "count": 1,
+      "hash": "9a8e4eac81bcad3c"
+    },
+    "2025-10": {
+      "offset": 505308,
+      "length": 583,
+      "count": 1,
+      "hash": "d8425b3bc9d6b71f"
+    },
+    "2025-04": {
+      "offset": 505892,
+      "length": 844,
+      "count": 1,
+      "hash": "3c264dc28f71591e"
+    },
+    "2024-11": {
+      "offset": 506737,
+      "length": 573,
+      "count": 1,
+      "hash": "8c0a0ad79cd5e881"
+    }
+  }
+}

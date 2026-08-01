@@ -1,0 +1,60 @@
+{
+  "repo": "liwanmiaohy",
+  "account": "liwanmiaohy",
+  "source": "https://twitterarchiver.github.io/liwanmiaohy/accounts/liwanmiaohy/wayback_snapshots/index.json",
+  "etag": "\"6a6d8ce0-291f52\"",
+  "bytes": 2694994,
+  "generated": "2026-08-01T16:40:56Z",
+  "range": true,
+  "total": 2948,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 101563,
+      "count": 100,
+      "hash": "fc50f7b7c17cc49e"
+    },
+    "2026-06": {
+      "offset": 101565,
+      "length": 305246,
+      "count": 303,
+      "hash": "130b5408f0b9c00e"
+    },
+    "2026-05": {
+      "offset": 406812,
+      "length": 476323,
+      "count": 470,
+      "hash": "22bcdcf598001e79"
+    },
+    "2026-04": {
+      "offset": 883136,
+      "length": 1541684,
+      "count": 1752,
+      "hash": "9867e70742007caa"
+    },
+    "2026-03": {
+      "offset": 2424821,
+      "length": 267306,
+      "count": 319,
+      "hash": "bb4cd5f69868ee32"
+    },
+    "2026-02": {
+      "offset": 2692128,
+      "length": 1411,
+      "count": 2,
+      "hash": "f935c5fcf04dacf9"
+    },
+    "2025-11": {
+      "offset": 2693540,
+      "length": 941,
+      "count": 1,
+      "hash": "72e9a5b4f0e05bca"
+    },
+    "2025-05": {
+      "offset": 2694482,
+      "length": 511,
+      "count": 1,
+      "hash": "b094e26b1acb8415"
+    }
+  }
+}

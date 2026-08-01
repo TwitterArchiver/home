@@ -2,17 +2,17 @@
   "repo": "Texiusizhichuan",
   "account": "Texiusizhichuan",
   "source": "https://twitterarchiver.github.io/Texiusizhichuan/accounts/Texiusizhichuan/wayback_snapshots/index.json",
-  "etag": "\"6a6b73db-6258\"",
-  "bytes": 25176,
-  "generated": "2026-08-01T01:26:56Z",
+  "etag": "\"6a6d85ad-8ad4\"",
+  "bytes": 35540,
+  "generated": "2026-08-01T16:40:22Z",
   "range": true,
-  "total": 31,
+  "total": 44,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 25174,
-      "count": 31,
-      "hash": "0c2c704d0f5c8bfc"
+      "length": 35538,
+      "count": 44,
+      "hash": "83819d198bb30909"
     }
   }
 }

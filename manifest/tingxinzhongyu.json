@@ -1,0 +1,72 @@
+{
+  "repo": "tingxinzhongyu",
+  "account": "tingxinzhongyu",
+  "source": "https://twitterarchiver.github.io/tingxinzhongyu/accounts/tingxinzhongyu/wayback_snapshots/index.json",
+  "etag": "\"6a6d9a53-41a2e3\"",
+  "bytes": 4301539,
+  "generated": "2026-08-01T16:41:16Z",
+  "range": true,
+  "total": 5485,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 32098,
+      "count": 38,
+      "hash": "d5cd6c4748874e70"
+    },
+    "2026-06": {
+      "offset": 32100,
+      "length": 252659,
+      "count": 305,
+      "hash": "3c8dca58c8875e16"
+    },
+    "2026-05": {
+      "offset": 284760,
+      "length": 214507,
+      "count": 248,
+      "hash": "c4b1bc183821d8b4"
+    },
+    "2026-04": {
+      "offset": 499268,
+      "length": 106418,
+      "count": 138,
+      "hash": "e95afd8f117a662c"
+    },
+    "2026-03": {
+      "offset": 605687,
+      "length": 542563,
+      "count": 689,
+      "hash": "7dfd51adea3c0385"
+    },
+    "2026-02": {
+      "offset": 1148251,
+      "length": 2522109,
+      "count": 3278,
+      "hash": "5c748dfae21d212c"
+    },
+    "2026-01": {
+      "offset": 3670361,
+      "length": 609811,
+      "count": 760,
+      "hash": "7078bd8839ce95c0"
+    },
+    "2025-12": {
+      "offset": 4280173,
+      "length": 17660,
+      "count": 24,
+      "hash": "a319a502bc5d2cde"
+    },
+    "2025-11": {
+      "offset": 4297834,
+      "length": 3227,
+      "count": 4,
+      "hash": "2f66f76eb8fce534"
+    },
+    "2025-08": {
+      "offset": 4301062,
+      "length": 476,
+      "count": 1,
+      "hash": "d8aca7339a4cf955"
+    }
+  }
+}

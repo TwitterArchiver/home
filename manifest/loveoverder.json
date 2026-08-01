@@ -1,0 +1,102 @@
+{
+  "repo": "loveoverder",
+  "account": "loveoverder",
+  "source": "https://twitterarchiver.github.io/loveoverder/accounts/loveoverder/wayback_snapshots/index.json",
+  "etag": "\"6a6d6257-2f70c5\"",
+  "bytes": 3109061,
+  "generated": "2026-08-01T16:40:57Z",
+  "range": true,
+  "total": 3656,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 3091265,
+      "count": 3627,
+      "hash": "2a206e74cdb9ab4d"
+    },
+    "2026-06": {
+      "offset": 3091267,
+      "length": 3960,
+      "count": 7,
+      "hash": "c84839de0d9743dc"
+    },
+    "2026-05": {
+      "offset": 3095228,
+      "length": 3410,
+      "count": 5,
+      "hash": "91dabffc9ef0d146"
+    },
+    "2026-04": {
+      "offset": 3098639,
+      "length": 1845,
+      "count": 2,
+      "hash": "ebb8736a4f4f687e"
+    },
+    "2026-03": {
+      "offset": 3100485,
+      "length": 636,
+      "count": 1,
+      "hash": "b7a8a3c9b15430c1"
+    },
+    "2026-01": {
+      "offset": 3101122,
+      "length": 1417,
+      "count": 3,
+      "hash": "ddcd5c006b08600a"
+    },
+    "2025-12": {
+      "offset": 3102540,
+      "length": 775,
+      "count": 1,
+      "hash": "943c64118393a080"
+    },
+    "2025-11": {
+      "offset": 3103316,
+      "length": 959,
+      "count": 2,
+      "hash": "66b1824ea1dc9730"
+    },
+    "2025-08": {
+      "offset": 3104276,
+      "length": 456,
+      "count": 1,
+      "hash": "f65a79793804e829"
+    },
+    "2025-06": {
+      "offset": 3104733,
+      "length": 1051,
+      "count": 1,
+      "hash": "a39ea0dcd1071b3f"
+    },
+    "2025-01": {
+      "offset": 3105785,
+      "length": 484,
+      "count": 1,
+      "hash": "7918872d2e9f6b41"
+    },
+    "2024-09": {
+      "offset": 3106270,
+      "length": 447,
+      "count": 1,
+      "hash": "9f92317cdb9697f2"
+    },
+    "2024-03": {
+      "offset": 3106718,
+      "length": 514,
+      "count": 1,
+      "hash": "6b1c9342ac675df7"
+    },
+    "2023-01": {
+      "offset": 3107233,
+      "length": 1065,
+      "count": 2,
+      "hash": "a07423ce46ee01d4"
+    },
+    "2021-08": {
+      "offset": 3108299,
+      "length": 761,
+      "count": 1,
+      "hash": "721429aadbf2b5b6"
+    }
+  }
+}

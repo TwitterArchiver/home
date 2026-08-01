@@ -1,0 +1,42 @@
+{
+  "repo": "XIAOMAIMI_miao",
+  "account": "XIAOMAIMI_miao",
+  "source": "https://twitterarchiver.github.io/XIAOMAIMI_miao/accounts/XIAOMAIMI_miao/wayback_snapshots/index.json",
+  "etag": "\"6a6d7ec7-38ed23\"",
+  "bytes": 3730723,
+  "generated": "2026-08-01T16:40:30Z",
+  "range": true,
+  "total": 4559,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 516014,
+      "count": 629,
+      "hash": "3a4513380bcd183b"
+    },
+    "2026-06": {
+      "offset": 516016,
+      "length": 1056595,
+      "count": 1260,
+      "hash": "ecc5d5ba9af6499e"
+    },
+    "2026-05": {
+      "offset": 1572612,
+      "length": 1242756,
+      "count": 1546,
+      "hash": "5512087dd2d2e318"
+    },
+    "2026-04": {
+      "offset": 2815369,
+      "length": 914791,
+      "count": 1123,
+      "hash": "7db1356c7fe2bb72"
+    },
+    "2023-10": {
+      "offset": 3730161,
+      "length": 561,
+      "count": 1,
+      "hash": "0988e5d075167ff8"
+    }
+  }
+}

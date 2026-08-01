@@ -1,0 +1,54 @@
+{
+  "repo": "Oz_Garlandd",
+  "account": "Oz_Garlandd",
+  "source": "https://twitterarchiver.github.io/Oz_Garlandd/accounts/Oz_Garlandd/wayback_snapshots/index.json",
+  "etag": "\"6a6d6c31-3ea3c9\"",
+  "bytes": 4105161,
+  "generated": "2026-08-01T16:40:09Z",
+  "range": true,
+  "total": 4827,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 449775,
+      "count": 496,
+      "hash": "a8eccf657c183cfc"
+    },
+    "2026-06": {
+      "offset": 449777,
+      "length": 939459,
+      "count": 1105,
+      "hash": "f37663d0d4324200"
+    },
+    "2026-05": {
+      "offset": 1389237,
+      "length": 1364946,
+      "count": 1613,
+      "hash": "59876f6f1051d125"
+    },
+    "2026-04": {
+      "offset": 2754184,
+      "length": 859779,
+      "count": 1010,
+      "hash": "85e0aa986ddabb6e"
+    },
+    "2026-03": {
+      "offset": 3613964,
+      "length": 488991,
+      "count": 600,
+      "hash": "19f1bbf73af0be51"
+    },
+    "2026-02": {
+      "offset": 4102956,
+      "length": 1725,
+      "count": 2,
+      "hash": "0e7a81cc2b864ccd"
+    },
+    "2023-01": {
+      "offset": 4104682,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

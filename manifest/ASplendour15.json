@@ -1,0 +1,48 @@
+{
+  "repo": "ASplendour15",
+  "account": "ASplendour15",
+  "source": "https://twitterarchiver.github.io/ASplendour15/accounts/ASplendour15/wayback_snapshots/index.json",
+  "etag": "\"6a6d6990-3de19\"",
+  "bytes": 253465,
+  "generated": "2026-08-01T16:39:26Z",
+  "range": true,
+  "total": 275,
+  "months": {
+    "2026-04": {
+      "offset": 1,
+      "length": 202836,
+      "count": 218,
+      "hash": "e7f18f22d20b49f4"
+    },
+    "2026-03": {
+      "offset": 202838,
+      "length": 5330,
+      "count": 7,
+      "hash": "1696b6dd7094a2ff"
+    },
+    "2026-02": {
+      "offset": 208169,
+      "length": 1263,
+      "count": 1,
+      "hash": "86f5fe8a43adf1b9"
+    },
+    "2026-01": {
+      "offset": 209433,
+      "length": 2554,
+      "count": 3,
+      "hash": "5b99f9fba0df332c"
+    },
+    "2025-12": {
+      "offset": 211988,
+      "length": 827,
+      "count": 1,
+      "hash": "71d28d6d270c26fc"
+    },
+    "2025-06": {
+      "offset": 212816,
+      "length": 40648,
+      "count": 45,
+      "hash": "e8611f174f23d9c6"
+    }
+  }
+}

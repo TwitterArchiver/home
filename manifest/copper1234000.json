@@ -1,0 +1,72 @@
+{
+  "repo": "copper1234000",
+  "account": "copper1234000",
+  "source": "https://twitterarchiver.github.io/copper1234000/accounts/copper1234000/wayback_snapshots/index.json",
+  "etag": "\"6a6d8a01-a7308d\"",
+  "bytes": 10956941,
+  "generated": "2026-08-01T16:40:44Z",
+  "range": true,
+  "total": 13064,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 867739,
+      "count": 1022,
+      "hash": "f9e95ced46f09dac"
+    },
+    "2026-06": {
+      "offset": 867741,
+      "length": 1634631,
+      "count": 1993,
+      "hash": "c77f55705ca8b680"
+    },
+    "2026-05": {
+      "offset": 2502373,
+      "length": 1316327,
+      "count": 1580,
+      "hash": "807fb8220e47d170"
+    },
+    "2026-04": {
+      "offset": 3818701,
+      "length": 1266257,
+      "count": 1494,
+      "hash": "68a6aa4b5c610233"
+    },
+    "2026-03": {
+      "offset": 5084959,
+      "length": 1761081,
+      "count": 2075,
+      "hash": "344fc88d9daf4cce"
+    },
+    "2026-02": {
+      "offset": 6846041,
+      "length": 727061,
+      "count": 828,
+      "hash": "00f2b5b94eaa3d0f"
+    },
+    "2026-01": {
+      "offset": 7573103,
+      "length": 880452,
+      "count": 1056,
+      "hash": "314c3c99dbb4f918"
+    },
+    "2025-12": {
+      "offset": 8453556,
+      "length": 1186361,
+      "count": 1438,
+      "hash": "9466d484fd8fdb42"
+    },
+    "2025-11": {
+      "offset": 9639918,
+      "length": 1308401,
+      "count": 1571,
+      "hash": "b75147b5c647e2f9"
+    },
+    "2025-10": {
+      "offset": 10948320,
+      "length": 8620,
+      "count": 7,
+      "hash": "97954993fbc9a849"
+    }
+  }
+}

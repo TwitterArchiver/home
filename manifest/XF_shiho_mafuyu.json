@@ -1,0 +1,60 @@
+{
+  "repo": "XF_shiho_mafuyu",
+  "account": "XF_shiho_mafuyu",
+  "source": "https://twitterarchiver.github.io/XF_shiho_mafuyu/accounts/XF_shiho_mafuyu/wayback_snapshots/index.json",
+  "etag": "\"6a6d91ee-114aae\"",
+  "bytes": 1133230,
+  "generated": "2026-08-01T16:40:26Z",
+  "range": true,
+  "total": 1369,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 389787,
+      "count": 471,
+      "hash": "4fbea6cf92ec107e"
+    },
+    "2026-06": {
+      "offset": 389789,
+      "length": 550566,
+      "count": 667,
+      "hash": "7b2c1bc78f72c673"
+    },
+    "2026-05": {
+      "offset": 940356,
+      "length": 184654,
+      "count": 222,
+      "hash": "0b3a78f225bc2ab5"
+    },
+    "2026-04": {
+      "offset": 1125011,
+      "length": 4984,
+      "count": 5,
+      "hash": "fb541e5f448dec5f"
+    },
+    "2026-03": {
+      "offset": 1129996,
+      "length": 1036,
+      "count": 1,
+      "hash": "2e926d40dc733cc8"
+    },
+    "2024-10": {
+      "offset": 1131033,
+      "length": 429,
+      "count": 1,
+      "hash": "619df729f32e73fc"
+    },
+    "2024-07": {
+      "offset": 1131463,
+      "length": 438,
+      "count": 1,
+      "hash": "adaaac5b671ad0f5"
+    },
+    "2024-05": {
+      "offset": 1131902,
+      "length": 1327,
+      "count": 1,
+      "hash": "6c4a5d5f17e665fb"
+    }
+  }
+}

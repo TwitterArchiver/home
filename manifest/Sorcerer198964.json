@@ -2,80 +2,86 @@
   "repo": "Sorcerer198964",
   "account": "Sorcerer198964",
   "source": "https://twitterarchiver.github.io/Sorcerer198964/accounts/Sorcerer198964/wayback_snapshots/index.json",
-  "etag": "\"6a6ae336-494b76\"",
-  "bytes": 4803446,
-  "generated": "2026-08-01T01:26:51Z",
+  "etag": "\"6a6e0f46-4b3440\"",
+  "bytes": 4928576,
+  "generated": "2026-08-01T16:40:17Z",
   "range": true,
-  "total": 4987,
+  "total": 5126,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 575967,
-      "count": 584,
-      "hash": "2a46341be06ff954"
+      "length": 700530,
+      "count": 722,
+      "hash": "11b5c9e9c4a40933"
     },
     "2026-06": {
-      "offset": 575969,
+      "offset": 700532,
       "length": 1135116,
       "count": 1166,
       "hash": "7948cecbc81b2617"
     },
     "2026-05": {
-      "offset": 1711086,
+      "offset": 1835649,
       "length": 1752402,
       "count": 1832,
       "hash": "9adf0625c312f755"
     },
     "2026-04": {
-      "offset": 3463489,
+      "offset": 3588052,
       "length": 1330583,
       "count": 1395,
       "hash": "3ab544550331ed86"
     },
     "2026-03": {
-      "offset": 4794073,
+      "offset": 4918636,
       "length": 2528,
       "count": 2,
       "hash": "023979a45589723c"
     },
     "2026-02": {
-      "offset": 4796602,
+      "offset": 4921165,
       "length": 504,
       "count": 1,
       "hash": "b55c2db4b770f054"
     },
     "2026-01": {
-      "offset": 4797107,
+      "offset": 4921670,
       "length": 1246,
       "count": 1,
       "hash": "f8c011a5b0fcec8b"
     },
     "2025-10": {
-      "offset": 4798354,
+      "offset": 4922917,
       "length": 1824,
       "count": 2,
       "hash": "48dcee8bab1d39e8"
     },
     "2025-07": {
-      "offset": 4800179,
+      "offset": 4924742,
       "length": 946,
       "count": 1,
       "hash": "8d7cbd47b7534910"
     },
     "2025-04": {
-      "offset": 4801126,
+      "offset": 4925689,
       "length": 1248,
       "count": 1,
       "hash": "bbc1e7960890d663"
     },
     "2023-01": {
-      "offset": 4802375,
+      "offset": 4926938,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"
     },
+    "2022-11": {
+      "offset": 4927417,
+      "length": 566,
+      "count": 1,
+      "hash": "ec68f7de9bc8bd0f"
+    },
     "2022-03": {
-      "offset": 4802854,
+      "offset": 4927984,
       "length": 591,
       "count": 1,
       "hash": "bab3807f8f0a8f0a"
