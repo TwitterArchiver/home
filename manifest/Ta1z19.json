@@ -1,0 +1,48 @@
+{
+  "repo": "Ta1z19",
+  "account": "Ta1z19",
+  "source": "https://twitterarchiver.github.io/Ta1z19/accounts/Ta1z19/wayback_snapshots/index.json",
+  "etag": "\"6a6f384e-13b38b\"",
+  "bytes": 1291147,
+  "generated": "2026-08-02T12:39:27Z",
+  "range": true,
+  "total": 1634,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 170837,
+      "count": 215,
+      "hash": "583d54420b18d313"
+    },
+    "2026-06": {
+      "offset": 170839,
+      "length": 926011,
+      "count": 1188,
+      "hash": "cc1ee319fbcce613"
+    },
+    "2026-05": {
+      "offset": 1096851,
+      "length": 191422,
+      "count": 227,
+      "hash": "47606e24640406dc"
+    },
+    "2026-04": {
+      "offset": 1288274,
+      "length": 1285,
+      "count": 2,
+      "hash": "cbc519d0ffcfa8f8"
+    },
+    "2025-11": {
+      "offset": 1289560,
+      "length": 548,
+      "count": 1,
+      "hash": "9c01c8eca26b5a11"
+    },
+    "2025-06": {
+      "offset": 1290109,
+      "length": 1037,
+      "count": 1,
+      "hash": "a6f0cd8918fb96d1"
+    }
+  }
+}

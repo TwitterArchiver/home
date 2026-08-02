@@ -1,0 +1,78 @@
+{
+  "repo": "Bzg1680475",
+  "account": "Bzg1680475",
+  "source": "https://twitterarchiver.github.io/Bzg1680475/accounts/Bzg1680475/wayback_snapshots/index.json",
+  "etag": "\"6a6f3696-bf33c\"",
+  "bytes": 783164,
+  "generated": "2026-08-02T12:37:57Z",
+  "range": true,
+  "total": 912,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 21129,
+      "count": 24,
+      "hash": "b3d639a03d5aed74"
+    },
+    "2026-07": {
+      "offset": 21131,
+      "length": 720339,
+      "count": 840,
+      "hash": "c321a1185412e3d4"
+    },
+    "2026-06": {
+      "offset": 741471,
+      "length": 15160,
+      "count": 17,
+      "hash": "27652b86921a96c7"
+    },
+    "2026-04": {
+      "offset": 756632,
+      "length": 1614,
+      "count": 3,
+      "hash": "ed587009b36dbc26"
+    },
+    "2026-03": {
+      "offset": 758247,
+      "length": 1037,
+      "count": 2,
+      "hash": "83a9dc31b7fd1f3f"
+    },
+    "2026-02": {
+      "offset": 759285,
+      "length": 663,
+      "count": 1,
+      "hash": "a195361410d9bba2"
+    },
+    "2025-05": {
+      "offset": 759949,
+      "length": 504,
+      "count": 1,
+      "hash": "b2ff3c1ddee32f3b"
+    },
+    "2025-01": {
+      "offset": 760454,
+      "length": 1976,
+      "count": 2,
+      "hash": "5d0ee43976802832"
+    },
+    "2024-06": {
+      "offset": 762431,
+      "length": 12649,
+      "count": 13,
+      "hash": "0bbd202bf029deb1"
+    },
+    "2024-05": {
+      "offset": 775081,
+      "length": 7287,
+      "count": 8,
+      "hash": "41577de1a116bd12"
+    },
+    "2022-12": {
+      "offset": 782369,
+      "length": 794,
+      "count": 1,
+      "hash": "0b2fe5574998ea70"
+    }
+  }
+}

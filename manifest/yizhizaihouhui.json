@@ -1,0 +1,42 @@
+{
+  "repo": "yizhizaihouhui",
+  "account": "yizhizaihouhui",
+  "source": "https://twitterarchiver.github.io/yizhizaihouhui/accounts/yizhizaihouhui/wayback_snapshots/index.json",
+  "etag": "\"6a6f372a-22e8d\"",
+  "bytes": 142989,
+  "generated": "2026-08-02T12:41:36Z",
+  "range": true,
+  "total": 155,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 138021,
+      "count": 150,
+      "hash": "d601e49a5ea84bb3"
+    },
+    "2026-06": {
+      "offset": 138023,
+      "length": 1499,
+      "count": 2,
+      "hash": "bae1d0bb27dfb27e"
+    },
+    "2026-05": {
+      "offset": 139523,
+      "length": 1190,
+      "count": 1,
+      "hash": "0a94664505f1f883"
+    },
+    "2026-04": {
+      "offset": 140714,
+      "length": 1130,
+      "count": 1,
+      "hash": "0818ad0086218f8a"
+    },
+    "2026-03": {
+      "offset": 141845,
+      "length": 1143,
+      "count": 1,
+      "hash": "8e64b7de770caed8"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "repo": "AngelMayLies",
+  "account": "AngelMayLies",
+  "source": "https://twitterarchiver.github.io/AngelMayLies/accounts/AngelMayLies/wayback_snapshots/index.json",
+  "etag": "\"6a6f37c9-7eab8\"",
+  "bytes": 518840,
+  "generated": "2026-08-02T12:37:49Z",
+  "range": true,
+  "total": 606,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 91508,
+      "count": 104,
+      "hash": "905f3b0b3f122cb1"
+    },
+    "2026-07": {
+      "offset": 91510,
+      "length": 425239,
+      "count": 500,
+      "hash": "0d578b42122079ae"
+    },
+    "2026-06": {
+      "offset": 516750,
+      "length": 1053,
+      "count": 1,
+      "hash": "f5ebb4d7712f1b26"
+    },
+    "2026-05": {
+      "offset": 517804,
+      "length": 1035,
+      "count": 1,
+      "hash": "0b7e4f1a85b04a30"
+    }
+  }
+}

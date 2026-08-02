@@ -1,0 +1,84 @@
+{
+  "repo": "RainEngine2026",
+  "account": "RainEngine2026",
+  "source": "https://twitterarchiver.github.io/RainEngine2026/accounts/RainEngine2026/wayback_snapshots/index.json",
+  "etag": "\"6a6f3873-b6439\"",
+  "bytes": 746553,
+  "generated": "2026-08-02T12:39:02Z",
+  "range": true,
+  "total": 902,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 19455,
+      "count": 23,
+      "hash": "21a40eb5eeb63cd8"
+    },
+    "2026-07": {
+      "offset": 19457,
+      "length": 429876,
+      "count": 504,
+      "hash": "1ce0c4e45eb4ed4c"
+    },
+    "2026-06": {
+      "offset": 449334,
+      "length": 1579,
+      "count": 3,
+      "hash": "c17aac80614471f0"
+    },
+    "2026-05": {
+      "offset": 450914,
+      "length": 1057,
+      "count": 2,
+      "hash": "7e710bfefa2f3d86"
+    },
+    "2026-04": {
+      "offset": 451972,
+      "length": 252955,
+      "count": 321,
+      "hash": "a9455e2f596d5dc9"
+    },
+    "2026-03": {
+      "offset": 704928,
+      "length": 37670,
+      "count": 43,
+      "hash": "a4d52fa050edd943"
+    },
+    "2026-01": {
+      "offset": 742599,
+      "length": 594,
+      "count": 1,
+      "hash": "6e635106f3c5784b"
+    },
+    "2025-10": {
+      "offset": 743194,
+      "length": 470,
+      "count": 1,
+      "hash": "ff848de8e4968a85"
+    },
+    "2025-08": {
+      "offset": 743665,
+      "length": 534,
+      "count": 1,
+      "hash": "ca0f555f907ceb9f"
+    },
+    "2025-07": {
+      "offset": 744200,
+      "length": 476,
+      "count": 1,
+      "hash": "77673c180ac9c1bf"
+    },
+    "2025-06": {
+      "offset": 744677,
+      "length": 676,
+      "count": 1,
+      "hash": "b48366741b02780e"
+    },
+    "2025-03": {
+      "offset": 745354,
+      "length": 1198,
+      "count": 1,
+      "hash": "708886dee29feaac"
+    }
+  }
+}

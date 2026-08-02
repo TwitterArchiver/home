@@ -1,0 +1,96 @@
+{
+  "repo": "konakonalo",
+  "account": "konakonalo",
+  "source": "https://twitterarchiver.github.io/konakonalo/accounts/konakonalo/wayback_snapshots/index.json",
+  "etag": "\"6a6f3951-1d19b3\"",
+  "bytes": 1907123,
+  "generated": "2026-08-02T12:40:36Z",
+  "range": true,
+  "total": 2324,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 12858,
+      "count": 12,
+      "hash": "8ee7d28bef9e1ab3"
+    },
+    "2026-07": {
+      "offset": 12860,
+      "length": 1257009,
+      "count": 1552,
+      "hash": "584188e53f11f891"
+    },
+    "2026-06": {
+      "offset": 1269870,
+      "length": 383283,
+      "count": 444,
+      "hash": "94e840a45ba855ab"
+    },
+    "2026-05": {
+      "offset": 1653154,
+      "length": 66208,
+      "count": 79,
+      "hash": "d5686e5286439931"
+    },
+    "2026-04": {
+      "offset": 1719363,
+      "length": 56523,
+      "count": 71,
+      "hash": "15b0e06e81e02e5f"
+    },
+    "2026-03": {
+      "offset": 1775887,
+      "length": 63043,
+      "count": 77,
+      "hash": "f099f27e739286fb"
+    },
+    "2026-02": {
+      "offset": 1838931,
+      "length": 54207,
+      "count": 70,
+      "hash": "a30d437290b4d469"
+    },
+    "2026-01": {
+      "offset": 1893139,
+      "length": 6362,
+      "count": 8,
+      "hash": "192364b54ae02963"
+    },
+    "2025-12": {
+      "offset": 1899502,
+      "length": 912,
+      "count": 2,
+      "hash": "daeee2cad2686ac9"
+    },
+    "2025-11": {
+      "offset": 1900415,
+      "length": 4043,
+      "count": 5,
+      "hash": "12ed49d84e2666e2"
+    },
+    "2025-10": {
+      "offset": 1904459,
+      "length": 759,
+      "count": 1,
+      "hash": "f9ce2b797e15a771"
+    },
+    "2024-11": {
+      "offset": 1905219,
+      "length": 734,
+      "count": 1,
+      "hash": "e4c5f0ecf138d386"
+    },
+    "2023-02": {
+      "offset": 1905954,
+      "length": 711,
+      "count": 1,
+      "hash": "4b64beead0a9fc81"
+    },
+    "2020-12": {
+      "offset": 1906666,
+      "length": 456,
+      "count": 1,
+      "hash": "3235b84233ab7d4a"
+    }
+  }
+}

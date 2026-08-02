@@ -1,0 +1,72 @@
+{
+  "repo": "HiiroGekkaFlan",
+  "account": "HiiroGekkaFlan",
+  "source": "https://twitterarchiver.github.io/HiiroGekkaFlan/accounts/HiiroGekkaFlan/wayback_snapshots/index.json",
+  "etag": "\"6a6f3617-14a41e\"",
+  "bytes": 1352734,
+  "generated": "2026-08-02T12:38:23Z",
+  "range": true,
+  "total": 1644,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 20190,
+      "count": 25,
+      "hash": "37712977cd2c2c06"
+    },
+    "2026-07": {
+      "offset": 20192,
+      "length": 943150,
+      "count": 1138,
+      "hash": "eadd066fd20a9806"
+    },
+    "2026-06": {
+      "offset": 963343,
+      "length": 385325,
+      "count": 474,
+      "hash": "43c1cac92c8844d1"
+    },
+    "2026-05": {
+      "offset": 1348669,
+      "length": 710,
+      "count": 1,
+      "hash": "75b0454835abb214"
+    },
+    "2026-03": {
+      "offset": 1349380,
+      "length": 721,
+      "count": 1,
+      "hash": "8c910a2d816d923d"
+    },
+    "2025-12": {
+      "offset": 1350102,
+      "length": 498,
+      "count": 1,
+      "hash": "686543fc26ca54c4"
+    },
+    "2025-06": {
+      "offset": 1350601,
+      "length": 510,
+      "count": 1,
+      "hash": "79c7766d4967fd6e"
+    },
+    "2024-04": {
+      "offset": 1351112,
+      "length": 477,
+      "count": 1,
+      "hash": "dfbd77a6e9e34666"
+    },
+    "2021-01": {
+      "offset": 1351590,
+      "length": 513,
+      "count": 1,
+      "hash": "9dd02eaf8da08b11"
+    },
+    "2020-11": {
+      "offset": 1352104,
+      "length": 629,
+      "count": 1,
+      "hash": "4e8155f2d5945826"
+    }
+  }
+}

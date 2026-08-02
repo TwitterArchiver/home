@@ -1,0 +1,72 @@
+{
+  "repo": "VincentChar",
+  "account": "VincentChar",
+  "source": "https://twitterarchiver.github.io/VincentChar/accounts/VincentChar/wayback_snapshots/index.json",
+  "etag": "\"6a6f361c-64e60\"",
+  "bytes": 413280,
+  "generated": "2026-08-02T12:39:33Z",
+  "range": true,
+  "total": 442,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 2445,
+      "count": 3,
+      "hash": "f85b97313baa303e"
+    },
+    "2026-07": {
+      "offset": 2447,
+      "length": 102450,
+      "count": 115,
+      "hash": "e7d3cd949b2e9686"
+    },
+    "2026-06": {
+      "offset": 104898,
+      "length": 76670,
+      "count": 84,
+      "hash": "f71582c06bf6b82b"
+    },
+    "2026-05": {
+      "offset": 181569,
+      "length": 152692,
+      "count": 153,
+      "hash": "dd8c29fe8758d1dc"
+    },
+    "2026-04": {
+      "offset": 334262,
+      "length": 56010,
+      "count": 60,
+      "hash": "c5f7854dbd9da78c"
+    },
+    "2026-03": {
+      "offset": 390273,
+      "length": 2161,
+      "count": 2,
+      "hash": "c905ae98c443b8ba"
+    },
+    "2025-07": {
+      "offset": 392435,
+      "length": 3666,
+      "count": 4,
+      "hash": "b048de32dd2a06c8"
+    },
+    "2024-12": {
+      "offset": 396102,
+      "length": 831,
+      "count": 1,
+      "hash": "be4ebf8e2e59d40f"
+    },
+    "2024-08": {
+      "offset": 396934,
+      "length": 15866,
+      "count": 19,
+      "hash": "52a9ba2a0959faec"
+    },
+    "2023-01": {
+      "offset": 412801,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

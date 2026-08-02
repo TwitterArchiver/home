@@ -2,44 +2,44 @@
   "repo": "MaoWuYaoQWQ",
   "account": "MaoWuYaoQWQ",
   "source": "https://twitterarchiver.github.io/MaoWuYaoQWQ/accounts/MaoWuYaoQWQ/wayback_snapshots/index.json",
-  "etag": "\"6a6ed04e-1d7d9\"",
-  "bytes": 120793,
-  "generated": "2026-08-02T08:28:57Z",
+  "etag": "\"6a6f1ae2-1d7d8\"",
+  "bytes": 120792,
+  "generated": "2026-08-02T12:38:43Z",
   "range": true,
   "total": 110,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 32969,
+      "length": 32968,
       "count": 27,
-      "hash": "71ce166edf442267"
+      "hash": "79143f4b635e1e10"
     },
     "2026-06": {
-      "offset": 32971,
+      "offset": 32970,
       "length": 9332,
       "count": 10,
       "hash": "1d58aafdd8aa3d8f"
     },
     "2026-05": {
-      "offset": 42304,
+      "offset": 42303,
       "length": 16467,
       "count": 15,
       "hash": "b52e4c2db7ce91ac"
     },
     "2026-04": {
-      "offset": 58772,
+      "offset": 58771,
       "length": 59682,
       "count": 55,
       "hash": "0fb2d00a37a62430"
     },
     "2026-03": {
-      "offset": 118455,
+      "offset": 118454,
       "length": 1531,
       "count": 2,
       "hash": "3a21d7d2692b785d"
     },
     "2025-08": {
-      "offset": 119987,
+      "offset": 119986,
       "length": 805,
       "count": 1,
       "hash": "ac4beccb502de5f2"

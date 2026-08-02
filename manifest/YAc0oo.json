@@ -1,0 +1,36 @@
+{
+  "repo": "YAc0oo",
+  "account": "YAc0oo",
+  "source": "https://twitterarchiver.github.io/YAc0oo/accounts/YAc0oo/wayback_snapshots/index.json",
+  "etag": "\"6a6f3671-1e06f\"",
+  "bytes": 122991,
+  "generated": "2026-08-02T12:39:41Z",
+  "range": true,
+  "total": 152,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 46310,
+      "count": 61,
+      "hash": "de7174a00576b2aa"
+    },
+    "2026-05": {
+      "offset": 46312,
+      "length": 3639,
+      "count": 5,
+      "hash": "a67ab4730711c779"
+    },
+    "2026-04": {
+      "offset": 49952,
+      "length": 41634,
+      "count": 51,
+      "hash": "dfb16290b0778ecd"
+    },
+    "2026-03": {
+      "offset": 91587,
+      "length": 31403,
+      "count": 35,
+      "hash": "a4ed9afef712db5a"
+    }
+  }
+}

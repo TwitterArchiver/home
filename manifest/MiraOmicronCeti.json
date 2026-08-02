@@ -1,0 +1,36 @@
+{
+  "repo": "MiraOmicronCeti",
+  "account": "MiraOmicronCeti",
+  "source": "https://twitterarchiver.github.io/MiraOmicronCeti/accounts/MiraOmicronCeti/wayback_snapshots/index.json",
+  "etag": "\"6a6f24b6-ade1\"",
+  "bytes": 44513,
+  "generated": "2026-08-02T12:38:47Z",
+  "range": true,
+  "total": 43,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 20083,
+      "count": 22,
+      "hash": "8aa5a2dec0a49338"
+    },
+    "2026-07": {
+      "offset": 20085,
+      "length": 21335,
+      "count": 18,
+      "hash": "0c44a7cd635f18c9"
+    },
+    "2026-06": {
+      "offset": 41421,
+      "length": 1848,
+      "count": 2,
+      "hash": "070fffd88ae32fc7"
+    },
+    "2026-03": {
+      "offset": 43270,
+      "length": 1242,
+      "count": 1,
+      "hash": "52a59f69bc8396fe"
+    }
+  }
+}

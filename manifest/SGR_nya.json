@@ -1,0 +1,78 @@
+{
+  "repo": "SGR_nya",
+  "account": "SGR_nya",
+  "source": "https://twitterarchiver.github.io/SGR_nya/accounts/SGR_nya/wayback_snapshots/index.json",
+  "etag": "\"6a6f2498-a2a50\"",
+  "bytes": 666192,
+  "generated": "2026-08-02T12:39:13Z",
+  "range": true,
+  "total": 775,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 1707,
+      "count": 2,
+      "hash": "2ace1823548b051f"
+    },
+    "2026-07": {
+      "offset": 1709,
+      "length": 110758,
+      "count": 131,
+      "hash": "f2a5b0d7ba808665"
+    },
+    "2026-06": {
+      "offset": 112468,
+      "length": 108633,
+      "count": 132,
+      "hash": "9649da80015edf4a"
+    },
+    "2026-05": {
+      "offset": 221102,
+      "length": 77140,
+      "count": 80,
+      "hash": "1edd4e467767e0ea"
+    },
+    "2026-04": {
+      "offset": 298243,
+      "length": 55981,
+      "count": 64,
+      "hash": "8f2cd73290aa9f2a"
+    },
+    "2026-03": {
+      "offset": 354225,
+      "length": 58292,
+      "count": 68,
+      "hash": "2fdb92a71a78c766"
+    },
+    "2026-02": {
+      "offset": 412518,
+      "length": 95309,
+      "count": 111,
+      "hash": "7ae21c8db564d67a"
+    },
+    "2026-01": {
+      "offset": 507828,
+      "length": 106219,
+      "count": 126,
+      "hash": "467b4c2ce1ae6c37"
+    },
+    "2025-12": {
+      "offset": 614048,
+      "length": 50174,
+      "count": 58,
+      "hash": "11c5f77484a51754"
+    },
+    "2024-12": {
+      "offset": 664223,
+      "length": 684,
+      "count": 1,
+      "hash": "ec981ab78db53d42"
+    },
+    "2023-01": {
+      "offset": 664908,
+      "length": 1283,
+      "count": 2,
+      "hash": "2e643a71b6ffb8d9"
+    }
+  }
+}

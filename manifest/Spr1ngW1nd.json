@@ -1,0 +1,30 @@
+{
+  "repo": "Spr1ngW1nd",
+  "account": "Spr1ngW1nd",
+  "source": "https://twitterarchiver.github.io/Spr1ngW1nd/accounts/Spr1ngW1nd/wayback_snapshots/index.json",
+  "etag": "\"6a6f374e-9bea\"",
+  "bytes": 39914,
+  "generated": "2026-08-02T12:39:20Z",
+  "range": true,
+  "total": 48,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 27625,
+      "count": 33,
+      "hash": "e8e6ca459a0c5f77"
+    },
+    "2023-01": {
+      "offset": 27627,
+      "length": 2714,
+      "count": 3,
+      "hash": "8205cfe192ef8542"
+    },
+    "2022-12": {
+      "offset": 30342,
+      "length": 9571,
+      "count": 12,
+      "hash": "8d234d9dbdfcbb87"
+    }
+  }
+}
