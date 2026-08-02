@@ -1,0 +1,120 @@
+{
+  "repo": "TixItem4527",
+  "account": "TixItem4527",
+  "source": "https://twitterarchiver.github.io/TixItem4527/accounts/TixItem4527/wayback_snapshots/index.json",
+  "etag": "\"6a6f4382-25ef9c\"",
+  "bytes": 2486172,
+  "generated": "2026-08-02T13:18:02Z",
+  "range": true,
+  "total": 2941,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 12068,
+      "count": 13,
+      "hash": "c22c98728e110c70"
+    },
+    "2026-07": {
+      "offset": 12070,
+      "length": 789346,
+      "count": 921,
+      "hash": "882e8f50ac066a1d"
+    },
+    "2026-06": {
+      "offset": 801417,
+      "length": 586263,
+      "count": 696,
+      "hash": "2698f08ebdd0e6db"
+    },
+    "2026-05": {
+      "offset": 1387681,
+      "length": 325094,
+      "count": 372,
+      "hash": "a6a07ada52d7ec4d"
+    },
+    "2026-04": {
+      "offset": 1712776,
+      "length": 337096,
+      "count": 417,
+      "hash": "614df17b7e944e02"
+    },
+    "2026-03": {
+      "offset": 2049873,
+      "length": 338819,
+      "count": 406,
+      "hash": "a3fdb506eef74546"
+    },
+    "2026-02": {
+      "offset": 2388693,
+      "length": 23652,
+      "count": 29,
+      "hash": "bd4043a61f3c2ad2"
+    },
+    "2026-01": {
+      "offset": 2412346,
+      "length": 50902,
+      "count": 59,
+      "hash": "152ad74c4aa64ef7"
+    },
+    "2025-12": {
+      "offset": 2463249,
+      "length": 8010,
+      "count": 10,
+      "hash": "131569eda95c3245"
+    },
+    "2025-07": {
+      "offset": 2471260,
+      "length": 476,
+      "count": 1,
+      "hash": "b70595ccf1b05cb7"
+    },
+    "2025-06": {
+      "offset": 2471737,
+      "length": 995,
+      "count": 1,
+      "hash": "87c86c8dd87647fd"
+    },
+    "2025-05": {
+      "offset": 2472733,
+      "length": 6141,
+      "count": 7,
+      "hash": "2249af5af7a89a36"
+    },
+    "2025-04": {
+      "offset": 2478875,
+      "length": 1529,
+      "count": 2,
+      "hash": "8eef312a1f7e8c9f"
+    },
+    "2025-03": {
+      "offset": 2480405,
+      "length": 1652,
+      "count": 2,
+      "hash": "c38abfbd0df70d43"
+    },
+    "2025-02": {
+      "offset": 2482058,
+      "length": 1709,
+      "count": 2,
+      "hash": "45b5893580c4faeb"
+    },
+    "2024-08": {
+      "offset": 2483768,
+      "length": 472,
+      "count": 1,
+      "hash": "c048567cb7a74a0c"
+    },
+    "2023-11": {
+      "offset": 2484241,
+      "length": 1273,
+      "count": 1,
+      "hash": "a1d1b41ecfcf3f39"
+    },
+    "2018-05": {
+      "offset": 2485515,
+      "length": 656,
+      "count": 1,
+      "hash": "ce3853659f760715"
+    }
+  }
+}
