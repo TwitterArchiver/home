@@ -1,0 +1,48 @@
+{
+  "repo": "murrtttt0ro",
+  "account": "murrtttt0ro",
+  "source": "https://twitterarchiver.github.io/murrtttt0ro/accounts/murrtttt0ro/wayback_snapshots/index.json",
+  "etag": "\"6a6e7d3c-2e66a\"",
+  "bytes": 190058,
+  "generated": "2026-08-02T03:36:46Z",
+  "range": true,
+  "total": 219,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 20998,
+      "count": 25,
+      "hash": "6e5c15b9eb8b7515"
+    },
+    "2026-06": {
+      "offset": 21000,
+      "length": 12475,
+      "count": 17,
+      "hash": "195431c1dd4a49f0"
+    },
+    "2026-05": {
+      "offset": 33476,
+      "length": 152637,
+      "count": 173,
+      "hash": "4c1acbd72b99369b"
+    },
+    "2026-04": {
+      "offset": 186114,
+      "length": 1985,
+      "count": 2,
+      "hash": "a40235f735cabb4b"
+    },
+    "2026-03": {
+      "offset": 188100,
+      "length": 904,
+      "count": 1,
+      "hash": "a3448cca5a477c2c"
+    },
+    "2026-02": {
+      "offset": 189005,
+      "length": 1052,
+      "count": 1,
+      "hash": "1f5e6608560641ae"
+    }
+  }
+}

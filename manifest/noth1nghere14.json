@@ -1,0 +1,36 @@
+{
+  "repo": "noth1nghere14",
+  "account": "noth1nghere14",
+  "source": "https://twitterarchiver.github.io/noth1nghere14/accounts/noth1nghere14/wayback_snapshots/index.json",
+  "etag": "\"6a6e9643-85172\"",
+  "bytes": 545138,
+  "generated": "2026-08-02T03:36:47Z",
+  "range": true,
+  "total": 708,
+  "months": {
+    "2026-05": {
+      "offset": 1,
+      "length": 25088,
+      "count": 34,
+      "hash": "3c7f8c7630338d56"
+    },
+    "2026-04": {
+      "offset": 25090,
+      "length": 201089,
+      "count": 260,
+      "hash": "5c95defecc2b006d"
+    },
+    "2026-03": {
+      "offset": 226180,
+      "length": 289761,
+      "count": 377,
+      "hash": "8666b70ca17faa14"
+    },
+    "2026-02": {
+      "offset": 515942,
+      "length": 29195,
+      "count": 37,
+      "hash": "ef6061b8bec63bfe"
+    }
+  }
+}

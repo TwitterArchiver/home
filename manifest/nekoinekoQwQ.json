@@ -1,0 +1,66 @@
+{
+  "repo": "nekoinekoQwQ",
+  "account": "nekoinekoQwQ",
+  "source": "https://twitterarchiver.github.io/nekoinekoQwQ/accounts/nekoinekoQwQ/wayback_snapshots/index.json",
+  "etag": "\"6a6eb3dc-7dbd9d\"",
+  "bytes": 8240541,
+  "generated": "2026-08-02T03:36:48Z",
+  "range": true,
+  "total": 10602,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 39150,
+      "count": 51,
+      "hash": "1e20281092b2b7f0"
+    },
+    "2026-07": {
+      "offset": 39152,
+      "length": 1754437,
+      "count": 2271,
+      "hash": "698958c371473ef6"
+    },
+    "2026-06": {
+      "offset": 1793590,
+      "length": 4329532,
+      "count": 5730,
+      "hash": "5532242944fc877d"
+    },
+    "2026-05": {
+      "offset": 6123123,
+      "length": 218985,
+      "count": 271,
+      "hash": "10637db9a8f3880a"
+    },
+    "2026-04": {
+      "offset": 6342109,
+      "length": 382750,
+      "count": 438,
+      "hash": "0644de2337390452"
+    },
+    "2026-03": {
+      "offset": 6724860,
+      "length": 1512433,
+      "count": 1836,
+      "hash": "ce3eb048dc424730"
+    },
+    "2026-02": {
+      "offset": 8237294,
+      "length": 1805,
+      "count": 3,
+      "hash": "7ec9c667c13bfa32"
+    },
+    "2026-01": {
+      "offset": 8239100,
+      "length": 1002,
+      "count": 1,
+      "hash": "a96a8343381bdcb6"
+    },
+    "2024-04": {
+      "offset": 8240103,
+      "length": 437,
+      "count": 1,
+      "hash": "b20a168292b5e680"
+    }
+  }
+}

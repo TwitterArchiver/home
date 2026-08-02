@@ -1,0 +1,78 @@
+{
+  "repo": "MianXue525",
+  "account": "MianXue525",
+  "source": "https://twitterarchiver.github.io/MianXue525/accounts/MianXue525/wayback_snapshots/index.json",
+  "etag": "\"6a6e7762-15e48d\"",
+  "bytes": 1434765,
+  "generated": "2026-08-02T03:35:29Z",
+  "range": true,
+  "total": 1737,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 25103,
+      "count": 28,
+      "hash": "f5adc1a56d3dd802"
+    },
+    "2026-06": {
+      "offset": 25105,
+      "length": 3668,
+      "count": 4,
+      "hash": "e1d8a025086e1e98"
+    },
+    "2026-05": {
+      "offset": 28774,
+      "length": 9855,
+      "count": 12,
+      "hash": "cc664e704f991d51"
+    },
+    "2026-04": {
+      "offset": 38630,
+      "length": 611356,
+      "count": 762,
+      "hash": "a7385038b84a9bab"
+    },
+    "2026-03": {
+      "offset": 649987,
+      "length": 779280,
+      "count": 923,
+      "hash": "8e8b0d6007cdc22d"
+    },
+    "2026-02": {
+      "offset": 1429268,
+      "length": 547,
+      "count": 1,
+      "hash": "a05da544301632ba"
+    },
+    "2026-01": {
+      "offset": 1429816,
+      "length": 567,
+      "count": 1,
+      "hash": "89570211ff52c7e9"
+    },
+    "2025-12": {
+      "offset": 1430384,
+      "length": 493,
+      "count": 1,
+      "hash": "f431b1fa6545350c"
+    },
+    "2025-09": {
+      "offset": 1430878,
+      "length": 520,
+      "count": 1,
+      "hash": "70a0f1cb7ea76b18"
+    },
+    "2025-01": {
+      "offset": 1431399,
+      "length": 437,
+      "count": 1,
+      "hash": "9e7496e2a84ceef4"
+    },
+    "2024-09": {
+      "offset": 1431837,
+      "length": 2927,
+      "count": 3,
+      "hash": "9195ed719dcc3718"
+    }
+  }
+}

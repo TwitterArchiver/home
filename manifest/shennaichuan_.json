@@ -1,0 +1,60 @@
+{
+  "repo": "shennaichuan_",
+  "account": "shennaichuan_",
+  "source": "https://twitterarchiver.github.io/shennaichuan_/accounts/shennaichuan_/wayback_snapshots/index.json",
+  "etag": "\"6a6e75d4-1fb98c\"",
+  "bytes": 2079116,
+  "generated": "2026-08-02T03:36:58Z",
+  "range": true,
+  "total": 2634,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 6124,
+      "count": 8,
+      "hash": "d499b942a30dcfd6"
+    },
+    "2026-07": {
+      "offset": 6126,
+      "length": 1116200,
+      "count": 1394,
+      "hash": "21c8910683587af8"
+    },
+    "2026-06": {
+      "offset": 1122327,
+      "length": 949879,
+      "count": 1221,
+      "hash": "74e96aaa66e96f03"
+    },
+    "2026-05": {
+      "offset": 2072207,
+      "length": 2254,
+      "count": 4,
+      "hash": "51c99e05793f9f86"
+    },
+    "2026-04": {
+      "offset": 2074462,
+      "length": 1042,
+      "count": 2,
+      "hash": "593d22df8ba552da"
+    },
+    "2026-02": {
+      "offset": 2075505,
+      "length": 2366,
+      "count": 3,
+      "hash": "293dde02b076d6cd"
+    },
+    "2025-11": {
+      "offset": 2077872,
+      "length": 598,
+      "count": 1,
+      "hash": "78c6bfdbe9bc5f48"
+    },
+    "2025-03": {
+      "offset": 2078471,
+      "length": 644,
+      "count": 1,
+      "hash": "6df5a34da301cb0d"
+    }
+  }
+}

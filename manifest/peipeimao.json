@@ -1,0 +1,60 @@
+{
+  "repo": "peipeimao",
+  "account": "peipeimao",
+  "source": "https://twitterarchiver.github.io/peipeimao/accounts/peipeimao/wayback_snapshots/index.json",
+  "etag": "\"6a6ea0f7-26da7c\"",
+  "bytes": 2546300,
+  "generated": "2026-08-02T03:36:51Z",
+  "range": true,
+  "total": 3390,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 2492,
+      "count": 3,
+      "hash": "cc407348a8633979"
+    },
+    "2026-06": {
+      "offset": 2494,
+      "length": 121008,
+      "count": 167,
+      "hash": "376a5e01d4ba8c91"
+    },
+    "2026-05": {
+      "offset": 123503,
+      "length": 57456,
+      "count": 78,
+      "hash": "7af9f8d8c5bc1fbb"
+    },
+    "2026-04": {
+      "offset": 180960,
+      "length": 421029,
+      "count": 552,
+      "hash": "cf6df0bb4e69fc6b"
+    },
+    "2026-03": {
+      "offset": 601990,
+      "length": 325921,
+      "count": 446,
+      "hash": "ae5723b1cfc76e46"
+    },
+    "2026-02": {
+      "offset": 927912,
+      "length": 963390,
+      "count": 1302,
+      "hash": "18a0b3e50073d62b"
+    },
+    "2026-01": {
+      "offset": 1891303,
+      "length": 653168,
+      "count": 840,
+      "hash": "137e4c61bb59035d"
+    },
+    "2025-11": {
+      "offset": 2544472,
+      "length": 1827,
+      "count": 2,
+      "hash": "ed44e0f5ea653554"
+    }
+  }
+}

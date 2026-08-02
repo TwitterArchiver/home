@@ -1,0 +1,186 @@
+{
+  "repo": "Victor_zhang233",
+  "account": "Victor_zhang233",
+  "source": "https://twitterarchiver.github.io/Victor_zhang233/accounts/Victor_zhang233/wayback_snapshots/index.json",
+  "etag": "\"6a6eb4d6-42b81f\"",
+  "bytes": 4372511,
+  "generated": "2026-08-02T03:36:00Z",
+  "range": true,
+  "total": 5853,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 742,
+      "count": 1,
+      "hash": "f6a8efca8afdeebd"
+    },
+    "2026-07": {
+      "offset": 744,
+      "length": 637027,
+      "count": 870,
+      "hash": "f04366b2405fd15c"
+    },
+    "2026-06": {
+      "offset": 637772,
+      "length": 926561,
+      "count": 1269,
+      "hash": "837e37143553d558"
+    },
+    "2026-05": {
+      "offset": 1564334,
+      "length": 679012,
+      "count": 885,
+      "hash": "843a1b976b65f0bd"
+    },
+    "2026-04": {
+      "offset": 2243347,
+      "length": 268100,
+      "count": 356,
+      "hash": "f0514cf8780b9334"
+    },
+    "2026-03": {
+      "offset": 2511448,
+      "length": 582530,
+      "count": 790,
+      "hash": "81daa760bfe525ca"
+    },
+    "2026-02": {
+      "offset": 3093979,
+      "length": 149911,
+      "count": 196,
+      "hash": "fb61ea1e8b49f0cf"
+    },
+    "2026-01": {
+      "offset": 3243891,
+      "length": 100019,
+      "count": 135,
+      "hash": "879ae0b1882ad021"
+    },
+    "2025-12": {
+      "offset": 3343911,
+      "length": 67136,
+      "count": 90,
+      "hash": "e065db8d4823824b"
+    },
+    "2025-11": {
+      "offset": 3411048,
+      "length": 28981,
+      "count": 39,
+      "hash": "1d1d6941cd6c51ba"
+    },
+    "2025-10": {
+      "offset": 3440030,
+      "length": 205535,
+      "count": 271,
+      "hash": "c1869d8f774664ae"
+    },
+    "2025-09": {
+      "offset": 3645566,
+      "length": 47258,
+      "count": 59,
+      "hash": "245af40b77ad17bb"
+    },
+    "2025-08": {
+      "offset": 3692825,
+      "length": 1285,
+      "count": 2,
+      "hash": "3affed829106859f"
+    },
+    "2025-07": {
+      "offset": 3694111,
+      "length": 1626,
+      "count": 2,
+      "hash": "ecc4111ed9dcb1d8"
+    },
+    "2025-06": {
+      "offset": 3695738,
+      "length": 9577,
+      "count": 12,
+      "hash": "17b289e8746bab88"
+    },
+    "2025-05": {
+      "offset": 3705316,
+      "length": 63267,
+      "count": 81,
+      "hash": "44a53e0175791722"
+    },
+    "2025-04": {
+      "offset": 3768584,
+      "length": 17001,
+      "count": 21,
+      "hash": "ae76f2827e63ad1b"
+    },
+    "2025-03": {
+      "offset": 3785586,
+      "length": 91133,
+      "count": 122,
+      "hash": "b8e1b9a753ab2a85"
+    },
+    "2025-02": {
+      "offset": 3876720,
+      "length": 511,
+      "count": 1,
+      "hash": "7f5c396dd085524c"
+    },
+    "2025-01": {
+      "offset": 3877232,
+      "length": 154088,
+      "count": 189,
+      "hash": "5b098ba560ee3947"
+    },
+    "2024-12": {
+      "offset": 4031321,
+      "length": 9721,
+      "count": 14,
+      "hash": "85dd23bfcfb0b024"
+    },
+    "2024-11": {
+      "offset": 4041043,
+      "length": 37082,
+      "count": 49,
+      "hash": "ef79d0adfb469352"
+    },
+    "2024-10": {
+      "offset": 4078126,
+      "length": 25565,
+      "count": 33,
+      "hash": "a874ef97879528ad"
+    },
+    "2024-09": {
+      "offset": 4103692,
+      "length": 2986,
+      "count": 4,
+      "hash": "2322a0729e92f202"
+    },
+    "2024-08": {
+      "offset": 4106679,
+      "length": 44291,
+      "count": 61,
+      "hash": "b3878289202f6f4f"
+    },
+    "2024-07": {
+      "offset": 4150971,
+      "length": 77217,
+      "count": 107,
+      "hash": "79f77f6374a28c9f"
+    },
+    "2024-06": {
+      "offset": 4228189,
+      "length": 139044,
+      "count": 185,
+      "hash": "bdb2383dec2bdec8"
+    },
+    "2024-05": {
+      "offset": 4367234,
+      "length": 4729,
+      "count": 8,
+      "hash": "54d9acad41ecb5f7"
+    },
+    "2023-08": {
+      "offset": 4371964,
+      "length": 546,
+      "count": 1,
+      "hash": "cf7f1a9757186b79"
+    }
+  }
+}

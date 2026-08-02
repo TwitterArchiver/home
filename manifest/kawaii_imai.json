@@ -1,0 +1,36 @@
+{
+  "repo": "kawaii_imai",
+  "account": "kawaii_imai",
+  "source": "https://twitterarchiver.github.io/kawaii_imai/accounts/kawaii_imai/wayback_snapshots/index.json",
+  "etag": "\"6a6e92aa-84e98\"",
+  "bytes": 544408,
+  "generated": "2026-08-02T03:36:37Z",
+  "range": true,
+  "total": 627,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 66886,
+      "count": 73,
+      "hash": "5753af5c3c97c1a1"
+    },
+    "2026-06": {
+      "offset": 66888,
+      "length": 151223,
+      "count": 168,
+      "hash": "0cda3a443d9bc80a"
+    },
+    "2026-05": {
+      "offset": 218112,
+      "length": 263667,
+      "count": 309,
+      "hash": "d8283941e5ec3693"
+    },
+    "2026-04": {
+      "offset": 481780,
+      "length": 62627,
+      "count": 77,
+      "hash": "2882dad8ee23613b"
+    }
+  }
+}

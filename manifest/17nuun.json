@@ -1,0 +1,42 @@
+{
+  "repo": "17nuun",
+  "account": "17nuun",
+  "source": "https://twitterarchiver.github.io/17nuun/accounts/17nuun/wayback_snapshots/index.json",
+  "etag": "\"6a6e6ef8-20096d\"",
+  "bytes": 2099565,
+  "generated": "2026-08-02T03:34:42Z",
+  "range": true,
+  "total": 2448,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 3548,
+      "count": 3,
+      "hash": "43f629de5ada021f"
+    },
+    "2026-07": {
+      "offset": 3550,
+      "length": 645689,
+      "count": 759,
+      "hash": "a146be0292c27ffe"
+    },
+    "2026-06": {
+      "offset": 649240,
+      "length": 1446538,
+      "count": 1682,
+      "hash": "edf309452bb37df8"
+    },
+    "2026-04": {
+      "offset": 2095779,
+      "length": 3096,
+      "count": 3,
+      "hash": "13272f9a25ae54e2"
+    },
+    "2026-03": {
+      "offset": 2098876,
+      "length": 688,
+      "count": 1,
+      "hash": "75fea4a8429d97d1"
+    }
+  }
+}

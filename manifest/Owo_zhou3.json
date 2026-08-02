@@ -1,0 +1,102 @@
+{
+  "repo": "Owo_zhou3",
+  "account": "Owo_zhou3",
+  "source": "https://twitterarchiver.github.io/Owo_zhou3/accounts/Owo_zhou3/wayback_snapshots/index.json",
+  "etag": "\"6a6eb919-3aa8bb\"",
+  "bytes": 3844283,
+  "generated": "2026-08-02T03:35:37Z",
+  "range": true,
+  "total": 5010,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 13281,
+      "count": 18,
+      "hash": "5a31af42ccaa2ccd"
+    },
+    "2026-06": {
+      "offset": 13283,
+      "length": 19559,
+      "count": 26,
+      "hash": "d12b25b5ccdad00f"
+    },
+    "2026-05": {
+      "offset": 32843,
+      "length": 103062,
+      "count": 123,
+      "hash": "1d8438e684638260"
+    },
+    "2026-04": {
+      "offset": 135906,
+      "length": 266210,
+      "count": 324,
+      "hash": "1ea37b20a4e4f573"
+    },
+    "2026-03": {
+      "offset": 402117,
+      "length": 302965,
+      "count": 370,
+      "hash": "b9a346e2101d6479"
+    },
+    "2026-02": {
+      "offset": 705083,
+      "length": 339224,
+      "count": 426,
+      "hash": "1de7db20f2f5684c"
+    },
+    "2026-01": {
+      "offset": 1044308,
+      "length": 307298,
+      "count": 385,
+      "hash": "c7cd92442aa6d8b9"
+    },
+    "2025-12": {
+      "offset": 1351607,
+      "length": 924011,
+      "count": 1243,
+      "hash": "48be6212460b25f8"
+    },
+    "2025-11": {
+      "offset": 2275619,
+      "length": 1143325,
+      "count": 1520,
+      "hash": "e8e18454bf84a460"
+    },
+    "2025-10": {
+      "offset": 3418945,
+      "length": 54777,
+      "count": 76,
+      "hash": "34c5e9565a88d631"
+    },
+    "2025-09": {
+      "offset": 3473723,
+      "length": 366449,
+      "count": 491,
+      "hash": "76a565f8434d4dae"
+    },
+    "2025-08": {
+      "offset": 3840173,
+      "length": 1474,
+      "count": 3,
+      "hash": "8d79d7caf3f1fc02"
+    },
+    "2025-07": {
+      "offset": 3841648,
+      "length": 1689,
+      "count": 3,
+      "hash": "bafb5e1d8d9948ea"
+    },
+    "2025-04": {
+      "offset": 3843338,
+      "length": 497,
+      "count": 1,
+      "hash": "604ce9a1ed79e23a"
+    },
+    "2025-02": {
+      "offset": 3843836,
+      "length": 446,
+      "count": 1,
+      "hash": "7bbe810cf8736ad4"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "repo": "Yg_Xyn",
+  "account": "Yg_Xyn",
+  "source": "https://twitterarchiver.github.io/Yg_Xyn/accounts/Yg_Xyn/wayback_snapshots/index.json",
+  "etag": "\"6a6e7a52-77738\"",
+  "bytes": 489272,
+  "generated": "2026-08-02T03:36:05Z",
+  "range": true,
+  "total": 544,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 1871,
+      "count": 2,
+      "hash": "a8c91272f7a1b085"
+    },
+    "2026-07": {
+      "offset": 1873,
+      "length": 218937,
+      "count": 240,
+      "hash": "f7f71f2da27310bf"
+    },
+    "2026-06": {
+      "offset": 220811,
+      "length": 267848,
+      "count": 301,
+      "hash": "2a0661a670ea255e"
+    },
+    "2026-04": {
+      "offset": 488660,
+      "length": 611,
+      "count": 1,
+      "hash": "6ae99d1565c31da5"
+    }
+  }
+}

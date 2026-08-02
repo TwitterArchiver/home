@@ -1,0 +1,48 @@
+{
+  "repo": "drug_artist2",
+  "account": "drug_artist2",
+  "source": "https://twitterarchiver.github.io/drug_artist2/accounts/drug_artist2/wayback_snapshots/index.json",
+  "etag": "\"6a6e7c3d-7a90f\"",
+  "bytes": 502031,
+  "generated": "2026-08-02T03:36:22Z",
+  "range": true,
+  "total": 604,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 29629,
+      "count": 35,
+      "hash": "e57ab92c24a1066b"
+    },
+    "2026-07": {
+      "offset": 29631,
+      "length": 385163,
+      "count": 473,
+      "hash": "cf034b27d306b99a"
+    },
+    "2026-06": {
+      "offset": 414795,
+      "length": 2260,
+      "count": 3,
+      "hash": "6c19140a3329ee15"
+    },
+    "2026-03": {
+      "offset": 417056,
+      "length": 10900,
+      "count": 12,
+      "hash": "4f22f25ca1aaa7a9"
+    },
+    "2025-11": {
+      "offset": 427957,
+      "length": 72899,
+      "count": 80,
+      "hash": "d0c5d726fb9a2634"
+    },
+    "2025-07": {
+      "offset": 500857,
+      "length": 1173,
+      "count": 1,
+      "hash": "a7f97e8213c58b07"
+    }
+  }
+}

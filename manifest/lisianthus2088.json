@@ -1,0 +1,60 @@
+{
+  "repo": "lisianthus2088",
+  "account": "lisianthus2088",
+  "source": "https://twitterarchiver.github.io/lisianthus2088/accounts/lisianthus2088/wayback_snapshots/index.json",
+  "etag": "\"6a6e7de8-3140fa\"",
+  "bytes": 3227898,
+  "generated": "2026-08-02T03:36:42Z",
+  "range": true,
+  "total": 4411,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 79203,
+      "count": 99,
+      "hash": "0ff7982586b1d637"
+    },
+    "2026-06": {
+      "offset": 79205,
+      "length": 191977,
+      "count": 223,
+      "hash": "fdb5708dda26d79b"
+    },
+    "2026-05": {
+      "offset": 271183,
+      "length": 548557,
+      "count": 727,
+      "hash": "68a1a64ed3f9dd88"
+    },
+    "2026-04": {
+      "offset": 819741,
+      "length": 1222458,
+      "count": 1700,
+      "hash": "d8733db023c31c9e"
+    },
+    "2026-03": {
+      "offset": 2042200,
+      "length": 1181894,
+      "count": 1656,
+      "hash": "65583b555a62678c"
+    },
+    "2026-02": {
+      "offset": 3224095,
+      "length": 442,
+      "count": 1,
+      "hash": "87b25fc84a2633ae"
+    },
+    "2026-01": {
+      "offset": 3224538,
+      "length": 2066,
+      "count": 3,
+      "hash": "145647cb66c5a94f"
+    },
+    "2025-12": {
+      "offset": 3226605,
+      "length": 1292,
+      "count": 2,
+      "hash": "44e8bef47461fb5f"
+    }
+  }
+}

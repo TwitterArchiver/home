@@ -1,0 +1,78 @@
+{
+  "repo": "angle71766",
+  "account": "angle71766",
+  "source": "https://twitterarchiver.github.io/angle71766/accounts/angle71766/wayback_snapshots/index.json",
+  "etag": "\"6a6eb5a6-a56d2\"",
+  "bytes": 677586,
+  "generated": "2026-08-02T03:36:10Z",
+  "range": true,
+  "total": 816,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 47033,
+      "count": 59,
+      "hash": "78deec87b1252d14"
+    },
+    "2026-06": {
+      "offset": 47035,
+      "length": 57836,
+      "count": 71,
+      "hash": "18e37c59f484219c"
+    },
+    "2026-05": {
+      "offset": 104872,
+      "length": 48715,
+      "count": 54,
+      "hash": "b7c7bb5f1e6cdc20"
+    },
+    "2026-04": {
+      "offset": 153588,
+      "length": 79068,
+      "count": 98,
+      "hash": "afd66e6ef8b7dad9"
+    },
+    "2026-03": {
+      "offset": 232657,
+      "length": 60435,
+      "count": 68,
+      "hash": "1eff4eb50266ef0f"
+    },
+    "2026-02": {
+      "offset": 293093,
+      "length": 52936,
+      "count": 58,
+      "hash": "f90814c849d56ec4"
+    },
+    "2026-01": {
+      "offset": 346030,
+      "length": 67189,
+      "count": 81,
+      "hash": "877cdf0ace2833c2"
+    },
+    "2025-12": {
+      "offset": 413220,
+      "length": 204146,
+      "count": 248,
+      "hash": "51701a38b4fde0d1"
+    },
+    "2025-11": {
+      "offset": 617367,
+      "length": 59270,
+      "count": 77,
+      "hash": "59f90088a6e8dbd7"
+    },
+    "2025-09": {
+      "offset": 676638,
+      "length": 468,
+      "count": 1,
+      "hash": "8e38408c5d0b57bb"
+    },
+    "2023-01": {
+      "offset": 677107,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "maoxianACT",
+  "account": "maoxianACT",
+  "source": "https://twitterarchiver.github.io/maoxianACT/accounts/maoxianACT/wayback_snapshots/index.json",
+  "etag": "\"6a6e7ac4-b9bc3\"",
+  "bytes": 760771,
+  "generated": "2026-08-02T03:36:44Z",
+  "range": true,
+  "total": 870,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 225611,
+      "count": 254,
+      "hash": "4e40c294a217ba96"
+    },
+    "2026-06": {
+      "offset": 225613,
+      "length": 280151,
+      "count": 326,
+      "hash": "8d250454e89c40ed"
+    },
+    "2026-05": {
+      "offset": 505765,
+      "length": 250548,
+      "count": 284,
+      "hash": "c2a6f03dc2c98098"
+    },
+    "2026-04": {
+      "offset": 756314,
+      "length": 1092,
+      "count": 1,
+      "hash": "c0734f8c9897afc9"
+    },
+    "2026-03": {
+      "offset": 757407,
+      "length": 598,
+      "count": 1,
+      "hash": "c0ba73ae4492c3e8"
+    },
+    "2025-07": {
+      "offset": 758006,
+      "length": 502,
+      "count": 1,
+      "hash": "fcdf02caabde6c26"
+    },
+    "2025-05": {
+      "offset": 758509,
+      "length": 452,
+      "count": 1,
+      "hash": "6c0402309143c0b6"
+    },
+    "2023-11": {
+      "offset": 758962,
+      "length": 673,
+      "count": 1,
+      "hash": "4942a8403b2861ab"
+    },
+    "2023-09": {
+      "offset": 759636,
+      "length": 1134,
+      "count": 1,
+      "hash": "295fb450dd24c1c9"
+    }
+  }
+}

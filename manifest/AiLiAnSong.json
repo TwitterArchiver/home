@@ -1,0 +1,24 @@
+{
+  "repo": "AiLiAnSong",
+  "account": "AiLiAnSong",
+  "source": "https://twitterarchiver.github.io/AiLiAnSong/accounts/AiLiAnSong/wayback_snapshots/index.json",
+  "etag": "\"6a6eb81f-c5a6\"",
+  "bytes": 50598,
+  "generated": "2026-08-02T03:34:47Z",
+  "range": true,
+  "total": 56,
+  "months": {
+    "2024-09": {
+      "offset": 1,
+      "length": 39801,
+      "count": 44,
+      "hash": "daf196d5aee5e867"
+    },
+    "2024-08": {
+      "offset": 39803,
+      "length": 10794,
+      "count": 12,
+      "hash": "c033f1c9500395ab"
+    }
+  }
+}

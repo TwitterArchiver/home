@@ -1,0 +1,186 @@
+{
+  "repo": "IXXA00",
+  "account": "IXXA00",
+  "source": "https://twitterarchiver.github.io/IXXA00/accounts/IXXA00/wayback_snapshots/index.json",
+  "etag": "\"6a6ea49f-21fedb7\"",
+  "bytes": 35646903,
+  "generated": "2026-08-02T03:35:20Z",
+  "range": true,
+  "total": 49413,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 4735,
+      "count": 6,
+      "hash": "3db1fa07965f18eb"
+    },
+    "2026-07": {
+      "offset": 4737,
+      "length": 1675355,
+      "count": 2216,
+      "hash": "ceb38551ae325948"
+    },
+    "2026-06": {
+      "offset": 1680093,
+      "length": 1846055,
+      "count": 2481,
+      "hash": "ab1f0680f0ff98e9"
+    },
+    "2026-05": {
+      "offset": 3526149,
+      "length": 2108728,
+      "count": 2818,
+      "hash": "fdfd867a1c26d3e5"
+    },
+    "2026-04": {
+      "offset": 5634878,
+      "length": 2495584,
+      "count": 3411,
+      "hash": "cbe7930f54064097"
+    },
+    "2026-03": {
+      "offset": 8130463,
+      "length": 1343739,
+      "count": 1852,
+      "hash": "7e1e641a32d966ba"
+    },
+    "2026-02": {
+      "offset": 9474203,
+      "length": 619173,
+      "count": 880,
+      "hash": "1dbd5a82aef90104"
+    },
+    "2026-01": {
+      "offset": 10093377,
+      "length": 907024,
+      "count": 1292,
+      "hash": "adbd4c087a2b2883"
+    },
+    "2025-12": {
+      "offset": 11000402,
+      "length": 1797971,
+      "count": 2550,
+      "hash": "8b9c09c4fb1d40d6"
+    },
+    "2025-11": {
+      "offset": 12798374,
+      "length": 2323638,
+      "count": 3301,
+      "hash": "83b4724a4432ed64"
+    },
+    "2025-10": {
+      "offset": 15122013,
+      "length": 2791633,
+      "count": 3948,
+      "hash": "f4393200f0dea3a1"
+    },
+    "2025-09": {
+      "offset": 17913647,
+      "length": 1739434,
+      "count": 2444,
+      "hash": "634a6547ea5e76b0"
+    },
+    "2025-08": {
+      "offset": 19653082,
+      "length": 2460464,
+      "count": 3372,
+      "hash": "19dece6bdff45b58"
+    },
+    "2025-07": {
+      "offset": 22113547,
+      "length": 2222428,
+      "count": 3106,
+      "hash": "4ea54aeaf2276202"
+    },
+    "2025-06": {
+      "offset": 24335976,
+      "length": 3127907,
+      "count": 4357,
+      "hash": "21955674ab88dbf7"
+    },
+    "2025-05": {
+      "offset": 27463884,
+      "length": 2122361,
+      "count": 2964,
+      "hash": "0c46306319715d44"
+    },
+    "2025-04": {
+      "offset": 29586246,
+      "length": 1888242,
+      "count": 2557,
+      "hash": "fc14b5a2605f19bc"
+    },
+    "2025-03": {
+      "offset": 31474489,
+      "length": 2862402,
+      "count": 4005,
+      "hash": "69a471b8c576b5aa"
+    },
+    "2025-02": {
+      "offset": 34336892,
+      "length": 1286849,
+      "count": 1820,
+      "hash": "a5b96153650a59c1"
+    },
+    "2025-01": {
+      "offset": 35623742,
+      "length": 4809,
+      "count": 7,
+      "hash": "d1b6c2123af691da"
+    },
+    "2024-11": {
+      "offset": 35628552,
+      "length": 1211,
+      "count": 1,
+      "hash": "69cc84a9f816a7d8"
+    },
+    "2024-10": {
+      "offset": 35629764,
+      "length": 525,
+      "count": 1,
+      "hash": "df9b46cb79aa5a5e"
+    },
+    "2024-09": {
+      "offset": 35630290,
+      "length": 2918,
+      "count": 5,
+      "hash": "f75dd3d55ab3be36"
+    },
+    "2024-08": {
+      "offset": 35633209,
+      "length": 2320,
+      "count": 3,
+      "hash": "44bc05e1feebb2de"
+    },
+    "2024-07": {
+      "offset": 35635530,
+      "length": 3924,
+      "count": 6,
+      "hash": "2ca85182155f0dbc"
+    },
+    "2024-06": {
+      "offset": 35639455,
+      "length": 1004,
+      "count": 2,
+      "hash": "b288cc0dbde170af"
+    },
+    "2024-02": {
+      "offset": 35640460,
+      "length": 5481,
+      "count": 6,
+      "hash": "de8d3a7337ddcdf5"
+    },
+    "2022-11": {
+      "offset": 35645942,
+      "length": 492,
+      "count": 1,
+      "hash": "be82ddac9c50ff23"
+    },
+    "2020-07": {
+      "offset": 35646435,
+      "length": 467,
+      "count": 1,
+      "hash": "9faf22ec1f1da219"
+    }
+  }
+}

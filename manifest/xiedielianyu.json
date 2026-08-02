@@ -1,0 +1,66 @@
+{
+  "repo": "xiedielianyu",
+  "account": "xiedielianyu",
+  "source": "https://twitterarchiver.github.io/xiedielianyu/accounts/xiedielianyu/wayback_snapshots/index.json",
+  "etag": "\"6a6e73e4-1176fc\"",
+  "bytes": 1144572,
+  "generated": "2026-08-02T03:37:11Z",
+  "range": true,
+  "total": 1382,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 18133,
+      "count": 20,
+      "hash": "cb6fe8f119bdc981"
+    },
+    "2026-06": {
+      "offset": 18135,
+      "length": 48194,
+      "count": 52,
+      "hash": "8e2978a72a6d8d8c"
+    },
+    "2026-05": {
+      "offset": 66330,
+      "length": 36704,
+      "count": 40,
+      "hash": "98650b694199c956"
+    },
+    "2026-04": {
+      "offset": 103035,
+      "length": 1013957,
+      "count": 1238,
+      "hash": "8613bc79ccb61b5d"
+    },
+    "2026-03": {
+      "offset": 1116993,
+      "length": 24226,
+      "count": 27,
+      "hash": "25a211f46afc2d92"
+    },
+    "2026-02": {
+      "offset": 1141220,
+      "length": 1592,
+      "count": 2,
+      "hash": "b6ec2da49dac977c"
+    },
+    "2025-09": {
+      "offset": 1142813,
+      "length": 688,
+      "count": 1,
+      "hash": "564e7343648ef008"
+    },
+    "2025-08": {
+      "offset": 1143502,
+      "length": 590,
+      "count": 1,
+      "hash": "93156fe9ed659330"
+    },
+    "2023-01": {
+      "offset": 1144093,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

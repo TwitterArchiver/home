@@ -1,0 +1,90 @@
+{
+  "repo": "axzamyzed",
+  "account": "axzamyzed",
+  "source": "https://twitterarchiver.github.io/axzamyzed/accounts/axzamyzed/wayback_snapshots/index.json",
+  "etag": "\"6a6ea48a-ac347f\"",
+  "bytes": 11285631,
+  "generated": "2026-08-02T03:36:14Z",
+  "range": true,
+  "total": 13708,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 1883,
+      "count": 2,
+      "hash": "c0521a306f4f1452"
+    },
+    "2026-07": {
+      "offset": 1885,
+      "length": 908279,
+      "count": 1078,
+      "hash": "b89cfc1033d5c08d"
+    },
+    "2026-06": {
+      "offset": 910165,
+      "length": 1472406,
+      "count": 1683,
+      "hash": "4446d38d83648b87"
+    },
+    "2026-05": {
+      "offset": 2382572,
+      "length": 1349341,
+      "count": 1538,
+      "hash": "85e0b98e59fa5d5e"
+    },
+    "2026-04": {
+      "offset": 3731914,
+      "length": 1519652,
+      "count": 1814,
+      "hash": "6a6f8b99cf446806"
+    },
+    "2026-03": {
+      "offset": 5251567,
+      "length": 2687049,
+      "count": 3436,
+      "hash": "25b075a84ece3fb4"
+    },
+    "2026-02": {
+      "offset": 7938617,
+      "length": 2310194,
+      "count": 2908,
+      "hash": "a43b169d7fed7ec7"
+    },
+    "2026-01": {
+      "offset": 10248812,
+      "length": 1027674,
+      "count": 1237,
+      "hash": "ea03e4aea237add5"
+    },
+    "2025-12": {
+      "offset": 11276487,
+      "length": 1657,
+      "count": 3,
+      "hash": "ec5ce7f1da9c297e"
+    },
+    "2025-11": {
+      "offset": 11278145,
+      "length": 4171,
+      "count": 5,
+      "hash": "946b84530b6a7a48"
+    },
+    "2025-05": {
+      "offset": 11282317,
+      "length": 1285,
+      "count": 1,
+      "hash": "14417b2ed918c9ba"
+    },
+    "2025-03": {
+      "offset": 11283603,
+      "length": 1167,
+      "count": 2,
+      "hash": "10ab87e79cf5276e"
+    },
+    "2025-01": {
+      "offset": 11284771,
+      "length": 859,
+      "count": 1,
+      "hash": "ca60471d032d3491"
+    }
+  }
+}

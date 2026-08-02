@@ -1,0 +1,18 @@
+{
+  "repo": "Misaki348632",
+  "account": "Misaki348632",
+  "source": "https://twitterarchiver.github.io/Misaki348632/accounts/Misaki348632/wayback_snapshots/index.json",
+  "etag": "\"6a6e7fc1-2f060\"",
+  "bytes": 192608,
+  "generated": "2026-08-02T03:35:30Z",
+  "range": true,
+  "total": 256,
+  "months": {
+    "2026-05": {
+      "offset": 1,
+      "length": 192606,
+      "count": 256,
+      "hash": "a8117fbbb854d14b"
+    }
+  }
+}

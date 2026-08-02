@@ -1,0 +1,72 @@
+{
+  "repo": "UWATCHLIFE",
+  "account": "UWATCHLIFE",
+  "source": "https://twitterarchiver.github.io/UWATCHLIFE/accounts/UWATCHLIFE/wayback_snapshots/index.json",
+  "etag": "\"6a6eb3e4-1fb2af\"",
+  "bytes": 2077359,
+  "generated": "2026-08-02T03:35:57Z",
+  "range": true,
+  "total": 2270,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 298443,
+      "count": 330,
+      "hash": "5e506aa5de3536eb"
+    },
+    "2026-06": {
+      "offset": 298445,
+      "length": 536284,
+      "count": 556,
+      "hash": "af8b81c3d7a90003"
+    },
+    "2026-05": {
+      "offset": 834730,
+      "length": 716581,
+      "count": 813,
+      "hash": "faa9c79b4926c35e"
+    },
+    "2026-04": {
+      "offset": 1551312,
+      "length": 518771,
+      "count": 563,
+      "hash": "8c3b22397ffb4abf"
+    },
+    "2026-03": {
+      "offset": 2070084,
+      "length": 2751,
+      "count": 3,
+      "hash": "b08b2316781ffd22"
+    },
+    "2025-12": {
+      "offset": 2072836,
+      "length": 1302,
+      "count": 1,
+      "hash": "1942e7da78b18584"
+    },
+    "2025-11": {
+      "offset": 2074139,
+      "length": 571,
+      "count": 1,
+      "hash": "c582c12e6e083ed5"
+    },
+    "2025-10": {
+      "offset": 2074711,
+      "length": 639,
+      "count": 1,
+      "hash": "7ee1a97d4dab0f77"
+    },
+    "2025-05": {
+      "offset": 2075351,
+      "length": 1140,
+      "count": 1,
+      "hash": "8addf5e15bddb0fa"
+    },
+    "2023-09": {
+      "offset": 2076492,
+      "length": 866,
+      "count": 1,
+      "hash": "05988436b0469a16"
+    }
+  }
+}

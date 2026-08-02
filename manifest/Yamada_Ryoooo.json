@@ -1,0 +1,96 @@
+{
+  "repo": "Yamada_Ryoooo",
+  "account": "Yamada_Ryoooo",
+  "source": "https://twitterarchiver.github.io/Yamada_Ryoooo/accounts/Yamada_Ryoooo/wayback_snapshots/index.json",
+  "etag": "\"6a6e8c14-3805de\"",
+  "bytes": 3671518,
+  "generated": "2026-08-02T03:36:05Z",
+  "range": true,
+  "total": 4446,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 132749,
+      "count": 153,
+      "hash": "ef38aba4cfb201a3"
+    },
+    "2026-06": {
+      "offset": 132751,
+      "length": 211731,
+      "count": 251,
+      "hash": "57e9955e4ee50a3f"
+    },
+    "2026-05": {
+      "offset": 344483,
+      "length": 358205,
+      "count": 438,
+      "hash": "8f0cb7c479b2ede7"
+    },
+    "2026-04": {
+      "offset": 702689,
+      "length": 321337,
+      "count": 377,
+      "hash": "e00e17db73828d94"
+    },
+    "2026-03": {
+      "offset": 1024027,
+      "length": 512696,
+      "count": 613,
+      "hash": "f05283be97bfb762"
+    },
+    "2026-02": {
+      "offset": 1536724,
+      "length": 349637,
+      "count": 423,
+      "hash": "b178cdea9d09b1c2"
+    },
+    "2026-01": {
+      "offset": 1886362,
+      "length": 843660,
+      "count": 1043,
+      "hash": "e29729b367a74228"
+    },
+    "2025-12": {
+      "offset": 2730023,
+      "length": 195480,
+      "count": 240,
+      "hash": "7e249f44a3c80d1a"
+    },
+    "2025-11": {
+      "offset": 2925504,
+      "length": 291106,
+      "count": 345,
+      "hash": "06d5dd1e8bee7b7f"
+    },
+    "2025-10": {
+      "offset": 3216611,
+      "length": 335810,
+      "count": 418,
+      "hash": "ad5a624c29d0e8bf"
+    },
+    "2025-09": {
+      "offset": 3552422,
+      "length": 116511,
+      "count": 141,
+      "hash": "33388940113c72e3"
+    },
+    "2025-08": {
+      "offset": 3668934,
+      "length": 1155,
+      "count": 2,
+      "hash": "e2373ee85ccccc58"
+    },
+    "2025-05": {
+      "offset": 3670090,
+      "length": 841,
+      "count": 1,
+      "hash": "fdac70d4110ed9e7"
+    },
+    "2022-11": {
+      "offset": 3670932,
+      "length": 585,
+      "count": 1,
+      "hash": "40df29dd9d04eb91"
+    }
+  }
+}
