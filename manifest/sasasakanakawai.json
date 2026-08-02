@@ -1,0 +1,18 @@
+{
+  "repo": "sasasakanakawai",
+  "account": "sasasakanakawai",
+  "source": "https://twitterarchiver.github.io/sasasakanakawai/accounts/sasasakanakawai/wayback_snapshots/index.json",
+  "etag": "\"6a6ed14a-3bb8d\"",
+  "bytes": 244621,
+  "generated": "2026-08-02T08:31:08Z",
+  "range": true,
+  "total": 285,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 244619,
+      "count": 285,
+      "hash": "27505874e404087f"
+    }
+  }
+}

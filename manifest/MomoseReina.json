@@ -1,0 +1,102 @@
+{
+  "repo": "MomoseReina",
+  "account": "MomoseReina",
+  "source": "https://twitterarchiver.github.io/MomoseReina/accounts/MomoseReina/wayback_snapshots/index.json",
+  "etag": "\"6a6ed6c3-8ca32d\"",
+  "bytes": 9216813,
+  "generated": "2026-08-02T08:29:05Z",
+  "range": true,
+  "total": 12463,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 1254,
+      "count": 1,
+      "hash": "60edb9b0513e3823"
+    },
+    "2026-08": {
+      "offset": 1256,
+      "length": 2303,
+      "count": 3,
+      "hash": "8aa01dd1a65da69d"
+    },
+    "2026-07": {
+      "offset": 3560,
+      "length": 566250,
+      "count": 715,
+      "hash": "4ca9f545e326051f"
+    },
+    "2026-06": {
+      "offset": 569811,
+      "length": 685200,
+      "count": 859,
+      "hash": "69c940760009747c"
+    },
+    "2026-05": {
+      "offset": 1255012,
+      "length": 824877,
+      "count": 1053,
+      "hash": "12aecb995460e61e"
+    },
+    "2026-04": {
+      "offset": 2079890,
+      "length": 626944,
+      "count": 796,
+      "hash": "2e8974a7738b6a05"
+    },
+    "2026-03": {
+      "offset": 2706835,
+      "length": 603417,
+      "count": 820,
+      "hash": "f002f2dbc550c636"
+    },
+    "2026-02": {
+      "offset": 3310253,
+      "length": 668445,
+      "count": 915,
+      "hash": "606c5e65ee213f0f"
+    },
+    "2026-01": {
+      "offset": 3978699,
+      "length": 1190383,
+      "count": 1660,
+      "hash": "5ce19d71d53cfe1d"
+    },
+    "2025-12": {
+      "offset": 5169083,
+      "length": 1388792,
+      "count": 1942,
+      "hash": "005b5f5cdb66ac07"
+    },
+    "2025-11": {
+      "offset": 6557876,
+      "length": 1073784,
+      "count": 1483,
+      "hash": "e442d7628e2c83c8"
+    },
+    "2025-10": {
+      "offset": 7631661,
+      "length": 1580272,
+      "count": 2208,
+      "hash": "6e3641545e515672"
+    },
+    "2025-09": {
+      "offset": 9211934,
+      "length": 3634,
+      "count": 6,
+      "hash": "9f8fe48d9372adeb"
+    },
+    "2025-05": {
+      "offset": 9215569,
+      "length": 442,
+      "count": 1,
+      "hash": "5c42943e2fd74c2e"
+    },
+    "2024-08": {
+      "offset": 9216012,
+      "length": 800,
+      "count": 1,
+      "hash": "3c07a69a4ec9fdba"
+    }
+  }
+}

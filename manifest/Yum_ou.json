@@ -1,0 +1,24 @@
+{
+  "repo": "Yum_ou",
+  "account": "Yum_ou",
+  "source": "https://twitterarchiver.github.io/Yum_ou/accounts/Yum_ou/wayback_snapshots/index.json",
+  "etag": "\"6a6ed183-32a06\"",
+  "bytes": 207366,
+  "generated": "2026-08-02T08:29:52Z",
+  "range": true,
+  "total": 262,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 3388,
+      "count": 4,
+      "hash": "43fb4324948057a6"
+    },
+    "2026-07": {
+      "offset": 3390,
+      "length": 203975,
+      "count": 258,
+      "hash": "a1a297dad9131316"
+    }
+  }
+}

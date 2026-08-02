@@ -1,0 +1,54 @@
+{
+  "repo": "bungeikuhakushi",
+  "account": "bungeikuhakushi",
+  "source": "https://twitterarchiver.github.io/bungeikuhakushi/accounts/bungeikuhakushi/wayback_snapshots/index.json",
+  "etag": "\"6a6ed503-26a04f\"",
+  "bytes": 2531407,
+  "generated": "2026-08-02T08:30:12Z",
+  "range": true,
+  "total": 3020,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 2525,
+      "count": 3,
+      "hash": "f3eeb8f8d59da128"
+    },
+    "2026-07": {
+      "offset": 2527,
+      "length": 376653,
+      "count": 441,
+      "hash": "a57ac59def704607"
+    },
+    "2026-06": {
+      "offset": 379181,
+      "length": 480651,
+      "count": 552,
+      "hash": "6769abaf72e89290"
+    },
+    "2026-05": {
+      "offset": 859833,
+      "length": 846785,
+      "count": 1002,
+      "hash": "77377e099814c9e7"
+    },
+    "2026-04": {
+      "offset": 1706619,
+      "length": 822827,
+      "count": 1019,
+      "hash": "aaab0d0708beadb3"
+    },
+    "2026-03": {
+      "offset": 2529447,
+      "length": 753,
+      "count": 1,
+      "hash": "e9c305942b95cff5"
+    },
+    "2026-02": {
+      "offset": 2530201,
+      "length": 1205,
+      "count": 2,
+      "hash": "36145c32dc6ce1dc"
+    }
+  }
+}

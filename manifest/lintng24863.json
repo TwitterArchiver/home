@@ -1,0 +1,42 @@
+{
+  "repo": "lintng24863",
+  "account": "lintng24863",
+  "source": "https://twitterarchiver.github.io/lintng24863/accounts/lintng24863/wayback_snapshots/index.json",
+  "etag": "\"6a6ed126-63d9c\"",
+  "bytes": 408988,
+  "generated": "2026-08-02T08:30:46Z",
+  "range": true,
+  "total": 503,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 46111,
+      "count": 56,
+      "hash": "8ce372c2d2425b32"
+    },
+    "2026-06": {
+      "offset": 46113,
+      "length": 95226,
+      "count": 116,
+      "hash": "de430bfcad00fe3a"
+    },
+    "2026-05": {
+      "offset": 141340,
+      "length": 250961,
+      "count": 310,
+      "hash": "9b27849016b62148"
+    },
+    "2026-04": {
+      "offset": 392302,
+      "length": 14334,
+      "count": 18,
+      "hash": "fd99da02ddcea083"
+    },
+    "2026-02": {
+      "offset": 406637,
+      "length": 2350,
+      "count": 3,
+      "hash": "f39c7d4897224bbf"
+    }
+  }
+}

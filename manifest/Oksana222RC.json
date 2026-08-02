@@ -2,17 +2,23 @@
   "repo": "Oksana222RC",
   "account": "Oksana222RC",
   "source": "https://twitterarchiver.github.io/Oksana222RC/accounts/Oksana222RC/wayback_snapshots/index.json",
-  "etag": "\"6a6e3afc-3ee7\"",
-  "bytes": 16103,
-  "generated": "2026-08-01T19:46:06Z",
+  "etag": "\"6a6ed76c-5541\"",
+  "bytes": 21825,
+  "generated": "2026-08-02T08:29:07Z",
   "range": true,
-  "total": 17,
+  "total": 23,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 16101,
-      "count": 17,
-      "hash": "12824b1531c4993e"
+      "length": 2717,
+      "count": 3,
+      "hash": "c9094d5601b8ea69"
+    },
+    "2026-07": {
+      "offset": 2719,
+      "length": 19105,
+      "count": 20,
+      "hash": "65be1ea8bdc156b0"
     }
   }
 }

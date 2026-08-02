@@ -1,0 +1,66 @@
+{
+  "repo": "overdose7days",
+  "account": "overdose7days",
+  "source": "https://twitterarchiver.github.io/overdose7days/accounts/overdose7days/wayback_snapshots/index.json",
+  "etag": "\"6a6ed05b-11d0bf\"",
+  "bytes": 1167551,
+  "generated": "2026-08-02T08:30:57Z",
+  "range": true,
+  "total": 1348,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 1542,
+      "count": 2,
+      "hash": "50c96c22714258a6"
+    },
+    "2026-07": {
+      "offset": 1544,
+      "length": 442759,
+      "count": 490,
+      "hash": "fb36adf2118a0c96"
+    },
+    "2026-06": {
+      "offset": 444304,
+      "length": 251071,
+      "count": 295,
+      "hash": "f8da2b1483afc9b7"
+    },
+    "2026-05": {
+      "offset": 695376,
+      "length": 358450,
+      "count": 425,
+      "hash": "07e18be3dcd5a54c"
+    },
+    "2026-04": {
+      "offset": 1053827,
+      "length": 107705,
+      "count": 128,
+      "hash": "9ab7f136fecf1102"
+    },
+    "2026-03": {
+      "offset": 1161533,
+      "length": 2790,
+      "count": 4,
+      "hash": "1632d77bbf875c23"
+    },
+    "2025-11": {
+      "offset": 1164324,
+      "length": 1924,
+      "count": 2,
+      "hash": "91d034d528530d11"
+    },
+    "2025-10": {
+      "offset": 1166249,
+      "length": 754,
+      "count": 1,
+      "hash": "f1172ef6b2d4b41d"
+    },
+    "2025-09": {
+      "offset": 1167004,
+      "length": 546,
+      "count": 1,
+      "hash": "64bb8541a6e43e59"
+    }
+  }
+}

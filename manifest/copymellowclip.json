@@ -1,0 +1,90 @@
+{
+  "repo": "copymellowclip",
+  "account": "copymellowclip",
+  "source": "https://twitterarchiver.github.io/copymellowclip/accounts/copymellowclip/wayback_snapshots/index.json",
+  "etag": "\"6a6ed820-4d1661\"",
+  "bytes": 5052001,
+  "generated": "2026-08-02T08:30:19Z",
+  "range": true,
+  "total": 6348,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 1330,
+      "count": 2,
+      "hash": "72246f77d5814deb"
+    },
+    "2026-07": {
+      "offset": 1332,
+      "length": 226431,
+      "count": 263,
+      "hash": "06da41c24d0c74cc"
+    },
+    "2026-06": {
+      "offset": 227764,
+      "length": 250288,
+      "count": 295,
+      "hash": "b2d197651bc82bb5"
+    },
+    "2026-05": {
+      "offset": 478053,
+      "length": 731563,
+      "count": 850,
+      "hash": "0d09c68a1320820f"
+    },
+    "2026-04": {
+      "offset": 1209617,
+      "length": 532298,
+      "count": 676,
+      "hash": "030bb740fb8ee69e"
+    },
+    "2026-03": {
+      "offset": 1741916,
+      "length": 413279,
+      "count": 536,
+      "hash": "87099a8412a7d0ba"
+    },
+    "2026-02": {
+      "offset": 2155196,
+      "length": 207583,
+      "count": 269,
+      "hash": "749a2ec9a158adaa"
+    },
+    "2026-01": {
+      "offset": 2362780,
+      "length": 2678490,
+      "count": 3438,
+      "hash": "dd9d5b7f6da13216"
+    },
+    "2025-12": {
+      "offset": 5041271,
+      "length": 7197,
+      "count": 12,
+      "hash": "8addccff00e8519d"
+    },
+    "2025-11": {
+      "offset": 5048469,
+      "length": 540,
+      "count": 1,
+      "hash": "e0e6ca22c84d1dc0"
+    },
+    "2025-10": {
+      "offset": 5049010,
+      "length": 1588,
+      "count": 3,
+      "hash": "582744d9f4271329"
+    },
+    "2025-08": {
+      "offset": 5050599,
+      "length": 923,
+      "count": 2,
+      "hash": "9bd89c1d64007922"
+    },
+    "2024-05": {
+      "offset": 5051523,
+      "length": 477,
+      "count": 1,
+      "hash": "20425233e5ce04dd"
+    }
+  }
+}
