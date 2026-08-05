@@ -1,4 +1,4 @@
-name: 生成全站搜索索引（月度分片 + 兼容文件）
+name: 生成全站搜索索引 search-index.json
 
 on:
   schedule:
