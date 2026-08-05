@@ -1,0 +1,117 @@
+name: 删除指定推文
+
+# 从某个存档仓库里删掉指定推文并重建索引。
+# 原 migrate.yml 有两个问题：App 会传 target_repo 但这里没声明（GitHub 直接 422），
+# 且它检出的是 home 自己，而 home 没有 accounts/ 目录。现在改为检出目标仓库。
+# 注意：各存档仓库里另有一个同名的 migrate.yml，作用完全不同（重建状态与索引），
+# 所以这个文件改名为 delete_tweets.yml，避免两者混淆。
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_repo:
+        description: '目标存档仓库名（组织内，如 AnIncanescence）'
+        required: true
+      tweet_ids:
+        description: '要删除的推文 ID，逗号或空格分隔'
+        required: true
+      account:
+        description: '账号目录名；留空则自动扫描该仓库的 accounts/'
+        required: false
+        default: ''
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 检出目标仓库
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ github.repository_owner }}/${{ inputs.target_repo }}
+          token: ${{ secrets.DISPATCH_TOKEN }}
+          path: target
+
+      - name: 确认账号目录
+        id: info
+        working-directory: target
+        run: |
+          if [ -n "${{ inputs.account }}" ]; then
+            ACCOUNTS="${{ inputs.account }}"
+          else
+            ACCOUNTS=$(ls -1 accounts 2>/dev/null | while IFS= read -r name; do
+              [ -d "accounts/${name}/wayback_snapshots" ] && echo "$name"
+            done)
+          fi
+          if [ -z "$ACCOUNTS" ]; then
+            echo "::error::${{ inputs.target_repo }} 下没有找到任何账号目录"
+            exit 1
+          fi
+          echo "accounts<<EOF" >> $GITHUB_OUTPUT
+          echo "$ACCOUNTS"     >> $GITHUB_OUTPUT
+          echo "EOF"           >> $GITHUB_OUTPUT
+
+      - name: 删除推文并重建索引
+        working-directory: target
+        run: |
+          cat > /tmp/del.py << 'PYEOF'
+          import json, os, sys, re
+
+          ids = set(re.split(r"[,\s]+", os.environ["TWEET_IDS"].strip()))
+          ids = {i for i in ids if i}
+          accounts = [a for a in os.environ["ACCOUNTS"].split("\n") if a.strip()]
+          if not ids:
+              print("没有提供推文 ID"); sys.exit(1)
+
+          removed_total = 0
+          for acct in accounts:
+              base = f"accounts/{acct}/wayback_snapshots"
+              idx = f"{base}/index.json"
+              if not os.path.isfile(idx):
+                  print(f"  ⏭️ {acct} 无 index.json"); continue
+              with open(idx, encoding="utf-8") as f:
+                  data = json.load(f)
+
+              keep, drop = [], []
+              for p in data:
+                  (drop if p.get("tweet_id") in ids else keep).append(p)
+              if not drop:
+                  print(f"  ⏭️ {acct} 未命中"); continue
+
+              # 连带删掉这些推文引用的本地媒体，避免留下孤儿文件
+              for p in drop:
+                  for key, sub in (("wanted_images", "image"),
+                                   ("wanted_videos", "video")):
+                      for m in (p.get(key) or []):
+                          fp = os.path.join(base, sub, os.path.basename(m))
+                          if os.path.isfile(fp):
+                              os.remove(fp)
+                  html = p.get("html_file") or ""
+                  if html:
+                      fp = os.path.join(base, os.path.basename(html))
+                      if os.path.isfile(fp):
+                          os.remove(fp)
+
+              with open(idx, "w", encoding="utf-8") as f:
+                  json.dump(keep, f, ensure_ascii=False, separators=(",", ":"))
+              removed_total += len(drop)
+              print(f"  ✓ {acct}: 删除 {len(drop)} 条，剩余 {len(keep)} 条")
+
+          print(f"=== 共删除 {removed_total} 条 ===")
+          if removed_total == 0:
+              sys.exit(0)
+          PYEOF
+          TWEET_IDS="${{ inputs.tweet_ids }}" \
+          ACCOUNTS="${{ steps.info.outputs.accounts }}" \
+          python3 /tmp/del.py
+
+      - name: 提交
+        working-directory: target
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "无变化"; exit 0; fi
+          git commit -m "🗑️ 删除指定推文 $(date -u +%Y-%m-%d)"
+          git push

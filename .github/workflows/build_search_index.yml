@@ -1,4 +1,4 @@
-name: 生成全站搜索索引 search-index.json
+name: 生成全站搜索索引（月度分片 + 兼容文件）
 
 on:
   schedule:
@@ -181,11 +181,77 @@ jobs:
           for cid, reps in cross.items():
               if cid in mid2post: mid2post[cid][5] += len(reps)
 
-          result = {"accts": accts, "posts": posts}
-          with open("search-index.json","w",encoding="utf-8") as f:
-              json.dump(result, f, ensure_ascii=False, separators=(",",":"))
-          print(f"=== 账号 {len(accts)} 个，主推文 {len(posts)} 条，"
-                f"{os.path.getsize('search-index.json')} 字节 ===")
+          # ── 月度分片 search-index/ ──
+          # 单文件版本已顶到 GitHub 的 100 MiB 上限推不上去，且客户端要一次下完
+          # 才能用。改成按月切分：客户端按年取（一年 = 12 个小文件），而每天真正
+          # 变动的只有当月那一个分片，git 历史增长也随之降一个数量级。
+          import hashlib
+          from datetime import timezone
+
+          SHARD_DIR = "search-index"
+          COMPAT_MONTHS = 6            # 兼容文件保留的完整月数
+          COMPAT_MAX_BYTES = 90 * 1024 * 1024   # 安全阀：不许再逼近 100 MiB
+
+          def month_of(t):
+              ts = parse_ts(t)
+              if ts <= 0:
+                  return "1970-01"
+              return datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m")
+
+          buckets = {}
+          for p in posts:
+              buckets.setdefault(month_of(p[3]), []).append(p)
+
+          os.makedirs(SHARD_DIR, exist_ok=True)
+          # 本轮不再出现的月份要删掉，否则 meta 与磁盘对不上
+          for old_f in os.listdir(SHARD_DIR):
+              if old_f.endswith(".json") and old_f != "meta.json":
+                  if old_f[:-5] not in buckets:
+                      os.remove(os.path.join(SHARD_DIR, old_f))
+
+          shards = []
+          for month in sorted(buckets, reverse=True):
+              path = os.path.join(SHARD_DIR, f"{month}.json")
+              blob = json.dumps({"posts": buckets[month]},
+                                ensure_ascii=False, separators=(",",":")).encode("utf-8")
+              with open(path, "wb") as f:
+                  f.write(blob)
+              shards.append({
+                  "month": month,
+                  "count": len(buckets[month]),
+                  "bytes": len(blob),
+                  "hash": hashlib.sha256(blob).hexdigest()[:16],
+              })
+
+          meta = {
+              "total": len(posts),
+              "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "accts": accts,
+              "shards": shards,
+          }
+          with open(os.path.join(SHARD_DIR, "meta.json"), "w", encoding="utf-8") as f:
+              json.dump(meta, f, ensure_ascii=False, separators=(",",":"))
+          print(f"=== 分片 {len(shards)} 个，账号 {len(accts)} 个，主推文 {len(posts)} 条 ===")
+          for sd in shards[:12]:
+              print(f"    {sd['month']}  {sd['count']:>7} 条  {sd['bytes']/1048576:.1f} MB")
+
+          # ── 兼容文件 search-index.json ──
+          # 给尚未升级的旧客户端用。旧版有 30 秒总超时，文件太大它也下不完，
+          # 所以这里既受 COMPAT_MONTHS 限制，也受体积安全阀限制。
+          months_desc = sorted(buckets, reverse=True)[:COMPAT_MONTHS]
+          while months_desc:
+              compat_posts = [p for m in months_desc for p in buckets[m]]
+              compat_posts.sort(key=lambda x: parse_ts(x[3]), reverse=True)
+              blob = json.dumps({"accts": accts, "posts": compat_posts},
+                                ensure_ascii=False, separators=(",",":")).encode("utf-8")
+              if len(blob) <= COMPAT_MAX_BYTES or len(months_desc) == 1:
+                  break
+              dropped = months_desc.pop()
+              print(f"  ⚠️ 兼容文件超 {COMPAT_MAX_BYTES/1048576:.0f} MB，丢弃最旧月份 {dropped}")
+          with open("search-index.json","wb") as f:
+              f.write(blob)
+          print(f"=== 兼容文件覆盖 {months_desc[-1]}~{months_desc[0]}，"
+                f"{len(compat_posts)} 条，{len(blob)/1048576:.1f} MB ===")
 
           # 全站时间线"最新一批"轻量文件：只取最新 2000 条主推文，
           # App 全站默认先加载这个(小、秒开)，滑到底再加载完整 search-index.json。
@@ -224,11 +290,11 @@ jobs:
           PYEOF
           python3 /tmp/build.py
 
-      - name: 推送 search-index.json
+      - name: 推送索引
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add search-index.json cross-replies.json preview.json timeline-recent.json
+          git add search-index search-index.json cross-replies.json preview.json timeline-recent.json
           if git diff --cached --quiet; then echo "索引无变化"; exit 0; fi
           git commit -m "🔍 更新全站搜索索引 $(date -u +%Y-%m-%d) [skip ci]"
           git push
