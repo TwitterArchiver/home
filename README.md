@@ -31,13 +31,16 @@ TwitterArchiver 是一个基于 [Wayback Machine](https://web.archive.org) 的�
 | --- | --- |
 | `index.html` | 门户首页 |
 | `search.html` | 全站时间线与跨账号搜索 |
-| `guestbook.html` | 存档申请页 |
+| `guestbook.html` | 留言板，也是提交存档申请的入口 |
 | `repos.json` | 账号清单：仓库名、账号、昵称、简介、头像 |
-| `search-index.json` | 全站搜索索引，汇总所有账号的推文 |
+| `search-index/` | 全站搜索索引，按月切分。`meta.json` 是分片清单与账号表，`YYYY-MM.json` 是各月推文 |
+| `search-index.json` | 最近 6 个月的合集，仅供尚未升级的旧版本客户端 |
 | `cross-replies.json` | 跨账号回复索引 |
 | `timeline-recent.json` | 最近收录 |
 | `preview.json` | 首页预览数据 |
-| `avatars/` | 聚合的账号头像 |
+| `manifest/` | 各存档仓库的月度哈希清单，供客户端离线增量更新 |
+| `avatars/` | 聚合的账号头像池。抓取脚本会优先从这里取头像，取不到再回落 Wayback |
+| `icons/` | 站点图标 |
 
 数据由 [`.github/workflows`](https://github.com/TwitterArchiver/home/tree/main/.github/workflows) 下的工作流定期从各存档仓库汇总生成。
 
@@ -65,7 +68,7 @@ TwitterArchiver 是一个基于 [Wayback Machine](https://web.archive.org) 的�
 
 → **[查看使用教程](https://github.com/sjshb57/IncandescenceArchiver)**
 
-如果希望直接收录进本组织，也可以 **[在这里提交申请](https://twtterarchiver.github.io/home/guestbook.html)**（Android 应用内也能直接提交）。
+如果希望直接收录进本组织，也可以 **[在这里提交申请](https://twitterarchiver.github.io/home/guestbook.html)**（Android 应用内也能直接提交）。
 
 ---
 

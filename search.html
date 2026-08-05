@@ -440,6 +440,7 @@ a { color: var(--accent); text-decoration: none; }
   </aside>
 
   <div class="tl-status" id="status">加载中…</div>
+  <div class="tl-status" id="loadHint" style="opacity:.65"></div>
 
   <div class="lightbox" id="lightbox"></div>
   <button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
@@ -632,7 +633,7 @@ let crossReplies = null;
 async function loadCrossReplies(){
   if (crossReplies !== null) return crossReplies;
   try {
-    const res = await fetch('cross-replies.json', { cache: 'no-cache' });
+    const res = await fetch('cross-replies.json');
     crossReplies = res.ok ? await res.json() : {};
   } catch(e) { crossReplies = {}; }
   return crossReplies;
@@ -1026,22 +1027,70 @@ async function init(){
   }, { passive: true });
   toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+  // 索引已按月切分。先只取最新一年，首屏立刻可用；其余年份在后台按年补。
+  // 旧版本是一次性 fetch 整个 search-index.json，那个文件已经 100 MB，
+  // 手机上基本下不完，而且每次进页面都要重下一遍。
+  let META = null;
   try {
-    const res = await fetch('search-index.json', { cache: 'no-cache' });
-    DATA = await res.json();
+    const res = await fetch('search-index/meta.json', { cache: 'no-cache' });
+    META = await res.json();
   } catch(e) {
-    $('status').textContent = '索引加载失败，请稍后重试';
+    $('status').textContent = '索引清单加载失败，请稍后重试';
     return;
   }
-  view = DATA.posts || [];
-  // 稳健排序：用时间戳数值倒序（兜底各账号 ts 字符串格式不一导致的乱序）
-  view = view.filter(p => p && p[3]);
-  view.sort((a, b) => (Date.parse(b[3]) || 0) - (Date.parse(a[3]) || 0));
-  DATA.posts = view;
+  DATA.accts = META.accts || [];
+  GLOBAL_TOTAL = META.total || 0;
+  SHARDS = (META.shards || []).slice().sort((a, b) => (a.month < b.month ? 1 : -1));
+
+  const years = [...new Set(SHARDS.map(s => s.month.slice(0, 4)))].sort().reverse();
+  if (!years.length) { $('status').textContent = '索引为空'; return; }
+
+  await loadYear(years[0]);
   resetTimeline();
-  // 渲染左栏筛选（电脑常驻/移动面板）+ 右栏统计
   renderStats(); refreshFilters();
+
+  // 后台顺序补齐其余年份，每补完一年刷新一次
+  (async () => {
+    for (const y of years.slice(1)) {
+      await loadYear(y);
+      const keep = window.scrollY;
+      resetTimeline(); renderStats(); refreshFilters();
+      window.scrollTo(0, keep);
+    }
+    LOADED_ALL = true;
+    updateLoadHint();
+  })();
 }
+
+let SHARDS = [], GLOBAL_TOTAL = 0, LOADED_ALL = false;
+const LOADED_YEARS = new Set();
+
+async function loadYear(year){
+  if (LOADED_YEARS.has(year)) return;
+  const mine = SHARDS.filter(s => s.month.startsWith(year));
+  const seen = new Set(DATA.posts.map(p => p[2]));
+  for (const sd of mine) {
+    try {
+      const res = await fetch(`search-index/${sd.month}.json`);
+      const j = await res.json();
+      for (const p of (j.posts || [])) {
+        if (p && p[3] && !seen.has(p[2])) { seen.add(p[2]); DATA.posts.push(p); }
+      }
+    } catch(e) { /* 单个分片失败不影响其余 */ }
+  }
+  LOADED_YEARS.add(year);
+  DATA.posts.sort((a, b) => (Date.parse(b[3]) || 0) - (Date.parse(a[3]) || 0));
+  view = DATA.posts;
+  updateLoadHint();
+}
+
+function updateLoadHint(){
+  const el = $('loadHint');
+  if (!el) return;
+  if (LOADED_ALL || !GLOBAL_TOTAL) { el.textContent = ''; return; }
+  el.textContent = `已加载 ${DATA.posts.length.toLocaleString()} / 全站 ${GLOBAL_TOTAL.toLocaleString()} 条`;
+}
+
 init();
 </script>
 </body>
