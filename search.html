@@ -572,9 +572,11 @@ function updateStatus(){
 }
 
 function onScroll(){
-  if (rendered >= view.length) return;
   const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 800;
-  if (nearBottom) renderMore();
+  if (!nearBottom) return;
+  if (rendered < view.length) { renderMore(); return; }
+  // 本地这批渲染完了，还有更早的月份就自动续上，浏览体验上是连续的
+  loadMore();
 }
 
 /* ── 搜索 ── */
@@ -1042,53 +1044,72 @@ async function init(){
   GLOBAL_TOTAL = META.total || 0;
   SHARDS = (META.shards || []).slice().sort((a, b) => (a.month < b.month ? 1 : -1));
 
-  const years = [...new Set(SHARDS.map(s => s.month.slice(0, 4)))].sort().reverse();
-  if (!years.length) { $('status').textContent = '索引为空'; return; }
+  if (!SHARDS.length) { $('status').textContent = '索引为空'; return; }
 
-  await loadYear(years[0]);
+  // 按月递进，不按年：2026 一整年就有 64 MB，首屏拉整年和拉全量没本质区别。
+  // 先取最近若干月凑够 FIRST_BUDGET，剩下的滚到底自动续，或点提示手动加载。
+  REMAINING = SHARDS.map(x => x.month);       // 已按月份倒序
+  let budget = 0;
+  const first = [];
+  while (REMAINING.length) {
+    const b = (SHARDS.find(x => x.month === REMAINING[0]) || {}).bytes || 0;
+    // 至少取一个月；之后加上会超预算就停，而不是超了才停
+    if (first.length && budget + b > FIRST_BUDGET) break;
+    first.push(REMAINING.shift());
+    budget += b;
+  }
+  await loadMonths(first);
   resetTimeline();
   renderStats(); refreshFilters();
-
-  // 后台顺序补齐其余年份，每补完一年刷新一次
-  (async () => {
-    for (const y of years.slice(1)) {
-      await loadYear(y);
-      const keep = window.scrollY;
-      resetTimeline(); renderStats(); refreshFilters();
-      window.scrollTo(0, keep);
-    }
-    LOADED_ALL = true;
-    updateLoadHint();
-  })();
+  updateLoadHint();
 }
 
-let SHARDS = [], GLOBAL_TOTAL = 0, LOADED_ALL = false;
+const FIRST_BUDGET = 12 * 1024 * 1024;   // 首屏体积预算，约等于最近一两个月
+let SHARDS = [], GLOBAL_TOTAL = 0, REMAINING = [], LOADING_MORE = false;
+const LOADED_MONTHS = new Set();
 const LOADED_YEARS = new Set();
 
-async function loadYear(year){
-  if (LOADED_YEARS.has(year)) return;
-  const mine = SHARDS.filter(s => s.month.startsWith(year));
+async function loadMonths(months){
   const seen = new Set(DATA.posts.map(p => p[2]));
-  for (const sd of mine) {
+  for (const m of months) {
+    if (LOADED_MONTHS.has(m)) continue;
     try {
-      const res = await fetch(`search-index/${sd.month}.json`);
+      const res = await fetch(`search-index/${m}.json`);
       const j = await res.json();
       for (const p of (j.posts || [])) {
         if (p && p[3] && !seen.has(p[2])) { seen.add(p[2]); DATA.posts.push(p); }
       }
+      LOADED_MONTHS.add(m);
     } catch(e) { /* 单个分片失败不影响其余 */ }
   }
-  LOADED_YEARS.add(year);
   DATA.posts.sort((a, b) => (Date.parse(b[3]) || 0) - (Date.parse(a[3]) || 0));
   view = DATA.posts;
-  updateLoadHint();
 }
 
 function updateLoadHint(){
   const el = $('loadHint');
   if (!el) return;
-  if (LOADED_ALL || !GLOBAL_TOTAL) { el.textContent = ''; return; }
-  el.textContent = `已加载 ${DATA.posts.length.toLocaleString()} / 全站 ${GLOBAL_TOTAL.toLocaleString()} 条`;
+  if (!GLOBAL_TOTAL) { el.textContent = ''; return; }
+  const loaded = `已加载 ${DATA.posts.length.toLocaleString()} / 全站 ${GLOBAL_TOTAL.toLocaleString()} 条`;
+  if (LOADING_MORE) { el.textContent = `${loaded} · 加载中…`; return; }
+  if (!REMAINING.length) { el.textContent = loaded; return; }
+  const next = REMAINING[0];
+  const mb = ((SHARDS.find(x => x.month === next) || {}).bytes || 0) / 1048576;
+  el.innerHTML = `${loaded} · <a href="javascript:void(0)" onclick="loadMore()">加载 ${next}（${mb.toFixed(1)} MB）</a>`;
+}
+
+/* 续下一个月。滚到底会自动调用，也可以点提示手动触发。 */
+async function loadMore(){
+  if (LOADING_MORE || !REMAINING.length) return;
+  LOADING_MORE = true;
+  updateLoadHint();
+  const m = REMAINING.shift();
+  await loadMonths([m]);
+  LOADING_MORE = false;
+  const keep = window.scrollY;
+  resetTimeline(); renderStats(); refreshFilters();
+  window.scrollTo(0, keep);
+  updateLoadHint();
 }
 
 init();
