@@ -1,0 +1,166 @@
+name: 同步工作流到各存档仓库
+
+# 把 sjshb57/IncandescenceArchiver 里的 setup.yml / update.yml / retry_all.yml
+# 分发到组织下所有存档仓库。走 Contents API 逐文件比对，不克隆仓库。
+#
+# 前置：home 的 Secrets 里需要 DISPATCH_TOKEN（对组织仓库有 contents + workflows 写权限）。
+# 注意 PAT 必须带 workflow scope，否则改 .github/workflows/ 下的文件会被拒绝。
+
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: '要同步的文件，逗号分隔'
+        required: false
+        default: 'setup.yml,update.yml,retry_all.yml'
+      dry_run:
+        description: '只列出差异，不实际写入'
+        type: boolean
+        default: true
+      create_missing:
+        description: '目标仓库没有该文件时也创建'
+        type: boolean
+        default: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: 同步
+        env:
+          TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+          FILES: ${{ inputs.files }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          CREATE_MISSING: ${{ inputs.create_missing && '1' || '0' }}
+        run: |
+          pip install --quiet requests
+          cat > /tmp/sync.py << 'PYEOF'
+          import base64, os, sys, time
+          import requests
+
+          API = "https://api.github.com"
+          ORG = "TwitterArchiver"
+          TEMPLATE = "sjshb57/IncandescenceArchiver"
+          EXCLUDE = {"home", "Dispatcher", ".github", "project-starter"}
+
+          TOKEN = os.environ["TOKEN"]
+          FILES = [f.strip() for f in os.environ["FILES"].split(",") if f.strip()]
+          DRY = os.environ.get("DRY_RUN") == "1"
+          CREATE_MISSING = os.environ.get("CREATE_MISSING") == "1"
+
+          S = requests.Session()
+          S.headers.update({
+              "Authorization": f"Bearer {TOKEN}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+          })
+
+          def api(method, url, **kw):
+              """带退避重试；返回 (status, json)"""
+              for attempt in range(4):
+                  r = S.request(method, url, timeout=60, **kw)
+                  if r.status_code == 403 and "rate limit" in r.text.lower():
+                      reset = int(r.headers.get("X-RateLimit-Reset", 0))
+                      wait = max(5, reset - int(time.time()) + 2)
+                      print(f"  触发限流，等 {wait}s")
+                      time.sleep(min(wait, 300))
+                      continue
+                  if r.status_code >= 500:
+                      time.sleep(2 * (attempt + 1))
+                      continue
+                  try:
+                      return r.status_code, r.json()
+                  except ValueError:
+                      return r.status_code, None
+              return -1, None
+
+          def list_repos():
+              """列出组织下全部仓库。分页失败必须报错，静默截断会让大批仓库漏同步。"""
+              repos, page = [], 1
+              while True:
+                  data = None
+                  for attempt in range(3):
+                      st, data = api("GET", f"{API}/orgs/{ORG}/repos",
+                                     params={"per_page": 100, "page": page, "type": "all"})
+                      if st == 200:
+                          break
+                      time.sleep(2 * (attempt + 1))
+                  else:
+                      sys.exit(f"::error::列举仓库第 {page} 页失败，中止")
+                  if not data:
+                      break
+                  repos.extend(data)
+                  if len(data) < 100:
+                      break
+                  page += 1
+
+              st, org = api("GET", f"{API}/orgs/{ORG}")
+              total = (org or {}).get("public_repos", 0) + (org or {}).get("total_private_repos", 0)
+              if total and len(repos) < total * 0.9:
+                  sys.exit(f"::error::只列出 {len(repos)} 个仓库，组织约 {total} 个，疑似分页截断")
+
+              return [(r["name"], r.get("default_branch", "main"))
+                      for r in repos if r["name"] not in EXCLUDE and not r.get("archived")]
+
+          # 取模板内容
+          tpl = {}
+          for f in FILES:
+              st, d = api("GET", f"{API}/repos/{TEMPLATE}/contents/.github/workflows/{f}")
+              if st != 200 or not d:
+                  sys.exit(f"::error::读取模板 {f} 失败（HTTP {st}）")
+              tpl[f] = base64.b64decode(d["content"])
+              print(f"模板 {f}: {len(tpl[f])} 字节")
+
+          repos = list_repos()
+          print(f"\n待同步仓库：{len(repos)} 个   模式：{'试运行' if DRY else '实际写入'}\n")
+
+          same = missing = updated = failed = 0
+          for name, branch in repos:
+              for f in FILES:
+                  path = f".github/workflows/{f}"
+                  st, cur = api("GET", f"{API}/repos/{ORG}/{name}/contents/{path}",
+                                params={"ref": branch})
+                  if st == 404:
+                      if not CREATE_MISSING:
+                          missing += 1
+                          continue
+                      sha = None
+                  elif st != 200 or not cur:
+                      print(f"  ✗ {name}/{f} 读取失败 HTTP {st}")
+                      failed += 1
+                      continue
+                  else:
+                      if base64.b64decode(cur["content"]) == tpl[f]:
+                          same += 1
+                          continue
+                      sha = cur["sha"]
+
+                  if DRY:
+                      print(f"  → {name}/{f} {'需创建' if sha is None else '需更新'}")
+                      updated += 1
+                      continue
+
+                  body = {
+                      "message": f"🔧 同步 {f}（推送重试与批次大小）",
+                      "content": base64.b64encode(tpl[f]).decode(),
+                      "branch": branch,
+                  }
+                  if sha:
+                      body["sha"] = sha
+                  st, _ = api("PUT", f"{API}/repos/{ORG}/{name}/contents/{path}", json=body)
+                  if st in (200, 201):
+                      print(f"  ✓ {name}/{f}")
+                      updated += 1
+                  else:
+                      print(f"  ✗ {name}/{f} 写入失败 HTTP {st}")
+                      failed += 1
+                  time.sleep(0.4)   # 内容写入接口比读取更容易触发二级限流
+
+          print(f"\n=== 一致 {same}，{'待处理' if DRY else '已更新'} {updated}，"
+                f"目标缺失 {missing}，失败 {failed} ===")
+          if failed:
+              sys.exit("::error::存在同步失败的仓库")
+          PYEOF
+          python3 /tmp/sync.py
