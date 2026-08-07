@@ -217,6 +217,29 @@ a:hover { text-decoration: none; }
   color: var(--featured-border);
   text-transform: uppercase;
 }
+/* 头像 + 昵称/@ 的头部 */
+.card-head { display: flex; align-items: flex-start; gap: 11px; }
+.card-avatar {
+  position: relative;
+  width: 46px; height: 46px; flex: 0 0 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: hsl(var(--fb-h, 210), 42%, 62%);
+  display: flex; align-items: center; justify-content: center;
+}
+.card-avatar img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+}
+.card-avatar-fb {
+  font-size: 1.05rem; font-weight: 700; color: #fff;
+  user-select: none; line-height: 1;
+}
+.card-ident { min-width: 0; flex: 1; }
+/* 昵称过长时折到第二行，与改版前一致；@ID 是单行标识，超长才省略 */
+.card-ident .card-name { overflow-wrap: anywhere; }
+.card-ident .card-at { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
 .card-name { font-weight: 700; font-size: 1rem; }
 .card-at   { font-size: .84rem; color: var(--accent); }
 .card-desc {
@@ -287,7 +310,22 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 
 @media (max-width: 600px) {
   .hero { padding: 60px 20px 48px; }
-  .grid { grid-template-columns: 1fr; }
+  /* 手机端一屏只能放两三张卡片，改成单列紧凑列表：
+     去掉卡片边框与圆角，行与行之间用分隔线，密度接近安卓端的账号列表 */
+  .grid { grid-template-columns: 1fr; gap: 0; }
+  .card {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding: 13px 4px;
+    gap: 7px;
+  }
+  .card:hover { transform: none; box-shadow: none; border-color: var(--border); }
+  .card.featured { border-color: var(--border); }
+  .card.featured::after { top: 14px; right: 4px; }
+  .card-avatar { width: 42px; height: 42px; flex-basis: 42px; }
+  .card-desc { margin-left: 53px; }
+  .card-links { margin-left: 53px; }
 }
 
 /* ── 预览区：留言 + 时间线 ── */
@@ -502,9 +540,22 @@ function makeCard(repo, featured) {
   const d = document.createElement('div');
   d.className = 'card' + (featured ? ' featured' : '');
   d.onclick = () => window.open(readUrl, '_blank');
+  const avatarUrl = `${pagesUrl(repoName)}accounts/${acct || repoName}/wayback_snapshots/avatar/avatar.jpg`;
+  const initial = esc((dispName || repoName).trim().charAt(0) || '?');
+  // 按用户名散列出一个稳定的底色，头像缺失时兜底，仍保留视觉区分度
+  let h = 0; for (const ch of username) h = (h * 31 + ch.charCodeAt(0)) % 360;
   d.innerHTML = `
-    <div class="card-name">${esc(dispName)}</div>
-    <div class="card-at">${esc(username)}</div>
+    <div class="card-head">
+      <div class="card-avatar" style="--fb-h:${h}">
+        <span class="card-avatar-fb">${initial}</span>
+        <img src="${avatarUrl}" alt="" loading="lazy" decoding="async"
+             onerror="this.remove()">
+      </div>
+      <div class="card-ident">
+        <div class="card-name">${esc(dispName)}</div>
+        <div class="card-at">${esc(username)}</div>
+      </div>
+    </div>
     ${repo.description ? `<div class="card-desc" onclick="event.stopPropagation();this.classList.toggle('expanded')">${esc(repo.description)}</div>` : '<div class="card-desc"></div>'}
     <div class="card-links">
       <a href="${readUrl}" target="_blank" onclick="event.stopPropagation()">📖 阅读存档</a>
