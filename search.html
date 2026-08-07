@@ -886,6 +886,17 @@ function applyFilters(){
 
 function buildDateTree(){
   const tree = {};   // year -> { month -> count }
+  // 没有账号筛选时，目录直接用 meta.json 的分片清单——否则只有已下载的
+  // 那两个月会出现在目录里，用户根本看不到还有哪些月份可以看。
+  if (filterAcct === null && SHARDS.length) {
+    for (const sd of SHARDS) {
+      const y = +sd.month.slice(0,4), m = +sd.month.slice(5,7);
+      (tree[y] = tree[y] || {});
+      tree[y][m] = sd.count || 0;
+    }
+    return tree;
+  }
+  // 筛了账号就只能按已加载的内容统计，meta 里没有分账号的粒度
   for (const p of DATA.posts) {
     if (filterAcct !== null && p[0] !== filterAcct) continue;
     const d = new Date(p[3]); if (isNaN(d)) continue;
@@ -894,6 +905,18 @@ function buildDateTree(){
     tree[y][m] = (tree[y][m]||0) + 1;
   }
   return tree;
+}
+
+/* 选中的月份还没下载就先下再筛，否则点了目录却什么都没有 */
+async function ensureMonthLoaded(ym){
+  if (!ym || LOADED_MONTHS.has(ym)) return;
+  if (!SHARDS.some(x => x.month === ym)) return;
+  LOADING_MORE = true; updateLoadHint();
+  const i = REMAINING.indexOf(ym);
+  if (i >= 0) REMAINING.splice(i, 1);
+  await loadMonths([ym]);
+  LOADING_MORE = false;
+  updateLoadHint();
 }
 
 function renderStats(){
@@ -932,7 +955,8 @@ function renderCalTree(){
     html += `<div class="cal-months ${isOpen?'open':''}" data-year-months="${y}">`;
     for (const m of months) {
       const ym = y + '-' + String(m).padStart(2,'0');
-      html += `<button class="cal-month ${filterYM===ym?'active':''}" data-ym="${ym}">${m} 月<span class="cal-m-count">${tree[y][m]}</span></button>`;
+      const off = SHARDS.length && !LOADED_MONTHS.has(ym) ? ' style="opacity:.55"' : '';
+      html += `<button class="cal-month ${filterYM===ym?'active':''}" data-ym="${ym}"${off}>${m} 月<span class="cal-m-count">${tree[y][m]}</span></button>`;
     }
     html += `</div>`;
   }
@@ -980,7 +1004,11 @@ function setupCal(){
         return;
       }
       const mb = e.target.closest('.cal-month');
-      if (mb) { filterYM = mb.dataset.ym; applyFilters(); refreshFilters(); closeCal(); }
+      if (mb) {
+        filterYM = mb.dataset.ym;
+        closeCal();
+        ensureMonthLoaded(filterYM).then(() => { applyFilters(); refreshFilters(); });
+      }
     });
   });
 }
