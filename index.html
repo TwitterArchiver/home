@@ -528,7 +528,7 @@ function makeCard(repo, featured) {
   d.innerHTML = `
     <div class="card-head">
       <span class="card-avatar">
-        <img src="${avatarUrl}" alt="" loading="lazy" decoding="async"
+        <img src="${esc(avatarUrl)}" alt="" loading="lazy" decoding="async"
              onerror="this.closest('.card-avatar').remove()">
       </span>
       <span class="card-ident">
