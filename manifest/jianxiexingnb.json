@@ -1,0 +1,54 @@
+{
+  "repo": "jianxiexingnb",
+  "account": "jianxiexingnb",
+  "source": "https://twitterarchiver.github.io/jianxiexingnb/accounts/jianxiexingnb/wayback_snapshots/index.json",
+  "etag": "\"6a73f33e-1018e8\"",
+  "bytes": 1054952,
+  "generated": "2026-08-08T06:31:21Z",
+  "range": true,
+  "total": 1200,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 10057,
+      "count": 11,
+      "hash": "e47f1e5a7b857a53"
+    },
+    "2026-07": {
+      "offset": 10059,
+      "length": 137261,
+      "count": 157,
+      "hash": "748f804e0b2a87c9"
+    },
+    "2026-06": {
+      "offset": 147321,
+      "length": 97501,
+      "count": 110,
+      "hash": "a71fd8c21c7c1fc6"
+    },
+    "2026-05": {
+      "offset": 244823,
+      "length": 495414,
+      "count": 567,
+      "hash": "8dd9f24cc8c24eb5"
+    },
+    "2026-04": {
+      "offset": 740238,
+      "length": 302265,
+      "count": 339,
+      "hash": "706afc28079c96de"
+    },
+    "2026-03": {
+      "offset": 1042504,
+      "length": 11968,
+      "count": 15,
+      "hash": "94cdd20bdc35d32f"
+    },
+    "2023-01": {
+      "offset": 1054473,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

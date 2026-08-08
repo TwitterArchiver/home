@@ -1,0 +1,60 @@
+{
+  "repo": "MoYoHe_",
+  "account": "MoYoHe_",
+  "source": "https://twitterarchiver.github.io/MoYoHe_/accounts/MoYoHe_/wayback_snapshots/index.json",
+  "etag": "\"6a73efcd-17bbf6\"",
+  "bytes": 1555446,
+  "generated": "2026-08-08T06:29:53Z",
+  "range": true,
+  "total": 1637,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 88785,
+      "count": 92,
+      "hash": "b220617314db8a68"
+    },
+    "2026-07": {
+      "offset": 88787,
+      "length": 914131,
+      "count": 973,
+      "hash": "36e2d1db1a8456fa"
+    },
+    "2026-06": {
+      "offset": 1002919,
+      "length": 493380,
+      "count": 510,
+      "hash": "b2a9776e3dc5f0b7"
+    },
+    "2026-05": {
+      "offset": 1496300,
+      "length": 42915,
+      "count": 45,
+      "hash": "9ffa52e0dfcec9df"
+    },
+    "2026-04": {
+      "offset": 1539216,
+      "length": 2288,
+      "count": 3,
+      "hash": "50fbd0a5db1f3eac"
+    },
+    "2026-03": {
+      "offset": 1541505,
+      "length": 2007,
+      "count": 2,
+      "hash": "ea7858c07549c063"
+    },
+    "2026-02": {
+      "offset": 1543513,
+      "length": 11455,
+      "count": 11,
+      "hash": "9e060903e7e192e7"
+    },
+    "2022-11": {
+      "offset": 1554969,
+      "length": 476,
+      "count": 1,
+      "hash": "604511cb78cef603"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "repo": "Wesley10032",
+  "account": "Wesley10032",
+  "source": "https://twitterarchiver.github.io/Wesley10032/accounts/Wesley10032/wayback_snapshots/index.json",
+  "etag": "\"6a761fcf-312625\"",
+  "bytes": 3221029,
+  "generated": "2026-08-08T06:30:29Z",
+  "range": true,
+  "total": 3882,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 414343,
+      "count": 497,
+      "hash": "88b8bc74caf26670"
+    },
+    "2026-07": {
+      "offset": 414345,
+      "length": 2088079,
+      "count": 2551,
+      "hash": "b567b8cdbcc28c23"
+    },
+    "2026-06": {
+      "offset": 2502425,
+      "length": 338103,
+      "count": 382,
+      "hash": "c8604703e8bebf29"
+    },
+    "2026-05": {
+      "offset": 2840529,
+      "length": 1880,
+      "count": 3,
+      "hash": "21dc455c3a66d194"
+    },
+    "2025-05": {
+      "offset": 2842410,
+      "length": 476,
+      "count": 1,
+      "hash": "e7036e8d5a5b78fd"
+    },
+    "2024-09": {
+      "offset": 2842887,
+      "length": 46327,
+      "count": 53,
+      "hash": "dd702b1c4bd37c7a"
+    },
+    "2024-08": {
+      "offset": 2889215,
+      "length": 175734,
+      "count": 214,
+      "hash": "6c4b8c0682641722"
+    },
+    "2024-07": {
+      "offset": 3064950,
+      "length": 144688,
+      "count": 170,
+      "hash": "0faf3e4bacdc5167"
+    },
+    "2024-06": {
+      "offset": 3209639,
+      "length": 10876,
+      "count": 10,
+      "hash": "085c2d25e963cefb"
+    },
+    "2021-10": {
+      "offset": 3220516,
+      "length": 512,
+      "count": 1,
+      "hash": "d975d1d7d4cdcc9b"
+    }
+  }
+}

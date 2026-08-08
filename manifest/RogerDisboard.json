@@ -2,9 +2,9 @@
   "repo": "RogerDisboard",
   "account": "RogerDisboard",
   "source": "https://twitterarchiver.github.io/RogerDisboard/accounts/RogerDisboard/wayback_snapshots/index.json",
-  "etag": "\"6a659ec2-3941ee\"",
-  "bytes": 3752430,
-  "generated": "2026-07-26T08:29:11Z",
+  "etag": "\"6a73f17f-39422f\"",
+  "bytes": 3752495,
+  "generated": "2026-08-08T06:30:11Z",
   "range": true,
   "total": 4638,
   "months": {
@@ -22,24 +22,24 @@
     },
     "2026-05": {
       "offset": 1080406,
-      "length": 1879156,
+      "length": 1879221,
       "count": 2320,
-      "hash": "f8df3ee818efef96"
+      "hash": "bdfaad09c8df4769"
     },
     "2026-04": {
-      "offset": 2959563,
+      "offset": 2959628,
       "length": 748153,
       "count": 928,
       "hash": "fd62bd4b30509a8f"
     },
     "2026-03": {
-      "offset": 3707717,
+      "offset": 3707782,
       "length": 43899,
       "count": 50,
       "hash": "2776fd2c473d4fc0"
     },
     "2022-06": {
-      "offset": 3751617,
+      "offset": 3751682,
       "length": 812,
       "count": 1,
       "hash": "1cb5034045bb7668"

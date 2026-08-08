@@ -1,0 +1,60 @@
+{
+  "repo": "skyseafor",
+  "account": "skyseafor",
+  "source": "https://twitterarchiver.github.io/skyseafor/accounts/skyseafor/wayback_snapshots/index.json",
+  "etag": "\"6a75ad6b-12f955\"",
+  "bytes": 1243477,
+  "generated": "2026-08-08T06:31:50Z",
+  "range": true,
+  "total": 1445,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 29313,
+      "count": 35,
+      "hash": "8ac28119d135b0c8"
+    },
+    "2026-07": {
+      "offset": 29315,
+      "length": 433828,
+      "count": 509,
+      "hash": "9f11572589d02c73"
+    },
+    "2026-06": {
+      "offset": 463144,
+      "length": 672628,
+      "count": 783,
+      "hash": "4c716ae19b90d568"
+    },
+    "2026-05": {
+      "offset": 1135773,
+      "length": 14997,
+      "count": 16,
+      "hash": "487060acfadc0ae3"
+    },
+    "2026-04": {
+      "offset": 1150771,
+      "length": 83882,
+      "count": 91,
+      "hash": "d67e9ffcf3e27255"
+    },
+    "2026-03": {
+      "offset": 1234654,
+      "length": 758,
+      "count": 1,
+      "hash": "32a8fb716f93c7a4"
+    },
+    "2026-02": {
+      "offset": 1235413,
+      "length": 3366,
+      "count": 4,
+      "hash": "87acd54abe1360de"
+    },
+    "2026-01": {
+      "offset": 1238780,
+      "length": 4696,
+      "count": 6,
+      "hash": "9c2a8fb38120d71c"
+    }
+  }
+}

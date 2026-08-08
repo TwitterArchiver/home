@@ -2,50 +2,50 @@
   "repo": "Semp1trnal_2345",
   "account": "Semp1trnal_2345",
   "source": "https://twitterarchiver.github.io/Semp1trnal_2345/accounts/Semp1trnal_2345/wayback_snapshots/index.json",
-  "etag": "\"6a6e9f61-2b2d0e\"",
-  "bytes": 2829582,
-  "generated": "2026-08-02T03:35:49Z",
+  "etag": "\"6a736472-2c05cc\"",
+  "bytes": 2885068,
+  "generated": "2026-08-08T06:30:13Z",
   "range": true,
-  "total": 3505,
+  "total": 3570,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 1425,
-      "count": 1,
-      "hash": "036aa57c236c5d61"
+      "length": 45845,
+      "count": 53,
+      "hash": "557414148156f10a"
     },
     "2026-07": {
-      "offset": 1427,
-      "length": 651839,
-      "count": 790,
-      "hash": "e2c67b3cdde59477"
+      "offset": 45847,
+      "length": 662670,
+      "count": 803,
+      "hash": "ac4c6fc781a8527d"
     },
     "2026-06": {
-      "offset": 653267,
-      "length": 576984,
+      "offset": 708518,
+      "length": 577070,
       "count": 701,
-      "hash": "04e015fe1016c232"
+      "hash": "a123c5a8295f7334"
     },
     "2026-05": {
-      "offset": 1230252,
-      "length": 532169,
+      "offset": 1285589,
+      "length": 532234,
       "count": 640,
-      "hash": "371d3f1f83e0f938"
+      "hash": "f2ca00b29c5576f9"
     },
     "2026-04": {
-      "offset": 1762422,
-      "length": 509761,
+      "offset": 1817824,
+      "length": 509845,
       "count": 649,
-      "hash": "3714e460bb00aac5"
+      "hash": "f054d06f24d1c01f"
     },
     "2026-03": {
-      "offset": 2272184,
+      "offset": 2327670,
       "length": 556439,
       "count": 723,
       "hash": "158fef64c9319f0e"
     },
     "2025-11": {
-      "offset": 2828624,
+      "offset": 2884110,
       "length": 957,
       "count": 1,
       "hash": "11eb76c78b7124a2"

@@ -1,0 +1,78 @@
+{
+  "repo": "Mumula379528",
+  "account": "Mumula379528",
+  "source": "https://twitterarchiver.github.io/Mumula379528/accounts/Mumula379528/wayback_snapshots/index.json",
+  "etag": "\"6a73f06e-1dfa76\"",
+  "bytes": 1964662,
+  "generated": "2026-08-08T06:29:53Z",
+  "range": true,
+  "total": 2386,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 3515,
+      "count": 5,
+      "hash": "6b9e4a4f17b88da7"
+    },
+    "2026-07": {
+      "offset": 3517,
+      "length": 417937,
+      "count": 527,
+      "hash": "7929cf9aa2858702"
+    },
+    "2026-06": {
+      "offset": 421455,
+      "length": 10934,
+      "count": 15,
+      "hash": "7109fdc30be8fd92"
+    },
+    "2026-05": {
+      "offset": 432390,
+      "length": 59232,
+      "count": 77,
+      "hash": "fde0210b9b7816b3"
+    },
+    "2026-04": {
+      "offset": 491623,
+      "length": 430028,
+      "count": 517,
+      "hash": "9fdbe4b7b0f81f8a"
+    },
+    "2026-03": {
+      "offset": 921652,
+      "length": 177434,
+      "count": 220,
+      "hash": "9ca16293f6dec7fb"
+    },
+    "2026-02": {
+      "offset": 1099087,
+      "length": 1887,
+      "count": 2,
+      "hash": "cfda3244adb135b2"
+    },
+    "2026-01": {
+      "offset": 1100975,
+      "length": 635606,
+      "count": 767,
+      "hash": "d8568d298ab5002a"
+    },
+    "2025-12": {
+      "offset": 1736582,
+      "length": 166483,
+      "count": 197,
+      "hash": "72202ef263e10036"
+    },
+    "2025-11": {
+      "offset": 1903066,
+      "length": 61148,
+      "count": 58,
+      "hash": "983aa2d178fed372"
+    },
+    "2025-07": {
+      "offset": 1964215,
+      "length": 446,
+      "count": 1,
+      "hash": "2b88e365a4907736"
+    }
+  }
+}

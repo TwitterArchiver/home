@@ -1,0 +1,42 @@
+{
+  "repo": "Xilne_cc",
+  "account": "Xilne_cc",
+  "source": "https://twitterarchiver.github.io/Xilne_cc/accounts/Xilne_cc/wayback_snapshots/index.json",
+  "etag": "\"6a7017ff-f7175\"",
+  "bytes": 1012085,
+  "generated": "2026-08-08T06:30:34Z",
+  "range": true,
+  "total": 1215,
+  "months": {
+    "2026-04": {
+      "offset": 1,
+      "length": 553629,
+      "count": 666,
+      "hash": "f4792d4773a6d185"
+    },
+    "2026-03": {
+      "offset": 553631,
+      "length": 451909,
+      "count": 541,
+      "hash": "809102dc14b111da"
+    },
+    "2026-02": {
+      "offset": 1005541,
+      "length": 3946,
+      "count": 6,
+      "hash": "707f5ea356657312"
+    },
+    "2025-12": {
+      "offset": 1009488,
+      "length": 1295,
+      "count": 1,
+      "hash": "c155ab71ab48d884"
+    },
+    "2025-09": {
+      "offset": 1010784,
+      "length": 1300,
+      "count": 1,
+      "hash": "84cd5af4236478f0"
+    }
+  }
+}

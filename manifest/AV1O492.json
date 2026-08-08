@@ -1,0 +1,102 @@
+{
+  "repo": "AV1O492",
+  "account": "AV1O492",
+  "source": "https://twitterarchiver.github.io/AV1O492/accounts/AV1O492/wayback_snapshots/index.json",
+  "etag": "\"6a760071-38ad91\"",
+  "bytes": 3714449,
+  "generated": "2026-08-08T06:28:58Z",
+  "range": true,
+  "total": 4557,
+  "months": {
+    "2026-07": {
+      "offset": 1,
+      "length": 970643,
+      "count": 1129,
+      "hash": "c510da1d677b3c2c"
+    },
+    "2026-06": {
+      "offset": 970645,
+      "length": 361204,
+      "count": 443,
+      "hash": "ee139cda653733a7"
+    },
+    "2026-05": {
+      "offset": 1331850,
+      "length": 92196,
+      "count": 115,
+      "hash": "16c5d215cf663809"
+    },
+    "2026-04": {
+      "offset": 1424047,
+      "length": 376431,
+      "count": 471,
+      "hash": "9008a1473b9c3e71"
+    },
+    "2026-03": {
+      "offset": 1800479,
+      "length": 838788,
+      "count": 1067,
+      "hash": "f50d30907c0c8918"
+    },
+    "2026-02": {
+      "offset": 2639268,
+      "length": 436,
+      "count": 1,
+      "hash": "6faa0941dd31bcd4"
+    },
+    "2026-01": {
+      "offset": 2639705,
+      "length": 2020,
+      "count": 4,
+      "hash": "874baf0453d7acf3"
+    },
+    "2025-10": {
+      "offset": 2641726,
+      "length": 37492,
+      "count": 42,
+      "hash": "d3ba5bdce48366c2"
+    },
+    "2025-08": {
+      "offset": 2679219,
+      "length": 5098,
+      "count": 7,
+      "hash": "459ed42edbbb2712"
+    },
+    "2025-07": {
+      "offset": 2684318,
+      "length": 459,
+      "count": 1,
+      "hash": "936b2d951d91ab91"
+    },
+    "2025-06": {
+      "offset": 2684778,
+      "length": 986541,
+      "count": 1226,
+      "hash": "17df5d620ad2f2e2"
+    },
+    "2025-05": {
+      "offset": 3671320,
+      "length": 40809,
+      "count": 46,
+      "hash": "0d4c279c22616ad8"
+    },
+    "2025-04": {
+      "offset": 3712130,
+      "length": 995,
+      "count": 2,
+      "hash": "3a5fadc5c203f77c"
+    },
+    "2025-01": {
+      "offset": 3713126,
+      "length": 888,
+      "count": 2,
+      "hash": "59c0689c5fffd1a2"
+    },
+    "2021-11": {
+      "offset": 3714015,
+      "length": 433,
+      "count": 1,
+      "hash": "c4c5d701b03162fc"
+    }
+  }
+}
