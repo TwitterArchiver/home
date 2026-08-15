@@ -2,59 +2,71 @@
   "repo": "Isunia177991",
   "account": "Isunia177991",
   "source": "https://twitterarchiver.github.io/Isunia177991/accounts/Isunia177991/wayback_snapshots/index.json",
-  "etag": "\"6a6e3fca-3a53a\"",
-  "bytes": 238906,
-  "generated": "2026-08-01T19:45:47Z",
+  "etag": "\"6a7e973f-5b26d\"",
+  "bytes": 373357,
+  "generated": "2026-08-15T04:09:22Z",
   "range": true,
-  "total": 254,
+  "total": 410,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 224701,
-      "count": 235,
-      "hash": "be08542eaac5e3c6"
+      "length": 93642,
+      "count": 109,
+      "hash": "20e353e68f8ed6c7"
+    },
+    "2026-07": {
+      "offset": 93644,
+      "length": 264890,
+      "count": 281,
+      "hash": "da4ed1756f42bc91"
     },
     "2026-06": {
-      "offset": 224703,
+      "offset": 358535,
       "length": 512,
       "count": 1,
       "hash": "5e1fcac2871bbf3f"
     },
     "2026-05": {
-      "offset": 225216,
+      "offset": 359048,
       "length": 1019,
       "count": 1,
       "hash": "754ae4a6262b9ebb"
     },
     "2025-08": {
-      "offset": 226236,
+      "offset": 360068,
       "length": 452,
       "count": 1,
       "hash": "7b5aab1e0928c363"
     },
     "2024-09": {
-      "offset": 226689,
+      "offset": 360521,
       "length": 4089,
       "count": 4,
       "hash": "9cc58e678b746177"
     },
     "2024-08": {
-      "offset": 230779,
+      "offset": 364611,
       "length": 7000,
       "count": 10,
       "hash": "6410767012fcce32"
     },
     "2023-09": {
-      "offset": 237780,
+      "offset": 371612,
       "length": 611,
       "count": 1,
       "hash": "6297729c2a869012"
     },
     "2023-03": {
-      "offset": 238392,
+      "offset": 372224,
       "length": 513,
       "count": 1,
       "hash": "690758487d23b3d6"
+    },
+    "2022-12": {
+      "offset": 372738,
+      "length": 618,
+      "count": 1,
+      "hash": "cf54cb0337dfad5a"
     }
   }
 }

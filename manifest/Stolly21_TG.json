@@ -1,0 +1,96 @@
+{
+  "repo": "Stolly21_TG",
+  "account": "Stolly21_TG",
+  "source": "https://twitterarchiver.github.io/Stolly21_TG/accounts/Stolly21_TG/wayback_snapshots/index.json",
+  "etag": "\"6a781899-11866e\"",
+  "bytes": 1148526,
+  "generated": "2026-08-15T04:10:27Z",
+  "range": true,
+  "total": 1288,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 12672,
+      "count": 14,
+      "hash": "64bea4b077414234"
+    },
+    "2026-07": {
+      "offset": 12674,
+      "length": 379311,
+      "count": 430,
+      "hash": "da6323c64a0f44f7"
+    },
+    "2026-06": {
+      "offset": 391986,
+      "length": 638039,
+      "count": 709,
+      "hash": "25295a82dab79f0b"
+    },
+    "2026-05": {
+      "offset": 1030026,
+      "length": 69938,
+      "count": 80,
+      "hash": "9481fc9cb7336d74"
+    },
+    "2026-04": {
+      "offset": 1099965,
+      "length": 11009,
+      "count": 12,
+      "hash": "d40699163b444c94"
+    },
+    "2026-03": {
+      "offset": 1110975,
+      "length": 1234,
+      "count": 1,
+      "hash": "65170b08795977b0"
+    },
+    "2026-02": {
+      "offset": 1112210,
+      "length": 1083,
+      "count": 1,
+      "hash": "c242566eaca5ec24"
+    },
+    "2025-12": {
+      "offset": 1113294,
+      "length": 2314,
+      "count": 3,
+      "hash": "e9940016a1a8f2c0"
+    },
+    "2025-10": {
+      "offset": 1115609,
+      "length": 1125,
+      "count": 1,
+      "hash": "4b452c6c6403f9c5"
+    },
+    "2025-09": {
+      "offset": 1116735,
+      "length": 805,
+      "count": 1,
+      "hash": "a4082785d8f72df9"
+    },
+    "2025-08": {
+      "offset": 1117541,
+      "length": 13035,
+      "count": 15,
+      "hash": "c6634cc9bd174e34"
+    },
+    "2025-07": {
+      "offset": 1130577,
+      "length": 1110,
+      "count": 1,
+      "hash": "aa4296db917fcddd"
+    },
+    "2025-06": {
+      "offset": 1131688,
+      "length": 14330,
+      "count": 17,
+      "hash": "425ce524b2f480e4"
+    },
+    "2025-05": {
+      "offset": 1146019,
+      "length": 2506,
+      "count": 3,
+      "hash": "3a3f5794ece83516"
+    }
+  }
+}

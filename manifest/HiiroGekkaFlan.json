@@ -2,68 +2,68 @@
   "repo": "HiiroGekkaFlan",
   "account": "HiiroGekkaFlan",
   "source": "https://twitterarchiver.github.io/HiiroGekkaFlan/accounts/HiiroGekkaFlan/wayback_snapshots/index.json",
-  "etag": "\"6a6f3617-14a41e\"",
-  "bytes": 1352734,
-  "generated": "2026-08-02T12:38:23Z",
+  "etag": "\"6a7ddd08-164753\"",
+  "bytes": 1460051,
+  "generated": "2026-08-15T04:09:20Z",
   "range": true,
-  "total": 1644,
+  "total": 1773,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 20190,
-      "count": 25,
-      "hash": "37712977cd2c2c06"
+      "length": 122616,
+      "count": 149,
+      "hash": "9d37265de5cc29d6"
     },
     "2026-07": {
-      "offset": 20192,
-      "length": 943150,
-      "count": 1138,
-      "hash": "eadd066fd20a9806"
+      "offset": 122618,
+      "length": 946762,
+      "count": 1142,
+      "hash": "dc6d568d606b1eab"
     },
     "2026-06": {
-      "offset": 963343,
+      "offset": 1069381,
       "length": 385325,
       "count": 474,
       "hash": "43c1cac92c8844d1"
     },
     "2026-05": {
-      "offset": 1348669,
-      "length": 710,
-      "count": 1,
-      "hash": "75b0454835abb214"
+      "offset": 1454707,
+      "length": 1989,
+      "count": 2,
+      "hash": "e1f0658e470cd139"
     },
     "2026-03": {
-      "offset": 1349380,
+      "offset": 1456697,
       "length": 721,
       "count": 1,
       "hash": "8c910a2d816d923d"
     },
     "2025-12": {
-      "offset": 1350102,
+      "offset": 1457419,
       "length": 498,
       "count": 1,
       "hash": "686543fc26ca54c4"
     },
     "2025-06": {
-      "offset": 1350601,
+      "offset": 1457918,
       "length": 510,
       "count": 1,
       "hash": "79c7766d4967fd6e"
     },
     "2024-04": {
-      "offset": 1351112,
+      "offset": 1458429,
       "length": 477,
       "count": 1,
       "hash": "dfbd77a6e9e34666"
     },
     "2021-01": {
-      "offset": 1351590,
+      "offset": 1458907,
       "length": 513,
       "count": 1,
       "hash": "9dd02eaf8da08b11"
     },
     "2020-11": {
-      "offset": 1352104,
+      "offset": 1459421,
       "length": 629,
       "count": 1,
       "hash": "4e8155f2d5945826"

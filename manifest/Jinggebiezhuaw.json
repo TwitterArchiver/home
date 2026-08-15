@@ -2,44 +2,50 @@
   "repo": "Jinggebiezhuaw",
   "account": "Jinggebiezhuaw",
   "source": "https://twitterarchiver.github.io/Jinggebiezhuaw/accounts/Jinggebiezhuaw/wayback_snapshots/index.json",
-  "etag": "\"6a6d97b3-b6455\"",
-  "bytes": 746581,
-  "generated": "2026-08-01T19:45:48Z",
+  "etag": "\"6a7e9c55-bdf11\"",
+  "bytes": 778001,
+  "generated": "2026-08-15T04:09:22Z",
   "range": true,
-  "total": 905,
+  "total": 940,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 294689,
-      "count": 362,
-      "hash": "4c380c65d033d48e"
+      "length": 24269,
+      "count": 26,
+      "hash": "83cb984d3177b083"
+    },
+    "2026-07": {
+      "offset": 24271,
+      "length": 301701,
+      "count": 371,
+      "hash": "7d9e7e3a24841d9c"
     },
     "2026-06": {
-      "offset": 294691,
-      "length": 136623,
+      "offset": 325973,
+      "length": 136696,
       "count": 164,
-      "hash": "04f82cb86cd7af07"
+      "hash": "8abcfc68887fea30"
     },
     "2026-05": {
-      "offset": 431315,
-      "length": 271290,
+      "offset": 462670,
+      "length": 271355,
       "count": 327,
-      "hash": "7c465a16e19cc724"
+      "hash": "24d4a3561d31cb57"
     },
     "2026-04": {
-      "offset": 702606,
+      "offset": 734026,
       "length": 32628,
       "count": 38,
       "hash": "989228db46f3da4c"
     },
     "2026-03": {
-      "offset": 735235,
+      "offset": 766655,
       "length": 5646,
       "count": 7,
       "hash": "a0ec5d5446c6d362"
     },
     "2026-02": {
-      "offset": 740882,
+      "offset": 772302,
       "length": 5698,
       "count": 7,
       "hash": "e9b09be7be46792d"

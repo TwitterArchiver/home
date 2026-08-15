@@ -2,56 +2,56 @@
   "repo": "Haokuno_0",
   "account": "Haokuno_0",
   "source": "https://twitterarchiver.github.io/Haokuno_0/accounts/Haokuno_0/wayback_snapshots/index.json",
-  "etag": "\"6a6f421b-26f927\"",
-  "bytes": 2554151,
-  "generated": "2026-08-02T13:16:55Z",
+  "etag": "\"6a7de254-2a6ee9\"",
+  "bytes": 2780905,
+  "generated": "2026-08-15T04:09:21Z",
   "range": true,
-  "total": 3436,
+  "total": 3680,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 7577,
-      "count": 10,
-      "hash": "11eb96e759eed817"
+      "length": 193746,
+      "count": 252,
+      "hash": "a13c44c48eaf8eaa"
     },
     "2026-07": {
-      "offset": 7579,
-      "length": 546152,
-      "count": 754,
-      "hash": "2e1bbbb78c95d64f"
+      "offset": 193748,
+      "length": 566148,
+      "count": 756,
+      "hash": "a32755484fcf7d47"
     },
     "2026-06": {
-      "offset": 553732,
-      "length": 738593,
+      "offset": 759897,
+      "length": 758859,
       "count": 994,
-      "hash": "68edb851ca697c07"
+      "hash": "b8f9431ccdf24d63"
     },
     "2026-05": {
-      "offset": 1292326,
+      "offset": 1518757,
       "length": 168477,
       "count": 224,
       "hash": "05fd52abb7fb0557"
     },
     "2026-04": {
-      "offset": 1460804,
+      "offset": 1687235,
       "length": 276588,
       "count": 373,
       "hash": "4a482a2b77fcf992"
     },
     "2026-03": {
-      "offset": 1737393,
-      "length": 772254,
+      "offset": 1963824,
+      "length": 772577,
       "count": 1026,
-      "hash": "87c749036e36f3b1"
+      "hash": "9ed219fdbae73167"
     },
     "2026-02": {
-      "offset": 2509648,
+      "offset": 2736402,
       "length": 43497,
       "count": 54,
       "hash": "43374a1395cbe59d"
     },
     "2025-04": {
-      "offset": 2553146,
+      "offset": 2779900,
       "length": 1004,
       "count": 1,
       "hash": "edc8c76a87f686a6"

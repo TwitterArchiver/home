@@ -2,9 +2,9 @@
   "repo": "DQadopt",
   "account": "DQadopt",
   "source": "https://twitterarchiver.github.io/DQadopt/accounts/DQadopt/wayback_snapshots/index.json",
-  "etag": "\"6a60f300-5a76fe\"",
-  "bytes": 5928702,
-  "generated": "2026-07-23T19:52:46Z",
+  "etag": "\"6a7aa983-5a7795\"",
+  "bytes": 5928853,
+  "generated": "2026-08-15T04:09:06Z",
   "range": true,
   "total": 7365,
   "months": {
@@ -28,72 +28,72 @@
     },
     "2026-02": {
       "offset": 4609148,
-      "length": 1014806,
+      "length": 1014957,
       "count": 1176,
-      "hash": "f4c96c07ef5dc807"
+      "hash": "da5ef30576f384ff"
     },
     "2026-01": {
-      "offset": 5623955,
+      "offset": 5624106,
       "length": 263302,
       "count": 311,
       "hash": "7de24ac861e4636a"
     },
     "2025-12": {
-      "offset": 5887258,
+      "offset": 5887409,
       "length": 3876,
       "count": 6,
       "hash": "c137d3aeca545e52"
     },
     "2025-11": {
-      "offset": 5891135,
+      "offset": 5891286,
       "length": 31536,
       "count": 37,
       "hash": "eb7b626a4ec86d40"
     },
     "2025-10": {
-      "offset": 5922672,
+      "offset": 5922823,
       "length": 801,
       "count": 1,
       "hash": "7074fa5d65b71cf0"
     },
     "2025-08": {
-      "offset": 5923474,
+      "offset": 5923625,
       "length": 1013,
       "count": 2,
       "hash": "faea4e50c49928f1"
     },
     "2025-04": {
-      "offset": 5924488,
+      "offset": 5924639,
       "length": 489,
       "count": 1,
       "hash": "4fa9f8c83e087645"
     },
     "2025-02": {
-      "offset": 5924978,
+      "offset": 5925129,
       "length": 471,
       "count": 1,
       "hash": "1eeae2c4dbeef739"
     },
     "2025-01": {
-      "offset": 5925450,
+      "offset": 5925601,
       "length": 846,
       "count": 1,
       "hash": "8afb802866321deb"
     },
     "2024-05": {
-      "offset": 5926297,
+      "offset": 5926448,
       "length": 691,
       "count": 1,
       "hash": "6a76b0b0ea0a40fc"
     },
     "2023-11": {
-      "offset": 5926989,
+      "offset": 5927140,
       "length": 1019,
       "count": 2,
       "hash": "2c0b123e2349efe1"
     },
     "2023-10": {
-      "offset": 5928009,
+      "offset": 5928160,
       "length": 692,
       "count": 1,
       "hash": "995ffc877c7f8d34"

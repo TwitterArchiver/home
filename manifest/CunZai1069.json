@@ -2,56 +2,62 @@
   "repo": "CunZai1069",
   "account": "CunZai1069",
   "source": "https://twitterarchiver.github.io/CunZai1069/accounts/CunZai1069/wayback_snapshots/index.json",
-  "etag": "\"6a68c065-1dbb07\"",
-  "bytes": 1948423,
-  "generated": "2026-07-28T18:04:38Z",
+  "etag": "\"6a79eaad-1e0980\"",
+  "bytes": 1968512,
+  "generated": "2026-08-15T04:09:01Z",
   "range": true,
-  "total": 2417,
+  "total": 2434,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 66346,
+      "length": 12990,
+      "count": 17,
+      "hash": "8153f893b02bba63"
+    },
+    "2026-07": {
+      "offset": 12992,
+      "length": 68719,
       "count": 83,
-      "hash": "924d95c2c97ab453"
+      "hash": "742cf3f9d0f89c7c"
     },
     "2026-06": {
-      "offset": 66348,
-      "length": 308076,
+      "offset": 81712,
+      "length": 312670,
       "count": 369,
-      "hash": "322222fbce5fec05"
+      "hash": "2e97b8bcc400bc00"
     },
     "2026-05": {
-      "offset": 374425,
-      "length": 1087597,
+      "offset": 394383,
+      "length": 1087663,
       "count": 1365,
-      "hash": "ffb599faeb9123f7"
+      "hash": "cbcb453ddac6e8a5"
     },
     "2026-04": {
-      "offset": 1462023,
-      "length": 479012,
+      "offset": 1482047,
+      "length": 479077,
       "count": 591,
-      "hash": "febb9b8aa6abc642"
+      "hash": "b92ef4cce7a6c08b"
     },
     "2025-11": {
-      "offset": 1941036,
+      "offset": 1961125,
       "length": 4863,
       "count": 6,
       "hash": "626de38cf8f49148"
     },
     "2025-08": {
-      "offset": 1945900,
+      "offset": 1965989,
       "length": 857,
       "count": 1,
       "hash": "639c108379019e3b"
     },
     "2025-07": {
-      "offset": 1946758,
+      "offset": 1966847,
       "length": 857,
       "count": 1,
       "hash": "9db9d3031c371fd9"
     },
     "2022-06": {
-      "offset": 1947616,
+      "offset": 1967705,
       "length": 806,
       "count": 1,
       "hash": "d867e10692737805"

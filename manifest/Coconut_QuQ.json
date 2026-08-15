@@ -2,50 +2,56 @@
   "repo": "Coconut_QuQ",
   "account": "Coconut_QuQ",
   "source": "https://twitterarchiver.github.io/Coconut_QuQ/accounts/Coconut_QuQ/wayback_snapshots/index.json",
-  "etag": "\"6a6ed1b2-9e06b\"",
-  "bytes": 647275,
-  "generated": "2026-08-02T08:28:19Z",
+  "etag": "\"6a79eb01-a15b0\"",
+  "bytes": 660912,
+  "generated": "2026-08-15T04:09:00Z",
   "range": true,
-  "total": 672,
+  "total": 686,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 90755,
-      "count": 105,
-      "hash": "82698d82b779fd14"
+      "length": 12753,
+      "count": 13,
+      "hash": "720f22bf541dcfbb"
+    },
+    "2026-07": {
+      "offset": 12755,
+      "length": 91638,
+      "count": 106,
+      "hash": "68fcfb811824c3d0"
     },
     "2026-06": {
-      "offset": 90757,
+      "offset": 104394,
       "length": 42555,
       "count": 45,
       "hash": "e8161dda4b8ab7e6"
     },
     "2026-05": {
-      "offset": 133313,
+      "offset": 146950,
       "length": 174102,
       "count": 170,
       "hash": "bfa11686a58eed84"
     },
     "2026-04": {
-      "offset": 307416,
+      "offset": 321053,
       "length": 165296,
       "count": 169,
       "hash": "0a4edb148a3c9c4f"
     },
     "2026-03": {
-      "offset": 472713,
+      "offset": 486350,
       "length": 140806,
       "count": 144,
       "hash": "73dc9a55fb387101"
     },
     "2026-02": {
-      "offset": 613520,
+      "offset": 627157,
       "length": 33258,
       "count": 38,
       "hash": "e31c0a8826075ee5"
     },
     "2025-10": {
-      "offset": 646779,
+      "offset": 660416,
       "length": 495,
       "count": 1,
       "hash": "36a8113f0ee9203f"

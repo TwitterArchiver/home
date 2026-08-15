@@ -2,44 +2,50 @@
   "repo": "GptRainy",
   "account": "GptRainy",
   "source": "https://twitterarchiver.github.io/GptRainy/accounts/GptRainy/wayback_snapshots/index.json",
-  "etag": "\"6a623a31-d87b9\"",
-  "bytes": 886713,
-  "generated": "2026-07-23T19:52:48Z",
+  "etag": "\"6a7d46f1-10283e\"",
+  "bytes": 1058878,
+  "generated": "2026-08-15T04:09:16Z",
   "range": true,
-  "total": 970,
+  "total": 1165,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 259006,
-      "count": 291,
-      "hash": "c3498846908d523c"
+      "length": 65449,
+      "count": 75,
+      "hash": "d731c9e854e9c78b"
+    },
+    "2026-07": {
+      "offset": 65451,
+      "length": 365721,
+      "count": 411,
+      "hash": "4fd789c088532f49"
     },
     "2026-06": {
-      "offset": 259008,
+      "offset": 431173,
       "length": 448060,
       "count": 481,
       "hash": "b685c905a189e9e5"
     },
     "2026-05": {
-      "offset": 707069,
+      "offset": 879234,
       "length": 177708,
       "count": 195,
       "hash": "5c224bff1b2377c7"
     },
     "2026-04": {
-      "offset": 884778,
+      "offset": 1056943,
       "length": 502,
       "count": 1,
       "hash": "0d675199460c572d"
     },
     "2026-02": {
-      "offset": 885281,
+      "offset": 1057446,
       "length": 809,
       "count": 1,
       "hash": "38c3aa9636b7de30"
     },
     "2025-06": {
-      "offset": 886091,
+      "offset": 1058256,
       "length": 621,
       "count": 1,
       "hash": "984aafdae9d09978"

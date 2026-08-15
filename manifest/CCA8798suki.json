@@ -2,38 +2,38 @@
   "repo": "CCA8798suki",
   "account": "CCA8798suki",
   "source": "https://twitterarchiver.github.io/CCA8798suki/accounts/CCA8798suki/wayback_snapshots/index.json",
-  "etag": "\"6a75ad90-19dcff\"",
-  "bytes": 1694975,
-  "generated": "2026-08-08T06:29:09Z",
+  "etag": "\"6a7891d7-1adc66\"",
+  "bytes": 1760358,
+  "generated": "2026-08-15T04:08:52Z",
   "range": true,
-  "total": 1958,
+  "total": 2036,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 99567,
-      "count": 112,
-      "hash": "6c22dc0b34fe3830"
+      "length": 159257,
+      "count": 184,
+      "hash": "26c1999aa7ed4a3f"
     },
     "2026-07": {
-      "offset": 99569,
-      "length": 861185,
-      "count": 1012,
-      "hash": "c58152278aebbe56"
+      "offset": 159259,
+      "length": 866175,
+      "count": 1017,
+      "hash": "7a87174a68d8f193"
     },
     "2026-06": {
-      "offset": 960755,
+      "offset": 1025435,
       "length": 575741,
       "count": 655,
       "hash": "e08e0d01d07f4968"
     },
     "2026-05": {
-      "offset": 1536497,
-      "length": 138214,
-      "count": 162,
-      "hash": "30d37537690ea5bf"
+      "offset": 1601177,
+      "length": 138917,
+      "count": 163,
+      "hash": "e302f333f1076afd"
     },
     "2026-04": {
-      "offset": 1674712,
+      "offset": 1740095,
       "length": 20262,
       "count": 17,
       "hash": "b6b112e6141cf2d3"
