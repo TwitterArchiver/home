@@ -2,38 +2,44 @@
   "repo": "V01d_Digit",
   "account": "V01d_Digit",
   "source": "https://twitterarchiver.github.io/V01d_Digit/accounts/V01d_Digit/wayback_snapshots/index.json",
-  "etag": "\"6a6d868a-477eb\"",
-  "bytes": 292843,
-  "generated": "2026-08-01T16:40:24Z",
+  "etag": "\"6a8a65ba-5b50a\"",
+  "bytes": 374026,
+  "generated": "2026-08-23T06:47:25Z",
   "range": true,
-  "total": 339,
+  "total": 429,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 180249,
-      "count": 210,
-      "hash": "ce630de8ba940029"
+      "length": 64137,
+      "count": 73,
+      "hash": "5b1975bcaadc8489"
+    },
+    "2026-07": {
+      "offset": 64139,
+      "length": 196287,
+      "count": 225,
+      "hash": "44e2f996925711a3"
     },
     "2026-06": {
-      "offset": 180251,
-      "length": 47787,
-      "count": 56,
-      "hash": "7f8699e03822b8b7"
+      "offset": 260427,
+      "length": 48265,
+      "count": 57,
+      "hash": "bf2e7a25a616b77e"
     },
     "2026-05": {
-      "offset": 228039,
-      "length": 60334,
-      "count": 68,
-      "hash": "b1d87fa7f746fdc0"
+      "offset": 308693,
+      "length": 60863,
+      "count": 69,
+      "hash": "663c608b49922546"
     },
     "2026-04": {
-      "offset": 288374,
+      "offset": 369557,
       "length": 3273,
       "count": 4,
       "hash": "b60a9fd6b407424d"
     },
     "2026-01": {
-      "offset": 291648,
+      "offset": 372831,
       "length": 1194,
       "count": 1,
       "hash": "60c1fc3306bf3b1a"

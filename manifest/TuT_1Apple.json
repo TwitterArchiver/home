@@ -2,38 +2,38 @@
   "repo": "TuT_1Apple",
   "account": "TuT_1Apple",
   "source": "https://twitterarchiver.github.io/TuT_1Apple/accounts/TuT_1Apple/wayback_snapshots/index.json",
-  "etag": "\"6a6eaeca-101a60\"",
-  "bytes": 1055328,
-  "generated": "2026-08-02T03:35:55Z",
+  "etag": "\"6a8a67b5-129112\"",
+  "bytes": 1216786,
+  "generated": "2026-08-23T06:47:26Z",
   "range": true,
-  "total": 1213,
+  "total": 1402,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 1162,
-      "count": 1,
-      "hash": "ea840388ec6b8bad"
+      "length": 160964,
+      "count": 188,
+      "hash": "2479f22b822c5ed2"
     },
     "2026-07": {
-      "offset": 1164,
-      "length": 112024,
-      "count": 122,
-      "hash": "54ef12b3f07019dc"
+      "offset": 160966,
+      "length": 113637,
+      "count": 124,
+      "hash": "0d33a440f9e39229"
     },
     "2026-06": {
-      "offset": 113189,
-      "length": 914022,
+      "offset": 274604,
+      "length": 914065,
       "count": 1057,
-      "hash": "fc3003cfb78e1cb7"
+      "hash": "7c1ae7541fd39fbf"
     },
     "2026-05": {
-      "offset": 1027212,
+      "offset": 1188670,
       "length": 27333,
       "count": 32,
       "hash": "e6c66b929fc9efcb"
     },
     "2026-04": {
-      "offset": 1054546,
+      "offset": 1216004,
       "length": 781,
       "count": 1,
       "hash": "ea3f37b8f8df4101"

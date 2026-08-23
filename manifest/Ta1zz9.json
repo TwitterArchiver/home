@@ -2,38 +2,38 @@
   "repo": "Ta1zz9",
   "account": "Ta1zz9",
   "source": "https://twitterarchiver.github.io/Ta1zz9/accounts/Ta1zz9/wayback_snapshots/index.json",
-  "etag": "\"6a6e7a37-869c4\"",
-  "bytes": 551364,
-  "generated": "2026-08-02T03:35:54Z",
+  "etag": "\"6a89b3c3-86a05\"",
+  "bytes": 551429,
+  "generated": "2026-08-23T06:47:19Z",
   "range": true,
   "total": 672,
   "months": {
     "2026-05": {
       "offset": 1,
-      "length": 504632,
+      "length": 504697,
       "count": 613,
-      "hash": "d9ab9506286b246b"
+      "hash": "8655ffb7394d8ada"
     },
     "2026-04": {
-      "offset": 504634,
+      "offset": 504699,
       "length": 43364,
       "count": 55,
       "hash": "0539366b0fd76cdc"
     },
     "2026-03": {
-      "offset": 547999,
+      "offset": 548064,
       "length": 621,
       "count": 1,
       "hash": "cb9e9ab38d79122a"
     },
     "2025-12": {
-      "offset": 548621,
+      "offset": 548686,
       "length": 1842,
       "count": 2,
       "hash": "3d9253b3f951315a"
     },
     "2025-07": {
-      "offset": 550464,
+      "offset": 550529,
       "length": 899,
       "count": 1,
       "hash": "b9e5e7f83dba1b09"

@@ -2,20 +2,26 @@
   "repo": "Mandrake8964",
   "account": "Mandrake8964",
   "source": "https://twitterarchiver.github.io/Mandrake8964/accounts/Mandrake8964/wayback_snapshots/index.json",
-  "etag": "\"6a6a7152-31074\"",
-  "bytes": 200820,
-  "generated": "2026-07-29T22:43:08Z",
+  "etag": "\"6a81c894-48f67\"",
+  "bytes": 298855,
+  "generated": "2026-08-23T06:46:28Z",
   "range": true,
-  "total": 222,
+  "total": 331,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 198491,
-      "count": 220,
-      "hash": "f6b37b5a2cd23cc4"
+      "length": 66396,
+      "count": 74,
+      "hash": "3a01244308cff797"
+    },
+    "2026-07": {
+      "offset": 66398,
+      "length": 230129,
+      "count": 255,
+      "hash": "55703b192dd055ba"
     },
     "2026-05": {
-      "offset": 198493,
+      "offset": 296528,
       "length": 2326,
       "count": 2,
       "hash": "748ab1dc06501d93"

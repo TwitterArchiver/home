@@ -2,74 +2,74 @@
   "repo": "SGR_nya",
   "account": "SGR_nya",
   "source": "https://twitterarchiver.github.io/SGR_nya/accounts/SGR_nya/wayback_snapshots/index.json",
-  "etag": "\"6a72ca60-a359d\"",
-  "bytes": 669085,
-  "generated": "2026-08-08T06:30:09Z",
+  "etag": "\"6a87c289-abd31\"",
+  "bytes": 703793,
+  "generated": "2026-08-23T06:47:03Z",
   "range": true,
-  "total": 777,
+  "total": 816,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 3533,
-      "count": 4,
-      "hash": "d7454ef80eb11594"
+      "length": 38198,
+      "count": 43,
+      "hash": "1a7316018a352bb8"
     },
     "2026-07": {
-      "offset": 3535,
+      "offset": 38200,
       "length": 111825,
       "count": 131,
       "hash": "1bf3516d629ca8f4"
     },
     "2026-06": {
-      "offset": 115361,
+      "offset": 150026,
       "length": 108633,
       "count": 132,
       "hash": "9649da80015edf4a"
     },
     "2026-05": {
-      "offset": 223995,
+      "offset": 258660,
       "length": 77140,
       "count": 80,
       "hash": "1edd4e467767e0ea"
     },
     "2026-04": {
-      "offset": 301136,
+      "offset": 335801,
       "length": 55981,
       "count": 64,
       "hash": "8f2cd73290aa9f2a"
     },
     "2026-03": {
-      "offset": 357118,
-      "length": 58292,
+      "offset": 391783,
+      "length": 58335,
       "count": 68,
-      "hash": "2fdb92a71a78c766"
+      "hash": "24b77a4e4a3fad49"
     },
     "2026-02": {
-      "offset": 415411,
+      "offset": 450119,
       "length": 95309,
       "count": 111,
       "hash": "7ae21c8db564d67a"
     },
     "2026-01": {
-      "offset": 510721,
+      "offset": 545429,
       "length": 106219,
       "count": 126,
       "hash": "467b4c2ce1ae6c37"
     },
     "2025-12": {
-      "offset": 616941,
+      "offset": 651649,
       "length": 50174,
       "count": 58,
       "hash": "11c5f77484a51754"
     },
     "2024-12": {
-      "offset": 667116,
+      "offset": 701824,
       "length": 684,
       "count": 1,
       "hash": "ec981ab78db53d42"
     },
     "2023-01": {
-      "offset": 667801,
+      "offset": 702509,
       "length": 1283,
       "count": 2,
       "hash": "2e643a71b6ffb8d9"
