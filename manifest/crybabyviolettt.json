@@ -1,0 +1,18 @@
+{
+  "repo": "crybabyviolettt",
+  "account": "crybabyviolettt",
+  "source": "https://twitterarchiver.github.io/crybabyviolettt/accounts/crybabyviolettt/wayback_snapshots/index.json",
+  "etag": "\"6a898dae-1eed\"",
+  "bytes": 7917,
+  "generated": "2026-08-25T04:22:14Z",
+  "range": true,
+  "total": 8,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 7915,
+      "count": 8,
+      "hash": "a99876e7d3a86515"
+    }
+  }
+}

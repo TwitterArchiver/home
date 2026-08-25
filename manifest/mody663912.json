@@ -1,0 +1,18 @@
+{
+  "repo": "mody663912",
+  "account": "mody663912",
+  "source": "https://twitterarchiver.github.io/mody663912/accounts/mody663912/wayback_snapshots/index.json",
+  "etag": "\"6a898e1b-1576c\"",
+  "bytes": 87916,
+  "generated": "2026-08-25T04:22:47Z",
+  "range": true,
+  "total": 107,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 87914,
+      "count": 107,
+      "hash": "059445209c3c2c0f"
+    }
+  }
+}

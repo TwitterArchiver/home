@@ -2,20 +2,26 @@
   "repo": "Zukawbit",
   "account": "Zukawbit",
   "source": "https://twitterarchiver.github.io/Zukawbit/accounts/Zukawbit/wayback_snapshots/index.json",
-  "etag": "\"6a6ed19d-bb13\"",
-  "bytes": 47891,
-  "generated": "2026-08-02T08:29:54Z",
+  "etag": "\"6a8c59ae-be9c\"",
+  "bytes": 48796,
+  "generated": "2026-08-25T04:21:52Z",
   "range": true,
-  "total": 63,
+  "total": 64,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
+      "length": 904,
+      "count": 1,
+      "hash": "ff5820785ef714fb"
+    },
+    "2026-07": {
+      "offset": 906,
       "length": 20897,
       "count": 28,
       "hash": "fc5d3ef095477194"
     },
     "2026-06": {
-      "offset": 20899,
+      "offset": 21804,
       "length": 26991,
       "count": 35,
       "hash": "22bb76f0c7afd672"

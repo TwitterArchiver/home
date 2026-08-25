@@ -1,0 +1,84 @@
+{
+  "repo": "YMKxxxxxxxx",
+  "account": "YMKxxxxxxxx",
+  "source": "https://twitterarchiver.github.io/YMKxxxxxxxx/accounts/YMKxxxxxxxx/wayback_snapshots/index.json",
+  "etag": "\"6a8d1241-2e81e4\"",
+  "bytes": 3047908,
+  "generated": "2026-08-25T04:21:48Z",
+  "range": true,
+  "total": 3611,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 163802,
+      "count": 192,
+      "hash": "5da77e7a17e0815e"
+    },
+    "2026-07": {
+      "offset": 163804,
+      "length": 87903,
+      "count": 96,
+      "hash": "5a173d71ccb5e137"
+    },
+    "2026-06": {
+      "offset": 251708,
+      "length": 157208,
+      "count": 178,
+      "hash": "2e12c01ca99cb057"
+    },
+    "2026-05": {
+      "offset": 408917,
+      "length": 365233,
+      "count": 419,
+      "hash": "2775c31b17e662b3"
+    },
+    "2026-04": {
+      "offset": 774151,
+      "length": 672162,
+      "count": 830,
+      "hash": "43761f07313f8f0f"
+    },
+    "2026-03": {
+      "offset": 1446314,
+      "length": 901931,
+      "count": 1086,
+      "hash": "d82e0ebf0d9f8c41"
+    },
+    "2026-02": {
+      "offset": 2348246,
+      "length": 396524,
+      "count": 472,
+      "hash": "d5124595ab36b0ea"
+    },
+    "2026-01": {
+      "offset": 2744771,
+      "length": 107590,
+      "count": 115,
+      "hash": "20d5b757b804a159"
+    },
+    "2025-12": {
+      "offset": 2852362,
+      "length": 91157,
+      "count": 107,
+      "hash": "59b42fd0c5772ea2"
+    },
+    "2025-11": {
+      "offset": 2943520,
+      "length": 4459,
+      "count": 5,
+      "hash": "7237ddbccfa62cf5"
+    },
+    "2025-10": {
+      "offset": 2947980,
+      "length": 57152,
+      "count": 62,
+      "hash": "11fb117d4f970ee9"
+    },
+    "2025-09": {
+      "offset": 3005133,
+      "length": 42774,
+      "count": 49,
+      "hash": "c7d7b46b4a20b566"
+    }
+  }
+}

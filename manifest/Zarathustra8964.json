@@ -2,26 +2,26 @@
   "repo": "Zarathustra8964",
   "account": "Zarathustra8964",
   "source": "https://twitterarchiver.github.io/Zarathustra8964/accounts/Zarathustra8964/wayback_snapshots/index.json",
-  "etag": "\"6a683c7a-1c705\"",
-  "bytes": 116485,
-  "generated": "2026-07-28T13:55:37Z",
+  "etag": "\"6a8c59b7-1d696\"",
+  "bytes": 120470,
+  "generated": "2026-08-25T04:21:52Z",
   "range": true,
-  "total": 137,
+  "total": 141,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 41454,
-      "count": 50,
-      "hash": "fc70c400dbae54bb"
+      "length": 45439,
+      "count": 54,
+      "hash": "1db061486a7be034"
     },
     "2026-06": {
-      "offset": 41456,
+      "offset": 45441,
       "length": 55409,
       "count": 62,
       "hash": "40084ca37b157f4f"
     },
     "2026-05": {
-      "offset": 96866,
+      "offset": 100851,
       "length": 19618,
       "count": 25,
       "hash": "70dc024fa69fced7"

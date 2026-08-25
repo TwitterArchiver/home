@@ -2,32 +2,38 @@
   "repo": "Yamamotokoroshi",
   "account": "Yamamotokoroshi",
   "source": "https://twitterarchiver.github.io/Yamamotokoroshi/accounts/Yamamotokoroshi/wayback_snapshots/index.json",
-  "etag": "\"6a6a6115-17e566\"",
-  "bytes": 1566054,
-  "generated": "2026-07-29T22:43:40Z",
+  "etag": "\"6a8c12bc-17f6f3\"",
+  "bytes": 1570547,
+  "generated": "2026-08-25T04:21:49Z",
   "range": true,
-  "total": 1986,
+  "total": 1990,
   "months": {
-    "2026-05": {
+    "2026-08": {
       "offset": 1,
-      "length": 952426,
+      "length": 3446,
+      "count": 4,
+      "hash": "1bea2566ab4b50f1"
+    },
+    "2026-05": {
+      "offset": 3448,
+      "length": 953407,
       "count": 1205,
-      "hash": "ae179954a21c9809"
+      "hash": "33d2e239efb21b4f"
     },
     "2026-04": {
-      "offset": 952428,
-      "length": 611688,
+      "offset": 956856,
+      "length": 611753,
       "count": 779,
-      "hash": "e9bdbc191df71c80"
+      "hash": "cad72b86cad2b1d2"
     },
     "2026-03": {
-      "offset": 1564117,
+      "offset": 1568610,
       "length": 1225,
       "count": 1,
       "hash": "708790326f768140"
     },
     "2025-12": {
-      "offset": 1565343,
+      "offset": 1569836,
       "length": 710,
       "count": 1,
       "hash": "39788a0d485cbac6"

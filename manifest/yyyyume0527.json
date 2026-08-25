@@ -1,0 +1,18 @@
+{
+  "repo": "yyyyume0527",
+  "account": "yyyyume0527",
+  "source": "https://twitterarchiver.github.io/yyyyume0527/accounts/yyyyume0527/wayback_snapshots/index.json",
+  "etag": "\"6a89e171-158c8\"",
+  "bytes": 88264,
+  "generated": "2026-08-25T04:23:35Z",
+  "range": true,
+  "total": 101,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 88262,
+      "count": 101,
+      "hash": "4efb4bae34a92918"
+    }
+  }
+}

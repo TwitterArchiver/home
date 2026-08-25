@@ -1,0 +1,54 @@
+{
+  "repo": "magie0527",
+  "account": "magie0527",
+  "source": "https://twitterarchiver.github.io/magie0527/accounts/magie0527/wayback_snapshots/index.json",
+  "etag": "\"6a89dcd0-52e65\"",
+  "bytes": 339557,
+  "generated": "2026-08-25T04:22:46Z",
+  "range": true,
+  "total": 395,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 325014,
+      "count": 379,
+      "hash": "82792f00a468bd14"
+    },
+    "2026-07": {
+      "offset": 325016,
+      "length": 9095,
+      "count": 9,
+      "hash": "aa56dd004caa0b57"
+    },
+    "2026-06": {
+      "offset": 334112,
+      "length": 980,
+      "count": 1,
+      "hash": "83c380cf01f5ec23"
+    },
+    "2025-11": {
+      "offset": 335093,
+      "length": 2544,
+      "count": 3,
+      "hash": "8226588099eac498"
+    },
+    "2025-10": {
+      "offset": 337638,
+      "length": 686,
+      "count": 1,
+      "hash": "3a1436d62858319e"
+    },
+    "2025-09": {
+      "offset": 338325,
+      "length": 481,
+      "count": 1,
+      "hash": "34c34a0fd6e040e3"
+    },
+    "2024-11": {
+      "offset": 338807,
+      "length": 749,
+      "count": 1,
+      "hash": "5fac736403750149"
+    }
+  }
+}

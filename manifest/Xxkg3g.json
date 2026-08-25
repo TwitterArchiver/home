@@ -2,35 +2,41 @@
   "repo": "Xxkg3g",
   "account": "Xxkg3g",
   "source": "https://twitterarchiver.github.io/Xxkg3g/accounts/Xxkg3g/wayback_snapshots/index.json",
-  "etag": "\"6a6995c7-20111a\"",
-  "bytes": 2101530,
-  "generated": "2026-07-29T12:35:31Z",
+  "etag": "\"6a8d0323-30d7a4\"",
+  "bytes": 3200932,
+  "generated": "2026-08-25T04:21:47Z",
   "range": true,
-  "total": 2785,
+  "total": 4212,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 628608,
-      "count": 836,
-      "hash": "8f7acbecbf32299e"
+      "length": 994668,
+      "count": 1289,
+      "hash": "7b574dccdfb3f640"
+    },
+    "2026-07": {
+      "offset": 994670,
+      "length": 733169,
+      "count": 974,
+      "hash": "321ff9e8e275eec2"
     },
     "2026-06": {
-      "offset": 628610,
-      "length": 847290,
+      "offset": 1727840,
+      "length": 847332,
       "count": 1134,
-      "hash": "3ac63670dc9f4ed7"
+      "hash": "83c0d94cd07f675a"
     },
     "2026-05": {
-      "offset": 1475901,
+      "offset": 2575173,
       "length": 180672,
       "count": 219,
       "hash": "f84ab9f8256fa4e9"
     },
     "2026-04": {
-      "offset": 1656574,
-      "length": 444955,
+      "offset": 2755846,
+      "length": 445085,
       "count": 596,
-      "hash": "9d9b33e3256ca8f7"
+      "hash": "f21ad200f1004b97"
     }
   }
 }
