@@ -2,17 +2,17 @@
   "repo": "badapple7788",
   "account": "badapple7788",
   "source": "https://twitterarchiver.github.io/badapple7788/accounts/badapple7788/wayback_snapshots/index.json",
-  "etag": "\"6a68b396-30e0f\"",
-  "bytes": 200207,
-  "generated": "2026-07-28T13:55:38Z",
+  "etag": "\"6a8dab53-318e6\"",
+  "bytes": 202982,
+  "generated": "2026-08-29T01:24:39Z",
   "range": true,
   "total": 244,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 200205,
+      "length": 202980,
       "count": 244,
-      "hash": "f5f9b52c86760a63"
+      "hash": "cf5748518c92f3ea"
     }
   }
 }

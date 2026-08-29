@@ -2,23 +2,35 @@
   "repo": "ivan20221126",
   "account": "ivan20221126",
   "source": "https://twitterarchiver.github.io/ivan20221126/accounts/ivan20221126/wayback_snapshots/index.json",
-  "etag": "\"6a60e02c-89646\"",
-  "bytes": 562758,
-  "generated": "2026-07-23T19:53:23Z",
+  "etag": "\"6a90ce35-123169\"",
+  "bytes": 1192297,
+  "generated": "2026-08-29T01:25:18Z",
   "range": true,
-  "total": 634,
+  "total": 1356,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 468077,
-      "count": 531,
-      "hash": "cc50e4fedd108572"
+      "length": 498435,
+      "count": 568,
+      "hash": "8c44f67f21db9f15"
+    },
+    "2026-07": {
+      "offset": 498437,
+      "length": 597922,
+      "count": 684,
+      "hash": "d8c2e6b606530102"
     },
     "2026-06": {
-      "offset": 468079,
+      "offset": 1096360,
       "length": 94678,
       "count": 103,
       "hash": "5cfe79bc5b6b0502"
+    },
+    "2026-05": {
+      "offset": 1191039,
+      "length": 1257,
+      "count": 1,
+      "hash": "b3a7d928949588d5"
     }
   }
 }

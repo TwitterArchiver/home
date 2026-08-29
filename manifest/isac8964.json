@@ -2,35 +2,65 @@
   "repo": "isac8964",
   "account": "isac8964",
   "source": "https://twitterarchiver.github.io/isac8964/accounts/isac8964/wayback_snapshots/index.json",
-  "etag": "\"6a6e41ef-4c7b2\"",
-  "bytes": 313266,
-  "generated": "2026-08-01T19:47:05Z",
+  "etag": "\"6a90cd4e-7a9e8\"",
+  "bytes": 502248,
+  "generated": "2026-08-29T01:25:15Z",
   "range": true,
-  "total": 355,
+  "total": 584,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 266671,
-      "count": 303,
-      "hash": "542ecb0e24a51fa0"
+      "length": 168060,
+      "count": 205,
+      "hash": "941d9117dc369f05"
+    },
+    "2026-07": {
+      "offset": 168062,
+      "length": 284693,
+      "count": 323,
+      "hash": "6c5b67262d4fc10b"
     },
     "2026-06": {
-      "offset": 266673,
+      "offset": 452756,
       "length": 34005,
       "count": 37,
       "hash": "bbd34f6780e029ab"
     },
     "2026-05": {
-      "offset": 300679,
+      "offset": 486762,
       "length": 12046,
       "count": 14,
       "hash": "aa35b432cd56e544"
     },
+    "2026-01": {
+      "offset": 498809,
+      "length": 502,
+      "count": 1,
+      "hash": "28dfa85a4f921cc7"
+    },
     "2025-08": {
-      "offset": 312726,
+      "offset": 499312,
       "length": 539,
       "count": 1,
       "hash": "857964f6f35f65f7"
+    },
+    "2025-05": {
+      "offset": 499852,
+      "length": 614,
+      "count": 1,
+      "hash": "3a99eac761ab5afa"
+    },
+    "2025-02": {
+      "offset": 500467,
+      "length": 1193,
+      "count": 1,
+      "hash": "7258180390fd1e26"
+    },
+    "2023-09": {
+      "offset": 501661,
+      "length": 586,
+      "count": 1,
+      "hash": "df7b65920b54eecc"
     }
   }
 }

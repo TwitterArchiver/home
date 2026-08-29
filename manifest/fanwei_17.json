@@ -2,23 +2,35 @@
   "repo": "fanwei_17",
   "account": "fanwei_17",
   "source": "https://twitterarchiver.github.io/fanwei_17/accounts/fanwei_17/wayback_snapshots/index.json",
-  "etag": "\"6a60e00a-39a11\"",
-  "bytes": 236049,
-  "generated": "2026-07-23T19:53:20Z",
+  "etag": "\"6a8eff18-82f33\"",
+  "bytes": 536371,
+  "generated": "2026-08-29T01:24:56Z",
   "range": true,
-  "total": 288,
+  "total": 634,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 108868,
-      "count": 131,
-      "hash": "89a058d166cd4204"
+      "length": 197309,
+      "count": 224,
+      "hash": "a60ccd8c1cacadd5"
+    },
+    "2026-07": {
+      "offset": 197311,
+      "length": 210420,
+      "count": 251,
+      "hash": "696f49e200e463a1"
     },
     "2026-06": {
-      "offset": 108870,
-      "length": 127178,
-      "count": 157,
-      "hash": "323b83191724b33b"
+      "offset": 407732,
+      "length": 127923,
+      "count": 158,
+      "hash": "c6b738c12bd1a125"
+    },
+    "2025-12": {
+      "offset": 535656,
+      "length": 714,
+      "count": 1,
+      "hash": "696a9b91f8ddeb48"
     }
   }
 }

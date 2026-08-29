@@ -2,17 +2,17 @@
   "repo": "crybabyviolettt",
   "account": "crybabyviolettt",
   "source": "https://twitterarchiver.github.io/crybabyviolettt/accounts/crybabyviolettt/wayback_snapshots/index.json",
-  "etag": "\"6a898dae-1eed\"",
-  "bytes": 7917,
-  "generated": "2026-08-25T04:22:14Z",
+  "etag": "\"6a8efc64-5b70\"",
+  "bytes": 23408,
+  "generated": "2026-08-29T01:24:53Z",
   "range": true,
-  "total": 8,
+  "total": 25,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 7915,
-      "count": 8,
-      "hash": "a99876e7d3a86515"
+      "length": 23406,
+      "count": 25,
+      "hash": "91780c577663bb05"
     }
   }
 }

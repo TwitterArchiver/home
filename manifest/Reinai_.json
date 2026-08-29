@@ -1,0 +1,96 @@
+{
+  "repo": "Reinai_",
+  "account": "Reinai_",
+  "source": "https://twitterarchiver.github.io/Reinai_/accounts/Reinai_/wayback_snapshots/index.json",
+  "etag": "\"6a8f3b8f-e4cc1\"",
+  "bytes": 937153,
+  "generated": "2026-08-29T01:23:34Z",
+  "range": true,
+  "total": 1203,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 264442,
+      "count": 330,
+      "hash": "3fb8edabe24f1f84"
+    },
+    "2026-06": {
+      "offset": 264444,
+      "length": 4786,
+      "count": 6,
+      "hash": "805e6949a8e6731d"
+    },
+    "2026-05": {
+      "offset": 269231,
+      "length": 4598,
+      "count": 6,
+      "hash": "a07673119e71def2"
+    },
+    "2026-04": {
+      "offset": 273830,
+      "length": 5906,
+      "count": 7,
+      "hash": "5057d0f3a42d2ebc"
+    },
+    "2026-03": {
+      "offset": 279737,
+      "length": 2027,
+      "count": 3,
+      "hash": "045f06a993b79fc5"
+    },
+    "2026-02": {
+      "offset": 281765,
+      "length": 10273,
+      "count": 14,
+      "hash": "eaeaaef324402d55"
+    },
+    "2026-01": {
+      "offset": 292039,
+      "length": 7447,
+      "count": 8,
+      "hash": "6b954a2aec2b8f1c"
+    },
+    "2025-12": {
+      "offset": 299487,
+      "length": 40327,
+      "count": 55,
+      "hash": "0e3ea6a9ca25790e"
+    },
+    "2025-11": {
+      "offset": 339815,
+      "length": 148136,
+      "count": 180,
+      "hash": "6f5716ebf624a15b"
+    },
+    "2025-10": {
+      "offset": 487952,
+      "length": 140341,
+      "count": 185,
+      "hash": "dd478e0a12d303f9"
+    },
+    "2025-09": {
+      "offset": 628294,
+      "length": 110427,
+      "count": 145,
+      "hash": "85775596bba7385f"
+    },
+    "2025-08": {
+      "offset": 738722,
+      "length": 188194,
+      "count": 249,
+      "hash": "0b5791a06fb07fc6"
+    },
+    "2025-07": {
+      "offset": 926917,
+      "length": 9604,
+      "count": 14,
+      "hash": "ac8dc37365967f99"
+    },
+    "2024-05": {
+      "offset": 936522,
+      "length": 630,
+      "count": 1,
+      "hash": "aa84d1896d0c174f"
+    }
+  }
+}

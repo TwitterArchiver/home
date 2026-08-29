@@ -1,0 +1,54 @@
+{
+  "repo": "Saya_Zzz77",
+  "account": "Saya_Zzz77",
+  "source": "https://twitterarchiver.github.io/Saya_Zzz77/accounts/Saya_Zzz77/wayback_snapshots/index.json",
+  "etag": "\"6a8f2e4f-81cba\"",
+  "bytes": 531642,
+  "generated": "2026-08-29T01:23:47Z",
+  "range": true,
+  "total": 577,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 242196,
+      "count": 239,
+      "hash": "6b40d30d0479c4f8"
+    },
+    "2026-07": {
+      "offset": 242198,
+      "length": 101961,
+      "count": 113,
+      "hash": "074f068fe186700a"
+    },
+    "2026-06": {
+      "offset": 344160,
+      "length": 132173,
+      "count": 161,
+      "hash": "e2058059da004ac4"
+    },
+    "2026-05": {
+      "offset": 476334,
+      "length": 37612,
+      "count": 42,
+      "hash": "c8ff7dfea40096b8"
+    },
+    "2026-04": {
+      "offset": 513947,
+      "length": 4186,
+      "count": 5,
+      "hash": "6c081d661cf0ec15"
+    },
+    "2026-03": {
+      "offset": 518134,
+      "length": 12565,
+      "count": 16,
+      "hash": "9c00761976106cd3"
+    },
+    "2026-02": {
+      "offset": 530700,
+      "length": 941,
+      "count": 1,
+      "hash": "9ad9fa4a88489065"
+    }
+  }
+}

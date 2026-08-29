@@ -2,38 +2,44 @@
   "repo": "hyunjennnagua",
   "account": "hyunjennnagua",
   "source": "https://twitterarchiver.github.io/hyunjennnagua/accounts/hyunjennnagua/wayback_snapshots/index.json",
-  "etag": "\"6a60e01f-2ce5d\"",
-  "bytes": 183901,
-  "generated": "2026-07-23T19:53:22Z",
+  "etag": "\"6a923213-53d32\"",
+  "bytes": 343346,
+  "generated": "2026-08-29T01:25:10Z",
   "range": true,
-  "total": 229,
+  "total": 435,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 7118,
-      "count": 10,
-      "hash": "efb1cb2f4e84e9b6"
+      "length": 37829,
+      "count": 46,
+      "hash": "90dce9218f1d7de5"
+    },
+    "2026-07": {
+      "offset": 37831,
+      "length": 127752,
+      "count": 169,
+      "hash": "32d96e7f3d00f065"
     },
     "2026-06": {
-      "offset": 7120,
-      "length": 16181,
-      "count": 18,
-      "hash": "c0758d115a4b2d70"
+      "offset": 165584,
+      "length": 17162,
+      "count": 19,
+      "hash": "cf34040e6ffa2e45"
     },
     "2026-05": {
-      "offset": 23302,
+      "offset": 182747,
       "length": 43450,
       "count": 50,
       "hash": "0a212813cb75f895"
     },
     "2026-04": {
-      "offset": 66753,
+      "offset": 226198,
       "length": 97389,
       "count": 124,
       "hash": "61bd01d046b3ac3a"
     },
     "2026-03": {
-      "offset": 164143,
+      "offset": 323588,
       "length": 19757,
       "count": 27,
       "hash": "a914840616ca0581"

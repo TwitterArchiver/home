@@ -1,0 +1,54 @@
+{
+  "repo": "shiotelya",
+  "account": "shiotelya",
+  "source": "https://twitterarchiver.github.io/shiotelya/accounts/shiotelya/wayback_snapshots/index.json",
+  "etag": "\"6a8f2a1d-4a104\"",
+  "bytes": 303364,
+  "generated": "2026-08-29T01:26:01Z",
+  "range": true,
+  "total": 291,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 283268,
+      "count": 268,
+      "hash": "004403253f9d703b"
+    },
+    "2026-07": {
+      "offset": 283270,
+      "length": 11329,
+      "count": 14,
+      "hash": "fc4799dbd6b84c7d"
+    },
+    "2026-06": {
+      "offset": 294600,
+      "length": 1877,
+      "count": 2,
+      "hash": "1e36cbd909734858"
+    },
+    "2026-05": {
+      "offset": 296478,
+      "length": 3134,
+      "count": 3,
+      "hash": "30b4f24c49d372f4"
+    },
+    "2026-04": {
+      "offset": 299613,
+      "length": 1541,
+      "count": 2,
+      "hash": "8ecfac666b426e68"
+    },
+    "2025-12": {
+      "offset": 301155,
+      "length": 902,
+      "count": 1,
+      "hash": "fbf81ffea2b32e53"
+    },
+    "2025-01": {
+      "offset": 302058,
+      "length": 1305,
+      "count": 1,
+      "hash": "f6202ffd8aeb401c"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "repo": "SnowRa1n39",
+  "account": "SnowRa1n39",
+  "source": "https://twitterarchiver.github.io/SnowRa1n39/accounts/SnowRa1n39/wayback_snapshots/index.json",
+  "etag": "\"6a8f3a18-4d5b6\"",
+  "bytes": 316854,
+  "generated": "2026-08-29T01:23:50Z",
+  "range": true,
+  "total": 384,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 9274,
+      "count": 11,
+      "hash": "f525ac24e603e436"
+    },
+    "2026-07": {
+      "offset": 9276,
+      "length": 164860,
+      "count": 200,
+      "hash": "c167d8a4c27efc48"
+    },
+    "2026-06": {
+      "offset": 174137,
+      "length": 680,
+      "count": 1,
+      "hash": "93b791c4d8f48d2b"
+    },
+    "2026-05": {
+      "offset": 174818,
+      "length": 496,
+      "count": 1,
+      "hash": "37076834d35aa539"
+    },
+    "2025-10": {
+      "offset": 175315,
+      "length": 5871,
+      "count": 7,
+      "hash": "17903c86276f6a1d"
+    },
+    "2025-09": {
+      "offset": 181187,
+      "length": 24804,
+      "count": 32,
+      "hash": "fb59cf73dc86bd89"
+    },
+    "2025-08": {
+      "offset": 205992,
+      "length": 737,
+      "count": 1,
+      "hash": "3228668e03b58753"
+    },
+    "2025-07": {
+      "offset": 206730,
+      "length": 8885,
+      "count": 11,
+      "hash": "0d2d6b912f7b9f8d"
+    },
+    "2025-06": {
+      "offset": 215616,
+      "length": 20004,
+      "count": 24,
+      "hash": "87f85309ded2cd2e"
+    },
+    "2025-05": {
+      "offset": 235621,
+      "length": 33664,
+      "count": 42,
+      "hash": "8e3b24370089b6d1"
+    },
+    "2025-04": {
+      "offset": 269286,
+      "length": 44740,
+      "count": 49,
+      "hash": "53f2a5edf4d8a2bc"
+    },
+    "2024-12": {
+      "offset": 314027,
+      "length": 587,
+      "count": 1,
+      "hash": "33273831d80031a0"
+    },
+    "2024-11": {
+      "offset": 314615,
+      "length": 849,
+      "count": 1,
+      "hash": "36e08c0f3bb82b1a"
+    },
+    "2024-05": {
+      "offset": 315465,
+      "length": 441,
+      "count": 1,
+      "hash": "522aadbdd36fe96e"
+    },
+    "2023-05": {
+      "offset": 315907,
+      "length": 465,
+      "count": 1,
+      "hash": "d044211572eedf8d"
+    },
+    "2017-02": {
+      "offset": 316373,
+      "length": 480,
+      "count": 1,
+      "hash": "31696777b5374d9b"
+    }
+  }
+}

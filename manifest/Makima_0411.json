@@ -1,0 +1,30 @@
+{
+  "repo": "Makima_0411",
+  "account": "Makima_0411",
+  "source": "https://twitterarchiver.github.io/Makima_0411/accounts/Makima_0411/wayback_snapshots/index.json",
+  "etag": "\"6a91f1a1-8d914\"",
+  "bytes": 579860,
+  "generated": "2026-08-29T01:23:11Z",
+  "range": true,
+  "total": 695,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 578656,
+      "count": 693,
+      "hash": "ff582730c2897b79"
+    },
+    "2026-05": {
+      "offset": 578658,
+      "length": 737,
+      "count": 1,
+      "hash": "01837208ee6d33f6"
+    },
+    "2025-10": {
+      "offset": 579396,
+      "length": 463,
+      "count": 1,
+      "hash": "80966665c9e4e558"
+    }
+  }
+}

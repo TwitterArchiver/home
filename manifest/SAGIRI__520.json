@@ -1,0 +1,84 @@
+{
+  "repo": "SAGIRI__520",
+  "account": "SAGIRI__520",
+  "source": "https://twitterarchiver.github.io/SAGIRI__520/accounts/SAGIRI__520/wayback_snapshots/index.json",
+  "etag": "\"6a8f2e25-95c77\"",
+  "bytes": 613495,
+  "generated": "2026-08-29T01:23:44Z",
+  "range": true,
+  "total": 731,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 124207,
+      "count": 138,
+      "hash": "d10403242bb378a7"
+    },
+    "2026-07": {
+      "offset": 124209,
+      "length": 45787,
+      "count": 52,
+      "hash": "27c6dfe5383487d5"
+    },
+    "2026-06": {
+      "offset": 169997,
+      "length": 11752,
+      "count": 12,
+      "hash": "bd62b75d1018dd5e"
+    },
+    "2026-05": {
+      "offset": 181750,
+      "length": 74458,
+      "count": 91,
+      "hash": "74b78180216d385b"
+    },
+    "2026-04": {
+      "offset": 256209,
+      "length": 87318,
+      "count": 103,
+      "hash": "2310fb057b07b5e5"
+    },
+    "2026-03": {
+      "offset": 343528,
+      "length": 182792,
+      "count": 230,
+      "hash": "0da3a6d417de0a6b"
+    },
+    "2026-02": {
+      "offset": 526321,
+      "length": 37525,
+      "count": 43,
+      "hash": "56e3f914ad7d8142"
+    },
+    "2026-01": {
+      "offset": 563847,
+      "length": 26105,
+      "count": 30,
+      "hash": "e48eec5a01c489f9"
+    },
+    "2025-12": {
+      "offset": 589953,
+      "length": 1789,
+      "count": 2,
+      "hash": "f8be1af244dd8753"
+    },
+    "2025-11": {
+      "offset": 591743,
+      "length": 2771,
+      "count": 4,
+      "hash": "a23041d8da6e6e96"
+    },
+    "2025-10": {
+      "offset": 594515,
+      "length": 10292,
+      "count": 14,
+      "hash": "845c0c982db93580"
+    },
+    "2025-09": {
+      "offset": 604808,
+      "length": 8686,
+      "count": 12,
+      "hash": "e04e61f44ed53a8d"
+    }
+  }
+}

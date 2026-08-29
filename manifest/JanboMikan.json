@@ -1,0 +1,84 @@
+{
+  "repo": "JanboMikan",
+  "account": "JanboMikan",
+  "source": "https://twitterarchiver.github.io/JanboMikan/accounts/JanboMikan/wayback_snapshots/index.json",
+  "etag": "\"6a923239-105deae\"",
+  "bytes": 17161902,
+  "generated": "2026-08-29T01:22:52Z",
+  "range": true,
+  "total": 22995,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 866669,
+      "count": 1210,
+      "hash": "9b563548fc995e1f"
+    },
+    "2026-07": {
+      "offset": 866671,
+      "length": 1152396,
+      "count": 1569,
+      "hash": "4f23c3e21d45d217"
+    },
+    "2026-06": {
+      "offset": 2019068,
+      "length": 1304400,
+      "count": 1730,
+      "hash": "79eb37cf76874a97"
+    },
+    "2026-05": {
+      "offset": 3323469,
+      "length": 1846948,
+      "count": 2429,
+      "hash": "620db167f91a8bfa"
+    },
+    "2026-04": {
+      "offset": 5170418,
+      "length": 2000906,
+      "count": 2639,
+      "hash": "cba415fb4c8edbe5"
+    },
+    "2026-03": {
+      "offset": 7171325,
+      "length": 2525977,
+      "count": 3389,
+      "hash": "ef25124375e523e3"
+    },
+    "2026-02": {
+      "offset": 9697303,
+      "length": 2370688,
+      "count": 3176,
+      "hash": "ba72a7568a4b6247"
+    },
+    "2026-01": {
+      "offset": 12067992,
+      "length": 1991589,
+      "count": 2660,
+      "hash": "71e07e6ea6d02c45"
+    },
+    "2025-12": {
+      "offset": 14059582,
+      "length": 1939270,
+      "count": 2643,
+      "hash": "e46292551e07c422"
+    },
+    "2025-11": {
+      "offset": 15998853,
+      "length": 830801,
+      "count": 1111,
+      "hash": "dff639c794044b16"
+    },
+    "2025-10": {
+      "offset": 16829655,
+      "length": 331802,
+      "count": 438,
+      "hash": "c7895b0d53dcca1b"
+    },
+    "2025-01": {
+      "offset": 17161458,
+      "length": 443,
+      "count": 1,
+      "hash": "ece47b90412720af"
+    }
+  }
+}

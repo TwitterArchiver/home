@@ -1,0 +1,84 @@
+{
+  "repo": "_yuki_owo",
+  "account": "_yuki_owo",
+  "source": "https://twitterarchiver.github.io/_yuki_owo/accounts/_yuki_owo/wayback_snapshots/index.json",
+  "etag": "\"6a923211-dd329\"",
+  "bytes": 906025,
+  "generated": "2026-08-29T01:24:24Z",
+  "range": true,
+  "total": 1149,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 244265,
+      "count": 318,
+      "hash": "bc36622d0314f095"
+    },
+    "2026-07": {
+      "offset": 244267,
+      "length": 118302,
+      "count": 152,
+      "hash": "6944d09a1adaffc2"
+    },
+    "2026-06": {
+      "offset": 362570,
+      "length": 326729,
+      "count": 412,
+      "hash": "b3889af82ec47f3d"
+    },
+    "2026-05": {
+      "offset": 689300,
+      "length": 161726,
+      "count": 206,
+      "hash": "73792a3bc44ae5d4"
+    },
+    "2026-04": {
+      "offset": 851027,
+      "length": 34209,
+      "count": 42,
+      "hash": "45affe912fbe5a58"
+    },
+    "2025-09": {
+      "offset": 885237,
+      "length": 1011,
+      "count": 1,
+      "hash": "66006372df3945c7"
+    },
+    "2025-08": {
+      "offset": 886249,
+      "length": 3535,
+      "count": 3,
+      "hash": "b621a80fdd593554"
+    },
+    "2025-03": {
+      "offset": 889785,
+      "length": 519,
+      "count": 1,
+      "hash": "c9a6e80ba1c39557"
+    },
+    "2025-02": {
+      "offset": 890305,
+      "length": 565,
+      "count": 1,
+      "hash": "d7a2c9f7db478c1b"
+    },
+    "2024-11": {
+      "offset": 890871,
+      "length": 8786,
+      "count": 7,
+      "hash": "5f34d01deaa312fc"
+    },
+    "2024-06": {
+      "offset": 899658,
+      "length": 5617,
+      "count": 5,
+      "hash": "9b334cfbf6e01184"
+    },
+    "2023-10": {
+      "offset": 905276,
+      "length": 748,
+      "count": 1,
+      "hash": "7e6b3053586cddc9"
+    }
+  }
+}

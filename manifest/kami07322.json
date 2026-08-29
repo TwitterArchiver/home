@@ -1,0 +1,84 @@
+{
+  "repo": "kami07322",
+  "account": "kami07322",
+  "source": "https://twitterarchiver.github.io/kami07322/accounts/kami07322/wayback_snapshots/index.json",
+  "etag": "\"6a919b97-a06cb\"",
+  "bytes": 657099,
+  "generated": "2026-08-29T01:25:21Z",
+  "range": true,
+  "total": 840,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 20009,
+      "count": 24,
+      "hash": "6ab67344046cee7b"
+    },
+    "2026-07": {
+      "offset": 20011,
+      "length": 16940,
+      "count": 20,
+      "hash": "820742765970cb9f"
+    },
+    "2026-06": {
+      "offset": 36952,
+      "length": 22487,
+      "count": 27,
+      "hash": "3a730e8aa013ec2d"
+    },
+    "2026-05": {
+      "offset": 59440,
+      "length": 24962,
+      "count": 28,
+      "hash": "b3da0aa938b70743"
+    },
+    "2026-04": {
+      "offset": 84403,
+      "length": 60003,
+      "count": 73,
+      "hash": "386c468379bb964a"
+    },
+    "2026-03": {
+      "offset": 144407,
+      "length": 68901,
+      "count": 82,
+      "hash": "0624fcf69332d05f"
+    },
+    "2026-02": {
+      "offset": 213309,
+      "length": 39155,
+      "count": 47,
+      "hash": "a8d1ba9a5ec5a64f"
+    },
+    "2026-01": {
+      "offset": 252465,
+      "length": 94415,
+      "count": 118,
+      "hash": "8d859ba0206eff67"
+    },
+    "2025-12": {
+      "offset": 346881,
+      "length": 177646,
+      "count": 238,
+      "hash": "6b7e182119be0e82"
+    },
+    "2025-11": {
+      "offset": 524528,
+      "length": 130920,
+      "count": 181,
+      "hash": "5c7784e257a1ad2d"
+    },
+    "2025-09": {
+      "offset": 655449,
+      "length": 1189,
+      "count": 1,
+      "hash": "e285c959a77595f9"
+    },
+    "2025-07": {
+      "offset": 656639,
+      "length": 459,
+      "count": 1,
+      "hash": "13e8e9009db0e61a"
+    }
+  }
+}

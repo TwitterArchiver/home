@@ -2,68 +2,74 @@
   "repo": "kurage2333",
   "account": "kurage2333",
   "source": "https://twitterarchiver.github.io/kurage2333/accounts/kurage2333/wayback_snapshots/index.json",
-  "etag": "\"6a68fbad-1ae239\"",
-  "bytes": 1761849,
-  "generated": "2026-07-28T19:34:48Z",
+  "etag": "\"6a921d63-1b53bf\"",
+  "bytes": 1790911,
+  "generated": "2026-08-29T01:25:24Z",
   "range": true,
-  "total": 2307,
+  "total": 2346,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 64571,
-      "count": 75,
-      "hash": "ddb1d760a03b6e5b"
+      "length": 24605,
+      "count": 35,
+      "hash": "29c946ddeef6f39e"
+    },
+    "2026-07": {
+      "offset": 24607,
+      "length": 68178,
+      "count": 79,
+      "hash": "d6bd75701e4606d7"
     },
     "2026-06": {
-      "offset": 64573,
-      "length": 222323,
+      "offset": 92786,
+      "length": 222388,
       "count": 282,
-      "hash": "1933eb2f32aa818d"
+      "hash": "439e1cae89649108"
     },
     "2026-05": {
-      "offset": 286897,
-      "length": 457466,
+      "offset": 315175,
+      "length": 457531,
       "count": 597,
-      "hash": "c618955a9fc33a31"
+      "hash": "ee8f3940d9cb6c16"
     },
     "2026-04": {
-      "offset": 744364,
-      "length": 683386,
+      "offset": 772707,
+      "length": 683516,
       "count": 924,
-      "hash": "92fe956f8d8cf7e7"
+      "hash": "752314e00483ccf1"
     },
     "2026-03": {
-      "offset": 1427751,
-      "length": 218764,
+      "offset": 1456224,
+      "length": 219353,
       "count": 281,
-      "hash": "d4bcaccc4e9bbd83"
+      "hash": "af50ebf14fba848a"
     },
     "2026-02": {
-      "offset": 1646516,
+      "offset": 1675578,
       "length": 14165,
       "count": 18,
       "hash": "58abb11380ba3ace"
     },
     "2026-01": {
-      "offset": 1660682,
+      "offset": 1689744,
       "length": 90498,
       "count": 119,
       "hash": "dee2bb03dad986ca"
     },
     "2025-11": {
-      "offset": 1751181,
+      "offset": 1780243,
       "length": 9096,
       "count": 9,
       "hash": "9d56d0e36488965b"
     },
     "2025-08": {
-      "offset": 1760278,
+      "offset": 1789340,
       "length": 954,
       "count": 1,
       "hash": "71f5c30a6928d107"
     },
     "2024-02": {
-      "offset": 1761233,
+      "offset": 1790295,
       "length": 615,
       "count": 1,
       "hash": "9464f165c1a72946"

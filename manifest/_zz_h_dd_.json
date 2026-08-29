@@ -1,0 +1,48 @@
+{
+  "repo": "_zz_h_dd_",
+  "account": "_zz_h_dd_",
+  "source": "https://twitterarchiver.github.io/_zz_h_dd_/accounts/_zz_h_dd_/wayback_snapshots/index.json",
+  "etag": "\"6a8f311a-1a1b26\"",
+  "bytes": 1710886,
+  "generated": "2026-08-29T01:24:28Z",
+  "range": true,
+  "total": 2023,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 978258,
+      "count": 1123,
+      "hash": "1c31537495912023"
+    },
+    "2026-07": {
+      "offset": 978260,
+      "length": 729245,
+      "count": 896,
+      "hash": "6dd6455d22c2b217"
+    },
+    "2026-06": {
+      "offset": 1707506,
+      "length": 1098,
+      "count": 1,
+      "hash": "49060f7314d0ae9e"
+    },
+    "2026-05": {
+      "offset": 1708605,
+      "length": 506,
+      "count": 1,
+      "hash": "d08dd6bb84e18265"
+    },
+    "2026-04": {
+      "offset": 1709112,
+      "length": 1188,
+      "count": 1,
+      "hash": "4e83884052b3f8ac"
+    },
+    "2025-05": {
+      "offset": 1710301,
+      "length": 584,
+      "count": 1,
+      "hash": "8dc3616294bc9f95"
+    }
+  }
+}

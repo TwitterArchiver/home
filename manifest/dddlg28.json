@@ -2,56 +2,62 @@
   "repo": "dddlg28",
   "account": "dddlg28",
   "source": "https://twitterarchiver.github.io/dddlg28/accounts/dddlg28/wayback_snapshots/index.json",
-  "etag": "\"6a6dc79e-28325\"",
-  "bytes": 164645,
-  "generated": "2026-08-01T19:46:56Z",
+  "etag": "\"6a8efdcd-2ad7c\"",
+  "bytes": 175484,
+  "generated": "2026-08-29T01:24:54Z",
   "range": true,
-  "total": 220,
+  "total": 233,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 7534,
-      "count": 10,
-      "hash": "92dac91c8bed9cab"
+      "length": 6957,
+      "count": 8,
+      "hash": "211096bda2ddf97a"
+    },
+    "2026-07": {
+      "offset": 6959,
+      "length": 11415,
+      "count": 15,
+      "hash": "4eb375b58ee7ce7c"
     },
     "2026-05": {
-      "offset": 7536,
+      "offset": 18375,
       "length": 24561,
       "count": 32,
       "hash": "52ed837707ff2eb9"
     },
     "2026-04": {
-      "offset": 32098,
+      "offset": 42937,
       "length": 43130,
       "count": 56,
       "hash": "a3e918783bf02c28"
     },
     "2026-03": {
-      "offset": 75229,
+      "offset": 86068,
       "length": 86204,
       "count": 117,
       "hash": "ce13ca7d97d59bb9"
     },
     "2026-02": {
-      "offset": 161434,
+      "offset": 172273,
       "length": 1135,
       "count": 2,
       "hash": "d950ff917d25e1e1"
     },
     "2025-12": {
-      "offset": 162570,
+      "offset": 173409,
       "length": 524,
       "count": 1,
       "hash": "beb9ced87d92c13b"
     },
     "2025-11": {
-      "offset": 163095,
+      "offset": 173934,
       "length": 1018,
       "count": 1,
       "hash": "5cb868cdbc01913a"
     },
     "2025-08": {
-      "offset": 164114,
+      "offset": 174953,
       "length": 530,
       "count": 1,
       "hash": "a12e6387c7da4239"

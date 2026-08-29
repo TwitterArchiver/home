@@ -1,0 +1,24 @@
+{
+  "repo": "Pharmakon14138",
+  "account": "Pharmakon14138",
+  "source": "https://twitterarchiver.github.io/Pharmakon14138/accounts/Pharmakon14138/wayback_snapshots/index.json",
+  "etag": "\"6a8f2fec-a071\"",
+  "bytes": 41073,
+  "generated": "2026-08-29T01:23:26Z",
+  "range": true,
+  "total": 45,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 24444,
+      "count": 25,
+      "hash": "dfd077c1fc43aa69"
+    },
+    "2026-07": {
+      "offset": 24446,
+      "length": 16626,
+      "count": 20,
+      "hash": "eef4da4ce85630ce"
+    }
+  }
+}

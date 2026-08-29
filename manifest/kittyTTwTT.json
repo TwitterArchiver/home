@@ -2,23 +2,29 @@
   "repo": "kittyTTwTT",
   "account": "kittyTTwTT",
   "source": "https://twitterarchiver.github.io/kittyTTwTT/accounts/kittyTTwTT/wayback_snapshots/index.json",
-  "etag": "\"6a6f3878-a8ed\"",
-  "bytes": 43245,
-  "generated": "2026-08-02T12:40:35Z",
+  "etag": "\"6a919b93-3741d\"",
+  "bytes": 226333,
+  "generated": "2026-08-29T01:25:22Z",
   "range": true,
-  "total": 46,
+  "total": 239,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 8919,
-      "count": 10,
-      "hash": "5d735e67b425f7a1"
+      "length": 191374,
+      "count": 202,
+      "hash": "cefb98bbdaae5f3f"
     },
     "2026-07": {
-      "offset": 8921,
+      "offset": 191376,
       "length": 34323,
       "count": 36,
       "hash": "28e22b3b59d7cae3"
+    },
+    "2026-06": {
+      "offset": 225700,
+      "length": 632,
+      "count": 1,
+      "hash": "b82de6ecd416da79"
     }
   }
 }

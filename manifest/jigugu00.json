@@ -1,0 +1,36 @@
+{
+  "repo": "jigugu00",
+  "account": "jigugu00",
+  "source": "https://twitterarchiver.github.io/jigugu00/accounts/jigugu00/wayback_snapshots/index.json",
+  "etag": "\"6a91994c-77bee\"",
+  "bytes": 490478,
+  "generated": "2026-08-29T01:25:20Z",
+  "range": true,
+  "total": 549,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 486642,
+      "count": 545,
+      "hash": "249322e5195560d0"
+    },
+    "2026-07": {
+      "offset": 486644,
+      "length": 1277,
+      "count": 2,
+      "hash": "6262b294cf5d8ea2"
+    },
+    "2026-05": {
+      "offset": 487922,
+      "length": 1312,
+      "count": 1,
+      "hash": "ec523fb70ba6691e"
+    },
+    "2023-01": {
+      "offset": 489235,
+      "length": 1242,
+      "count": 1,
+      "hash": "d4d0ba59ed06a25a"
+    }
+  }
+}

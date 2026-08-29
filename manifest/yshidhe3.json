@@ -1,0 +1,30 @@
+{
+  "repo": "yshidhe3",
+  "account": "yshidhe3",
+  "source": "https://twitterarchiver.github.io/yshidhe3/accounts/yshidhe3/wayback_snapshots/index.json",
+  "etag": "\"6a8f2f93-14fcb4\"",
+  "bytes": 1375412,
+  "generated": "2026-08-29T01:26:40Z",
+  "range": true,
+  "total": 1771,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 634978,
+      "count": 817,
+      "hash": "585518fde1124b4e"
+    },
+    "2026-07": {
+      "offset": 634980,
+      "length": 535251,
+      "count": 686,
+      "hash": "bc9862b4710142e6"
+    },
+    "2026-06": {
+      "offset": 1170232,
+      "length": 205179,
+      "count": 268,
+      "hash": "ff526038f28969d6"
+    }
+  }
+}

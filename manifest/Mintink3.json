@@ -1,0 +1,54 @@
+{
+  "repo": "Mintink3",
+  "account": "Mintink3",
+  "source": "https://twitterarchiver.github.io/Mintink3/accounts/Mintink3/wayback_snapshots/index.json",
+  "etag": "\"6a8f3d55-10c703\"",
+  "bytes": 1099523,
+  "generated": "2026-08-29T01:23:14Z",
+  "range": true,
+  "total": 1212,
+  "months": {
+    "unknown": {
+      "offset": 1,
+      "length": 16467,
+      "count": 19,
+      "hash": "65a02b58d351976a"
+    },
+    "2026-08": {
+      "offset": 16469,
+      "length": 709626,
+      "count": 775,
+      "hash": "5a2443db472ed648"
+    },
+    "2026-07": {
+      "offset": 726096,
+      "length": 308477,
+      "count": 345,
+      "hash": "9deef144cd531aad"
+    },
+    "2026-06": {
+      "offset": 1034574,
+      "length": 63005,
+      "count": 70,
+      "hash": "d3fd731317d307b5"
+    },
+    "2026-04": {
+      "offset": 1097580,
+      "length": 768,
+      "count": 1,
+      "hash": "4bae783ccd13a101"
+    },
+    "2024-07": {
+      "offset": 1098349,
+      "length": 700,
+      "count": 1,
+      "hash": "a0beaa386514766e"
+    },
+    "2024-02": {
+      "offset": 1099050,
+      "length": 472,
+      "count": 1,
+      "hash": "b43940f509a5410f"
+    }
+  }
+}

@@ -2,44 +2,44 @@
   "repo": "jutangxiao1229",
   "account": "jutangxiao1229",
   "source": "https://twitterarchiver.github.io/jutangxiao1229/accounts/jutangxiao1229/wayback_snapshots/index.json",
-  "etag": "\"6a6f4140-f2cea\"",
-  "bytes": 994538,
-  "generated": "2026-08-02T13:19:03Z",
+  "etag": "\"6a919b84-1037a0\"",
+  "bytes": 1062816,
+  "generated": "2026-08-29T01:25:21Z",
   "range": true,
-  "total": 1149,
+  "total": 1218,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 2893,
-      "count": 3,
-      "hash": "992de0639a0555e0"
+      "length": 59979,
+      "count": 72,
+      "hash": "c68115829f5aec5f"
     },
     "2026-07": {
-      "offset": 2895,
-      "length": 524075,
+      "offset": 59981,
+      "length": 535202,
       "count": 599,
-      "hash": "261a7d63e42930fa"
+      "hash": "9cb592ea99f89f90"
     },
     "2026-06": {
-      "offset": 526971,
+      "offset": 595184,
       "length": 1694,
       "count": 3,
       "hash": "95cd17e0470482e2"
     },
     "2026-05": {
-      "offset": 528666,
-      "length": 283181,
+      "offset": 596879,
+      "length": 283246,
       "count": 333,
-      "hash": "ac2ded8aa7aba250"
+      "hash": "55eb54c2e02094aa"
     },
     "2026-04": {
-      "offset": 811848,
+      "offset": 880126,
       "length": 181624,
       "count": 209,
       "hash": "1eea31207bbf4ad4"
     },
     "2026-02": {
-      "offset": 993473,
+      "offset": 1061751,
       "length": 1064,
       "count": 2,
       "hash": "15d171c3933bbdfe"

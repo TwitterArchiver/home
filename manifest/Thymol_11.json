@@ -1,0 +1,60 @@
+{
+  "repo": "Thymol_11",
+  "account": "Thymol_11",
+  "source": "https://twitterarchiver.github.io/Thymol_11/accounts/Thymol_11/wayback_snapshots/index.json",
+  "etag": "\"6a8f2f74-1304f8\"",
+  "bytes": 1246456,
+  "generated": "2026-08-29T01:24:02Z",
+  "range": true,
+  "total": 1548,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 25019,
+      "count": 30,
+      "hash": "eb474aaaac8c84f1"
+    },
+    "2026-07": {
+      "offset": 25021,
+      "length": 106274,
+      "count": 126,
+      "hash": "344b58d4d321b755"
+    },
+    "2026-06": {
+      "offset": 131296,
+      "length": 939,
+      "count": 1,
+      "hash": "f7e840ba4fdc6bad"
+    },
+    "2026-05": {
+      "offset": 132236,
+      "length": 61058,
+      "count": 73,
+      "hash": "6c922ac538c66676"
+    },
+    "2026-04": {
+      "offset": 193295,
+      "length": 458043,
+      "count": 554,
+      "hash": "9b71ffc649bf5298"
+    },
+    "2026-03": {
+      "offset": 651339,
+      "length": 592903,
+      "count": 762,
+      "hash": "b4d8ff78e21070f8"
+    },
+    "2026-02": {
+      "offset": 1244243,
+      "length": 1263,
+      "count": 1,
+      "hash": "dc22023cac2fda23"
+    },
+    "2025-10": {
+      "offset": 1245507,
+      "length": 948,
+      "count": 1,
+      "hash": "bc5da0f26f9148ca"
+    }
+  }
+}

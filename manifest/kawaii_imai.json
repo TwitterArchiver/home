@@ -2,35 +2,41 @@
   "repo": "kawaii_imai",
   "account": "kawaii_imai",
   "source": "https://twitterarchiver.github.io/kawaii_imai/accounts/kawaii_imai/wayback_snapshots/index.json",
-  "etag": "\"6a6e92aa-84e98\"",
-  "bytes": 544408,
-  "generated": "2026-08-02T03:36:37Z",
+  "etag": "\"6a919b51-9b9aa\"",
+  "bytes": 637354,
+  "generated": "2026-08-29T01:25:21Z",
   "range": true,
-  "total": 627,
+  "total": 699,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 66886,
-      "count": 73,
-      "hash": "5753af5c3c97c1a1"
+      "length": 72087,
+      "count": 70,
+      "hash": "8c0b1a6c01d2a7ac"
+    },
+    "2026-07": {
+      "offset": 72089,
+      "length": 71019,
+      "count": 75,
+      "hash": "0ecf7e176808ac02"
     },
     "2026-06": {
-      "offset": 66888,
-      "length": 151223,
+      "offset": 143109,
+      "length": 156030,
       "count": 168,
-      "hash": "0cda3a443d9bc80a"
+      "hash": "6fe063524f0676a3"
     },
     "2026-05": {
-      "offset": 218112,
-      "length": 263667,
+      "offset": 299140,
+      "length": 273135,
       "count": 309,
-      "hash": "d8283941e5ec3693"
+      "hash": "f74da928bcf07d2c"
     },
     "2026-04": {
-      "offset": 481780,
-      "length": 62627,
+      "offset": 572276,
+      "length": 65077,
       "count": 77,
-      "hash": "2882dad8ee23613b"
+      "hash": "85b5b62b8b2c707e"
     }
   }
 }

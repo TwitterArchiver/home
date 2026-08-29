@@ -1,0 +1,108 @@
+{
+  "repo": "Rien6cf",
+  "account": "Rien6cf",
+  "source": "https://twitterarchiver.github.io/Rien6cf/accounts/Rien6cf/wayback_snapshots/index.json",
+  "etag": "\"6a923241-4516f7\"",
+  "bytes": 4527863,
+  "generated": "2026-08-29T01:23:42Z",
+  "range": true,
+  "total": 5195,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 276594,
+      "count": 330,
+      "hash": "db335527e194dfe1"
+    },
+    "2026-07": {
+      "offset": 276596,
+      "length": 537021,
+      "count": 646,
+      "hash": "611e0858152311a6"
+    },
+    "2026-06": {
+      "offset": 813618,
+      "length": 623238,
+      "count": 716,
+      "hash": "8ad50a860a84ab72"
+    },
+    "2026-05": {
+      "offset": 1436857,
+      "length": 783151,
+      "count": 855,
+      "hash": "ef54a86aecc2a82c"
+    },
+    "2026-04": {
+      "offset": 2220009,
+      "length": 616942,
+      "count": 689,
+      "hash": "02eca6f6f8a7bedb"
+    },
+    "2026-03": {
+      "offset": 2836952,
+      "length": 956460,
+      "count": 1108,
+      "hash": "182f09e7bc896a29"
+    },
+    "2026-02": {
+      "offset": 3793413,
+      "length": 681189,
+      "count": 785,
+      "hash": "ae7c6f07cf5725db"
+    },
+    "2026-01": {
+      "offset": 4474603,
+      "length": 46165,
+      "count": 56,
+      "hash": "c17927df5ca96f4b"
+    },
+    "2025-12": {
+      "offset": 4520769,
+      "length": 480,
+      "count": 1,
+      "hash": "b60f0952f6e48373"
+    },
+    "2025-09": {
+      "offset": 4521250,
+      "length": 1962,
+      "count": 2,
+      "hash": "a76128d9ab7e37ec"
+    },
+    "2023-08": {
+      "offset": 4523213,
+      "length": 459,
+      "count": 1,
+      "hash": "b0f17021ff15dcc3"
+    },
+    "2023-06": {
+      "offset": 4523673,
+      "length": 788,
+      "count": 1,
+      "hash": "109ac1143c0e435e"
+    },
+    "2022-05": {
+      "offset": 4524462,
+      "length": 1003,
+      "count": 2,
+      "hash": "80c4f3e71eb28be2"
+    },
+    "2021-05": {
+      "offset": 4525466,
+      "length": 1274,
+      "count": 1,
+      "hash": "35f05872fd41f91a"
+    },
+    "2019-04": {
+      "offset": 4526741,
+      "length": 464,
+      "count": 1,
+      "hash": "7481add91f0c8466"
+    },
+    "2015-07": {
+      "offset": 4527206,
+      "length": 656,
+      "count": 1,
+      "hash": "084f9d9565f6d1ef"
+    }
+  }
+}

@@ -2,32 +2,38 @@
   "repo": "chu_00b2",
   "account": "chu_00b2",
   "source": "https://twitterarchiver.github.io/chu_00b2/accounts/chu_00b2/wayback_snapshots/index.json",
-  "etag": "\"6a678004-18eb3\"",
-  "bytes": 102067,
-  "generated": "2026-07-28T13:55:41Z",
+  "etag": "\"6a8e5c62-57e46\"",
+  "bytes": 360006,
+  "generated": "2026-08-29T01:24:51Z",
   "range": true,
-  "total": 120,
+  "total": 405,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 42444,
-      "count": 48,
-      "hash": "e8d84b062e7ec147"
+      "length": 196593,
+      "count": 214,
+      "hash": "daada79b581b075e"
+    },
+    "2026-07": {
+      "offset": 196595,
+      "length": 103789,
+      "count": 119,
+      "hash": "9623c4f12fab42dc"
     },
     "2026-06": {
-      "offset": 42446,
+      "offset": 300385,
       "length": 58528,
       "count": 70,
       "hash": "d74086f48856dff5"
     },
     "2026-05": {
-      "offset": 100975,
+      "offset": 358914,
       "length": 578,
       "count": 1,
       "hash": "7d84fdc703ed45b0"
     },
     "2021-10": {
-      "offset": 101554,
+      "offset": 359493,
       "length": 512,
       "count": 1,
       "hash": "d975d1d7d4cdcc9b"

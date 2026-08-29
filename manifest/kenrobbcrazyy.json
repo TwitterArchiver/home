@@ -2,23 +2,29 @@
   "repo": "kenrobbcrazyy",
   "account": "kenrobbcrazyy",
   "source": "https://twitterarchiver.github.io/kenrobbcrazyy/accounts/kenrobbcrazyy/wayback_snapshots/index.json",
-  "etag": "\"6a60e024-8782\"",
-  "bytes": 34690,
-  "generated": "2026-07-23T19:53:22Z",
+  "etag": "\"6a919ad5-13e14\"",
+  "bytes": 81428,
+  "generated": "2026-08-29T01:25:22Z",
   "range": true,
-  "total": 35,
+  "total": 82,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 31235,
-      "count": 32,
-      "hash": "5059432f143f2095"
+      "length": 77314,
+      "count": 78,
+      "hash": "12ec952765ba5662"
     },
     "2026-06": {
-      "offset": 31237,
+      "offset": 77316,
       "length": 3452,
       "count": 3,
       "hash": "391df5257fa1c509"
+    },
+    "2025-11": {
+      "offset": 80769,
+      "length": 658,
+      "count": 1,
+      "hash": "0207a4b161ae92b8"
     }
   }
 }

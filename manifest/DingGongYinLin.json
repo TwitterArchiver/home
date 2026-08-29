@@ -1,0 +1,54 @@
+{
+  "repo": "DingGongYinLin",
+  "account": "DingGongYinLin",
+  "source": "https://twitterarchiver.github.io/DingGongYinLin/accounts/DingGongYinLin/wayback_snapshots/index.json",
+  "etag": "\"6a8f44d7-57e7fe\"",
+  "bytes": 5761022,
+  "generated": "2026-08-29T01:22:33Z",
+  "range": true,
+  "total": 7425,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 1626742,
+      "count": 2086,
+      "hash": "d2ccfb5564135e7e"
+    },
+    "2026-07": {
+      "offset": 1626744,
+      "length": 2970528,
+      "count": 3870,
+      "hash": "8abdaa9c19bb8725"
+    },
+    "2026-06": {
+      "offset": 4597273,
+      "length": 1016486,
+      "count": 1288,
+      "hash": "5ecbfd3a15620ef1"
+    },
+    "2026-05": {
+      "offset": 5613760,
+      "length": 90293,
+      "count": 112,
+      "hash": "38cc18993f6cd80a"
+    },
+    "2026-04": {
+      "offset": 5704054,
+      "length": 14033,
+      "count": 17,
+      "hash": "7f209fefaa2d84b1"
+    },
+    "2026-03": {
+      "offset": 5718088,
+      "length": 41359,
+      "count": 50,
+      "hash": "c2d40e1fcc2f8c9c"
+    },
+    "2026-02": {
+      "offset": 5759448,
+      "length": 1573,
+      "count": 2,
+      "hash": "95376d99bfccf086"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "YangDowond",
+  "account": "YangDowond",
+  "source": "https://twitterarchiver.github.io/YangDowond/accounts/YangDowond/wayback_snapshots/index.json",
+  "etag": "\"6a8f2b5c-9bad7\"",
+  "bytes": 637655,
+  "generated": "2026-08-29T01:24:18Z",
+  "range": true,
+  "total": 670,
+  "months": {
+    "2026-08": {
+      "offset": 1,
+      "length": 357507,
+      "count": 369,
+      "hash": "93a7a66fdc26252b"
+    },
+    "2026-07": {
+      "offset": 357509,
+      "length": 160970,
+      "count": 179,
+      "hash": "53ff0c5e9814cd97"
+    },
+    "2026-06": {
+      "offset": 518480,
+      "length": 76811,
+      "count": 78,
+      "hash": "9a0ea92fb2747f18"
+    },
+    "2026-05": {
+      "offset": 595292,
+      "length": 26312,
+      "count": 27,
+      "hash": "d553b37778cf8d1d"
+    },
+    "2026-04": {
+      "offset": 621605,
+      "length": 6651,
+      "count": 7,
+      "hash": "92397b30ccd2b219"
+    },
+    "2026-02": {
+      "offset": 628257,
+      "length": 4993,
+      "count": 5,
+      "hash": "f8d8e9519377fc79"
+    },
+    "2025-11": {
+      "offset": 633251,
+      "length": 3064,
+      "count": 3,
+      "hash": "ea100d50b987319f"
+    },
+    "2025-10": {
+      "offset": 636316,
+      "length": 855,
+      "count": 1,
+      "hash": "f987076c160e61c5"
+    },
+    "2025-09": {
+      "offset": 637172,
+      "length": 482,
+      "count": 1,
+      "hash": "e69663760b0af7e1"
+    }
+  }
+}
