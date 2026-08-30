@@ -2,98 +2,104 @@
   "repo": "nyaepheia",
   "account": "nyaepheia",
   "source": "https://twitterarchiver.github.io/nyaepheia/accounts/nyaepheia/wayback_snapshots/index.json",
-  "etag": "\"6a60e0a4-6a89de\"",
-  "bytes": 6982110,
-  "generated": "2026-07-23T19:53:27Z",
+  "etag": "\"6a93ef70-6b09cf\"",
+  "bytes": 7014863,
+  "generated": "2026-08-30T11:33:47Z",
   "range": true,
-  "total": 7790,
+  "total": 7826,
   "months": {
-    "2026-05": {
+    "2026-07": {
       "offset": 1,
-      "length": 2366661,
+      "length": 32516,
+      "count": 36,
+      "hash": "e188998d23ca2177"
+    },
+    "2026-05": {
+      "offset": 32518,
+      "length": 2366897,
       "count": 2372,
-      "hash": "6f8262341a5142a1"
+      "hash": "6a4674e96a0699c1"
     },
     "2026-04": {
-      "offset": 2366663,
+      "offset": 2399416,
       "length": 4287003,
       "count": 5055,
       "hash": "49fc42afd4f6234f"
     },
     "2026-03": {
-      "offset": 6653667,
+      "offset": 6686420,
       "length": 315137,
       "count": 347,
       "hash": "b8e466e3049d236b"
     },
     "2026-02": {
-      "offset": 6968805,
+      "offset": 7001558,
       "length": 2552,
       "count": 3,
       "hash": "a264d5eabe08fd3a"
     },
     "2025-08": {
-      "offset": 6971358,
+      "offset": 7004111,
       "length": 806,
       "count": 1,
       "hash": "4dfe8a263e984809"
     },
     "2025-07": {
-      "offset": 6972165,
+      "offset": 7004918,
       "length": 1286,
       "count": 1,
       "hash": "045d5c84b066ee45"
     },
     "2025-06": {
-      "offset": 6973452,
+      "offset": 7006205,
       "length": 552,
       "count": 1,
       "hash": "11d89a6c6014eafc"
     },
     "2025-04": {
-      "offset": 6974005,
+      "offset": 7006758,
       "length": 2710,
       "count": 3,
       "hash": "a9b5584693ef92a4"
     },
     "2025-01": {
-      "offset": 6976716,
+      "offset": 7009469,
       "length": 906,
       "count": 1,
       "hash": "c57472ae437d3804"
     },
     "2024-08": {
-      "offset": 6977623,
+      "offset": 7010376,
       "length": 1021,
       "count": 1,
       "hash": "8388aa38d8ffc28c"
     },
     "2024-03": {
-      "offset": 6978645,
+      "offset": 7011398,
       "length": 452,
       "count": 1,
       "hash": "212b2c0b7f1be180"
     },
     "2023-12": {
-      "offset": 6979098,
+      "offset": 7011851,
       "length": 1251,
       "count": 1,
       "hash": "93e23cceb94b6e50"
     },
     "2023-10": {
-      "offset": 6980350,
+      "offset": 7013103,
       "length": 467,
       "count": 1,
       "hash": "092a6bd55c01e515"
     },
     "2023-01": {
-      "offset": 6980818,
+      "offset": 7013571,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"
     },
     "2022-06": {
-      "offset": 6981297,
+      "offset": 7014050,
       "length": 812,
       "count": 1,
       "hash": "1cb5034045bb7668"

@@ -2,17 +2,23 @@
   "repo": "mrsksyrx_xl",
   "account": "mrsksyrx_xl",
   "source": "https://twitterarchiver.github.io/mrsksyrx_xl/accounts/mrsksyrx_xl/wayback_snapshots/index.json",
-  "etag": "\"6a69dfbd-7a0e\"",
-  "bytes": 31246,
-  "generated": "2026-07-29T15:19:46Z",
+  "etag": "\"6a931b2d-ea5e\"",
+  "bytes": 59998,
+  "generated": "2026-08-30T11:33:41Z",
   "range": true,
-  "total": 35,
+  "total": 69,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 31244,
-      "count": 35,
-      "hash": "cb60ce32d98940ef"
+      "length": 8925,
+      "count": 9,
+      "hash": "26df9208e16db418"
+    },
+    "2026-07": {
+      "offset": 8927,
+      "length": 51070,
+      "count": 60,
+      "hash": "abfa7305ac5f2ae8"
     }
   }
 }
