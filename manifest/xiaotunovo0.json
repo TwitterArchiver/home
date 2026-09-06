@@ -2,17 +2,29 @@
   "repo": "xiaotunovo0",
   "account": "xiaotunovo0",
   "source": "https://twitterarchiver.github.io/xiaotunovo0/accounts/xiaotunovo0/wayback_snapshots/index.json",
-  "etag": "\"6a6e3f27-a87b\"",
-  "bytes": 43131,
-  "generated": "2026-08-01T19:47:48Z",
+  "etag": "\"6a97ce2d-37ff3\"",
+  "bytes": 229363,
+  "generated": "2026-09-06T10:34:45Z",
   "range": true,
-  "total": 53,
+  "total": 300,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 43129,
-      "count": 53,
-      "hash": "b5d6911278ad426b"
+      "length": 129378,
+      "count": 171,
+      "hash": "92516423b027a8ec"
+    },
+    "2026-07": {
+      "offset": 129380,
+      "length": 99001,
+      "count": 128,
+      "hash": "edbd503e2ad2616f"
+    },
+    "2026-06": {
+      "offset": 228382,
+      "length": 980,
+      "count": 1,
+      "hash": "83c380cf01f5ec23"
     }
   }
 }

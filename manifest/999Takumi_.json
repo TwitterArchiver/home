@@ -2,128 +2,128 @@
   "repo": "999Takumi_",
   "account": "999Takumi_",
   "source": "https://twitterarchiver.github.io/999Takumi_/accounts/999Takumi_/wayback_snapshots/index.json",
-  "etag": "\"6a75f648-e57ff\"",
-  "bytes": 940031,
-  "generated": "2026-08-08T06:28:54Z",
+  "etag": "\"6a9b0557-10ed97\"",
+  "bytes": 1109399,
+  "generated": "2026-09-06T10:31:04Z",
   "range": true,
-  "total": 1187,
+  "total": 1376,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 11593,
-      "count": 14,
-      "hash": "88e948ede268c8f4"
+      "length": 177914,
+      "count": 199,
+      "hash": "21d74a772ffbd8a1"
     },
     "2026-07": {
-      "offset": 11595,
-      "length": 232687,
-      "count": 281,
-      "hash": "876a941c84a1e50f"
+      "offset": 177916,
+      "length": 233996,
+      "count": 283,
+      "hash": "bbd8bf7d70c943cd"
     },
     "2026-06": {
-      "offset": 244283,
+      "offset": 411913,
       "length": 54468,
       "count": 62,
       "hash": "02980b705222c68d"
     },
     "2026-05": {
-      "offset": 298752,
+      "offset": 466382,
       "length": 69973,
       "count": 87,
       "hash": "f9a2955695b18b60"
     },
     "2026-04": {
-      "offset": 368726,
+      "offset": 536356,
       "length": 2366,
       "count": 3,
       "hash": "2d833c06715c915f"
     },
     "2026-03": {
-      "offset": 371093,
-      "length": 13476,
-      "count": 18,
-      "hash": "90b63d719176d07b"
+      "offset": 538723,
+      "length": 14719,
+      "count": 19,
+      "hash": "6ca2783f2a177bff"
     },
     "2026-02": {
-      "offset": 384570,
+      "offset": 553443,
       "length": 40419,
       "count": 52,
       "hash": "ade7d6bb4bb1b003"
     },
     "2026-01": {
-      "offset": 424990,
+      "offset": 593863,
       "length": 16586,
       "count": 21,
       "hash": "89dfa575a556e6d3"
     },
     "2025-11": {
-      "offset": 441577,
+      "offset": 610450,
       "length": 5403,
       "count": 7,
       "hash": "fe2546b3fa9a4970"
     },
     "2025-10": {
-      "offset": 446981,
+      "offset": 615854,
       "length": 74343,
       "count": 94,
       "hash": "674b1c0f9142b220"
     },
     "2025-09": {
-      "offset": 521325,
+      "offset": 690198,
       "length": 39460,
       "count": 49,
       "hash": "271814296c8bb96b"
     },
     "2025-08": {
-      "offset": 560786,
+      "offset": 729659,
       "length": 201221,
       "count": 261,
       "hash": "56d09a8ec8f3e21d"
     },
     "2025-07": {
-      "offset": 762008,
+      "offset": 930881,
       "length": 174284,
       "count": 231,
       "hash": "1f2402d726d9155d"
     },
     "2025-06": {
-      "offset": 936293,
-      "length": 506,
-      "count": 1,
-      "hash": "6d72feaac3951f40"
+      "offset": 1105166,
+      "length": 1001,
+      "count": 2,
+      "hash": "9b8b618c66226a0e"
     },
     "2019-11": {
-      "offset": 936800,
+      "offset": 1106168,
       "length": 586,
       "count": 1,
       "hash": "07ea436dde745ac1"
     },
     "2017-12": {
-      "offset": 937387,
+      "offset": 1106755,
       "length": 527,
       "count": 1,
       "hash": "fa9f3dbf104d1cf9"
     },
     "2017-04": {
-      "offset": 937915,
+      "offset": 1107283,
       "length": 535,
       "count": 1,
       "hash": "690082f68c53c2bd"
     },
     "2016-06": {
-      "offset": 938451,
+      "offset": 1107819,
       "length": 551,
       "count": 1,
       "hash": "71eab1bd2ac689ab"
     },
     "2016-03": {
-      "offset": 939003,
+      "offset": 1108371,
       "length": 491,
       "count": 1,
       "hash": "f3802c87eed869f7"
     },
     "2009-04": {
-      "offset": 939495,
+      "offset": 1108863,
       "length": 535,
       "count": 1,
       "hash": "5b1191f9d99b6654"

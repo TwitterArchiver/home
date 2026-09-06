@@ -2,41 +2,71 @@
   "repo": "AngelMayLies",
   "account": "AngelMayLies",
   "source": "https://twitterarchiver.github.io/AngelMayLies/accounts/AngelMayLies/wayback_snapshots/index.json",
-  "etag": "\"6a773fe1-12215e\"",
-  "bytes": 1188190,
-  "generated": "2026-08-09T07:00:38Z",
+  "etag": "\"6a9bc4b8-283bdb\"",
+  "bytes": 2636763,
+  "generated": "2026-09-06T10:31:15Z",
   "range": true,
-  "total": 1370,
+  "total": 3131,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 748653,
-      "count": 848,
-      "hash": "59fba0ac50395e0b"
+      "length": 2193125,
+      "count": 2602,
+      "hash": "fa5b68276a9c864d"
     },
     "2026-07": {
-      "offset": 748655,
-      "length": 435166,
-      "count": 516,
-      "hash": "002efe60c3eb3d41"
+      "offset": 2193127,
+      "length": 435688,
+      "count": 517,
+      "hash": "7146db9fd7166c94"
     },
     "2026-06": {
-      "offset": 1183822,
+      "offset": 2628816,
       "length": 2113,
       "count": 3,
       "hash": "194354887bf2eceb"
     },
     "2026-05": {
-      "offset": 1185936,
-      "length": 1507,
-      "count": 2,
-      "hash": "309cd22e1f026bdb"
+      "offset": 2630930,
+      "length": 2045,
+      "count": 3,
+      "hash": "5ce5cca9068f6862"
+    },
+    "2025-12": {
+      "offset": 2632976,
+      "length": 714,
+      "count": 1,
+      "hash": "696a9b91f8ddeb48"
     },
     "2025-11": {
-      "offset": 1187444,
+      "offset": 2633691,
       "length": 745,
       "count": 1,
       "hash": "6de48c03d1be2ebe"
+    },
+    "2025-10": {
+      "offset": 2634437,
+      "length": 673,
+      "count": 1,
+      "hash": "f21f6d31a799df85"
+    },
+    "2025-07": {
+      "offset": 2635111,
+      "length": 529,
+      "count": 1,
+      "hash": "fe1153837818cbc0"
+    },
+    "2025-06": {
+      "offset": 2635641,
+      "length": 529,
+      "count": 1,
+      "hash": "51687fbbd94e132b"
+    },
+    "2024-12": {
+      "offset": 2636171,
+      "length": 591,
+      "count": 1,
+      "hash": "40af2fb6a6a1073e"
     }
   }
 }

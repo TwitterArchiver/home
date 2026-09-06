@@ -2,29 +2,35 @@
   "repo": "yshidhe3",
   "account": "yshidhe3",
   "source": "https://twitterarchiver.github.io/yshidhe3/accounts/yshidhe3/wayback_snapshots/index.json",
-  "etag": "\"6a8f2f93-14fcb4\"",
-  "bytes": 1375412,
-  "generated": "2026-08-29T01:26:40Z",
+  "etag": "\"6a99201f-186bbf\"",
+  "bytes": 1600447,
+  "generated": "2026-09-06T10:34:57Z",
   "range": true,
-  "total": 1771,
+  "total": 2051,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 634978,
-      "count": 817,
-      "hash": "585518fde1124b4e"
+      "length": 857128,
+      "count": 1094,
+      "hash": "5a7fe6d4ebeb1197"
     },
     "2026-07": {
-      "offset": 634980,
-      "length": 535251,
-      "count": 686,
-      "hash": "bc9862b4710142e6"
+      "offset": 857130,
+      "length": 536426,
+      "count": 687,
+      "hash": "b1a047be277b5198"
     },
     "2026-06": {
-      "offset": 1170232,
-      "length": 205179,
-      "count": 268,
-      "hash": "ff526038f28969d6"
+      "offset": 1393557,
+      "length": 206072,
+      "count": 269,
+      "hash": "8df3aac5f88d0f9d"
+    },
+    "2026-04": {
+      "offset": 1599630,
+      "length": 816,
+      "count": 1,
+      "hash": "f75dc55256841fac"
     }
   }
 }

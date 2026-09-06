@@ -2,56 +2,62 @@
   "repo": "shennaichuan_",
   "account": "shennaichuan_",
   "source": "https://twitterarchiver.github.io/shennaichuan_/accounts/shennaichuan_/wayback_snapshots/index.json",
-  "etag": "\"6a6e75d4-1fb98c\"",
-  "bytes": 2079116,
-  "generated": "2026-08-02T03:36:58Z",
+  "etag": "\"6a95e234-25bc6e\"",
+  "bytes": 2473070,
+  "generated": "2026-09-06T10:34:21Z",
   "range": true,
-  "total": 2634,
+  "total": 3132,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 6124,
-      "count": 8,
-      "hash": "d499b942a30dcfd6"
+      "length": 369130,
+      "count": 467,
+      "hash": "01d737d5da4d4868"
     },
     "2026-07": {
-      "offset": 6126,
-      "length": 1116200,
-      "count": 1394,
-      "hash": "21c8910683587af8"
+      "offset": 369132,
+      "length": 1143947,
+      "count": 1429,
+      "hash": "c895255f3feafbaa"
     },
     "2026-06": {
-      "offset": 1122327,
-      "length": 949879,
-      "count": 1221,
-      "hash": "74e96aaa66e96f03"
+      "offset": 1513080,
+      "length": 950873,
+      "count": 1222,
+      "hash": "8f0e1036db5e88cf"
     },
     "2026-05": {
-      "offset": 2072207,
+      "offset": 2463954,
       "length": 2254,
       "count": 4,
       "hash": "51c99e05793f9f86"
     },
     "2026-04": {
-      "offset": 2074462,
-      "length": 1042,
-      "count": 2,
-      "hash": "593d22df8ba552da"
+      "offset": 2466209,
+      "length": 2311,
+      "count": 3,
+      "hash": "d7e0c74ed9710176"
     },
     "2026-02": {
-      "offset": 2075505,
+      "offset": 2468521,
       "length": 2366,
       "count": 3,
       "hash": "293dde02b076d6cd"
     },
-    "2025-11": {
-      "offset": 2077872,
-      "length": 598,
+    "2025-12": {
+      "offset": 2470888,
+      "length": 460,
       "count": 1,
-      "hash": "78c6bfdbe9bc5f48"
+      "hash": "75128bf169793d82"
+    },
+    "2025-11": {
+      "offset": 2471349,
+      "length": 1075,
+      "count": 2,
+      "hash": "85a69e040f34af8e"
     },
     "2025-03": {
-      "offset": 2078471,
+      "offset": 2472425,
       "length": 644,
       "count": 1,
       "hash": "6df5a34da301cb0d"

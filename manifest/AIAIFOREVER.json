@@ -2,11 +2,11 @@
   "repo": "AIAIFOREVER",
   "account": "AIAIFOREVER",
   "source": "https://twitterarchiver.github.io/AIAIFOREVER/accounts/AIAIFOREVER/wayback_snapshots/index.json",
-  "etag": "\"6a8f34fb-1dff5\"",
-  "bytes": 122869,
-  "generated": "2026-08-29T01:21:57Z",
+  "etag": "\"6a9b01a7-5c86f\"",
+  "bytes": 378991,
+  "generated": "2026-09-06T10:31:04Z",
   "range": true,
-  "total": 138,
+  "total": 421,
   "months": {
     "unknown": {
       "offset": 1,
@@ -16,15 +16,21 @@
     },
     "2026-08": {
       "offset": 6093,
-      "length": 115916,
-      "count": 131,
-      "hash": "0f6cff2b952dc43c"
+      "length": 371528,
+      "count": 413,
+      "hash": "aa93d1cea38344f5"
     },
     "2026-07": {
-      "offset": 122010,
+      "offset": 377622,
       "length": 858,
       "count": 1,
       "hash": "4c4a245a4a96ca27"
+    },
+    "2026-06": {
+      "offset": 378481,
+      "length": 509,
+      "count": 1,
+      "hash": "23584e5133e59cc7"
     }
   }
 }

@@ -2,50 +2,56 @@
   "repo": "rain_kawaiiii1",
   "account": "rain_kawaiiii1",
   "source": "https://twitterarchiver.github.io/rain_kawaiiii1/accounts/rain_kawaiiii1/wayback_snapshots/index.json",
-  "etag": "\"6a6e9965-c0cd3\"",
-  "bytes": 789715,
-  "generated": "2026-08-02T03:36:55Z",
+  "etag": "\"6a953f0d-c2aee\"",
+  "bytes": 797422,
+  "generated": "2026-09-06T10:34:17Z",
   "range": true,
-  "total": 935,
+  "total": 944,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
+      "length": 7205,
+      "count": 9,
+      "hash": "d603989a180f8f15"
+    },
+    "2026-07": {
+      "offset": 7207,
       "length": 32086,
       "count": 36,
       "hash": "05c0ac57e87c26f2"
     },
     "2026-06": {
-      "offset": 32088,
-      "length": 127364,
+      "offset": 39294,
+      "length": 127822,
       "count": 157,
-      "hash": "402d6e6b1d65b9d0"
+      "hash": "fb32414982c05bcf"
     },
     "2026-05": {
-      "offset": 159453,
+      "offset": 167117,
       "length": 131252,
       "count": 158,
       "hash": "86049cb6031dba47"
     },
     "2026-04": {
-      "offset": 290706,
-      "length": 496155,
+      "offset": 298370,
+      "length": 496198,
       "count": 580,
-      "hash": "16eb41359cb55d02"
+      "hash": "b92674116320fed0"
     },
     "2026-03": {
-      "offset": 786862,
+      "offset": 794569,
       "length": 1816,
       "count": 2,
       "hash": "8d4e0de374590a8c"
     },
     "2023-10": {
-      "offset": 788679,
+      "offset": 796386,
       "length": 576,
       "count": 1,
       "hash": "22f646ee3565c967"
     },
     "2022-09": {
-      "offset": 789256,
+      "offset": 796963,
       "length": 458,
       "count": 1,
       "hash": "c6e24af503820524"

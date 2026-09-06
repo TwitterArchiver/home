@@ -2,17 +2,65 @@
   "repo": "yunch529",
   "account": "yunch529",
   "source": "https://twitterarchiver.github.io/yunch529/accounts/yunch529/wayback_snapshots/index.json",
-  "etag": "\"6a6e3e61-80fa\"",
-  "bytes": 33018,
-  "generated": "2026-08-01T19:48:02Z",
+  "etag": "\"6a99b3b0-b137f\"",
+  "bytes": 725887,
+  "generated": "2026-09-06T10:34:59Z",
   "range": true,
-  "total": 35,
+  "total": 849,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 33016,
-      "count": 35,
-      "hash": "7a8d5bb446662b23"
+      "length": 656100,
+      "count": 774,
+      "hash": "897e452f54dfd6f2"
+    },
+    "2026-07": {
+      "offset": 656102,
+      "length": 60157,
+      "count": 62,
+      "hash": "b71a13c9aefcb94a"
+    },
+    "2026-06": {
+      "offset": 716260,
+      "length": 3271,
+      "count": 4,
+      "hash": "edb50129dbf50c87"
+    },
+    "2026-05": {
+      "offset": 719532,
+      "length": 2849,
+      "count": 4,
+      "hash": "473c79564b06267c"
+    },
+    "2026-02": {
+      "offset": 722382,
+      "length": 1086,
+      "count": 1,
+      "hash": "9ceec71421fa2407"
+    },
+    "2026-01": {
+      "offset": 723469,
+      "length": 515,
+      "count": 1,
+      "hash": "ebd9264a9610cf27"
+    },
+    "2025-05": {
+      "offset": 723985,
+      "length": 887,
+      "count": 1,
+      "hash": "992ccf3ca9a27ac6"
+    },
+    "2024-06": {
+      "offset": 724873,
+      "length": 499,
+      "count": 1,
+      "hash": "27b6eff0dfa56927"
+    },
+    "2024-05": {
+      "offset": 725373,
+      "length": 513,
+      "count": 1,
+      "hash": "11320652c7dd7ef1"
     }
   }
 }

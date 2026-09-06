@@ -2,9 +2,9 @@
   "repo": "yuyumimio",
   "account": "yuyumimio",
   "source": "https://twitterarchiver.github.io/yuyumimio/accounts/yuyumimio/wayback_snapshots/index.json",
-  "etag": "\"6a6e77f8-4a54b\"",
-  "bytes": 304459,
-  "generated": "2026-08-02T03:37:21Z",
+  "etag": "\"6a99b15f-4a58c\"",
+  "bytes": 304524,
+  "generated": "2026-09-06T10:34:59Z",
   "range": true,
   "total": 374,
   "months": {
@@ -16,18 +16,18 @@
     },
     "2026-05": {
       "offset": 19589,
-      "length": 216239,
+      "length": 216304,
       "count": 267,
-      "hash": "f9e43416e541a901"
+      "hash": "b719f74b39ba03b7"
     },
     "2026-04": {
-      "offset": 235829,
+      "offset": 235894,
       "length": 68172,
       "count": 83,
       "hash": "314ee336df8060fc"
     },
     "2025-08": {
-      "offset": 304002,
+      "offset": 304067,
       "length": 456,
       "count": 1,
       "hash": "57d7a91e863c92e6"

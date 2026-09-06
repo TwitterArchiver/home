@@ -2,20 +2,32 @@
   "repo": "xiecar52",
   "account": "xiecar52",
   "source": "https://twitterarchiver.github.io/xiecar52/accounts/xiecar52/wayback_snapshots/index.json",
-  "etag": "\"6a67d88f-568c8\"",
-  "bytes": 354504,
-  "generated": "2026-07-28T13:56:01Z",
+  "etag": "\"6a986113-84595\"",
+  "bytes": 542101,
+  "generated": "2026-09-06T10:34:46Z",
   "range": true,
-  "total": 445,
+  "total": 676,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 354028,
-      "count": 444,
-      "hash": "ca66b5bfd05d0691"
+      "length": 113567,
+      "count": 140,
+      "hash": "9d4aee4aeed512e7"
+    },
+    "2026-07": {
+      "offset": 113569,
+      "length": 427603,
+      "count": 534,
+      "hash": "dc63951d71154053"
+    },
+    "2026-06": {
+      "offset": 541173,
+      "length": 453,
+      "count": 1,
+      "hash": "d54314944c64b1da"
     },
     "2025-06": {
-      "offset": 354030,
+      "offset": 541627,
       "length": 473,
       "count": 1,
       "hash": "e9036db9cc033c75"

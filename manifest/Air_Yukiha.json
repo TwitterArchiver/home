@@ -2,68 +2,68 @@
   "repo": "Air_Yukiha",
   "account": "Air_Yukiha",
   "source": "https://twitterarchiver.github.io/Air_Yukiha/accounts/Air_Yukiha/wayback_snapshots/index.json",
-  "etag": "\"6a76a84d-1c0769\"",
-  "bytes": 1836905,
-  "generated": "2026-08-08T06:28:59Z",
+  "etag": "\"6a9bbf1d-1cebc4\"",
+  "bytes": 1895364,
+  "generated": "2026-09-06T10:31:10Z",
   "range": true,
-  "total": 2379,
+  "total": 2455,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 125542,
-      "count": 163,
-      "hash": "aa824daa0839ca5c"
+      "length": 184001,
+      "count": 239,
+      "hash": "ebe402bfbcdbcf9d"
     },
     "2026-07": {
-      "offset": 125544,
+      "offset": 184003,
       "length": 332868,
       "count": 428,
       "hash": "23fe96fd2f452342"
     },
     "2026-06": {
-      "offset": 458413,
+      "offset": 516872,
       "length": 1317134,
       "count": 1717,
       "hash": "08849c4043f64e46"
     },
     "2026-05": {
-      "offset": 1775548,
+      "offset": 1834007,
       "length": 18557,
       "count": 23,
       "hash": "1d97b3bcade38c0a"
     },
     "2026-04": {
-      "offset": 1794106,
+      "offset": 1852565,
       "length": 33270,
       "count": 37,
       "hash": "0f3a77ba6fe0ca23"
     },
     "2026-03": {
-      "offset": 1827377,
+      "offset": 1885836,
       "length": 2133,
       "count": 3,
       "hash": "ecb4149ff1e6d3fa"
     },
     "2026-02": {
-      "offset": 1829511,
+      "offset": 1887970,
       "length": 1612,
       "count": 2,
       "hash": "f9617a4906e0dffb"
     },
     "2026-01": {
-      "offset": 1831124,
+      "offset": 1889583,
       "length": 2476,
       "count": 2,
       "hash": "a98a59662b12818b"
     },
     "2025-11": {
-      "offset": 1833601,
+      "offset": 1892060,
       "length": 2760,
       "count": 3,
       "hash": "87f30c3117fbf9b8"
     },
     "2024-03": {
-      "offset": 1836362,
+      "offset": 1894821,
       "length": 542,
       "count": 1,
       "hash": "ccc9566b95aabf3c"

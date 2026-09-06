@@ -2,26 +2,32 @@
   "repo": "pavlova233",
   "account": "pavlova233",
   "source": "https://twitterarchiver.github.io/pavlova233/accounts/pavlova233/wayback_snapshots/index.json",
-  "etag": "\"6a60e064-1df3d\"",
-  "bytes": 122685,
-  "generated": "2026-07-23T19:53:26Z",
+  "etag": "\"6a946f1a-61d39\"",
+  "bytes": 400697,
+  "generated": "2026-09-06T10:34:07Z",
   "range": true,
-  "total": 128,
+  "total": 467,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 114298,
-      "count": 121,
-      "hash": "3f6e0f5ec0ecc0cf"
+      "length": 113875,
+      "count": 132,
+      "hash": "34075dc139248e0e"
+    },
+    "2026-07": {
+      "offset": 113877,
+      "length": 278434,
+      "count": 328,
+      "hash": "af6c85ecc3f0ce4f"
     },
     "2026-06": {
-      "offset": 114300,
+      "offset": 392312,
       "length": 7703,
       "count": 6,
       "hash": "b8717e25ed5ee87b"
     },
     "2026-05": {
-      "offset": 122004,
+      "offset": 400016,
       "length": 680,
       "count": 1,
       "hash": "efd8c62f7d859d3a"

@@ -2,17 +2,17 @@
   "repo": "yyyyume0527",
   "account": "yyyyume0527",
   "source": "https://twitterarchiver.github.io/yyyyume0527/accounts/yyyyume0527/wayback_snapshots/index.json",
-  "etag": "\"6a8f2370-22990\"",
-  "bytes": 141712,
-  "generated": "2026-08-29T01:26:44Z",
+  "etag": "\"6a99b1be-23094\"",
+  "bytes": 143508,
+  "generated": "2026-09-06T10:34:59Z",
   "range": true,
-  "total": 161,
+  "total": 163,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 141710,
-      "count": 161,
-      "hash": "65dce2dd5e44ae87"
+      "length": 143506,
+      "count": 163,
+      "hash": "c0688850907fefca"
     }
   }
 }

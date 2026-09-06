@@ -2,23 +2,23 @@
   "repo": "sasasakanakawai",
   "account": "sasasakanakawai",
   "source": "https://twitterarchiver.github.io/sasasakanakawai/accounts/sasasakanakawai/wayback_snapshots/index.json",
-  "etag": "\"6a6f1db8-3dad4\"",
-  "bytes": 252628,
-  "generated": "2026-08-02T12:41:03Z",
+  "etag": "\"6a9540ba-5382b\"",
+  "bytes": 342059,
+  "generated": "2026-09-06T10:34:21Z",
   "range": true,
-  "total": 294,
+  "total": 404,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 1629,
-      "count": 2,
-      "hash": "74e1519faaec9d93"
+      "length": 88153,
+      "count": 108,
+      "hash": "6e1a2c465710b883"
     },
     "2026-07": {
-      "offset": 1631,
-      "length": 250996,
-      "count": 292,
-      "hash": "fe8c09b26ba1f7a1"
+      "offset": 88155,
+      "length": 253903,
+      "count": 296,
+      "hash": "20a0921ce74f4e8c"
     }
   }
 }

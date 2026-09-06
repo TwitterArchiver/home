@@ -2,47 +2,59 @@
   "repo": "seikuushona",
   "account": "seikuushona",
   "source": "https://twitterarchiver.github.io/seikuushona/accounts/seikuushona/wayback_snapshots/index.json",
-  "etag": "\"6a60e07f-73788\"",
-  "bytes": 472968,
-  "generated": "2026-07-23T19:53:28Z",
+  "etag": "\"6a95df4f-152af6\"",
+  "bytes": 1387254,
+  "generated": "2026-09-06T10:34:21Z",
   "range": true,
-  "total": 564,
+  "total": 1610,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 112427,
-      "count": 140,
-      "hash": "0d3b6296dc068de7"
+      "length": 787469,
+      "count": 888,
+      "hash": "05ba4be5ce055dac"
+    },
+    "2026-07": {
+      "offset": 787471,
+      "length": 238564,
+      "count": 297,
+      "hash": "f94fd7fabe5ce0c5"
     },
     "2026-06": {
-      "offset": 112429,
-      "length": 178016,
+      "offset": 1026036,
+      "length": 178102,
       "count": 214,
-      "hash": "a4a9989516c2877e"
+      "hash": "07da96c03f83581d"
     },
     "2026-05": {
-      "offset": 290446,
-      "length": 66232,
+      "offset": 1204139,
+      "length": 66361,
       "count": 73,
-      "hash": "844ad54c994ea8d4"
+      "hash": "a0380b117c43ae2d"
     },
     "2026-04": {
-      "offset": 356679,
+      "offset": 1270501,
       "length": 115244,
       "count": 135,
       "hash": "a1ea338ce8f7cc38"
     },
     "2026-01": {
-      "offset": 471924,
+      "offset": 1385746,
       "length": 475,
       "count": 1,
       "hash": "dfad853ffc6c6c66"
     },
     "2017-11": {
-      "offset": 472400,
+      "offset": 1386222,
       "length": 567,
       "count": 1,
       "hash": "cd144e6df63b6b0f"
+    },
+    "2012-10": {
+      "offset": 1386790,
+      "length": 463,
+      "count": 1,
+      "hash": "2f49540ea1c7f76f"
     }
   }
 }

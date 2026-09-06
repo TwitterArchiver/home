@@ -2,17 +2,29 @@
   "repo": "yuda8964",
   "account": "yuda8964",
   "source": "https://twitterarchiver.github.io/yuda8964/accounts/yuda8964/wayback_snapshots/index.json",
-  "etag": "\"6a6e3d37-bf38\"",
-  "bytes": 48952,
-  "generated": "2026-08-01T19:47:58Z",
+  "etag": "\"6a992105-a4a00\"",
+  "bytes": 674304,
+  "generated": "2026-09-06T10:34:57Z",
   "range": true,
-  "total": 56,
+  "total": 855,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 48950,
-      "count": 56,
-      "hash": "b5962dde3b637c47"
+      "length": 531410,
+      "count": 685,
+      "hash": "19ef4e3876d02fed"
+    },
+    "2026-07": {
+      "offset": 531412,
+      "length": 141910,
+      "count": 169,
+      "hash": "7074d8d0f3643b23"
+    },
+    "2026-06": {
+      "offset": 673323,
+      "length": 980,
+      "count": 1,
+      "hash": "83c380cf01f5ec23"
     }
   }
 }

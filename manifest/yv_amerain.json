@@ -2,9 +2,9 @@
   "repo": "yv_amerain",
   "account": "yv_amerain",
   "source": "https://twitterarchiver.github.io/yv_amerain/accounts/yv_amerain/wayback_snapshots/index.json",
-  "etag": "\"6a6eab8f-17fd2f\"",
-  "bytes": 1572143,
-  "generated": "2026-08-02T03:37:23Z",
+  "etag": "\"6a99bd1f-17fdb1\"",
+  "bytes": 1572273,
+  "generated": "2026-09-06T10:35:00Z",
   "range": true,
   "total": 1716,
   "months": {
@@ -22,36 +22,36 @@
     },
     "2026-05": {
       "offset": 163992,
-      "length": 311278,
+      "length": 311408,
       "count": 330,
-      "hash": "a3f88555fb2ef3c2"
+      "hash": "c339008c96d71e0b"
     },
     "2026-04": {
-      "offset": 475271,
+      "offset": 475401,
       "length": 211963,
       "count": 247,
       "hash": "a32592ee5e1d6deb"
     },
     "2026-03": {
-      "offset": 687235,
+      "offset": 687365,
       "length": 556470,
       "count": 638,
       "hash": "840cce68d36ed022"
     },
     "2026-02": {
-      "offset": 1243706,
+      "offset": 1243836,
       "length": 327383,
       "count": 326,
       "hash": "daf28ad340df80f8"
     },
     "2025-11": {
-      "offset": 1571090,
+      "offset": 1571220,
       "length": 544,
       "count": 1,
       "hash": "d0934dcd9404c27b"
     },
     "2024-12": {
-      "offset": 1571635,
+      "offset": 1571765,
       "length": 507,
       "count": 1,
       "hash": "c31612a3b2e7cb77"

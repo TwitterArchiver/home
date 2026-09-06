@@ -2,29 +2,29 @@
   "repo": "7q468438x8964",
   "account": "7q468438x8964",
   "source": "https://twitterarchiver.github.io/7q468438x8964/accounts/7q468438x8964/wayback_snapshots/index.json",
-  "etag": "\"6a7561bb-3fc0e\"",
-  "bytes": 261134,
-  "generated": "2026-08-08T06:28:53Z",
+  "etag": "\"6a9b009c-59e5f\"",
+  "bytes": 368223,
+  "generated": "2026-09-06T10:31:02Z",
   "range": true,
-  "total": 322,
+  "total": 456,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 21792,
-      "count": 25,
-      "hash": "5c60bc669137530e"
+      "length": 125419,
+      "count": 154,
+      "hash": "53000f83f46744a4"
     },
     "2026-07": {
-      "offset": 21794,
-      "length": 238857,
-      "count": 296,
-      "hash": "629447d401b3fd56"
+      "offset": 125421,
+      "length": 241401,
+      "count": 300,
+      "hash": "894bb67b1cec93e3"
     },
     "2026-05": {
-      "offset": 260652,
-      "length": 481,
-      "count": 1,
-      "hash": "7f7b2e6ef52aad9c"
+      "offset": 366823,
+      "length": 1399,
+      "count": 2,
+      "hash": "f31fd90ace9fe99a"
     }
   }
 }

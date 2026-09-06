@@ -2,80 +2,80 @@
   "repo": "ANDEL0426",
   "account": "ANDEL0426",
   "source": "https://twitterarchiver.github.io/ANDEL0426/accounts/ANDEL0426/wayback_snapshots/index.json",
-  "etag": "\"6a75f394-199b23\"",
-  "bytes": 1678115,
-  "generated": "2026-08-08T06:28:56Z",
+  "etag": "\"6a9b026c-1a7220\"",
+  "bytes": 1733152,
+  "generated": "2026-09-06T10:31:05Z",
   "range": true,
-  "total": 2210,
+  "total": 2274,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 1523,
-      "count": 2,
-      "hash": "e442b6788a11ef4f"
+      "length": 51408,
+      "count": 62,
+      "hash": "1d81c78e6aefd035"
     },
     "2026-07": {
-      "offset": 1525,
-      "length": 1652615,
-      "count": 2176,
-      "hash": "4f06297e88aa2fc2"
+      "offset": 51410,
+      "length": 1657767,
+      "count": 2180,
+      "hash": "4a60ebdc240c6142"
     },
     "2026-06": {
-      "offset": 1654141,
+      "offset": 1709178,
       "length": 555,
       "count": 1,
       "hash": "758340b4047b3b1a"
     },
     "2026-05": {
-      "offset": 1654697,
+      "offset": 1709734,
       "length": 1299,
       "count": 2,
       "hash": "dad7dba2a48973ea"
     },
     "2026-04": {
-      "offset": 1655997,
+      "offset": 1711034,
       "length": 1954,
       "count": 3,
       "hash": "17a1408bee40d147"
     },
     "2025-10": {
-      "offset": 1657952,
+      "offset": 1712989,
       "length": 1465,
       "count": 2,
       "hash": "2a8a37dcf675b10e"
     },
     "2025-08": {
-      "offset": 1659418,
+      "offset": 1714455,
       "length": 768,
       "count": 1,
       "hash": "8ddef5d7f4e3c554"
     },
     "2025-07": {
-      "offset": 1660187,
+      "offset": 1715224,
       "length": 9928,
       "count": 12,
       "hash": "28e942253b44de8c"
     },
     "2025-06": {
-      "offset": 1670116,
+      "offset": 1725153,
       "length": 1583,
       "count": 2,
       "hash": "61fa4db59ba90382"
     },
     "2024-09": {
-      "offset": 1671700,
+      "offset": 1726737,
       "length": 2061,
       "count": 3,
       "hash": "d4abebea52c0b3ec"
     },
     "2024-08": {
-      "offset": 1673762,
+      "offset": 1728799,
       "length": 2994,
       "count": 4,
       "hash": "a0fb74293584ffbe"
     },
     "2024-07": {
-      "offset": 1676757,
+      "offset": 1731794,
       "length": 1357,
       "count": 2,
       "hash": "35fa0d6c831f6f15"

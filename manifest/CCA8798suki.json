@@ -2,38 +2,38 @@
   "repo": "CCA8798suki",
   "account": "CCA8798suki",
   "source": "https://twitterarchiver.github.io/CCA8798suki/accounts/CCA8798suki/wayback_snapshots/index.json",
-  "etag": "\"6a7891d7-1adc66\"",
-  "bytes": 1760358,
-  "generated": "2026-08-15T04:08:52Z",
+  "etag": "\"6a9c491f-1edf61\"",
+  "bytes": 2023265,
+  "generated": "2026-09-06T10:31:20Z",
   "range": true,
-  "total": 2036,
+  "total": 2335,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 159257,
-      "count": 184,
-      "hash": "26c1999aa7ed4a3f"
+      "length": 422164,
+      "count": 483,
+      "hash": "58e7d60a0ba6220c"
     },
     "2026-07": {
-      "offset": 159259,
+      "offset": 422166,
       "length": 866175,
       "count": 1017,
       "hash": "7a87174a68d8f193"
     },
     "2026-06": {
-      "offset": 1025435,
+      "offset": 1288342,
       "length": 575741,
       "count": 655,
       "hash": "e08e0d01d07f4968"
     },
     "2026-05": {
-      "offset": 1601177,
+      "offset": 1864084,
       "length": 138917,
       "count": 163,
       "hash": "e302f333f1076afd"
     },
     "2026-04": {
-      "offset": 1740095,
+      "offset": 2003002,
       "length": 20262,
       "count": 17,
       "hash": "b6b112e6141cf2d3"

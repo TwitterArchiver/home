@@ -2,44 +2,44 @@
   "repo": "xingstaro",
   "account": "xingstaro",
   "source": "https://twitterarchiver.github.io/xingstaro/accounts/xingstaro/wayback_snapshots/index.json",
-  "etag": "\"6a73f4ec-169bbc\"",
-  "bytes": 1481660,
-  "generated": "2026-08-08T06:32:09Z",
+  "etag": "\"6a986170-197874\"",
+  "bytes": 1669236,
+  "generated": "2026-09-06T10:34:47Z",
   "range": true,
-  "total": 1847,
+  "total": 2081,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 4160,
-      "count": 4,
-      "hash": "af00a63b65877fe8"
+      "length": 188305,
+      "count": 233,
+      "hash": "512a998c827bc627"
     },
     "2026-07": {
-      "offset": 4162,
-      "length": 277424,
-      "count": 335,
-      "hash": "db10156acd9f794e"
+      "offset": 188307,
+      "length": 280855,
+      "count": 340,
+      "hash": "f2af83683d681f91"
     },
     "2026-06": {
-      "offset": 281587,
+      "offset": 469163,
       "length": 164557,
       "count": 208,
       "hash": "04f5083f007e1b9a"
     },
     "2026-05": {
-      "offset": 446145,
+      "offset": 633721,
       "length": 1033689,
       "count": 1298,
       "hash": "f4de2009b2cb1671"
     },
     "2026-04": {
-      "offset": 1479835,
+      "offset": 1667411,
       "length": 1290,
       "count": 1,
       "hash": "d9cf516bc20c82fe"
     },
     "2025-10": {
-      "offset": 1481126,
+      "offset": 1668702,
       "length": 533,
       "count": 1,
       "hash": "fa56dc69653154ba"

@@ -2,29 +2,35 @@
   "repo": "4ksti7",
   "account": "4ksti7",
   "source": "https://twitterarchiver.github.io/4ksti7/accounts/4ksti7/wayback_snapshots/index.json",
-  "etag": "\"6a7560e5-51e5d\"",
-  "bytes": 335453,
-  "generated": "2026-08-08T06:28:52Z",
+  "etag": "\"6a9aff9b-8d734\"",
+  "bytes": 579380,
+  "generated": "2026-09-06T10:31:00Z",
   "range": true,
-  "total": 398,
+  "total": 697,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 58823,
-      "count": 65,
-      "hash": "90ef6d24f259de9d"
+      "length": 299630,
+      "count": 360,
+      "hash": "c4b0f5bb7450b28b"
     },
     "2026-07": {
-      "offset": 58825,
-      "length": 276169,
-      "count": 332,
-      "hash": "b49922ddc6b89465"
+      "offset": 299632,
+      "length": 278620,
+      "count": 335,
+      "hash": "222e163c40e8aac7"
     },
     "2025-09": {
-      "offset": 334995,
+      "offset": 578253,
       "length": 457,
       "count": 1,
       "hash": "3ae736659eafd63c"
+    },
+    "2024-12": {
+      "offset": 578711,
+      "length": 668,
+      "count": 1,
+      "hash": "f20bedb86d51e8a3"
     }
   }
 }

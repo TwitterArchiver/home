@@ -2,41 +2,53 @@
   "repo": "themaniachan",
   "account": "themaniachan",
   "source": "https://twitterarchiver.github.io/themaniachan/accounts/themaniachan/wayback_snapshots/index.json",
-  "etag": "\"6a60e0a0-14d6a2\"",
-  "bytes": 1365666,
-  "generated": "2026-07-23T19:53:30Z",
+  "etag": "\"6a9686dc-23a302\"",
+  "bytes": 2335490,
+  "generated": "2026-09-06T10:34:33Z",
   "range": true,
-  "total": 1513,
+  "total": 2553,
   "months": {
-    "2026-07": {
+    "2026-08": {
       "offset": 1,
-      "length": 231610,
-      "count": 253,
-      "hash": "df0b730cd7f3f7d6"
+      "length": 614670,
+      "count": 675,
+      "hash": "4259a756ca9b9ae1"
+    },
+    "2026-07": {
+      "offset": 614672,
+      "length": 579927,
+      "count": 617,
+      "hash": "c8b4337d218a69d3"
     },
     "2026-06": {
-      "offset": 231612,
-      "length": 646888,
+      "offset": 1194600,
+      "length": 653163,
       "count": 731,
-      "hash": "b2c05e0d27ae825a"
+      "hash": "368d709a2c615636"
     },
     "2026-05": {
-      "offset": 878501,
+      "offset": 1847764,
       "length": 370846,
       "count": 400,
       "hash": "13263a50de3fca55"
     },
     "2026-04": {
-      "offset": 1249348,
+      "offset": 2218611,
       "length": 115867,
       "count": 128,
       "hash": "c1157c94d25c6e3a"
     },
     "2026-03": {
-      "offset": 1365216,
+      "offset": 2334479,
       "length": 449,
       "count": 1,
       "hash": "33af27730c510fbd"
+    },
+    "2025-08": {
+      "offset": 2334929,
+      "length": 560,
+      "count": 1,
+      "hash": "7c596136fd552913"
     }
   }
 }

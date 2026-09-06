@@ -2,20 +2,20 @@
   "repo": "pr80net",
   "account": "pr80net",
   "source": "https://twitterarchiver.github.io/pr80net/accounts/pr80net/wayback_snapshots/index.json",
-  "etag": "\"6a7b1e1e-4e8ca\"",
-  "bytes": 321738,
-  "generated": "2026-08-15T04:12:09Z",
+  "etag": "\"6a947192-908da\"",
+  "bytes": 592090,
+  "generated": "2026-09-06T10:34:11Z",
   "range": true,
-  "total": 313,
+  "total": 593,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 199085,
-      "count": 199,
-      "hash": "c48742d1b08e0094"
+      "length": 469437,
+      "count": 479,
+      "hash": "1763356f7e96ef55"
     },
     "2026-07": {
-      "offset": 199087,
+      "offset": 469439,
       "length": 122650,
       "count": 114,
       "hash": "fdc871e2fd391998"
