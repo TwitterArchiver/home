@@ -2,11 +2,11 @@
   "repo": "Mintink3",
   "account": "Mintink3",
   "source": "https://twitterarchiver.github.io/Mintink3/accounts/Mintink3/wayback_snapshots/index.json",
-  "etag": "\"6a8f3d55-10c703\"",
-  "bytes": 1099523,
-  "generated": "2026-08-29T01:23:14Z",
+  "etag": "\"6aa19e23-15b10e\"",
+  "bytes": 1421582,
+  "generated": "2026-09-13T11:20:28Z",
   "range": true,
-  "total": 1212,
+  "total": 1568,
   "months": {
     "unknown": {
       "offset": 1,
@@ -14,38 +14,44 @@
       "count": 19,
       "hash": "65a02b58d351976a"
     },
-    "2026-08": {
+    "2026-09": {
       "offset": 16469,
-      "length": 709626,
-      "count": 775,
-      "hash": "5a2443db472ed648"
+      "length": 113626,
+      "count": 125,
+      "hash": "78079e1ef49626ed"
+    },
+    "2026-08": {
+      "offset": 130096,
+      "length": 918058,
+      "count": 1006,
+      "hash": "1735dc1cd92ce2fd"
     },
     "2026-07": {
-      "offset": 726096,
+      "offset": 1048155,
       "length": 308477,
       "count": 345,
       "hash": "9deef144cd531aad"
     },
     "2026-06": {
-      "offset": 1034574,
+      "offset": 1356633,
       "length": 63005,
       "count": 70,
       "hash": "d3fd731317d307b5"
     },
     "2026-04": {
-      "offset": 1097580,
+      "offset": 1419639,
       "length": 768,
       "count": 1,
       "hash": "4bae783ccd13a101"
     },
     "2024-07": {
-      "offset": 1098349,
+      "offset": 1420408,
       "length": 700,
       "count": 1,
       "hash": "a0beaa386514766e"
     },
     "2024-02": {
-      "offset": 1099050,
+      "offset": 1421109,
       "length": 472,
       "count": 1,
       "hash": "b43940f509a5410f"

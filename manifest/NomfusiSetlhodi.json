@@ -2,32 +2,32 @@
   "repo": "NomfusiSetlhodi",
   "account": "NomfusiSetlhodi",
   "source": "https://twitterarchiver.github.io/NomfusiSetlhodi/accounts/NomfusiSetlhodi/wayback_snapshots/index.json",
-  "etag": "\"6a846faf-6d03d\"",
-  "bytes": 446525,
-  "generated": "2026-08-23T06:46:45Z",
+  "etag": "\"6aa2eae7-6e922\"",
+  "bytes": 452898,
+  "generated": "2026-09-13T11:20:40Z",
   "range": true,
-  "total": 553,
+  "total": 561,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 396251,
-      "count": 492,
-      "hash": "036ff52deb34c420"
+      "length": 402624,
+      "count": 500,
+      "hash": "cf31f085e840832a"
     },
     "2026-07": {
-      "offset": 396253,
+      "offset": 402626,
       "length": 47733,
       "count": 59,
       "hash": "2ac30d23ea84f783"
     },
     "2026-06": {
-      "offset": 443987,
+      "offset": 450360,
       "length": 1294,
       "count": 1,
       "hash": "e8394bc14daa4501"
     },
     "2026-03": {
-      "offset": 445282,
+      "offset": 451655,
       "length": 1242,
       "count": 1,
       "hash": "52a59f69bc8396fe"

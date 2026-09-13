@@ -2,50 +2,56 @@
   "repo": "PriseTwinkle",
   "account": "PriseTwinkle",
   "source": "https://twitterarchiver.github.io/PriseTwinkle/accounts/PriseTwinkle/wayback_snapshots/index.json",
-  "etag": "\"6a851f23-6c765\"",
-  "bytes": 444261,
-  "generated": "2026-08-23T06:46:49Z",
+  "etag": "\"6aa3aaca-9c5a7\"",
+  "bytes": 640423,
+  "generated": "2026-09-13T11:20:44Z",
   "range": true,
-  "total": 489,
+  "total": 705,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 10785,
-      "count": 12,
-      "hash": "bc599ea0f2adccce"
+      "length": 79061,
+      "count": 93,
+      "hash": "14a7777dca56d9be"
+    },
+    "2026-08": {
+      "offset": 79063,
+      "length": 127885,
+      "count": 135,
+      "hash": "b34d27221a748319"
     },
     "2026-07": {
-      "offset": 10787,
+      "offset": 206949,
       "length": 35892,
       "count": 38,
       "hash": "771e5dda13a34b96"
     },
     "2026-06": {
-      "offset": 46680,
+      "offset": 242842,
       "length": 119324,
       "count": 130,
       "hash": "1b463f9bebcb87cb"
     },
     "2026-05": {
-      "offset": 166005,
+      "offset": 362167,
       "length": 275050,
       "count": 304,
       "hash": "4c81cc00692a2f1b"
     },
     "2026-04": {
-      "offset": 441056,
+      "offset": 637218,
       "length": 1673,
       "count": 3,
       "hash": "917fb8e0ac0b3898"
     },
     "2026-02": {
-      "offset": 442730,
+      "offset": 638892,
       "length": 873,
       "count": 1,
       "hash": "2561f72535a944bf"
     },
     "2015-07": {
-      "offset": 443604,
+      "offset": 639766,
       "length": 656,
       "count": 1,
       "hash": "084f9d9565f6d1ef"

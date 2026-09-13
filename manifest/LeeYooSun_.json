@@ -2,32 +2,32 @@
   "repo": "LeeYooSun_",
   "account": "LeeYooSun_",
   "source": "https://twitterarchiver.github.io/LeeYooSun_/accounts/LeeYooSun_/wayback_snapshots/index.json",
-  "etag": "\"6a807633-31d1a\"",
-  "bytes": 204058,
-  "generated": "2026-08-16T06:44:15Z",
+  "etag": "\"6aa04e18-75911\"",
+  "bytes": 481553,
+  "generated": "2026-09-13T11:20:04Z",
   "range": true,
-  "total": 251,
+  "total": 594,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 8897,
-      "count": 11,
-      "hash": "4c74cc246eb60cf8"
+      "length": 275160,
+      "count": 338,
+      "hash": "a7a88eb926ae92d3"
     },
     "2026-07": {
-      "offset": 8899,
-      "length": 193688,
-      "count": 238,
-      "hash": "3ffc5a37b42a8383"
+      "offset": 275162,
+      "length": 204920,
+      "count": 254,
+      "hash": "45b388ffeca76136"
     },
     "2026-05": {
-      "offset": 202588,
+      "offset": 480083,
       "length": 930,
       "count": 1,
       "hash": "0245799a4bafecee"
     },
     "2026-03": {
-      "offset": 203519,
+      "offset": 481014,
       "length": 538,
       "count": 1,
       "hash": "8b77f62d5866a6e7"

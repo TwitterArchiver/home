@@ -1,0 +1,96 @@
+{
+  "repo": "yelai431420",
+  "account": "yelai431420",
+  "source": "https://twitterarchiver.github.io/yelai431420/accounts/yelai431420/wayback_snapshots/index.json",
+  "etag": "\"6aa2bd09-1106d0\"",
+  "bytes": 1115856,
+  "generated": "2026-09-13T11:24:07Z",
+  "range": true,
+  "total": 1359,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 49916,
+      "count": 50,
+      "hash": "91ceb1d1ae98976d"
+    },
+    "2026-08": {
+      "offset": 49918,
+      "length": 210700,
+      "count": 254,
+      "hash": "ae73125020013ed4"
+    },
+    "2026-07": {
+      "offset": 260619,
+      "length": 247676,
+      "count": 307,
+      "hash": "8826570d6ccac06d"
+    },
+    "2026-06": {
+      "offset": 508296,
+      "length": 144972,
+      "count": 172,
+      "hash": "bb2cd0f6417741da"
+    },
+    "2026-05": {
+      "offset": 653269,
+      "length": 106276,
+      "count": 125,
+      "hash": "8b39211e7ec0fc60"
+    },
+    "2026-04": {
+      "offset": 759546,
+      "length": 4931,
+      "count": 6,
+      "hash": "1f8296208e3f27bc"
+    },
+    "2026-02": {
+      "offset": 764478,
+      "length": 34432,
+      "count": 41,
+      "hash": "329a5613a95845b5"
+    },
+    "2026-01": {
+      "offset": 798911,
+      "length": 41227,
+      "count": 49,
+      "hash": "178356b3440bf136"
+    },
+    "2025-12": {
+      "offset": 840139,
+      "length": 205206,
+      "count": 263,
+      "hash": "5368cf5f08a298cb"
+    },
+    "2025-11": {
+      "offset": 1045346,
+      "length": 57665,
+      "count": 77,
+      "hash": "6b34918983ad962c"
+    },
+    "2025-10": {
+      "offset": 1103012,
+      "length": 1104,
+      "count": 2,
+      "hash": "b397b5fc345e9f6e"
+    },
+    "2025-09": {
+      "offset": 1104117,
+      "length": 1919,
+      "count": 2,
+      "hash": "f9fc17d5897d3ef7"
+    },
+    "2025-08": {
+      "offset": 1106037,
+      "length": 4968,
+      "count": 6,
+      "hash": "ac5a901553d77559"
+    },
+    "2025-07": {
+      "offset": 1111006,
+      "length": 4849,
+      "count": 5,
+      "hash": "4cb0fdf168a9b71a"
+    }
+  }
+}

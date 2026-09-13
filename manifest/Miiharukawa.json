@@ -2,68 +2,68 @@
   "repo": "Miiharukawa",
   "account": "Miiharukawa",
   "source": "https://twitterarchiver.github.io/Miiharukawa/accounts/Miiharukawa/wayback_snapshots/index.json",
-  "etag": "\"6a828413-568fd4\"",
-  "bytes": 5672916,
-  "generated": "2026-08-23T06:46:37Z",
+  "etag": "\"6aa1a19b-594f1d\"",
+  "bytes": 5852957,
+  "generated": "2026-09-13T11:20:31Z",
   "range": true,
-  "total": 7101,
+  "total": 7318,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 18651,
-      "count": 23,
-      "hash": "68f90b42bf1bc40b"
+      "length": 188935,
+      "count": 228,
+      "hash": "9a4ccc7a0fb6a98d"
     },
     "2026-07": {
-      "offset": 18653,
-      "length": 437687,
-      "count": 525,
-      "hash": "ddccc3b8c95b2980"
+      "offset": 188937,
+      "length": 446604,
+      "count": 537,
+      "hash": "002d0a62fba0c487"
     },
     "2026-06": {
-      "offset": 456341,
-      "length": 754015,
+      "offset": 635542,
+      "length": 754210,
       "count": 932,
-      "hash": "537ce1f22cc2eddc"
+      "hash": "91d6ae4b00dec3d7"
     },
     "2026-05": {
-      "offset": 1210357,
+      "offset": 1389753,
       "length": 1134489,
       "count": 1422,
       "hash": "e1e2ad1e5e3fc10d"
     },
     "2026-04": {
-      "offset": 2344847,
-      "length": 1619183,
+      "offset": 2524243,
+      "length": 1619828,
       "count": 2021,
-      "hash": "73efc0a220aba2c5"
+      "hash": "72ccc69402c7fc71"
     },
     "2026-03": {
-      "offset": 3964031,
+      "offset": 4144072,
       "length": 1706034,
       "count": 2174,
       "hash": "325b12a98daea4c3"
     },
     "2025-11": {
-      "offset": 5670066,
+      "offset": 5850107,
       "length": 1098,
       "count": 1,
       "hash": "58f227e1a276d07e"
     },
     "2025-10": {
-      "offset": 5671165,
+      "offset": 5851206,
       "length": 546,
       "count": 1,
       "hash": "307441abc7317608"
     },
     "2025-03": {
-      "offset": 5671712,
+      "offset": 5851753,
       "length": 722,
       "count": 1,
       "hash": "49b0f6317482ddfb"
     },
     "2025-02": {
-      "offset": 5672435,
+      "offset": 5852476,
       "length": 480,
       "count": 1,
       "hash": "cd71b2f23dc9d39f"

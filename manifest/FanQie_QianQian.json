@@ -2,44 +2,44 @@
   "repo": "FanQie_QianQian",
   "account": "FanQie_QianQian",
   "source": "https://twitterarchiver.github.io/FanQie_QianQian/accounts/FanQie_QianQian/wayback_snapshots/index.json",
-  "etag": "\"6a7fe577-31cb4d\"",
-  "bytes": 3263309,
-  "generated": "2026-08-15T04:09:15Z",
+  "etag": "\"6a9e6b0b-31f2b8\"",
+  "bytes": 3273400,
+  "generated": "2026-09-13T11:19:47Z",
   "range": true,
-  "total": 4156,
+  "total": 4159,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 257483,
+      "length": 264355,
       "count": 304,
-      "hash": "cb495ef3f45e4730"
+      "hash": "a18b36e2410d768d"
     },
     "2026-07": {
-      "offset": 257485,
-      "length": 501832,
-      "count": 621,
-      "hash": "3f1f836993aa91fd"
+      "offset": 264357,
+      "length": 504724,
+      "count": 624,
+      "hash": "920d50145bf6ce08"
     },
     "2026-06": {
-      "offset": 759318,
-      "length": 2195126,
+      "offset": 769082,
+      "length": 2195453,
       "count": 2828,
-      "hash": "4564a004adc8c6e1"
+      "hash": "1000a9049869c6bf"
     },
     "2026-05": {
-      "offset": 2954445,
+      "offset": 2964536,
       "length": 212088,
       "count": 274,
       "hash": "97d3cde6557128a0"
     },
     "2026-04": {
-      "offset": 3166534,
+      "offset": 3176625,
       "length": 96179,
       "count": 128,
       "hash": "536c54c781e6fbee"
     },
     "2026-02": {
-      "offset": 3262714,
+      "offset": 3272805,
       "length": 594,
       "count": 1,
       "hash": "89f5854c7f0e5378"

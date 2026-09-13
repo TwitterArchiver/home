@@ -2,9 +2,9 @@
   "repo": "Dream_xyuuup",
   "account": "Dream_xyuuup",
   "source": "https://twitterarchiver.github.io/Dream_xyuuup/accounts/Dream_xyuuup/wayback_snapshots/index.json",
-  "etag": "\"6a7b526c-727f0b\"",
-  "bytes": 7503627,
-  "generated": "2026-08-15T04:09:13Z",
+  "etag": "\"6a9e82a4-728405\"",
+  "bytes": 7504901,
+  "generated": "2026-09-13T11:19:43Z",
   "range": true,
   "total": 9560,
   "months": {
@@ -28,114 +28,114 @@
     },
     "2026-03": {
       "offset": 1724259,
-      "length": 255623,
+      "length": 255688,
       "count": 314,
-      "hash": "49910076e2064284"
+      "hash": "84781f1ae9e82a49"
     },
     "2026-02": {
-      "offset": 1979883,
+      "offset": 1979948,
       "length": 176632,
       "count": 217,
       "hash": "e202218fdf515d6a"
     },
     "2026-01": {
-      "offset": 2156516,
+      "offset": 2156581,
       "length": 143801,
       "count": 186,
       "hash": "c289d3ddad61b510"
     },
     "2025-12": {
-      "offset": 2300318,
+      "offset": 2300383,
       "length": 159837,
       "count": 206,
       "hash": "0abf8c4b50cb2de3"
     },
     "2025-11": {
-      "offset": 2460156,
-      "length": 303364,
+      "offset": 2460221,
+      "length": 303406,
       "count": 373,
-      "hash": "9b2f3e341193e913"
+      "hash": "ce5c042c603efc1c"
     },
     "2025-10": {
-      "offset": 2763521,
-      "length": 278512,
+      "offset": 2763628,
+      "length": 278554,
       "count": 367,
-      "hash": "fc9322db9b501acf"
+      "hash": "30c57758cd4c85ff"
     },
     "2025-09": {
-      "offset": 3042034,
+      "offset": 3042183,
       "length": 198693,
       "count": 254,
       "hash": "a3f1b42115017aaa"
     },
     "2025-08": {
-      "offset": 3240728,
-      "length": 538884,
+      "offset": 3240877,
+      "length": 539014,
       "count": 696,
-      "hash": "2fd604cbfd2452c6"
+      "hash": "a4617237504ceff0"
     },
     "2025-07": {
-      "offset": 3779613,
-      "length": 493356,
+      "offset": 3779892,
+      "length": 493399,
       "count": 670,
-      "hash": "2ab1a9b747e9e80f"
+      "hash": "6ebc58fbc5b115b3"
     },
     "2025-06": {
-      "offset": 4272970,
-      "length": 788268,
+      "offset": 4273292,
+      "length": 788375,
       "count": 1031,
-      "hash": "c02bcead818763c8"
+      "hash": "b8d8927d32eba6c3"
     },
     "2025-05": {
-      "offset": 5061239,
-      "length": 448120,
+      "offset": 5061668,
+      "length": 448292,
       "count": 573,
-      "hash": "84e1d812f09c1c8b"
+      "hash": "6e60897fd851cad4"
     },
     "2025-04": {
-      "offset": 5509360,
-      "length": 866860,
+      "offset": 5509961,
+      "length": 867448,
       "count": 1081,
-      "hash": "fed9cece4d699a5a"
+      "hash": "df98ff8db1abf8f1"
     },
     "2025-03": {
-      "offset": 6376221,
-      "length": 975080,
+      "offset": 6377410,
+      "length": 975165,
       "count": 1255,
-      "hash": "7a33de8a0fefec22"
+      "hash": "2e5ec4a7ddd6811d"
     },
     "2025-02": {
-      "offset": 7351302,
+      "offset": 7352576,
       "length": 146852,
       "count": 192,
       "hash": "d14945ee4b538ae4"
     },
     "2025-01": {
-      "offset": 7498155,
+      "offset": 7499429,
       "length": 640,
       "count": 1,
       "hash": "608a34042a8bf209"
     },
     "2024-12": {
-      "offset": 7498796,
+      "offset": 7500070,
       "length": 1432,
       "count": 2,
       "hash": "2bf8b39a511eef1f"
     },
     "2024-03": {
-      "offset": 7500229,
+      "offset": 7501503,
       "length": 576,
       "count": 1,
       "hash": "6f8ab92eefe485fe"
     },
     "2018-07": {
-      "offset": 7500806,
+      "offset": 7502080,
       "length": 1588,
       "count": 1,
       "hash": "a725e3fa1f09c058"
     },
     "2018-05": {
-      "offset": 7502395,
+      "offset": 7503669,
       "length": 1231,
       "count": 1,
       "hash": "6b4a7fdb39862161"

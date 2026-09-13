@@ -2,38 +2,44 @@
   "repo": "Easter_buny",
   "account": "Easter_buny",
   "source": "https://twitterarchiver.github.io/Easter_buny/accounts/Easter_buny/wayback_snapshots/index.json",
-  "etag": "\"6a7bf422-de2c6\"",
-  "bytes": 910022,
-  "generated": "2026-08-15T04:09:10Z",
+  "etag": "\"6a9e680f-12219e\"",
+  "bytes": 1188254,
+  "generated": "2026-09-13T11:19:41Z",
   "range": true,
-  "total": 1117,
+  "total": 1457,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 180528,
-      "count": 214,
-      "hash": "17f627713894df82"
+      "length": 45526,
+      "count": 54,
+      "hash": "88e6efb3b3c99f77"
+    },
+    "2026-08": {
+      "offset": 45528,
+      "length": 411861,
+      "count": 498,
+      "hash": "f2cd9405df510a23"
     },
     "2026-07": {
-      "offset": 180530,
-      "length": 664405,
-      "count": 818,
-      "hash": "78a605e6a33ee638"
+      "offset": 457390,
+      "length": 665777,
+      "count": 820,
+      "hash": "bf357a8af607ec03"
     },
     "2026-06": {
-      "offset": 844936,
+      "offset": 1123168,
       "length": 64075,
       "count": 83,
       "hash": "8cb4e587b43d834d"
     },
     "2024-08": {
-      "offset": 909012,
+      "offset": 1187244,
       "length": 520,
       "count": 1,
       "hash": "cf681a6908d02af2"
     },
     "2024-07": {
-      "offset": 909533,
+      "offset": 1187765,
       "length": 488,
       "count": 1,
       "hash": "abb00b7cb46442bf"

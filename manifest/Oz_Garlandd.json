@@ -2,56 +2,62 @@
   "repo": "Oz_Garlandd",
   "account": "Oz_Garlandd",
   "source": "https://twitterarchiver.github.io/Oz_Garlandd/accounts/Oz_Garlandd/wayback_snapshots/index.json",
-  "etag": "\"6a852697-41b552\"",
-  "bytes": 4306258,
-  "generated": "2026-08-23T06:46:48Z",
+  "etag": "\"6aa2f402-448fe0\"",
+  "bytes": 4493280,
+  "generated": "2026-09-13T11:20:44Z",
   "range": true,
-  "total": 5055,
+  "total": 5252,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 140897,
-      "count": 159,
-      "hash": "a2aadf1e6ac4887e"
+      "length": 28586,
+      "count": 30,
+      "hash": "a189a86670a22588"
+    },
+    "2026-08": {
+      "offset": 28588,
+      "length": 299071,
+      "count": 326,
+      "hash": "8d8ea6a0d52ebfe4"
     },
     "2026-07": {
-      "offset": 140899,
+      "offset": 327660,
       "length": 508263,
       "count": 564,
       "hash": "ac452fd8f210fab2"
     },
     "2026-06": {
-      "offset": 649163,
-      "length": 939589,
+      "offset": 835924,
+      "length": 939850,
       "count": 1105,
-      "hash": "d7b61a16bbf6439c"
+      "hash": "11d25c7ac6694bb4"
     },
     "2026-05": {
-      "offset": 1588753,
+      "offset": 1775775,
       "length": 1366332,
       "count": 1614,
       "hash": "36694132006fd08b"
     },
     "2026-04": {
-      "offset": 2955086,
+      "offset": 3142108,
       "length": 859909,
       "count": 1010,
       "hash": "4026f8004c64a55e"
     },
     "2026-03": {
-      "offset": 3814996,
+      "offset": 4002018,
       "length": 489056,
       "count": 600,
       "hash": "c0326eaadb610218"
     },
     "2026-02": {
-      "offset": 4304053,
+      "offset": 4491075,
       "length": 1725,
       "count": 2,
       "hash": "0e7a81cc2b864ccd"
     },
     "2023-01": {
-      "offset": 4305779,
+      "offset": 4492801,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

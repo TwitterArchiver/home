@@ -2,146 +2,152 @@
   "repo": "RXdruglab",
   "account": "RXdruglab",
   "source": "https://twitterarchiver.github.io/RXdruglab/accounts/RXdruglab/wayback_snapshots/index.json",
-  "etag": "\"6a85c74f-3685b0\"",
-  "bytes": 3573168,
-  "generated": "2026-08-23T06:46:53Z",
+  "etag": "\"6aa3b0e1-386822\"",
+  "bytes": 3696674,
+  "generated": "2026-09-13T11:20:48Z",
   "range": true,
-  "total": 4072,
+  "total": 4208,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 53846,
-      "count": 60,
-      "hash": "b21c0d5d731a1287"
+      "length": 31513,
+      "count": 37,
+      "hash": "0845e24c6bc8957a"
+    },
+    "2026-08": {
+      "offset": 31515,
+      "length": 145795,
+      "count": 159,
+      "hash": "1c586cc3a0b72ef9"
     },
     "2026-07": {
-      "offset": 53848,
+      "offset": 177311,
       "length": 116663,
       "count": 132,
       "hash": "a0fe9c8fd8802097"
     },
     "2026-06": {
-      "offset": 170512,
+      "offset": 293975,
       "length": 153738,
       "count": 169,
       "hash": "14bacf2875dc4458"
     },
     "2026-05": {
-      "offset": 324251,
+      "offset": 447714,
       "length": 89510,
       "count": 103,
       "hash": "0fcdce905157157a"
     },
     "2026-04": {
-      "offset": 413762,
+      "offset": 537225,
       "length": 75634,
       "count": 81,
       "hash": "0481872ec03748b9"
     },
     "2026-03": {
-      "offset": 489397,
+      "offset": 612860,
       "length": 174486,
       "count": 205,
       "hash": "57694324ea795627"
     },
     "2026-02": {
-      "offset": 663884,
+      "offset": 787347,
       "length": 129586,
       "count": 149,
       "hash": "5f3eff3d80219c8a"
     },
     "2026-01": {
-      "offset": 793471,
+      "offset": 916934,
       "length": 90010,
       "count": 100,
       "hash": "4c7f450a481d5c4e"
     },
     "2025-12": {
-      "offset": 883482,
+      "offset": 1006945,
       "length": 168809,
       "count": 190,
       "hash": "10eac7559b0b78c7"
     },
     "2025-11": {
-      "offset": 1052292,
+      "offset": 1175755,
       "length": 167418,
       "count": 190,
       "hash": "46234bb9ebca1ea7"
     },
     "2025-10": {
-      "offset": 1219711,
+      "offset": 1343174,
       "length": 73422,
       "count": 81,
       "hash": "6b2a1d2159959bb9"
     },
     "2025-09": {
-      "offset": 1293134,
-      "length": 146934,
+      "offset": 1416597,
+      "length": 146977,
       "count": 174,
-      "hash": "b5b5926cf04bf49a"
+      "hash": "19e8866a132b02f9"
     },
     "2025-08": {
-      "offset": 1440069,
+      "offset": 1563575,
       "length": 132761,
       "count": 157,
       "hash": "c153cdca5fc00284"
     },
     "2025-07": {
-      "offset": 1572831,
+      "offset": 1696337,
       "length": 55120,
       "count": 58,
       "hash": "da6e35514fa986f6"
     },
     "2025-06": {
-      "offset": 1627952,
+      "offset": 1751458,
       "length": 89620,
       "count": 95,
       "hash": "6a750c41058b296e"
     },
     "2025-05": {
-      "offset": 1717573,
+      "offset": 1841079,
       "length": 207281,
       "count": 233,
       "hash": "8817b32aeb6c8626"
     },
     "2025-04": {
-      "offset": 1924855,
+      "offset": 2048361,
       "length": 177076,
       "count": 201,
       "hash": "cced87bd25919532"
     },
     "2025-03": {
-      "offset": 2101932,
+      "offset": 2225438,
       "length": 309739,
       "count": 350,
       "hash": "24c70f1ed743a8a4"
     },
     "2025-02": {
-      "offset": 2411672,
+      "offset": 2535178,
       "length": 362463,
       "count": 440,
       "hash": "ec144f63975ae4a6"
     },
     "2025-01": {
-      "offset": 2774136,
+      "offset": 2897642,
       "length": 187921,
       "count": 225,
       "hash": "722cb19219bc6c78"
     },
     "2024-12": {
-      "offset": 2962058,
+      "offset": 3085564,
       "length": 345358,
       "count": 398,
       "hash": "77ad203113ec0a05"
     },
     "2024-11": {
-      "offset": 3307417,
+      "offset": 3430923,
       "length": 265127,
       "count": 280,
       "hash": "a59cea5e599bf149"
     },
     "2023-10": {
-      "offset": 3572545,
+      "offset": 3696051,
       "length": 622,
       "count": 1,
       "hash": "a5c69bbb09b99399"

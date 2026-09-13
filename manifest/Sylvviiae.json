@@ -2,44 +2,44 @@
   "repo": "Sylvviiae",
   "account": "Sylvviiae",
   "source": "https://twitterarchiver.github.io/Sylvviiae/accounts/Sylvviiae/wayback_snapshots/index.json",
-  "etag": "\"6a89b1f4-108186\"",
-  "bytes": 1081734,
-  "generated": "2026-08-23T06:47:18Z",
+  "etag": "\"6aa58516-1088fa\"",
+  "bytes": 1083642,
+  "generated": "2026-09-13T11:21:15Z",
   "range": true,
-  "total": 1377,
+  "total": 1379,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 72068,
-      "count": 89,
-      "hash": "aeeaf441136fcec7"
+      "length": 73976,
+      "count": 91,
+      "hash": "068024f292f28331"
     },
     "2026-07": {
-      "offset": 72070,
+      "offset": 73978,
       "length": 266668,
       "count": 342,
       "hash": "55b70f4c9ad56b86"
     },
     "2026-06": {
-      "offset": 338739,
+      "offset": 340647,
       "length": 322848,
       "count": 414,
       "hash": "e8c3ea743fe176b6"
     },
     "2026-05": {
-      "offset": 661588,
+      "offset": 663496,
       "length": 418916,
       "count": 530,
       "hash": "52773b908ede44db"
     },
     "2026-03": {
-      "offset": 1080505,
+      "offset": 1082413,
       "length": 801,
       "count": 1,
       "hash": "fd2748cd75fa6121"
     },
     "2026-02": {
-      "offset": 1081307,
+      "offset": 1083215,
       "length": 426,
       "count": 1,
       "hash": "3442e9e4d4048ca3"

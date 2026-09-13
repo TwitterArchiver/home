@@ -2,74 +2,80 @@
   "repo": "Mumula379528",
   "account": "Mumula379528",
   "source": "https://twitterarchiver.github.io/Mumula379528/accounts/Mumula379528/wayback_snapshots/index.json",
-  "etag": "\"6a73f06e-1dfa76\"",
-  "bytes": 1964662,
-  "generated": "2026-08-08T06:29:53Z",
+  "etag": "\"6aa25dcb-1ec376\"",
+  "bytes": 2016118,
+  "generated": "2026-09-13T11:20:31Z",
   "range": true,
-  "total": 2386,
+  "total": 2451,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 3515,
-      "count": 5,
-      "hash": "6b9e4a4f17b88da7"
+      "length": 11468,
+      "count": 14,
+      "hash": "4bd99ad686e23dd2"
+    },
+    "2026-08": {
+      "offset": 11470,
+      "length": 41127,
+      "count": 53,
+      "hash": "201840aea6456ae6"
     },
     "2026-07": {
-      "offset": 3517,
-      "length": 417937,
-      "count": 527,
-      "hash": "7929cf9aa2858702"
+      "offset": 52598,
+      "length": 420269,
+      "count": 530,
+      "hash": "50766daada936344"
     },
     "2026-06": {
-      "offset": 421455,
+      "offset": 472868,
       "length": 10934,
       "count": 15,
       "hash": "7109fdc30be8fd92"
     },
     "2026-05": {
-      "offset": 432390,
+      "offset": 483803,
       "length": 59232,
       "count": 77,
       "hash": "fde0210b9b7816b3"
     },
     "2026-04": {
-      "offset": 491623,
+      "offset": 543036,
       "length": 430028,
       "count": 517,
       "hash": "9fdbe4b7b0f81f8a"
     },
     "2026-03": {
-      "offset": 921652,
-      "length": 177434,
+      "offset": 973065,
+      "length": 177477,
       "count": 220,
-      "hash": "9ca16293f6dec7fb"
+      "hash": "de32b5d5462dea98"
     },
     "2026-02": {
-      "offset": 1099087,
+      "offset": 1150543,
       "length": 1887,
       "count": 2,
       "hash": "cfda3244adb135b2"
     },
     "2026-01": {
-      "offset": 1100975,
+      "offset": 1152431,
       "length": 635606,
       "count": 767,
       "hash": "d8568d298ab5002a"
     },
     "2025-12": {
-      "offset": 1736582,
+      "offset": 1788038,
       "length": 166483,
       "count": 197,
       "hash": "72202ef263e10036"
     },
     "2025-11": {
-      "offset": 1903066,
+      "offset": 1954522,
       "length": 61148,
       "count": 58,
       "hash": "983aa2d178fed372"
     },
     "2025-07": {
-      "offset": 1964215,
+      "offset": 2015671,
       "length": 446,
       "count": 1,
       "hash": "2b88e365a4907736"

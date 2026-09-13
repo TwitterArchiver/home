@@ -2,68 +2,74 @@
   "repo": "Fanqian77v",
   "account": "Fanqian77v",
   "source": "https://twitterarchiver.github.io/Fanqian77v/accounts/Fanqian77v/wayback_snapshots/index.json",
-  "etag": "\"6a7c8c62-114956\"",
-  "bytes": 1132886,
-  "generated": "2026-08-15T04:09:13Z",
+  "etag": "\"6a9e6b53-141d2b\"",
+  "bytes": 1318187,
+  "generated": "2026-09-13T11:19:46Z",
   "range": true,
-  "total": 1377,
+  "total": 1582,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 138534,
-      "count": 180,
-      "hash": "773190cb229256ed"
+      "length": 49591,
+      "count": 47,
+      "hash": "b06112623251c254"
+    },
+    "2026-08": {
+      "offset": 49593,
+      "length": 270604,
+      "count": 335,
+      "hash": "a72d22a3e789615e"
     },
     "2026-07": {
-      "offset": 138536,
-      "length": 607020,
-      "count": 762,
-      "hash": "86c66bb6059ee4b3"
+      "offset": 320198,
+      "length": 609009,
+      "count": 763,
+      "hash": "a12a826ace31a81e"
     },
     "2026-06": {
-      "offset": 745557,
-      "length": 105889,
-      "count": 120,
-      "hash": "582054333ea3bdfa"
+      "offset": 929208,
+      "length": 106636,
+      "count": 121,
+      "hash": "c103539e20028846"
     },
     "2026-05": {
-      "offset": 851447,
+      "offset": 1035845,
       "length": 77578,
       "count": 89,
       "hash": "91e6abf733434c79"
     },
     "2026-04": {
-      "offset": 929026,
+      "offset": 1113424,
       "length": 44206,
       "count": 50,
       "hash": "8040e27439e7279b"
     },
     "2026-03": {
-      "offset": 973233,
+      "offset": 1157631,
       "length": 89019,
       "count": 101,
       "hash": "4a20b6fbfc3fb2d8"
     },
     "2026-02": {
-      "offset": 1062253,
+      "offset": 1246651,
       "length": 64226,
       "count": 70,
       "hash": "bc7273b4c9406dc8"
     },
     "2025-12": {
-      "offset": 1126480,
-      "length": 4160,
-      "count": 3,
-      "hash": "7d5a04348339931b"
+      "offset": 1310878,
+      "length": 5063,
+      "count": 4,
+      "hash": "6f9d2ed6ebe9b823"
     },
     "2025-11": {
-      "offset": 1130641,
+      "offset": 1315942,
       "length": 1147,
       "count": 1,
       "hash": "db64cfd33aeba177"
     },
     "2023-12": {
-      "offset": 1131789,
+      "offset": 1317090,
       "length": 1096,
       "count": 1,
       "hash": "3c28a3599195fe01"
