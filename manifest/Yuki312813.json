@@ -2,11 +2,11 @@
   "repo": "Yuki312813",
   "account": "Yuki312813",
   "source": "https://twitterarchiver.github.io/Yuki312813/accounts/Yuki312813/wayback_snapshots/index.json",
-  "etag": "\"6a8c11dc-21dd15\"",
-  "bytes": 2219285,
-  "generated": "2026-08-25T04:21:52Z",
+  "etag": "\"6aa7aab7-21e3d3\"",
+  "bytes": 2221011,
+  "generated": "2026-09-20T10:55:15Z",
   "range": true,
-  "total": 2730,
+  "total": 2732,
   "months": {
     "2026-08": {
       "offset": 1,
@@ -16,12 +16,12 @@
     },
     "2026-07": {
       "offset": 13857,
-      "length": 2201432,
-      "count": 2708,
-      "hash": "e60f995aa1c73c8c"
+      "length": 2203158,
+      "count": 2710,
+      "hash": "c06e5573e2a0d556"
     },
     "2026-06": {
-      "offset": 2215290,
+      "offset": 2217016,
       "length": 3994,
       "count": 5,
       "hash": "89a0a8f15d649428"

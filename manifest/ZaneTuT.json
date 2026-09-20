@@ -2,122 +2,128 @@
   "repo": "ZaneTuT",
   "account": "ZaneTuT",
   "source": "https://twitterarchiver.github.io/ZaneTuT/accounts/ZaneTuT/wayback_snapshots/index.json",
-  "etag": "\"6a8c7430-4c8139\"",
-  "bytes": 5013817,
-  "generated": "2026-08-25T04:21:55Z",
+  "etag": "\"6aa85cb0-4cdeb4\"",
+  "bytes": 5037748,
+  "generated": "2026-09-20T10:55:17Z",
   "range": true,
-  "total": 6494,
+  "total": 6521,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 49634,
-      "count": 55,
-      "hash": "22f4b4c7d75d5e10"
+      "length": 10167,
+      "count": 13,
+      "hash": "624724069e620b49"
+    },
+    "2026-08": {
+      "offset": 10169,
+      "length": 60946,
+      "count": 69,
+      "hash": "3c811febb5e7a66a"
     },
     "2026-07": {
-      "offset": 49636,
+      "offset": 71116,
       "length": 243832,
       "count": 305,
       "hash": "c52c698a46fc15eb"
     },
     "2026-06": {
-      "offset": 293469,
+      "offset": 314949,
       "length": 28677,
       "count": 36,
       "hash": "8a22de3f7daf2f9f"
     },
     "2026-05": {
-      "offset": 322147,
+      "offset": 343627,
       "length": 67515,
       "count": 79,
       "hash": "ac2ee97668cd15d7"
     },
     "2026-04": {
-      "offset": 389663,
-      "length": 355007,
+      "offset": 411143,
+      "length": 355093,
       "count": 462,
-      "hash": "d8e6ded2a6aaeda7"
+      "hash": "95dab47d7d21c36f"
     },
     "2026-03": {
-      "offset": 744671,
-      "length": 1218766,
+      "offset": 766237,
+      "length": 1218852,
       "count": 1584,
-      "hash": "2049d561e2292520"
+      "hash": "c921b8234be10a3e"
     },
     "2026-02": {
-      "offset": 1963438,
-      "length": 901567,
+      "offset": 1985090,
+      "length": 901782,
       "count": 1163,
-      "hash": "1dd918fbd6fcf1a9"
+      "hash": "fef0abfe7d65b2c9"
     },
     "2026-01": {
-      "offset": 2865006,
-      "length": 2078214,
+      "offset": 2886873,
+      "length": 2080278,
       "count": 2719,
-      "hash": "b841811ebc5d492f"
+      "hash": "21753b41572207c0"
     },
     "2025-12": {
-      "offset": 4943221,
+      "offset": 4967152,
       "length": 61368,
       "count": 80,
       "hash": "ab06ecab146d8451"
     },
     "2025-11": {
-      "offset": 5004590,
+      "offset": 5028521,
       "length": 1645,
       "count": 2,
       "hash": "195b4ff6feaf9c34"
     },
     "2025-08": {
-      "offset": 5006236,
+      "offset": 5030167,
       "length": 451,
       "count": 1,
       "hash": "0d27cb1bbb220a4a"
     },
     "2025-07": {
-      "offset": 5006688,
+      "offset": 5030619,
       "length": 1255,
       "count": 1,
       "hash": "bf67e60922e7bd24"
     },
     "2025-06": {
-      "offset": 5007944,
+      "offset": 5031875,
       "length": 707,
       "count": 1,
       "hash": "89cdacc47bbcc5d0"
     },
     "2025-05": {
-      "offset": 5008652,
+      "offset": 5032583,
       "length": 1199,
       "count": 1,
       "hash": "4e64b476c5f48cfc"
     },
     "2025-04": {
-      "offset": 5009852,
+      "offset": 5033783,
       "length": 1130,
       "count": 1,
       "hash": "366868fd4918aaec"
     },
     "2025-03": {
-      "offset": 5010983,
+      "offset": 5034914,
       "length": 457,
       "count": 1,
       "hash": "85a7ae645fc4dddf"
     },
     "2025-02": {
-      "offset": 5011441,
+      "offset": 5035372,
       "length": 1249,
       "count": 1,
       "hash": "15bfdaf517d5b1d8"
     },
     "2023-12": {
-      "offset": 5012691,
+      "offset": 5036622,
       "length": 579,
       "count": 1,
       "hash": "653a7a9ecfd76a81"
     },
     "2022-08": {
-      "offset": 5013271,
+      "offset": 5037202,
       "length": 545,
       "count": 1,
       "hash": "e2279e66c3196e07"

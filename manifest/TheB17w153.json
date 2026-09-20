@@ -1,0 +1,84 @@
+{
+  "repo": "TheB17w153",
+  "account": "TheB17w153",
+  "source": "https://twitterarchiver.github.io/TheB17w153/accounts/TheB17w153/wayback_snapshots/index.json",
+  "etag": "\"6aad2402-125472\"",
+  "bytes": 1201266,
+  "generated": "2026-09-20T10:54:59Z",
+  "range": true,
+  "total": 1417,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 91866,
+      "count": 107,
+      "hash": "e8d1481f18237f4a"
+    },
+    "2026-08": {
+      "offset": 91868,
+      "length": 157556,
+      "count": 183,
+      "hash": "d5f6b3587c8bfea6"
+    },
+    "2026-07": {
+      "offset": 249425,
+      "length": 78103,
+      "count": 90,
+      "hash": "ebe515fa3e3a426e"
+    },
+    "2026-06": {
+      "offset": 327529,
+      "length": 430488,
+      "count": 539,
+      "hash": "4cbb9abdf2637c71"
+    },
+    "2026-05": {
+      "offset": 758018,
+      "length": 269854,
+      "count": 311,
+      "hash": "423c82d16ff4b81a"
+    },
+    "2026-04": {
+      "offset": 1027873,
+      "length": 2606,
+      "count": 3,
+      "hash": "161dd8744613118a"
+    },
+    "2026-02": {
+      "offset": 1030480,
+      "length": 426,
+      "count": 1,
+      "hash": "1df0788ca0a4f78e"
+    },
+    "2025-10": {
+      "offset": 1030907,
+      "length": 1080,
+      "count": 1,
+      "hash": "a471b49631adfc88"
+    },
+    "2025-01": {
+      "offset": 1031988,
+      "length": 1631,
+      "count": 2,
+      "hash": "ff1719f705468a97"
+    },
+    "2024-12": {
+      "offset": 1033620,
+      "length": 13988,
+      "count": 16,
+      "hash": "dc159162818bda03"
+    },
+    "2024-11": {
+      "offset": 1047609,
+      "length": 152289,
+      "count": 162,
+      "hash": "ff9141ff35398467"
+    },
+    "2024-10": {
+      "offset": 1199899,
+      "length": 1366,
+      "count": 2,
+      "hash": "401a4f5c6de52f49"
+    }
+  }
+}

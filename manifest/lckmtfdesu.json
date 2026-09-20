@@ -2,68 +2,74 @@
   "repo": "lckmtfdesu",
   "account": "lckmtfdesu",
   "source": "https://twitterarchiver.github.io/lckmtfdesu/accounts/lckmtfdesu/wayback_snapshots/index.json",
-  "etag": "\"6a921f3a-2d72de\"",
-  "bytes": 2978526,
-  "generated": "2026-08-29T01:25:25Z",
+  "etag": "\"6aad7b79-2faf87\"",
+  "bytes": 3125127,
+  "generated": "2026-09-20T10:56:07Z",
   "range": true,
-  "total": 3669,
+  "total": 3831,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 147748,
-      "count": 168,
-      "hash": "81a0eef985165318"
+      "length": 75180,
+      "count": 85,
+      "hash": "f712dee72fbb94d2"
+    },
+    "2026-08": {
+      "offset": 75182,
+      "length": 218497,
+      "count": 244,
+      "hash": "79c951e2bdb87b37"
     },
     "2026-07": {
-      "offset": 147750,
-      "length": 739039,
-      "count": 892,
-      "hash": "6d208a22d1982a2c"
+      "offset": 293680,
+      "length": 739515,
+      "count": 893,
+      "hash": "5a831b31c99cd2c0"
     },
     "2026-06": {
-      "offset": 886790,
-      "length": 653878,
+      "offset": 1033196,
+      "length": 653943,
       "count": 802,
-      "hash": "57f64bf3b2c12502"
+      "hash": "cecf2952d7231602"
     },
     "2026-05": {
-      "offset": 1540669,
-      "length": 966957,
+      "offset": 1687140,
+      "length": 967022,
       "count": 1199,
-      "hash": "14c73294512425a7"
+      "hash": "434c0b6b286a0572"
     },
     "2026-04": {
-      "offset": 2507627,
-      "length": 466529,
+      "offset": 2654163,
+      "length": 466594,
       "count": 603,
-      "hash": "a96ad4a0908442b9"
+      "hash": "e19c59989fc33c2a"
     },
     "2026-02": {
-      "offset": 2974157,
+      "offset": 3120758,
       "length": 616,
       "count": 1,
       "hash": "2a85663c3f038147"
     },
     "2023-03": {
-      "offset": 2974774,
+      "offset": 3121375,
       "length": 1142,
       "count": 1,
       "hash": "7495dfd03832b334"
     },
     "2022-06": {
-      "offset": 2975917,
+      "offset": 3122518,
       "length": 812,
       "count": 1,
       "hash": "1cb5034045bb7668"
     },
     "2021-10": {
-      "offset": 2976730,
+      "offset": 3123331,
       "length": 1258,
       "count": 1,
       "hash": "f39d596d02fed786"
     },
     "2018-10": {
-      "offset": 2977989,
+      "offset": 3124590,
       "length": 536,
       "count": 1,
       "hash": "d841c712dd9928bb"

@@ -2,62 +2,68 @@
   "repo": "XF_shiho_mafuyu",
   "account": "XF_shiho_mafuyu",
   "source": "https://twitterarchiver.github.io/XF_shiho_mafuyu/accounts/XF_shiho_mafuyu/wayback_snapshots/index.json",
-  "etag": "\"6a8bb812-11f6b3\"",
-  "bytes": 1177267,
-  "generated": "2026-08-25T04:21:43Z",
+  "etag": "\"6aa6dc75-1236c5\"",
+  "bytes": 1193669,
+  "generated": "2026-09-20T10:55:07Z",
   "range": true,
-  "total": 1419,
+  "total": 1440,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 40751,
-      "count": 47,
-      "hash": "258aa37397285387"
+      "length": 13950,
+      "count": 17,
+      "hash": "cedd2e237b0c0e8f"
+    },
+    "2026-08": {
+      "offset": 13952,
+      "length": 43137,
+      "count": 51,
+      "hash": "94884cafe28350f4"
     },
     "2026-07": {
-      "offset": 40753,
+      "offset": 57090,
       "length": 392571,
       "count": 474,
       "hash": "1f11b22049b21229"
     },
     "2026-06": {
-      "offset": 433325,
-      "length": 551067,
+      "offset": 449662,
+      "length": 551132,
       "count": 667,
-      "hash": "97b4851ddcb4fc3f"
+      "hash": "3b7ecd30f234a864"
     },
     "2026-05": {
-      "offset": 984393,
+      "offset": 1000795,
       "length": 184654,
       "count": 222,
       "hash": "0b3a78f225bc2ab5"
     },
     "2026-04": {
-      "offset": 1169048,
+      "offset": 1185450,
       "length": 4984,
       "count": 5,
       "hash": "fb541e5f448dec5f"
     },
     "2026-03": {
-      "offset": 1174033,
+      "offset": 1190435,
       "length": 1036,
       "count": 1,
       "hash": "2e926d40dc733cc8"
     },
     "2024-10": {
-      "offset": 1175070,
+      "offset": 1191472,
       "length": 429,
       "count": 1,
       "hash": "619df729f32e73fc"
     },
     "2024-07": {
-      "offset": 1175500,
+      "offset": 1191902,
       "length": 438,
       "count": 1,
       "hash": "adaaac5b671ad0f5"
     },
     "2024-05": {
-      "offset": 1175939,
+      "offset": 1192341,
       "length": 1327,
       "count": 1,
       "hash": "6c4a5d5f17e665fb"

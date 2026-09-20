@@ -2,38 +2,44 @@
   "repo": "chu_00b2",
   "account": "chu_00b2",
   "source": "https://twitterarchiver.github.io/chu_00b2/accounts/chu_00b2/wayback_snapshots/index.json",
-  "etag": "\"6a8e5c62-57e46\"",
-  "bytes": 360006,
-  "generated": "2026-08-29T01:24:51Z",
+  "etag": "\"6aaa4881-7072f\"",
+  "bytes": 460591,
+  "generated": "2026-09-20T10:55:38Z",
   "range": true,
-  "total": 405,
+  "total": 518,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 196593,
-      "count": 214,
-      "hash": "daada79b581b075e"
+      "length": 49521,
+      "count": 61,
+      "hash": "cd893a1154b15227"
+    },
+    "2026-08": {
+      "offset": 49523,
+      "length": 245748,
+      "count": 264,
+      "hash": "2d97140a4d8dd8fe"
     },
     "2026-07": {
-      "offset": 196595,
-      "length": 103789,
-      "count": 119,
-      "hash": "9623c4f12fab42dc"
+      "offset": 295272,
+      "length": 105697,
+      "count": 121,
+      "hash": "abe5b73b77267675"
     },
     "2026-06": {
-      "offset": 300385,
+      "offset": 400970,
       "length": 58528,
       "count": 70,
       "hash": "d74086f48856dff5"
     },
     "2026-05": {
-      "offset": 358914,
+      "offset": 459499,
       "length": 578,
       "count": 1,
       "hash": "7d84fdc703ed45b0"
     },
     "2021-10": {
-      "offset": 359493,
+      "offset": 460078,
       "length": 512,
       "count": 1,
       "hash": "d975d1d7d4cdcc9b"

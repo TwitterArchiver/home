@@ -2,44 +2,50 @@
   "repo": "jiandu23333",
   "account": "jiandu23333",
   "source": "https://twitterarchiver.github.io/jiandu23333/accounts/jiandu23333/wayback_snapshots/index.json",
-  "etag": "\"6a919a5b-7e570\"",
-  "bytes": 517488,
-  "generated": "2026-08-29T01:25:20Z",
+  "etag": "\"6aace832-835ee\"",
+  "bytes": 538094,
+  "generated": "2026-09-20T10:56:01Z",
   "range": true,
-  "total": 586,
+  "total": 610,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 38234,
-      "count": 41,
-      "hash": "3500810fd8ba3c01"
+      "length": 12746,
+      "count": 14,
+      "hash": "49e79c76611f78b6"
+    },
+    "2026-08": {
+      "offset": 12748,
+      "length": 45896,
+      "count": 51,
+      "hash": "7f33a246af8b70b3"
     },
     "2026-07": {
-      "offset": 38236,
+      "offset": 58645,
       "length": 12766,
       "count": 14,
       "hash": "45c9f9106bfa1f54"
     },
     "2026-06": {
-      "offset": 51003,
+      "offset": 71412,
       "length": 119953,
       "count": 130,
       "hash": "d0319545a8534e7b"
     },
     "2026-05": {
-      "offset": 170957,
-      "length": 344390,
+      "offset": 191366,
+      "length": 344587,
       "count": 398,
-      "hash": "85cc3d0f48f07ab6"
+      "hash": "e5ca345c642811c8"
     },
     "2026-04": {
-      "offset": 515348,
+      "offset": 535954,
       "length": 995,
       "count": 2,
       "hash": "81168fc2fe0cbba0"
     },
     "2026-03": {
-      "offset": 516344,
+      "offset": 536950,
       "length": 1143,
       "count": 1,
       "hash": "94ff99289326c9d6"

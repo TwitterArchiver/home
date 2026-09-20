@@ -2,32 +2,44 @@
   "repo": "ashdieds",
   "account": "ashdieds",
   "source": "https://twitterarchiver.github.io/ashdieds/accounts/ashdieds/wayback_snapshots/index.json",
-  "etag": "\"6a8d0965-4acae\"",
-  "bytes": 306350,
-  "generated": "2026-08-25T04:21:59Z",
+  "etag": "\"6aa8f782-4d460\"",
+  "bytes": 316512,
+  "generated": "2026-09-20T10:55:24Z",
   "range": true,
-  "total": 342,
+  "total": 353,
   "months": {
-    "2026-07": {
+    "2026-09": {
       "offset": 1,
+      "length": 8063,
+      "count": 8,
+      "hash": "d6363664606d20f4"
+    },
+    "2026-08": {
+      "offset": 8065,
+      "length": 2097,
+      "count": 3,
+      "hash": "ccbbba0b1692cff5"
+    },
+    "2026-07": {
+      "offset": 10163,
       "length": 14746,
       "count": 18,
       "hash": "3c324f0d197cf90c"
     },
     "2026-06": {
-      "offset": 14748,
+      "offset": 24910,
       "length": 271249,
       "count": 298,
       "hash": "7f83ab99f91ad26d"
     },
     "2026-05": {
-      "offset": 285998,
+      "offset": 296160,
       "length": 19872,
       "count": 25,
       "hash": "d8390151a84b4425"
     },
     "2023-01": {
-      "offset": 305871,
+      "offset": 316033,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

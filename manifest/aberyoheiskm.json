@@ -2,11 +2,11 @@
   "repo": "aberyoheiskm",
   "account": "aberyoheiskm",
   "source": "https://twitterarchiver.github.io/aberyoheiskm/accounts/aberyoheiskm/wayback_snapshots/index.json",
-  "etag": "\"6a8c6466-727071\"",
-  "bytes": 7499889,
-  "generated": "2026-08-25T04:21:57Z",
+  "etag": "\"6aa8516b-727846\"",
+  "bytes": 7501894,
+  "generated": "2026-09-20T10:55:22Z",
   "range": true,
-  "total": 8884,
+  "total": 8886,
   "months": {
     "2026-08": {
       "offset": 1,
@@ -16,60 +16,60 @@
     },
     "2026-07": {
       "offset": 1685616,
-      "length": 1838995,
-      "count": 2186,
-      "hash": "630eba115b130539"
+      "length": 1840958,
+      "count": 2188,
+      "hash": "c911fb7d60a32343"
     },
     "2026-06": {
-      "offset": 3524612,
+      "offset": 3526575,
       "length": 1037413,
       "count": 1237,
       "hash": "5b1891e7a1c8c8fc"
     },
     "2026-05": {
-      "offset": 4562026,
+      "offset": 4563989,
       "length": 831447,
       "count": 975,
       "hash": "79de0a50709fb794"
     },
     "2026-04": {
-      "offset": 5393474,
+      "offset": 5395437,
       "length": 1777157,
       "count": 2073,
       "hash": "16780a7d3ebec086"
     },
     "2026-03": {
-      "offset": 7170632,
-      "length": 198327,
+      "offset": 7172595,
+      "length": 198369,
       "count": 237,
-      "hash": "6a10347113560c43"
+      "hash": "57675c398973707a"
     },
     "2026-02": {
-      "offset": 7368960,
+      "offset": 7370965,
       "length": 52930,
       "count": 54,
       "hash": "88a96250492f09d5"
     },
     "2026-01": {
-      "offset": 7421891,
+      "offset": 7423896,
       "length": 75944,
       "count": 81,
       "hash": "784cae7b1561abf9"
     },
     "2025-12": {
-      "offset": 7497836,
+      "offset": 7499841,
       "length": 556,
       "count": 1,
       "hash": "db341bae43247d3c"
     },
     "2025-10": {
-      "offset": 7498393,
+      "offset": 7500398,
       "length": 1030,
       "count": 1,
       "hash": "245a8137dcf4fe60"
     },
     "2024-03": {
-      "offset": 7499424,
+      "offset": 7501429,
       "length": 464,
       "count": 1,
       "hash": "ee7e3ea8feac2165"

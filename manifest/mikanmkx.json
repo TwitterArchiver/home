@@ -2,41 +2,47 @@
   "repo": "mikanmkx",
   "account": "mikanmkx",
   "source": "https://twitterarchiver.github.io/mikanmkx/accounts/mikanmkx/wayback_snapshots/index.json",
-  "etag": "\"6a931c7e-1598e9\"",
-  "bytes": 1415401,
-  "generated": "2026-08-30T11:33:41Z",
+  "etag": "\"6aaec402-251e45\"",
+  "bytes": 2432581,
+  "generated": "2026-09-20T10:56:16Z",
   "range": true,
-  "total": 1590,
+  "total": 2778,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 127768,
-      "count": 153,
-      "hash": "c025090fe9214375"
+      "length": 289642,
+      "count": 321,
+      "hash": "1794382c70a90564"
+    },
+    "2026-08": {
+      "offset": 289644,
+      "length": 595206,
+      "count": 716,
+      "hash": "c2c38db842b08e25"
     },
     "2026-07": {
-      "offset": 127770,
-      "length": 411855,
-      "count": 474,
-      "hash": "7948ae04b6c709be"
+      "offset": 884851,
+      "length": 671889,
+      "count": 778,
+      "hash": "3e64a73ba132bffb"
     },
     "2026-06": {
-      "offset": 539626,
+      "offset": 1556741,
       "length": 330550,
       "count": 376,
       "hash": "119f80819e5265eb"
     },
     "2026-05": {
-      "offset": 870177,
+      "offset": 1887292,
       "length": 274744,
       "count": 301,
       "hash": "ab4e74589915dca3"
     },
     "2026-04": {
-      "offset": 1144922,
-      "length": 270478,
+      "offset": 2162037,
+      "length": 270543,
       "count": 286,
-      "hash": "2c07c6363a6db971"
+      "hash": "ca3258a3b1a9f44b"
     }
   }
 }

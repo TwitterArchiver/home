@@ -1,0 +1,60 @@
+{
+  "repo": "Nijika_Dark2",
+  "account": "Nijika_Dark2",
+  "source": "https://twitterarchiver.github.io/Nijika_Dark2/accounts/Nijika_Dark2/wayback_snapshots/index.json",
+  "etag": "\"6aad244c-adcde\"",
+  "bytes": 711902,
+  "generated": "2026-09-20T10:54:29Z",
+  "range": true,
+  "total": 837,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 218938,
+      "count": 245,
+      "hash": "f0acacadc0dcfad4"
+    },
+    "2026-08": {
+      "offset": 218940,
+      "length": 267546,
+      "count": 320,
+      "hash": "9dc724aa2b6a8cca"
+    },
+    "2026-07": {
+      "offset": 486487,
+      "length": 114435,
+      "count": 140,
+      "hash": "0f8b3929a3c84766"
+    },
+    "2026-06": {
+      "offset": 600923,
+      "length": 108405,
+      "count": 128,
+      "hash": "9ca357e9fa2f6a5c"
+    },
+    "2026-05": {
+      "offset": 709329,
+      "length": 593,
+      "count": 1,
+      "hash": "1f7207d5c6e97c88"
+    },
+    "2026-03": {
+      "offset": 709923,
+      "length": 1009,
+      "count": 1,
+      "hash": "248113b7282fbe84"
+    },
+    "2025-05": {
+      "offset": 710933,
+      "length": 489,
+      "count": 1,
+      "hash": "860764c4e1f6aca3"
+    },
+    "2023-01": {
+      "offset": 711423,
+      "length": 478,
+      "count": 1,
+      "hash": "87b1c55a778d9019"
+    }
+  }
+}

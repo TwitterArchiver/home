@@ -2,9 +2,9 @@
   "repo": "kuroki___tomoko",
   "account": "kuroki___tomoko",
   "source": "https://twitterarchiver.github.io/kuroki___tomoko/accounts/kuroki___tomoko/wayback_snapshots/index.json",
-  "etag": "\"6a921c2f-7d35b\"",
-  "bytes": 512859,
-  "generated": "2026-08-29T01:25:23Z",
+  "etag": "\"6aad78ce-7d41e\"",
+  "bytes": 513054,
+  "generated": "2026-09-20T10:56:05Z",
   "range": true,
   "total": 545,
   "months": {
@@ -16,42 +16,42 @@
     },
     "2026-08": {
       "offset": 25553,
-      "length": 259328,
+      "length": 259523,
       "count": 291,
-      "hash": "cbe9033a11d7bf8a"
+      "hash": "873acee33c530306"
     },
     "2026-07": {
-      "offset": 284882,
+      "offset": 285077,
       "length": 156180,
       "count": 165,
       "hash": "a9cc21f98ace1ce1"
     },
     "2026-04": {
-      "offset": 441063,
+      "offset": 441258,
       "length": 2796,
       "count": 2,
       "hash": "79eb5d9c9d05f2ec"
     },
     "2026-03": {
-      "offset": 443860,
+      "offset": 444055,
       "length": 33424,
       "count": 28,
       "hash": "378e34c746637c03"
     },
     "2026-02": {
-      "offset": 477285,
+      "offset": 477480,
       "length": 34262,
       "count": 33,
       "hash": "fb44c947abe66213"
     },
     "2025-06": {
-      "offset": 511548,
+      "offset": 511743,
       "length": 454,
       "count": 1,
       "hash": "3587d31a55dd0f5d"
     },
     "2024-11": {
-      "offset": 512003,
+      "offset": 512198,
       "length": 855,
       "count": 1,
       "hash": "a9d8439d5955606b"

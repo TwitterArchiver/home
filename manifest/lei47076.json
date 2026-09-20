@@ -2,68 +2,74 @@
   "repo": "lei47076",
   "account": "lei47076",
   "source": "https://twitterarchiver.github.io/lei47076/accounts/lei47076/wayback_snapshots/index.json",
-  "etag": "\"6a921cfa-175328\"",
-  "bytes": 1528616,
-  "generated": "2026-08-29T01:25:25Z",
+  "etag": "\"6aad7c85-3fe9ba\"",
+  "bytes": 4188602,
+  "generated": "2026-09-20T10:56:08Z",
   "range": true,
-  "total": 1984,
+  "total": 5463,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 560049,
-      "count": 710,
-      "hash": "668c27c420250150"
+      "length": 2318096,
+      "count": 3032,
+      "hash": "bc8d3644018116f0"
+    },
+    "2026-08": {
+      "offset": 2318098,
+      "length": 901249,
+      "count": 1156,
+      "hash": "609c24b6be86ebf9"
     },
     "2026-07": {
-      "offset": 560051,
+      "offset": 3219348,
       "length": 179395,
       "count": 233,
       "hash": "d7810db079ed45f7"
     },
     "2026-06": {
-      "offset": 739447,
-      "length": 122698,
-      "count": 161,
-      "hash": "e100df8814f11260"
+      "offset": 3398744,
+      "length": 123257,
+      "count": 162,
+      "hash": "025bb44080a8c24b"
     },
     "2026-05": {
-      "offset": 862146,
+      "offset": 3522002,
       "length": 83652,
       "count": 109,
       "hash": "1f78edd304c7a788"
     },
     "2026-04": {
-      "offset": 945799,
+      "offset": 3605655,
       "length": 119822,
       "count": 166,
       "hash": "67e4dc1d9b08ce5a"
     },
     "2026-03": {
-      "offset": 1065622,
+      "offset": 3725478,
       "length": 299978,
       "count": 398,
       "hash": "0db4c39447c008b2"
     },
     "2026-02": {
-      "offset": 1365601,
-      "length": 160897,
+      "offset": 4025457,
+      "length": 161027,
       "count": 204,
-      "hash": "aeb1946daabdab22"
+      "hash": "358ee141e999bfda"
     },
     "2025-09": {
-      "offset": 1526499,
+      "offset": 4186485,
       "length": 476,
       "count": 1,
       "hash": "b89808f1e0a0c825"
     },
     "2024-09": {
-      "offset": 1526976,
+      "offset": 4186962,
       "length": 1071,
       "count": 1,
       "hash": "267525454a03e1dc"
     },
     "2024-08": {
-      "offset": 1528048,
+      "offset": 4188034,
       "length": 567,
       "count": 1,
       "hash": "8b4cbaae75d75c37"

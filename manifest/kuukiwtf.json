@@ -2,56 +2,62 @@
   "repo": "kuukiwtf",
   "account": "kuukiwtf",
   "source": "https://twitterarchiver.github.io/kuukiwtf/accounts/kuukiwtf/wayback_snapshots/index.json",
-  "etag": "\"6a922669-420600\"",
-  "bytes": 4326912,
-  "generated": "2026-08-29T01:25:26Z",
+  "etag": "\"6aad7c8b-4f7467\"",
+  "bytes": 5207143,
+  "generated": "2026-09-20T10:56:07Z",
   "range": true,
-  "total": 5025,
+  "total": 6011,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 2191150,
+      "length": 841375,
+      "count": 986,
+      "hash": "6a9592d441f581d0"
+    },
+    "2026-08": {
+      "offset": 841377,
+      "length": 2220956,
       "count": 2477,
-      "hash": "102e352d90cc41ea"
+      "hash": "e7cc05b9852ea1bc"
     },
     "2026-07": {
-      "offset": 2191152,
-      "length": 2126864,
+      "offset": 3062334,
+      "length": 2135913,
       "count": 2535,
-      "hash": "4c416bf2e5a26f45"
+      "hash": "95b61632bd01a721"
     },
     "2026-06": {
-      "offset": 4318017,
+      "offset": 5198248,
       "length": 4589,
       "count": 5,
       "hash": "d86fad391d5968c6"
     },
     "2026-05": {
-      "offset": 4322607,
+      "offset": 5202838,
       "length": 2330,
       "count": 4,
       "hash": "413d8dd7e65aea0c"
     },
     "2026-04": {
-      "offset": 4324938,
+      "offset": 5205169,
       "length": 563,
       "count": 1,
       "hash": "68ca1ac3462e441f"
     },
     "2025-11": {
-      "offset": 4325502,
+      "offset": 5205733,
       "length": 497,
       "count": 1,
       "hash": "6ffeb98af3ff59e8"
     },
     "2025-09": {
-      "offset": 4326000,
+      "offset": 5206231,
       "length": 450,
       "count": 1,
       "hash": "717115e912f56918"
     },
     "2025-08": {
-      "offset": 4326451,
+      "offset": 5206682,
       "length": 460,
       "count": 1,
       "hash": "f8146142da81868c"

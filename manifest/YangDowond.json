@@ -2,65 +2,77 @@
   "repo": "YangDowond",
   "account": "YangDowond",
   "source": "https://twitterarchiver.github.io/YangDowond/accounts/YangDowond/wayback_snapshots/index.json",
-  "etag": "\"6a8f2b5c-9bad7\"",
-  "bytes": 637655,
-  "generated": "2026-08-29T01:24:18Z",
+  "etag": "\"6aa6df4c-1168cc\"",
+  "bytes": 1140940,
+  "generated": "2026-09-20T10:55:12Z",
   "range": true,
-  "total": 670,
+  "total": 1174,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 357507,
-      "count": 369,
-      "hash": "93a7a66fdc26252b"
+      "length": 323078,
+      "count": 329,
+      "hash": "82f7b9eb952b0e60"
+    },
+    "2026-08": {
+      "offset": 323080,
+      "length": 535141,
+      "count": 541,
+      "hash": "692026c1369061df"
     },
     "2026-07": {
-      "offset": 357509,
+      "offset": 858222,
       "length": 160970,
       "count": 179,
       "hash": "53ff0c5e9814cd97"
     },
     "2026-06": {
-      "offset": 518480,
-      "length": 76811,
-      "count": 78,
-      "hash": "9a0ea92fb2747f18"
+      "offset": 1019193,
+      "length": 77986,
+      "count": 79,
+      "hash": "4b57cb8c2aac6b9e"
     },
     "2026-05": {
-      "offset": 595292,
+      "offset": 1097180,
       "length": 26312,
       "count": 27,
       "hash": "d553b37778cf8d1d"
     },
     "2026-04": {
-      "offset": 621605,
+      "offset": 1123493,
       "length": 6651,
       "count": 7,
       "hash": "92397b30ccd2b219"
     },
     "2026-02": {
-      "offset": 628257,
-      "length": 4993,
-      "count": 5,
-      "hash": "f8d8e9519377fc79"
+      "offset": 1130145,
+      "length": 5873,
+      "count": 6,
+      "hash": "b175ad6d5e197802"
     },
     "2025-11": {
-      "offset": 633251,
+      "offset": 1136019,
       "length": 3064,
       "count": 3,
       "hash": "ea100d50b987319f"
     },
     "2025-10": {
-      "offset": 636316,
+      "offset": 1139084,
       "length": 855,
       "count": 1,
       "hash": "f987076c160e61c5"
     },
     "2025-09": {
-      "offset": 637172,
+      "offset": 1139940,
       "length": 482,
       "count": 1,
       "hash": "e69663760b0af7e1"
+    },
+    "2021-07": {
+      "offset": 1140423,
+      "length": 516,
+      "count": 1,
+      "hash": "f86fc6a0e68faad5"
     }
   }
 }

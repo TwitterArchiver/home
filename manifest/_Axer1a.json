@@ -2,44 +2,50 @@
   "repo": "_Axer1a",
   "account": "_Axer1a",
   "source": "https://twitterarchiver.github.io/_Axer1a/accounts/_Axer1a/wayback_snapshots/index.json",
-  "etag": "\"6a8c5b00-86c3a\"",
-  "bytes": 551994,
-  "generated": "2026-08-25T04:21:52Z",
+  "etag": "\"6aa8474d-ad2d7\"",
+  "bytes": 709335,
+  "generated": "2026-09-20T10:55:18Z",
   "range": true,
-  "total": 663,
+  "total": 851,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 238570,
-      "count": 281,
-      "hash": "a0d1bb74683eedc7"
+      "length": 78458,
+      "count": 93,
+      "hash": "cd25d96ef4dd55f4"
+    },
+    "2026-08": {
+      "offset": 78460,
+      "length": 317452,
+      "count": 376,
+      "hash": "fa86b07fc95354b6"
     },
     "2026-07": {
-      "offset": 238572,
+      "offset": 395913,
       "length": 277821,
       "count": 339,
       "hash": "f681d369b20a941b"
     },
     "2026-06": {
-      "offset": 516394,
+      "offset": 673735,
       "length": 33234,
       "count": 40,
       "hash": "d59976895dc1b903"
     },
     "2026-02": {
-      "offset": 549629,
+      "offset": 706970,
       "length": 1144,
       "count": 1,
       "hash": "ccef4e81e9584a41"
     },
     "2025-01": {
-      "offset": 550774,
+      "offset": 708115,
       "length": 740,
       "count": 1,
       "hash": "f7d4f90c52350641"
     },
     "2023-01": {
-      "offset": 551515,
+      "offset": 708856,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

@@ -2,35 +2,53 @@
   "repo": "chidianmaima",
   "account": "chidianmaima",
   "source": "https://twitterarchiver.github.io/chidianmaima/accounts/chidianmaima/wayback_snapshots/index.json",
-  "etag": "\"6a8f3196-88b40\"",
-  "bytes": 559936,
-  "generated": "2026-08-29T01:24:51Z",
+  "etag": "\"6aaa493a-f7e19\"",
+  "bytes": 1015321,
+  "generated": "2026-09-20T10:55:38Z",
   "range": true,
-  "total": 629,
+  "total": 1132,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 519500,
-      "count": 581,
-      "hash": "579d32425cca89a1"
+      "length": 363042,
+      "count": 404,
+      "hash": "c5788e0a7c4f3810"
+    },
+    "2026-08": {
+      "offset": 363044,
+      "length": 609942,
+      "count": 677,
+      "hash": "c95f512c19cc6e7f"
     },
     "2026-07": {
-      "offset": 519502,
-      "length": 39293,
-      "count": 46,
-      "hash": "a0285bd37656abc4"
+      "offset": 972987,
+      "length": 39745,
+      "count": 47,
+      "hash": "6a17cdc95745bac9"
     },
     "2026-05": {
-      "offset": 558796,
+      "offset": 1012733,
       "length": 636,
       "count": 1,
       "hash": "0d2c85f245bd1534"
     },
     "2026-01": {
-      "offset": 559433,
+      "offset": 1013370,
       "length": 502,
       "count": 1,
       "hash": "28dfa85a4f921cc7"
+    },
+    "2025-12": {
+      "offset": 1013873,
+      "length": 995,
+      "count": 1,
+      "hash": "ffc4e5d4ebf3393d"
+    },
+    "2025-02": {
+      "offset": 1014869,
+      "length": 451,
+      "count": 1,
+      "hash": "641c68cc40e3455a"
     }
   }
 }

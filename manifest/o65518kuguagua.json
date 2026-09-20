@@ -2,9 +2,9 @@
   "repo": "o65518kuguagua",
   "account": "o65518kuguagua",
   "source": "https://twitterarchiver.github.io/o65518kuguagua/accounts/o65518kuguagua/wayback_snapshots/index.json",
-  "etag": "\"6a93eca4-3c3cc7\"",
-  "bytes": 3947719,
-  "generated": "2026-08-30T11:33:45Z",
+  "etag": "\"6aaf94c3-3c4064\"",
+  "bytes": 3948644,
+  "generated": "2026-09-20T10:56:21Z",
   "range": true,
   "total": 5305,
   "months": {
@@ -28,36 +28,36 @@
     },
     "2026-05": {
       "offset": 1188531,
-      "length": 525045,
+      "length": 525087,
       "count": 716,
-      "hash": "06727281eb116563"
+      "hash": "3179c0b78686a036"
     },
     "2026-04": {
-      "offset": 1713577,
-      "length": 1173874,
+      "offset": 1713619,
+      "length": 1173958,
       "count": 1614,
-      "hash": "d90d621513b05fb9"
+      "hash": "b383e222f504decf"
     },
     "2026-03": {
-      "offset": 2887452,
-      "length": 1057111,
+      "offset": 2887578,
+      "length": 1057910,
       "count": 1426,
-      "hash": "13c9ee98067db6cc"
+      "hash": "14828927b24c329b"
     },
     "2026-02": {
-      "offset": 3944564,
+      "offset": 3945489,
       "length": 1633,
       "count": 3,
       "hash": "add8a7d78d606437"
     },
     "2026-01": {
-      "offset": 3946198,
+      "offset": 3947123,
       "length": 638,
       "count": 1,
       "hash": "5d0d94eec9fa7228"
     },
     "2025-12": {
-      "offset": 3946837,
+      "offset": 3947762,
       "length": 881,
       "count": 2,
       "hash": "a3f742252b73aec0"

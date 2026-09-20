@@ -2,35 +2,47 @@
   "repo": "ivan20221126",
   "account": "ivan20221126",
   "source": "https://twitterarchiver.github.io/ivan20221126/accounts/ivan20221126/wayback_snapshots/index.json",
-  "etag": "\"6a90ce35-123169\"",
-  "bytes": 1192297,
-  "generated": "2026-08-29T01:25:18Z",
+  "etag": "\"6aace726-15ffb2\"",
+  "bytes": 1441714,
+  "generated": "2026-09-20T10:56:01Z",
   "range": true,
-  "total": 1356,
+  "total": 1640,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 498435,
-      "count": 568,
-      "hash": "8c44f67f21db9f15"
+      "length": 197479,
+      "count": 225,
+      "hash": "e003db13211319d2"
+    },
+    "2026-08": {
+      "offset": 197481,
+      "length": 548807,
+      "count": 625,
+      "hash": "29367d5f8432ce1f"
     },
     "2026-07": {
-      "offset": 498437,
-      "length": 597922,
+      "offset": 746289,
+      "length": 597987,
       "count": 684,
-      "hash": "d8c2e6b606530102"
+      "hash": "e896571f39087781"
     },
     "2026-06": {
-      "offset": 1096360,
-      "length": 94678,
-      "count": 103,
-      "hash": "5cfe79bc5b6b0502"
+      "offset": 1344277,
+      "length": 95168,
+      "count": 104,
+      "hash": "d7e96957e0e8eaa1"
     },
     "2026-05": {
-      "offset": 1191039,
+      "offset": 1439446,
       "length": 1257,
       "count": 1,
       "hash": "b3a7d928949588d5"
+    },
+    "2026-03": {
+      "offset": 1440704,
+      "length": 1009,
+      "count": 1,
+      "hash": "248113b7282fbe84"
     }
   }
 }

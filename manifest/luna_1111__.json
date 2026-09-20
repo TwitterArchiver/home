@@ -2,44 +2,50 @@
   "repo": "luna_1111__",
   "account": "luna_1111__",
   "source": "https://twitterarchiver.github.io/luna_1111__/accounts/luna_1111__/wayback_snapshots/index.json",
-  "etag": "\"6a92a3b0-1eca2a\"",
-  "bytes": 2017834,
-  "generated": "2026-08-30T11:33:35Z",
+  "etag": "\"6aae3ace-224f7d\"",
+  "bytes": 2248573,
+  "generated": "2026-09-20T10:56:12Z",
   "range": true,
-  "total": 2624,
+  "total": 2924,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 70875,
-      "count": 93,
-      "hash": "0e1ea3e2ff67f130"
+      "length": 25950,
+      "count": 34,
+      "hash": "d60e48568188d07d"
+    },
+    "2026-08": {
+      "offset": 25952,
+      "length": 171713,
+      "count": 224,
+      "hash": "9732b97b3ba61ad9"
     },
     "2026-07": {
-      "offset": 70877,
-      "length": 324485,
-      "count": 421,
-      "hash": "b6168e0352daeb53"
+      "offset": 197666,
+      "length": 428130,
+      "count": 556,
+      "hash": "6e0e3fdf497f2988"
     },
     "2026-06": {
-      "offset": 395363,
+      "offset": 625797,
       "length": 401343,
       "count": 510,
       "hash": "5fb4ab6070e8fd66"
     },
     "2026-05": {
-      "offset": 796707,
+      "offset": 1027141,
       "length": 497868,
       "count": 644,
       "hash": "54b8f3a058e3b99a"
     },
     "2026-04": {
-      "offset": 1294576,
-      "length": 645671,
+      "offset": 1525010,
+      "length": 645976,
       "count": 848,
-      "hash": "17f7c666b75a9f92"
+      "hash": "ee64263b4284ba7e"
     },
     "2026-03": {
-      "offset": 1940248,
+      "offset": 2170987,
       "length": 77585,
       "count": 108,
       "hash": "4d6bcaaf52728634"
