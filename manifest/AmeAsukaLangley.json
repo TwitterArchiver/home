@@ -2,50 +2,68 @@
   "repo": "AmeAsukaLangley",
   "account": "AmeAsukaLangley",
   "source": "https://twitterarchiver.github.io/AmeAsukaLangley/accounts/AmeAsukaLangley/wayback_snapshots/index.json",
-  "etag": "\"6a9bc11c-27d427\"",
-  "bytes": 2610215,
-  "generated": "2026-09-06T10:31:13Z",
+  "etag": "\"6ab778f1-2cada1\"",
+  "bytes": 2928033,
+  "generated": "2026-09-27T11:39:29Z",
   "range": true,
-  "total": 3152,
+  "total": 3537,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 1182154,
-      "count": 1414,
-      "hash": "15be6fd93b3a1e18"
+      "length": 313644,
+      "count": 380,
+      "hash": "14417153ab5e3d4f"
+    },
+    "2026-08": {
+      "offset": 313646,
+      "length": 1185235,
+      "count": 1417,
+      "hash": "7b83816747ca72db"
     },
     "2026-07": {
-      "offset": 1182156,
+      "offset": 1498882,
       "length": 808181,
       "count": 973,
       "hash": "15d9f7a8eef29b87"
     },
     "2026-06": {
-      "offset": 1990338,
+      "offset": 2307064,
       "length": 615687,
       "count": 761,
       "hash": "bdb188446e852921"
     },
     "2026-05": {
-      "offset": 2606026,
+      "offset": 2922752,
       "length": 621,
       "count": 1,
       "hash": "c6bace0112189964"
     },
+    "2026-04": {
+      "offset": 2923374,
+      "length": 575,
+      "count": 1,
+      "hash": "57460a0c496359a3"
+    },
     "2026-03": {
-      "offset": 2606648,
+      "offset": 2923950,
       "length": 1142,
       "count": 1,
       "hash": "44849b2cca7f8a21"
     },
+    "2026-02": {
+      "offset": 2925093,
+      "length": 515,
+      "count": 1,
+      "hash": "7c200305b94f1945"
+    },
     "2025-12": {
-      "offset": 2607791,
+      "offset": 2925609,
       "length": 1240,
       "count": 1,
       "hash": "b14ffacb5a7b1268"
     },
     "2022-08": {
-      "offset": 2609032,
+      "offset": 2926850,
       "length": 1182,
       "count": 1,
       "hash": "fc3643be321d7d48"

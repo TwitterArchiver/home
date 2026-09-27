@@ -2,44 +2,50 @@
   "repo": "BdZzbw6goo2",
   "account": "BdZzbw6goo2",
   "source": "https://twitterarchiver.github.io/BdZzbw6goo2/accounts/BdZzbw6goo2/wayback_snapshots/index.json",
-  "etag": "\"6a789168-f42e2\"",
-  "bytes": 1000162,
-  "generated": "2026-08-15T04:08:50Z",
+  "etag": "\"6ab8080b-f73f3\"",
+  "bytes": 1012723,
+  "generated": "2026-09-27T11:39:36Z",
   "range": true,
-  "total": 1159,
+  "total": 1173,
   "months": {
-    "2026-07": {
+    "2026-09": {
       "offset": 1,
+      "length": 12105,
+      "count": 14,
+      "hash": "10376d49045af07a"
+    },
+    "2026-07": {
+      "offset": 12107,
       "length": 43062,
       "count": 49,
       "hash": "4dd68ce78eff0df3"
     },
     "2026-06": {
-      "offset": 43064,
+      "offset": 55170,
       "length": 64899,
       "count": 74,
       "hash": "e1854bd58a6dd500"
     },
     "2026-05": {
-      "offset": 107964,
-      "length": 107130,
+      "offset": 120070,
+      "length": 107325,
       "count": 124,
-      "hash": "dc378d3214f14eb8"
+      "hash": "f990110d1965e29f"
     },
     "2026-04": {
-      "offset": 215095,
-      "length": 444950,
+      "offset": 227396,
+      "length": 445145,
       "count": 513,
-      "hash": "f678e41142f71633"
+      "hash": "def14481f7048c0e"
     },
     "2026-03": {
-      "offset": 660046,
-      "length": 338169,
+      "offset": 672542,
+      "length": 338234,
       "count": 397,
-      "hash": "c38d0eca0d76498b"
+      "hash": "0c0c62bbf8dfc70a"
     },
     "2026-02": {
-      "offset": 998216,
+      "offset": 1010777,
       "length": 1945,
       "count": 2,
       "hash": "4267c8d945ebd1bb"

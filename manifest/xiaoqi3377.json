@@ -2,38 +2,44 @@
   "repo": "xiaoqi3377",
   "account": "xiaoqi3377",
   "source": "https://twitterarchiver.github.io/xiaoqi3377/accounts/xiaoqi3377/wayback_snapshots/index.json",
-  "etag": "\"6a97ce52-ef183\"",
-  "bytes": 979331,
-  "generated": "2026-09-06T10:34:45Z",
+  "etag": "\"6ab38739-f6fc5\"",
+  "bytes": 1011653,
+  "generated": "2026-09-27T11:44:11Z",
   "range": true,
-  "total": 1247,
+  "total": 1282,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 101588,
-      "count": 123,
-      "hash": "a2ffdb7d83da2e9d"
+      "length": 30739,
+      "count": 33,
+      "hash": "d9fe92e5758fe78d"
+    },
+    "2026-08": {
+      "offset": 30741,
+      "length": 103170,
+      "count": 125,
+      "hash": "b514e5ff520d1c4b"
     },
     "2026-07": {
-      "offset": 101590,
+      "offset": 133912,
       "length": 206337,
       "count": 260,
       "hash": "3706a2ced6871cf0"
     },
     "2026-06": {
-      "offset": 307928,
+      "offset": 340250,
       "length": 372350,
       "count": 489,
       "hash": "435fe915ea9f158f"
     },
     "2026-05": {
-      "offset": 680279,
+      "offset": 712601,
       "length": 298605,
       "count": 374,
       "hash": "9c699a371cab9f91"
     },
     "2024-03": {
-      "offset": 978885,
+      "offset": 1011207,
       "length": 445,
       "count": 1,
       "hash": "95c801c08b5033fc"

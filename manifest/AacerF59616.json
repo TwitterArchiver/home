@@ -2,68 +2,68 @@
   "repo": "AacerF59616",
   "account": "AacerF59616",
   "source": "https://twitterarchiver.github.io/AacerF59616/accounts/AacerF59616/wayback_snapshots/index.json",
-  "etag": "\"6aad2505-45ce11\"",
-  "bytes": 4574737,
-  "generated": "2026-09-20T10:53:22Z",
+  "etag": "\"6ab8e50e-4baacd\"",
+  "bytes": 4958925,
+  "generated": "2026-09-27T11:39:23Z",
   "range": true,
-  "total": 4899,
+  "total": 5212,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 651588,
-      "count": 616,
-      "hash": "d9ebea92f342d3cd"
+      "length": 1035647,
+      "count": 929,
+      "hash": "deb1a33be58adef8"
     },
     "2026-08": {
-      "offset": 651590,
-      "length": 1900301,
+      "offset": 1035649,
+      "length": 1900430,
       "count": 1955,
-      "hash": "6f4a11ce4b699854"
+      "hash": "a2e2b55d7bbcf1e6"
     },
     "2026-07": {
-      "offset": 2551892,
+      "offset": 2936080,
       "length": 950604,
       "count": 1019,
       "hash": "63d633edb7962649"
     },
     "2026-06": {
-      "offset": 3502497,
+      "offset": 3886685,
       "length": 1047050,
       "count": 1283,
       "hash": "1742c3f540aabbf2"
     },
     "2026-05": {
-      "offset": 4549548,
+      "offset": 4933736,
       "length": 1099,
       "count": 2,
       "hash": "56761adcfc71ebf3"
     },
     "2026-04": {
-      "offset": 4550648,
+      "offset": 4934836,
       "length": 757,
       "count": 1,
       "hash": "365557c2d483a307"
     },
     "2026-01": {
-      "offset": 4551406,
+      "offset": 4935594,
       "length": 728,
       "count": 1,
       "hash": "2ec4ea96152e29cc"
     },
     "2025-12": {
-      "offset": 4552135,
+      "offset": 4936323,
       "length": 20209,
       "count": 19,
       "hash": "2365d0fe42cc5cd1"
     },
     "2025-08": {
-      "offset": 4572345,
+      "offset": 4956533,
       "length": 636,
       "count": 1,
       "hash": "e87cd1fb0a09ccfb"
     },
     "2025-07": {
-      "offset": 4572982,
+      "offset": 4957170,
       "length": 1754,
       "count": 2,
       "hash": "d79edf9f5952e996"

@@ -2,26 +2,32 @@
   "repo": "wwwyizhiku",
   "account": "wwwyizhiku",
   "source": "https://twitterarchiver.github.io/wwwyizhiku/accounts/wwwyizhiku/wayback_snapshots/index.json",
-  "etag": "\"6a97ccc3-b3f28\"",
-  "bytes": 737064,
-  "generated": "2026-09-06T10:34:42Z",
+  "etag": "\"6ab385f4-d3467\"",
+  "bytes": 865383,
+  "generated": "2026-09-27T11:44:09Z",
   "range": true,
-  "total": 853,
+  "total": 997,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 222304,
-      "count": 241,
-      "hash": "5182cac26cc6bb6c"
+      "length": 118650,
+      "count": 133,
+      "hash": "c46274f83ed40ebf"
+    },
+    "2026-08": {
+      "offset": 118652,
+      "length": 230468,
+      "count": 251,
+      "hash": "09d44854d896fbc5"
     },
     "2026-07": {
-      "offset": 222306,
-      "length": 512615,
-      "count": 610,
-      "hash": "8142fb1e51c203d0"
+      "offset": 349121,
+      "length": 514119,
+      "count": 611,
+      "hash": "17fdb6d758d20610"
     },
     "2026-06": {
-      "offset": 734922,
+      "offset": 863241,
       "length": 2141,
       "count": 2,
       "hash": "559ea423d4d6fbfc"

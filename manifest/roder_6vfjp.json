@@ -1,0 +1,24 @@
+{
+  "repo": "roder_6vfjp",
+  "account": "roder_6vfjp",
+  "source": "https://twitterarchiver.github.io/roder_6vfjp/accounts/roder_6vfjp/wayback_snapshots/index.json",
+  "etag": "\"6ab8dc56-cd06\"",
+  "bytes": 52486,
+  "generated": "2026-09-27T11:43:36Z",
+  "range": true,
+  "total": 57,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 51397,
+      "count": 56,
+      "hash": "4ad9476113b9f51a"
+    },
+    "2026-02": {
+      "offset": 51399,
+      "length": 1086,
+      "count": 1,
+      "hash": "a0498bb5cceb6053"
+    }
+  }
+}

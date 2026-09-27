@@ -2,53 +2,59 @@
   "repo": "Cassie2meqwq",
   "account": "Cassie2meqwq",
   "source": "https://twitterarchiver.github.io/Cassie2meqwq/accounts/Cassie2meqwq/wayback_snapshots/index.json",
-  "etag": "\"6a9d1256-f96f7\"",
-  "bytes": 1021687,
-  "generated": "2026-09-06T10:31:22Z",
+  "etag": "\"6ab8cfcf-100ee0\"",
+  "bytes": 1052384,
+  "generated": "2026-09-27T11:39:39Z",
   "range": true,
-  "total": 1260,
+  "total": 1297,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 4831,
-      "count": 4,
-      "hash": "d0fbb795191d1415"
+      "length": 33151,
+      "count": 38,
+      "hash": "edfe684386c35e3e"
     },
     "2026-08": {
-      "offset": 4833,
-      "length": 106850,
-      "count": 124,
-      "hash": "4445644352decfbc"
+      "offset": 33153,
+      "length": 108546,
+      "count": 126,
+      "hash": "89767f0ecb54ea24"
     },
     "2026-07": {
-      "offset": 111684,
+      "offset": 141700,
       "length": 53404,
       "count": 71,
       "hash": "3aa9553784e8ca80"
     },
     "2026-06": {
-      "offset": 165089,
+      "offset": 195105,
       "length": 372227,
       "count": 452,
       "hash": "4c15cfda411ea3d4"
     },
     "2026-05": {
-      "offset": 537317,
+      "offset": 567333,
       "length": 482206,
       "count": 607,
       "hash": "372e478d02fc6218"
     },
     "2026-04": {
-      "offset": 1019524,
+      "offset": 1049540,
       "length": 1269,
       "count": 1,
       "hash": "7d2e306fa0243423"
     },
     "2025-07": {
-      "offset": 1020794,
+      "offset": 1050810,
       "length": 892,
       "count": 1,
       "hash": "75c77f657cada905"
+    },
+    "2023-01": {
+      "offset": 1051703,
+      "length": 680,
+      "count": 1,
+      "hash": "2dd543d6d0ff8686"
     }
   }
 }

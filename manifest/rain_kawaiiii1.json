@@ -2,56 +2,62 @@
   "repo": "rain_kawaiiii1",
   "account": "rain_kawaiiii1",
   "source": "https://twitterarchiver.github.io/rain_kawaiiii1/accounts/rain_kawaiiii1/wayback_snapshots/index.json",
-  "etag": "\"6a953f0d-c2aee\"",
-  "bytes": 797422,
-  "generated": "2026-09-06T10:34:17Z",
+  "etag": "\"6ab0e670-126b74\"",
+  "bytes": 1207156,
+  "generated": "2026-09-27T11:43:36Z",
   "range": true,
-  "total": 944,
+  "total": 1434,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 7205,
-      "count": 9,
-      "hash": "d603989a180f8f15"
+      "length": 386892,
+      "count": 462,
+      "hash": "a26e13e5ab3d1e95"
+    },
+    "2026-08": {
+      "offset": 386894,
+      "length": 27143,
+      "count": 34,
+      "hash": "e0bf1bfdf06a6a2f"
     },
     "2026-07": {
-      "offset": 7207,
-      "length": 32086,
-      "count": 36,
-      "hash": "05c0ac57e87c26f2"
+      "offset": 414038,
+      "length": 32534,
+      "count": 37,
+      "hash": "9b0f90e516af9212"
     },
     "2026-06": {
-      "offset": 39294,
-      "length": 127822,
-      "count": 157,
-      "hash": "fb32414982c05bcf"
+      "offset": 446573,
+      "length": 128720,
+      "count": 158,
+      "hash": "b0f9914ccd3c0412"
     },
     "2026-05": {
-      "offset": 167117,
+      "offset": 575294,
       "length": 131252,
       "count": 158,
       "hash": "86049cb6031dba47"
     },
     "2026-04": {
-      "offset": 298370,
-      "length": 496198,
-      "count": 580,
-      "hash": "b92674116320fed0"
+      "offset": 706547,
+      "length": 497755,
+      "count": 581,
+      "hash": "694204091786d1d7"
     },
     "2026-03": {
-      "offset": 794569,
+      "offset": 1204303,
       "length": 1816,
       "count": 2,
       "hash": "8d4e0de374590a8c"
     },
     "2023-10": {
-      "offset": 796386,
+      "offset": 1206120,
       "length": 576,
       "count": 1,
       "hash": "22f646ee3565c967"
     },
     "2022-09": {
-      "offset": 796963,
+      "offset": 1206697,
       "length": 458,
       "count": 1,
       "hash": "c6e24af503820524"

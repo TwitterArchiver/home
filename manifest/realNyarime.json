@@ -2,11 +2,11 @@
   "repo": "realNyarime",
   "account": "realNyarime",
   "source": "https://twitterarchiver.github.io/realNyarime/accounts/realNyarime/wayback_snapshots/index.json",
-  "etag": "\"6a95579e-18f4cc1\"",
-  "bytes": 26168513,
-  "generated": "2026-09-06T10:34:26Z",
+  "etag": "\"6ab0faa5-1a1c30a\"",
+  "bytes": 27378442,
+  "generated": "2026-09-27T11:43:47Z",
   "range": true,
-  "total": 28443,
+  "total": 29659,
   "months": {
     "unknown": {
       "offset": 1,
@@ -14,260 +14,266 @@
       "count": 21,
       "hash": "d70c4cd1f7d8a5ab"
     },
-    "2026-08": {
+    "2026-09": {
       "offset": 17703,
-      "length": 1174736,
-      "count": 1285,
-      "hash": "e4dc10f8381b3c7a"
+      "length": 1105123,
+      "count": 1104,
+      "hash": "57b657c817a57735"
+    },
+    "2026-08": {
+      "offset": 1122827,
+      "length": 1274332,
+      "count": 1394,
+      "hash": "98c5f13e291c4113"
     },
     "2026-07": {
-      "offset": 1192440,
-      "length": 3006052,
-      "count": 3377,
-      "hash": "376933cd4c298597"
+      "offset": 2397160,
+      "length": 3008010,
+      "count": 3379,
+      "hash": "159f23a78f77a343"
     },
     "2026-06": {
-      "offset": 4198493,
+      "offset": 5405171,
       "length": 3913770,
       "count": 4399,
       "hash": "c90073198b6e3c10"
     },
     "2026-05": {
-      "offset": 8112264,
-      "length": 4396408,
+      "offset": 9318942,
+      "length": 4396494,
       "count": 4827,
-      "hash": "06bea3f1ed2cc65a"
+      "hash": "80088e6f275c9eec"
     },
     "2026-04": {
-      "offset": 12508673,
-      "length": 3517831,
-      "count": 3618,
-      "hash": "1fca4c7dbba76bde"
+      "offset": 13715437,
+      "length": 3519440,
+      "count": 3619,
+      "hash": "53f801b3f5bc8581"
     },
     "2026-03": {
-      "offset": 16026505,
-      "length": 2708223,
+      "offset": 17234878,
+      "length": 2708503,
       "count": 2783,
-      "hash": "9b5381a6b3db30b2"
+      "hash": "860aab55b03dea8f"
     },
     "2026-02": {
-      "offset": 18734729,
-      "length": 1524308,
+      "offset": 19943382,
+      "length": 1524350,
       "count": 1528,
-      "hash": "22adc011dfdd2521"
+      "hash": "fc31cb39b117403e"
     },
     "2026-01": {
-      "offset": 20259038,
-      "length": 3701108,
+      "offset": 21467733,
+      "length": 3701700,
       "count": 3992,
-      "hash": "d29f459bf870fb4d"
+      "hash": "363c40b3d5a604e4"
     },
     "2025-12": {
-      "offset": 23960147,
-      "length": 718442,
+      "offset": 25169434,
+      "length": 718526,
       "count": 837,
-      "hash": "d232df019ae2759e"
+      "hash": "030e179c7b55c81b"
     },
     "2025-11": {
-      "offset": 24678590,
+      "offset": 25887961,
       "length": 109285,
       "count": 132,
       "hash": "71e31a6e8a3a91cd"
     },
     "2025-10": {
-      "offset": 24787876,
+      "offset": 25997247,
       "length": 334193,
       "count": 400,
       "hash": "d10fde0a978f7640"
     },
     "2025-09": {
-      "offset": 25122070,
-      "length": 89252,
+      "offset": 26331441,
+      "length": 89337,
       "count": 117,
-      "hash": "a69ca1f686a57fdf"
+      "hash": "549a48feb5c797ae"
     },
     "2025-08": {
-      "offset": 25211323,
+      "offset": 26420779,
       "length": 140125,
       "count": 174,
       "hash": "2d6e91001d03cf5c"
     },
     "2025-07": {
-      "offset": 25351449,
+      "offset": 26560905,
       "length": 145510,
       "count": 157,
       "hash": "a3c6335501a045c5"
     },
     "2025-06": {
-      "offset": 25496960,
-      "length": 124368,
+      "offset": 26706416,
+      "length": 124454,
       "count": 150,
-      "hash": "c67e1902b9389d9e"
+      "hash": "31a3714d49134ceb"
     },
     "2025-05": {
-      "offset": 25621329,
-      "length": 143020,
+      "offset": 26830871,
+      "length": 143063,
       "count": 154,
-      "hash": "7f1e6284ba1ffec6"
+      "hash": "70f56c3d140c767b"
     },
     "2025-04": {
-      "offset": 25764350,
-      "length": 163434,
+      "offset": 26973935,
+      "length": 163563,
       "count": 191,
-      "hash": "6369234a3ac63b12"
+      "hash": "f732afe8c7e8fc36"
     },
     "2025-03": {
-      "offset": 25927785,
-      "length": 61265,
+      "offset": 27137499,
+      "length": 61394,
       "count": 75,
-      "hash": "7f2671a534a68d06"
+      "hash": "40bbf04a91646b7c"
     },
     "2025-02": {
-      "offset": 25989051,
-      "length": 6401,
+      "offset": 27198894,
+      "length": 6444,
       "count": 8,
-      "hash": "16f3c46940db0eba"
+      "hash": "6b43a695ed931113"
     },
     "2025-01": {
-      "offset": 25995453,
+      "offset": 27205339,
       "length": 2689,
       "count": 4,
       "hash": "a4c45e5dc5afcf8a"
     },
     "2024-12": {
-      "offset": 25998143,
+      "offset": 27208029,
       "length": 17436,
       "count": 21,
       "hash": "98c914838cbea244"
     },
     "2024-11": {
-      "offset": 26015580,
+      "offset": 27225466,
       "length": 16534,
       "count": 20,
       "hash": "d9bc32051d408056"
     },
     "2024-10": {
-      "offset": 26032115,
-      "length": 16931,
+      "offset": 27242001,
+      "length": 16974,
       "count": 21,
-      "hash": "c8db536427d7341a"
+      "hash": "12fa0355e9dcda71"
     },
     "2024-09": {
-      "offset": 26049047,
+      "offset": 27258976,
       "length": 13056,
       "count": 15,
       "hash": "297894ac13eabc95"
     },
     "2024-08": {
-      "offset": 26062104,
+      "offset": 27272033,
       "length": 26617,
       "count": 31,
       "hash": "fe9ae6c2cad44b47"
     },
     "2024-07": {
-      "offset": 26088722,
+      "offset": 27298651,
       "length": 14163,
       "count": 20,
       "hash": "fecda5585d489955"
     },
     "2024-06": {
-      "offset": 26102886,
+      "offset": 27312815,
       "length": 20729,
       "count": 26,
       "hash": "e13a40313625f0c5"
     },
     "2024-05": {
-      "offset": 26123616,
+      "offset": 27333545,
       "length": 27742,
       "count": 37,
       "hash": "72dde30c2454c5b6"
     },
     "2024-04": {
-      "offset": 26151359,
+      "offset": 27361288,
       "length": 1162,
       "count": 2,
       "hash": "24d2cd171363a706"
     },
     "2024-03": {
-      "offset": 26152522,
+      "offset": 27362451,
       "length": 1251,
       "count": 1,
       "hash": "6bf40a324184b6b2"
     },
     "2024-01": {
-      "offset": 26153774,
+      "offset": 27363703,
       "length": 644,
       "count": 1,
       "hash": "ee136ba90ce13e92"
     },
     "2023-11": {
-      "offset": 26154419,
+      "offset": 27364348,
       "length": 1213,
       "count": 2,
       "hash": "2437f71cec32d3bf"
     },
     "2023-05": {
-      "offset": 26155633,
+      "offset": 27365562,
       "length": 544,
       "count": 1,
       "hash": "523aa152b3495caa"
     },
     "2023-03": {
-      "offset": 26156178,
+      "offset": 27366107,
       "length": 1650,
       "count": 2,
       "hash": "dbbd9980fc580482"
     },
     "2023-01": {
-      "offset": 26157829,
+      "offset": 27367758,
       "length": 3930,
       "count": 5,
       "hash": "073cfdcdbf6f9a79"
     },
     "2022-12": {
-      "offset": 26161760,
+      "offset": 27371689,
       "length": 1364,
       "count": 2,
       "hash": "1b94a816697b61cd"
     },
     "2022-08": {
-      "offset": 26163125,
+      "offset": 27373054,
       "length": 828,
       "count": 1,
       "hash": "2df0a4c6f81d8a40"
     },
     "2021-11": {
-      "offset": 26163954,
+      "offset": 27373883,
       "length": 600,
       "count": 1,
       "hash": "c3db5267a4c95140"
     },
     "2021-02": {
-      "offset": 26164555,
+      "offset": 27374484,
       "length": 632,
       "count": 1,
       "hash": "5092bffc071d7229"
     },
     "2020-11": {
-      "offset": 26165188,
+      "offset": 27375117,
       "length": 810,
       "count": 1,
       "hash": "27ad616e19603535"
     },
     "2020-02": {
-      "offset": 26165999,
+      "offset": 27375928,
       "length": 555,
       "count": 1,
       "hash": "a4a38481b11b1298"
     },
     "2019-09": {
-      "offset": 26166555,
+      "offset": 27376484,
       "length": 989,
       "count": 1,
       "hash": "7c1b72f32436f3c4"
     },
     "2015-11": {
-      "offset": 26167545,
+      "offset": 27377474,
       "length": 967,
       "count": 1,
       "hash": "23da6e529009a8c8"

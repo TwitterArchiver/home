@@ -2,68 +2,68 @@
   "repo": "AngelMayLies",
   "account": "AngelMayLies",
   "source": "https://twitterarchiver.github.io/AngelMayLies/accounts/AngelMayLies/wayback_snapshots/index.json",
-  "etag": "\"6a9bc4b8-283bdb\"",
-  "bytes": 2636763,
-  "generated": "2026-09-06T10:31:15Z",
+  "etag": "\"6ab809e5-283c4d\"",
+  "bytes": 2636877,
+  "generated": "2026-09-27T11:39:31Z",
   "range": true,
   "total": 3131,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 2193125,
+      "length": 2193239,
       "count": 2602,
-      "hash": "fa5b68276a9c864d"
+      "hash": "fdcc0f7bcd12d5f2"
     },
     "2026-07": {
-      "offset": 2193127,
+      "offset": 2193241,
       "length": 435688,
       "count": 517,
       "hash": "7146db9fd7166c94"
     },
     "2026-06": {
-      "offset": 2628816,
+      "offset": 2628930,
       "length": 2113,
       "count": 3,
       "hash": "194354887bf2eceb"
     },
     "2026-05": {
-      "offset": 2630930,
+      "offset": 2631044,
       "length": 2045,
       "count": 3,
       "hash": "5ce5cca9068f6862"
     },
     "2025-12": {
-      "offset": 2632976,
+      "offset": 2633090,
       "length": 714,
       "count": 1,
       "hash": "696a9b91f8ddeb48"
     },
     "2025-11": {
-      "offset": 2633691,
+      "offset": 2633805,
       "length": 745,
       "count": 1,
       "hash": "6de48c03d1be2ebe"
     },
     "2025-10": {
-      "offset": 2634437,
+      "offset": 2634551,
       "length": 673,
       "count": 1,
       "hash": "f21f6d31a799df85"
     },
     "2025-07": {
-      "offset": 2635111,
+      "offset": 2635225,
       "length": 529,
       "count": 1,
       "hash": "fe1153837818cbc0"
     },
     "2025-06": {
-      "offset": 2635641,
+      "offset": 2635755,
       "length": 529,
       "count": 1,
       "hash": "51687fbbd94e132b"
     },
     "2024-12": {
-      "offset": 2636171,
+      "offset": 2636285,
       "length": 591,
       "count": 1,
       "hash": "40af2fb6a6a1073e"

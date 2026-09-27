@@ -1,0 +1,24 @@
+{
+  "repo": "bungeikuuhakuko",
+  "account": "bungeikuuhakuko",
+  "source": "https://twitterarchiver.github.io/bungeikuuhakuko/accounts/bungeikuuhakuko/wayback_snapshots/index.json",
+  "etag": "\"6ab25b07-19f60\"",
+  "bytes": 106336,
+  "generated": "2026-09-27T11:42:22Z",
+  "range": true,
+  "total": 121,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 102972,
+      "count": 117,
+      "hash": "6e54fe4fedc64062"
+    },
+    "2026-08": {
+      "offset": 102974,
+      "length": 3361,
+      "count": 4,
+      "hash": "13f7ed9ebed1b035"
+    }
+  }
+}

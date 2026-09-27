@@ -1,0 +1,30 @@
+{
+  "repo": "nanahime1cpc",
+  "account": "nanahime1cpc",
+  "source": "https://twitterarchiver.github.io/nanahime1cpc/accounts/nanahime1cpc/wayback_snapshots/index.json",
+  "etag": "\"6ab8dcf2-b0c2c\"",
+  "bytes": 724012,
+  "generated": "2026-09-27T11:43:18Z",
+  "range": true,
+  "total": 868,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 723067,
+      "count": 866,
+      "hash": "62d3b33e49c580fd"
+    },
+    "2026-07": {
+      "offset": 723069,
+      "length": 496,
+      "count": 1,
+      "hash": "f66f4c1fa5cd4162"
+    },
+    "2026-06": {
+      "offset": 723566,
+      "length": 445,
+      "count": 1,
+      "hash": "db4aea90b76a1c40"
+    }
+  }
+}

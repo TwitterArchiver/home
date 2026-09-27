@@ -2,35 +2,47 @@
   "repo": "safrerkv",
   "account": "safrerkv",
   "source": "https://twitterarchiver.github.io/safrerkv/accounts/safrerkv/wayback_snapshots/index.json",
-  "etag": "\"6a953f5f-119391\"",
-  "bytes": 1151889,
-  "generated": "2026-09-06T10:34:19Z",
+  "etag": "\"6ab0e6f6-1d267b\"",
+  "bytes": 1910395,
+  "generated": "2026-09-27T11:43:39Z",
   "range": true,
-  "total": 1468,
+  "total": 2425,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 1059212,
-      "count": 1356,
-      "hash": "294d3d24f2828542"
+      "length": 724632,
+      "count": 917,
+      "hash": "de9eccbd72bb5f57"
+    },
+    "2026-08": {
+      "offset": 724634,
+      "length": 1092615,
+      "count": 1395,
+      "hash": "8992abc35803f478"
     },
     "2026-07": {
-      "offset": 1059214,
+      "offset": 1817250,
       "length": 91117,
       "count": 110,
       "hash": "b49ee8d15024b1d2"
     },
     "2026-02": {
-      "offset": 1150332,
+      "offset": 1908368,
       "length": 1086,
       "count": 1,
       "hash": "9ceec71421fa2407"
     },
     "2023-04": {
-      "offset": 1151419,
+      "offset": 1909455,
       "length": 469,
       "count": 1,
       "hash": "96a8c054d8ae08ce"
+    },
+    "2022-09": {
+      "offset": 1909925,
+      "length": 469,
+      "count": 1,
+      "hash": "8057bf6f655955b2"
     }
   }
 }

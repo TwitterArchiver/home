@@ -2,29 +2,41 @@
   "repo": "7q468438x8964",
   "account": "7q468438x8964",
   "source": "https://twitterarchiver.github.io/7q468438x8964/accounts/7q468438x8964/wayback_snapshots/index.json",
-  "etag": "\"6a9b009c-59e5f\"",
-  "bytes": 368223,
-  "generated": "2026-09-06T10:31:02Z",
+  "etag": "\"6ab6bd2c-6a8a4\"",
+  "bytes": 436388,
+  "generated": "2026-09-27T11:39:15Z",
   "range": true,
-  "total": 456,
+  "total": 536,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 125419,
-      "count": 154,
-      "hash": "53000f83f46744a4"
+      "length": 49211,
+      "count": 60,
+      "hash": "8e1620c58d79122e"
+    },
+    "2026-08": {
+      "offset": 49213,
+      "length": 143888,
+      "count": 173,
+      "hash": "835691c045e4841f"
     },
     "2026-07": {
-      "offset": 125421,
+      "offset": 193102,
       "length": 241401,
       "count": 300,
       "hash": "894bb67b1cec93e3"
     },
     "2026-05": {
-      "offset": 366823,
+      "offset": 434504,
       "length": 1399,
       "count": 2,
       "hash": "f31fd90ace9fe99a"
+    },
+    "2026-03": {
+      "offset": 435904,
+      "length": 483,
+      "count": 1,
+      "hash": "9884b4303f8b8373"
     }
   }
 }

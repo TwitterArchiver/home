@@ -2,74 +2,80 @@
   "repo": "Ahalfhediboy",
   "account": "Ahalfhediboy",
   "source": "https://twitterarchiver.github.io/Ahalfhediboy/accounts/Ahalfhediboy/wayback_snapshots/index.json",
-  "etag": "\"6a9bc106-19af10\"",
-  "bytes": 1683216,
-  "generated": "2026-09-06T10:31:07Z",
+  "etag": "\"6ab77848-19e49b\"",
+  "bytes": 1696923,
+  "generated": "2026-09-27T11:39:22Z",
   "range": true,
-  "total": 2158,
+  "total": 2174,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
-      "length": 171131,
+      "length": 13641,
+      "count": 16,
+      "hash": "01c39ea0e47e92dc"
+    },
+    "2026-08": {
+      "offset": 13643,
+      "length": 171196,
       "count": 203,
-      "hash": "e34a957f70604f13"
+      "hash": "5b50fd484ad4905c"
     },
     "2026-07": {
-      "offset": 171133,
+      "offset": 184840,
       "length": 56164,
       "count": 66,
       "hash": "5417e94c95a0de21"
     },
     "2026-06": {
-      "offset": 227298,
+      "offset": 241005,
       "length": 100585,
       "count": 118,
       "hash": "8eaa5fd7215713b6"
     },
     "2026-05": {
-      "offset": 327884,
+      "offset": 341591,
       "length": 836542,
       "count": 1096,
       "hash": "2788e6032c777942"
     },
     "2026-04": {
-      "offset": 1164427,
+      "offset": 1178134,
       "length": 513092,
       "count": 664,
       "hash": "11a98c9ac5c69ca5"
     },
     "2026-03": {
-      "offset": 1677520,
+      "offset": 1691227,
       "length": 1759,
       "count": 4,
       "hash": "a950e1ea6da28f05"
     },
     "2026-02": {
-      "offset": 1679280,
+      "offset": 1692987,
       "length": 1487,
       "count": 3,
       "hash": "55ed650bbb616e2a"
     },
     "2021-09": {
-      "offset": 1680768,
+      "offset": 1694475,
       "length": 832,
       "count": 1,
       "hash": "5a1275e1b96b6bde"
     },
     "2018-02": {
-      "offset": 1681601,
+      "offset": 1695308,
       "length": 458,
       "count": 1,
       "hash": "ca84425dcfc0b398"
     },
     "2016-04": {
-      "offset": 1682060,
+      "offset": 1695767,
       "length": 474,
       "count": 1,
       "hash": "3d934b6cae113fa0"
     },
     "2010-08": {
-      "offset": 1682535,
+      "offset": 1696242,
       "length": 680,
       "count": 1,
       "hash": "e157f3670d79a320"

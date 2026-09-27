@@ -2,86 +2,92 @@
   "repo": "wwwsgry_",
   "account": "wwwsgry_",
   "source": "https://twitterarchiver.github.io/wwwsgry_/accounts/wwwsgry_/wayback_snapshots/index.json",
-  "etag": "\"6a97d11e-387a2c\"",
-  "bytes": 3701292,
-  "generated": "2026-09-06T10:34:43Z",
+  "etag": "\"6ab38872-397caa\"",
+  "bytes": 3767466,
+  "generated": "2026-09-27T11:44:09Z",
   "range": true,
-  "total": 4963,
+  "total": 5048,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
+      "length": 65911,
+      "count": 85,
+      "hash": "488e52503007746d"
+    },
+    "2026-08": {
+      "offset": 65913,
       "length": 218572,
       "count": 290,
       "hash": "90854dc48eb1dba9"
     },
     "2026-07": {
-      "offset": 218574,
+      "offset": 284486,
       "length": 299995,
       "count": 386,
       "hash": "84e0e38ad03d796e"
     },
     "2026-06": {
-      "offset": 518570,
+      "offset": 584482,
       "length": 296996,
       "count": 390,
       "hash": "8f88e080dcbfb23a"
     },
     "2026-05": {
-      "offset": 815567,
+      "offset": 881479,
       "length": 245613,
       "count": 314,
       "hash": "be3ae326e20530d8"
     },
     "2026-04": {
-      "offset": 1061181,
+      "offset": 1127093,
       "length": 296358,
       "count": 389,
       "hash": "a1f0a988e1c94d2a"
     },
     "2026-03": {
-      "offset": 1357540,
+      "offset": 1423452,
       "length": 127320,
       "count": 181,
       "hash": "dc09da6ccaa7c352"
     },
     "2026-02": {
-      "offset": 1484861,
+      "offset": 1550773,
       "length": 226776,
       "count": 309,
       "hash": "5ccba3f3cbecac95"
     },
     "2026-01": {
-      "offset": 1711638,
+      "offset": 1777550,
       "length": 149117,
       "count": 204,
       "hash": "d6c8a778aa278fdc"
     },
     "2025-12": {
-      "offset": 1860756,
-      "length": 214854,
+      "offset": 1926668,
+      "length": 215116,
       "count": 291,
-      "hash": "3fc92cde9113dd27"
+      "hash": "e13fb4f027cdb4ac"
     },
     "2025-11": {
-      "offset": 2075611,
+      "offset": 2141785,
       "length": 292511,
       "count": 390,
       "hash": "c48edb59cf454427"
     },
     "2025-10": {
-      "offset": 2368123,
+      "offset": 2434297,
       "length": 703776,
       "count": 978,
       "hash": "0f99c1caa7a7dc69"
     },
     "2025-09": {
-      "offset": 3071900,
+      "offset": 3138074,
       "length": 373087,
       "count": 505,
       "hash": "2c828938a78888ba"
     },
     "2025-08": {
-      "offset": 3444988,
+      "offset": 3511162,
       "length": 256303,
       "count": 336,
       "hash": "b39096a064b91df4"
