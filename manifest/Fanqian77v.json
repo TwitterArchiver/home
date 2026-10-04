@@ -2,74 +2,74 @@
   "repo": "Fanqian77v",
   "account": "Fanqian77v",
   "source": "https://twitterarchiver.github.io/Fanqian77v/accounts/Fanqian77v/wayback_snapshots/index.json",
-  "etag": "\"6a9e6b53-141d2b\"",
-  "bytes": 1318187,
-  "generated": "2026-09-13T11:19:46Z",
+  "etag": "\"6abad18a-187a0e\"",
+  "bytes": 1604110,
+  "generated": "2026-10-04T11:57:44Z",
   "range": true,
-  "total": 1582,
+  "total": 1908,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 49591,
-      "count": 47,
-      "hash": "b06112623251c254"
+      "length": 283148,
+      "count": 312,
+      "hash": "339d18f37e9d2a13"
     },
     "2026-08": {
-      "offset": 49593,
-      "length": 270604,
-      "count": 335,
-      "hash": "a72d22a3e789615e"
+      "offset": 283150,
+      "length": 321101,
+      "count": 394,
+      "hash": "b6232e9a266c1faa"
     },
     "2026-07": {
-      "offset": 320198,
-      "length": 609009,
-      "count": 763,
-      "hash": "a12a826ace31a81e"
+      "offset": 604252,
+      "length": 610878,
+      "count": 765,
+      "hash": "e44ffc1c69e99356"
     },
     "2026-06": {
-      "offset": 929208,
+      "offset": 1215131,
       "length": 106636,
       "count": 121,
       "hash": "c103539e20028846"
     },
     "2026-05": {
-      "offset": 1035845,
+      "offset": 1321768,
       "length": 77578,
       "count": 89,
       "hash": "91e6abf733434c79"
     },
     "2026-04": {
-      "offset": 1113424,
+      "offset": 1399347,
       "length": 44206,
       "count": 50,
       "hash": "8040e27439e7279b"
     },
     "2026-03": {
-      "offset": 1157631,
+      "offset": 1443554,
       "length": 89019,
       "count": 101,
       "hash": "4a20b6fbfc3fb2d8"
     },
     "2026-02": {
-      "offset": 1246651,
+      "offset": 1532574,
       "length": 64226,
       "count": 70,
       "hash": "bc7273b4c9406dc8"
     },
     "2025-12": {
-      "offset": 1310878,
+      "offset": 1596801,
       "length": 5063,
       "count": 4,
       "hash": "6f9d2ed6ebe9b823"
     },
     "2025-11": {
-      "offset": 1315942,
+      "offset": 1601865,
       "length": 1147,
       "count": 1,
       "hash": "db64cfd33aeba177"
     },
     "2023-12": {
-      "offset": 1317090,
+      "offset": 1603013,
       "length": 1096,
       "count": 1,
       "hash": "3c28a3599195fe01"

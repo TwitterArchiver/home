@@ -2,44 +2,44 @@
   "repo": "Lomyral896444",
   "account": "Lomyral896444",
   "source": "https://twitterarchiver.github.io/Lomyral896444/accounts/Lomyral896444/wayback_snapshots/index.json",
-  "etag": "\"6aa10b36-1998a2\"",
-  "bytes": 1677474,
-  "generated": "2026-09-13T11:20:15Z",
+  "etag": "\"6abcca30-1a41c1\"",
+  "bytes": 1720769,
+  "generated": "2026-10-04T11:58:13Z",
   "range": true,
-  "total": 2082,
+  "total": 2136,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 16083,
-      "count": 20,
-      "hash": "86c404108e2aeb06"
+      "length": 56390,
+      "count": 70,
+      "hash": "1ea7a20674d64d60"
     },
     "2026-08": {
-      "offset": 16085,
-      "length": 173225,
-      "count": 209,
-      "hash": "2e01cd3245fe4f8b"
+      "offset": 56392,
+      "length": 176213,
+      "count": 213,
+      "hash": "860e76d24679e2f0"
     },
     "2026-07": {
-      "offset": 189311,
+      "offset": 232606,
       "length": 227709,
       "count": 282,
       "hash": "4357f87f1d7d0482"
     },
     "2026-06": {
-      "offset": 417021,
+      "offset": 460316,
       "length": 1258308,
       "count": 1567,
       "hash": "842084019ce07ad6"
     },
     "2026-05": {
-      "offset": 1675330,
+      "offset": 1718625,
       "length": 1604,
       "count": 3,
       "hash": "9b6b42f18b219a7c"
     },
     "2022-04": {
-      "offset": 1676935,
+      "offset": 1720230,
       "length": 538,
       "count": 1,
       "hash": "384497dafb8415ca"

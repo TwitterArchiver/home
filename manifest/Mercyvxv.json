@@ -2,50 +2,50 @@
   "repo": "Mercyvxv",
   "account": "Mercyvxv",
   "source": "https://twitterarchiver.github.io/Mercyvxv/accounts/Mercyvxv/wayback_snapshots/index.json",
-  "etag": "\"6aa19f03-25cedc\"",
-  "bytes": 2477788,
-  "generated": "2026-09-13T11:20:27Z",
+  "etag": "\"6abd6027-2651c2\"",
+  "bytes": 2511298,
+  "generated": "2026-10-04T11:58:26Z",
   "range": true,
-  "total": 3253,
+  "total": 3293,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 2313930,
-      "count": 3049,
-      "hash": "5fdd686d815c3884"
+      "length": 2347440,
+      "count": 3089,
+      "hash": "e8d1fcd5773d6e26"
     },
     "2026-06": {
-      "offset": 2313932,
+      "offset": 2347442,
       "length": 158703,
       "count": 198,
       "hash": "20c307c261a44325"
     },
     "2026-05": {
-      "offset": 2472636,
+      "offset": 2506146,
       "length": 1577,
       "count": 2,
       "hash": "8a5282dd426576c0"
     },
     "2026-04": {
-      "offset": 2474214,
+      "offset": 2507724,
       "length": 582,
       "count": 1,
       "hash": "ef9e44b89aed10cf"
     },
     "2025-07": {
-      "offset": 2474797,
+      "offset": 2508307,
       "length": 701,
       "count": 1,
       "hash": "0ac00d649083e84c"
     },
     "2025-06": {
-      "offset": 2475499,
+      "offset": 2509009,
       "length": 1051,
       "count": 1,
       "hash": "a39ea0dcd1071b3f"
     },
     "2025-03": {
-      "offset": 2476551,
+      "offset": 2510061,
       "length": 1236,
       "count": 1,
       "hash": "5a59219024c76942"

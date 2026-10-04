@@ -2,56 +2,62 @@
   "repo": "Semp1trnal_2345",
   "account": "Semp1trnal_2345",
   "source": "https://twitterarchiver.github.io/Semp1trnal_2345/accounts/Semp1trnal_2345/wayback_snapshots/index.json",
-  "etag": "\"6aa4fe51-37267b\"",
-  "bytes": 3614331,
-  "generated": "2026-09-13T11:21:03Z",
+  "etag": "\"6ac0bc04-3f68c9\"",
+  "bytes": 4155593,
+  "generated": "2026-10-04T11:59:02Z",
   "range": true,
-  "total": 4447,
+  "total": 5108,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 212199,
-      "count": 257,
-      "hash": "7bb3d99ffcae41d3"
+      "length": 30536,
+      "count": 40,
+      "hash": "d2ddbb33db8642e5"
+    },
+    "2026-09": {
+      "offset": 30538,
+      "length": 720090,
+      "count": 874,
+      "hash": "b2aeec062ea1ac6f"
     },
     "2026-08": {
-      "offset": 212201,
-      "length": 561273,
-      "count": 671,
-      "hash": "9cc9de123a58d598"
+      "offset": 750629,
+      "length": 563027,
+      "count": 673,
+      "hash": "3562140afda426bc"
     },
     "2026-07": {
-      "offset": 773475,
-      "length": 662670,
-      "count": 803,
-      "hash": "ac4c6fc781a8527d"
+      "offset": 1313657,
+      "length": 663183,
+      "count": 804,
+      "hash": "25ae0094c6c19690"
     },
     "2026-06": {
-      "offset": 1436146,
+      "offset": 1976841,
       "length": 577784,
       "count": 702,
       "hash": "8d8afb1a1a3a7d5d"
     },
     "2026-05": {
-      "offset": 2013931,
-      "length": 532276,
-      "count": 640,
-      "hash": "7f074c8a10c65214"
+      "offset": 2554626,
+      "length": 532759,
+      "count": 641,
+      "hash": "208bda31541226f0"
     },
     "2026-04": {
-      "offset": 2546208,
+      "offset": 3087386,
       "length": 510529,
       "count": 650,
       "hash": "55c166e779d3a534"
     },
     "2026-03": {
-      "offset": 3056738,
-      "length": 556634,
+      "offset": 3597916,
+      "length": 556718,
       "count": 723,
-      "hash": "92c92eede2f80302"
+      "hash": "8f58bed6798d5705"
     },
     "2025-11": {
-      "offset": 3613373,
+      "offset": 4154635,
       "length": 957,
       "count": 1,
       "hash": "11eb76c78b7124a2"

@@ -2,29 +2,29 @@
   "repo": "Pharmakon14138",
   "account": "Pharmakon14138",
   "source": "https://twitterarchiver.github.io/Pharmakon14138/accounts/Pharmakon14138/wayback_snapshots/index.json",
-  "etag": "\"6aa2ecbf-10c7a\"",
-  "bytes": 68730,
-  "generated": "2026-09-13T11:20:43Z",
+  "etag": "\"6abf6b11-1945d\"",
+  "bytes": 103517,
+  "generated": "2026-10-04T11:58:42Z",
   "range": true,
-  "total": 77,
+  "total": 119,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 20433,
-      "count": 23,
-      "hash": "34013e0803f125e3"
+      "length": 54957,
+      "count": 65,
+      "hash": "3775444c374a336d"
     },
     "2026-08": {
-      "offset": 20435,
+      "offset": 54959,
       "length": 29080,
       "count": 31,
       "hash": "453afbc9ea620e49"
     },
     "2026-07": {
-      "offset": 49516,
-      "length": 19213,
+      "offset": 84040,
+      "length": 19476,
       "count": 23,
-      "hash": "f346dd24053a398a"
+      "hash": "6328a4912fe2f9f7"
     }
   }
 }

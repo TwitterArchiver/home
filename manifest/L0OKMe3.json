@@ -2,29 +2,35 @@
   "repo": "L0OKMe3",
   "account": "L0OKMe3",
   "source": "https://twitterarchiver.github.io/L0OKMe3/accounts/L0OKMe3/wayback_snapshots/index.json",
-  "etag": "\"6aa04bd3-1b302\"",
-  "bytes": 111362,
-  "generated": "2026-09-13T11:20:02Z",
+  "etag": "\"6abc1037-51e9d\"",
+  "bytes": 335517,
+  "generated": "2026-10-04T11:58:02Z",
   "range": true,
-  "total": 118,
+  "total": 373,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 20826,
-      "count": 22,
-      "hash": "3cd091db1c9a5df8"
+      "length": 243807,
+      "count": 275,
+      "hash": "9f39666901144342"
     },
     "2026-08": {
-      "offset": 20828,
+      "offset": 243809,
       "length": 53853,
       "count": 63,
       "hash": "42b3b6326c9c89a5"
     },
     "2026-07": {
-      "offset": 74682,
-      "length": 36679,
-      "count": 33,
-      "hash": "c8db44f7b765231a"
+      "offset": 297663,
+      "length": 37328,
+      "count": 34,
+      "hash": "ae8d7ebf4936fc93"
+    },
+    "2026-04": {
+      "offset": 334992,
+      "length": 524,
+      "count": 1,
+      "hash": "8d6fe7e8b445d0f9"
     }
   }
 }

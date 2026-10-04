@@ -2,62 +2,68 @@
   "repo": "CunZai1069",
   "account": "CunZai1069",
   "source": "https://twitterarchiver.github.io/CunZai1069/accounts/CunZai1069/wayback_snapshots/index.json",
-  "etag": "\"6a9d99b6-1e70f1\"",
-  "bytes": 1994993,
-  "generated": "2026-09-13T11:19:32Z",
+  "etag": "\"6ab95dc6-1f16a9\"",
+  "bytes": 2037417,
+  "generated": "2026-10-04T11:57:34Z",
   "range": true,
-  "total": 2465,
+  "total": 2511,
   "months": {
-    "2026-08": {
+    "2026-09": {
       "offset": 1,
+      "length": 42293,
+      "count": 46,
+      "hash": "0745419030c7e640"
+    },
+    "2026-08": {
+      "offset": 42295,
       "length": 38501,
       "count": 47,
       "hash": "f3182093d5c077fb"
     },
     "2026-07": {
-      "offset": 38503,
+      "offset": 80797,
       "length": 69624,
       "count": 84,
       "hash": "c87e7e5d058d2e61"
     },
     "2026-06": {
-      "offset": 108128,
+      "offset": 150422,
       "length": 312670,
       "count": 369,
       "hash": "2e97b8bcc400bc00"
     },
     "2026-05": {
-      "offset": 420799,
-      "length": 1087728,
+      "offset": 463093,
+      "length": 1087793,
       "count": 1365,
-      "hash": "1665c3ed94bf1c54"
+      "hash": "d6d9d742b5c158f6"
     },
     "2026-04": {
-      "offset": 1508528,
-      "length": 479077,
+      "offset": 1550887,
+      "length": 479142,
       "count": 591,
-      "hash": "b92ef4cce7a6c08b"
+      "hash": "0197132f4cee2b7b"
     },
     "2025-11": {
-      "offset": 1987606,
+      "offset": 2030030,
       "length": 4863,
       "count": 6,
       "hash": "626de38cf8f49148"
     },
     "2025-08": {
-      "offset": 1992470,
+      "offset": 2034894,
       "length": 857,
       "count": 1,
       "hash": "639c108379019e3b"
     },
     "2025-07": {
-      "offset": 1993328,
+      "offset": 2035752,
       "length": 857,
       "count": 1,
       "hash": "9db9d3031c371fd9"
     },
     "2022-06": {
-      "offset": 1994186,
+      "offset": 2036610,
       "length": 806,
       "count": 1,
       "hash": "d867e10692737805"

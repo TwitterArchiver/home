@@ -2,9 +2,9 @@
   "repo": "DrankghostU",
   "account": "DrankghostU",
   "source": "https://twitterarchiver.github.io/DrankghostU/accounts/DrankghostU/wayback_snapshots/index.json",
-  "etag": "\"6a9e6563-15ff07\"",
-  "bytes": 1441543,
-  "generated": "2026-09-13T11:19:41Z",
+  "etag": "\"6aba284d-16000e\"",
+  "bytes": 1441806,
+  "generated": "2026-10-04T11:57:40Z",
   "range": true,
   "total": 1595,
   "months": {
@@ -28,30 +28,30 @@
     },
     "2026-05": {
       "offset": 1090093,
-      "length": 344415,
+      "length": 344678,
       "count": 378,
-      "hash": "558cedf504cfef6b"
+      "hash": "957f72f266a37b48"
     },
     "2026-04": {
-      "offset": 1434509,
+      "offset": 1434772,
       "length": 875,
       "count": 1,
       "hash": "46046dbe409f7921"
     },
     "2026-02": {
-      "offset": 1435385,
+      "offset": 1435648,
       "length": 1297,
       "count": 1,
       "hash": "4c5b56e31deaa456"
     },
     "2025-09": {
-      "offset": 1436683,
+      "offset": 1436946,
       "length": 480,
       "count": 1,
       "hash": "a10acf9986d601ea"
     },
     "2025-05": {
-      "offset": 1437164,
+      "offset": 1437427,
       "length": 4378,
       "count": 4,
       "hash": "2fe3934a85af9fb3"

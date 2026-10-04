@@ -1,0 +1,96 @@
+{
+  "repo": "fcjdfb",
+  "account": "fcjdfb",
+  "source": "https://twitterarchiver.github.io/fcjdfb/accounts/fcjdfb/wayback_snapshots/index.json",
+  "etag": "\"6abe6d9a-2822b2\"",
+  "bytes": 2630322,
+  "generated": "2026-10-04T12:00:19Z",
+  "range": true,
+  "total": 2817,
+  "months": {
+    "2026-09": {
+      "offset": 1,
+      "length": 2221816,
+      "count": 2374,
+      "hash": "c56aeca93e4187e9"
+    },
+    "2026-08": {
+      "offset": 2221818,
+      "length": 2661,
+      "count": 3,
+      "hash": "77e7133221c9534a"
+    },
+    "2026-07": {
+      "offset": 2224480,
+      "length": 601,
+      "count": 1,
+      "hash": "03fca648b87b1a2a"
+    },
+    "2026-06": {
+      "offset": 2225082,
+      "length": 441,
+      "count": 1,
+      "hash": "104aed443f0960e8"
+    },
+    "2026-04": {
+      "offset": 2225524,
+      "length": 149670,
+      "count": 164,
+      "hash": "7d9d6a58ded05318"
+    },
+    "2026-03": {
+      "offset": 2375195,
+      "length": 245744,
+      "count": 265,
+      "hash": "42e462ca54bce7c1"
+    },
+    "2026-02": {
+      "offset": 2620940,
+      "length": 1086,
+      "count": 1,
+      "hash": "a0498bb5cceb6053"
+    },
+    "2026-01": {
+      "offset": 2622027,
+      "length": 1286,
+      "count": 1,
+      "hash": "23231c7ce81e2d39"
+    },
+    "2025-11": {
+      "offset": 2623314,
+      "length": 641,
+      "count": 1,
+      "hash": "ddbf8f2243c5e824"
+    },
+    "2025-10": {
+      "offset": 2623956,
+      "length": 943,
+      "count": 1,
+      "hash": "94ae1e951a53738b"
+    },
+    "2025-09": {
+      "offset": 2624900,
+      "length": 1095,
+      "count": 1,
+      "hash": "069b7258b54409dc"
+    },
+    "2025-06": {
+      "offset": 2625996,
+      "length": 2097,
+      "count": 2,
+      "hash": "a8e3dcba340ab5ec"
+    },
+    "2024-11": {
+      "offset": 2628094,
+      "length": 1054,
+      "count": 1,
+      "hash": "a6f69474f8ac991b"
+    },
+    "2024-10": {
+      "offset": 2629149,
+      "length": 1172,
+      "count": 1,
+      "hash": "bd61416fb46d3951"
+    }
+  }
+}

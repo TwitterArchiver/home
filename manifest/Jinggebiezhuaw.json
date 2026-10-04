@@ -2,9 +2,9 @@
   "repo": "Jinggebiezhuaw",
   "account": "Jinggebiezhuaw",
   "source": "https://twitterarchiver.github.io/Jinggebiezhuaw/accounts/Jinggebiezhuaw/wayback_snapshots/index.json",
-  "etag": "\"6a7e9c55-bdf11\"",
-  "bytes": 778001,
-  "generated": "2026-08-15T04:09:22Z",
+  "etag": "\"6abb7ad5-be017\"",
+  "bytes": 778263,
+  "generated": "2026-10-04T11:57:57Z",
   "range": true,
   "total": 940,
   "months": {
@@ -22,30 +22,30 @@
     },
     "2026-06": {
       "offset": 325973,
-      "length": 136696,
+      "length": 136958,
       "count": 164,
-      "hash": "8abcfc68887fea30"
+      "hash": "25ea1639e130fd6c"
     },
     "2026-05": {
-      "offset": 462670,
+      "offset": 462932,
       "length": 271355,
       "count": 327,
       "hash": "24d4a3561d31cb57"
     },
     "2026-04": {
-      "offset": 734026,
+      "offset": 734288,
       "length": 32628,
       "count": 38,
       "hash": "989228db46f3da4c"
     },
     "2026-03": {
-      "offset": 766655,
+      "offset": 766917,
       "length": 5646,
       "count": 7,
       "hash": "a0ec5d5446c6d362"
     },
     "2026-02": {
-      "offset": 772302,
+      "offset": 772564,
       "length": 5698,
       "count": 7,
       "hash": "e9b09be7be46792d"

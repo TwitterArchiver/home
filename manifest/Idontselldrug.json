@@ -2,119 +2,131 @@
   "repo": "Idontselldrug",
   "account": "Idontselldrug",
   "source": "https://twitterarchiver.github.io/Idontselldrug/accounts/Idontselldrug/wayback_snapshots/index.json",
-  "etag": "\"6a9fbb9d-48a0f5\"",
-  "bytes": 4759797,
-  "generated": "2026-09-13T11:19:56Z",
+  "etag": "\"6abe7806-50b951\"",
+  "bytes": 5290321,
+  "generated": "2026-10-04T11:57:56Z",
   "range": true,
-  "total": 5386,
+  "total": 5988,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 153957,
-      "count": 169,
-      "hash": "7ab0155d0cea291f"
+      "length": 681983,
+      "count": 767,
+      "hash": "184cfe08fdc728c1"
     },
     "2026-08": {
-      "offset": 153959,
-      "length": 699298,
-      "count": 810,
-      "hash": "c143beaaa13c2519"
+      "offset": 681985,
+      "length": 699884,
+      "count": 811,
+      "hash": "cb58ec960bddacc0"
     },
     "2026-07": {
-      "offset": 853258,
-      "length": 498512,
-      "count": 592,
-      "hash": "20cd57f6287c9d10"
+      "offset": 1381870,
+      "length": 499240,
+      "count": 593,
+      "hash": "01cb12fdf0ec9fb0"
     },
     "2026-06": {
-      "offset": 1351771,
+      "offset": 1881111,
       "length": 17879,
       "count": 22,
       "hash": "1f85cfd878832834"
     },
     "2026-05": {
-      "offset": 1369651,
+      "offset": 1898991,
       "length": 400511,
       "count": 426,
       "hash": "aadee23a1a7da807"
     },
     "2026-04": {
-      "offset": 1770163,
+      "offset": 2299503,
       "length": 598151,
       "count": 668,
       "hash": "e814405984879703"
     },
     "2026-03": {
-      "offset": 2368315,
+      "offset": 2897655,
       "length": 547322,
       "count": 629,
       "hash": "6dc1fc5237eb3914"
     },
     "2026-02": {
-      "offset": 2915638,
+      "offset": 3444978,
       "length": 192784,
       "count": 225,
       "hash": "9e695f6bf6e7b2dc"
     },
     "2026-01": {
-      "offset": 3108423,
+      "offset": 3637763,
       "length": 392501,
       "count": 431,
       "hash": "71498a29caba7b7e"
     },
     "2025-12": {
-      "offset": 3500925,
-      "length": 614287,
+      "offset": 4030265,
+      "length": 614416,
       "count": 695,
-      "hash": "2b7356921f517cc8"
+      "hash": "6ef13b59cfa117e7"
     },
     "2025-11": {
-      "offset": 4115213,
-      "length": 640490,
+      "offset": 4644682,
+      "length": 640533,
       "count": 712,
-      "hash": "ede6d10cf85a72b7"
+      "hash": "bacbe0701858ab93"
     },
     "2025-09": {
-      "offset": 4755704,
+      "offset": 5285216,
       "length": 738,
       "count": 1,
       "hash": "5359a56d5fb7b951"
     },
     "2025-08": {
-      "offset": 4756443,
+      "offset": 5285955,
       "length": 659,
       "count": 1,
       "hash": "e2e5bb217fd8b180"
     },
     "2025-05": {
-      "offset": 4757103,
+      "offset": 5286615,
       "length": 497,
       "count": 1,
       "hash": "cc5ac2f70013b5c7"
     },
+    "2024-11": {
+      "offset": 5287113,
+      "length": 542,
+      "count": 1,
+      "hash": "3b0af8375c36a338"
+    },
     "2024-06": {
-      "offset": 4757601,
+      "offset": 5287656,
       "length": 533,
       "count": 1,
       "hash": "a992f4a9e205aabd"
     },
     "2022-11": {
-      "offset": 4758135,
+      "offset": 5288190,
       "length": 630,
       "count": 1,
       "hash": "66a25d2e2889dca2"
     },
     "2022-02": {
-      "offset": 4758766,
+      "offset": 5288821,
       "length": 551,
       "count": 1,
       "hash": "ff2495c5bdc403bd"
     },
     "2019-03": {
-      "offset": 4759318,
+      "offset": 5289373,
       "length": 478,
       "count": 1,
       "hash": "7dd117699c053403"
+    },
+    "2017-01": {
+      "offset": 5289852,
+      "length": 468,
+      "count": 1,
+      "hash": "d3530dd80d276ac0"
     }
   }
 }

@@ -2,62 +2,68 @@
   "repo": "Oz_Garlandd",
   "account": "Oz_Garlandd",
   "source": "https://twitterarchiver.github.io/Oz_Garlandd/accounts/Oz_Garlandd/wayback_snapshots/index.json",
-  "etag": "\"6aa2f402-448fe0\"",
-  "bytes": 4493280,
-  "generated": "2026-09-13T11:20:44Z",
+  "etag": "\"6abf6f28-45cc91\"",
+  "bytes": 4574353,
+  "generated": "2026-10-04T11:58:44Z",
   "range": true,
-  "total": 5252,
+  "total": 5338,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 28586,
-      "count": 30,
-      "hash": "a189a86670a22588"
+      "length": 108938,
+      "count": 115,
+      "hash": "18134a03853f9675"
     },
     "2026-08": {
-      "offset": 28588,
-      "length": 299071,
+      "offset": 108940,
+      "length": 299202,
       "count": 326,
-      "hash": "8d8ea6a0d52ebfe4"
+      "hash": "2d43d9b535d71641"
     },
     "2026-07": {
-      "offset": 327660,
+      "offset": 408143,
       "length": 508263,
       "count": 564,
       "hash": "ac452fd8f210fab2"
     },
     "2026-06": {
-      "offset": 835924,
+      "offset": 916407,
       "length": 939850,
       "count": 1105,
       "hash": "11d25c7ac6694bb4"
     },
     "2026-05": {
-      "offset": 1775775,
-      "length": 1366332,
+      "offset": 1856258,
+      "length": 1366397,
       "count": 1614,
-      "hash": "36694132006fd08b"
+      "hash": "8f35697b42157134"
     },
     "2026-04": {
-      "offset": 3142108,
+      "offset": 3222656,
       "length": 859909,
       "count": 1010,
       "hash": "4026f8004c64a55e"
     },
     "2026-03": {
-      "offset": 4002018,
+      "offset": 4082566,
       "length": 489056,
       "count": 600,
       "hash": "c0326eaadb610218"
     },
     "2026-02": {
-      "offset": 4491075,
+      "offset": 4571623,
       "length": 1725,
       "count": 2,
       "hash": "0e7a81cc2b864ccd"
     },
+    "2024-09": {
+      "offset": 4573349,
+      "length": 524,
+      "count": 1,
+      "hash": "4e56ccbf1e99eeb6"
+    },
     "2023-01": {
-      "offset": 4492801,
+      "offset": 4573874,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

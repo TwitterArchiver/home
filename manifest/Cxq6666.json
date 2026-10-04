@@ -2,56 +2,56 @@
   "repo": "Cxq6666",
   "account": "Cxq6666",
   "source": "https://twitterarchiver.github.io/Cxq6666/accounts/Cxq6666/wayback_snapshots/index.json",
-  "etag": "\"6a9d9a4c-1696c9\"",
-  "bytes": 1480393,
-  "generated": "2026-09-13T11:19:32Z",
+  "etag": "\"6ab95e0e-17ad15\"",
+  "bytes": 1551637,
+  "generated": "2026-10-04T11:57:32Z",
   "range": true,
-  "total": 1789,
+  "total": 1874,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 51850,
-      "count": 54,
-      "hash": "aaf1b1ef49e12dca"
+      "length": 123094,
+      "count": 139,
+      "hash": "45ddca66f1efde7f"
     },
     "2026-08": {
-      "offset": 51852,
+      "offset": 123096,
       "length": 577475,
       "count": 679,
       "hash": "27cfd69ef9e57e2c"
     },
     "2026-07": {
-      "offset": 629328,
+      "offset": 700572,
       "length": 723444,
       "count": 897,
       "hash": "6199cf12a4e82002"
     },
     "2026-06": {
-      "offset": 1352773,
+      "offset": 1424017,
       "length": 124177,
       "count": 154,
       "hash": "56acb56fe0665c31"
     },
     "2026-05": {
-      "offset": 1476951,
+      "offset": 1548195,
       "length": 832,
       "count": 1,
       "hash": "196a3fa9ee88cf3d"
     },
     "2026-04": {
-      "offset": 1477784,
+      "offset": 1549028,
       "length": 693,
       "count": 1,
       "hash": "96d8207ef1e4fea7"
     },
     "2025-12": {
-      "offset": 1478478,
+      "offset": 1549722,
       "length": 714,
       "count": 1,
       "hash": "696a9b91f8ddeb48"
     },
     "2025-06": {
-      "offset": 1479193,
+      "offset": 1550437,
       "length": 1199,
       "count": 2,
       "hash": "559148f2074f17a4"

@@ -2,38 +2,38 @@
   "repo": "Makima_0411",
   "account": "Makima_0411",
   "source": "https://twitterarchiver.github.io/Makima_0411/accounts/Makima_0411/wayback_snapshots/index.json",
-  "etag": "\"6aa19aa4-14688f\"",
-  "bytes": 1337487,
-  "generated": "2026-09-13T11:20:24Z",
+  "etag": "\"6abe7808-1f5d52\"",
+  "bytes": 2055506,
+  "generated": "2026-10-04T11:58:25Z",
   "range": true,
-  "total": 1593,
+  "total": 2504,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 436410,
-      "count": 522,
-      "hash": "fa337bc358e589fc"
+      "length": 1154429,
+      "count": 1433,
+      "hash": "17e55b4afcc4eda1"
     },
     "2026-08": {
-      "offset": 436412,
+      "offset": 1154431,
       "length": 898780,
       "count": 1068,
       "hash": "c9aa964b96ce7f1e"
     },
     "2026-06": {
-      "offset": 1335193,
+      "offset": 2053212,
       "length": 1091,
       "count": 1,
       "hash": "0b02e5755fafdd38"
     },
     "2026-05": {
-      "offset": 1336285,
+      "offset": 2054304,
       "length": 737,
       "count": 1,
       "hash": "01837208ee6d33f6"
     },
     "2025-10": {
-      "offset": 1337023,
+      "offset": 2055042,
       "length": 463,
       "count": 1,
       "hash": "80966665c9e4e558"

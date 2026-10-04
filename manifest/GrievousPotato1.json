@@ -2,74 +2,74 @@
   "repo": "GrievousPotato1",
   "account": "GrievousPotato1",
   "source": "https://twitterarchiver.github.io/GrievousPotato1/accounts/GrievousPotato1/wayback_snapshots/index.json",
-  "etag": "\"6a9f0871-298224\"",
-  "bytes": 2720292,
-  "generated": "2026-09-13T11:19:49Z",
+  "etag": "\"6abe779e-3087f3\"",
+  "bytes": 3180531,
+  "generated": "2026-10-04T11:57:49Z",
   "range": true,
-  "total": 2846,
+  "total": 3334,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 151277,
-      "count": 150,
-      "hash": "dd663db923c24a3f"
+      "length": 609493,
+      "count": 636,
+      "hash": "015861bbd531923c"
     },
     "2026-08": {
-      "offset": 151279,
-      "length": 728338,
+      "offset": 609495,
+      "length": 728403,
       "count": 749,
-      "hash": "24667619b118e2d5"
+      "hash": "090d290eb8166783"
     },
     "2026-07": {
-      "offset": 879618,
+      "offset": 1337899,
       "length": 937468,
       "count": 1006,
       "hash": "38f300b4580e4ab4"
     },
     "2026-06": {
-      "offset": 1817087,
-      "length": 788836,
-      "count": 819,
-      "hash": "9815d5a5bdf639bb"
+      "offset": 2275368,
+      "length": 789500,
+      "count": 820,
+      "hash": "648062e2454fc1b6"
     },
     "2026-05": {
-      "offset": 2605924,
+      "offset": 3064869,
       "length": 107488,
       "count": 114,
       "hash": "2e002636fbb97de1"
     },
     "2026-04": {
-      "offset": 2713413,
-      "length": 1418,
-      "count": 2,
-      "hash": "bb9eca92d47a0495"
+      "offset": 3172358,
+      "length": 2712,
+      "count": 3,
+      "hash": "0e10ac275d9fc80c"
     },
     "2025-12": {
-      "offset": 2714832,
+      "offset": 3175071,
       "length": 1299,
       "count": 1,
       "hash": "122adfef39b369f8"
     },
     "2025-06": {
-      "offset": 2716132,
+      "offset": 3176371,
       "length": 1796,
       "count": 2,
       "hash": "935aa3b4ae5123a2"
     },
     "2025-02": {
-      "offset": 2717929,
+      "offset": 3178168,
       "length": 1332,
       "count": 1,
       "hash": "fc69c5f3f40e1986"
     },
     "2024-12": {
-      "offset": 2719262,
+      "offset": 3179501,
       "length": 452,
       "count": 1,
       "hash": "281b8ce12a335ecd"
     },
     "2023-10": {
-      "offset": 2719715,
+      "offset": 3179954,
       "length": 576,
       "count": 1,
       "hash": "22f646ee3565c967"

@@ -2,9 +2,9 @@
   "repo": "Nailaocaijiao",
   "account": "Nailaocaijiao",
   "source": "https://twitterarchiver.github.io/Nailaocaijiao/accounts/Nailaocaijiao/wayback_snapshots/index.json",
-  "etag": "\"6aa25c92-79953\"",
-  "bytes": 498003,
-  "generated": "2026-09-13T11:20:37Z",
+  "etag": "\"6abeb370-79994\"",
+  "bytes": 498068,
+  "generated": "2026-10-04T11:58:35Z",
   "range": true,
   "total": 556,
   "months": {
@@ -34,60 +34,60 @@
     },
     "2026-05": {
       "offset": 111693,
-      "length": 51055,
+      "length": 51120,
       "count": 65,
-      "hash": "870fb11d5f096351"
+      "hash": "f98935dfe93f5e09"
     },
     "2026-04": {
-      "offset": 162749,
+      "offset": 162814,
       "length": 36535,
       "count": 40,
       "hash": "1e8b7d2fedcd08f2"
     },
     "2026-03": {
-      "offset": 199285,
+      "offset": 199350,
       "length": 85379,
       "count": 87,
       "hash": "581d2abf2e09d699"
     },
     "2026-02": {
-      "offset": 284665,
+      "offset": 284730,
       "length": 56184,
       "count": 62,
       "hash": "7761cc9814b1ef38"
     },
     "2026-01": {
-      "offset": 340850,
+      "offset": 340915,
       "length": 31443,
       "count": 38,
       "hash": "ad695aed15304961"
     },
     "2025-12": {
-      "offset": 372294,
+      "offset": 372359,
       "length": 101926,
       "count": 115,
       "hash": "c26b1ecdb98ece83"
     },
     "2025-11": {
-      "offset": 474221,
+      "offset": 474286,
       "length": 21319,
       "count": 27,
       "hash": "5b97961ed56c7911"
     },
     "2025-07": {
-      "offset": 495541,
+      "offset": 495606,
       "length": 1310,
       "count": 1,
       "hash": "41f96efe03157f3e"
     },
     "2024-10": {
-      "offset": 496852,
+      "offset": 496917,
       "length": 697,
       "count": 1,
       "hash": "28cd41658c59579e"
     },
     "2024-03": {
-      "offset": 497550,
+      "offset": 497615,
       "length": 452,
       "count": 1,
       "hash": "212b2c0b7f1be180"

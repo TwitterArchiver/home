@@ -2,32 +2,32 @@
   "repo": "Dreemurr_MiKi",
   "account": "Dreemurr_MiKi",
   "source": "https://twitterarchiver.github.io/Dreemurr_MiKi/accounts/Dreemurr_MiKi/wayback_snapshots/index.json",
-  "etag": "\"6a9e6518-ba01\"",
-  "bytes": 47617,
-  "generated": "2026-09-13T11:19:41Z",
+  "etag": "\"6aba2818-f0ee\"",
+  "bytes": 61678,
+  "generated": "2026-10-04T11:57:40Z",
   "range": true,
-  "total": 52,
+  "total": 68,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 3576,
-      "count": 4,
-      "hash": "3bb910f03c1d411f"
+      "length": 16778,
+      "count": 19,
+      "hash": "9f7f8f78dd7387d5"
     },
     "2026-08": {
-      "offset": 3578,
-      "length": 25235,
-      "count": 26,
-      "hash": "a8e44749ad5c3789"
+      "offset": 16780,
+      "length": 26094,
+      "count": 27,
+      "hash": "a1c7f28c6e479803"
     },
     "2026-07": {
-      "offset": 28814,
+      "offset": 42875,
       "length": 17518,
       "count": 21,
       "hash": "6f82853f803fe6f7"
     },
     "2026-05": {
-      "offset": 46333,
+      "offset": 60394,
       "length": 1283,
       "count": 1,
       "hash": "ff8ea6e268cd8655"
