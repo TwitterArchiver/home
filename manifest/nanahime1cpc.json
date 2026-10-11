@@ -2,29 +2,47 @@
   "repo": "nanahime1cpc",
   "account": "nanahime1cpc",
   "source": "https://twitterarchiver.github.io/nanahime1cpc/accounts/nanahime1cpc/wayback_snapshots/index.json",
-  "etag": "\"6ab8dcf2-b0c2c\"",
-  "bytes": 724012,
-  "generated": "2026-09-27T11:43:18Z",
+  "etag": "\"6acb4f53-124a87\"",
+  "bytes": 1198727,
+  "generated": "2026-10-11T12:28:48Z",
   "range": true,
-  "total": 868,
+  "total": 1450,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 723067,
-      "count": 866,
-      "hash": "62d3b33e49c580fd"
+      "length": 296519,
+      "count": 363,
+      "hash": "bca4ab7f6c73e593"
+    },
+    "2026-09": {
+      "offset": 296521,
+      "length": 899771,
+      "count": 1083,
+      "hash": "d19a8b81fd355c46"
     },
     "2026-07": {
-      "offset": 723069,
+      "offset": 1196293,
       "length": 496,
       "count": 1,
       "hash": "f66f4c1fa5cd4162"
     },
     "2026-06": {
-      "offset": 723566,
+      "offset": 1196790,
       "length": 445,
       "count": 1,
       "hash": "db4aea90b76a1c40"
+    },
+    "2026-04": {
+      "offset": 1197236,
+      "length": 470,
+      "count": 1,
+      "hash": "d5a40930d976f5b6"
+    },
+    "2026-01": {
+      "offset": 1197707,
+      "length": 1019,
+      "count": 1,
+      "hash": "628e9d935020b60f"
     }
   }
 }

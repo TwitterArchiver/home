@@ -2,62 +2,68 @@
   "repo": "mofuwo8964",
   "account": "mofuwo8964",
   "source": "https://twitterarchiver.github.io/mofuwo8964/accounts/mofuwo8964/wayback_snapshots/index.json",
-  "etag": "\"6aaec658-2da571\"",
-  "bytes": 2991473,
-  "generated": "2026-09-20T10:56:17Z",
+  "etag": "\"6acb4f37-2f05c1\"",
+  "bytes": 3081665,
+  "generated": "2026-10-11T12:28:47Z",
   "range": true,
-  "total": 3311,
+  "total": 3408,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 46035,
-      "count": 50,
-      "hash": "bc37316394d25e99"
+      "length": 30444,
+      "count": 32,
+      "hash": "0eee632de58d5d7e"
+    },
+    "2026-09": {
+      "offset": 30446,
+      "length": 105782,
+      "count": 115,
+      "hash": "cab14322a3131562"
     },
     "2026-08": {
-      "offset": 46037,
+      "offset": 136229,
       "length": 240638,
       "count": 279,
       "hash": "5d05cd08b904e4d7"
     },
     "2026-07": {
-      "offset": 286676,
+      "offset": 376868,
       "length": 131528,
       "count": 137,
       "hash": "128d7b4738fc9b24"
     },
     "2026-06": {
-      "offset": 418205,
+      "offset": 508397,
       "length": 995631,
       "count": 1148,
       "hash": "9c939634b342df45"
     },
     "2026-05": {
-      "offset": 1413837,
+      "offset": 1504029,
       "length": 387926,
       "count": 422,
       "hash": "8708a96fe233412e"
     },
     "2026-04": {
-      "offset": 1801764,
+      "offset": 1891956,
       "length": 465650,
       "count": 505,
       "hash": "7868bc79eecdf439"
     },
     "2026-03": {
-      "offset": 2267415,
+      "offset": 2357607,
       "length": 673835,
       "count": 711,
       "hash": "531c0f617bfb299b"
     },
     "2026-02": {
-      "offset": 2941251,
+      "offset": 3031443,
       "length": 49749,
       "count": 58,
       "hash": "9f1a978950769bb7"
     },
     "2025-10": {
-      "offset": 2991001,
+      "offset": 3081193,
       "length": 471,
       "count": 1,
       "hash": "b5412d836639528e"

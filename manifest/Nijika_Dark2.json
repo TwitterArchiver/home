@@ -2,68 +2,74 @@
   "repo": "Nijika_Dark2",
   "account": "Nijika_Dark2",
   "source": "https://twitterarchiver.github.io/Nijika_Dark2/accounts/Nijika_Dark2/wayback_snapshots/index.json",
-  "etag": "\"6abeb422-101983\"",
-  "bytes": 1055107,
-  "generated": "2026-10-04T11:58:38Z",
+  "etag": "\"6ac5fd02-10c2df\"",
+  "bytes": 1098463,
+  "generated": "2026-10-11T12:27:28Z",
   "range": true,
-  "total": 1218,
+  "total": 1272,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 555602,
-      "count": 618,
-      "hash": "54a108fe99327af6"
+      "length": 37449,
+      "count": 45,
+      "hash": "ce6b7164370284b0"
+    },
+    "2026-09": {
+      "offset": 37451,
+      "length": 561508,
+      "count": 627,
+      "hash": "677be4476c84f0b2"
     },
     "2026-08": {
-      "offset": 555604,
+      "offset": 598960,
       "length": 269741,
       "count": 323,
       "hash": "3f4dd2d1f43d912c"
     },
     "2026-07": {
-      "offset": 825346,
+      "offset": 868702,
       "length": 115869,
       "count": 142,
       "hash": "aa88d16806bf52fe"
     },
     "2026-06": {
-      "offset": 941216,
+      "offset": 984572,
       "length": 109651,
       "count": 129,
       "hash": "2e5b742b63368244"
     },
     "2026-05": {
-      "offset": 1050868,
+      "offset": 1094224,
       "length": 593,
       "count": 1,
       "hash": "1f7207d5c6e97c88"
     },
     "2026-03": {
-      "offset": 1051462,
+      "offset": 1094818,
       "length": 1009,
       "count": 1,
       "hash": "248113b7282fbe84"
     },
     "2026-01": {
-      "offset": 1052472,
+      "offset": 1095828,
       "length": 1019,
       "count": 1,
       "hash": "628e9d935020b60f"
     },
     "2025-05": {
-      "offset": 1053492,
+      "offset": 1096848,
       "length": 489,
       "count": 1,
       "hash": "860764c4e1f6aca3"
     },
     "2023-12": {
-      "offset": 1053982,
+      "offset": 1097338,
       "length": 645,
       "count": 1,
       "hash": "c2cb2df11f286f7a"
     },
     "2023-01": {
-      "offset": 1054628,
+      "offset": 1097984,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

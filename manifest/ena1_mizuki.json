@@ -2,9 +2,9 @@
   "repo": "ena1_mizuki",
   "account": "ena1_mizuki",
   "source": "https://twitterarchiver.github.io/ena1_mizuki/accounts/ena1_mizuki/wayback_snapshots/index.json",
-  "etag": "\"6aaae6ba-8134c4\"",
-  "bytes": 8467652,
-  "generated": "2026-09-20T10:55:50Z",
+  "etag": "\"6ac76244-81359a\"",
+  "bytes": 8467866,
+  "generated": "2026-10-11T12:28:29Z",
   "range": true,
   "total": 10622,
   "months": {
@@ -52,54 +52,54 @@
     },
     "2026-01": {
       "offset": 4552294,
-      "length": 1595936,
+      "length": 1596108,
       "count": 1987,
-      "hash": "1b60072be4e7993c"
+      "hash": "d34a13729e7c052f"
     },
     "2025-12": {
-      "offset": 6148231,
-      "length": 1305247,
+      "offset": 6148403,
+      "length": 1305289,
       "count": 1692,
-      "hash": "75c0cd4d7f2d1eb3"
+      "hash": "e9cf0a9fa2df2675"
     },
     "2025-11": {
-      "offset": 7453479,
+      "offset": 7453693,
       "length": 359268,
       "count": 440,
       "hash": "0b5638c1f6be704f"
     },
     "2025-10": {
-      "offset": 7812748,
+      "offset": 7812962,
       "length": 196193,
       "count": 246,
       "hash": "b1be84014a66cac9"
     },
     "2025-09": {
-      "offset": 8008942,
+      "offset": 8009156,
       "length": 204456,
       "count": 268,
       "hash": "6c3c5354bbc32a2d"
     },
     "2025-08": {
-      "offset": 8213399,
+      "offset": 8213613,
       "length": 180270,
       "count": 217,
       "hash": "1c7f753ecee51a35"
     },
     "2025-07": {
-      "offset": 8393670,
+      "offset": 8393884,
       "length": 33311,
       "count": 35,
       "hash": "d059347c2358bac5"
     },
     "2025-06": {
-      "offset": 8426982,
+      "offset": 8427196,
       "length": 39761,
       "count": 44,
       "hash": "8252875ed20c8028"
     },
     "2024-08": {
-      "offset": 8466744,
+      "offset": 8466958,
       "length": 907,
       "count": 1,
       "hash": "43d069920174af5e"

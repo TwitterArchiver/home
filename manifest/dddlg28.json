@@ -2,68 +2,74 @@
   "repo": "dddlg28",
   "account": "dddlg28",
   "source": "https://twitterarchiver.github.io/dddlg28/accounts/dddlg28/wayback_snapshots/index.json",
-  "etag": "\"6aaadb02-31b17\"",
-  "bytes": 203543,
-  "generated": "2026-09-20T10:55:44Z",
+  "etag": "\"6ac6a56e-41467\"",
+  "bytes": 267367,
+  "generated": "2026-10-11T12:28:24Z",
   "range": true,
-  "total": 264,
+  "total": 342,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 27612,
-      "count": 30,
-      "hash": "68cfa1a727560ab3"
+      "length": 9171,
+      "count": 10,
+      "hash": "d81dfff9a2e2b735"
+    },
+    "2026-09": {
+      "offset": 9173,
+      "length": 82264,
+      "count": 98,
+      "hash": "82042160971ed4d0"
     },
     "2026-08": {
-      "offset": 27614,
+      "offset": 91438,
       "length": 7403,
       "count": 9,
       "hash": "9eee0c32b986a209"
     },
     "2026-07": {
-      "offset": 35018,
+      "offset": 98842,
       "length": 11415,
       "count": 15,
       "hash": "4eb375b58ee7ce7c"
     },
     "2026-05": {
-      "offset": 46434,
+      "offset": 110258,
       "length": 24561,
       "count": 32,
       "hash": "52ed837707ff2eb9"
     },
     "2026-04": {
-      "offset": 70996,
+      "offset": 134820,
       "length": 43130,
       "count": 56,
       "hash": "a3e918783bf02c28"
     },
     "2026-03": {
-      "offset": 114127,
+      "offset": 177951,
       "length": 86204,
       "count": 117,
       "hash": "ce13ca7d97d59bb9"
     },
     "2026-02": {
-      "offset": 200332,
+      "offset": 264156,
       "length": 1135,
       "count": 2,
       "hash": "d950ff917d25e1e1"
     },
     "2025-12": {
-      "offset": 201468,
+      "offset": 265292,
       "length": 524,
       "count": 1,
       "hash": "beb9ced87d92c13b"
     },
     "2025-11": {
-      "offset": 201993,
+      "offset": 265817,
       "length": 1018,
       "count": 1,
       "hash": "5cb868cdbc01913a"
     },
     "2025-08": {
-      "offset": 203012,
+      "offset": 266836,
       "length": 530,
       "count": 1,
       "hash": "a12e6387c7da4239"

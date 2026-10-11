@@ -2,9 +2,9 @@
   "repo": "kurage2333",
   "account": "kurage2333",
   "source": "https://twitterarchiver.github.io/kurage2333/accounts/kurage2333/wayback_snapshots/index.json",
-  "etag": "\"6a921d63-1b53bf\"",
-  "bytes": 1790911,
-  "generated": "2026-08-29T01:25:24Z",
+  "etag": "\"6ac9f8d7-1b53ea\"",
+  "bytes": 1790954,
+  "generated": "2026-10-11T12:28:39Z",
   "range": true,
   "total": 2346,
   "months": {
@@ -34,42 +34,42 @@
     },
     "2026-04": {
       "offset": 772707,
-      "length": 683516,
+      "length": 683559,
       "count": 924,
-      "hash": "752314e00483ccf1"
+      "hash": "7475d5680a909594"
     },
     "2026-03": {
-      "offset": 1456224,
+      "offset": 1456267,
       "length": 219353,
       "count": 281,
       "hash": "af50ebf14fba848a"
     },
     "2026-02": {
-      "offset": 1675578,
+      "offset": 1675621,
       "length": 14165,
       "count": 18,
       "hash": "58abb11380ba3ace"
     },
     "2026-01": {
-      "offset": 1689744,
+      "offset": 1689787,
       "length": 90498,
       "count": 119,
       "hash": "dee2bb03dad986ca"
     },
     "2025-11": {
-      "offset": 1780243,
+      "offset": 1780286,
       "length": 9096,
       "count": 9,
       "hash": "9d56d0e36488965b"
     },
     "2025-08": {
-      "offset": 1789340,
+      "offset": 1789383,
       "length": 954,
       "count": 1,
       "hash": "71f5c30a6928d107"
     },
     "2024-02": {
-      "offset": 1790295,
+      "offset": 1790338,
       "length": 615,
       "count": 1,
       "hash": "9464f165c1a72946"

@@ -2,9 +2,9 @@
   "repo": "damniwokeup",
   "account": "damniwokeup",
   "source": "https://twitterarchiver.github.io/damniwokeup/accounts/damniwokeup/wayback_snapshots/index.json",
-  "etag": "\"6aaadda8-1b7f34\"",
-  "bytes": 1802036,
-  "generated": "2026-09-20T10:55:44Z",
+  "etag": "\"6ac6a81f-1b7f88\"",
+  "bytes": 1802120,
+  "generated": "2026-10-11T12:28:24Z",
   "range": true,
   "total": 2228,
   "months": {
@@ -88,78 +88,78 @@
     },
     "2024-12": {
       "offset": 506167,
-      "length": 664348,
+      "length": 664432,
       "count": 825,
-      "hash": "f91af12c02af530c"
+      "hash": "ab4dce37d2ab8ea6"
     },
     "2024-11": {
-      "offset": 1170516,
+      "offset": 1170600,
       "length": 570334,
       "count": 737,
       "hash": "2e5f6fa8880eeee3"
     },
     "2024-10": {
-      "offset": 1740851,
+      "offset": 1740935,
       "length": 52545,
       "count": 64,
       "hash": "bbfc52f868da57d0"
     },
     "2024-08": {
-      "offset": 1793397,
+      "offset": 1793481,
       "length": 1224,
       "count": 1,
       "hash": "3943c88ef75e725b"
     },
     "2024-07": {
-      "offset": 1794622,
+      "offset": 1794706,
       "length": 858,
       "count": 2,
       "hash": "2b387abf1323257b"
     },
     "2024-06": {
-      "offset": 1795481,
+      "offset": 1795565,
       "length": 1930,
       "count": 4,
       "hash": "97d351ba12b61829"
     },
     "2024-05": {
-      "offset": 1797412,
+      "offset": 1797496,
       "length": 465,
       "count": 1,
       "hash": "d10372982f8b4693"
     },
     "2024-04": {
-      "offset": 1797878,
+      "offset": 1797962,
       "length": 1101,
       "count": 2,
       "hash": "83e408e691d565a2"
     },
     "2024-02": {
-      "offset": 1798980,
+      "offset": 1799064,
       "length": 965,
       "count": 2,
       "hash": "e59c3a95c7d04645"
     },
     "2023-12": {
-      "offset": 1799946,
+      "offset": 1800030,
       "length": 478,
       "count": 1,
       "hash": "2359751d6b3574bb"
     },
     "2023-10": {
-      "offset": 1800425,
+      "offset": 1800509,
       "length": 521,
       "count": 1,
       "hash": "448f05e54b9091a2"
     },
     "2023-08": {
-      "offset": 1800947,
+      "offset": 1801031,
       "length": 447,
       "count": 1,
       "hash": "677cd2613a665e1b"
     },
     "2023-03": {
-      "offset": 1801395,
+      "offset": 1801479,
       "length": 640,
       "count": 1,
       "hash": "6215a79e408acbb1"

@@ -2,68 +2,74 @@
   "repo": "careforme123",
   "account": "careforme123",
   "source": "https://twitterarchiver.github.io/careforme123/accounts/careforme123/wayback_snapshots/index.json",
-  "etag": "\"6aaa4a6c-25c9b0\"",
-  "bytes": 2476464,
-  "generated": "2026-09-20T10:55:38Z",
+  "etag": "\"6ac60915-2729ce\"",
+  "bytes": 2566606,
+  "generated": "2026-10-11T12:28:19Z",
   "range": true,
-  "total": 2576,
+  "total": 2671,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 22006,
-      "count": 23,
-      "hash": "d76763a7f1b7f88b"
+      "length": 12433,
+      "count": 12,
+      "hash": "9ea0a124ec95191e"
+    },
+    "2026-09": {
+      "offset": 12435,
+      "length": 99671,
+      "count": 106,
+      "hash": "127ea1731648d1d7"
     },
     "2026-08": {
-      "offset": 22008,
+      "offset": 112107,
       "length": 160244,
       "count": 166,
       "hash": "a3a02681c69654cd"
     },
     "2026-07": {
-      "offset": 182253,
+      "offset": 272352,
       "length": 204662,
       "count": 198,
       "hash": "8c044b91f505a8d7"
     },
     "2026-06": {
-      "offset": 386916,
+      "offset": 477015,
       "length": 646655,
       "count": 653,
       "hash": "6e24c37802e6f609"
     },
     "2026-05": {
-      "offset": 1033572,
-      "length": 1340202,
+      "offset": 1123671,
+      "length": 1340245,
       "count": 1411,
-      "hash": "ab6fd413f45ddb4d"
+      "hash": "5fc108d5b690bf13"
     },
     "2026-04": {
-      "offset": 2373775,
+      "offset": 2463917,
       "length": 100126,
       "count": 121,
       "hash": "1a06954fb6ae3356"
     },
     "2026-02": {
-      "offset": 2473902,
+      "offset": 2564044,
       "length": 627,
       "count": 1,
       "hash": "73c253873d90d235"
     },
     "2026-01": {
-      "offset": 2474530,
+      "offset": 2564672,
       "length": 460,
       "count": 1,
       "hash": "b0eb0439253b8cac"
     },
     "2025-11": {
-      "offset": 2474991,
+      "offset": 2565133,
       "length": 461,
       "count": 1,
       "hash": "ed9d42ec0f8979b4"
     },
     "2024-10": {
-      "offset": 2475453,
+      "offset": 2565595,
       "length": 1010,
       "count": 1,
       "hash": "b51697dd8956328f"

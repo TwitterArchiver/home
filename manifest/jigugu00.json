@@ -2,53 +2,65 @@
   "repo": "jigugu00",
   "account": "jigugu00",
   "source": "https://twitterarchiver.github.io/jigugu00/accounts/jigugu00/wayback_snapshots/index.json",
-  "etag": "\"6aace806-b2e32\"",
-  "bytes": 732722,
-  "generated": "2026-09-20T10:56:02Z",
+  "etag": "\"6ac93f95-145e72\"",
+  "bytes": 1334898,
+  "generated": "2026-10-11T12:28:36Z",
   "range": true,
-  "total": 810,
+  "total": 1472,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 216478,
-      "count": 228,
-      "hash": "ebfb9f8d819d8321"
+      "length": 360379,
+      "count": 388,
+      "hash": "762cf04ca050e822"
+    },
+    "2026-09": {
+      "offset": 360381,
+      "length": 455550,
+      "count": 499,
+      "hash": "e72a62173d0a6dcf"
     },
     "2026-08": {
-      "offset": 216480,
-      "length": 509812,
-      "count": 574,
-      "hash": "0768c099aa01165e"
+      "offset": 815932,
+      "length": 510881,
+      "count": 575,
+      "hash": "86f7d07fe42a7b43"
     },
     "2026-07": {
-      "offset": 726293,
+      "offset": 1326814,
       "length": 2786,
       "count": 4,
       "hash": "2c9f8df4100d734e"
     },
     "2026-05": {
-      "offset": 729080,
-      "length": 1312,
-      "count": 1,
-      "hash": "ec523fb70ba6691e"
+      "offset": 1329601,
+      "length": 2386,
+      "count": 2,
+      "hash": "eabda4d2ac46119f"
     },
     "2024-09": {
-      "offset": 730393,
+      "offset": 1331988,
       "length": 573,
       "count": 1,
       "hash": "dd208fa3a34aa318"
     },
     "2023-01": {
-      "offset": 730967,
+      "offset": 1332562,
       "length": 1242,
       "count": 1,
       "hash": "d4d0ba59ed06a25a"
     },
     "2022-10": {
-      "offset": 732210,
+      "offset": 1333805,
       "length": 511,
       "count": 1,
       "hash": "f04ba775725e286f"
+    },
+    "2016-03": {
+      "offset": 1334317,
+      "length": 580,
+      "count": 1,
+      "hash": "0f852ead01d7375e"
     }
   }
 }

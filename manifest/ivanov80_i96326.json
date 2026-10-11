@@ -2,44 +2,50 @@
   "repo": "ivanov80_i96326",
   "account": "ivanov80_i96326",
   "source": "https://twitterarchiver.github.io/ivanov80_i96326/accounts/ivanov80_i96326/wayback_snapshots/index.json",
-  "etag": "\"6aace6db-3c1b2\"",
-  "bytes": 246194,
-  "generated": "2026-09-20T10:56:01Z",
+  "etag": "\"6ac8adb2-427aa\"",
+  "bytes": 272298,
+  "generated": "2026-10-11T12:28:35Z",
   "range": true,
-  "total": 286,
+  "total": 318,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 18633,
-      "count": 20,
-      "hash": "8a14cd3de9726169"
+      "length": 2127,
+      "count": 2,
+      "hash": "dc940454078b0cf0"
+    },
+    "2026-09": {
+      "offset": 2129,
+      "length": 42609,
+      "count": 50,
+      "hash": "85df822f12a0d53a"
     },
     "2026-08": {
-      "offset": 18635,
+      "offset": 44739,
       "length": 75339,
       "count": 95,
       "hash": "f4205188281c581b"
     },
     "2026-07": {
-      "offset": 93975,
+      "offset": 120079,
       "length": 61799,
       "count": 68,
       "hash": "faecdbac1e189ed7"
     },
     "2026-06": {
-      "offset": 155775,
+      "offset": 181879,
       "length": 29467,
       "count": 33,
       "hash": "fbb9ddeb4a6d1a14"
     },
     "2026-05": {
-      "offset": 185243,
+      "offset": 211347,
       "length": 38894,
       "count": 46,
       "hash": "83a944872cd9c8fe"
     },
     "2026-04": {
-      "offset": 224138,
+      "offset": 250242,
       "length": 22055,
       "count": 24,
       "hash": "25032d95a88869aa"

@@ -2,62 +2,68 @@
   "repo": "futi999139732",
   "account": "futi999139732",
   "source": "https://twitterarchiver.github.io/futi999139732/accounts/futi999139732/wayback_snapshots/index.json",
-  "etag": "\"6aab9970-8c7da\"",
-  "bytes": 575450,
-  "generated": "2026-09-20T10:55:47Z",
+  "etag": "\"6ac75c88-8d2a7\"",
+  "bytes": 578215,
+  "generated": "2026-10-11T12:28:28Z",
   "range": true,
-  "total": 696,
+  "total": 699,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
+      "length": 2634,
+      "count": 3,
+      "hash": "5e73336c6eb41cec"
+    },
+    "2026-09": {
+      "offset": 2636,
       "length": 57592,
       "count": 69,
       "hash": "1b1a887b283d16f7"
     },
     "2026-08": {
-      "offset": 57594,
+      "offset": 60229,
       "length": 25845,
       "count": 29,
       "hash": "f04e45fe267b48ec"
     },
     "2026-07": {
-      "offset": 83440,
+      "offset": 86075,
       "length": 42437,
       "count": 51,
       "hash": "614ccff5bbc1ab13"
     },
     "2026-06": {
-      "offset": 125878,
+      "offset": 128513,
       "length": 40861,
       "count": 48,
       "hash": "079588b596154bdf"
     },
     "2026-05": {
-      "offset": 166740,
+      "offset": 169375,
       "length": 47469,
       "count": 53,
       "hash": "0cd6eacfd67494c5"
     },
     "2026-04": {
-      "offset": 214210,
+      "offset": 216845,
       "length": 37946,
       "count": 35,
       "hash": "1d76053bd5ac95c8"
     },
     "2026-03": {
-      "offset": 252157,
-      "length": 170406,
+      "offset": 254792,
+      "length": 170471,
       "count": 211,
-      "hash": "27ec6aff4e293196"
+      "hash": "ac4ad5089ba24a49"
     },
     "2026-02": {
-      "offset": 422564,
-      "length": 152184,
+      "offset": 425264,
+      "length": 152249,
       "count": 199,
-      "hash": "69255b6d05e1c3ea"
+      "hash": "9062f53732554bec"
     },
     "2025-08": {
-      "offset": 574749,
+      "offset": 577514,
       "length": 700,
       "count": 1,
       "hash": "28320b3aab9504d4"

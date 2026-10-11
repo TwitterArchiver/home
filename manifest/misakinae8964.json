@@ -2,44 +2,44 @@
   "repo": "misakinae8964",
   "account": "misakinae8964",
   "source": "https://twitterarchiver.github.io/misakinae8964/accounts/misakinae8964/wayback_snapshots/index.json",
-  "etag": "\"6aaec503-fa422\"",
-  "bytes": 1025058,
-  "generated": "2026-09-20T10:56:15Z",
+  "etag": "\"6acb4ce0-fa463\"",
+  "bytes": 1025123,
+  "generated": "2026-10-11T12:28:47Z",
   "range": true,
   "total": 1294,
   "months": {
     "2026-07": {
       "offset": 1,
-      "length": 594932,
+      "length": 594997,
       "count": 753,
-      "hash": "fe1b7ed9cb938493"
+      "hash": "651a6ed95f103cca"
     },
     "2026-06": {
-      "offset": 594934,
+      "offset": 594999,
       "length": 424156,
       "count": 534,
       "hash": "32b5334bc4de9d74"
     },
     "2026-05": {
-      "offset": 1019091,
+      "offset": 1019156,
       "length": 2891,
       "count": 4,
       "hash": "f3fd22f6ef2295c4"
     },
     "2026-04": {
-      "offset": 1021983,
+      "offset": 1022048,
       "length": 1303,
       "count": 1,
       "hash": "8c91e91475e17062"
     },
     "2026-02": {
-      "offset": 1023287,
+      "offset": 1023352,
       "length": 481,
       "count": 1,
       "hash": "ffe9882fc7e6e3f5"
     },
     "2025-11": {
-      "offset": 1023769,
+      "offset": 1023834,
       "length": 1288,
       "count": 1,
       "hash": "3b636fc545939a44"

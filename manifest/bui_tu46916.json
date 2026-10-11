@@ -2,68 +2,74 @@
   "repo": "bui_tu46916",
   "account": "bui_tu46916",
   "source": "https://twitterarchiver.github.io/bui_tu46916/accounts/bui_tu46916/wayback_snapshots/index.json",
-  "etag": "\"6aaa4a2b-1dec4a\"",
-  "bytes": 1961034,
-  "generated": "2026-09-20T10:55:37Z",
+  "etag": "\"6ac60845-208d1f\"",
+  "bytes": 2133279,
+  "generated": "2026-10-11T12:28:17Z",
   "range": true,
-  "total": 2487,
+  "total": 2707,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 77314,
-      "count": 92,
-      "hash": "691564832e81cfb1"
+      "length": 21622,
+      "count": 28,
+      "hash": "489f95add522b89d"
+    },
+    "2026-09": {
+      "offset": 21624,
+      "length": 226615,
+      "count": 281,
+      "hash": "3bf2494b472449bc"
     },
     "2026-08": {
-      "offset": 77316,
+      "offset": 248240,
       "length": 264346,
       "count": 329,
       "hash": "744df6979e047d17"
     },
     "2026-07": {
-      "offset": 341663,
-      "length": 296950,
-      "count": 377,
-      "hash": "472ff2f5afaa20ad"
+      "offset": 512587,
+      "length": 297840,
+      "count": 379,
+      "hash": "d58f36c174573468"
     },
     "2026-06": {
-      "offset": 638614,
+      "offset": 810428,
       "length": 158427,
       "count": 195,
       "hash": "d025e6b98f5fc218"
     },
     "2026-05": {
-      "offset": 797042,
+      "offset": 968856,
       "length": 233542,
       "count": 282,
       "hash": "746ff5d78190da44"
     },
     "2026-04": {
-      "offset": 1030585,
+      "offset": 1202399,
       "length": 457198,
       "count": 588,
       "hash": "517f0474be3a9dbf"
     },
     "2026-03": {
-      "offset": 1487784,
+      "offset": 1659598,
       "length": 471352,
       "count": 620,
       "hash": "8d7fc69e57b634b1"
     },
     "2026-02": {
-      "offset": 1959137,
-      "length": 931,
-      "count": 2,
-      "hash": "4c7b70972c08482c"
+      "offset": 2130951,
+      "length": 1362,
+      "count": 3,
+      "hash": "69223fbe3b78605a"
     },
     "2025-10": {
-      "offset": 1960069,
+      "offset": 2132314,
       "length": 485,
       "count": 1,
       "hash": "8a4884a08cfe8f2a"
     },
     "2023-01": {
-      "offset": 1960555,
+      "offset": 2132800,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

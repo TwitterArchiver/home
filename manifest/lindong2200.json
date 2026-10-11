@@ -2,38 +2,50 @@
   "repo": "lindong2200",
   "account": "lindong2200",
   "source": "https://twitterarchiver.github.io/lindong2200/accounts/lindong2200/wayback_snapshots/index.json",
-  "etag": "\"6a921dd0-c7894\"",
-  "bytes": 817300,
-  "generated": "2026-08-29T01:25:29Z",
+  "etag": "\"6ac9f997-ce7cd\"",
+  "bytes": 845773,
+  "generated": "2026-10-11T12:28:40Z",
   "range": true,
-  "total": 954,
+  "total": 987,
   "months": {
-    "2026-08": {
+    "2026-10": {
       "offset": 1,
-      "length": 25502,
+      "length": 2499,
+      "count": 2,
+      "hash": "88e1b0819366475f"
+    },
+    "2026-09": {
+      "offset": 2501,
+      "length": 24662,
+      "count": 31,
+      "hash": "f773b6916d78f32f"
+    },
+    "2026-08": {
+      "offset": 27164,
+      "length": 26812,
       "count": 32,
-      "hash": "c7b8838dfa92d2a1"
+      "hash": "6433993b106d3ae3"
     },
     "2026-07": {
-      "offset": 25504,
+      "offset": 53977,
       "length": 118801,
       "count": 135,
       "hash": "f2fb92fa295e6331"
     },
     "2026-06": {
-      "offset": 144306,
+      "offset": 172779,
       "length": 258553,
       "count": 304,
       "hash": "f3773834696a80e0"
     },
     "2026-05": {
-      "offset": 402860,
+      "offset": 431333,
       "length": 191113,
       "count": 221,
       "hash": "32ea66c6d5c9b1ab"
     },
     "2026-04": {
-      "offset": 593974,
+      "offset": 622447,
       "length": 223325,
       "count": 262,
       "hash": "e5a376c5390efa9f"

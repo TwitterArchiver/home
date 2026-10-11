@@ -2,68 +2,74 @@
   "repo": "XF_shiho_mafuyu",
   "account": "XF_shiho_mafuyu",
   "source": "https://twitterarchiver.github.io/XF_shiho_mafuyu/accounts/XF_shiho_mafuyu/wayback_snapshots/index.json",
-  "etag": "\"6aa6dc75-1236c5\"",
-  "bytes": 1193669,
-  "generated": "2026-09-20T10:55:07Z",
+  "etag": "\"6ac297aa-13bd7e\"",
+  "bytes": 1293694,
+  "generated": "2026-10-11T12:27:55Z",
   "range": true,
-  "total": 1440,
+  "total": 1559,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 13950,
-      "count": 17,
-      "hash": "cedd2e237b0c0e8f"
+      "length": 10912,
+      "count": 14,
+      "hash": "8748a8cc46700697"
+    },
+    "2026-09": {
+      "offset": 10914,
+      "length": 102458,
+      "count": 121,
+      "hash": "d0f05e5baf29d71a"
     },
     "2026-08": {
-      "offset": 13952,
-      "length": 43137,
-      "count": 51,
-      "hash": "94884cafe28350f4"
+      "offset": 113373,
+      "length": 43676,
+      "count": 52,
+      "hash": "74c4357a34d586fe"
     },
     "2026-07": {
-      "offset": 57090,
+      "offset": 157050,
       "length": 392571,
       "count": 474,
       "hash": "1f11b22049b21229"
     },
     "2026-06": {
-      "offset": 449662,
+      "offset": 549622,
       "length": 551132,
       "count": 667,
       "hash": "3b7ecd30f234a864"
     },
     "2026-05": {
-      "offset": 1000795,
-      "length": 184654,
+      "offset": 1100755,
+      "length": 184719,
       "count": 222,
-      "hash": "0b3a78f225bc2ab5"
+      "hash": "ad5afda6abf9b6d0"
     },
     "2026-04": {
-      "offset": 1185450,
+      "offset": 1285475,
       "length": 4984,
       "count": 5,
       "hash": "fb541e5f448dec5f"
     },
     "2026-03": {
-      "offset": 1190435,
+      "offset": 1290460,
       "length": 1036,
       "count": 1,
       "hash": "2e926d40dc733cc8"
     },
     "2024-10": {
-      "offset": 1191472,
+      "offset": 1291497,
       "length": 429,
       "count": 1,
       "hash": "619df729f32e73fc"
     },
     "2024-07": {
-      "offset": 1191902,
+      "offset": 1291927,
       "length": 438,
       "count": 1,
       "hash": "adaaac5b671ad0f5"
     },
     "2024-05": {
-      "offset": 1192341,
+      "offset": 1292366,
       "length": 1327,
       "count": 1,
       "hash": "6c4a5d5f17e665fb"

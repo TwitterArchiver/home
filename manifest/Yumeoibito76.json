@@ -2,38 +2,50 @@
   "repo": "Yumeoibito76",
   "account": "Yumeoibito76",
   "source": "https://twitterarchiver.github.io/Yumeoibito76/accounts/Yumeoibito76/wayback_snapshots/index.json",
-  "etag": "\"6aa7aadb-e9114\"",
-  "bytes": 954644,
-  "generated": "2026-09-20T10:55:15Z",
+  "etag": "\"6ac419d3-1b0abf\"",
+  "bytes": 1772223,
+  "generated": "2026-10-11T12:28:03Z",
   "range": true,
-  "total": 1089,
+  "total": 2010,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 282094,
-      "count": 313,
-      "hash": "9c7f3c2100cfe71e"
+      "length": 351534,
+      "count": 377,
+      "hash": "e67793750e898a94"
+    },
+    "2026-09": {
+      "offset": 351536,
+      "length": 745710,
+      "count": 854,
+      "hash": "ab34466bb070006d"
     },
     "2026-08": {
-      "offset": 282096,
-      "length": 669355,
-      "count": 772,
-      "hash": "89187b1777384aad"
+      "offset": 1097247,
+      "length": 670703,
+      "count": 774,
+      "hash": "6cb87d5102a09531"
     },
     "2026-07": {
-      "offset": 951452,
+      "offset": 1767951,
       "length": 636,
       "count": 1,
       "hash": "5509125fa8252615"
     },
     "2026-06": {
-      "offset": 952089,
+      "offset": 1768588,
       "length": 1550,
       "count": 2,
       "hash": "cacc6c469a09935c"
     },
+    "2026-02": {
+      "offset": 1770139,
+      "length": 1079,
+      "count": 1,
+      "hash": "3ae06d8a17d3489d"
+    },
     "2025-07": {
-      "offset": 953640,
+      "offset": 1771219,
       "length": 1003,
       "count": 1,
       "hash": "cab374786abdb1e0"
