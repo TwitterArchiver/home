@@ -2,68 +2,74 @@
   "repo": "themaniachan",
   "account": "themaniachan",
   "source": "https://twitterarchiver.github.io/themaniachan/accounts/themaniachan/wayback_snapshots/index.json",
-  "etag": "\"6ab2c4f4-2ad4cb\"",
-  "bytes": 2806987,
-  "generated": "2026-09-27T11:43:52Z",
+  "etag": "\"6ace94fb-2e9f31\"",
+  "bytes": 3055409,
+  "generated": "2026-10-18T10:39:48Z",
   "range": true,
-  "total": 3050,
+  "total": 3334,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 456367,
-      "count": 479,
-      "hash": "a00a515532286b46"
+      "length": 107434,
+      "count": 128,
+      "hash": "907e8191520beab4"
+    },
+    "2026-09": {
+      "offset": 107436,
+      "length": 597222,
+      "count": 635,
+      "hash": "1d50814d1d2e1a36"
     },
     "2026-08": {
-      "offset": 456369,
-      "length": 626884,
+      "offset": 704659,
+      "length": 627016,
       "count": 690,
-      "hash": "9d3220d5bd4ffb45"
+      "hash": "1d04a4818576bb80"
     },
     "2026-07": {
-      "offset": 1083254,
+      "offset": 1331676,
       "length": 581173,
       "count": 618,
       "hash": "29030620de8601a0"
     },
     "2026-06": {
-      "offset": 1664428,
+      "offset": 1912850,
       "length": 653163,
       "count": 731,
       "hash": "368d709a2c615636"
     },
     "2026-05": {
-      "offset": 2317592,
+      "offset": 2566014,
       "length": 370846,
       "count": 400,
       "hash": "13263a50de3fca55"
     },
     "2026-04": {
-      "offset": 2688439,
+      "offset": 2936861,
       "length": 115867,
       "count": 128,
       "hash": "c1157c94d25c6e3a"
     },
     "2026-03": {
-      "offset": 2804307,
+      "offset": 3052729,
       "length": 449,
       "count": 1,
       "hash": "33af27730c510fbd"
     },
     "2026-02": {
-      "offset": 2804757,
+      "offset": 3053179,
       "length": 765,
       "count": 1,
       "hash": "05c0095752b302f9"
     },
     "2025-12": {
-      "offset": 2805523,
+      "offset": 3053945,
       "length": 902,
       "count": 1,
       "hash": "fbf81ffea2b32e53"
     },
     "2025-08": {
-      "offset": 2806426,
+      "offset": 3054848,
       "length": 560,
       "count": 1,
       "hash": "7c596136fd552913"

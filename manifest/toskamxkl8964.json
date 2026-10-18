@@ -2,32 +2,32 @@
   "repo": "toskamxkl8964",
   "account": "toskamxkl8964",
   "source": "https://twitterarchiver.github.io/toskamxkl8964/accounts/toskamxkl8964/wayback_snapshots/index.json",
-  "etag": "\"6a970fc9-8eef7\"",
-  "bytes": 585463,
-  "generated": "2026-09-06T10:34:34Z",
+  "etag": "\"6acf3032-8ef7a\"",
+  "bytes": 585594,
+  "generated": "2026-10-18T10:39:52Z",
   "range": true,
   "total": 729,
   "months": {
     "2026-08": {
       "offset": 1,
-      "length": 540700,
+      "length": 540831,
       "count": 671,
-      "hash": "11d7ea0633b31b3c"
+      "hash": "c75303208bb190cc"
     },
     "2026-07": {
-      "offset": 540702,
+      "offset": 540833,
       "length": 42844,
       "count": 55,
       "hash": "673ad949b2b7310b"
     },
     "2026-06": {
-      "offset": 583547,
+      "offset": 583678,
       "length": 1413,
       "count": 2,
       "hash": "429cc4a3f9d9f784"
     },
     "2026-05": {
-      "offset": 584961,
+      "offset": 585092,
       "length": 501,
       "count": 1,
       "hash": "cb6b7f61c93a869b"

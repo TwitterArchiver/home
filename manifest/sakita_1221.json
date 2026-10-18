@@ -2,11 +2,11 @@
   "repo": "sakita_1221",
   "account": "sakita_1221",
   "source": "https://twitterarchiver.github.io/sakita_1221/accounts/sakita_1221/wayback_snapshots/index.json",
-  "etag": "\"6ab180b3-3a7fa\"",
-  "bytes": 239610,
-  "generated": "2026-09-27T11:43:38Z",
+  "etag": "\"6acd5bf3-3ab3a\"",
+  "bytes": 240442,
+  "generated": "2026-10-18T10:39:34Z",
   "range": true,
-  "total": 278,
+  "total": 279,
   "months": {
     "unknown": {
       "offset": 1,
@@ -16,12 +16,12 @@
     },
     "2026-09": {
       "offset": 1102,
-      "length": 57303,
-      "count": 67,
-      "hash": "f1b6dc5faf87084e"
+      "length": 58135,
+      "count": 68,
+      "hash": "a1b51e2f6d677e3d"
     },
     "2026-08": {
-      "offset": 58406,
+      "offset": 59238,
       "length": 181203,
       "count": 210,
       "hash": "ddcc2671497dcbb9"

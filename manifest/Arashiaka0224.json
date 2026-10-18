@@ -2,56 +2,62 @@
   "repo": "Arashiaka0224",
   "account": "Arashiaka0224",
   "source": "https://twitterarchiver.github.io/Arashiaka0224/accounts/Arashiaka0224/wayback_snapshots/index.json",
-  "etag": "\"6ab80713-50221\"",
-  "bytes": 328225,
-  "generated": "2026-09-27T11:39:33Z",
+  "etag": "\"6ad472be-58487\"",
+  "bytes": 361607,
+  "generated": "2026-10-18T10:35:21Z",
   "range": true,
-  "total": 363,
+  "total": 404,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 45939,
-      "count": 49,
-      "hash": "ce3ced22ebb6dd57"
+      "length": 22341,
+      "count": 27,
+      "hash": "6d12c99ccb292a75"
+    },
+    "2026-09": {
+      "offset": 22343,
+      "length": 56544,
+      "count": 62,
+      "hash": "9776a69b3410e905"
     },
     "2026-08": {
-      "offset": 45941,
-      "length": 151124,
-      "count": 167,
-      "hash": "ab9b3019433187ed"
+      "offset": 78888,
+      "length": 151559,
+      "count": 168,
+      "hash": "37f1c9b667f3edd7"
     },
     "2026-07": {
-      "offset": 197066,
+      "offset": 230448,
       "length": 59958,
       "count": 70,
       "hash": "6a216549a19bb053"
     },
     "2026-06": {
-      "offset": 257025,
+      "offset": 290407,
       "length": 67236,
       "count": 72,
       "hash": "972064f11d572848"
     },
     "2026-05": {
-      "offset": 324262,
+      "offset": 357644,
       "length": 1059,
       "count": 2,
       "hash": "a9eee212d91ff82d"
     },
     "2025-12": {
-      "offset": 325322,
+      "offset": 358704,
       "length": 1295,
       "count": 1,
       "hash": "c155ab71ab48d884"
     },
     "2025-10": {
-      "offset": 326618,
+      "offset": 360000,
       "length": 673,
       "count": 1,
       "hash": "f21f6d31a799df85"
     },
     "2025-09": {
-      "offset": 327292,
+      "offset": 360674,
       "length": 932,
       "count": 1,
       "hash": "75a81bd272c5e9b7"

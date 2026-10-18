@@ -2,62 +2,68 @@
   "repo": "shuangyunonly",
   "account": "shuangyunonly",
   "source": "https://twitterarchiver.github.io/shuangyunonly/accounts/shuangyunonly/wayback_snapshots/index.json",
-  "etag": "\"6ab1846a-143816\"",
-  "bytes": 1325078,
-  "generated": "2026-09-27T11:43:43Z",
+  "etag": "\"6acdf98a-15983e\"",
+  "bytes": 1415230,
+  "generated": "2026-10-18T10:39:38Z",
   "range": true,
-  "total": 1568,
+  "total": 1669,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 102020,
-      "count": 106,
-      "hash": "49a24d3f8969bac5"
+      "length": 23500,
+      "count": 25,
+      "hash": "f03f33e4907a3518"
+    },
+    "2026-09": {
+      "offset": 23502,
+      "length": 168671,
+      "count": 182,
+      "hash": "6e53fdbed307637a"
     },
     "2026-08": {
-      "offset": 102022,
+      "offset": 192174,
       "length": 242202,
       "count": 273,
       "hash": "cdb973228be3cc0c"
     },
     "2026-07": {
-      "offset": 344225,
+      "offset": 434377,
       "length": 162013,
       "count": 180,
       "hash": "dbbf8984f0ac329b"
     },
     "2026-06": {
-      "offset": 506239,
+      "offset": 596391,
       "length": 778541,
       "count": 959,
       "hash": "402071e99837c47d"
     },
     "2026-05": {
-      "offset": 1284781,
+      "offset": 1374933,
       "length": 36714,
       "count": 45,
       "hash": "ceb36ba3d8dba060"
     },
     "2025-11": {
-      "offset": 1321496,
+      "offset": 1411648,
       "length": 474,
       "count": 1,
       "hash": "68b58c725dcf4fd0"
     },
     "2025-04": {
-      "offset": 1321971,
+      "offset": 1412123,
       "length": 427,
       "count": 1,
       "hash": "8ad99123cc7c25f3"
     },
     "2025-03": {
-      "offset": 1322399,
+      "offset": 1412551,
       "length": 1401,
       "count": 2,
       "hash": "8c7d751e62653dd4"
     },
     "2023-12": {
-      "offset": 1323801,
+      "offset": 1413953,
       "length": 1276,
       "count": 1,
       "hash": "12b6bf99681975fd"

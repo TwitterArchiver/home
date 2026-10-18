@@ -2,68 +2,74 @@
   "repo": "overdose7days",
   "account": "overdose7days",
   "source": "https://twitterarchiver.github.io/overdose7days/accounts/overdose7days/wayback_snapshots/index.json",
-  "etag": "\"6ab01878-15025e\"",
-  "bytes": 1376862,
-  "generated": "2026-09-27T11:43:23Z",
+  "etag": "\"6acbdc2d-175856\"",
+  "bytes": 1529942,
+  "generated": "2026-10-18T10:39:17Z",
   "range": true,
-  "total": 1568,
+  "total": 1742,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 19440,
-      "count": 21,
-      "hash": "6239ed14a268d501"
+      "length": 17078,
+      "count": 19,
+      "hash": "b8c6649074c47c97"
+    },
+    "2026-09": {
+      "offset": 17080,
+      "length": 138515,
+      "count": 156,
+      "hash": "bc94ed947fc3b18f"
     },
     "2026-08": {
-      "offset": 19442,
-      "length": 177311,
-      "count": 193,
-      "hash": "dc77fb44d5646985"
+      "offset": 155596,
+      "length": 193107,
+      "count": 212,
+      "hash": "0ff6e673f09807d4"
     },
     "2026-07": {
-      "offset": 196754,
-      "length": 454742,
-      "count": 496,
-      "hash": "4991ee9aad6de0a1"
+      "offset": 348704,
+      "length": 455830,
+      "count": 497,
+      "hash": "3e891ca70369bd17"
     },
     "2026-06": {
-      "offset": 651497,
-      "length": 252112,
+      "offset": 804535,
+      "length": 252154,
       "count": 296,
-      "hash": "5e37125044a2cc8e"
+      "hash": "c4b0ebff0036b238"
     },
     "2026-05": {
-      "offset": 903610,
+      "offset": 1056690,
       "length": 359264,
       "count": 426,
       "hash": "1b8a203744542c9c"
     },
     "2026-04": {
-      "offset": 1262875,
+      "offset": 1415955,
       "length": 107968,
       "count": 128,
       "hash": "c3701fdd038d9767"
     },
     "2026-03": {
-      "offset": 1370844,
+      "offset": 1523924,
       "length": 2790,
       "count": 4,
       "hash": "1632d77bbf875c23"
     },
     "2025-11": {
-      "offset": 1373635,
+      "offset": 1526715,
       "length": 1924,
       "count": 2,
       "hash": "91d034d528530d11"
     },
     "2025-10": {
-      "offset": 1375560,
+      "offset": 1528640,
       "length": 754,
       "count": 1,
       "hash": "f1172ef6b2d4b41d"
     },
     "2025-09": {
-      "offset": 1376315,
+      "offset": 1529395,
       "length": 546,
       "count": 1,
       "hash": "64bb8541a6e43e59"

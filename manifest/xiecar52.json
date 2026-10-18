@@ -2,38 +2,44 @@
   "repo": "xiecar52",
   "account": "xiecar52",
   "source": "https://twitterarchiver.github.io/xiecar52/accounts/xiecar52/wayback_snapshots/index.json",
-  "etag": "\"6ab41a7f-85764\"",
-  "bytes": 546660,
-  "generated": "2026-09-27T11:44:13Z",
+  "etag": "\"6ad07ec4-915e6\"",
+  "bytes": 595430,
+  "generated": "2026-10-18T10:40:10Z",
   "range": true,
-  "total": 682,
+  "total": 748,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 4558,
-      "count": 6,
-      "hash": "508cf5fedaa2d5c9"
+      "length": 44865,
+      "count": 61,
+      "hash": "cfe309b3ddc61146"
+    },
+    "2026-09": {
+      "offset": 44867,
+      "length": 7708,
+      "count": 10,
+      "hash": "67005129cf01e474"
     },
     "2026-08": {
-      "offset": 4560,
-      "length": 113567,
-      "count": 140,
-      "hash": "9d4aee4aeed512e7"
+      "offset": 52576,
+      "length": 114125,
+      "count": 141,
+      "hash": "1859f47b583098c0"
     },
     "2026-07": {
-      "offset": 118128,
-      "length": 427603,
+      "offset": 166702,
+      "length": 427799,
       "count": 534,
-      "hash": "dc63951d71154053"
+      "hash": "e83b3b210b56c954"
     },
     "2026-06": {
-      "offset": 545732,
+      "offset": 594502,
       "length": 453,
       "count": 1,
       "hash": "d54314944c64b1da"
     },
     "2025-06": {
-      "offset": 546186,
+      "offset": 594956,
       "length": 473,
       "count": 1,
       "hash": "e9036db9cc033c75"

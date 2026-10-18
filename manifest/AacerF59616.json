@@ -2,68 +2,74 @@
   "repo": "AacerF59616",
   "account": "AacerF59616",
   "source": "https://twitterarchiver.github.io/AacerF59616/accounts/AacerF59616/wayback_snapshots/index.json",
-  "etag": "\"6ab8e50e-4baacd\"",
-  "bytes": 4958925,
-  "generated": "2026-09-27T11:39:23Z",
+  "etag": "\"6ad32207-563a62\"",
+  "bytes": 5651042,
+  "generated": "2026-10-18T10:35:08Z",
   "range": true,
-  "total": 5212,
+  "total": 5818,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 1035647,
-      "count": 929,
-      "hash": "deb1a33be58adef8"
+      "length": 473334,
+      "count": 417,
+      "hash": "0c821eb673a15fdb"
+    },
+    "2026-09": {
+      "offset": 473336,
+      "length": 1253431,
+      "count": 1117,
+      "hash": "e2f41f3a16f14023"
     },
     "2026-08": {
-      "offset": 1035649,
-      "length": 1900430,
-      "count": 1955,
-      "hash": "a2e2b55d7bbcf1e6"
+      "offset": 1726768,
+      "length": 1901428,
+      "count": 1956,
+      "hash": "d01116e7c1a21ed5"
     },
     "2026-07": {
-      "offset": 2936080,
+      "offset": 3628197,
       "length": 950604,
       "count": 1019,
       "hash": "63d633edb7962649"
     },
     "2026-06": {
-      "offset": 3886685,
+      "offset": 4578802,
       "length": 1047050,
       "count": 1283,
       "hash": "1742c3f540aabbf2"
     },
     "2026-05": {
-      "offset": 4933736,
+      "offset": 5625853,
       "length": 1099,
       "count": 2,
       "hash": "56761adcfc71ebf3"
     },
     "2026-04": {
-      "offset": 4934836,
+      "offset": 5626953,
       "length": 757,
       "count": 1,
       "hash": "365557c2d483a307"
     },
     "2026-01": {
-      "offset": 4935594,
+      "offset": 5627711,
       "length": 728,
       "count": 1,
       "hash": "2ec4ea96152e29cc"
     },
     "2025-12": {
-      "offset": 4936323,
+      "offset": 5628440,
       "length": 20209,
       "count": 19,
       "hash": "2365d0fe42cc5cd1"
     },
     "2025-08": {
-      "offset": 4956533,
+      "offset": 5648650,
       "length": 636,
       "count": 1,
       "hash": "e87cd1fb0a09ccfb"
     },
     "2025-07": {
-      "offset": 4957170,
+      "offset": 5649287,
       "length": 1754,
       "count": 2,
       "hash": "d79edf9f5952e996"

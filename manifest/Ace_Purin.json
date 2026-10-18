@@ -2,68 +2,74 @@
   "repo": "Ace_Purin",
   "account": "Ace_Purin",
   "source": "https://twitterarchiver.github.io/Ace_Purin/accounts/Ace_Purin/wayback_snapshots/index.json",
-  "etag": "\"6ab7789e-346aba\"",
-  "bytes": 3435194,
-  "generated": "2026-09-27T11:39:23Z",
+  "etag": "\"6ad3ac99-34f8cc\"",
+  "bytes": 3471564,
+  "generated": "2026-10-18T10:35:08Z",
   "range": true,
-  "total": 4319,
+  "total": 4366,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 7041,
-      "count": 8,
-      "hash": "c42e0eb387b73797"
+      "length": 22726,
+      "count": 32,
+      "hash": "07c63c6edcac3b01"
+    },
+    "2026-09": {
+      "offset": 22728,
+      "length": 20554,
+      "count": 23,
+      "hash": "c37b776ef5411572"
     },
     "2026-08": {
-      "offset": 7043,
+      "offset": 43283,
       "length": 127214,
       "count": 161,
       "hash": "a6c7f91206218a58"
     },
     "2026-07": {
-      "offset": 134258,
+      "offset": 170498,
       "length": 569360,
       "count": 722,
       "hash": "446ad6d91c7d6047"
     },
     "2026-06": {
-      "offset": 703619,
+      "offset": 739859,
       "length": 478857,
       "count": 609,
       "hash": "a1f0d164404a7bdf"
     },
     "2026-05": {
-      "offset": 1182477,
+      "offset": 1218717,
       "length": 572092,
       "count": 720,
       "hash": "d6ff1aa42d0afc1c"
     },
     "2026-04": {
-      "offset": 1754570,
-      "length": 1143602,
+      "offset": 1790810,
+      "length": 1143732,
       "count": 1439,
-      "hash": "bf2154f3f8b58eb7"
+      "hash": "e5e8a8079559ce34"
     },
     "2026-03": {
-      "offset": 2898173,
+      "offset": 2934543,
       "length": 533997,
       "count": 656,
       "hash": "9504effbedea488d"
     },
     "2026-02": {
-      "offset": 3432171,
+      "offset": 3468541,
       "length": 1972,
       "count": 2,
       "hash": "794f4ec61c07f622"
     },
     "2021-10": {
-      "offset": 3434144,
+      "offset": 3470514,
       "length": 512,
       "count": 1,
       "hash": "d975d1d7d4cdcc9b"
     },
     "2018-10": {
-      "offset": 3434657,
+      "offset": 3471027,
       "length": 536,
       "count": 1,
       "hash": "d841c712dd9928bb"

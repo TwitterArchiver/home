@@ -2,9 +2,9 @@
   "repo": "peipeimao",
   "account": "peipeimao",
   "source": "https://twitterarchiver.github.io/peipeimao/accounts/peipeimao/wayback_snapshots/index.json",
-  "etag": "\"6a947334-26e6c3\"",
-  "bytes": 2549443,
-  "generated": "2026-09-06T10:34:10Z",
+  "etag": "\"6acca62a-26e719\"",
+  "bytes": 2549529,
+  "generated": "2026-10-18T10:39:22Z",
   "range": true,
   "total": 3390,
   "months": {
@@ -46,12 +46,12 @@
     },
     "2026-01": {
       "offset": 1894446,
-      "length": 653168,
+      "length": 653254,
       "count": 840,
-      "hash": "137e4c61bb59035d"
+      "hash": "23ade7b304df6c79"
     },
     "2025-11": {
-      "offset": 2547615,
+      "offset": 2547701,
       "length": 1827,
       "count": 2,
       "hash": "ed44e0f5ea653554"

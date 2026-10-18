@@ -2,9 +2,9 @@
   "repo": "sasasakanakawai",
   "account": "sasasakanakawai",
   "source": "https://twitterarchiver.github.io/sasasakanakawai/accounts/sasasakanakawai/wayback_snapshots/index.json",
-  "etag": "\"6ab181bb-5386c\"",
-  "bytes": 342124,
-  "generated": "2026-09-27T11:43:39Z",
+  "etag": "\"6acd5d3c-539b1\"",
+  "bytes": 342449,
+  "generated": "2026-10-18T10:39:34Z",
   "range": true,
   "total": 404,
   "months": {
@@ -16,9 +16,9 @@
     },
     "2026-07": {
       "offset": 88155,
-      "length": 253968,
+      "length": 254293,
       "count": 296,
-      "hash": "e1f4370d95eb2e5d"
+      "hash": "e1628507c5449f33"
     }
   }
 }

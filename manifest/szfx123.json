@@ -2,9 +2,9 @@
   "repo": "szfx123",
   "account": "szfx123",
   "source": "https://twitterarchiver.github.io/szfx123/accounts/szfx123/wayback_snapshots/index.json",
-  "etag": "\"6ab23322-e88bd\"",
-  "bytes": 952509,
-  "generated": "2026-09-27T11:43:47Z",
+  "etag": "\"6ace9232-e893f\"",
+  "bytes": 952639,
+  "generated": "2026-10-18T10:39:43Z",
   "range": true,
   "total": 1198,
   "months": {
@@ -16,48 +16,48 @@
     },
     "2026-08": {
       "offset": 101666,
-      "length": 277020,
+      "length": 277150,
       "count": 354,
-      "hash": "4ef6aa274ce00a2f"
+      "hash": "667e308d6ac09653"
     },
     "2026-07": {
-      "offset": 378687,
+      "offset": 378817,
       "length": 57004,
       "count": 73,
       "hash": "6cb42a1f10f147a8"
     },
     "2026-06": {
-      "offset": 435692,
+      "offset": 435822,
       "length": 276865,
       "count": 353,
       "hash": "dbb8717aa4540d41"
     },
     "2026-05": {
-      "offset": 712558,
+      "offset": 712688,
       "length": 228938,
       "count": 277,
       "hash": "1f896d8605c9afdc"
     },
     "2026-04": {
-      "offset": 941497,
+      "offset": 941627,
       "length": 9082,
       "count": 12,
       "hash": "2a37b22a2b65df15"
     },
     "2025-10": {
-      "offset": 950580,
+      "offset": 950710,
       "length": 872,
       "count": 1,
       "hash": "c2f4d1bd62afd9b5"
     },
     "2025-09": {
-      "offset": 951453,
+      "offset": 951583,
       "length": 431,
       "count": 1,
       "hash": "f163a64228db9cea"
     },
     "2025-03": {
-      "offset": 951885,
+      "offset": 952015,
       "length": 623,
       "count": 1,
       "hash": "9f087949485d5a44"

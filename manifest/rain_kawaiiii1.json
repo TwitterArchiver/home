@@ -2,62 +2,74 @@
   "repo": "rain_kawaiiii1",
   "account": "rain_kawaiiii1",
   "source": "https://twitterarchiver.github.io/rain_kawaiiii1/accounts/rain_kawaiiii1/wayback_snapshots/index.json",
-  "etag": "\"6ab0e670-126b74\"",
-  "bytes": 1207156,
-  "generated": "2026-09-27T11:43:36Z",
+  "etag": "\"6acd5caf-1ce687\"",
+  "bytes": 1894023,
+  "generated": "2026-10-18T10:39:31Z",
   "range": true,
-  "total": 1434,
+  "total": 2224,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 386892,
-      "count": 462,
-      "hash": "a26e13e5ab3d1e95"
+      "length": 401061,
+      "count": 446,
+      "hash": "473b7088f4b474c9"
+    },
+    "2026-09": {
+      "offset": 401063,
+      "length": 667772,
+      "count": 800,
+      "hash": "ef1d8108ab74ac1c"
     },
     "2026-08": {
-      "offset": 386894,
-      "length": 27143,
-      "count": 34,
-      "hash": "e0bf1bfdf06a6a2f"
+      "offset": 1068836,
+      "length": 30528,
+      "count": 38,
+      "hash": "7c9def191ef5702b"
     },
     "2026-07": {
-      "offset": 414038,
-      "length": 32534,
-      "count": 37,
-      "hash": "9b0f90e516af9212"
+      "offset": 1099365,
+      "length": 33171,
+      "count": 38,
+      "hash": "e16f00ed2ea697b8"
     },
     "2026-06": {
-      "offset": 446573,
+      "offset": 1132537,
       "length": 128720,
       "count": 158,
       "hash": "b0f9914ccd3c0412"
     },
     "2026-05": {
-      "offset": 575294,
+      "offset": 1261258,
       "length": 131252,
       "count": 158,
       "hash": "86049cb6031dba47"
     },
     "2026-04": {
-      "offset": 706547,
+      "offset": 1392511,
       "length": 497755,
       "count": 581,
       "hash": "694204091786d1d7"
     },
     "2026-03": {
-      "offset": 1204303,
+      "offset": 1890267,
       "length": 1816,
       "count": 2,
       "hash": "8d4e0de374590a8c"
     },
+    "2025-12": {
+      "offset": 1892084,
+      "length": 902,
+      "count": 1,
+      "hash": "fbf81ffea2b32e53"
+    },
     "2023-10": {
-      "offset": 1206120,
+      "offset": 1892987,
       "length": 576,
       "count": 1,
       "hash": "22f646ee3565c967"
     },
     "2022-09": {
-      "offset": 1206697,
+      "offset": 1893564,
       "length": 458,
       "count": 1,
       "hash": "c6e24af503820524"

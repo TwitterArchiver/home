@@ -2,50 +2,50 @@
   "repo": "oxolyy",
   "account": "oxolyy",
   "source": "https://twitterarchiver.github.io/oxolyy/accounts/oxolyy/wayback_snapshots/index.json",
-  "etag": "\"6ab01706-3e7e2\"",
-  "bytes": 255970,
-  "generated": "2026-09-27T11:43:22Z",
+  "etag": "\"6acbdc3d-44a7f\"",
+  "bytes": 281215,
+  "generated": "2026-10-18T10:39:17Z",
   "range": true,
-  "total": 293,
+  "total": 320,
   "months": {
     "2026-09": {
       "offset": 1,
-      "length": 7850,
-      "count": 8,
-      "hash": "a80ea06391f135e5"
+      "length": 28441,
+      "count": 30,
+      "hash": "c93bd0cd26cb9b80"
     },
     "2026-08": {
-      "offset": 7852,
-      "length": 37344,
-      "count": 43,
-      "hash": "e603465bf752a18a"
+      "offset": 28443,
+      "length": 41998,
+      "count": 48,
+      "hash": "0bfbbb27f8dbc5ec"
     },
     "2026-07": {
-      "offset": 45197,
+      "offset": 70442,
       "length": 17834,
       "count": 21,
       "hash": "174f330436ce0232"
     },
     "2026-06": {
-      "offset": 63032,
+      "offset": 88277,
       "length": 102692,
       "count": 118,
       "hash": "a5564a97a66c7465"
     },
     "2026-05": {
-      "offset": 165725,
+      "offset": 190970,
       "length": 88589,
       "count": 101,
       "hash": "342c3072cd6d23e1"
     },
     "2026-04": {
-      "offset": 254315,
+      "offset": 279560,
       "length": 1109,
       "count": 1,
       "hash": "ef176e78def7a36a"
     },
     "2025-07": {
-      "offset": 255425,
+      "offset": 280670,
       "length": 544,
       "count": 1,
       "hash": "23e1cb00bdd63cdd"

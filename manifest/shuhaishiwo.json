@@ -2,11 +2,11 @@
   "repo": "shuhaishiwo",
   "account": "shuhaishiwo",
   "source": "https://twitterarchiver.github.io/shuhaishiwo/accounts/shuhaishiwo/wayback_snapshots/index.json",
-  "etag": "\"6a95dec0-4da1d\"",
-  "bytes": 317981,
-  "generated": "2026-09-06T10:34:22Z",
+  "etag": "\"6acdf971-4dfb4\"",
+  "bytes": 319412,
+  "generated": "2026-10-18T10:39:37Z",
   "range": true,
-  "total": 401,
+  "total": 403,
   "months": {
     "2026-05": {
       "offset": 1,
@@ -46,12 +46,12 @@
     },
     "2025-02": {
       "offset": 203532,
-      "length": 111643,
-      "count": 149,
-      "hash": "82511b370a7f18d5"
+      "length": 113074,
+      "count": 151,
+      "hash": "68891bf2f04e48da"
     },
     "2024-11": {
-      "offset": 315176,
+      "offset": 316607,
       "length": 2804,
       "count": 4,
       "hash": "2bc55932dfe5bf64"

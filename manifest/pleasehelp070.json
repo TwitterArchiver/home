@@ -2,9 +2,9 @@
   "repo": "pleasehelp070",
   "account": "pleasehelp070",
   "source": "https://twitterarchiver.github.io/pleasehelp070/accounts/pleasehelp070/wayback_snapshots/index.json",
-  "etag": "\"6ab01be0-14df77\"",
-  "bytes": 1367927,
-  "generated": "2026-09-27T11:43:25Z",
+  "etag": "\"6acca59f-14e00c\"",
+  "bytes": 1368076,
+  "generated": "2026-10-18T10:39:21Z",
   "range": true,
   "total": 1635,
   "months": {
@@ -16,60 +16,60 @@
     },
     "2026-07": {
       "offset": 791,
-      "length": 42368,
+      "length": 42433,
       "count": 53,
-      "hash": "13771e92878fe70e"
+      "hash": "49aa64ce1256cda4"
     },
     "2026-05": {
-      "offset": 43160,
+      "offset": 43225,
       "length": 611807,
       "count": 720,
       "hash": "df0bf7d31afa9108"
     },
     "2026-04": {
-      "offset": 654968,
-      "length": 546221,
+      "offset": 655033,
+      "length": 546305,
       "count": 647,
-      "hash": "d3cbabe37c7d5082"
+      "hash": "12b0fcabcf27b04f"
     },
     "2026-03": {
-      "offset": 1201190,
+      "offset": 1201339,
       "length": 161391,
       "count": 206,
       "hash": "c60639a47c976d7f"
     },
     "2026-02": {
-      "offset": 1362582,
+      "offset": 1362731,
       "length": 1435,
       "count": 3,
       "hash": "6b8de24794361f62"
     },
     "2025-11": {
-      "offset": 1364018,
+      "offset": 1364167,
       "length": 510,
       "count": 1,
       "hash": "064947de4d2898e6"
     },
     "2025-08": {
-      "offset": 1364529,
+      "offset": 1364678,
       "length": 456,
       "count": 1,
       "hash": "57d7a91e863c92e6"
     },
     "2025-04": {
-      "offset": 1364986,
+      "offset": 1365135,
       "length": 844,
       "count": 1,
       "hash": "7e9992fb48f9c6fa"
     },
     "2024-04": {
-      "offset": 1365831,
+      "offset": 1365980,
       "length": 1288,
       "count": 1,
       "hash": "fe3a43edc2e6b503"
     },
     "2022-06": {
-      "offset": 1367120,
+      "offset": 1367269,
       "length": 806,
       "count": 1,
       "hash": "d867e10692737805"

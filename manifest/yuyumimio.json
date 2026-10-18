@@ -2,32 +2,50 @@
   "repo": "yuyumimio",
   "account": "yuyumimio",
   "source": "https://twitterarchiver.github.io/yuyumimio/accounts/yuyumimio/wayback_snapshots/index.json",
-  "etag": "\"6a99b15f-4a58c\"",
-  "bytes": 304524,
-  "generated": "2026-09-06T10:34:59Z",
+  "etag": "\"6ad1cd57-6c0c0\"",
+  "bytes": 442560,
+  "generated": "2026-10-18T10:40:28Z",
   "range": true,
-  "total": 374,
+  "total": 543,
   "months": {
-    "2026-06": {
+    "2026-10": {
       "offset": 1,
+      "length": 72802,
+      "count": 89,
+      "hash": "14c95a67f169e053"
+    },
+    "2026-09": {
+      "offset": 72804,
+      "length": 64538,
+      "count": 79,
+      "hash": "010c0a5cc3441a0f"
+    },
+    "2026-08": {
+      "offset": 137343,
+      "length": 693,
+      "count": 1,
+      "hash": "114247ab2f938cf7"
+    },
+    "2026-06": {
+      "offset": 138037,
       "length": 19587,
       "count": 23,
       "hash": "313a66af4d222e9a"
     },
     "2026-05": {
-      "offset": 19589,
+      "offset": 157625,
       "length": 216304,
       "count": 267,
       "hash": "b719f74b39ba03b7"
     },
     "2026-04": {
-      "offset": 235894,
+      "offset": 373930,
       "length": 68172,
       "count": 83,
       "hash": "314ee336df8060fc"
     },
     "2025-08": {
-      "offset": 304067,
+      "offset": 442103,
       "length": 456,
       "count": 1,
       "hash": "57d7a91e863c92e6"

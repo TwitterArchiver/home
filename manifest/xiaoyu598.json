@@ -2,68 +2,80 @@
   "repo": "xiaoyu598",
   "account": "xiaoyu598",
   "source": "https://twitterarchiver.github.io/xiaoyu598/accounts/xiaoyu598/wayback_snapshots/index.json",
-  "etag": "\"6ab419d2-e5668\"",
-  "bytes": 939624,
-  "generated": "2026-09-27T11:44:12Z",
+  "etag": "\"6acfcc31-f94d0\"",
+  "bytes": 1021136,
+  "generated": "2026-10-18T10:40:09Z",
   "range": true,
-  "total": 1152,
+  "total": 1255,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 27233,
-      "count": 33,
-      "hash": "4ca5029fec73f127"
+      "length": 24878,
+      "count": 32,
+      "hash": "0c9f46f3fb0084d4"
+    },
+    "2026-09": {
+      "offset": 24880,
+      "length": 83332,
+      "count": 103,
+      "hash": "df56253d6a8ba738"
     },
     "2026-08": {
-      "offset": 27235,
+      "offset": 108213,
       "length": 161094,
       "count": 183,
       "hash": "51088b813ea7ff84"
     },
     "2026-07": {
-      "offset": 188330,
+      "offset": 269308,
       "length": 741224,
       "count": 919,
       "hash": "f8b5dc6d1db62c4d"
     },
     "2026-06": {
-      "offset": 929555,
+      "offset": 1010533,
       "length": 4634,
       "count": 8,
       "hash": "f50a19552317f3bb"
     },
     "2026-05": {
-      "offset": 934190,
+      "offset": 1015168,
       "length": 1903,
       "count": 3,
       "hash": "7db2e52d06b3bf35"
     },
     "2026-04": {
-      "offset": 936094,
+      "offset": 1017072,
       "length": 1053,
       "count": 2,
       "hash": "6db94f2107f08dcb"
     },
     "2025-11": {
-      "offset": 937148,
+      "offset": 1018126,
       "length": 483,
       "count": 1,
       "hash": "7c33b272007c381d"
     },
     "2025-10": {
-      "offset": 937632,
+      "offset": 1018610,
       "length": 569,
       "count": 1,
       "hash": "c675075a9f951828"
     },
     "2025-07": {
-      "offset": 938202,
+      "offset": 1019180,
       "length": 701,
       "count": 1,
       "hash": "0ac00d649083e84c"
     },
+    "2023-03": {
+      "offset": 1019882,
+      "length": 533,
+      "count": 1,
+      "hash": "8ae89d9a7e248c70"
+    },
     "2017-07": {
-      "offset": 938904,
+      "offset": 1020416,
       "length": 719,
       "count": 1,
       "hash": "a521d8a423fcfb17"

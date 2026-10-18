@@ -2,32 +2,38 @@
   "repo": "wei_TvT",
   "account": "wei_TvT",
   "source": "https://twitterarchiver.github.io/wei_TvT/accounts/wei_TvT/wayback_snapshots/index.json",
-  "etag": "\"6ab2c4ad-17627\"",
-  "bytes": 95783,
-  "generated": "2026-09-27T11:44:00Z",
+  "etag": "\"6acf307d-1e45f\"",
+  "bytes": 123999,
+  "generated": "2026-10-18T10:39:56Z",
   "range": true,
-  "total": 114,
+  "total": 148,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 8368,
-      "count": 8,
-      "hash": "d43d5e8169e489fb"
+      "length": 23103,
+      "count": 28,
+      "hash": "95b45e804e6c441b"
+    },
+    "2026-09": {
+      "offset": 23105,
+      "length": 13480,
+      "count": 14,
+      "hash": "4c3575fc2293dc95"
     },
     "2026-08": {
-      "offset": 8370,
+      "offset": 36586,
       "length": 19546,
       "count": 23,
       "hash": "25362db3d899b7d7"
     },
     "2026-07": {
-      "offset": 27917,
+      "offset": 56133,
       "length": 49638,
       "count": 59,
       "hash": "95470b66cdfcb80a"
     },
     "2026-06": {
-      "offset": 77556,
+      "offset": 105772,
       "length": 18226,
       "count": 24,
       "hash": "0f8c2dfabcb7ccd9"

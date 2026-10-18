@@ -2,9 +2,9 @@
   "repo": "yuki_youji",
   "account": "yuki_youji",
   "source": "https://twitterarchiver.github.io/yuki_youji/accounts/yuki_youji/wayback_snapshots/index.json",
-  "etag": "\"6a99b460-e8f48\"",
-  "bytes": 954184,
-  "generated": "2026-09-06T10:34:58Z",
+  "etag": "\"6ad1cd42-e9050\"",
+  "bytes": 954448,
+  "generated": "2026-10-18T10:40:27Z",
   "range": true,
   "total": 1138,
   "months": {
@@ -22,24 +22,24 @@
     },
     "2026-07": {
       "offset": 71422,
-      "length": 780808,
+      "length": 781072,
       "count": 930,
-      "hash": "508a69fc5643c965"
+      "hash": "5cd3ff6525b5d278"
     },
     "2026-06": {
-      "offset": 852231,
+      "offset": 852495,
       "length": 97764,
       "count": 115,
       "hash": "1680cc2486b679bd"
     },
     "2026-05": {
-      "offset": 949996,
+      "offset": 950260,
       "length": 1296,
       "count": 2,
       "hash": "0b0cc5a5c51b52d6"
     },
     "2026-04": {
-      "offset": 951293,
+      "offset": 951557,
       "length": 2890,
       "count": 3,
       "hash": "9153da3b4b405be7"

@@ -2,74 +2,80 @@
   "repo": "shiotelya",
   "account": "shiotelya",
   "source": "https://twitterarchiver.github.io/shiotelya/accounts/shiotelya/wayback_snapshots/index.json",
-  "etag": "\"6ab184e0-b42c5\"",
-  "bytes": 737989,
-  "generated": "2026-09-27T11:43:41Z",
+  "etag": "\"6acdfa7b-c988f\"",
+  "bytes": 825487,
+  "generated": "2026-10-18T10:39:37Z",
   "range": true,
-  "total": 716,
+  "total": 800,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 275808,
-      "count": 273,
-      "hash": "24287300e1218460"
+      "length": 30785,
+      "count": 27,
+      "hash": "e346004fe7ef013c"
+    },
+    "2026-09": {
+      "offset": 30787,
+      "length": 332520,
+      "count": 330,
+      "hash": "258202aaa39d2f26"
     },
     "2026-08": {
-      "offset": 275810,
+      "offset": 363308,
       "length": 424451,
       "count": 400,
       "hash": "a88cce4b2aef9b9b"
     },
     "2026-07": {
-      "offset": 700262,
+      "offset": 787760,
       "length": 18450,
       "count": 22,
       "hash": "7b5a460513e19b19"
     },
     "2026-06": {
-      "offset": 718713,
+      "offset": 806211,
       "length": 4832,
       "count": 6,
       "hash": "a719844634b8a6be"
     },
     "2026-05": {
-      "offset": 723546,
+      "offset": 811044,
       "length": 5961,
       "count": 6,
       "hash": "a5e122ee9fab1e26"
     },
     "2026-04": {
-      "offset": 729508,
+      "offset": 817006,
       "length": 2810,
       "count": 3,
       "hash": "bc2e706aa92049c6"
     },
     "2026-02": {
-      "offset": 732319,
+      "offset": 819817,
       "length": 1864,
       "count": 2,
       "hash": "be62b5a77687d8be"
     },
     "2025-12": {
-      "offset": 734184,
+      "offset": 821682,
       "length": 902,
       "count": 1,
       "hash": "fbf81ffea2b32e53"
     },
     "2025-01": {
-      "offset": 735087,
+      "offset": 822585,
       "length": 1305,
       "count": 1,
       "hash": "f6202ffd8aeb401c"
     },
     "2024-12": {
-      "offset": 736393,
+      "offset": 823891,
       "length": 1086,
       "count": 1,
       "hash": "735c274c7c8a2606"
     },
     "2022-08": {
-      "offset": 737480,
+      "offset": 824978,
       "length": 508,
       "count": 1,
       "hash": "f686d7c9fa0273bb"

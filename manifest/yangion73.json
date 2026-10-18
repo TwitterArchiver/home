@@ -2,56 +2,62 @@
   "repo": "yangion73",
   "account": "yangion73",
   "source": "https://twitterarchiver.github.io/yangion73/accounts/yangion73/wayback_snapshots/index.json",
-  "etag": "\"6ab4d3c8-a4eab\"",
-  "bytes": 675499,
-  "generated": "2026-09-27T11:44:18Z",
+  "etag": "\"6ad116d7-ac666\"",
+  "bytes": 706150,
+  "generated": "2026-10-18T10:40:18Z",
   "range": true,
-  "total": 743,
+  "total": 779,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 43365,
-      "count": 47,
-      "hash": "a3f2e1965c2bcda1"
+      "length": 7996,
+      "count": 10,
+      "hash": "974f8bdba9f78ca6"
+    },
+    "2026-09": {
+      "offset": 7998,
+      "length": 66019,
+      "count": 73,
+      "hash": "6de208e6bc2ed87e"
     },
     "2026-08": {
-      "offset": 43367,
+      "offset": 74018,
       "length": 37512,
       "count": 44,
       "hash": "5db894e5c13d8a86"
     },
     "2026-07": {
-      "offset": 80880,
+      "offset": 111531,
       "length": 250738,
       "count": 264,
       "hash": "4a17a9814f8db148"
     },
     "2026-06": {
-      "offset": 331619,
+      "offset": 362270,
       "length": 340340,
       "count": 384,
       "hash": "41e3fad274c110c3"
     },
     "2026-05": {
-      "offset": 671960,
+      "offset": 702611,
       "length": 1313,
       "count": 1,
       "hash": "4a523f773dfa7a9c"
     },
     "2026-03": {
-      "offset": 673274,
+      "offset": 703925,
       "length": 1268,
       "count": 1,
       "hash": "065923dd07e5c5e6"
     },
     "2025-11": {
-      "offset": 674543,
+      "offset": 705194,
       "length": 476,
       "count": 1,
       "hash": "a1612ec32139b749"
     },
     "2023-01": {
-      "offset": 675020,
+      "offset": 705671,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

@@ -2,50 +2,56 @@
   "repo": "yizhizaihouhui",
   "account": "yizhizaihouhui",
   "source": "https://twitterarchiver.github.io/yizhizaihouhui/accounts/yizhizaihouhui/wayback_snapshots/index.json",
-  "etag": "\"6ab4d4e1-372cc\"",
-  "bytes": 225996,
-  "generated": "2026-09-27T11:44:24Z",
+  "etag": "\"6ad1184b-3a435\"",
+  "bytes": 238645,
+  "generated": "2026-10-18T10:40:20Z",
   "range": true,
-  "total": 243,
+  "total": 257,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 38744,
-      "count": 42,
-      "hash": "ea085fbafcd96028"
+      "length": 3724,
+      "count": 4,
+      "hash": "fb0f086a5754697c"
+    },
+    "2026-09": {
+      "offset": 3726,
+      "length": 47668,
+      "count": 52,
+      "hash": "0497553d8628a555"
     },
     "2026-08": {
-      "offset": 38746,
+      "offset": 51395,
       "length": 43588,
       "count": 45,
       "hash": "295ff0d8a435f2ba"
     },
     "2026-07": {
-      "offset": 82335,
+      "offset": 94984,
       "length": 138694,
       "count": 151,
       "hash": "67dad15a9a7ec8d3"
     },
     "2026-06": {
-      "offset": 221030,
+      "offset": 233679,
       "length": 1499,
       "count": 2,
       "hash": "bae1d0bb27dfb27e"
     },
     "2026-05": {
-      "offset": 222530,
+      "offset": 235179,
       "length": 1190,
       "count": 1,
       "hash": "0a94664505f1f883"
     },
     "2026-04": {
-      "offset": 223721,
+      "offset": 236370,
       "length": 1130,
       "count": 1,
       "hash": "0818ad0086218f8a"
     },
     "2026-03": {
-      "offset": 224852,
+      "offset": 237501,
       "length": 1143,
       "count": 1,
       "hash": "8e64b7de770caed8"
