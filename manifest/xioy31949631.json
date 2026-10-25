@@ -1,0 +1,60 @@
+{
+  "repo": "xioy31949631",
+  "account": "xioy31949631",
+  "source": "https://twitterarchiver.github.io/xioy31949631/accounts/xioy31949631/wayback_snapshots/index.json",
+  "etag": "\"6ad7353d-3f7ca\"",
+  "bytes": 260042,
+  "generated": "2026-10-25T11:01:45Z",
+  "range": true,
+  "total": 322,
+  "months": {
+    "2026-10": {
+      "offset": 1,
+      "length": 156542,
+      "count": 185,
+      "hash": "b2551f67d6d395c9"
+    },
+    "2026-09": {
+      "offset": 156544,
+      "length": 13754,
+      "count": 18,
+      "hash": "d88ca35777740ffa"
+    },
+    "2026-08": {
+      "offset": 170299,
+      "length": 28711,
+      "count": 37,
+      "hash": "ad820025f7a24d84"
+    },
+    "2026-07": {
+      "offset": 199011,
+      "length": 6775,
+      "count": 9,
+      "hash": "bbc52fac784a86ff"
+    },
+    "2026-06": {
+      "offset": 205787,
+      "length": 35911,
+      "count": 47,
+      "hash": "5d7835df7e8d4ac4"
+    },
+    "2026-05": {
+      "offset": 241699,
+      "length": 17357,
+      "count": 24,
+      "hash": "3ddd14e6ec8724ed"
+    },
+    "2026-03": {
+      "offset": 259057,
+      "length": 509,
+      "count": 1,
+      "hash": "e0d58e0098987c18"
+    },
+    "2023-01": {
+      "offset": 259567,
+      "length": 474,
+      "count": 1,
+      "hash": "11b9184a25ef5222"
+    }
+  }
+}

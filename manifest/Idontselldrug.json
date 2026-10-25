@@ -2,128 +2,140 @@
   "repo": "Idontselldrug",
   "account": "Idontselldrug",
   "source": "https://twitterarchiver.github.io/Idontselldrug/accounts/Idontselldrug/wayback_snapshots/index.json",
-  "etag": "\"6abe7806-50b951\"",
-  "bytes": 5290321,
-  "generated": "2026-10-04T11:57:56Z",
+  "etag": "\"6ad7b82c-56f511\"",
+  "bytes": 5698833,
+  "generated": "2026-10-25T10:58:16Z",
   "range": true,
-  "total": 5988,
+  "total": 6450,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 681983,
-      "count": 767,
-      "hash": "184cfe08fdc728c1"
+      "length": 299695,
+      "count": 343,
+      "hash": "11be4c63a4f2faad"
+    },
+    "2026-09": {
+      "offset": 299697,
+      "length": 790042,
+      "count": 885,
+      "hash": "f24510ad7fac0765"
     },
     "2026-08": {
-      "offset": 681985,
+      "offset": 1089740,
       "length": 699884,
       "count": 811,
       "hash": "cb58ec960bddacc0"
     },
     "2026-07": {
-      "offset": 1381870,
+      "offset": 1789625,
       "length": 499240,
       "count": 593,
       "hash": "01cb12fdf0ec9fb0"
     },
     "2026-06": {
-      "offset": 1881111,
+      "offset": 2288866,
       "length": 17879,
       "count": 22,
       "hash": "1f85cfd878832834"
     },
     "2026-05": {
-      "offset": 1898991,
-      "length": 400511,
+      "offset": 2306746,
+      "length": 400554,
       "count": 426,
-      "hash": "aadee23a1a7da807"
+      "hash": "9db0e328e2c22ed7"
     },
     "2026-04": {
-      "offset": 2299503,
+      "offset": 2707301,
       "length": 598151,
       "count": 668,
       "hash": "e814405984879703"
     },
     "2026-03": {
-      "offset": 2897655,
+      "offset": 3305453,
       "length": 547322,
       "count": 629,
       "hash": "6dc1fc5237eb3914"
     },
     "2026-02": {
-      "offset": 3444978,
-      "length": 192784,
+      "offset": 3852776,
+      "length": 192849,
       "count": 225,
-      "hash": "9e695f6bf6e7b2dc"
+      "hash": "b4a86597ce0f9aec"
     },
     "2026-01": {
-      "offset": 3637763,
-      "length": 392501,
+      "offset": 4045626,
+      "length": 392630,
       "count": 431,
-      "hash": "71498a29caba7b7e"
+      "hash": "ddf3a9b7e539386f"
     },
     "2025-12": {
-      "offset": 4030265,
+      "offset": 4438257,
       "length": 614416,
       "count": 695,
       "hash": "6ef13b59cfa117e7"
     },
     "2025-11": {
-      "offset": 4644682,
-      "length": 640533,
+      "offset": 5052674,
+      "length": 640576,
       "count": 712,
-      "hash": "bacbe0701858ab93"
+      "hash": "4f5d2ceee6210a43"
     },
     "2025-09": {
-      "offset": 5285216,
+      "offset": 5693251,
       "length": 738,
       "count": 1,
       "hash": "5359a56d5fb7b951"
     },
     "2025-08": {
-      "offset": 5285955,
+      "offset": 5693990,
       "length": 659,
       "count": 1,
       "hash": "e2e5bb217fd8b180"
     },
     "2025-05": {
-      "offset": 5286615,
+      "offset": 5694650,
       "length": 497,
       "count": 1,
       "hash": "cc5ac2f70013b5c7"
     },
     "2024-11": {
-      "offset": 5287113,
+      "offset": 5695148,
       "length": 542,
       "count": 1,
       "hash": "3b0af8375c36a338"
     },
     "2024-06": {
-      "offset": 5287656,
+      "offset": 5695691,
       "length": 533,
       "count": 1,
       "hash": "a992f4a9e205aabd"
     },
     "2022-11": {
-      "offset": 5288190,
+      "offset": 5696225,
       "length": 630,
       "count": 1,
       "hash": "66a25d2e2889dca2"
     },
     "2022-02": {
-      "offset": 5288821,
+      "offset": 5696856,
       "length": 551,
       "count": 1,
       "hash": "ff2495c5bdc403bd"
     },
     "2019-03": {
-      "offset": 5289373,
+      "offset": 5697408,
       "length": 478,
       "count": 1,
       "hash": "7dd117699c053403"
     },
+    "2018-11": {
+      "offset": 5697887,
+      "length": 476,
+      "count": 1,
+      "hash": "405a811a60b3710d"
+    },
     "2017-01": {
-      "offset": 5289852,
+      "offset": 5698364,
       "length": 468,
       "count": 1,
       "hash": "d3530dd80d276ac0"

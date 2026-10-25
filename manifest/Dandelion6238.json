@@ -2,11 +2,11 @@
   "repo": "Dandelion6238",
   "account": "Dandelion6238",
   "source": "https://twitterarchiver.github.io/Dandelion6238/accounts/Dandelion6238/wayback_snapshots/index.json",
-  "etag": "\"6ab96026-ed552\"",
-  "bytes": 972114,
-  "generated": "2026-10-04T11:57:35Z",
+  "etag": "\"6ad5cc00-edb7e\"",
+  "bytes": 973694,
+  "generated": "2026-10-25T10:57:58Z",
   "range": true,
-  "total": 1228,
+  "total": 1230,
   "months": {
     "2026-09": {
       "offset": 1,
@@ -130,30 +130,30 @@
     },
     "2024-09": {
       "offset": 714167,
-      "length": 253279,
-      "count": 318,
-      "hash": "8a1ff234f434dc07"
+      "length": 254859,
+      "count": 320,
+      "hash": "bea4b8c89e50d38e"
     },
     "2024-08": {
-      "offset": 967447,
+      "offset": 969027,
       "length": 1014,
       "count": 2,
       "hash": "055e53bb65f9c629"
     },
     "2024-07": {
-      "offset": 968462,
+      "offset": 970042,
       "length": 1249,
       "count": 2,
       "hash": "296da72c460d2278"
     },
     "2024-02": {
-      "offset": 969712,
+      "offset": 971292,
       "length": 1660,
       "count": 3,
       "hash": "c97736e9cc52f96c"
     },
     "2023-05": {
-      "offset": 971373,
+      "offset": 972953,
       "length": 740,
       "count": 1,
       "hash": "c35b363e7b7985a5"

@@ -2,9 +2,9 @@
   "repo": "Oz_Garlandd",
   "account": "Oz_Garlandd",
   "source": "https://twitterarchiver.github.io/Oz_Garlandd/accounts/Oz_Garlandd/wayback_snapshots/index.json",
-  "etag": "\"6abf6f28-45cc91\"",
-  "bytes": 4574353,
-  "generated": "2026-10-04T11:58:44Z",
+  "etag": "\"6adb12af-45cd95\"",
+  "bytes": 4574613,
+  "generated": "2026-10-25T10:58:55Z",
   "range": true,
   "total": 5338,
   "months": {
@@ -40,30 +40,30 @@
     },
     "2026-04": {
       "offset": 3222656,
-      "length": 859909,
+      "length": 859974,
       "count": 1010,
-      "hash": "4026f8004c64a55e"
+      "hash": "f82418e9d280de61"
     },
     "2026-03": {
-      "offset": 4082566,
-      "length": 489056,
+      "offset": 4082631,
+      "length": 489251,
       "count": 600,
-      "hash": "c0326eaadb610218"
+      "hash": "396006ce35f5457f"
     },
     "2026-02": {
-      "offset": 4571623,
+      "offset": 4571883,
       "length": 1725,
       "count": 2,
       "hash": "0e7a81cc2b864ccd"
     },
     "2024-09": {
-      "offset": 4573349,
+      "offset": 4573609,
       "length": 524,
       "count": 1,
       "hash": "4e56ccbf1e99eeb6"
     },
     "2023-01": {
-      "offset": 4573874,
+      "offset": 4574134,
       "length": 478,
       "count": 1,
       "hash": "87b1c55a778d9019"

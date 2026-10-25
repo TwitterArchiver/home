@@ -2,9 +2,9 @@
   "repo": "MilkSU_Official",
   "account": "MilkSU_Official",
   "source": "https://twitterarchiver.github.io/MilkSU_Official/accounts/MilkSU_Official/wayback_snapshots/index.json",
-  "etag": "\"6abd5ef5-220f22\"",
-  "bytes": 2232098,
-  "generated": "2026-10-04T11:58:26Z",
+  "etag": "\"6ad9bd76-220f63\"",
+  "bytes": 2232163,
+  "generated": "2026-10-25T10:58:41Z",
   "range": true,
   "total": 2738,
   "months": {
@@ -16,66 +16,66 @@
     },
     "2026-08": {
       "offset": 306264,
-      "length": 482880,
+      "length": 482945,
       "count": 590,
-      "hash": "c9107f5cbbbff338"
+      "hash": "349e8db3a3620af9"
     },
     "2026-07": {
-      "offset": 789145,
+      "offset": 789210,
       "length": 544293,
       "count": 675,
       "hash": "026fb1d8e43ae64c"
     },
     "2026-06": {
-      "offset": 1333439,
+      "offset": 1333504,
       "length": 395191,
       "count": 475,
       "hash": "0f4091ef7f7da103"
     },
     "2026-05": {
-      "offset": 1728631,
+      "offset": 1728696,
       "length": 313708,
       "count": 374,
       "hash": "edc87dedcda52add"
     },
     "2026-04": {
-      "offset": 2042340,
+      "offset": 2042405,
       "length": 184551,
       "count": 236,
       "hash": "e8ba0ff4890d4e30"
     },
     "2026-03": {
-      "offset": 2226892,
+      "offset": 2226957,
       "length": 1094,
       "count": 1,
       "hash": "bbcf39df54da8d60"
     },
     "2026-01": {
-      "offset": 2227987,
+      "offset": 2228052,
       "length": 1707,
       "count": 2,
       "hash": "02a1c6d5392d618e"
     },
     "2025-08": {
-      "offset": 2229695,
+      "offset": 2229760,
       "length": 499,
       "count": 1,
       "hash": "706c4bcda0cd7267"
     },
     "2025-06": {
-      "offset": 2230195,
+      "offset": 2230260,
       "length": 494,
       "count": 1,
       "hash": "8883efb0e5cf70e7"
     },
     "2025-02": {
-      "offset": 2230690,
+      "offset": 2230755,
       "length": 929,
       "count": 1,
       "hash": "8b1bd15aa9426e49"
     },
     "2024-09": {
-      "offset": 2231620,
+      "offset": 2231685,
       "length": 477,
       "count": 1,
       "hash": "3dc11bf480b94261"

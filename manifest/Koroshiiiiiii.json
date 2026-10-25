@@ -2,86 +2,92 @@
   "repo": "Koroshiiiiiii",
   "account": "Koroshiiiiiii",
   "source": "https://twitterarchiver.github.io/Koroshiiiiiii/accounts/Koroshiiiiiii/wayback_snapshots/index.json",
-  "etag": "\"6abe77c5-1de1f5\"",
-  "bytes": 1958389,
-  "generated": "2026-10-04T11:57:59Z",
+  "etag": "\"6ad86c89-1e27b9\"",
+  "bytes": 1976249,
+  "generated": "2026-10-25T10:58:19Z",
   "range": true,
-  "total": 2398,
+  "total": 2414,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 31596,
+      "length": 17531,
+      "count": 16,
+      "hash": "ba2a11713fc259e8"
+    },
+    "2026-09": {
+      "offset": 17533,
+      "length": 31924,
       "count": 35,
-      "hash": "174057e50dab8109"
+      "hash": "e55655346f3bf511"
     },
     "2026-08": {
-      "offset": 31598,
+      "offset": 49458,
       "length": 89734,
       "count": 108,
       "hash": "ecc17dd5c550990d"
     },
     "2026-07": {
-      "offset": 121333,
+      "offset": 139193,
       "length": 504975,
       "count": 603,
       "hash": "08b1317c920b7677"
     },
     "2026-06": {
-      "offset": 626309,
+      "offset": 644169,
       "length": 738238,
       "count": 895,
       "hash": "56a173be904e7f51"
     },
     "2026-05": {
-      "offset": 1364548,
+      "offset": 1382408,
       "length": 578883,
       "count": 739,
       "hash": "3d724abf0e123135"
     },
     "2026-04": {
-      "offset": 1943432,
+      "offset": 1961292,
       "length": 1042,
       "count": 1,
       "hash": "2c4ff3eaec7b5d9c"
     },
     "2026-01": {
-      "offset": 1944475,
+      "offset": 1962335,
       "length": 3146,
       "count": 3,
       "hash": "015e09050db13c5c"
     },
     "2025-12": {
-      "offset": 1947622,
+      "offset": 1965482,
       "length": 4086,
       "count": 6,
       "hash": "95d7220181b34f70"
     },
     "2025-07": {
-      "offset": 1951709,
+      "offset": 1969569,
       "length": 1068,
       "count": 1,
       "hash": "51ee62c580968922"
     },
     "2025-05": {
-      "offset": 1952778,
+      "offset": 1970638,
       "length": 2896,
       "count": 3,
       "hash": "6fcdfb5102bcf40e"
     },
     "2024-09": {
-      "offset": 1955675,
+      "offset": 1973535,
       "length": 825,
       "count": 1,
       "hash": "5f48fccb0b9fc6ef"
     },
     "2024-06": {
-      "offset": 1956501,
+      "offset": 1974361,
       "length": 433,
       "count": 1,
       "hash": "4e20716d33c3aa5a"
     },
     "2024-05": {
-      "offset": 1956935,
+      "offset": 1974795,
       "length": 1453,
       "count": 2,
       "hash": "f42fa48677a9032b"

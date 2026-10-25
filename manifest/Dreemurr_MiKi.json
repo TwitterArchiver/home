@@ -2,32 +2,38 @@
   "repo": "Dreemurr_MiKi",
   "account": "Dreemurr_MiKi",
   "source": "https://twitterarchiver.github.io/Dreemurr_MiKi/accounts/Dreemurr_MiKi/wayback_snapshots/index.json",
-  "etag": "\"6aba2818-f0ee\"",
-  "bytes": 61678,
-  "generated": "2026-10-04T11:57:40Z",
+  "etag": "\"6ad672c2-11e48\"",
+  "bytes": 73288,
+  "generated": "2026-10-25T10:58:02Z",
   "range": true,
-  "total": 68,
+  "total": 82,
   "months": {
-    "2026-09": {
+    "2026-10": {
       "offset": 1,
-      "length": 16778,
-      "count": 19,
-      "hash": "9f7f8f78dd7387d5"
+      "length": 10688,
+      "count": 13,
+      "hash": "e53ec9979fae2174"
+    },
+    "2026-09": {
+      "offset": 10690,
+      "length": 17699,
+      "count": 20,
+      "hash": "f4cc8c2bd0a12dc6"
     },
     "2026-08": {
-      "offset": 16780,
+      "offset": 28390,
       "length": 26094,
       "count": 27,
       "hash": "a1c7f28c6e479803"
     },
     "2026-07": {
-      "offset": 42875,
+      "offset": 54485,
       "length": 17518,
       "count": 21,
       "hash": "6f82853f803fe6f7"
     },
     "2026-05": {
-      "offset": 60394,
+      "offset": 72004,
       "length": 1283,
       "count": 1,
       "hash": "ff8ea6e268cd8655"
